@@ -1186,7 +1186,7 @@ video {
 }
 
 /* ecosystem embed skin (was injected globally by ecosystem-shared.js) */
-.v-eco-press-article .cq-body,.v-eco-press-article .cq-body * { font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif !important; }
+.v-eco-press-article .cq-body,.v-eco-press-article .cq-body *:not(.material-symbols-outlined):not(.material-icons) { font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif !important; }
 .v-eco-press-article .cq-body { background: #ffffff !important; color: #0B1B2E; }
 .v-eco-press-article main { padding-top: 0 !important; padding-bottom: 0 !important; }
 .v-eco-press-article main > section { padding-top: 72px !important; padding-bottom: 72px !important; }
@@ -1195,3 +1195,11 @@ video {
 .v-eco-press-article section.bg-\[\#0B1530\] p,.v-eco-press-article  section.bg-\[\#0B1530\] span:not(.px-3) { color: #475873 !important; }
 .v-eco-press-article .cq-body > main > :first-child { padding-top: 96px !important; }
 .v-eco-press-article .cq-body > main#insights-root > div:first-child,.v-eco-press-article .cq-body > main#release-root > div:first-child { padding-top: 96px !important; padding-bottom: 24px !important; }
+/* Icon glyphs (media contact: mail / call / language): the text-font rule above was reaching
+   the icon spans, so they printed their names as words. Give them the icon font. */
+.v-eco-press-article .material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none;
+  display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr;
+  font-feature-settings: "liga"; -webkit-font-smoothing: antialiased;
+}
