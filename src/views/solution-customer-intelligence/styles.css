@@ -733,11 +733,7 @@
   background: #ffffff;
   box-shadow: 0 4px 18px rgba(0,0,0,0.03);
 }
-.v-solution-customer-intelligence .engagement-step.is-featured {
-  border: 1px solid var(--blue-500);
-  background: linear-gradient(145deg, #f3f7ff, #fff);
-  box-shadow: 0 8px 26px rgba(47, 134, 255, 0.12);
-}
+
 .v-solution-customer-intelligence .step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
 .v-solution-customer-intelligence .step-number {
   display: grid;
@@ -751,7 +747,6 @@
   color: var(--blue-500);
   font: 600 12px var(--mono);
 }
-.v-solution-customer-intelligence .is-featured .step-number { border-color: var(--blue-500); background: var(--blue-500); color: #fff; }
 .v-solution-customer-intelligence .step-head h3 { margin: 0; color: var(--ink-900); font-size: 18px; font-weight: 600; line-height: 1.35; letter-spacing: -0.02em; }
 .v-solution-customer-intelligence .engagement-step > p { margin: 0; color: var(--slate-600); font-size: 14px; line-height: 1.65; }
 .v-solution-customer-intelligence .step-arrow { display: flex; align-items: center; justify-content: center; color: var(--blue-500); font-size: 22px; }

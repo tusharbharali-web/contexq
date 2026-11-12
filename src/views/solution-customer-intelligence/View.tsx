@@ -1206,7 +1206,7 @@ export function View() {
             <div className="flex flex-col items-center space-y-3 w-full">
               <div className="w-full bg-white border border-[#DCE4F0] rounded-[14px] p-5 shadow-sm text-left">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-6 h-6 rounded-full bg-blue-accent text-white flex items-center justify-center font-bold text-xs shrink-0">
+                  <span className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs shrink-0" style={{ background: "#F0F5FF", color: "#2F86FF", border: "1px solid #C9D8F3" }}>
                     1
                   </span>
                   {" "}
@@ -1224,9 +1224,9 @@ export function View() {
                 </svg>
               </div>
               {" "}
-              <div className="w-full bg-white border-2 border-blue-accent rounded-[14px] p-5 shadow-sm text-left">
+              <div className="w-full bg-white border border-[#DCE4F0] rounded-[14px] p-5 shadow-sm text-left">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-6 h-6 rounded-full bg-blue-accent text-white flex items-center justify-center font-bold text-xs shrink-0">
+                  <span className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs shrink-0" style={{ background: "#F0F5FF", color: "#2F86FF", border: "1px solid #C9D8F3" }}>
                     2
                   </span>
                   {" "}
@@ -1246,7 +1246,7 @@ export function View() {
               {" "}
               <div className="w-full bg-white border border-[#DCE4F0] rounded-[14px] p-5 shadow-sm text-left">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-6 h-6 rounded-full bg-blue-accent text-white flex items-center justify-center font-bold text-xs shrink-0">
+                  <span className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs shrink-0" style={{ background: "#F0F5FF", color: "#2F86FF", border: "1px solid #C9D8F3" }}>
                     3
                   </span>
                   {" "}
