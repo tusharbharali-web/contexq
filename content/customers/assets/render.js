@@ -87,11 +87,17 @@
       sampleBadge(s, dark);
   }
 
+  // Card preview: only the opening sentence; the full write-up lives behind "Read more".
+  function teaser(t) {
+    var m = String(t || '').match(/^.*?[.!?](?=\s|$)/);
+    return m ? m[0] : String(t || '');
+  }
+
   // Summary card
   function story(s) {
     var summary = s.title
       ? '<p class="text-title-md font-title-md text-[#111c2d] font-semibold leading-snug" style="' + clamp(2) + '">' + esc(s.title) + '</p>'
-      : '<p class="text-body-md font-body-md text-[#525e7a] leading-relaxed" style="' + clamp(3) + '">' + esc(s.description) + '</p>';
+      : '<p class="text-body-md font-body-md text-[#525e7a] leading-relaxed" style="' + clamp(2) + '">' + esc(teaser(s.description)) + '</p>';
     return '<article id="' + esc(s.id) + '" class="bg-white rounded-2xl border border-[#E3E6EA] p-8 transition-shadow duration-200 hover:shadow-[0px_6px_24px_rgba(14,27,51,0.10)] flex flex-col gap-6">' +
       '<div class="flex items-center gap-5">' +
       (s.logo ? '<div class="w-20 h-20 flex-shrink-0 rounded-xl bg-white border border-[#E3E6EA] overflow-hidden flex items-center justify-center"><img src="' + esc(s.logo) + '" alt="' + esc(s.customerName || '') + ' logo" class="w-full h-full object-contain" style="mix-blend-mode:multiply"></div>' : '') +

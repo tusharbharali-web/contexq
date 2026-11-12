@@ -36,7 +36,7 @@ window.CUSTOMERS_DATA = {
           "stage": "Customer",
           "status": null,
           "title": null,
-          "description": "Provided TI KYC forensic intelligence and enhanced due diligence on potential multi billion M&A.",
+          "description": "We provided Tata International with comprehensive KYC forensic intelligence and enhanced due diligence to support the assessment of a potential multi-billion-dollar M&A transaction. By examining relevant entities, uncovering potential risks, and providing deeper insights into the parties involved, we helped strengthen their risk assessment, support informed decision-making, and bring greater confidence to the evaluation of this high-value transaction.",
           "challenge": null,
           "approach": null,
           "outcome": null,
