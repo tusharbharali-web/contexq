@@ -228,3 +228,12 @@
 .v-about .av { position: relative; overflow: hidden; }
 .v-about .av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; background: #fff; }
 .v-about .mbox .av { width: 96px; height: 96px; font-size: 28px; }
+
+/* Backing panel: one white card, three columns split by thin dividers (no blue frame). */
+.v-about .eco { gap: 0; padding: 0; border-radius: 16px; background: #FFFFFF; border: 1px solid #E1E7F0; box-shadow: 0 10px 30px rgba(11, 27, 46, .08); overflow: hidden; }
+.v-about .eco > div { border-radius: 0; background: transparent; padding: 28px 32px; }
+.v-about .eco > div + div { border-left: 1px solid #E1E7F0; }
+@media (max-width: 1000px) {
+  .v-about .eco { grid-template-columns: 1fr; }
+  .v-about .eco > div + div { border-left: 0; border-top: 1px solid #E1E7F0; }
+}
