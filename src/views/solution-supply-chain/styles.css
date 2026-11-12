@@ -1435,3 +1435,12 @@
   .v-solution-supply-chain #demo.cq-demo .wrap.cq-demo-row { flex-direction: column; align-items: flex-start; gap: 28px; }
   .v-solution-supply-chain #demo.cq-demo .cq-demo-act { align-items: flex-start; }
 }
+
+/* Buttons in the site's CTA blue (as on every other page): the hero's "See how it works"
+   was a transparent outline button and the closing "Talk to the team" was cyan. */
+.v-solution-supply-chain .hero-copy .hero-actions .btn,
+.v-solution-supply-chain .btn.primary { background: #2F86FF; border-color: #2F86FF; color: #FFFFFF; }
+.v-solution-supply-chain .hero-copy .hero-actions .btn:hover,
+.v-solution-supply-chain .btn.primary:hover { background: #5BA0FF; border-color: #5BA0FF; color: #FFFFFF; }
+.v-solution-supply-chain .hero-copy .hero-actions .btn:active,
+.v-solution-supply-chain .btn.primary:active { background: #1F6FEB; border-color: #1F6FEB; color: #FFFFFF; }
