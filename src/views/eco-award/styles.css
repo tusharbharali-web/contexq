@@ -1,0 +1,1445 @@
+/* Generated from public/eco-skin/awards/*.html (17 pages): the page's own CSS, scoped to .v-eco-award. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-eco-award *:not(svg, svg *), .v-eco-award ::before, .v-eco-award ::after) { all: revert; }
+:where(.v-eco-award svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-eco-award) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-eco-award > .cq-body) { display: block; margin: 8px; }
+.v-eco-award.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-eco-award :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-eco-award > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-eco-award main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+  .v-eco-award { scrollbar-gutter: stable; }
+    .v-eco-award .cq-body,.v-eco-award  button {
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .v-eco-award .cq-body {
+      background-color: #FFFFFF;
+      color: #191c1f;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .v-eco-award .card-border-ambient {
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 1px 3px 0 rgba(11, 21, 48, 0.04), 0 4px 16px -2px rgba(11, 21, 48, 0.03);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .v-eco-award .card-border-ambient:hover {
+      transform: translateY(-2px);
+      border-color: #CBD5E1;
+      box-shadow: 0 8px 24px -4px rgba(11, 21, 48, 0.07);
+    }
+
+.v-eco-award .cq-body,.v-eco-award .cq-body *:not(.material-symbols-outlined):not(.material-icons){font-family:"IBM Plex Sans",sans-serif !important}
+.v-eco-award *,.v-eco-award  ::before,.v-eco-award  ::after, .v-eco-award {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.v-eco-award ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.v-eco-award *,.v-eco-award 
+::before,.v-eco-award 
+::after, .v-eco-award {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.v-eco-award ::before,.v-eco-award 
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.v-eco-award,.v-eco-award {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: IBM Plex Sans, sans-serif; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.v-eco-award .cq-body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.v-eco-award hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.v-eco-award abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.v-eco-award h1,.v-eco-award 
+h2,.v-eco-award 
+h3,.v-eco-award 
+h4,.v-eco-award 
+h5,.v-eco-award 
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.v-eco-award a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.v-eco-award b,.v-eco-award 
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.v-eco-award code,.v-eco-award 
+kbd,.v-eco-award 
+samp,.v-eco-award 
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.v-eco-award small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.v-eco-award sub,.v-eco-award 
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.v-eco-award sub {
+  bottom: -0.25em;
+}
+
+.v-eco-award sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.v-eco-award table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.v-eco-award button,.v-eco-award 
+input,.v-eco-award 
+optgroup,.v-eco-award 
+select,.v-eco-award 
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.v-eco-award button,.v-eco-award 
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.v-eco-award button,.v-eco-award 
+input:where([type='button']),.v-eco-award 
+input:where([type='reset']),.v-eco-award 
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.v-eco-award :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.v-eco-award :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.v-eco-award progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.v-eco-award ::-webkit-inner-spin-button,.v-eco-award 
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.v-eco-award [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.v-eco-award ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.v-eco-award ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.v-eco-award summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.v-eco-award blockquote,.v-eco-award 
+dl,.v-eco-award 
+dd,.v-eco-award 
+h1,.v-eco-award 
+h2,.v-eco-award 
+h3,.v-eco-award 
+h4,.v-eco-award 
+h5,.v-eco-award 
+h6,.v-eco-award 
+hr,.v-eco-award 
+figure,.v-eco-award 
+p,.v-eco-award 
+pre {
+  margin: 0;
+}
+
+.v-eco-award fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.v-eco-award legend {
+  padding: 0;
+}
+
+.v-eco-award ol,.v-eco-award 
+ul,.v-eco-award 
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.v-eco-award dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.v-eco-award textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.v-eco-award input::placeholder,.v-eco-award 
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.v-eco-award button,.v-eco-award 
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.v-eco-award :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.v-eco-award img,.v-eco-award 
+svg,.v-eco-award 
+video,.v-eco-award 
+canvas,.v-eco-award 
+audio,.v-eco-award 
+iframe,.v-eco-award 
+embed,.v-eco-award 
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.v-eco-award img,.v-eco-award 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.v-eco-award [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.v-eco-award [type='text'],.v-eco-award input:where(:not([type])),.v-eco-award [type='email'],.v-eco-award [type='url'],.v-eco-award [type='password'],.v-eco-award [type='number'],.v-eco-award [type='date'],.v-eco-award [type='datetime-local'],.v-eco-award [type='month'],.v-eco-award [type='search'],.v-eco-award [type='tel'],.v-eco-award [type='time'],.v-eco-award [type='week'],.v-eco-award [multiple],.v-eco-award textarea,.v-eco-award select {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-eco-award [type='text']:focus,.v-eco-award  input:where(:not([type])):focus,.v-eco-award  [type='email']:focus,.v-eco-award  [type='url']:focus,.v-eco-award  [type='password']:focus,.v-eco-award  [type='number']:focus,.v-eco-award  [type='date']:focus,.v-eco-award  [type='datetime-local']:focus,.v-eco-award  [type='month']:focus,.v-eco-award  [type='search']:focus,.v-eco-award  [type='tel']:focus,.v-eco-award  [type='time']:focus,.v-eco-award  [type='week']:focus,.v-eco-award  [multiple]:focus,.v-eco-award  textarea:focus,.v-eco-award  select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #2563eb;
+}
+
+.v-eco-award input::placeholder,.v-eco-award textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.v-eco-award ::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.v-eco-award ::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  text-align: inherit;
+}
+
+.v-eco-award ::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+.v-eco-award ::-webkit-datetime-edit,.v-eco-award ::-webkit-datetime-edit-year-field,.v-eco-award ::-webkit-datetime-edit-month-field,.v-eco-award ::-webkit-datetime-edit-day-field,.v-eco-award ::-webkit-datetime-edit-hour-field,.v-eco-award ::-webkit-datetime-edit-minute-field,.v-eco-award ::-webkit-datetime-edit-second-field,.v-eco-award ::-webkit-datetime-edit-millisecond-field,.v-eco-award ::-webkit-datetime-edit-meridiem-field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.v-eco-award select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+}
+
+.v-eco-award [multiple],.v-eco-award [size]:where(select:not([size="1"])) {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  print-color-adjust: unset;
+}
+
+.v-eco-award [type='checkbox'],.v-eco-award [type='radio'] {
+  appearance: none;
+  padding: 0;
+  print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-eco-award [type='checkbox'] {
+  border-radius: 0px;
+}
+
+.v-eco-award [type='radio'] {
+  border-radius: 100%;
+}
+
+.v-eco-award [type='checkbox']:focus,.v-eco-award [type='radio']:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.v-eco-award [type='checkbox']:checked,.v-eco-award [type='radio']:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.v-eco-award [type='checkbox']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-award [type='checkbox']:checked {
+    appearance: auto;
+  }
+}
+
+.v-eco-award [type='radio']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-award [type='radio']:checked {
+    appearance: auto;
+  }
+}
+
+.v-eco-award [type='checkbox']:checked:hover,.v-eco-award [type='checkbox']:checked:focus,.v-eco-award [type='radio']:checked:hover,.v-eco-award [type='radio']:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-eco-award [type='checkbox']:indeterminate {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-award [type='checkbox']:indeterminate {
+    appearance: auto;
+  }
+}
+
+.v-eco-award [type='checkbox']:indeterminate:hover,.v-eco-award [type='checkbox']:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-eco-award [type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+.v-eco-award [type='file']:focus {
+  outline: 1px solid ButtonText;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.v-eco-award .invisible {
+  visibility: hidden;
+}
+.v-eco-award .static {
+  position: static;
+}
+.v-eco-award .sticky {
+  position: sticky;
+}
+.v-eco-award .top-0 {
+  top: 0px;
+}
+.v-eco-award .z-40 {
+  z-index: 40;
+}
+.v-eco-award .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.v-eco-award .mb-1 {
+  margin-bottom: 0.25rem;
+}
+.v-eco-award .mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+.v-eco-award .mb-2 {
+  margin-bottom: 0.5rem;
+}
+.v-eco-award .mb-3 {
+  margin-bottom: 0.75rem;
+}
+.v-eco-award .mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+.v-eco-award .mb-4 {
+  margin-bottom: 1rem;
+}
+.v-eco-award .mb-5 {
+  margin-bottom: 1.25rem;
+}
+.v-eco-award .mb-6 {
+  margin-bottom: 1.5rem;
+}
+.v-eco-award .mt-0\.5 {
+  margin-top: 0.125rem;
+}
+.v-eco-award .mt-1 {
+  margin-top: 0.25rem;
+}
+.v-eco-award .mt-12 {
+  margin-top: 3rem;
+}
+.v-eco-award .mt-6 {
+  margin-top: 1.5rem;
+}
+.v-eco-award .block {
+  display: block;
+}
+.v-eco-award .inline-block {
+  display: inline-block;
+}
+.v-eco-award .flex {
+  display: flex;
+}
+.v-eco-award .inline-flex {
+  display: inline-flex;
+}
+.v-eco-award .grid {
+  display: grid;
+}
+.v-eco-award .hidden {
+  display: none;
+}
+.v-eco-award .h-1\.5 {
+  height: 0.375rem;
+}
+.v-eco-award .h-10 {
+  height: 2.5rem;
+}
+.v-eco-award .h-16 {
+  height: 4rem;
+}
+.v-eco-award .h-2\.5 {
+  height: 0.625rem;
+}
+.v-eco-award .h-28 {
+  height: 7rem;
+}
+.v-eco-award .h-44 {
+  height: 11rem;
+}
+.v-eco-award .h-full {
+  height: 100%;
+}
+.v-eco-award .min-h-screen {
+  min-height: 100vh;
+}
+.v-eco-award .w-1\.5 {
+  width: 0.375rem;
+}
+.v-eco-award .w-10 {
+  width: 2.5rem;
+}
+.v-eco-award .w-2\.5 {
+  width: 0.625rem;
+}
+.v-eco-award .w-28 {
+  width: 7rem;
+}
+.v-eco-award .w-full {
+  width: 100%;
+}
+.v-eco-award .max-w-3xl {
+  max-width: 48rem;
+}
+.v-eco-award .max-w-\[1240px\] {
+  max-width: 1240px;
+}
+.v-eco-award .max-w-\[240px\] {
+  max-width: 240px;
+}
+.v-eco-award .max-w-\[320px\] {
+  max-width: 320px;
+}
+.v-eco-award .flex-1 {
+  flex: 1 1 0%;
+}
+.v-eco-award .shrink-0 {
+  flex-shrink: 0;
+}
+.v-eco-award .transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-eco-award .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.v-eco-award .flex-col {
+  flex-direction: column;
+}
+.v-eco-award .flex-wrap {
+  flex-wrap: wrap;
+}
+.v-eco-award .items-start {
+  align-items: flex-start;
+}
+.v-eco-award .items-end {
+  align-items: flex-end;
+}
+.v-eco-award .items-center {
+  align-items: center;
+}
+.v-eco-award .justify-center {
+  justify-content: center;
+}
+.v-eco-award .justify-between {
+  justify-content: space-between;
+}
+.v-eco-award .gap-1 {
+  gap: 0.25rem;
+}
+.v-eco-award .gap-1\.5 {
+  gap: 0.375rem;
+}
+.v-eco-award .gap-2 {
+  gap: 0.5rem;
+}
+.v-eco-award .gap-2\.5 {
+  gap: 0.625rem;
+}
+.v-eco-award .gap-3 {
+  gap: 0.75rem;
+}
+.v-eco-award .gap-4 {
+  gap: 1rem;
+}
+.v-eco-award .gap-6 {
+  gap: 1.5rem;
+}
+.v-eco-award .gap-8 {
+  gap: 2rem;
+}
+.v-eco-award .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.v-eco-award .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.v-eco-award .overflow-hidden {
+  overflow: hidden;
+}
+.v-eco-award .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.v-eco-award .rounded-2xl {
+  border-radius: 1rem;
+}
+.v-eco-award .rounded-full {
+  border-radius: 9999px;
+}
+.v-eco-award .rounded-lg {
+  border-radius: 0.5rem;
+}
+.v-eco-award .rounded-xl {
+  border-radius: 0.75rem;
+}
+.v-eco-award .border {
+  border-width: 1px;
+}
+.v-eco-award .border-b {
+  border-bottom-width: 1px;
+}
+.v-eco-award .border-l-4 {
+  border-left-width: 4px;
+}
+.v-eco-award .border-t {
+  border-top-width: 1px;
+}
+.v-eco-award .border-\[\#0051df\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 81 223 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .border-\[\#E2E8F0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .border-amber-200\/60 {
+  border-color: rgb(253 230 138 / 0.6);
+}
+.v-eco-award .border-black\/5 {
+  border-color: rgb(0 0 0 / 0.05);
+}
+.v-eco-award .border-blue-200\/60 {
+  border-color: rgb(191 219 254 / 0.6);
+}
+.v-eco-award .border-emerald-200\/60 {
+  border-color: rgb(167 243 208 / 0.6);
+}
+.v-eco-award .border-slate-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .bg-\[\#0051df\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 81 223 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#0B1530\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 21 48 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#2F6BFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 107 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#E6F4F1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 244 241 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#E8F0FE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 240 254 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#EEF2F6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 246 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#F4F6FA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 246 250 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-\[\#FEF6E6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 246 230 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-amber-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-blue-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-emerald-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-emerald-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-slate-200\/80 {
+  background-color: rgb(226 232 240 / 0.8);
+}
+.v-eco-award .bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-surface-container-lowest {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .bg-white\/95 {
+  background-color: rgb(255 255 255 / 0.95);
+}
+.v-eco-award .object-contain {
+  object-fit: contain;
+}
+.v-eco-award .object-cover {
+  object-fit: cover;
+}
+.v-eco-award .p-1 {
+  padding: 0.25rem;
+}
+.v-eco-award .p-3 {
+  padding: 0.75rem;
+}
+.v-eco-award .p-4 {
+  padding: 1rem;
+}
+.v-eco-award .p-5 {
+  padding: 1.25rem;
+}
+.v-eco-award .p-6 {
+  padding: 1.5rem;
+}
+.v-eco-award .px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.v-eco-award .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.v-eco-award .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.v-eco-award .px-gutter {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-eco-award .py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.v-eco-award .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.v-eco-award .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.v-eco-award .py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.v-eco-award .py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.v-eco-award .py-space-xl {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.v-eco-award .pb-12 {
+  padding-bottom: 3rem;
+}
+.v-eco-award .pb-3 {
+  padding-bottom: 0.75rem;
+}
+.v-eco-award .pt-10 {
+  padding-top: 2.5rem;
+}
+.v-eco-award .pt-2 {
+  padding-top: 0.5rem;
+}
+.v-eco-award .pt-5 {
+  padding-top: 1.25rem;
+}
+.v-eco-award .pt-8 {
+  padding-top: 2rem;
+}
+.v-eco-award .text-center {
+  text-align: center;
+}
+.v-eco-award .text-right {
+  text-align: right;
+}
+.v-eco-award .font-action-back {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-award .font-body-lead {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-award .font-body-md {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-award .font-display-hero-mobile {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-award .font-headline-card {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-award .text-\[11px\] {
+  font-size: 11px;
+}
+.v-eco-award .text-action-back {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  font-weight: 500;
+}
+.v-eco-award .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.v-eco-award .text-body-lead {
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+.v-eco-award .text-display-hero-mobile {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.v-eco-award .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.v-eco-award .text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.v-eco-award .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.v-eco-award .font-bold {
+  font-weight: 700;
+}
+.v-eco-award .font-medium {
+  font-weight: 500;
+}
+.v-eco-award .font-normal {
+  font-weight: 400;
+}
+.v-eco-award .font-semibold {
+  font-weight: 600;
+}
+.v-eco-award .uppercase {
+  text-transform: uppercase;
+}
+.v-eco-award .italic {
+  font-style: italic;
+}
+.v-eco-award .leading-relaxed {
+  line-height: 1.625;
+}
+.v-eco-award .leading-snug {
+  line-height: 1.375;
+}
+.v-eco-award .leading-tight {
+  line-height: 1.25;
+}
+.v-eco-award .tracking-tight {
+  letter-spacing: -0.025em;
+}
+.v-eco-award .tracking-wide {
+  letter-spacing: 0.025em;
+}
+.v-eco-award .tracking-wider {
+  letter-spacing: 0.05em;
+}
+.v-eco-award .text-\[\#0051df\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 81 223 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-\[\#0B1530\] {
+  --tw-text-opacity: 1;
+  color: rgb(11 21 48 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-\[\#2F6BFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(47 107 255 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-\[\#64748B\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-\[\#94A3B8\] {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-amber-700 {
+  --tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-emerald-700 {
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 81 223 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-slate-400 {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-tertiary {
+  --tw-text-opacity: 1;
+  color: rgb(79 95 117 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.v-eco-award .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-eco-award .outline {
+  outline-style: solid;
+}
+.v-eco-award .grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-eco-award .backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.v-eco-award .transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-award .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-award .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-award .transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-award .duration-150 {
+  transition-duration: 150ms;
+}
+.v-eco-award .duration-200 {
+  transition-duration: 200ms;
+}
+.v-eco-award .hover\:border-slate-300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+.v-eco-award .hover\:bg-\[\#1E293B\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .hover\:bg-slate-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+.v-eco-award .hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 81 223 / var(--tw-text-opacity, 1));
+}
+.v-eco-award .hover\:underline:hover {
+  text-decoration-line: underline;
+}
+.v-eco-award .group:hover .group-hover\:-translate-x-0\.5 {
+  --tw-translate-x: -0.125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-eco-award .group:hover .group-hover\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 81 223 / var(--tw-text-opacity, 1));
+}
+@media (min-width: 640px) {
+
+  .v-eco-award .sm\:h-32 {
+    height: 8rem;
+  }
+
+  .v-eco-award .sm\:w-32 {
+    width: 8rem;
+  }
+
+  .v-eco-award .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .v-eco-award .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-eco-award .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .v-eco-award .sm\:p-7 {
+    padding: 1.75rem;
+  }
+
+  .v-eco-award .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .v-eco-award .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .v-eco-award .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .v-eco-award .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .v-eco-award .md\:flex {
+    display: flex;
+  }
+
+  .v-eco-award .md\:px-gutter-desktop {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .v-eco-award .md\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .v-eco-award .md\:font-display-hero {
+    font-family: IBM Plex Sans, sans-serif;
+  }
+
+  .v-eco-award .md\:text-display-hero {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1024px) {
+
+  .v-eco-award .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .v-eco-award .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .v-eco-award .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .v-eco-award .lg\:justify-end {
+    justify-content: flex-end;
+  }
+}
+
+/* Award pages start below the site's fixed header (they began 3-36px underneath it,
+   hiding the badge row). --site-header-height is published by Header.tsx. */
+.v-eco-award main > section:first-child { padding-top: calc(var(--site-header-height, 76px) + 40px); }
+@media (min-width: 768px) {
+  .v-eco-award main > section:first-child { padding-top: calc(var(--site-header-height, 76px) + 56px); }
+}

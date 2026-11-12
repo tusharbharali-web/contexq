@@ -1,0 +1,366 @@
+/* Generated from public/html/contexq-mule-merged (1).html: the page's own CSS, scoped to .v-solution-fraud. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-solution-fraud *:not(svg, svg *), .v-solution-fraud ::before, .v-solution-fraud ::after) { all: revert; }
+:where(.v-solution-fraud svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-solution-fraud) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-solution-fraud > .cq-body) { display: block; margin: 8px; }
+.v-solution-fraud.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-solution-fraud :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-solution-fraud > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-solution-fraud main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+/* ----------------------------------------------------
+   ContexQ Design Tokens from style.css
+---------------------------------------------------- */
+.v-solution-fraud {
+  /* Navy Surfaces */
+  --navy-950: #050F1C;
+  --navy-900: #081A2E;
+  --navy-850: #0C2038;
+  --navy-800: #111C2B;
+  --navy-700: #1E2D42;
+
+  /* Blue */
+  --blue-100: #E6F0FF;
+  --blue-400: #5BA0FF;
+  --blue-500: #2F86FF;
+  --blue-600: #1F6FEB;
+
+  /* Neutrals */
+  --white: #FFFFFF;
+  --slate-50: #F3F6FB;
+  --slate-200: #E1E7F0;
+  --slate-400: #93A4BF;
+  --slate-500: #5B6B86;
+  --slate-600: #475873;
+  --ink-900: #0B1B2E;
+
+  /* Category accents */
+  --accent-amber: #F5A524;
+  --accent-cyan: #22C3E6;
+  --accent-green: #34D399;
+  --accent-violet: #8B7CF6;
+  --accent-coral: #F4647A;
+
+  /* Border-radius tokens */
+  --radius-cta: 4px;
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 999px;
+
+  /* Aliasing */
+  --bg: var(--navy-950);
+  --bg-2: #030814;
+  --surface: var(--navy-900);
+  --line: var(--navy-700);
+  --line-2: #2A3C63;
+  --text: var(--white);
+  --muted: var(--slate-400);
+  --faint: var(--slate-500);
+  --brand: var(--navy-950);
+  --brand-2: #0F1F72;
+  --brand-3: var(--blue-500);
+  --cyan: var(--accent-cyan);
+  --cyan-soft: #9FE3F7;
+  --q: #F26B3A;
+  --paper: var(--slate-50);
+  --paper-2: #E7EDF6;
+  --paper-line: var(--slate-200);
+  --ink: var(--ink-900);
+  --ink-muted: var(--slate-600);
+  --rel: #A9B8E8;
+  --review: var(--accent-amber);
+  --review-ink: #7A4E00;
+  --risk: var(--accent-coral);
+  --ok: var(--accent-green);
+  --font: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color-scheme: dark;
+}
+
+.v-solution-fraud *, .v-solution-fraud { box-sizing: border-box; }
+.v-solution-fraud { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+.v-solution-fraud .cq-body {
+  margin: 0;
+  background: var(--navy-950);
+  color: var(--text);
+  font: 400 16px/1.6 var(--font);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.v-solution-fraud canvas,.v-solution-fraud  svg { display: block; }
+.v-solution-fraud a { color: inherit; }
+.v-solution-fraud button { font: inherit; color: inherit; }
+.v-solution-fraud h1,.v-solution-fraud  h2,.v-solution-fraud  h3,.v-solution-fraud  h4 { margin: 0; font-weight: 600; letter-spacing: -0.02em; text-wrap: balance; }
+.v-solution-fraud p { margin: 0; }
+.v-solution-fraud :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 2px; }
+.v-solution-fraud .wrap { width: min(1220px, calc(100% - 48px)); margin-inline: auto; }
+.v-solution-fraud .skip { position: absolute; left: 16px; top: -80px; z-index: 100; background: var(--cyan); color: #031026; padding: 10px 14px; border-radius: var(--radius-cta); font-weight: 600; text-decoration: none; }
+.v-solution-fraud .skip:focus { top: 12px; }
+.v-solution-fraud h2 { font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; }
+.v-solution-fraud .lead { font-size: 18px; line-height: 1.55; color: var(--muted); max-width: 46ch; }
+.v-solution-fraud section { padding: 96px 0; }
+.v-solution-fraud .section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: end; margin-bottom: 56px; }
+.v-solution-fraud .section-head p { color: var(--muted); font-size: 17px; max-width: 46ch; }
+.v-solution-fraud .light { background: var(--paper); color: var(--ink); }
+.v-solution-fraud .light .section-head p { color: var(--ink-muted); }
+
+/* Unified Sentence Color & Italics Neutralization */
+.v-solution-fraud h1 em,.v-solution-fraud  h2 em,.v-solution-fraud  h3 em,.v-solution-fraud  p em,.v-solution-fraud  span em,.v-solution-fraud  h1 .accent,.v-solution-fraud  h2 .accent {
+  color: inherit !important;
+  font-style: normal !important;
+}
+
+/* Buttons conforming to style.css */
+.v-solution-fraud .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: var(--radius-cta);
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.v-solution-fraud .btn-primary { background: var(--blue-500); color: #FFFFFF; }
+.v-solution-fraud .btn-primary:hover { background: var(--blue-400); }
+.v-solution-fraud .btn-ghost { background: transparent; border-color: var(--line); color: var(--text); }
+.v-solution-fraud .btn-ghost:hover { border-color: var(--cyan); }
+.v-solution-fraud .icon-btn { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); background: var(--bg); cursor: pointer; color: var(--muted); font-size: 13px; flex: none; }
+.v-solution-fraud .icon-btn:hover { border-color: var(--cyan); color: var(--text); }
+.v-solution-fraud .icon-btn svg { width: 15px; height: 15px; }
+
+/* ----------------------------------------------------
+   Hero Section (Header text locked to 44px)
+---------------------------------------------------- */
+.v-solution-fraud .hero { position: relative; isolation: isolate; overflow: hidden; border-bottom: 1px solid var(--line); padding: 0; }
+.v-solution-fraud #heroCanvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+.v-solution-fraud .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, var(--bg) 0%, rgba(5,15,28,.88) 30%, rgba(5,15,28,0) 50%), linear-gradient(0deg, var(--bg) 0%, rgba(5,15,28,0) 16%); }
+.v-solution-fraud .hero-grid { display: grid; grid-template-columns: minmax(0, 4.2fr) minmax(0, 7fr); align-items: center; gap: 24px; min-height: min(800px, calc(100svh - 40px)); padding-block: 40px; }
+.v-solution-fraud .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--line); border-radius: var(--radius-pill); font-size: 13px; color: var(--cyan-soft); background: rgba(5,15,28,.7); }
+.v-solution-fraud .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); }
+
+/* Hero section header text size strictly 44px */
+.v-solution-fraud .hero h1,.v-solution-fraud 
+#heroTitle {
+  font-size: 44px !important;
+  line-height: 52px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  margin: 24px 0 20px;
+  max-width: 14ch;
+  color: var(--white) !important;
+}
+.v-solution-fraud .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.v-solution-fraud .hero-stage { position: relative; height: clamp(560px, 74vh, 680px); margin-top: clamp(80px, 8vw, 120px); }
+.v-solution-fraud .hero-foot { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; gap: 12px; }
+.v-solution-fraud .hero-key { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: center; font-size: 12.5px; color: var(--faint); }
+.v-solution-fraud .hero-key span { display: inline-flex; align-items: center; gap: 7px; }
+.v-solution-fraud .hero-key i { display: inline-block; }
+.v-solution-fraud .k-rec { width: 9px; height: 9px; border: 1.3px solid var(--cyan); border-radius: 2px; }
+.v-solution-fraud .k-pay { width: 20px; height: 2px; background: var(--cyan); position: relative; }
+.v-solution-fraud .k-pay::after { content: ""; position: absolute; right: -1px; top: -2.5px; width: 7px; height: 7px; border-radius: 50%; background: #E7F8FE; }
+.v-solution-fraud .k-rel { width: 20px; border-top: 1.6px dashed var(--rel); }
+.v-solution-fraud .k-rev { color: var(--review); font-style: normal; font-weight: 700; }
+.v-solution-fraud .hero-ctl { display: flex; align-items: stretch; gap: 10px; }
+.v-solution-fraud .hsteps { flex: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; list-style: none; margin: 0; padding: 0; }
+.v-solution-fraud .hstep { width: 100%; text-align: left; background: rgba(5,15,28,.7); border: 0; padding: 0; cursor: pointer; color: var(--faint); }
+.v-solution-fraud .hstep .bar { display: block; height: 2px; background: var(--line); position: relative; overflow: hidden; margin-bottom: 8px; }
+.v-solution-fraud .hstep .bar::after { content: ""; position: absolute; inset: 0; width: var(--p, 0%); background: var(--cyan); }
+.v-solution-fraud .hsteps li:last-child .bar::after { background: var(--review); }
+.v-solution-fraud .hstep strong { display: block; font-size: 14.5px; font-weight: 600; }
+.v-solution-fraud .hstep small { display: block; font-size: 12.5px; line-height: 1.4; margin-top: 2px; color: var(--faint); }
+.v-solution-fraud .hstep[aria-current="step"] { color: var(--text); }
+.v-solution-fraud .hstep[aria-current="step"] small { color: var(--muted); }
+.v-solution-fraud .hero-btns { display: flex; gap: 8px; align-items: flex-start; padding-top: 10px; }
+.v-solution-fraud .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 14.5px; color: var(--muted); }
+.v-solution-fraud .hero-note span { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 4px rgba(34, 195, 230, 0.14); flex: none; }
+.v-solution-fraud .kicker { display: block; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--cyan); margin-bottom: 14px; }
+.v-solution-fraud .light .kicker { color: var(--brand-3); }
+.v-solution-fraud .note { font-size: 13px; color: var(--faint); margin-top: 22px; }
+.v-solution-fraud .light .note { color: var(--ink-muted); }
+
+/* Challenge */
+.v-solution-fraud .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--paper-line); border-bottom: 1px solid var(--paper-line); }
+.v-solution-fraud .stats div { padding: 28px 24px 28px 0; }
+.v-solution-fraud .stats div + div { padding-left: 24px; border-left: 1px solid var(--paper-line); }
+.v-solution-fraud .stats b { display: block; font-size: clamp(30px, 3vw, 42px); line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); }
+.v-solution-fraud .stats span { display: block; margin-top: 10px; font-size: 15px; color: var(--ink-muted); max-width: 24ch; }
+
+/* Where it fits */
+.v-solution-fraud .steps4 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.v-solution-fraud .steps4 li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-panel); padding: 22px; display: flex; flex-direction: column; }
+.v-solution-fraud .s-ic { width: 40px; height: 40px; border-radius: var(--radius-card); display: grid; place-items: center; background: #0F2350; color: var(--cyan); margin-bottom: 14px; }
+.v-solution-fraud .s-ic svg { width: 20px; height: 20px; }
+.v-solution-fraud .steps4 h3 { font-size: 19px; margin-bottom: 14px; }
+.v-solution-fraud .steps4 p { font-size: 15px; line-height: 1.45; }
+.v-solution-fraud .steps4 p b { display: block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 3px; }
+.v-solution-fraud .steps4 .today { color: var(--faint); padding-bottom: 14px; }
+.v-solution-fraud .steps4 .with { margin-top: auto; min-height: 104px; padding: 14px; border-radius: var(--radius-card); background: rgba(34, 195, 230, 0.05); border: 1px solid rgba(34, 195, 230, 0.16); color: var(--text); transition: all .4s; }
+.v-solution-fraud .steps4 .with b { color: var(--cyan); }
+.v-solution-fraud .steps4.in .with { background: rgba(34, 195, 230, 0.12); border-color: rgba(34, 195, 230, 0.45); box-shadow: 0 0 24px rgba(34, 195, 230, 0.12); }
+
+/* How it works */
+.v-solution-fraud .hw { position: relative; }
+.v-solution-fraud .hw-line { position: absolute; left: 0; right: 0; top: 4px; width: 100%; height: 40px; }
+.v-solution-fraud .hw-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; position: relative; }
+.v-solution-fraud .hw-ic { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: #fff; border: 2px solid var(--brand-3); color: var(--brand-3); margin-bottom: 18px; box-shadow: 0 0 0 6px var(--paper); }
+.v-solution-fraud .hw-steps li:last-child .hw-ic { border-color: #E2A626; color: #B07A0E; }
+.v-solution-fraud .hw-ic svg { width: 22px; height: 22px; }
+.v-solution-fraud .hw-steps h3 { font-size: 19px; color: var(--ink); margin-bottom: 6px; }
+.v-solution-fraud .hw-steps p { font-size: 15px; color: var(--ink-muted); }
+.v-solution-fraud .hw-loop { margin-top: 28px; display: inline-flex; gap: 10px; align-items: center; padding: 10px 18px; border-radius: var(--radius-pill); background: #fff; border: 1px solid var(--paper-line); font-size: 14.5px; color: var(--ink); }
+.v-solution-fraud .hw-loop span { color: var(--brand-3); font-weight: 700; }
+
+/* Examples */
+.v-solution-fraud .exs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 18px; }
+.v-solution-fraud .exc { border: 1px solid var(--line); border-radius: var(--radius-panel); background: var(--surface); padding: 20px !important; display: flex !important; flex-direction: column; align-items: stretch; }
+.v-solution-fraud .ctag { order: -2; align-self: flex-start; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--cyan); margin-bottom: 6px; }
+.v-solution-fraud .ctag.pf { color: #F2B84B; }
+.v-solution-fraud .exc h3 { order: -1; font-size: 18px !important; margin-bottom: 14px; }
+.v-solution-fraud .exfig { position: relative; border-radius: var(--radius-card); background: #060E20; border: 1px solid var(--line); padding: 6px; margin-bottom: 14px !important; }
+.v-solution-fraud .exfig::before { content: "Alert view"; position: absolute; top: 8px; left: 10px; font-size: 11.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--faint); }
+.v-solution-fraud .exc.on .exfig::before { content: "ContexQ view"; color: var(--cyan); }
+.v-solution-fraud .exfig svg { width: 100%; height: auto; margin-top: 14px; }
+.v-solution-fraud .exfig text { font: 500 13px "Hanken Grotesk", system-ui, sans-serif; fill: #A3B2CC; }
+.v-solution-fraud .exfig .w { fill: #E8EEF8; font-weight: 600; }
+.v-solution-fraud .exfig .rd { fill: #F0524F; font-weight: 600; }
+.v-solution-fraud .exfig .am { fill: #F2B84B; font-weight: 600; }
+.v-solution-fraud .exfig .ok { fill: #8FC9A6; }
+.v-solution-fraud .exfig .n { fill: #0A1736; stroke: #5B7BB5; stroke-width: 1.4; }
+.v-solution-fraud .exfig .nc { fill: #0A1736; stroke: var(--cyan); stroke-width: 1.6; }
+.v-solution-fraud .exfig .nr { fill: #0A1736; stroke: #F0524F; stroke-width: 1.8; }
+.v-solution-fraud .exfig .na { fill: #0A1736; stroke: #F2B84B; stroke-width: 1.8; }
+.v-solution-fraud .exfig .pc { fill: none; stroke: var(--cyan); stroke-width: 1.7; }
+.v-solution-fraud .exfig .pr { fill: none; stroke: #F0524F; stroke-width: 2; }
+.v-solution-fraud .exfig .rl { fill: none; stroke: #A9B8E8; stroke-width: 1.4; stroke-dasharray: 5 5; }
+.v-solution-fraud .exfig .rla { fill: none; stroke: #F2B84B; stroke-width: 1.6; stroke-dasharray: 5 5; }
+.v-solution-fraud .exfig .box { fill: #0A1736; stroke: #2A3C63; }
+.v-solution-fraud .exfig .boxa { fill: #1A1A12; stroke: #F2B84B; }
+.v-solution-fraud .exfig .r,.v-solution-fraud  .exfig .c { transition: opacity .7s ease; }
+.v-solution-fraud .exfig .c { opacity: 0; }
+.v-solution-fraud .exc.on .exfig .c { opacity: 1; }
+.v-solution-fraud .exc.on .exfig .r { opacity: 0; }
+.v-solution-fraud .exc .rows { display: grid; gap: 8px; }
+.v-solution-fraud .exc .rows p { font-size: 14.5px; line-height: 1.4; margin: 0; }
+.v-solution-fraud .exc .rows b { display: block; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1px; }
+.v-solution-fraud .exc .r-wo { color: var(--muted); }
+.v-solution-fraud .exc .r-wo b { color: var(--faint); }
+.v-solution-fraud .exc .r-wi { color: var(--text); }
+.v-solution-fraud .exc .r-wi b { color: var(--cyan); }
+.v-solution-fraud .ex-ctl { margin-top: 16px; text-align: right; }
+.v-solution-fraud .btn-link { cursor: pointer; background: none; border: 0; color: var(--cyan-soft); font-weight: 600; font-size: 14px; padding: 6px 2px; }
+
+/* Action */
+.v-solution-fraud .act { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.v-solution-fraud .act h2 { color: var(--ink); }
+.v-solution-fraud .act-lead { color: var(--ink-muted); font-size: 17px; margin: 16px 0 24px; }
+.v-solution-fraud .act-pts { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.v-solution-fraud .act-pts li { padding-left: 16px; border-left: 3px solid var(--brand-3); font-size: 15px; color: var(--ink-muted); }
+.v-solution-fraud .act-pts b { display: block; color: var(--ink); font-size: 16px; }
+.v-solution-fraud .case { background: var(--bg); border-radius: var(--radius-panel); padding: 22px; border: 1px solid #2A3C63; box-shadow: 0 24px 60px rgba(6,16,40,.25); color: var(--text); }
+.v-solution-fraud .case-h { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.v-solution-fraud .case-h b { font-size: 17px; }
+.v-solution-fraud .pri { font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 4px 10px; border-radius: var(--radius-pill); background: rgba(240,82,79,.14); color: #FF8B88; border: 1px solid rgba(240,82,79,.4); }
+.v-solution-fraud .case-sec { padding-top: 16px; }
+.v-solution-fraud .case-sec small { display: block; font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+.v-solution-fraud .why-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.v-solution-fraud .why-chips span { font-size: 13.5px; padding: 6px 11px; border-radius: var(--radius-pill); background: rgba(242,184,75,.1); border: 1px solid rgba(242,184,75,.35); color: #F5D08A; opacity: 0; transform: translateY(6px); transition: all .4s; }
+.v-solution-fraud .next { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.v-solution-fraud .next li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; font-size: 15px; opacity: 0; transform: translateX(-6px); transition: all .45s; }
+.v-solution-fraud .next i { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--cyan); margin-top: 1px; position: relative; }
+.v-solution-fraud .next i::after { content: ""; position: absolute; left: 6px; top: 2px; width: 5px; height: 10px; border: solid var(--cyan); border-width: 0 2px 2px 0; transform: rotate(45deg); opacity: 0; transition: opacity .3s; }
+.v-solution-fraud .case.in .why-chips span,.v-solution-fraud  .case.in .next li { opacity: 1; transform: none; }
+.v-solution-fraud .case.in .next li:nth-child(1) i::after { opacity: 1; transition-delay: 1.2s; }
+.v-solution-fraud .case-f { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--muted); }
+
+/* Controls Ladder */
+.v-solution-fraud .sees { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 14px; }
+.v-solution-fraud .sees li { border: 1px solid var(--line); border-radius: var(--radius-panel); background: var(--surface); padding: 18px 18px 20px; display: flex; flex-direction: column; opacity: 0; transform: translateY(10px); transition: all .5s; }
+.v-solution-fraud .sees.in li { opacity: 1; transform: none; }
+.v-solution-fraud .sees svg { width: 100%; height: auto; margin-bottom: 14px; border-radius: var(--radius-card); background: #060E20; border: 1px solid var(--line); }
+.v-solution-fraud .sees b { font-size: 17px; margin-bottom: 6px; }
+.v-solution-fraud .sees .s { font-size: 14px !important; color: var(--cyan) !important; margin-bottom: 6px; }
+.v-solution-fraud .sees .m { font-size: 14.5px; color: var(--muted); }
+.v-solution-fraud .sees .ctx path { stroke: var(--cyan); stroke-width: 1.3; stroke-dasharray: 3 4; fill: none; opacity: 0; transition: opacity .6s; }
+.v-solution-fraud .sees .ctx circle { fill: #0A1736; stroke: var(--cyan); stroke-width: 1.4; opacity: 0; transition: opacity .6s; }
+.v-solution-fraud .sees.in .ctx path,.v-solution-fraud  .sees.in .ctx circle { opacity: 1; transition-delay: .7s; }
+.v-solution-fraud .sees .acc { fill: #0A1736; stroke: #5B7BB5; stroke-width: 1.6; }
+.v-solution-fraud .sees .lim { stroke: #F0524F; stroke-width: 1.4; stroke-dasharray: 4 4; }
+.v-solution-fraud .sees .dev { fill: #0A1736; stroke: #5B7BB5; stroke-width: 1.4; }
+.v-solution-fraud .sees .ln { stroke: #5B7BB5; stroke-width: 2; stroke-linecap: round; }
+.v-solution-fraud .sees .bar0 { fill: #1A2B52; }
+.v-solution-fraud .sees .bar1 { fill: #5B7BB5; }
+.v-solution-fraud .sees-f { margin-top: 22px; font-size: 16px; color: var(--text); }
+
+/* Gains */
+.v-solution-fraud .gains.g4 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.v-solution-fraud .gains.g4 li { background: #fff; border: 1px solid var(--paper-line); border-radius: var(--radius-panel); padding: 24px; }
+.v-solution-fraud .g-ic { width: 44px; height: 44px; border-radius: var(--radius-card); display: grid; place-items: center; background: var(--paper-2); color: var(--brand-3); margin-bottom: 18px; }
+.v-solution-fraud .g-ic svg { width: 22px; height: 22px; }
+.v-solution-fraud .gains.g4 h3 { font-size: 19px; color: var(--ink); margin-bottom: 8px; }
+.v-solution-fraud .gains.g4 p { color: var(--ink-muted); font-size: 15px; }
+
+/* ----------------------------------------------------
+   Trust & Embedded CTA (Unified Dark Background)
+---------------------------------------------------- */
+.v-solution-fraud #trust {
+  background: var(--navy-950);
+  padding-bottom: 64px;
+}
+.v-solution-fraud .trust { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.v-solution-fraud .trust li { border-top: 2px solid var(--cyan); padding-top: 16px; }
+.v-solution-fraud .trust b { display: block; font-size: 17px; color: var(--text); margin-bottom: 4px; }
+.v-solution-fraud .trust span { font-size: 15px; color: var(--muted); }
+
+/* Seamlessly embedded CTA section inheriting unified surface */
+.v-solution-fraud .cta {
+  background: var(--paper) !important;
+  color: var(--ink);
+  border-top: 1px solid var(--paper-line);
+  padding: 80px 0 104px;
+}
+.v-solution-fraud .cta-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 56px; align-items: end; }
+.v-solution-fraud .cta h2 { font-size: clamp(32px, 3.8vw, 44px); line-height: 1.1; letter-spacing: -0.03em; max-width: 20ch; color: var(--ink); }
+.v-solution-fraud .cta .lead { color: #334155; margin-top: 18px; }
+.v-solution-fraud .cta-act { display: flex; flex-direction: column; gap: 10px; justify-self: end; max-width: 320px; }
+.v-solution-fraud .cta-act small { font-size: 13px; color: #475569; }
+.v-solution-fraud .cta-act small a { color: #0b63d6; text-decoration: underline; }
+
+/* Responsive Adjustments */
+@media (max-width: 980px) {
+  .v-solution-fraud .hero-grid { grid-template-columns: 1fr; min-height: 0; padding-block: 40px 28px; }
+  .v-solution-fraud .section-head,.v-solution-fraud  .cta-grid,.v-solution-fraud  .act { grid-template-columns: 1fr; gap: 24px; }
+  .v-solution-fraud .steps4,.v-solution-fraud  .exs,.v-solution-fraud  .sees { grid-template-columns: 1fr 1fr !important; }
+  .v-solution-fraud .gains.g4 { grid-template-columns: 1fr 1fr; }
+  .v-solution-fraud .trust { grid-template-columns: 1fr 1fr; }
+  .v-solution-fraud .cta-act { justify-self: start; }
+}
+@media (max-width: 640px) {
+  .v-solution-fraud .wrap { width: calc(100% - 32px); }
+  .v-solution-fraud section { padding: 64px 0; }
+  .v-solution-fraud .hero h1,.v-solution-fraud  #heroTitle { font-size: 34px !important; line-height: 42px !important; }
+  .v-solution-fraud .hero-stage { height: 640px; }
+  .v-solution-fraud .hsteps { grid-template-columns: 1fr 1fr; }
+  .v-solution-fraud .hstep small { display: none; }
+  .v-solution-fraud .stats { grid-template-columns: 1fr; }
+  .v-solution-fraud .stats div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--paper-line); }
+  .v-solution-fraud .steps4,.v-solution-fraud  .exs,.v-solution-fraud  .sees,.v-solution-fraud  .gains.g4,.v-solution-fraud  .trust,.v-solution-fraud  .hw-steps { grid-template-columns: 1fr !important; }
+  .v-solution-fraud .hw-line { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v-solution-fraud { scroll-behavior: auto; }
+  .v-solution-fraud *,.v-solution-fraud  *::before,.v-solution-fraud  *::after, .v-solution-fraud, .v-solution-fraud::before, .v-solution-fraud::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
+}
+
+

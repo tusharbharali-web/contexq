@@ -1,0 +1,92 @@
+{
+  "pressReleases": [
+    {
+      "id": 1,
+      "location": "Singapore",
+      "date": "April 14, 2025",
+      "type": "Press Release",
+      "contentImage" : "",
+      "fullContentImage" : "",
+      "title": "ContexQ Appoints Partha Dasgupta as Chief Mentor & Head of Business Development, India & Middle East to Spearhead Growth in Key Market",
+      "fullContent": [
+        "<p>ContexQ, a B2B deep tech startup with a contextual decision intelligence platform, dedicated to driving digital transformation and delivering innovative business insights, today announced the strategic appointment of Partha Dasgupta as its Chief Mentor & Head of Business Development, India.</p>",
+        "<p>This key addition to the leadership team underscores ContexQ’s commitment to expanding its footprint and fueling substantial growth in the dynamic Indian & Middle East markets.</p>",
+        "<p>Partha Dasgupta brings over 25 years of rich and diverse experience in business development, strategic leadership, and market expansion across sectors including technology, finance, and manufacturing. His distinguished career, marked by a track record of crafting and executing impactful business strategies, forging high-value partnerships, and leading teams to achieve significant milestones, positions him perfectly to drive ContexQ’s ambitious growth objectives in India and the Middle East.</p>",
+        "<p>With an in-depth understanding of the Indian business landscape and a strategic vision, Partha is set to play a pivotal role in accelerating the company’s market presence.</p>",
+        "<h2>Leadership Quote</h2>",
+        "<p>\"Partha’s appointment reflects our confidence in the India and Middle East markets and our commitment to delivering world-class solutions,\" said Ajay Kakarania, Founder and CEO of ContexQ. \"His strategic vision and extensive network will accelerate our growth and help us serve customers more effectively.\"</p>",
+        "<p>This appointment is part of ContexQ’s broader strategy to strengthen its global presence and deliver localized support to enterprise customers.</p>"
+      ],
+      "quotes":[
+        {
+          "author": "Ajay Kakarania, Chief Executive Officer, ContexQ",
+          "profileImage": "/assets/images/Team/Ajay_Kakarania.webp",
+          "text": "We are delighted to welcome Partha to our leadership team. His extensive expertise in emerging markets and strategic partnerships will be instrumental in accelerating our expansion in India"
+        },
+        {
+          "author": "Partha Dasgupta",
+          "profileImage": "/assets/images/Ecosystem/Partha-DasGupta-1.webp",
+          "text": "I am honored to join ContexQ and excited about the tremendous opportunities in the Indian market. I look forward to working with our talented teams to deliver innovative solutions and drive strategic growth in this key market."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "location": "Singapore",
+      "date": "September 1, 2025",
+      "type": "Press Release",
+      "contentImage" : "",
+      "fullContentImage" : "",
+      "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO to Power the Next Chapter of Contextual AI",
+      "fullContent": [
+        "<p>We’re excited to welcome Jean-Michel Coeur as the Co-Founder and Chief Technology Officer (CTO) at ContexQ, bringing a unique blend of deep technical expertise, entrepreneurial vision, and global perspective to lead our product and technology strategy.</p>",
+        "<p>Jean-Michel brings over 20 years of experience leading engineering, data, and AI teams across Europe, the U.S., and Asia. Throughout his career, he has helped organisations, from startups to global giants, build and scale cutting-edge technology that solves real-world problems and drives meaningful business impact.</p>",
+        "<h2>Technical Leadership & Vision</h2>",
+        "<p>As CTO, Jean-Michel will lead ContexQ’s product and technology vision, building a smarter, faster, and more contextual intelligence platform that empowers businesses to make decisions that matter. His focus will be on leveraging advanced graph technology and AI to solve complex data challenges across multiple industries.</p>",
+        "<p>From banking to supply chains, from compliance to ESG initiatives, our mission is to bring context into every decision, and Jean-Michel’s technical leadership will be instrumental in advancing this vision. His experience scaling distributed teams and complex systems will accelerate ContexQ’s growth and innovation.</p>",
+        "<h2>About the Role</h2>",
+        "<p>In his capacity as Co-Founder and CTO, Jean-Michel will oversee all aspects of product development, technology infrastructure, and engineering excellence. He will work closely with the executive team to define ContexQ’s technical roadmap and ensure the platform maintains its competitive edge in the rapidly evolving data intelligence market.</p>"
+      ],
+      "quotes":[
+        {
+          "author": "Ajay Kakarania, Chief Executive Officer, ContexQ",
+          "profileImage": "/assets/images/Team/Ajay_Kakarania.webp",
+          "text": "Jean-Michel isn’t just a brilliant technologist. He’s someone who understands how to turn complex data into practical, meaningful impact,”. We’re thrilled to have him as a co-founder as we grow into a category-defining platform."
+        },
+        {
+          "author": "Jean-Michel Coeur",
+          "profileImage": "/assets/images/Team/Jean_Michel_Coeur.webp",
+          "text": "The opportunity to co-build a platform like ContexQ, with a mission this bold and a team this passionate, is truly special. We’re not just building another AI tool; we’re helping businesses make better decisions with the full picture in view. I couldn’t be more excited."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "location": "Singapore",
+      "date": "April 30, 2025",
+      "type": "Press Release",
+      "contentImage" : "/assets/images/Team/Gilbert_Kohnke.webp",
+      "fullContentImage" : "",
+      "title": "Gilbert Kohnke Invited to Speak at Asia Investment Conference 2026",
+      "fullContent": [
+        "<p>Gilbert Kohnke has been invited to speak at the prestigious Asia Investment Conference 2026, taking place on September 17-18, 2026, in Singapore.</p>",
+        "<p>The conference will convene over 400 participants across two days, including more than 300 global investors, alongside senior operators, policymakers, and institutional decision-makers. It is recognised as a key platform for dialogue on investment trends, innovation, and the future of enterprise systems in Asia and beyond.</p>"
+      ],
+      "quotes":[]
+    },
+    {
+      "id": 4,
+      "location": "Singapore",
+      "date": "April 30, 2025",
+      "type": "Press Release",
+      "contentImage" : "/assets/images/Team/Jean_Michel_Coeur.webp",
+      "fullContentImage" : "/assets/images/Ecosystem/Cto_banner.jpeg",
+      "title": "Jean-Michel, CTO, to Speak at Asia Tech x Singapore 2026",
+      "fullContent": [
+        "<p>Jean-Michel, Chief Technology Officer at ContexQ, will be speaking at Asia Tech x Singapore (ATxSG), one of Asia’s leading technology forums, held in Singapore.</p>",
+        "<p>Asia Tech x Singapore brings together global technology leaders, innovators, policymakers, and enterprise decision-makers to explore the future of digital transformation, emerging technologies, and innovation ecosystems across the region.</p>"
+      ],
+      "quotes":[]
+    }
+  ]
+}

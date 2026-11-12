@@ -1,0 +1,1286 @@
+/* Generated from public/eco-skin/insights.html: the page's own CSS, scoped to .v-eco-insights. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-eco-insights *:not(svg, svg *), .v-eco-insights ::before, .v-eco-insights ::after) { all: revert; }
+:where(.v-eco-insights svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-eco-insights) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-eco-insights > .cq-body) { display: block; margin: 8px; }
+.v-eco-insights.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-eco-insights :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-eco-insights > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-eco-insights main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+  .v-eco-insights { scrollbar-gutter: stable; }
+  .v-eco-insights .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+.v-eco-insights *,.v-eco-insights  ::before,.v-eco-insights  ::after, .v-eco-insights {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.v-eco-insights ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.v-eco-insights *,.v-eco-insights 
+::before,.v-eco-insights 
+::after, .v-eco-insights {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.v-eco-insights ::before,.v-eco-insights 
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.v-eco-insights,.v-eco-insights {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: IBM Plex Sans, sans-serif; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.v-eco-insights .cq-body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.v-eco-insights hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.v-eco-insights abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.v-eco-insights h1,.v-eco-insights 
+h2,.v-eco-insights 
+h3,.v-eco-insights 
+h4,.v-eco-insights 
+h5,.v-eco-insights 
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.v-eco-insights a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.v-eco-insights b,.v-eco-insights 
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.v-eco-insights code,.v-eco-insights 
+kbd,.v-eco-insights 
+samp,.v-eco-insights 
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.v-eco-insights small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.v-eco-insights sub,.v-eco-insights 
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.v-eco-insights sub {
+  bottom: -0.25em;
+}
+
+.v-eco-insights sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.v-eco-insights table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.v-eco-insights button,.v-eco-insights 
+input,.v-eco-insights 
+optgroup,.v-eco-insights 
+select,.v-eco-insights 
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.v-eco-insights button,.v-eco-insights 
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.v-eco-insights button,.v-eco-insights 
+input:where([type='button']),.v-eco-insights 
+input:where([type='reset']),.v-eco-insights 
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.v-eco-insights :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.v-eco-insights :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.v-eco-insights progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.v-eco-insights ::-webkit-inner-spin-button,.v-eco-insights 
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.v-eco-insights [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.v-eco-insights ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.v-eco-insights ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.v-eco-insights summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.v-eco-insights blockquote,.v-eco-insights 
+dl,.v-eco-insights 
+dd,.v-eco-insights 
+h1,.v-eco-insights 
+h2,.v-eco-insights 
+h3,.v-eco-insights 
+h4,.v-eco-insights 
+h5,.v-eco-insights 
+h6,.v-eco-insights 
+hr,.v-eco-insights 
+figure,.v-eco-insights 
+p,.v-eco-insights 
+pre {
+  margin: 0;
+}
+
+.v-eco-insights fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.v-eco-insights legend {
+  padding: 0;
+}
+
+.v-eco-insights ol,.v-eco-insights 
+ul,.v-eco-insights 
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.v-eco-insights dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.v-eco-insights textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.v-eco-insights input::placeholder,.v-eco-insights 
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.v-eco-insights button,.v-eco-insights 
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.v-eco-insights :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.v-eco-insights img,.v-eco-insights 
+svg,.v-eco-insights 
+video,.v-eco-insights 
+canvas,.v-eco-insights 
+audio,.v-eco-insights 
+iframe,.v-eco-insights 
+embed,.v-eco-insights 
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.v-eco-insights img,.v-eco-insights 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.v-eco-insights [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.v-eco-insights [type='text'],.v-eco-insights input:where(:not([type])),.v-eco-insights [type='email'],.v-eco-insights [type='url'],.v-eco-insights [type='password'],.v-eco-insights [type='number'],.v-eco-insights [type='date'],.v-eco-insights [type='datetime-local'],.v-eco-insights [type='month'],.v-eco-insights [type='search'],.v-eco-insights [type='tel'],.v-eco-insights [type='time'],.v-eco-insights [type='week'],.v-eco-insights [multiple],.v-eco-insights textarea,.v-eco-insights select {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-eco-insights [type='text']:focus,.v-eco-insights  input:where(:not([type])):focus,.v-eco-insights  [type='email']:focus,.v-eco-insights  [type='url']:focus,.v-eco-insights  [type='password']:focus,.v-eco-insights  [type='number']:focus,.v-eco-insights  [type='date']:focus,.v-eco-insights  [type='datetime-local']:focus,.v-eco-insights  [type='month']:focus,.v-eco-insights  [type='search']:focus,.v-eco-insights  [type='tel']:focus,.v-eco-insights  [type='time']:focus,.v-eco-insights  [type='week']:focus,.v-eco-insights  [multiple]:focus,.v-eco-insights  textarea:focus,.v-eco-insights  select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #2563eb;
+}
+
+.v-eco-insights input::placeholder,.v-eco-insights textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.v-eco-insights ::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.v-eco-insights ::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  text-align: inherit;
+}
+
+.v-eco-insights ::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+.v-eco-insights ::-webkit-datetime-edit,.v-eco-insights ::-webkit-datetime-edit-year-field,.v-eco-insights ::-webkit-datetime-edit-month-field,.v-eco-insights ::-webkit-datetime-edit-day-field,.v-eco-insights ::-webkit-datetime-edit-hour-field,.v-eco-insights ::-webkit-datetime-edit-minute-field,.v-eco-insights ::-webkit-datetime-edit-second-field,.v-eco-insights ::-webkit-datetime-edit-millisecond-field,.v-eco-insights ::-webkit-datetime-edit-meridiem-field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.v-eco-insights select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+}
+
+.v-eco-insights [multiple],.v-eco-insights [size]:where(select:not([size="1"])) {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  print-color-adjust: unset;
+}
+
+.v-eco-insights [type='checkbox'],.v-eco-insights [type='radio'] {
+  appearance: none;
+  padding: 0;
+  print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-eco-insights [type='checkbox'] {
+  border-radius: 0px;
+}
+
+.v-eco-insights [type='radio'] {
+  border-radius: 100%;
+}
+
+.v-eco-insights [type='checkbox']:focus,.v-eco-insights [type='radio']:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.v-eco-insights [type='checkbox']:checked,.v-eco-insights [type='radio']:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.v-eco-insights [type='checkbox']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-insights [type='checkbox']:checked {
+    appearance: auto;
+  }
+}
+
+.v-eco-insights [type='radio']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-insights [type='radio']:checked {
+    appearance: auto;
+  }
+}
+
+.v-eco-insights [type='checkbox']:checked:hover,.v-eco-insights [type='checkbox']:checked:focus,.v-eco-insights [type='radio']:checked:hover,.v-eco-insights [type='radio']:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-eco-insights [type='checkbox']:indeterminate {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active)  {
+
+  .v-eco-insights [type='checkbox']:indeterminate {
+    appearance: auto;
+  }
+}
+
+.v-eco-insights [type='checkbox']:indeterminate:hover,.v-eco-insights [type='checkbox']:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-eco-insights [type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+.v-eco-insights [type='file']:focus {
+  outline: 1px solid ButtonText;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.v-eco-insights .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.v-eco-insights .static {
+  position: static;
+}
+.v-eco-insights .sticky {
+  position: sticky;
+}
+.v-eco-insights .top-0 {
+  top: 0px;
+}
+.v-eco-insights .top-14 {
+  top: 3.5rem;
+}
+.v-eco-insights .z-30 {
+  z-index: 30;
+}
+.v-eco-insights .z-40 {
+  z-index: 40;
+}
+.v-eco-insights .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.v-eco-insights .mt-3 {
+  margin-top: 0.75rem;
+}
+.v-eco-insights .mt-6 {
+  margin-top: 1.5rem;
+}
+.v-eco-insights .mt-8 {
+  margin-top: 2rem;
+}
+.v-eco-insights .line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.v-eco-insights .block {
+  display: block;
+}
+.v-eco-insights .flex {
+  display: flex;
+}
+.v-eco-insights .inline-flex {
+  display: inline-flex;
+}
+.v-eco-insights .table {
+  display: table;
+}
+.v-eco-insights .grid {
+  display: grid;
+}
+.v-eco-insights .hidden {
+  display: none;
+}
+.v-eco-insights .aspect-video {
+  aspect-ratio: 16 / 9;
+}
+.v-eco-insights .h-14 {
+  height: 3.5rem;
+}
+.v-eco-insights .h-24 {
+  height: 6rem;
+}
+.v-eco-insights .h-28 {
+  height: 7rem;
+}
+.v-eco-insights .h-8 {
+  height: 2rem;
+}
+.v-eco-insights .h-full {
+  height: 100%;
+}
+.v-eco-insights .w-24 {
+  width: 6rem;
+}
+.v-eco-insights .w-36 {
+  width: 9rem;
+}
+.v-eco-insights .w-8 {
+  width: 2rem;
+}
+.v-eco-insights .w-full {
+  width: 100%;
+}
+.v-eco-insights .max-w-\[1240px\] {
+  max-width: 1240px;
+}
+.v-eco-insights .max-w-xl {
+  max-width: 36rem;
+}
+.v-eco-insights .flex-1 {
+  flex: 1 1 0%;
+}
+.v-eco-insights .transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-eco-insights .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.v-eco-insights .flex-col {
+  flex-direction: column;
+}
+.v-eco-insights .flex-wrap {
+  flex-wrap: wrap;
+}
+.v-eco-insights .items-center {
+  align-items: center;
+}
+.v-eco-insights .items-baseline {
+  align-items: baseline;
+}
+.v-eco-insights .justify-center {
+  justify-content: center;
+}
+.v-eco-insights .justify-between {
+  justify-content: space-between;
+}
+.v-eco-insights .gap-1\.5 {
+  gap: 0.375rem;
+}
+.v-eco-insights .gap-2 {
+  gap: 0.5rem;
+}
+.v-eco-insights .gap-3 {
+  gap: 0.75rem;
+}
+.v-eco-insights .gap-4 {
+  gap: 1rem;
+}
+.v-eco-insights .gap-5 {
+  gap: 1.25rem;
+}
+.v-eco-insights .gap-6 {
+  gap: 1.5rem;
+}
+.v-eco-insights .gap-8 {
+  gap: 2rem;
+}
+.v-eco-insights .gap-y-2 {
+  row-gap: 0.5rem;
+}
+.v-eco-insights .gap-y-4 {
+  row-gap: 1rem;
+}
+.v-eco-insights .self-start {
+  align-self: flex-start;
+}
+.v-eco-insights .overflow-hidden {
+  overflow: hidden;
+}
+.v-eco-insights .overflow-x-auto {
+  overflow-x: auto;
+}
+.v-eco-insights .whitespace-nowrap {
+  white-space: nowrap;
+}
+.v-eco-insights .rounded {
+  border-radius: 0.25rem;
+}
+.v-eco-insights .rounded-2xl {
+  border-radius: 1rem;
+}
+.v-eco-insights .rounded-\[4px\] {
+  border-radius: 4px;
+}
+.v-eco-insights .rounded-full {
+  border-radius: 9999px;
+}
+.v-eco-insights .rounded-lg {
+  border-radius: 0.5rem;
+}
+.v-eco-insights .border {
+  border-width: 1px;
+}
+.v-eco-insights .border-b {
+  border-bottom-width: 1px;
+}
+.v-eco-insights .border-t {
+  border-top-width: 1px;
+}
+.v-eco-insights .border-\[\#CBD5E1\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+.v-eco-insights .border-\[\#E2E8F0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+.v-eco-insights .border-primary-container {
+  --tw-border-opacity: 1;
+  border-color: rgb(47 107 255 / var(--tw-border-opacity, 1));
+}
+.v-eco-insights .border-slate-200\/80 {
+  border-color: rgb(226 232 240 / 0.8);
+}
+.v-eco-insights .border-transparent {
+  border-color: transparent;
+}
+.v-eco-insights .bg-\[\#0B1530\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 21 48 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-\[\#2F6BFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 107 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-\[\#EAF0FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 240 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-\[\#F4F6FA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 246 250 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-\[\#F8FAFC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-primary-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 107 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-surface-container-lowest {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .object-cover {
+  object-fit: cover;
+}
+.v-eco-insights .p-6 {
+  padding: 1.5rem;
+}
+.v-eco-insights .px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.v-eco-insights .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.v-eco-insights .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.v-eco-insights .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-eco-insights .px-gutter {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-eco-insights .py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.v-eco-insights .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.v-eco-insights .py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.v-eco-insights .py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.v-eco-insights .py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.v-eco-insights .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.v-eco-insights .py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.v-eco-insights .py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.v-eco-insights .pb-16 {
+  padding-bottom: 4rem;
+}
+.v-eco-insights .pb-6 {
+  padding-bottom: 1.5rem;
+}
+.v-eco-insights .pt-10 {
+  padding-top: 2.5rem;
+}
+.v-eco-insights .text-center {
+  text-align: center;
+}
+.v-eco-insights .font-sans {
+  font-family: IBM Plex Sans, sans-serif;
+}
+.v-eco-insights .text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.v-eco-insights .text-\[28px\] {
+  font-size: 28px;
+}
+.v-eco-insights .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.v-eco-insights .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.v-eco-insights .text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.v-eco-insights .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.v-eco-insights .font-bold {
+  font-weight: 700;
+}
+.v-eco-insights .font-medium {
+  font-weight: 500;
+}
+.v-eco-insights .font-semibold {
+  font-weight: 600;
+}
+.v-eco-insights .leading-relaxed {
+  line-height: 1.625;
+}
+.v-eco-insights .leading-snug {
+  line-height: 1.375;
+}
+.v-eco-insights .leading-tight {
+  line-height: 1.25;
+}
+.v-eco-insights .tracking-tight {
+  letter-spacing: -0.025em;
+}
+.v-eco-insights .text-\[\#0B1530\] {
+  --tw-text-opacity: 1;
+  color: rgb(11 21 48 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-\[\#475569\] {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-\[\#64748B\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-on-surface {
+  --tw-text-opacity: 1;
+  color: rgb(25 28 31 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 81 223 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.v-eco-insights .placeholder-\[\#64748B\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-placeholder-opacity, 1));
+}
+.v-eco-insights .opacity-80 {
+  opacity: 0.8;
+}
+.v-eco-insights .shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-eco-insights .outline {
+  outline-style: solid;
+}
+.v-eco-insights .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-eco-insights .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-insights .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-eco-insights .duration-200 {
+  transition-duration: 200ms;
+}
+.v-eco-insights .selection\:bg-primary-fixed *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 225 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .selection\:text-on-primary-fixed *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 23 77 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .selection\:bg-primary-fixed::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 225 255 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .selection\:text-on-primary-fixed::selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 23 77 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-eco-insights .hover\:bg-\[\#1E56E3\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 86 227 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+.v-eco-insights .hover\:text-\[\#0B1530\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(11 21 48 / var(--tw-text-opacity, 1));
+}
+.v-eco-insights .hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-eco-insights .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.v-eco-insights .focus-visible\:outline:focus-visible {
+  outline-style: solid;
+}
+.v-eco-insights .focus-visible\:outline-2:focus-visible {
+  outline-width: 2px;
+}
+.v-eco-insights .focus-visible\:outline-offset-2:focus-visible {
+  outline-offset: 2px;
+}
+.v-eco-insights .focus-visible\:outline-\[\#2F6BFF\]:focus-visible {
+  outline-color: #2F6BFF;
+}
+.v-eco-insights .focus-visible\:outline-primary:focus-visible {
+  outline-color: #0051df;
+}
+.v-eco-insights .focus-visible\:outline-white:focus-visible {
+  outline-color: #fff;
+}
+.v-eco-insights .focus-visible\:ring-2:focus-visible {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.v-eco-insights .focus-visible\:ring-primary:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(0 81 223 / var(--tw-ring-opacity, 1));
+}
+.v-eco-insights .focus-visible\:ring-white:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
+}
+@media (min-width: 640px) {
+
+  .v-eco-insights .sm\:w-72 {
+    width: 18rem;
+  }
+
+  .v-eco-insights .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-eco-insights .sm\:gap-6 {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .v-eco-insights .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .v-eco-insights .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .v-eco-insights .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .v-eco-insights .md\:gap-x-8 {
+    column-gap: 2rem;
+  }
+
+  .v-eco-insights .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .v-eco-insights .md\:px-gutter-desktop {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .v-eco-insights .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .v-eco-insights .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .v-eco-insights .md\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .v-eco-insights .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .v-eco-insights .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .v-eco-insights .lg\:w-auto {
+    width: auto;
+  }
+
+  .v-eco-insights .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-eco-insights .lg\:items-center {
+    align-items: center;
+  }
+
+  .v-eco-insights .lg\:justify-between {
+    justify-content: space-between;
+  }
+}
+
+/* ecosystem embed skin (was injected globally by ecosystem-shared.js) */
+.v-eco-insights .cq-body,.v-eco-insights .cq-body * { font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif !important; }
+.v-eco-insights .cq-body { background: #ffffff !important; color: #0B1B2E; }
+.v-eco-insights main { padding-top: 0 !important; padding-bottom: 0 !important; }
+.v-eco-insights main > section { padding-top: 72px !important; padding-bottom: 72px !important; }
+.v-eco-insights section.bg-\[\#0B1530\] { background: #F3F6FB !important; color: #0B1B2E !important; border-color: #E1E7F0 !important; }
+.v-eco-insights section.bg-\[\#0B1530\] h1,.v-eco-insights  section.bg-\[\#0B1530\] h2,.v-eco-insights  section.bg-\[\#0B1530\] h3 { color: #0B1B2E !important; }
+.v-eco-insights section.bg-\[\#0B1530\] p,.v-eco-insights  section.bg-\[\#0B1530\] span:not(.px-3) { color: #475873 !important; }
+.v-eco-insights .cq-body > main > :first-child { padding-top: 96px !important; }
+.v-eco-insights .cq-body > main#insights-root > div:first-child,.v-eco-insights .cq-body > main#release-root > div:first-child { padding-top: 96px !important; padding-bottom: 24px !important; }

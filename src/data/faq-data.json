@@ -1,0 +1,83 @@
+{
+  "faqs": [
+    {
+      "sectionTitle": "Platform",
+      "items": [
+        {
+          "question": "Why ContexQ exists?",
+          "answer": "The company was created to help organisations unify their data, gain contextual insights, and make accurate, data-driven decisions by converting complex data into actionable scorecards."
+        },
+        {
+          "question": "What industries does ContexQ serve?",
+          "answer": "The platform serves Financial Services, Healthcare, Manufacturing, and government entities, with applications across supply chain risk, ESG compliance, financial crime, and fraud detection."
+        },
+        {
+          "question": "How does ContexQ provide insights?",
+          "answer": "The platform analyzes people, places, organisations, policies, and rules using explainable AI and pre-trained models, presenting findings through graph-based comparative scorecards."
+        },
+        {
+          "question": "What are the key use cases?",
+          "answer": "Primary applications include geopolitical risk analysis, supply chain assessment, ESG monitoring, customer segmentation, fraud detection, and operational efficiency improvement."
+        },
+        {
+          "question": "Can ContexQ integrate with existing business systems?",
+          "answer": "Yes, the platform integrates with CRM, ERP, and legacy databases while supporting both structured and unstructured data sources."
+        },
+        {
+          "question": "How does ContexQ support decision-making?",
+          "answer": "The system delivers contextual, multi-dimensional insights with real-time risk assessments and early warning signals to enable proactive risk mitigation."
+        },
+        {
+          "question": "How can ContexQ help with ESG compliance?",
+          "answer": "The platform analyzes environmental, social, and governance factors, generating actionable insights on sustainability, climate impact, and labor conditions."
+        },
+        {
+          "question": "What makes ContexQ different from other analytics platforms?",
+          "answer": "It provides multi-dimensional, graph-based contextual insights with pre-trained models offering 12-24 months of early warning signals rather than static dashboards."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Supply Chain",
+      "items": [
+        {
+          "question": "Why are traditional software solutions unable to deal with edge cases?",
+          "answer": "Legacy systems rely on static models and predefined rules, lacking adaptability for complex and interconnected data, whereas ContexQ's AI platform handles real-world complexities."
+        },
+        {
+          "question": "How is ContexQ approaching the solution compared to traditional AI software?",
+          "answer": "The company uses explainable AI models that are pre-trained on billions of external data points with graph-based mapping for earlier risk detection."
+        },
+        {
+          "question": "Why are data authentication and reliability critical?",
+          "answer": "Inaccurate data risks financial, operational, and reputational consequences, so the platform sources from verified registries, financial records, and government databases."
+        },
+        {
+          "question": "What are some common challenges in the industry?",
+          "answer": "Challenges include fragmented data sources, limited supplier visibility, global compliance complexity, and inability to predict geopolitical or climate disruptions."
+        },
+        {
+          "question": "What is ContexQ's commitment to the world of supply chain?",
+          "answer": "The company aims to help organisations build resilient, transparent, and sustainable supply chains by analysing data in real time."
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Entity Resolution",
+      "items": [
+        {
+          "question": "What is Entity Resolution?",
+          "answer": "This process identifies and links records that refer to the same entity across different datasets, helping eliminate duplication and improve accuracy through AI-driven merging."
+        },
+        {
+          "question": "How is ContexQ different from a Graph Database?",
+          "answer": "While graph databases focus on storing relationships, ContexQ adds pre-trained AI models and explainable insights for predictive analysis and early warnings."
+        },
+        {
+          "question": "What is Network Generation?",
+          "answer": "The process creates a visual or computational map of relationships between entities, revealing patterns across interconnected datasets."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+/* Generated from public/html/contexq-careers.html: the page's own CSS, scoped to .v-careers. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-careers *:not(svg, svg *), .v-careers ::before, .v-careers ::after) { all: revert; }
+:where(.v-careers svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-careers) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-careers > .cq-body) { display: block; margin: 8px; }
+.v-careers.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-careers :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-careers > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-careers main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+/* ===== ContexQ design tokens (same as contact page) ===== */
+.v-careers{--bg:#050F1C;--bg2:#081A2E;--surface:#0C2038;--line:#1E2D42;--text:#fff;--muted:#B8C6DA;--faint:#93A4BF;--blue:#2F86FF;--blue-400:#5BA0FF;--blue-600:#1F6FEB;--blue-100:#E6F0FF;--paper:#F3F6FB;--paper-line:#E1E7F0;--ink:#0B1B2E;--ink2:#475873;--font:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+.v-careers *, .v-careers{box-sizing:border-box}.v-careers{scroll-behavior:smooth}
+.v-careers .cq-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.v-careers a{color:inherit}
+.v-careers .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+.v-careers h1,.v-careers h2,.v-careers h3{margin:0;letter-spacing:-.02em;line-height:1.1}
+.v-careers section{padding:104px 0}
+.v-careers .light{background:var(--paper);color:var(--ink)}
+.v-careers .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:48px}
+.v-careers .head h2{font-size:clamp(32px,3.8vw,50px);font-weight:700;letter-spacing:-.025em}
+.v-careers .head p{margin:0;color:var(--muted);font-size:18px;max-width:52ch}
+.v-careers .light .head p{color:var(--ink2)}
+.v-careers .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 28px;border-radius:4px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--font);white-space:nowrap;transition:background-color .15s,border-color .15s}
+.v-careers .btn-p{background:var(--blue);color:#fff}
+.v-careers .btn-p:hover{background:var(--blue-400)}.v-careers .btn-p:active{background:var(--blue-600)}
+.v-careers .btn-g{border-color:var(--faint);color:#fff;background:transparent}
+.v-careers .btn-g:hover{background:rgba(255,255,255,.08)}
+.v-careers .btn:focus-visible,.v-careers button:focus-visible,.v-careers a:focus-visible{outline:2px solid var(--blue-400);outline-offset:3px}
+.v-careers .light a:focus-visible{outline-color:var(--blue-600)}
+.v-careers .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.v-careers .reveal.in{opacity:1;transform:none}
+
+/* ===== Hero (same as contact page) ===== */
+.v-careers .hero{position:relative;overflow:hidden;color:#fff;padding:0;background:radial-gradient(60% 70% at 72% 18%,rgba(91,160,255,.38) 0%,rgba(91,160,255,0) 60%),radial-gradient(45% 55% at 95% 85%,rgba(47,134,255,.6) 0%,rgba(47,134,255,0) 70%),radial-gradient(70% 90% at 10% 100%,rgba(31,111,235,.35) 0%,rgba(8,26,46,0) 70%),linear-gradient(160deg,#050F1C 0%,#081A2E 45%,#0C2038 75%,#081A2E 100%)}
+.v-careers .hero:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.v-careers .hero-streaks{position:absolute;top:0;bottom:0;right:0;width:55%;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(160,190,255,0) 0 14px,rgba(160,190,255,.10) 14px 16px);-webkit-mask-image:linear-gradient(200deg,#000 10%,transparent 65%);mask-image:linear-gradient(200deg,#000 10%,transparent 65%)}
+.v-careers .hero-frame{position:absolute;right:-6rem;bottom:2.5rem;width:720px;max-width:100%;opacity:.4;pointer-events:none}
+.v-careers .hin{position:relative;z-index:1;padding:128px 0 120px}
+.v-careers .hin h1{max-width:56rem;font-family:"Manrope",var(--font);font-size:clamp(2.4rem,5.2vw,4rem);line-height:1.05;letter-spacing:-.035em;font-weight:700;color:#fff}
+.v-careers .hin h1 span{display:block;font-weight:800;color:#fff}
+.v-careers .hin .lead{font-family:"Manrope",var(--font);font-size:18px;line-height:1.65;color:#fff;max-width:42rem;margin:28px 0 0}
+.v-careers .hin .btn{margin-top:40px}
+
+/* ===== Why join ===== */
+.v-careers .story2{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.v-careers .story2 h2{font-size:clamp(30px,3.4vw,44px);font-weight:700;color:var(--ink)}
+.v-careers .prose p{margin:0 0 18px;font-size:18px;line-height:1.65;color:var(--ink2)}.v-careers .prose p:last-child{margin-bottom:0}
+.v-careers .stats{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-radius:12px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(70% 140% at 100% 0%,rgba(47,134,255,.3),transparent 70%),radial-gradient(60% 120% at 0% 100%,rgba(31,111,235,.2),transparent 70%),var(--surface);color:#fff}
+.v-careers .stat{padding:32px 30px 34px;display:flex;flex-direction:column;gap:6px}
+.v-careers .stat+.stat{border-left:1px solid var(--line)}
+.v-careers .stat .ico{width:44px;height:44px;border-radius:8px;display:grid;place-items:center;background:rgba(91,160,255,.14);margin-bottom:14px}
+.v-careers .stat .ico svg{width:22px;height:22px;fill:none;stroke:var(--blue-400);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.v-careers .stat h3{font-size:22px;font-weight:700;letter-spacing:-.015em;color:#fff}
+.v-careers .stat p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
+
+/* ===== How we work ===== */
+.v-careers .beliefs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:0;padding:0}
+.v-careers .beliefs li{list-style:none;border-top:2px solid var(--blue);padding-top:16px}
+.v-careers .beliefs b{display:block;font-size:18px;margin-bottom:6px}
+.v-careers .beliefs span{color:var(--muted);font-size:15.5px}
+
+/* ===== Open roles ===== */
+.v-careers .count{font-size:15px;color:var(--ink2);margin:0 0 18px}
+.v-careers .roles{display:grid;gap:12px}
+.v-careers .role{background:#fff;border:1px solid var(--paper-line);border-radius:12px;transition:border-color .2s}
+.v-careers .role:hover{border-color:var(--blue)}
+.v-careers .rrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:20px 24px;text-decoration:none;color:inherit}
+.v-careers .rrow h3{font-size:20px;font-weight:700;color:var(--ink)}
+.v-careers .rrow .btn{min-width:230px}
+
+/* ===== Hiring steps ===== */
+.v-careers .bring{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.v-careers .bring li{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:26px}
+.v-careers .bring span{font-size:15px;font-weight:700;color:var(--blue-400)}
+.v-careers .bring h3{font-size:22px;margin:10px 0 8px}.v-careers .bring p{margin:0;color:var(--muted);font-size:16px}
+
+/* ===== Benefits ===== */
+.v-careers .diff{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.v-careers .diff article{background:#fff;border:1px solid var(--paper-line);border-radius:12px;padding:24px}
+.v-careers .diff h3{font-size:19px;color:var(--ink);margin-bottom:8px}
+.v-careers .diff p{margin:0;color:var(--ink2);font-size:15.5px}
+
+/* ===== CTA + footer ===== */
+.v-careers .cta{background:radial-gradient(60% 140% at 100% 0%,rgba(47,134,255,.35),transparent 70%),var(--surface);border-top:1px solid var(--line);padding:88px 0}
+.v-careers .cta .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:40px;align-items:center}
+.v-careers .cta h2{font-size:clamp(32px,3.8vw,48px)}
+.v-careers .cta p{color:var(--muted);font-size:18px;margin:14px 0 0;max-width:52ch}
+.v-careers .cta .acts{justify-self:end;display:flex;flex-direction:column;gap:12px;width:min(260px,100%)}.v-careers .cta .acts .btn{width:100%}
+.v-careers footer{border-top:1px solid var(--line);padding:28px 0;color:var(--faint);font-size:14px}
+.v-careers footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ===== Responsive ===== */
+@media (max-width:1000px){
+  .v-careers .head,.v-careers .story2,.v-careers .cta .wrap{grid-template-columns:1fr;gap:24px}.v-careers .cta .acts{justify-self:start}
+  .v-careers .beliefs,.v-careers .bring,.v-careers .diff{grid-template-columns:1fr 1fr}
+  .v-careers .stats{grid-template-columns:1fr}.v-careers .stat+.stat{border-left:0;border-top:1px solid var(--line)}
+}
+@media (max-width:620px){
+  .v-careers section{padding:76px 0}.v-careers .wrap{width:calc(100% - 32px)}
+  .v-careers .hin{padding:88px 0 80px}
+  .v-careers .beliefs,.v-careers .bring,.v-careers .diff{grid-template-columns:1fr}
+  .v-careers .rrow{grid-template-columns:1fr;gap:16px;padding:18px}.v-careers .rrow .btn{min-width:0;width:100%}
+  .v-careers .stat{padding:24px}
+  .v-careers .rrow{grid-template-columns:1fr;gap:16px;padding:18px}.v-careers .rrow .btn{min-width:0;width:100%}
+}
+@media (prefers-reduced-motion:reduce){.v-careers{scroll-behavior:auto}.v-careers .reveal{opacity:1;transform:none;transition:none}.v-careers *, .v-careers{transition:none!important}}
+
+
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+
+/* one height for both heroes per width band: the taller hero's natural height in that band */
+.v-careers { --synced-hero-h: 800px; }
+@media (max-width: 1023px) { .v-careers { --synced-hero-h: 680px; } }
+@media (max-width: 767px) { .v-careers { --synced-hero-h: 580px; } }
+@media (max-width: 620px) { .v-careers { --synced-hero-h: 650px; } }
+@media (max-width: 480px) { .v-careers { --synced-hero-h: 680px; } }
+@media (max-width: 400px) { .v-careers { --synced-hero-h: 745px; } }
+.v-careers section.hero { padding: 0; min-height: var(--synced-hero-h, 0px); display: flex; flex-direction: column; }
+.v-careers .hero .hin { width: min(1200px, calc(100% - 48px)); margin-left: auto; margin-right: auto; padding: calc(var(--site-header-height, 76px) + 56px) 0 120px; }
+@media (max-width: 767px) { .v-careers .hero .hin { padding: calc(var(--site-header-height, 76px) + 32px) 0 80px; } }
+@media (max-width: 620px) { .v-careers .hero .hin { width: calc(100% - 32px); } }
+.v-careers .hin h1 { max-width: 56rem; margin: 0; font-family: "Manrope", "Hanken Grotesk", system-ui, sans-serif; font-size: clamp(2.4rem, 6vw, 4.6rem); font-weight: 600; line-height: 1.04; letter-spacing: -.035em; color: #fff; }
+.v-careers .hin h1 span { display: block; font-weight: 800; color: #fff; }
+.v-careers .hin .lead { margin: 1.75rem 0 0; max-width: 42rem; font-family: "Manrope", "Hanken Grotesk", system-ui, sans-serif; font-size: 1.125rem; line-height: 1.625; color: #fff; }
+.v-careers .hin .btn { margin-top: 2.75rem; }
+.v-careers .hin .btn { display: inline-flex; align-items: center; gap: .5rem; border: 0; border-radius: 4px; padding: .875rem 1.75rem; font-family: "Manrope", "Hanken Grotesk", system-ui, sans-serif; font-size: .875rem; line-height: 1.25rem; font-weight: 600; color: #fff; background: #3F5CFF; text-decoration: none; }
+
+
+/* "or mail us at" line under the closing CTA */
+.v-careers .cta .acts .cq-mail-line{margin:0;font-size:14px;line-height:20px;color:var(--muted);text-align:center}
+.v-careers .cta .acts .cq-mail-line a{color:#fff;text-decoration:underline;text-underline-offset:3px}

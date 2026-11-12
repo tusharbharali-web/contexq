@@ -1,0 +1,44 @@
+/* Shared hero for the Ecosystem landing pages (Insights, Press & Media, Backing &
+   Affiliations). Same look as the Awards hero (eco-awards/styles.css .aw-hero):
+   site navy, title + intro, and a row of links to the page's sections.
+   Selectors start with .cq-html so they win over each page's own element rules. */
+.cq-html .eco-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(60% 90% at 85% 20%, rgba(47, 134, 255, 0.22), transparent 70%),
+    radial-gradient(40% 60% at 10% 100%, rgba(34, 195, 230, 0.10), transparent 70%),
+    #050F1C;
+  color: #fff;
+  padding: calc(var(--site-header-height, 76px) + 56px) 0 72px;
+}
+.cq-html .eco-hero-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+@media (min-width: 768px) { .cq-html .eco-hero-inner { padding: 0 32px; } }
+.cq-html .eco-hero h1 {
+  margin: 0; color: #fff;
+  font-size: 44px; line-height: 52px; font-weight: 700; letter-spacing: -0.02em;
+}
+.cq-html .eco-hero-lede { margin: 20px 0 0; max-width: 560px; color: #93A4BF; font-size: 17px; line-height: 1.6; }
+.cq-html .eco-hero-links {
+  max-width: 720px; margin-top: 36px;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #1E2D42;
+}
+.cq-html .eco-hero-link {
+  display: flex; flex-direction: column; gap: 2px; padding: 16px 16px 14px 0;
+  border-bottom: 1px solid #1E2D42; text-decoration: none; color: inherit;
+}
+.cq-html .eco-hero-link-title { font-size: 17px; line-height: 26px; font-weight: 600; color: #fff; }
+.cq-html .eco-hero-link-note { font-size: 13px; line-height: 20px; color: #93A4BF; transition: color 150ms ease; }
+.cq-html .eco-hero-link:hover .eco-hero-link-note,
+.cq-html .eco-hero-link:focus-visible .eco-hero-link-note { color: #5BA0FF; }
+.cq-html .eco-hero-link:focus-visible { outline: 3px solid #5BA0FF; outline-offset: 3px; }
+/* section links land below the fixed site header */
+.cq-html .eco-hero-target { scroll-margin-top: calc(var(--site-header-height, 76px) + 8px); }
+
+@media (max-width: 640px) {
+  .cq-html .eco-hero { padding: calc(var(--site-header-height, 76px) + 36px) 0 56px; }
+  .cq-html .eco-hero h1 { font-size: 32px; line-height: 40px; }
+  .cq-html .eco-hero-lede { font-size: 16px; }
+  .cq-html .eco-hero-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

@@ -1,0 +1,1465 @@
+/* Generated from public/customers-src/Government.html: the page's own CSS, scoped to .v-customer-government. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-customer-government *:not(svg, svg *), .v-customer-government ::before, .v-customer-government ::after) { all: revert; }
+:where(.v-customer-government svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-customer-government) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-customer-government > .cq-body) { display: block; margin: 8px; }
+.v-customer-government.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-customer-government :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-customer-government > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-customer-government main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.v-customer-government,.v-customer-government .cq-body,.v-customer-government button,.v-customer-government input{font-family:'IBM Plex Sans',sans-serif}.v-customer-government h1,.v-customer-government h2,.v-customer-government h3,.v-customer-government h4{text-wrap:balance}.v-customer-government p{text-wrap:pretty}.v-customer-government .cq-industry-strip a{font-family:'IBM Plex Sans',sans-serif!important}
+.v-customer-government *,.v-customer-government  ::before,.v-customer-government  ::after, .v-customer-government {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.v-customer-government ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.v-customer-government *,.v-customer-government 
+::before,.v-customer-government 
+::after, .v-customer-government {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.v-customer-government ::before,.v-customer-government 
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.v-customer-government,.v-customer-government {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.v-customer-government .cq-body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.v-customer-government hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.v-customer-government abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.v-customer-government h1,.v-customer-government 
+h2,.v-customer-government 
+h3,.v-customer-government 
+h4,.v-customer-government 
+h5,.v-customer-government 
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.v-customer-government a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.v-customer-government b,.v-customer-government 
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.v-customer-government code,.v-customer-government 
+kbd,.v-customer-government 
+samp,.v-customer-government 
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.v-customer-government small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.v-customer-government sub,.v-customer-government 
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.v-customer-government sub {
+  bottom: -0.25em;
+}
+
+.v-customer-government sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.v-customer-government table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.v-customer-government button,.v-customer-government 
+input,.v-customer-government 
+optgroup,.v-customer-government 
+select,.v-customer-government 
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.v-customer-government button,.v-customer-government 
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.v-customer-government button,.v-customer-government 
+input:where([type='button']),.v-customer-government 
+input:where([type='reset']),.v-customer-government 
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.v-customer-government :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.v-customer-government :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.v-customer-government progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.v-customer-government ::-webkit-inner-spin-button,.v-customer-government 
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.v-customer-government [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.v-customer-government ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.v-customer-government ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.v-customer-government summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.v-customer-government blockquote,.v-customer-government 
+dl,.v-customer-government 
+dd,.v-customer-government 
+h1,.v-customer-government 
+h2,.v-customer-government 
+h3,.v-customer-government 
+h4,.v-customer-government 
+h5,.v-customer-government 
+h6,.v-customer-government 
+hr,.v-customer-government 
+figure,.v-customer-government 
+p,.v-customer-government 
+pre {
+  margin: 0;
+}
+
+.v-customer-government fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.v-customer-government legend {
+  padding: 0;
+}
+
+.v-customer-government ol,.v-customer-government 
+ul,.v-customer-government 
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.v-customer-government dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.v-customer-government textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.v-customer-government input::placeholder,.v-customer-government 
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.v-customer-government button,.v-customer-government 
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.v-customer-government :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.v-customer-government img,.v-customer-government 
+svg,.v-customer-government 
+video,.v-customer-government 
+canvas,.v-customer-government 
+audio,.v-customer-government 
+iframe,.v-customer-government 
+embed,.v-customer-government 
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.v-customer-government img,.v-customer-government 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.v-customer-government [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.v-customer-government [type='text'],.v-customer-government input:where(:not([type])),.v-customer-government [type='email'],.v-customer-government [type='url'],.v-customer-government [type='password'],.v-customer-government [type='number'],.v-customer-government [type='date'],.v-customer-government [type='datetime-local'],.v-customer-government [type='month'],.v-customer-government [type='search'],.v-customer-government [type='tel'],.v-customer-government [type='time'],.v-customer-government [type='week'],.v-customer-government [multiple],.v-customer-government textarea,.v-customer-government select {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-customer-government [type='text']:focus,.v-customer-government  input:where(:not([type])):focus,.v-customer-government  [type='email']:focus,.v-customer-government  [type='url']:focus,.v-customer-government  [type='password']:focus,.v-customer-government  [type='number']:focus,.v-customer-government  [type='date']:focus,.v-customer-government  [type='datetime-local']:focus,.v-customer-government  [type='month']:focus,.v-customer-government  [type='search']:focus,.v-customer-government  [type='tel']:focus,.v-customer-government  [type='time']:focus,.v-customer-government  [type='week']:focus,.v-customer-government  [multiple]:focus,.v-customer-government  textarea:focus,.v-customer-government  select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #2563eb;
+}
+
+.v-customer-government input::placeholder,.v-customer-government textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.v-customer-government ::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.v-customer-government ::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  text-align: inherit;
+}
+
+.v-customer-government ::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+.v-customer-government ::-webkit-datetime-edit,.v-customer-government ::-webkit-datetime-edit-year-field,.v-customer-government ::-webkit-datetime-edit-month-field,.v-customer-government ::-webkit-datetime-edit-day-field,.v-customer-government ::-webkit-datetime-edit-hour-field,.v-customer-government ::-webkit-datetime-edit-minute-field,.v-customer-government ::-webkit-datetime-edit-second-field,.v-customer-government ::-webkit-datetime-edit-millisecond-field,.v-customer-government ::-webkit-datetime-edit-meridiem-field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.v-customer-government select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+}
+
+.v-customer-government [multiple],.v-customer-government [size]:where(select:not([size="1"])) {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  print-color-adjust: unset;
+}
+
+.v-customer-government [type='checkbox'],.v-customer-government [type='radio'] {
+  appearance: none;
+  padding: 0;
+  print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-customer-government [type='checkbox'] {
+  border-radius: 0px;
+}
+
+.v-customer-government [type='radio'] {
+  border-radius: 100%;
+}
+
+.v-customer-government [type='checkbox']:focus,.v-customer-government [type='radio']:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.v-customer-government [type='checkbox']:checked,.v-customer-government [type='radio']:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.v-customer-government [type='checkbox']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-government [type='checkbox']:checked {
+    appearance: auto;
+  }
+}
+
+.v-customer-government [type='radio']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-government [type='radio']:checked {
+    appearance: auto;
+  }
+}
+
+.v-customer-government [type='checkbox']:checked:hover,.v-customer-government [type='checkbox']:checked:focus,.v-customer-government [type='radio']:checked:hover,.v-customer-government [type='radio']:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-customer-government [type='checkbox']:indeterminate {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-government [type='checkbox']:indeterminate {
+    appearance: auto;
+  }
+}
+
+.v-customer-government [type='checkbox']:indeterminate:hover,.v-customer-government [type='checkbox']:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-customer-government [type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+.v-customer-government [type='file']:focus {
+  outline: 1px solid ButtonText;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.v-customer-government .pointer-events-none {
+  pointer-events: none;
+}
+.v-customer-government .absolute {
+  position: absolute;
+}
+.v-customer-government .relative {
+  position: relative;
+}
+.v-customer-government .inset-0 {
+  inset: 0px;
+}
+.v-customer-government .right-1\/4 {
+  right: 25%;
+}
+.v-customer-government .right-4 {
+  right: 1rem;
+}
+.v-customer-government .top-1\/4 {
+  top: 25%;
+}
+.v-customer-government .top-4 {
+  top: 1rem;
+}
+.v-customer-government .z-10 {
+  z-index: 10;
+}
+.v-customer-government .z-20 {
+  z-index: 20;
+}
+.v-customer-government .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.v-customer-government .mb-1 {
+  margin-bottom: 0.25rem;
+}
+.v-customer-government .mb-3 {
+  margin-bottom: 0.75rem;
+}
+.v-customer-government .mb-6 {
+  margin-bottom: 1.5rem;
+}
+.v-customer-government .mb-8 {
+  margin-bottom: 2rem;
+}
+.v-customer-government .mt-1 {
+  margin-top: 0.25rem;
+}
+.v-customer-government .mt-3 {
+  margin-top: 0.75rem;
+}
+.v-customer-government .inline-block {
+  display: inline-block;
+}
+.v-customer-government .flex {
+  display: flex;
+}
+.v-customer-government .inline-flex {
+  display: inline-flex;
+}
+.v-customer-government .grid {
+  display: grid;
+}
+.v-customer-government .hidden {
+  display: none;
+}
+.v-customer-government .h-2 {
+  height: 0.5rem;
+}
+.v-customer-government .h-20 {
+  height: 5rem;
+}
+.v-customer-government .h-28 {
+  height: 7rem;
+}
+.v-customer-government .h-8 {
+  height: 2rem;
+}
+.v-customer-government .h-9 {
+  height: 2.25rem;
+}
+.v-customer-government .h-96 {
+  height: 24rem;
+}
+.v-customer-government .h-\[300px\] {
+  height: 300px;
+}
+.v-customer-government .h-full {
+  height: 100%;
+}
+.v-customer-government .max-h-\[90vh\] {
+  max-height: 90vh;
+}
+.v-customer-government .min-h-screen {
+  min-height: 100vh;
+}
+.v-customer-government .w-2 {
+  width: 0.5rem;
+}
+.v-customer-government .w-20 {
+  width: 5rem;
+}
+.v-customer-government .w-28 {
+  width: 7rem;
+}
+.v-customer-government .w-8 {
+  width: 2rem;
+}
+.v-customer-government .w-9 {
+  width: 2.25rem;
+}
+.v-customer-government .w-96 {
+  width: 24rem;
+}
+.v-customer-government .w-full {
+  width: 100%;
+}
+.v-customer-government .w-max {
+  width: max-content;
+}
+.v-customer-government .min-w-0 {
+  min-width: 0px;
+}
+.v-customer-government .max-w-2xl {
+  max-width: 42rem;
+}
+.v-customer-government .max-w-3xl {
+  max-width: 48rem;
+}
+.v-customer-government .max-w-6xl {
+  max-width: 72rem;
+}
+.v-customer-government .max-w-7xl {
+  max-width: 80rem;
+}
+.v-customer-government .max-w-\[150px\] {
+  max-width: 150px;
+}
+.v-customer-government .max-w-xl {
+  max-width: 36rem;
+}
+.v-customer-government .flex-1 {
+  flex: 1 1 0%;
+}
+.v-customer-government .flex-shrink-0 {
+  flex-shrink: 0;
+}
+.v-customer-government .flex-grow {
+  flex-grow: 1;
+}
+.v-customer-government .-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-customer-government .-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-customer-government .cursor-pointer {
+  cursor: pointer;
+}
+.v-customer-government .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.v-customer-government .flex-col {
+  flex-direction: column;
+}
+.v-customer-government .flex-wrap {
+  flex-wrap: wrap;
+}
+.v-customer-government .items-start {
+  align-items: flex-start;
+}
+.v-customer-government .items-center {
+  align-items: center;
+}
+.v-customer-government .justify-center {
+  justify-content: center;
+}
+.v-customer-government .justify-between {
+  justify-content: space-between;
+}
+.v-customer-government .gap-1\.5 {
+  gap: 0.375rem;
+}
+.v-customer-government .gap-2 {
+  gap: 0.5rem;
+}
+.v-customer-government .gap-2\.5 {
+  gap: 0.625rem;
+}
+.v-customer-government .gap-3 {
+  gap: 0.75rem;
+}
+.v-customer-government .gap-4 {
+  gap: 1rem;
+}
+.v-customer-government .gap-5 {
+  gap: 1.25rem;
+}
+.v-customer-government .gap-6 {
+  gap: 1.5rem;
+}
+.v-customer-government .gap-8 {
+  gap: 2rem;
+}
+.v-customer-government .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.v-customer-government .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.v-customer-government .overflow-hidden {
+  overflow: hidden;
+}
+.v-customer-government .overflow-y-auto {
+  overflow-y: auto;
+}
+.v-customer-government .whitespace-nowrap {
+  white-space: nowrap;
+}
+.v-customer-government .rounded {
+  border-radius: 0.25rem;
+}
+.v-customer-government .rounded-2xl {
+  border-radius: 1rem;
+}
+.v-customer-government .rounded-full {
+  border-radius: 9999px;
+}
+.v-customer-government .rounded-lg {
+  border-radius: 0.5rem;
+}
+.v-customer-government .rounded-xl {
+  border-radius: 0.75rem;
+}
+.v-customer-government .border {
+  border-width: 1px;
+}
+.v-customer-government .border-0 {
+  border-width: 0px;
+}
+.v-customer-government .border-2 {
+  border-width: 2px;
+}
+.v-customer-government .border-t {
+  border-top-width: 1px;
+}
+.v-customer-government .border-dashed {
+  border-style: dashed;
+}
+.v-customer-government .border-\[\#1F55B8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 85 184 / var(--tw-border-opacity, 1));
+}
+.v-customer-government .border-\[\#1F55B8\]\/40 {
+  border-color: rgb(31 85 184 / 0.4);
+}
+.v-customer-government .border-\[\#B3261E\]\/30 {
+  border-color: rgb(179 38 30 / 0.3);
+}
+.v-customer-government .border-\[\#C3C6D5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(195 198 213 / var(--tw-border-opacity, 1));
+}
+.v-customer-government .border-\[\#E3E6EA\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(227 230 234 / var(--tw-border-opacity, 1));
+}
+.v-customer-government .border-\[\#F2B544\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 181 68 / var(--tw-border-opacity, 1));
+}
+.v-customer-government .border-\[\#FFB4AB\]\/40 {
+  border-color: rgb(255 180 171 / 0.4);
+}
+.v-customer-government .border-outline-variant\/50 {
+  border-color: rgb(195 198 213 / 0.5);
+}
+.v-customer-government .border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+.v-customer-government .border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
+}
+.v-customer-government .bg-\[\#0E1B33\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 27 51 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#122344\]\/80 {
+  background-color: rgb(18 35 68 / 0.8);
+}
+.v-customer-government .bg-\[\#172c54\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 44 84 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#1F55B8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 85 184 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#1F55B8\]\/20 {
+  background-color: rgb(31 85 184 / 0.2);
+}
+.v-customer-government .bg-\[\#2F86FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 134 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#B3261E\]\/20 {
+  background-color: rgb(179 38 30 / 0.2);
+}
+.v-customer-government .bg-\[\#F2B544\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 181 68 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#F7F8FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 248 251 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-\[\#FDECEA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 236 234 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-surface-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 238 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-surface-container-lowest {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-transparent {
+  background-color: transparent;
+}
+.v-customer-government .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+.v-customer-government .bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
+}
+.v-customer-government .object-contain {
+  object-fit: contain;
+}
+.v-customer-government .p-0 {
+  padding: 0px;
+}
+.v-customer-government .p-12 {
+  padding: 3rem;
+}
+.v-customer-government .p-6 {
+  padding: 1.5rem;
+}
+.v-customer-government .p-8 {
+  padding: 2rem;
+}
+.v-customer-government .px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.v-customer-government .px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.v-customer-government .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.v-customer-government .px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.v-customer-government .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-customer-government .px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.v-customer-government .py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.v-customer-government .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.v-customer-government .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.v-customer-government .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.v-customer-government .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.v-customer-government .py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.v-customer-government .pb-20 {
+  padding-bottom: 5rem;
+}
+.v-customer-government .pt-16 {
+  padding-top: 4rem;
+}
+.v-customer-government .pt-2 {
+  padding-top: 0.5rem;
+}
+.v-customer-government .pt-3 {
+  padding-top: 0.75rem;
+}
+.v-customer-government .pt-4 {
+  padding-top: 1rem;
+}
+.v-customer-government .text-center {
+  text-align: center;
+}
+.v-customer-government .font-body-lg {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-body-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-headline-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-headline-sm {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-headline-xl {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-label-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-label-sm {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .font-title-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-government .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.v-customer-government .text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.v-customer-government .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.v-customer-government .text-\[10px\] {
+  font-size: 10px;
+}
+.v-customer-government .text-\[12px\] {
+  font-size: 12px;
+}
+.v-customer-government .text-\[15px\] {
+  font-size: 15px;
+}
+.v-customer-government .text-\[24px\] {
+  font-size: 24px;
+}
+.v-customer-government .text-\[28px\] {
+  font-size: 28px;
+}
+.v-customer-government .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.v-customer-government .text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.v-customer-government .text-body-md {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.v-customer-government .text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.v-customer-government .text-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.v-customer-government .text-headline-xl {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.v-customer-government .text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.v-customer-government .text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.v-customer-government .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.v-customer-government .text-title-md {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+}
+.v-customer-government .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.v-customer-government .font-bold {
+  font-weight: 700;
+}
+.v-customer-government .font-light {
+  font-weight: 300;
+}
+.v-customer-government .font-semibold {
+  font-weight: 600;
+}
+.v-customer-government .uppercase {
+  text-transform: uppercase;
+}
+.v-customer-government .leading-8 {
+  line-height: 2rem;
+}
+.v-customer-government .leading-9 {
+  line-height: 2.25rem;
+}
+.v-customer-government .leading-none {
+  line-height: 1;
+}
+.v-customer-government .leading-relaxed {
+  line-height: 1.625;
+}
+.v-customer-government .leading-snug {
+  line-height: 1.375;
+}
+.v-customer-government .leading-tight {
+  line-height: 1.25;
+}
+.v-customer-government .tracking-wider {
+  letter-spacing: 0.05em;
+}
+.v-customer-government .text-\[\#0E1B33\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 27 51 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#111c2d\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 28 45 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#1F55B8\] {
+  --tw-text-opacity: 1;
+  color: rgb(31 85 184 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#3D8BFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 139 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#525e7a\] {
+  --tw-text-opacity: 1;
+  color: rgb(82 94 122 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#8FA0BF\] {
+  --tw-text-opacity: 1;
+  color: rgb(143 160 191 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#A9B4CB\] {
+  --tw-text-opacity: 1;
+  color: rgb(169 180 203 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#B3261E\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 38 30 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#EDEFF5\] {
+  --tw-text-opacity: 1;
+  color: rgb(237 239 245 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#F2B544\] {
+  --tw-text-opacity: 1;
+  color: rgb(242 181 68 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-\[\#FFB4AB\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 180 171 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-on-surface {
+  --tw-text-opacity: 1;
+  color: rgb(17 28 45 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.v-customer-government .opacity-\[0\.07\] {
+  opacity: 0.07;
+}
+.v-customer-government .shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-government .shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-government .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-government .outline {
+  outline-style: solid;
+}
+.v-customer-government .blur-3xl {
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-customer-government .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-customer-government .backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.v-customer-government .backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.v-customer-government .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-customer-government .transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-customer-government .duration-150 {
+  transition-duration: 150ms;
+}
+.v-customer-government .duration-200 {
+  transition-duration: 200ms;
+}
+.v-customer-government .selection\:bg-tertiary-fixed *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 222 171 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .selection\:text-on-tertiary-fixed *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(39 25 0 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .selection\:bg-tertiary-fixed::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 222 171 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .selection\:text-on-tertiary-fixed::selection {
+  --tw-text-opacity: 1;
+  color: rgb(39 25 0 / var(--tw-text-opacity, 1));
+}
+.v-customer-government .hover\:bg-\[\#1F6BE8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 107 232 / var(--tw-bg-opacity, 1));
+}
+.v-customer-government .hover\:bg-white\/20:hover {
+  background-color: rgb(255 255 255 / 0.2);
+}
+.v-customer-government .hover\:underline:hover {
+  text-decoration-line: underline;
+}
+.v-customer-government .hover\:shadow-\[0px_6px_24px_rgba\(14\2c 27\2c 51\2c 0\.10\)\]:hover {
+  --tw-shadow: 0px 6px 24px rgba(14,27,51,0.10);
+  --tw-shadow-colored: 0px 6px 24px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-government .focus-visible\:underline:focus-visible {
+  text-decoration-line: underline;
+}
+.v-customer-government .focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+@media (min-width: 640px) {
+
+  .v-customer-government .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+
+  .v-customer-government .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .v-customer-government .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-customer-government .md\:items-center {
+    align-items: center;
+  }
+
+  .v-customer-government .md\:justify-between {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+
+  .v-customer-government .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .v-customer-government .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .v-customer-government .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .v-customer-government .lg\:pr-4 {
+    padding-right: 1rem;
+  }
+}
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+
+.v-customer-government .cq-body { padding-top: var(--site-header-height, 76px); min-width: 0 !important; }
+.v-customer-government .cq-industry-strip { top: var(--site-header-height, 76px) !important; }
+
+.v-customer-government { --cq-gutter: clamp(20px, 4vw, 48px); }
+@media (max-width: 520px) { .v-customer-government { --cq-gutter: 17px; } }
+.v-customer-government .max-w-7xl.mx-auto,.v-customer-government  .max-w-6xl.mx-auto,.v-customer-government  .cq-industry-strip .cq-in { width: min(1200px, calc(100% - 2 * var(--cq-gutter))); max-width: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+

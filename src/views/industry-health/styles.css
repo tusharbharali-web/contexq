@@ -1,0 +1,442 @@
+/* Generated from public/html/contexq-insurance-v6.html: the page's own CSS, scoped to .v-industry-health. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-industry-health *:not(svg, svg *), .v-industry-health ::before, .v-industry-health ::after) { all: revert; }
+:where(.v-industry-health svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-industry-health) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-industry-health > .cq-body) { display: block; margin: 8px; }
+.v-industry-health.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-industry-health :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-industry-health > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-industry-health main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+    .v-industry-health {
+      --navy: #06111F;
+      --navy-2: #0B1B2D;
+      --navy-3: #102944;
+      --blue: #328CFF;
+      --blue-light: #8CC2FF;
+      --ink: #111B27;
+      --muted: #596777;
+      --line: #DCE4ED;
+      --white: #FFFFFF;
+      --soft: #F3F7FB;
+      --soft-blue: #EAF3FF;
+      --green: #55D6A2;
+      --amber: #F2B85B;
+      --radius-cta: 4px;
+      --radius-control: 4px;
+      --radius-card: 8px;
+      --radius-panel: 12px;
+      --radius-pill: 999px;
+      --max-width: 1200px;
+      --gutter: clamp(20px, 4vw, 48px);
+      --section-space: clamp(76px, 9vw, 116px);
+    }
+    .v-industry-health *,.v-industry-health  *::before,.v-industry-health  *::after, .v-industry-health, .v-industry-health::before, .v-industry-health::after { box-sizing: border-box; }
+    .v-industry-health { scroll-behavior: smooth; scroll-padding-top: 0; }
+    .v-industry-health .cq-body { margin: 0; color: var(--ink); background: var(--white); font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .v-industry-health .cq-body,.v-industry-health  button,.v-industry-health  a { -webkit-tap-highlight-color: transparent; }
+    .v-industry-health a { color: inherit; text-decoration: none; }
+    .v-industry-health button { font: inherit; }
+    .v-industry-health svg { display: block; max-width: 100%; }
+    .v-industry-health :focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+    .v-industry-health .skip-link { position: absolute; left: 16px; top: -60px; z-index: 100; padding: 10px 14px; background: var(--white); color: var(--navy); border-radius: var(--radius-control); }
+    .v-industry-health .skip-link:focus { top: 12px; }
+    .v-industry-health .wrap { width: min(var(--max-width), calc(100% - 2 * var(--gutter))); margin-inline: auto; }
+    .v-industry-health .section { padding: var(--section-space) 0; }
+    .v-industry-health .section--white { background: var(--white); color: var(--ink); }
+    .v-industry-health .section--soft { background: var(--soft); color: var(--ink); }
+    .v-industry-health .section--dark { background: var(--navy); color: var(--white); }
+    .v-industry-health h1,.v-industry-health  h2,.v-industry-health  h3,.v-industry-health  p { margin-top: 0; }
+    .v-industry-health h1,.v-industry-health  h2,.v-industry-health  h3 { letter-spacing: -.04em; }
+    .v-industry-health h1 { max-width: 760px; margin-bottom: 24px; font-size: 44px; line-height: .99; font-weight: 680; }
+    .v-industry-health h2 { max-width: 780px; margin-bottom: 17px; font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.08; font-weight: 650; }
+    .v-industry-health h3 { margin-bottom: 9px; font-size: 1.18rem; line-height: 1.28; font-weight: 650; }
+    .v-industry-health .intro { max-width: 690px; margin-bottom: 0; color: var(--muted); font-size: clamp(1.02rem, 1.5vw, 1.15rem); line-height: 1.7; }
+    .v-industry-health .section--dark .intro { color: #B8C8D9; }
+    .v-industry-health .section-head { margin-bottom: clamp(34px, 5vw, 54px); }
+    .v-industry-health .section-head--split { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+    .v-industry-health .section-head--split .intro { max-width: 430px; }
+
+    .v-industry-health .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; border: 1px solid transparent; border-radius: var(--radius-cta); font-weight: 650; font-size: .94rem; line-height: 1.2; cursor: pointer; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+    .v-industry-health .btn:hover { transform: translateY(-2px); }
+    .v-industry-health .btn--blue { background: var(--blue); color: var(--white); }
+    .v-industry-health .btn--blue:hover { background: #1978EB; }
+    .v-industry-health .btn--outline-light { border-color: rgba(255,255,255,.32); color: var(--white); background: transparent; }
+    .v-industry-health .btn--outline-light:hover { border-color: var(--blue-light); background: rgba(255,255,255,.05); }
+    .v-industry-health .btn--outline-dark { border-color: #C7D2DE; color: var(--ink); background: transparent; }
+    .v-industry-health .btn--outline-dark:hover { border-color: var(--blue); background: var(--soft-blue); }
+
+    /* Hero */
+    .v-industry-health .hero { position: relative; overflow: hidden; padding: clamp(76px, 9vw, 120px) 0 clamp(78px, 9vw, 112px); background: var(--navy); color: var(--white); }
+    .v-industry-health .hero::before { content: ""; position: absolute; width: 760px; height: 760px; right: -220px; top: -320px; border-radius: 50%; background: radial-gradient(circle, rgba(50,140,255,.2), transparent 68%); pointer-events: none; }
+    .v-industry-health .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .92fr); gap: clamp(36px, 5vw, 70px); align-items: center; }
+    .v-industry-health .hero-copy { position: relative; z-index: 1; }
+    .v-industry-health .hero-copy > p { max-width: 620px; margin-bottom: 30px; color: #C0CDDA; font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.7; }
+    .v-industry-health .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; }
+    .v-industry-health .hero-proof { max-width: 520px; margin-top: 34px; padding-top: 17px; border-top: 1px solid rgba(255,255,255,.15); color: #93A8BD; font-size: .87rem; }
+    .v-industry-health .hero-visual { position: relative; min-height: 430px; overflow: hidden; border: 1px solid rgba(151,190,231,.2); border-radius: var(--radius-panel); background: linear-gradient(145deg, rgba(16,41,68,.96), rgba(7,21,37,.96)); box-shadow: 0 28px 80px rgba(0,0,0,.24); }
+    .v-industry-health .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px rgba(85,214,162,.7); }
+    .v-industry-health .hero-graph { width: 100%; height: 400px; padding: 4px 8px 16px; overflow: visible; }
+    .v-industry-health .hero-graph text { font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    .v-industry-health .hero-graph .variant,.v-industry-health  .hero-graph .card,.v-industry-health  .hero-graph .person,.v-industry-health  .hero-graph .insight { opacity: 0; transition: opacity .55s ease, transform .6s cubic-bezier(.2,.8,.2,1); }
+    .v-industry-health .hero-graph .show { opacity: 1; }
+    /* Name variants — small chips that appear then merge */
+    .v-industry-health .hero-graph .variant rect { fill: #0E2641; stroke: #3F6A96; stroke-width: 1; }
+    .v-industry-health .hero-graph .variant .tag { fill: #7A99BA; font-size: 8px; letter-spacing: .8px; }
+    .v-industry-health .hero-graph .variant .name { fill: #DCE9F6; font-size: 11px; font-weight: 600; }
+    .v-industry-health .hero-graph .variant.merge { transform: translate(var(--mx,0), var(--my,0)) scale(.6); opacity: 0; }
+    /* Record cards — policy, claim, repairer, claimant, vehicle */
+    .v-industry-health .hero-graph .card rect { fill: #0E2641; stroke: #3F6A96; stroke-width: 1; }
+    .v-industry-health .hero-graph .card .tag { fill: #7A99BA; font-size: 8px; letter-spacing: 1px; font-weight: 500; }
+    .v-industry-health .hero-graph .card .title { fill: #E6F0FB; font-size: 11.5px; font-weight: 650; }
+    .v-industry-health .hero-graph .card .meta { fill: #94AEC9; font-size: 9px; }
+    .v-industry-health .hero-graph .card.party rect { fill: #0D2742; stroke: #4878A8; }
+    /* Resolved person node — central element that the variants collapse into */
+    .v-industry-health .hero-graph .person rect { fill: #113456; stroke: #66A3DC; stroke-width: 1.5; }
+    .v-industry-health .hero-graph .person .label { fill: #B9D2E8; font-size: 8px; letter-spacing: 1px; }
+    .v-industry-health .hero-graph .person .name { fill: #FFFFFF; font-size: 13px; font-weight: 700; }
+    .v-industry-health .hero-graph .person .sub { fill: #88BEEE; font-size: 9px; }
+    .v-industry-health .hero-graph .person .check { fill: #55D6A2; }
+    /* Edges */
+    .v-industry-health .hero-graph .edge { stroke: #4D8BCB; stroke-width: 1.2; fill: none; opacity: 0; stroke-dasharray: 4 5; transition: opacity .6s ease; }
+    .v-industry-health .hero-graph .edge.on { opacity: .55; animation: v-industry-health__hero-edge-flow 3s linear infinite; }
+    .v-industry-health .hero-graph .edge.focus { stroke: #55D6A2; stroke-width: 1.6; opacity: .9; }
+    /* Insight panel */
+    .v-industry-health .hero-graph .insight { transform: translateY(8px); }
+    .v-industry-health .hero-graph .insight.show { transform: translateY(0); }
+    .v-industry-health .hero-graph .insight rect { fill: #0B2A2E; stroke: rgba(85,214,162,.5); stroke-width: 1; }
+    .v-industry-health .hero-graph .insight .lead { fill: #A8F0D2; font-size: 10px; font-weight: 650; letter-spacing: .2px; }
+    .v-industry-health .hero-graph .insight .reason { fill: #8CC9B0; font-size: 9px; font-weight: 500; }
+    @keyframes v-industry-health__hero-edge-flow { to { stroke-dashoffset: -36; } }
+    @media (prefers-reduced-motion: reduce) {
+      .v-industry-health .hero-graph *,.v-industry-health  .hero-graph *::before,.v-industry-health  .hero-graph *::after { animation: none !important; transition: none !important; }
+    }
+    .v-industry-health .visual-caption { position: absolute; left: 22px; bottom: 16px; color: #91A8C0; font-size: .73rem; }
+
+    /* Problem */
+    .v-industry-health .problem-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(270px, .8fr); gap: clamp(38px, 7vw, 88px); align-items: start; }
+    .v-industry-health .problem-list { border-top: 1px solid var(--line); }
+    .v-industry-health .problem-row { display: grid; grid-template-columns: 38px 1fr; gap: 16px; padding: 21px 0; border-bottom: 1px solid var(--line); }
+    .v-industry-health .problem-index { padding-top: 2px; color: var(--blue); font-size: .82rem; font-weight: 750; }
+    .v-industry-health .problem-row h3 { margin-bottom: 4px; font-size: 1.05rem; letter-spacing: -.02em; }
+    .v-industry-health .problem-row p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .v-industry-health .problem-aside { padding: clamp(26px, 3vw, 38px); border-radius: var(--radius-panel); background: var(--soft); }
+    .v-industry-health .problem-aside p { margin-bottom: 18px; color: var(--navy); font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 650; line-height: 1.28; letter-spacing: -.035em; }
+    .v-industry-health .problem-aside span { color: var(--muted); font-size: .88rem; }
+
+    /* Claim example */
+    .v-industry-health .claim-layout { display: grid; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: clamp(34px, 6vw, 72px); align-items: center; }
+    .v-industry-health .claim-copy p { max-width: 470px; margin-bottom: 18px; color: #B8C8D9; }
+    .v-industry-health .claim-copy .fine-print { margin-top: 24px; color: #8FA5BA; font-size: .8rem; }
+    .v-industry-health .claim-demo { padding: clamp(20px, 3vw, 30px); border: 1px solid rgba(147,185,224,.22); border-radius: var(--radius-panel); background: #0B1D30; box-shadow: 0 24px 70px rgba(0,0,0,.22); }
+    .v-industry-health .claim-demo-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .v-industry-health .claim-demo-head strong { font-size: .98rem; }
+    .v-industry-health .example-label { padding: 5px 9px; border-radius: var(--radius-pill); background: rgba(50,140,255,.14); color: #A9D1FF; font-size: .7rem; white-space: nowrap; }
+    .v-industry-health .claim-records { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+    .v-industry-health .record { min-height: 126px; padding: 15px 13px; border: 1px solid rgba(147,185,224,.2); border-radius: var(--radius-card); background: rgba(255,255,255,.025); }
+    .v-industry-health .record small { display: block; margin-bottom: 12px; color: #8FA8C1; font-size: .72rem; }
+    .v-industry-health .record b { display: block; margin-bottom: 5px; color: #F1F6FC; font-size: .9rem; }
+    .v-industry-health .record span { color: #A9BCD0; font-size: .76rem; }
+    .v-industry-health .connect-action { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; }
+    .v-industry-health .connect-action .btn { min-height: 42px; padding: 10px 15px; font-size: .85rem; }
+    .v-industry-health .connect-hint { color: #8FA5BA; font-size: .76rem; }
+    .v-industry-health .connection-result { display: none; margin-top: 21px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); }
+    .v-industry-health .connection-result.is-visible { display: block; animation: v-industry-health__rise-in .35s ease both; }
+    .v-industry-health .connection-result h3 { margin-bottom: 12px; font-size: 1rem; }
+    .v-industry-health .signal-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .v-industry-health .signal { display: flex; align-items: flex-start; gap: 9px; padding: 12px; border: 1px solid rgba(147,185,224,.16); border-radius: var(--radius-card); background: rgba(255,255,255,.025); color: #C4D3E2; font-size: .8rem; }
+    .v-industry-health .signal::before { content: ""; flex: 0 0 7px; width: 7px; height: 7px; margin-top: 6px; border-radius: 50%; background: var(--amber); }
+    .v-industry-health .review-note { margin: 14px 0 0; color: #8FA5BA; font-size: .75rem; }
+    @keyframes v-industry-health__rise-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+
+    /* How it works */
+    .v-industry-health .steps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-top: 42px; }
+    .v-industry-health .step { min-height: 220px; padding: 25px 24px; border: 1px solid var(--line); border-radius: var(--radius-card); background: var(--white); }
+    .v-industry-health .step-number { margin-bottom: 32px; color: var(--blue); font-size: .8rem; font-weight: 750; }
+    .v-industry-health .step h3 { margin-bottom: 8px; }
+    .v-industry-health .step p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    /* Business value */
+    .v-industry-health .value-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 15px; margin-top: 42px; }
+    .v-industry-health .value-card { min-height: 230px; padding: 25px 23px; border: 1px solid rgba(151,190,231,.2); border-radius: var(--radius-card); background: rgba(255,255,255,.035); }
+    .v-industry-health .value-icon { display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 24px; border-radius: 9px; background: rgba(50,140,255,.16); color: #9BCBFF; }
+    .v-industry-health .value-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .v-industry-health .value-card h3 { color: var(--white); }
+    .v-industry-health .value-card p { margin: 0; color: #B2C2D2; font-size: .9rem; }
+    .v-industry-health .value-note { margin: 22px 0 0; color: #8FA5BA; font-size: .78rem; }
+
+    /* Teams and data */
+    .v-industry-health .teams-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-top: 38px; }
+    .v-industry-health .team { padding: 23px 22px; border-top: 3px solid var(--blue); background: var(--soft); }
+    .v-industry-health .team h3 { margin-bottom: 7px; }
+    .v-industry-health .team p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .v-industry-health .data-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(35px, 6vw, 72px); align-items: center; }
+    .v-industry-health .data-copy p { max-width: 480px; margin-bottom: 16px; color: var(--muted); }
+    .v-industry-health .data-note { font-size: .78rem; }
+    .v-industry-health .data-sources { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+    .v-industry-health .data-source { display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 13px 15px; border: 1px solid var(--line); border-radius: var(--radius-card); background: var(--white); color: #344456; font-size: .88rem; }
+    .v-industry-health .data-source-icon { display: grid; place-items: center; flex: 0 0 32px; width: 32px; height: 32px; border-radius: 7px; background: var(--soft-blue); color: #1D72CA; font-weight: 700; }
+
+    /* CTA / footer */
+    .v-industry-health .contact { padding: clamp(64px, 8vw, 94px) 0; background: var(--white); }
+    .v-industry-health .contact-panel { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 36px; overflow: hidden; padding: clamp(34px, 6vw, 66px); border-radius: var(--radius-panel); background: var(--navy); color: var(--white); }
+    .v-industry-health .contact-panel::after { content: ""; position: absolute; top: -210px; right: -80px; width: 430px; height: 430px; border-radius: 50%; background: radial-gradient(circle, rgba(50,140,255,.22), transparent 68%); pointer-events: none; }
+    .v-industry-health .contact-copy,.v-industry-health  .contact-action { position: relative; z-index: 1; }
+    .v-industry-health .contact-copy h2 { max-width: 680px; margin-bottom: 13px; }
+    .v-industry-health .contact-copy p { max-width: 590px; margin: 0; color: #B8C8D9; }
+    .v-industry-health .contact-action { flex: 0 0 auto; }
+    .v-industry-health .contact-email { margin-top: 12px; color: #9FB3C8; font-size: .82rem; text-align: center; }
+    .v-industry-health .contact-email a { color: #D9E9F8; text-decoration: underline; text-underline-offset: 3px; }
+    .v-industry-health .site-footer { padding: 25px 0; background: var(--navy); color: #91A5BA; font-size: .82rem; }
+    .v-industry-health .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .v-industry-health .footer-inner strong { color: var(--white); letter-spacing: .15em; }
+
+    @media (max-width: 980px) {
+      .v-industry-health .hero-grid { grid-template-columns: 1fr; }
+      .v-industry-health .hero-copy { max-width: 780px; }
+      .v-industry-health .hero-visual { max-width: 700px; width: 100%; }
+      .v-industry-health .section-head--split { display: block; }
+      .v-industry-health .section-head--split .intro { margin-top: 14px; }
+      .v-industry-health .problem-grid,.v-industry-health  .claim-layout,.v-industry-health  .data-layout { grid-template-columns: 1fr; }
+      .v-industry-health .problem-aside { max-width: 650px; }
+    }
+    @media (max-width: 760px) {
+      .v-industry-health .hero { padding-top: 70px; }
+      .v-industry-health .hero-visual { min-height: 370px; }
+      .v-industry-health .hero-graph { height: 300px; }
+      .v-industry-health .steps,.v-industry-health  .value-grid,.v-industry-health  .teams-grid { grid-template-columns: 1fr; }
+      .v-industry-health .step,.v-industry-health  .value-card { min-height: unset; }
+      .v-industry-health .step-number,.v-industry-health  .value-icon { margin-bottom: 18px; }
+      .v-industry-health .contact-panel { align-items: flex-start; flex-direction: column; }
+      .v-industry-health .contact-action { width: 100%; }
+      .v-industry-health .contact-action .btn { width: 100%; }
+    }
+    @media (max-width: 520px) {
+      .v-industry-health { --gutter: 17px; --section-space: 72px; }
+      .v-industry-health h1 { font-size: 44px; }
+      .v-industry-health .hero-actions { align-items: stretch; flex-direction: column; }
+      .v-industry-health .hero-actions .btn { width: 100%; }
+      .v-industry-health .hero-visual { min-height: 320px; }
+      .v-industry-health .hero-graph { height: 260px; padding-inline: 2px; }
+      .v-industry-health .claim-records { grid-template-columns: 1fr; }
+      .v-industry-health .record { min-height: unset; }
+      .v-industry-health .record small { margin-bottom: 5px; }
+      .v-industry-health .signal-list,.v-industry-health  .data-sources { grid-template-columns: 1fr; }
+      .v-industry-health .problem-row { grid-template-columns: 30px 1fr; gap: 12px; }
+      .v-industry-health .contact-panel { padding: 32px 23px; }
+      .v-industry-health .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .v-industry-health *,.v-industry-health  *::before,.v-industry-health  *::after, .v-industry-health, .v-industry-health::before, .v-industry-health::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  
+
+    /* Policy journey — uploaded six-stage animation, recoloured to the ContexQ palette */
+    .v-industry-health .policy-journey {
+      --policy-card: #0B1B2D;
+      --policy-ink: #F3F7FC;
+      --policy-muted: #B8C8D9;
+      --policy-line: rgba(226,240,255,.16);
+      --policy-accent: #328CFF;
+      --policy-calm: #55D6A2;
+      background: var(--navy);
+      color: var(--policy-ink);
+      padding-top: clamp(64px, 8vw, 104px);
+      padding-bottom: clamp(76px, 9vw, 116px);
+    }
+    .v-industry-health .policy-head { margin-bottom: clamp(36px,5vw,56px); }
+    .v-industry-health .policy-journey h2,.v-industry-health  .claim-story h2 {
+      max-width: none;
+      margin: 0;
+      color: var(--policy-ink, #F3F7FC);
+      font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: clamp(32px,4.2vw,50px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -.02em;
+    }
+    .v-industry-health .policy-lead,.v-industry-health  .claim-story-lead {
+      max-width: 62ch;
+      margin: 18px 0 0;
+      color: var(--policy-muted, #B8C8D9);
+      font-size: clamp(18px,1.6vw,21px);
+      line-height: 1.6;
+    }
+    .v-industry-health .policy-roles { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:28px; }
+    .v-industry-health .policy-roles > span { margin-right:6px; color:var(--policy-muted); font-size:15px; }
+    .v-industry-health .policy-role {
+      cursor:pointer; border:1px solid var(--policy-line); border-radius:999px; padding:7px 14px;
+      background:transparent; color:var(--policy-muted); font-size:14.5px; line-height:1.4;
+      transition:background .2s ease,color .2s ease,border-color .2s ease;
+    }
+    .v-industry-health .policy-role:hover { border-color:var(--policy-accent); color:var(--policy-ink); }
+    .v-industry-health .policy-role[aria-pressed="true"] { background:var(--policy-accent); color:#fff; border-color:var(--policy-accent); }
+    .v-industry-health .policy-road { display:block; width:100%; height:auto; overflow:visible; }
+    .v-industry-health .policy-track { fill:none; stroke:rgba(255,255,255,.14); stroke-width:14; stroke-linecap:round; }
+    .v-industry-health .policy-lane { fill:none; stroke:rgba(255,255,255,.5); stroke-width:1.2; stroke-dasharray:6 8; opacity:.55; }
+    .v-industry-health .policy-done { fill:none; stroke:var(--policy-accent); stroke-width:3; stroke-linecap:round; }
+    .v-industry-health .policy-dot circle { fill:var(--policy-card); stroke:#8FA8C1; stroke-width:1.5; transition:fill .3s,stroke .3s; }
+    .v-industry-health .policy-dot text { font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size:13px; font-weight:600; fill:#DDE9F5; text-anchor:middle; dominant-baseline:central; }
+    .v-industry-health .policy-dot.is-lit circle { stroke:var(--policy-accent); }
+    .v-industry-health .policy-dot.is-selected circle { fill:var(--policy-accent); stroke:var(--policy-accent); }
+    .v-industry-health .policy-dot.is-selected text { fill:#fff; }
+    .v-industry-health .policy-dot.is-dim { opacity:.3; }
+    .v-industry-health .policy-marker rect { fill:var(--policy-card); stroke:#DCEBFA; stroke-width:1.4; }
+    .v-industry-health .policy-marker path { stroke:#DCEBFA; stroke-width:1.2; fill:none; }
+    .v-industry-health .policy-stops { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:8px; margin-top:4px; }
+    .v-industry-health .policy-stop {
+      all:unset; box-sizing:border-box; cursor:pointer; text-align:center; padding:10px 8px;
+      border-radius:8px; font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size:19px;
+      line-height:1.25; color:var(--policy-ink); transition:opacity .25s,background .2s;
+    }
+    .v-industry-health .policy-stop:hover { background:rgba(255,255,255,.06); }
+    .v-industry-health .policy-stop:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+    .v-industry-health .policy-stop[aria-pressed="true"] { background:var(--policy-card); box-shadow:inset 0 0 0 1px var(--policy-accent); }
+    .v-industry-health .policy-stop.is-dim { opacity:.35; }
+    .v-industry-health .policy-stop small { display:none; }
+    .v-industry-health .policy-panel { margin-top:28px; padding:clamp(22px,3vw,36px); border:1px solid var(--policy-line); border-radius:var(--radius-panel); background:var(--policy-card); }
+    .v-industry-health .policy-panel h3 { margin:0; color:var(--policy-ink); font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size:clamp(24px,2.4vw,30px); font-weight:600; font-style:normal; letter-spacing:-.015em; }
+    .v-industry-health .policy-panel-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(18px,3vw,40px); margin-top:22px; }
+    .v-industry-health .policy-panel-grid h4 { margin:0 0 6px; color:var(--policy-ink); font-size:15px; font-weight:650; }
+    .v-industry-health .policy-panel-grid p { margin:0; color:var(--policy-muted); font-size:16px; }
+    .v-industry-health .policy-panel-grid .policy-before h4 { color:var(--blue-light); }
+    .v-industry-health .policy-panel-grid .policy-after h4 { color:var(--green); }
+
+    /* Claim folders — preserve the original folder shape, type hierarchy and linked-name treatment */
+    .v-industry-health .claim-story-section { background:var(--navy); color:#F3F7FC; padding-top:clamp(64px,8vw,104px); }
+    .v-industry-health .claim-story-head { margin-bottom:clamp(36px,5vw,56px); }
+    .v-industry-health .claim-story-lead { max-width:68ch; }
+    .v-industry-health .claim-files { position:relative; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+    .v-industry-health .claim-folder {
+      position:relative; display:flex; flex-direction:column; min-height:172px; margin-top:14px;
+      padding:16px 16px 14px; border:1px solid rgba(147,185,224,.22);
+      border-radius:0 10px 10px 10px;
+      background:#0B1B2D; transition:border-color .5s ease;
+    }
+    .v-industry-health .claim-folder::before {
+      content:""; position:absolute; left:-1px; top:-14px; width:40%; height:14px;
+      border:1px solid rgba(147,185,224,.22); border-bottom:0; border-radius:8px 8px 0 0;
+      background:#0B1B2D; transition:border-color .5s ease;
+    }
+    .v-industry-health .claim-kind { color:#F3F7FC; font-size:16px; font-weight:600; line-height:1.3; letter-spacing:-.005em; }
+    .v-industry-health .claim-meta { margin-top:3px; color:#B8C8D9; font-size:12.5px; line-height:1.4; }
+    .v-industry-health .claim-name-row { position:relative; display:flex; align-items:center; height:44px; margin-top:14px; }
+    .v-industry-health .claim-name {
+      position:relative; z-index:3; color:#B8C8D9; font-size:19px; font-style:italic; font-weight:500; letter-spacing:-.005em;
+      line-height:1; white-space:nowrap; transition:color .5s ease;
+    }
+    .v-industry-health .claim-summary { margin:auto 0 0; color:#B8C8D9; font-size:13px; line-height:1.4; }
+    .v-industry-health .claim-ties { position:absolute; inset:0; z-index:2; width:100%; height:100%; overflow:visible; pointer-events:none; }
+    .v-industry-health .claim-ties path {
+      fill:none; stroke:var(--blue); stroke-width:2.2; stroke-dasharray:6 6;
+      stroke-dashoffset:1000; opacity:0; transition:opacity .35s ease,stroke-dashoffset .8s ease;
+    }
+    .v-industry-health .claim-files.is-linked .claim-ties path { opacity:1; stroke-dashoffset:0; }
+    .v-industry-health .claim-files.is-linked .claim-name { color:#70B5FF; }
+    .v-industry-health .claim-files.is-linked .claim-folder { border-color:var(--blue); }
+    .v-industry-health .claim-files.is-linked .claim-folder::before { border-color:var(--blue); }
+    .v-industry-health .claim-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:28px; }
+    .v-industry-health .claim-note { margin:0; color:#91A8C0; font-size:14px; }
+    .v-industry-health .claim-shared,.v-industry-health .claim-flag { display:none; }
+    .v-industry-health .claim-story.is-linked .claim-shared,.v-industry-health .claim-story.is-linked .claim-flag { display:block; animation:v-industry-health__claim-fadein .5s ease .25s both; }
+    .v-industry-health .claim-shared { margin-top:32px; }
+    .v-industry-health .claim-shared > p { margin:0 0 12px; color:#B8C8D9; }
+    .v-industry-health .claim-chips { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+    .v-industry-health .claim-chip { display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:var(--radius-panel); background:rgba(50,140,255,.12); color:#EAF4FF; font-size:15.5px; }
+    .v-industry-health .claim-chip svg { flex:0 0 22px; width:22px; height:22px; fill:none; stroke:var(--blue-light); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+    .v-industry-health .claim-flag { max-width:760px; margin-top:24px; padding:24px 26px; border:1px solid rgba(147,185,224,.2); border-radius:var(--radius-panel); background:#0B1B2D; }
+    .v-industry-health .claim-flag h3 { margin:0; color:#F3F7FC; font-size:1.08rem; }
+    .v-industry-health .claim-flag ul { margin:12px 0 0; padding-left:20px; color:#B8C8D9; }
+    .v-industry-health .claim-flag li { margin-bottom:6px; }
+    .v-industry-health .claim-sent { margin:14px 0 0; color:#E3F0FC; font-weight:600; }
+    @keyframes v-industry-health__claim-fadein { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+
+    @media (max-width:900px) {
+      .v-industry-health .claim-files { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .v-industry-health .claim-chips { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .v-industry-health .policy-panel-grid { grid-template-columns:1fr 1fr; }
+      .v-industry-health .policy-panel-grid .policy-after { grid-column:1 / -1; }
+    }
+    @media (max-width:760px) {
+      .v-industry-health .policy-road { display:none; }
+      .v-industry-health .policy-stops { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .v-industry-health .policy-stop { border:1px solid var(--policy-line); font-size:17px; }
+      .v-industry-health .policy-stop small { display:block; color:var(--policy-muted); font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size:12.5px; }
+      .v-industry-health .policy-panel-grid { grid-template-columns:1fr; }
+      .v-industry-health .policy-panel-grid .policy-after { grid-column:auto; }
+    }
+    @media (max-width:520px) {
+      .v-industry-health .claim-files,.v-industry-health .claim-chips { grid-template-columns:1fr; }
+      .v-industry-health .claim-folder { min-height:160px; }
+      .v-industry-health .claim-ties { display:none; }
+      .v-industry-health .claim-files.is-linked { padding-left:20px; }
+      .v-industry-health .claim-files.is-linked::before {
+        content:""; position:absolute; z-index:2; left:6px; top:18px; bottom:18px;
+        border-left:2px dashed var(--blue);
+      }
+      .v-industry-health .claim-files.is-linked .claim-folder::after {
+        content:""; position:absolute; left:-21px; top:50%; width:21px;
+        border-top:2px dashed var(--blue);
+      }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .v-industry-health .policy-stop,.v-industry-health .policy-role,.v-industry-health .claim-name,.v-industry-health .claim-ties path,.v-industry-health .claim-folder { transition:none !important; }
+      .v-industry-health .claim-story.is-linked .claim-shared,.v-industry-health .claim-story.is-linked .claim-flag { animation:none; opacity:1; }
+    }
+
+  /* ===== hero animation: motor claims in context ===== */
+.v-industry-health .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.v-industry-health .ins-anim{min-height:0!important;padding:16px 16px 14px;display:flex;flex-direction:column;gap:10px}
+.v-industry-health .ins-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.12em;color:#8aa6c4;font-weight:600}
+.v-industry-health .ins-brand{color:#cfe2f7}.v-industry-health .ins-brand b{color:#ff8a5c}
+.v-industry-health .ins-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.v-industry-health .ins-steps button{font-family:inherit;font-size:12px;font-weight:600;line-height:1.25;color:#8aa6c4;background:none;border:0;border-top:2px solid rgba(151,190,231,.22);padding:8px 2px 0;text-align:left;cursor:pointer}
+.v-industry-health .ins-steps button[aria-pressed="true"]{color:#fff;border-color:var(--blue)}
+.v-industry-health .ins-stage{position:relative;width:100%;aspect-ratio:62/42;border-radius:10px;overflow:hidden;background:radial-gradient(60% 60% at 45% 40%,#0f2c4d 0%,#0a1c31 60%,#07131f 100%);border:1px solid rgba(151,190,231,.16)}
+.v-industry-health .ins-stage svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.v-industry-health .ins-stage text{font-family:"IBM Plex Sans",system-ui,sans-serif}
+.v-industry-health .ins-cap{min-height:72px;padding:11px 14px;border-left:2px solid var(--blue);background:rgba(50,140,255,.08);border-radius:0 8px 8px 0}
+.v-industry-health .ins-anim[data-step="3"] .ins-cap{border-color:var(--amber)}
+.v-industry-health .ins-cap strong{display:block;color:#fff;font-size:15px;font-weight:600}
+.v-industry-health .ins-cap p{margin:3px 0 0;color:#b8c8d9;font-size:13.5px;line-height:1.5}
+.v-industry-health .ins-ctl{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#7f97b2}
+.v-industry-health .ins-ctl button{background:none;border:1px solid rgba(151,190,231,.3);color:#dce9f6;border-radius:999px;padding:5px 12px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;margin-left:6px}
+@media (max-width:640px){.v-industry-health .ins-stage{aspect-ratio:36/52}.v-industry-health .ins-steps button{font-size:11px}}
+/* scene */
+.v-industry-health .ic{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.v-industry-health .cardg rect.bg{fill:#0d2440;stroke:#3a6894;stroke-width:1.2;transition:fill .5s,stroke .5s}
+.v-industry-health .cardg .k{fill:#86a3c0;font-size:10px;font-weight:600;letter-spacing:.08em}
+.v-industry-health .cardg .t{fill:#fff;font-size:14px;font-weight:600}
+.v-industry-health .cardg .m{fill:#a9c0d6;font-size:11px}
+.v-industry-health .fade{opacity:0;transition:opacity .6s ease}
+.v-industry-health .v{opacity:1;transition:opacity .6s}
+.v-industry-health .ins-anim[data-step="1"] .v,.v-industry-health .ins-anim[data-step="2"] .v,.v-industry-health .ins-anim[data-step="3"] .v{opacity:.45}
+.v-industry-health .ins-anim[data-step="1"] .s1,.v-industry-health .ins-anim[data-step="2"] .s1,.v-industry-health .ins-anim[data-step="3"] .s1,.v-industry-health .ins-anim[data-step="2"] .s2,.v-industry-health .ins-anim[data-step="3"] .s2,.v-industry-health .ins-anim[data-step="3"] .s3{opacity:1}
+.v-industry-health .ins-anim[data-step="2"] .s2.d1{transition-delay:.5s}.v-industry-health .ins-anim[data-step="2"] .s2.d2{transition-delay:1s}.v-industry-health .ins-anim[data-step="2"] .s2.d3{transition-delay:1.5s}
+.v-industry-health .ln{fill:none;stroke-width:1.6;transition:stroke-dashoffset 1s ease}
+.v-industry-health .ln.b{stroke:#4aa3ff}.v-industry-health .ln.a{stroke:#f2b85b;stroke-width:2}.v-industry-health .ln.g{stroke:#7f97b2;stroke-dasharray:4 4}
+.v-industry-health .ph rect.bg{fill:#12345c;stroke:#8cc2ff;stroke-width:1.6}
+.v-industry-health .rep rect.bg{fill:#2a2213;stroke:#f2b85b}
+.v-industry-health .rep .k{fill:#f2c98c}
+.v-industry-health .sep rect.bg{stroke-dasharray:5 4;stroke:#7f97b2}
+.v-industry-health .team rect.bg{fill:#2a2213;stroke:#f2b85b}.v-industry-health .team .t{font-size:12.5px}.v-industry-health .team .k{fill:#f2c98c}.v-industry-health .ins-anim[data-step="3"] .team rect.bg{fill:#3a2c12}
+.v-industry-health .ins-anim[data-step="2"] .s2.d0{transition-delay:.3s}.v-industry-health .ins-anim[data-step="2"] .s2.d1{transition-delay:.5s}.v-industry-health .ins-anim[data-step="2"] .s2.d2{transition-delay:.7s}.v-industry-health .ins-anim[data-step="2"] .s2.d3{transition-delay:.9s}
+.v-industry-health .core circle.c{fill:#0e2a4a;stroke:#62b8ff;stroke-width:1.6}
+.v-industry-health .core .h{fill:url(#insGlow);opacity:.3;transition:opacity .8s}
+.v-industry-health .ins-anim:not([data-step="0"]) .core .h{opacity:1}
+.v-industry-health .core text{fill:#fff;font-weight:700;text-anchor:middle}
+.v-industry-health .pill rect{fill:#2a2213;stroke:#f2b85b}
+.v-industry-health .pill .t{fill:#ffe2b8;font-size:12.5px;font-weight:600}.v-industry-health .pill .m{fill:#e9cfa8;font-size:10.5px}
+@media (prefers-reduced-motion:reduce){.v-industry-health .fade,.v-industry-health .v,.v-industry-health .ln,.v-industry-health .cardg rect.bg,.v-industry-health .core .h{transition:none!important}}
+
+
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+@media (min-width: 1101px) { .v-industry-health section.hero { box-sizing: border-box; min-height: 840px; display: flex; flex-direction: column; justify-content: center; } }
+

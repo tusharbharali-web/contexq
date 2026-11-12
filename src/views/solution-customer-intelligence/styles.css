@@ -1,0 +1,1842 @@
+/* Generated from public/html/contexq-data-management (2).html: the page's own CSS, scoped to .v-solution-customer-intelligence. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-solution-customer-intelligence *:not(svg, svg *), .v-solution-customer-intelligence ::before, .v-solution-customer-intelligence ::after) { all: revert; }
+:where(.v-solution-customer-intelligence svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-solution-customer-intelligence) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-solution-customer-intelligence > .cq-body) { display: block; margin: 8px; }
+.v-solution-customer-intelligence.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-solution-customer-intelligence :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-solution-customer-intelligence > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-solution-customer-intelligence main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+    @media (min-width: 769px) {
+      .v-solution-customer-intelligence .mob-only {
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .v-solution-customer-intelligence .desk-only {
+        display: none !important;
+      }
+      .v-solution-customer-intelligence .mob-only {
+        display: block !important;
+      }
+      .v-solution-customer-intelligence .problem-redesign,.v-solution-customer-intelligence  .scoring,.v-solution-customer-intelligence  .help,.v-solution-customer-intelligence  .reasons,.v-solution-customer-intelligence  .portfolio-cta {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  
+
+/* ----------------------------------------------------
+   ContexQ Design Tokens from style.css
+---------------------------------------------------- */
+.v-solution-customer-intelligence {
+  color-scheme: dark;
+  --page-pad: 24px;
+  --navy-950: #050F1C;
+  --navy-900: #081A2E;
+  --navy-850: #0C2038;
+  --navy-800: #111C2B;
+  --navy-700: #1E2D42;
+
+  --blue-100: #E6F0FF;
+  --blue-400: #5BA0FF;
+  --blue-500: #2F86FF;
+  --blue-600: #1F6FEB;
+
+  --white: #FFFFFF;
+  --slate-50: #F3F6FB;
+  --slate-200: #E1E7F0;
+  --slate-400: #93A4BF;
+  --slate-500: #5B6B86;
+  --slate-600: #475873;
+  --ink-900: #0B1B2E;
+
+  --accent-amber: #F5A524;
+  --accent-cyan: #22C3E6;
+  --accent-green: #34D399;
+  --accent-violet: #8B7CF6;
+  --accent-coral: #F4647A;
+
+  --radius-cta: 4px;
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 999px;
+
+  /* Legacy aliasing */
+  --ink: var(--white);
+  --muted: var(--slate-400);
+  --dim: var(--slate-500);
+  --blue: var(--blue-500);
+  --cyan: var(--accent-cyan);
+  --bg: var(--navy-950);
+  --panel: var(--navy-900);
+  --panel2: var(--navy-850);
+  --line: var(--navy-700);
+  --grid: rgba(93, 132, 171, 0.105);
+  --sans: 'IBM Plex Sans', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+}
+
+.v-solution-customer-intelligence *, .v-solution-customer-intelligence { box-sizing: border-box; }
+.v-solution-customer-intelligence { scroll-behavior: smooth; }
+.v-solution-customer-intelligence .cq-body {
+  margin: 0;
+  background: var(--navy-950);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.v-solution-customer-intelligence .page {
+  min-height: 100vh;
+  padding: 0 var(--page-pad) 60px;
+  background-image: 
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    radial-gradient(circle, rgba(68, 111, 153, 0.22) 1px, transparent 1.3px);
+  background-size: 88px 88px, 88px 88px, 28px 28px;
+  background-position: center top;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------
+   Hero Section (Header text locked to 44px)
+---------------------------------------------------- */
+.v-solution-customer-intelligence .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.93fr) minmax(480px, 1.07fr);
+  align-items: center;
+  gap: clamp(34px, 5vw, 76px);
+  max-width: 1152px;
+  min-height: 805px;
+  height: 805px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 64px 0 48px;
+}
+.v-solution-customer-intelligence .hero-copy { max-width: 690px; padding: 12px 0; }
+
+/* Hero section header text size strictly 44px */
+.v-solution-customer-intelligence .hero h1,.v-solution-customer-intelligence 
+#hero-title {
+  margin: 0;
+  font-size: 44px !important;
+  line-height: 52px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--white);
+}
+.v-solution-customer-intelligence .hero h1 em {
+  color: var(--blue-500) !important;
+  font-weight: 600 !important;
+  font-style: italic;
+}
+.v-solution-customer-intelligence .hero-copy > p {
+  max-width: 610px;
+  margin: 24px 0 28px;
+  color: var(--slate-400);
+  font-size: 18px;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+}
+.v-solution-customer-intelligence .explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  border: 1px solid var(--blue-500);
+  border-radius: var(--radius-cta);
+  color: var(--white);
+  background-color: var(--blue-500);
+  font: 600 15px var(--sans);
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+.v-solution-customer-intelligence .explore:hover {
+  background-color: var(--blue-400);
+  border-color: var(--blue-400);
+}
+.v-solution-customer-intelligence .explore span { color: var(--white); font-size: 19px; }
+
+.v-solution-customer-intelligence .media {
+  position: relative;
+  aspect-ratio: 16/10;
+  min-height: 0;
+  border: 1px solid var(--navy-700);
+  border-radius: var(--radius-panel);
+  background: #050d16;
+  overflow: hidden;
+  box-shadow: 0 24px 75px rgba(0, 0, 0, 0.4);
+}
+.v-solution-customer-intelligence .hero-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  border-radius: var(--radius-panel);
+  background: #050d16;
+}
+
+/* ----------------------------------------------------
+   Problem Comparison Section
+---------------------------------------------------- */
+.v-solution-customer-intelligence .problem-redesign {
+  --pr-ink: var(--white);
+  --pr-muted: var(--slate-400);
+  --pr-line: var(--navy-700);
+  --pr-blue: var(--blue-500);
+  --pr-green: var(--accent-green);
+  --pr-amber: var(--accent-amber);
+  --pr-red: var(--accent-coral);
+  margin-inline: calc(-1 * var(--page-pad));
+  padding: clamp(58px, 7vw, 96px) var(--page-pad);
+  color: var(--white);
+  background-color: var(--navy-950);
+  font-family: var(--sans);
+}
+.v-solution-customer-intelligence .problem-redesign * { box-sizing: border-box; }
+.v-solution-customer-intelligence .pr-wrap { max-width: 1152px; margin: 0 auto; }
+.v-solution-customer-intelligence .pr-heading { display: block; text-align: left; margin-bottom: 34px; }
+.v-solution-customer-intelligence .pr-heading h2 {
+  max-width: 840px;
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(38px, 4.2vw, 56px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.v-solution-customer-intelligence .pr-heading h2 em { color: var(--blue-500); font-weight: 500; font-style: italic; }
+.v-solution-customer-intelligence .pr-intro {
+  max-width: 700px;
+  margin: 16px 0 0;
+  color: var(--slate-400);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.v-solution-customer-intelligence .pr-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  align-items: stretch;
+  gap: clamp(16px, 2vw, 24px);
+  padding: clamp(20px, 2.4vw, 32px);
+  border: 1px solid var(--navy-700);
+  border-radius: var(--radius-panel);
+  background: var(--navy-900);
+}
+.v-solution-customer-intelligence .pr-side {
+  min-width: 0;
+  min-height: 490px;
+  padding: clamp(20px, 2vw, 30px);
+  border: 1px solid var(--navy-700);
+  border-radius: var(--radius-card);
+  background: var(--navy-850);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.v-solution-customer-intelligence .pr-side h3 {
+  margin: 0 0 8px;
+  font: 600 clamp(19px, 1.6vw, 22px)/1.35 var(--sans);
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.v-solution-customer-intelligence .pr-subline {
+  margin: 0 0 16px;
+  color: var(--slate-400);
+  font: 400 14px/1.5 var(--mono);
+}
+.v-solution-customer-intelligence .pr-counterparty-table {
+  width: 100%;
+  flex: 1;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font: 400 14px/1.35 var(--sans);
+}
+.v-solution-customer-intelligence .pr-counterparty-table thead {
+  height: 38px;
+  text-align: left;
+  color: var(--slate-400);
+  border-bottom: 1px solid var(--navy-700);
+}
+.v-solution-customer-intelligence .pr-counterparty-table th { font-weight: 600; }
+.v-solution-customer-intelligence .pr-counterparty-table th:first-child,.v-solution-customer-intelligence  .pr-counterparty-table td:first-child { width: 47%; padding-right: 9px; }
+.v-solution-customer-intelligence .pr-counterparty-table tbody tr { height: 20%; border-bottom: 1px solid var(--navy-700); }
+.v-solution-customer-intelligence .pr-counterparty-table tbody tr:last-child { border: 0; }
+.v-solution-customer-intelligence .pr-counterparty-table td { padding: 8px 0; color: var(--white); }
+.v-solution-customer-intelligence .pr-volume { display: grid; grid-template-columns: minmax(25px, 1fr) auto; align-items: center; gap: 8px; }
+.v-solution-customer-intelligence .pr-volume-track { height: 8px; border-radius: 99px; background: rgba(147, 164, 191, 0.15); overflow: hidden; }
+.v-solution-customer-intelligence .pr-volume-bar { display: block; height: 100%; border-radius: 99px; background: var(--blue-500); }
+.v-solution-customer-intelligence .pr-volume-value { min-width: 52px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.v-solution-customer-intelligence .pr-panel-footer {
+  margin: auto 0 0;
+  padding-top: 15px;
+  border-top: 1px solid var(--navy-700);
+  color: var(--slate-400);
+  font: 400 12px/1.55 var(--mono);
+}
+.v-solution-customer-intelligence .pr-graph-scroll { flex: 1; min-width: 0; margin: 0 -2px 14px; overflow-x: auto; }
+.v-solution-customer-intelligence .pr-graph-svg { display: block; width: 100%; min-width: 0; height: auto; }
+.v-solution-customer-intelligence .pr-graph-svg text { font-family: var(--sans); }
+.v-solution-customer-intelligence .pr-link-customer { fill: none; stroke: var(--blue-500); stroke-width: 3; }
+.v-solution-customer-intelligence .pr-link-hidden { fill: none; stroke: var(--accent-amber); stroke-width: 3; stroke-dasharray: 8 7; }
+.v-solution-customer-intelligence .pr-link-opportunity { fill: none; stroke: var(--accent-green); stroke-width: 3; }
+.v-solution-customer-intelligence .pr-node rect { stroke-width: 2; }
+.v-solution-customer-intelligence .pr-node text { font: 600 16px var(--sans); text-anchor: middle; dominant-baseline: middle; }
+.v-solution-customer-intelligence .pr-customer rect { fill: var(--blue-500); stroke: var(--blue-500); }
+.v-solution-customer-intelligence .pr-customer text { fill: #fff; }
+.v-solution-customer-intelligence .pr-supplier-node rect { fill: var(--navy-900); stroke: var(--navy-700); }
+.v-solution-customer-intelligence .pr-supplier-node text { fill: var(--white); }
+.v-solution-customer-intelligence .pr-director rect { fill: var(--accent-amber); stroke: var(--accent-amber); }
+.v-solution-customer-intelligence .pr-director text { fill: #0B1B2E; }
+.v-solution-customer-intelligence .pr-parent rect,.v-solution-customer-intelligence  .pr-opportunity rect { fill: var(--accent-green); stroke: var(--accent-green); }
+.v-solution-customer-intelligence .pr-parent text,.v-solution-customer-intelligence  .pr-opportunity text { fill: #0B1B2E; }
+.v-solution-customer-intelligence .pr-jv rect { fill: var(--navy-900); stroke: var(--accent-green); }
+.v-solution-customer-intelligence .pr-jv text { fill: var(--white); }
+.v-solution-customer-intelligence .pr-opportunity-ring { fill: none; stroke: var(--accent-green); stroke-width: 2; opacity: .55; }
+.v-solution-customer-intelligence .pr-graph-pill rect { fill: var(--navy-900); stroke: var(--navy-700); stroke-width: 1.5; }
+.v-solution-customer-intelligence .pr-graph-pill text { fill: var(--white); font: 500 14px var(--sans); text-anchor: middle; dominant-baseline: middle; }
+.v-solution-customer-intelligence .pr-graph-pill-news rect { stroke: var(--accent-green); }
+.v-solution-customer-intelligence .pr-hidden-label rect { fill: var(--navy-850); }
+.v-solution-customer-intelligence .pr-hidden-label text { fill: var(--accent-amber); font: 600 14px var(--sans); text-anchor: middle; dominant-baseline: middle; }
+.v-solution-customer-intelligence .pr-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 14px; padding: 0; list-style: none; color: var(--slate-400); font: 400 13px/1.45 var(--sans); }
+.v-solution-customer-intelligence .pr-legend li { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+.v-solution-customer-intelligence .pr-legend-mark { width: 10px; height: 10px; border-radius: 50%; background: var(--blue-500); }
+.v-solution-customer-intelligence .pr-legend-mark-existing,.v-solution-customer-intelligence  .pr-legend-mark-hidden { height: 3px; border-radius: 0; }
+.v-solution-customer-intelligence .pr-legend-mark-hidden { background: var(--accent-amber); }
+.v-solution-customer-intelligence .pr-legend-mark-opportunity { background: var(--accent-green); }
+.v-solution-customer-intelligence .pr-close { max-width: 1120px; margin: 24px auto 0; color: var(--slate-400); font-size: 16px; line-height: 1.65; text-align: center; }
+
+/* ----------------------------------------------------
+   Six-Domain Scoring Section
+---------------------------------------------------- */
+.v-solution-customer-intelligence #six-domain-scoring {
+  --hub-blue: var(--blue-500);
+  --hub-cyan: var(--accent-cyan);
+  --hub-violet: var(--accent-violet);
+  --hub-green: var(--accent-green);
+  --hub-amber: var(--accent-amber);
+  --hub-pink: var(--accent-coral);
+  margin-inline: calc(-1 * var(--page-pad));
+  padding: clamp(58px, 8vw, 100px) var(--page-pad);
+  background-color: var(--navy-950);
+  background-image: 
+    linear-gradient(rgba(90,130,170,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90,130,170,.055) 1px, transparent 1px),
+    radial-gradient(circle, rgba(68,111,153,.2) 1px, transparent 1.3px);
+  background-size: 88px 88px, 88px 88px, 28px 28px;
+  background-position: center top;
+  color: var(--white);
+}
+.v-solution-customer-intelligence .scoring-wrap { max-width: 1152px; margin: 0 auto; }
+.v-solution-customer-intelligence .scoring-heading { display: block; text-align: left; margin-bottom: 34px; }
+.v-solution-customer-intelligence .scoring-heading h2 {
+  max-width: 850px;
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(38px, 4.2vw, 56px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.v-solution-customer-intelligence .scoring-heading h2 em { color: var(--blue-500); font-weight: 500; }
+.v-solution-customer-intelligence .scoring-intro { max-width: 900px; margin: 14px 0 0; color: var(--slate-400); font-size: 16px; line-height: 1.65; }
+
+.v-solution-customer-intelligence .scoring-hub {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 1000px);
+  height: auto;
+  aspect-ratio: 1000 / 620;
+  margin: 0 auto;
+  overflow: visible;
+}
+.v-solution-customer-intelligence .hub-connections { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; overflow: visible; }
+.v-solution-customer-intelligence .hub-connections path { fill: none; stroke: var(--navy-700); stroke-width: 2.2; stroke-dasharray: 5 7; opacity: .85; }
+.v-solution-customer-intelligence .hub-customer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+}
+.v-solution-customer-intelligence .customer-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(47, 134, 255, 0.25);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47, 134, 255, 0.12), transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.v-solution-customer-intelligence .customer-core {
+  display: grid;
+  place-items: center;
+  width: 112px;
+  height: 112px;
+  border: 2px solid var(--blue-500);
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 30%, #174b82, var(--navy-900) 70%);
+  box-shadow: 0 0 0 8px rgba(47, 134, 255, 0.1), 0 0 34px rgba(47, 134, 255, 0.3);
+}
+.v-solution-customer-intelligence .customer-core svg { width: 42px; height: 42px; fill: none; stroke: #fff; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.v-solution-customer-intelligence .hub-customer strong { margin-top: 12px; font-size: 17px; font-weight: 600; }
+.v-solution-customer-intelligence .hub-tagline { margin-top: 5px; color: var(--slate-400); font-size: 14px; letter-spacing: .01em; white-space: nowrap; }
+.v-solution-customer-intelligence .hub-tagline b { color: var(--accent-cyan); font-weight: 500; }
+
+.v-solution-customer-intelligence .hub-spoke {
+  --spoke: var(--hub-blue);
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 205px;
+  min-height: 104px;
+  padding: 14px 12px;
+  border: 1px solid var(--navy-700);
+  border-radius: var(--radius-panel);
+  background: linear-gradient(145deg, rgba(12, 32, 56, 0.97), rgba(8, 26, 46, 0.97));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  font: 500 15px/1.25 var(--sans);
+  text-align: center;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: all 180ms ease;
+}
+.v-solution-customer-intelligence .hub-spoke:hover,.v-solution-customer-intelligence  .hub-spoke:focus-visible,.v-solution-customer-intelligence  .hub-spoke.is-active {
+  z-index: 5;
+  border-color: var(--spoke);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--spoke) 20%, var(--navy-850)), var(--navy-900));
+  box-shadow: 0 0 30px color-mix(in srgb, var(--spoke) 28%, transparent);
+  transform: translate(-50%, -53%);
+}
+.v-solution-customer-intelligence .spoke-graph { width: 64px; height: 34px; overflow: visible; fill: none; stroke: var(--spoke); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.v-solution-customer-intelligence .spoke-tip {
+  position: absolute;
+  top: calc(100% + 9px);
+  left: 50%;
+  z-index: 6;
+  width: max-content;
+  max-width: min(280px, 80vw);
+  padding: 9px 12px;
+  border: 1px solid var(--navy-700);
+  border-radius: var(--radius-card);
+  background: var(--navy-900);
+  color: #dcecf8;
+  box-shadow: 0 8px 24px rgba(0,0,0,.45);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -4px);
+  transition: opacity .16s ease, transform .16s ease, visibility .16s;
+}
+.v-solution-customer-intelligence .hub-spoke:hover .spoke-tip,.v-solution-customer-intelligence  .hub-spoke:focus-visible .spoke-tip,.v-solution-customer-intelligence  .hub-spoke.is-active .spoke-tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+.v-solution-customer-intelligence .spoke-financial { --spoke: var(--hub-blue); left: 50%; top: 9.68%; }
+.v-solution-customer-intelligence .spoke-people { --spoke: var(--hub-cyan); left: 71.65%; top: 29.84%; }
+.v-solution-customer-intelligence .spoke-footprint { --spoke: var(--hub-violet); left: 71.65%; top: 70.16%; }
+.v-solution-customer-intelligence .spoke-news { --spoke: var(--hub-pink); left: 50%; top: 90.32%; }
+.v-solution-customer-intelligence .spoke-sustainability { --spoke: var(--hub-green); left: 28.35%; top: 70.16%; }
+.v-solution-customer-intelligence .spoke-money { --spoke: var(--hub-amber); left: 28.35%; top: 29.84%; }
+
+/* ----------------------------------------------------
+   Help Section
+---------------------------------------------------- */
+.v-solution-customer-intelligence .help {
+  --h-bg: #f3f6fb;
+  --h-ink: #0a1628;
+  --h-soft: #4f5b75;
+  --h-blue: var(--blue-500);
+  --h-card: var(--navy-950);
+  --h-card-edge: var(--navy-700);
+  --h-viz: #030a15;
+  --h-viz-edge: #101c30;
+  --h-text: #f4f7fc;
+  --h-text-soft: #9aa9c4;
+  --h-green: var(--accent-green);
+  --h-amber: var(--accent-amber);
+  margin-inline: calc(-1 * var(--page-pad));
+  padding: clamp(58px, 7vw, 96px) var(--page-pad);
+  background: var(--h-bg);
+  color: var(--h-ink);
+  font-family: var(--sans);
+}
+.v-solution-customer-intelligence .help__inner { max-width: 1152px; margin: 0 auto; }
+.v-solution-customer-intelligence .help h2 {
+  margin: 0 0 16px;
+  max-width: 800px;
+  font-size: clamp(38px, 4.2vw, 56px);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.v-solution-customer-intelligence .help h2 em { font-style: italic; color: var(--h-blue); }
+.v-solution-customer-intelligence .help__lead {
+  margin: 0 0 44px;
+  max-width: 68ch;
+  font-size: 17px;
+  color: var(--h-soft);
+  line-height: 1.6;
+}
+.v-solution-customer-intelligence .help__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+@media (max-width: 860px) {
+  .v-solution-customer-intelligence .help__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.v-solution-customer-intelligence .help__card {
+  display: flex;
+  flex-direction: column;
+  background: var(--h-card);
+  border: 1px solid var(--h-card-edge);
+  border-radius: var(--radius-panel);
+  padding: clamp(20px, 3vw, 36px);
+  color: var(--h-text);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.v-solution-customer-intelligence .help__card h3 { margin: 0 0 12px; font-size: 20px; line-height: 1.35; font-weight: 600; letter-spacing: -0.01em; }
+.v-solution-customer-intelligence .help__card p { margin: 0; color: var(--h-text-soft); font-size: 15px; line-height: 1.6; }
+.v-solution-customer-intelligence .help__viz {
+  margin: 24px 0;
+  height: 220px;
+  background: var(--h-viz);
+  border: 1px solid var(--h-viz-edge);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+.v-solution-customer-intelligence .help__viz svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+}
+@media (max-width: 860px) {
+  .v-solution-customer-intelligence .help__card {
+    padding: 22px 18px;
+  }
+  .v-solution-customer-intelligence .help__viz {
+    margin: 18px 0;
+    height: auto;
+    aspect-ratio: 560 / 200;
+    padding: 10px 8px;
+  }
+  .v-solution-customer-intelligence .help svg text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.v-solution-customer-intelligence .help__chip {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(52, 211, 153, .5);
+  background: rgba(52, 211, 153, .10);
+  color: var(--h-green);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 0 16px rgba(52, 211, 153, .22);
+}
+.v-solution-customer-intelligence .help__note { margin: 28px 0 0; color: var(--h-soft); font-size: 14px; }
+.v-solution-customer-intelligence .help svg text { font-family: var(--sans); font-size: 15px; }
+.v-solution-customer-intelligence .help .ic { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.v-solution-customer-intelligence .help .ln { fill: none; stroke-width: 2.4; stroke-linecap: round; }
+.v-solution-customer-intelligence .help .dot { stroke-dasharray: 1 6; }
+.v-solution-customer-intelligence .help .dash { stroke-dasharray: 6 5; }
+.v-solution-customer-intelligence .help .s-grey { stroke: #9fb0cc; }
+.v-solution-customer-intelligence .help .s-blue { stroke: var(--blue-500); }
+.v-solution-customer-intelligence .help .s-green { stroke: var(--accent-green); }
+.v-solution-customer-intelligence .help .s-amber { stroke: var(--accent-amber); }
+.v-solution-customer-intelligence .help .t-grey { fill: #9fb0cc; }
+.v-solution-customer-intelligence .help .t-white { fill: #f4f7fc; font-weight: 600; }
+.v-solution-customer-intelligence .help .t-blue { fill: var(--blue-400); font-weight: 500; }
+.v-solution-customer-intelligence .help .t-green { fill: var(--accent-green); font-weight: 600; }
+.v-solution-customer-intelligence .help .t-amber { fill: var(--accent-amber); }
+.v-solution-customer-intelligence .help .t-yellow { fill: #f7c948; font-weight: 500; }
+.v-solution-customer-intelligence .help .node { fill: rgba(52, 211, 153, .28); stroke: var(--accent-green); stroke-width: 2; }
+.v-solution-customer-intelligence .help .paper-on { fill: rgba(52, 211, 153, .22); stroke: var(--accent-green); stroke-width: 2.2; }
+.v-solution-customer-intelligence .help .paper-off { fill: #172236; stroke: #46566f; stroke-width: 2.2; }
+.v-solution-customer-intelligence .help .pill { fill: rgba(245, 165, 36, .12); stroke: var(--accent-amber); stroke-width: 1.5; }
+
+/* ----------------------------------------------------
+   Reasons Section
+---------------------------------------------------- */
+.v-solution-customer-intelligence .reasons {
+  --r-ink: var(--white);
+  --r-muted: var(--slate-400);
+  --r-line: var(--navy-700);
+  --r-blue: var(--blue-500);
+  margin-inline: calc(-1 * var(--page-pad));
+  padding: clamp(58px, 8vw, 100px) var(--page-pad);
+  color: var(--white);
+  background-color: var(--navy-950);
+  font-family: var(--sans);
+}
+.v-solution-customer-intelligence .reasons-wrap { max-width: 1152px; margin: 0 auto; }
+.v-solution-customer-intelligence .reasons-heading { margin-bottom: 40px; }
+.v-solution-customer-intelligence .reasons-heading h2 {
+  max-width: 850px;
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(38px, 4.2vw, 56px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.v-solution-customer-intelligence .reasons-heading h2 em { color: var(--blue-500); font-weight: 500; }
+.v-solution-customer-intelligence .reasons-heading p { max-width: 600px; margin: 14px 0 0; color: var(--slate-400); font-size: 16px; line-height: 1.65; }
+.v-solution-customer-intelligence .reason-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+.v-solution-customer-intelligence .reason-card {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--navy-700);
+  border-top: 2px solid var(--blue-500);
+  border-radius: var(--radius-card);
+  background: var(--navy-900);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.v-solution-customer-intelligence .reason-card:nth-child(2) { border-top-color: var(--accent-cyan); }
+.v-solution-customer-intelligence .reason-card:nth-child(3) { border-top-color: var(--accent-violet); }
+.v-solution-customer-intelligence .reason-meta .num {
+  font: 700 20px/1.3 var(--mono);
+  color: var(--blue-500);
+}
+.v-solution-customer-intelligence .reason-card:nth-child(2) .num { color: var(--accent-cyan); }
+.v-solution-customer-intelligence .reason-card:nth-child(3) .num { color: var(--accent-violet); }
+.v-solution-customer-intelligence .reason-copy h3 {
+  margin: 0 0 10px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+.v-solution-customer-intelligence .reason-copy p { margin: 0; color: var(--slate-400); font-size: 15px; line-height: 1.6; }
+
+/* ----------------------------------------------------
+   Portfolio CTA Section
+---------------------------------------------------- */
+.v-solution-customer-intelligence .portfolio-cta {
+  margin-inline: calc(-1 * var(--page-pad));
+  padding: clamp(54px, 7vw, 96px) var(--page-pad);
+  color: var(--ink-900);
+  background-color: #f7f9fd;
+  background-image: 
+    radial-gradient(circle, rgba(70, 101, 150, 0.12) .8px, transparent 1px),
+    linear-gradient(115deg, #f3f7ff 0%, #fff 62%);
+  background-size: 16px 16px, cover;
+  background-position: left top, center;
+  font-family: var(--sans);
+}
+.v-solution-customer-intelligence .portfolio-wrap { max-width: 1152px; margin: auto; }
+.v-solution-customer-intelligence .portfolio-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 16px;
+  margin-bottom: 40px;
+}
+.v-solution-customer-intelligence .portfolio-heading h2 {
+  grid-column: 1;
+  max-width: 900px;
+  margin: 0;
+  color: var(--ink-900);
+  font-size: clamp(38px, 4.2vw, 56px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+.v-solution-customer-intelligence .portfolio-heading h2 em { color: var(--blue-500); font-weight: 500; }
+.v-solution-customer-intelligence .portfolio-actions { grid-column: 2; grid-row: 1; margin: 0; display: flex; justify-content: flex-end; }
+.v-solution-customer-intelligence .portfolio-button.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  border: 1px solid var(--blue-500);
+  border-radius: var(--radius-cta);
+  background: var(--blue-500);
+  color: #fff;
+  font: 600 15px var(--sans);
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+.v-solution-customer-intelligence .portfolio-button.primary:hover { background: var(--blue-400); border-color: var(--blue-400); }
+.v-solution-customer-intelligence .portfolio-heading > p {
+  grid-column: 1 / -1;
+  max-width: 960px;
+  margin: 0;
+  color: var(--slate-600);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.v-solution-customer-intelligence .engagement-steps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.12fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 16px;
+}
+.v-solution-customer-intelligence .engagement-step {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-panel);
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.03);
+}
+.v-solution-customer-intelligence .engagement-step.is-featured {
+  border: 1px solid var(--blue-500);
+  background: linear-gradient(145deg, #f3f7ff, #fff);
+  box-shadow: 0 8px 26px rgba(47, 134, 255, 0.12);
+}
+.v-solution-customer-intelligence .step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.v-solution-customer-intelligence .step-number {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c9d8f3;
+  border-radius: var(--radius-card);
+  background: #f0f5ff;
+  color: var(--blue-500);
+  font: 600 12px var(--mono);
+}
+.v-solution-customer-intelligence .is-featured .step-number { border-color: var(--blue-500); background: var(--blue-500); color: #fff; }
+.v-solution-customer-intelligence .step-head h3 { margin: 0; color: var(--ink-900); font-size: 18px; font-weight: 600; line-height: 1.35; letter-spacing: -0.02em; }
+.v-solution-customer-intelligence .engagement-step > p { margin: 0; color: var(--slate-600); font-size: 14px; line-height: 1.65; }
+.v-solution-customer-intelligence .step-arrow { display: flex; align-items: center; justify-content: center; color: var(--blue-500); font-size: 22px; }
+
+/* ----------------------------------------------------
+   Responsive Adjustments
+---------------------------------------------------- */
+@media (max-width: 1000px) {
+  .v-solution-customer-intelligence .hero { grid-template-columns: 1fr; gap: 32px; height: auto; min-height: 0; padding: 24px 0; }
+  .v-solution-customer-intelligence .reason-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v-solution-customer-intelligence .pr-showcase { grid-template-columns: 1fr; }
+  .v-solution-customer-intelligence .pr-side { min-height: auto !important; height: auto !important; }
+  .v-solution-customer-intelligence .pr-counterparty-table { flex: none !important; height: auto !important; }
+  .v-solution-customer-intelligence .pr-counterparty-table tbody tr { height: auto !important; }
+  .v-solution-customer-intelligence .pr-counterparty-table td { padding: 10px 0 !important; }
+  .v-solution-customer-intelligence .pr-panel-footer { margin: 18px 0 0 !important; flex: none !important; }
+  .v-solution-customer-intelligence .pr-graph-scroll { min-width: 0; max-width: 100%; }
+}
+@media (max-width: 760px) {
+  .v-solution-customer-intelligence .page { padding: 24px 18px 40px; }
+  .v-solution-customer-intelligence .hero h1,.v-solution-customer-intelligence  #hero-title { font-size: 36px !important; line-height: 44px !important; }
+  .v-solution-customer-intelligence .hero-copy > p { font-size: 16px; }
+  .v-solution-customer-intelligence .scoring-hub {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 1 / 1.05;
+    margin: 0 auto;
+    container-type: inline-size;
+  }
+  .v-solution-customer-intelligence .hub-connections {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+  .v-solution-customer-intelligence .hub-customer {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  .v-solution-customer-intelligence .customer-orbit {
+    width: 120px;
+    height: 120px;
+  }
+  .v-solution-customer-intelligence .customer-core {
+    width: 62px;
+    height: 62px;
+  }
+  .v-solution-customer-intelligence .customer-core svg {
+    width: 26px;
+    height: 26px;
+  }
+  .v-solution-customer-intelligence .hub-customer strong {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .v-solution-customer-intelligence .hub-tagline {
+    margin-top: 2px;
+    font-size: 11px;
+  }
+  .v-solution-customer-intelligence .hub-spoke {
+    position: absolute;
+    inset: auto;
+    width: 29cqw;
+    min-height: 52px;
+    padding: 6px 4px;
+    border-radius: 9px;
+    font-size: 11px;
+    line-height: 1.2;
+    transform: translate(-50%, -50%);
+  }
+  .v-solution-customer-intelligence .spoke-graph { display: none; }
+  .v-solution-customer-intelligence .spoke-financial { left: 50%; top: 12%; }
+  .v-solution-customer-intelligence .spoke-people { left: 82%; top: 31%; }
+  .v-solution-customer-intelligence .spoke-footprint { left: 82%; top: 69%; }
+  .v-solution-customer-intelligence .spoke-news { left: 50%; top: 88%; }
+  .v-solution-customer-intelligence .spoke-sustainability { left: 18%; top: 69%; }
+  .v-solution-customer-intelligence .spoke-money { left: 18%; top: 31%; }
+  
+  .v-solution-customer-intelligence .spoke-tip {
+    max-width: 200px;
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  .v-solution-customer-intelligence .spoke-people .spoke-tip,.v-solution-customer-intelligence  .spoke-footprint .spoke-tip {
+    left: auto;
+    right: 0;
+    transform: translate(0, -4px);
+  }
+  .v-solution-customer-intelligence .spoke-people:hover .spoke-tip,.v-solution-customer-intelligence  .spoke-footprint:hover .spoke-tip,.v-solution-customer-intelligence 
+  .spoke-people.is-active .spoke-tip,.v-solution-customer-intelligence  .spoke-footprint.is-active .spoke-tip {
+    transform: translate(0, 0);
+  }
+  .v-solution-customer-intelligence .spoke-money .spoke-tip,.v-solution-customer-intelligence  .spoke-sustainability .spoke-tip {
+    left: 0;
+    transform: translate(0, -4px);
+  }
+  .v-solution-customer-intelligence .spoke-money:hover .spoke-tip,.v-solution-customer-intelligence  .spoke-sustainability:hover .spoke-tip,.v-solution-customer-intelligence 
+  .spoke-money.is-active .spoke-tip,.v-solution-customer-intelligence  .spoke-sustainability.is-active .spoke-tip {
+    transform: translate(0, 0);
+  }
+  .v-solution-customer-intelligence .reason-grid { grid-template-columns: 1fr; }
+  .v-solution-customer-intelligence .portfolio-heading { grid-template-columns: 1fr; gap: 16px; }
+  .v-solution-customer-intelligence .portfolio-actions { grid-column: 1; grid-row: auto; justify-content: flex-start; }
+  .v-solution-customer-intelligence .engagement-steps { grid-template-columns: 1fr; }
+  .v-solution-customer-intelligence .step-arrow { transform: rotate(90deg); min-height: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v-solution-customer-intelligence *,.v-solution-customer-intelligence  *::before,.v-solution-customer-intelligence  *::after, .v-solution-customer-intelligence, .v-solution-customer-intelligence::before, .v-solution-customer-intelligence::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+/* ----------------------------------------------------
+   Alternating section backgrounds + remove grid/dot textures
+---------------------------------------------------- */
+.v-solution-customer-intelligence .page {
+  background-color: var(--navy-950);
+  background-image: none !important;
+}
+
+/* Section 2: white */
+.v-solution-customer-intelligence .problem-redesign {
+  background-color: #FFFFFF;
+  color: var(--ink-900);
+}
+.v-solution-customer-intelligence .problem-redesign .pr-heading h2 {
+  color: var(--ink-900);
+}
+.v-solution-customer-intelligence .problem-redesign .pr-heading h2 em {
+  color: var(--blue-500);
+}
+.v-solution-customer-intelligence .problem-redesign .pr-intro,.v-solution-customer-intelligence 
+.problem-redesign .pr-close {
+  color: var(--slate-600);
+}
+
+/* Section 3: blue */
+.v-solution-customer-intelligence #six-domain-scoring {
+  background-color: var(--navy-950);
+  background-image: none !important;
+}
+
+/* Section 4 (How we help): white — existing light background retained */
+
+/* Section 5: blue — existing dark background retained */
+
+/* Section 6: match the dark-blue background of the section directly above */
+.v-solution-customer-intelligence .portfolio-cta {
+  background-color: var(--navy-950);
+  background-image: none !important;
+  color: #FFFFFF;
+}
+.v-solution-customer-intelligence .portfolio-cta .portfolio-heading h2,.v-solution-customer-intelligence 
+.portfolio-cta .portfolio-heading h2 em {
+  color: #FFFFFF;
+}
+.v-solution-customer-intelligence .portfolio-cta .portfolio-heading > p {
+  color: #CBD5E1;
+}
+.v-solution-customer-intelligence .portfolio-cta .portfolio-actions {
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+  width: max-content;
+  gap: 12px;
+}
+.v-solution-customer-intelligence .portfolio-email {
+  color: #CBD5E1;
+  font-size: 15px;
+}
+.v-solution-customer-intelligence .portfolio-email a {
+  color: var(--blue-400);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.v-solution-customer-intelligence .portfolio-email a:hover {
+  color: var(--blue-500);
+}
+@media (min-width: 761px) {
+  .v-solution-customer-intelligence .portfolio-cta .portfolio-heading h2 { grid-row: 1; }
+  .v-solution-customer-intelligence .portfolio-cta .portfolio-heading > p { grid-column: 1; grid-row: 2; }
+  .v-solution-customer-intelligence .portfolio-cta .portfolio-actions { grid-row: 1 / span 2; align-self: center; }
+}
+@media (max-width: 760px) {
+  .v-solution-customer-intelligence .portfolio-cta .portfolio-actions {
+    align-items: flex-start;
+    justify-self: start;
+    width: 100%;
+  }
+}
+
+/* No italics in headings. */
+.v-solution-customer-intelligence h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence  h1 i,.v-solution-customer-intelligence  h2 i {
+  font-style: normal !important;
+}
+
+/* Heading left, subheading right, vertically centered — every section except the last banner. */
+.v-solution-customer-intelligence .pr-heading,.v-solution-customer-intelligence 
+.scoring-heading,.v-solution-customer-intelligence 
+.reasons-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 64px;
+  text-align: left;
+}
+.v-solution-customer-intelligence .help__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 64px;
+}
+.v-solution-customer-intelligence .help__inner > h2 { grid-column: 1; margin: 0 0 44px; }
+.v-solution-customer-intelligence .help__inner > .help__lead { grid-column: 2; margin: 0 0 44px; max-width: none; }
+.v-solution-customer-intelligence .help__inner > .help__grid { grid-column: 1 / -1; }
+.v-solution-customer-intelligence .pr-heading h2,.v-solution-customer-intelligence  .scoring-heading h2,.v-solution-customer-intelligence  .reasons-heading h2 { max-width: none; }
+.v-solution-customer-intelligence .pr-intro,.v-solution-customer-intelligence  .scoring-intro,.v-solution-customer-intelligence  .reasons-heading p { max-width: none; margin: 0; }
+@media (max-width: 900px) {
+  .v-solution-customer-intelligence .pr-heading,.v-solution-customer-intelligence  .scoring-heading,.v-solution-customer-intelligence  .reasons-heading,.v-solution-customer-intelligence  .help__inner { grid-template-columns: 1fr; row-gap: 16px; }
+  .v-solution-customer-intelligence .help__inner > h2,.v-solution-customer-intelligence  .help__inner > .help__lead { grid-column: 1; margin-bottom: 0; }
+}
+
+
+/* Keep emphasized/alternate heading text the same color as its surrounding sentence. */
+.v-solution-customer-intelligence .hero h1 em,.v-solution-customer-intelligence 
+.pr-heading h2 em,.v-solution-customer-intelligence 
+.pr-heading em,.v-solution-customer-intelligence 
+.scoring-heading h2 em,.v-solution-customer-intelligence 
+.help h2 em,.v-solution-customer-intelligence 
+.reasons-heading h2 em,.v-solution-customer-intelligence 
+.portfolio-heading h2 em,.v-solution-customer-intelligence 
+h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence  h3 em {
+  color: inherit !important;
+}
+
+@media (max-width: 760px) {
+  .v-solution-customer-intelligence {
+    --page-pad: 16px;
+  }
+}
+
+.v-solution-customer-intelligence *,.v-solution-customer-intelligence  ::before,.v-solution-customer-intelligence  ::after, .v-solution-customer-intelligence {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+.v-solution-customer-intelligence ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  
+}
+.v-solution-customer-intelligence .visible {
+    visibility: visible
+}
+.v-solution-customer-intelligence .collapse {
+    visibility: collapse
+}
+.v-solution-customer-intelligence .fixed {
+    position: fixed
+}
+.v-solution-customer-intelligence .absolute {
+    position: absolute
+}
+.v-solution-customer-intelligence .relative {
+    position: relative
+}
+.v-solution-customer-intelligence .isolate {
+    isolation: isolate
+}
+.v-solution-customer-intelligence .z-10 {
+    z-index: 10
+}
+.v-solution-customer-intelligence .mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+.v-solution-customer-intelligence .my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem
+}
+.v-solution-customer-intelligence .my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem
+}
+.v-solution-customer-intelligence .my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+.v-solution-customer-intelligence .-ml-1 {
+    margin-left: -0.25rem
+}
+.v-solution-customer-intelligence .-mt-0\.5 {
+    margin-top: -0.125rem
+}
+.v-solution-customer-intelligence .mb-1 {
+    margin-bottom: 0.25rem
+}
+.v-solution-customer-intelligence .mb-1\.5 {
+    margin-bottom: 0.375rem
+}
+.v-solution-customer-intelligence .mb-2 {
+    margin-bottom: 0.5rem
+}
+.v-solution-customer-intelligence .mb-2\.5 {
+    margin-bottom: 0.625rem
+}
+.v-solution-customer-intelligence .mb-3 {
+    margin-bottom: 0.75rem
+}
+.v-solution-customer-intelligence .mb-4 {
+    margin-bottom: 1rem
+}
+.v-solution-customer-intelligence .mb-5 {
+    margin-bottom: 1.25rem
+}
+.v-solution-customer-intelligence .mb-6 {
+    margin-bottom: 1.5rem
+}
+.v-solution-customer-intelligence .mb-8 {
+    margin-bottom: 2rem
+}
+.v-solution-customer-intelligence .mt-6 {
+    margin-top: 1.5rem
+}
+.v-solution-customer-intelligence .mt-8 {
+    margin-top: 2rem
+}
+.v-solution-customer-intelligence .block {
+    display: block
+}
+.v-solution-customer-intelligence .flex {
+    display: flex
+}
+.v-solution-customer-intelligence .inline-flex {
+    display: inline-flex
+}
+.v-solution-customer-intelligence .table {
+    display: table
+}
+.v-solution-customer-intelligence .grid {
+    display: grid
+}
+.v-solution-customer-intelligence .hidden {
+    display: none
+}
+.v-solution-customer-intelligence .h-12 {
+    height: 3rem
+}
+.v-solution-customer-intelligence .h-16 {
+    height: 4rem
+}
+.v-solution-customer-intelligence .h-2 {
+    height: 0.5rem
+}
+.v-solution-customer-intelligence .h-2\.5 {
+    height: 0.625rem
+}
+.v-solution-customer-intelligence .h-3 {
+    height: 0.75rem
+}
+.v-solution-customer-intelligence .h-3\.5 {
+    height: 0.875rem
+}
+.v-solution-customer-intelligence .h-4 {
+    height: 1rem
+}
+.v-solution-customer-intelligence .h-5 {
+    height: 1.25rem
+}
+.v-solution-customer-intelligence .h-6 {
+    height: 1.5rem
+}
+.v-solution-customer-intelligence .h-7 {
+    height: 1.75rem
+}
+.v-solution-customer-intelligence .h-8 {
+    height: 2rem
+}
+.v-solution-customer-intelligence .h-\[48px\] {
+    height: 48px
+}
+.v-solution-customer-intelligence .h-full {
+    height: 100%
+}
+.v-solution-customer-intelligence .w-0\.5 {
+    width: 0.125rem
+}
+.v-solution-customer-intelligence .w-1 {
+    width: 0.25rem
+}
+.v-solution-customer-intelligence .w-12 {
+    width: 3rem
+}
+.v-solution-customer-intelligence .w-16 {
+    width: 4rem
+}
+.v-solution-customer-intelligence .w-2 {
+    width: 0.5rem
+}
+.v-solution-customer-intelligence .w-2\.5 {
+    width: 0.625rem
+}
+.v-solution-customer-intelligence .w-3\.5 {
+    width: 0.875rem
+}
+.v-solution-customer-intelligence .w-4 {
+    width: 1rem
+}
+.v-solution-customer-intelligence .w-5 {
+    width: 1.25rem
+}
+.v-solution-customer-intelligence .w-6 {
+    width: 1.5rem
+}
+.v-solution-customer-intelligence .w-8 {
+    width: 2rem
+}
+.v-solution-customer-intelligence .w-\[260px\] {
+    width: 260px
+}
+.v-solution-customer-intelligence .w-full {
+    width: 100%
+}
+.v-solution-customer-intelligence .max-w-\[310px\] {
+    max-width: 310px
+}
+.v-solution-customer-intelligence .max-w-\[420px\] {
+    max-width: 420px
+}
+.v-solution-customer-intelligence .flex-1 {
+    flex: 1 1 0%
+}
+.v-solution-customer-intelligence .shrink-0 {
+    flex-shrink: 0
+}
+.v-solution-customer-intelligence .border-collapse {
+    border-collapse: collapse
+}
+.v-solution-customer-intelligence .transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+.v-solution-customer-intelligence .resize {
+    resize: both
+}
+.v-solution-customer-intelligence .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+.v-solution-customer-intelligence .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+.v-solution-customer-intelligence .flex-col {
+    flex-direction: column
+}
+.v-solution-customer-intelligence .flex-wrap {
+    flex-wrap: wrap
+}
+.v-solution-customer-intelligence .items-center {
+    align-items: center
+}
+.v-solution-customer-intelligence .justify-start {
+    justify-content: flex-start
+}
+.v-solution-customer-intelligence .justify-center {
+    justify-content: center
+}
+.v-solution-customer-intelligence .justify-between {
+    justify-content: space-between
+}
+.v-solution-customer-intelligence .gap-1\.5 {
+    gap: 0.375rem
+}
+.v-solution-customer-intelligence .gap-2 {
+    gap: 0.5rem
+}
+.v-solution-customer-intelligence .gap-3 {
+    gap: 0.75rem
+}
+.v-solution-customer-intelligence .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
+}
+.v-solution-customer-intelligence .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse))
+}
+.v-solution-customer-intelligence .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+}
+.v-solution-customer-intelligence .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))
+}
+.v-solution-customer-intelligence .overflow-hidden {
+    overflow: hidden
+}
+.v-solution-customer-intelligence .whitespace-nowrap {
+    white-space: nowrap
+}
+.v-solution-customer-intelligence .rounded {
+    border-radius: 0.25rem
+}
+.v-solution-customer-intelligence .rounded-\[10px\] {
+    border-radius: 10px
+}
+.v-solution-customer-intelligence .rounded-\[12px\] {
+    border-radius: 12px
+}
+.v-solution-customer-intelligence .rounded-\[14px\] {
+    border-radius: 14px
+}
+.v-solution-customer-intelligence .rounded-\[6px\] {
+    border-radius: 6px
+}
+.v-solution-customer-intelligence .rounded-\[8px\] {
+    border-radius: 8px
+}
+.v-solution-customer-intelligence .rounded-full {
+    border-radius: 9999px
+}
+.v-solution-customer-intelligence .border {
+    border-width: 1px
+}
+.v-solution-customer-intelligence .border-2 {
+    border-width: 2px
+}
+.v-solution-customer-intelligence .border-t {
+    border-top-width: 1px
+}
+.v-solution-customer-intelligence .border-dashed {
+    border-style: dashed
+}
+.v-solution-customer-intelligence .border-\[\#162740\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(22 39 64 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#17273F\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(23 39 63 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#192B45\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(25 43 69 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#1B2B44\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(27 43 68 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#1C2C45\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(28 44 69 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#213754\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(33 55 84 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#233857\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(35 56 87 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#233A59\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(35 58 89 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#243A59\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(36 58 89 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#273E61\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(39 62 97 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#523A12\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(82 58 18 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#543A0C\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(84 58 12 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-\[\#DCE4F0\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(220 228 240 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-amber-link {
+    --tw-border-opacity: 1;
+    border-color: rgb(245 166 35 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-blue-accent {
+    --tw-border-opacity: 1;
+    border-color: rgb(47 128 255 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-opportunity-green {
+    --tw-border-opacity: 1;
+    border-color: rgb(34 197 139 / var(--tw-border-opacity, 1))
+}
+.v-solution-customer-intelligence .border-opportunity-green\/40 {
+    border-color: rgb(34 197 139 / 0.4)
+}
+.v-solution-customer-intelligence .bg-\[\#0A182B\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 24 43 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#0C2A1E\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(12 42 30 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#0C2B1F\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(12 43 31 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#0E2038\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 32 56 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#0E223D\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 34 61 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#0E2648\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 38 72 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#102035\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(16 32 53 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#102747\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(16 39 71 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#112035\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 32 53 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#122238\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 34 56 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#12233A\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 35 58 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#12233C\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 35 60 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#142339\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 35 57 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#22C58B\]\/15 {
+    background-color: rgb(34 197 139 / 0.15)
+}
+.v-solution-customer-intelligence .bg-\[\#2A1D07\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(42 29 7 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#2B1F0A\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(43 31 10 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#2D1F08\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(45 31 8 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#2F4463\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(47 68 99 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#38260B\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(56 38 11 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#3E2909\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(62 41 9 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-\[\#758AA8\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(117 138 168 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-amber-link {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 166 35 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-blue-accent {
+    --tw-bg-opacity: 1;
+    background-color: rgb(47 128 255 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-blue-accent\/60 {
+    background-color: rgb(47 128 255 / 0.6)
+}
+.v-solution-customer-intelligence .bg-dark-card {
+    --tw-bg-opacity: 1;
+    background-color: rgb(6 17 31 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-navy {
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 22 40 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-opportunity-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 139 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .p-1 {
+    padding: 0.25rem
+}
+.v-solution-customer-intelligence .p-2 {
+    padding: 0.5rem
+}
+.v-solution-customer-intelligence .p-3 {
+    padding: 0.75rem
+}
+.v-solution-customer-intelligence .p-3\.5 {
+    padding: 0.875rem
+}
+.v-solution-customer-intelligence .p-4 {
+    padding: 1rem
+}
+.v-solution-customer-intelligence .p-5 {
+    padding: 1.25rem
+}
+.v-solution-customer-intelligence .px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem
+}
+.v-solution-customer-intelligence .px-1\.5 {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem
+}
+.v-solution-customer-intelligence .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem
+}
+.v-solution-customer-intelligence .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem
+}
+.v-solution-customer-intelligence .px-3\.5 {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem
+}
+.v-solution-customer-intelligence .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+.v-solution-customer-intelligence .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem
+}
+.v-solution-customer-intelligence .py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem
+}
+.v-solution-customer-intelligence .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem
+}
+.v-solution-customer-intelligence .py-1\.5 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem
+}
+.v-solution-customer-intelligence .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem
+}
+.v-solution-customer-intelligence .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+.v-solution-customer-intelligence .pt-3 {
+    padding-top: 0.75rem
+}
+.v-solution-customer-intelligence .text-left {
+    text-align: left
+}
+.v-solution-customer-intelligence .text-center {
+    text-align: center
+}
+.v-solution-customer-intelligence .text-\[11px\] {
+    font-size: 11px
+}
+.v-solution-customer-intelligence .text-\[12px\] {
+    font-size: 12px
+}
+.v-solution-customer-intelligence .text-\[13px\] {
+    font-size: 13px
+}
+.v-solution-customer-intelligence .text-\[14px\] {
+    font-size: 14px
+}
+.v-solution-customer-intelligence .text-\[15px\] {
+    font-size: 15px
+}
+.v-solution-customer-intelligence .text-\[16px\] {
+    font-size: 16px
+}
+.v-solution-customer-intelligence .text-\[17px\] {
+    font-size: 17px
+}
+.v-solution-customer-intelligence .text-\[18px\] {
+    font-size: 18px
+}
+.v-solution-customer-intelligence .text-\[28px\] {
+    font-size: 28px
+}
+.v-solution-customer-intelligence .text-\[9px\] {
+    font-size: 9px
+}
+.v-solution-customer-intelligence .text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem
+}
+.v-solution-customer-intelligence .font-bold {
+    font-weight: 700
+}
+.v-solution-customer-intelligence .font-medium {
+    font-weight: 500
+}
+.v-solution-customer-intelligence .font-semibold {
+    font-weight: 600
+}
+.v-solution-customer-intelligence .uppercase {
+    text-transform: uppercase
+}
+.v-solution-customer-intelligence .italic {
+    font-style: italic
+}
+.v-solution-customer-intelligence .leading-\[1\.25\] {
+    line-height: 1.25
+}
+.v-solution-customer-intelligence .leading-\[1\.6\] {
+    line-height: 1.6
+}
+.v-solution-customer-intelligence .leading-none {
+    line-height: 1
+}
+.v-solution-customer-intelligence .leading-relaxed {
+    line-height: 1.625
+}
+.v-solution-customer-intelligence .leading-snug {
+    line-height: 1.375
+}
+.v-solution-customer-intelligence .leading-tight {
+    line-height: 1.25
+}
+.v-solution-customer-intelligence .tracking-tight {
+    letter-spacing: -0.025em
+}
+.v-solution-customer-intelligence .tracking-wide {
+    letter-spacing: 0.025em
+}
+.v-solution-customer-intelligence .tracking-wider {
+    letter-spacing: 0.05em
+}
+.v-solution-customer-intelligence .text-\[\#0B1B2E\] {
+    --tw-text-opacity: 1;
+    color: rgb(11 27 46 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#45628A\] {
+    --tw-text-opacity: 1;
+    color: rgb(69 98 138 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#7288A6\] {
+    --tw-text-opacity: 1;
+    color: rgb(114 136 166 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#7A8EA8\] {
+    --tw-text-opacity: 1;
+    color: rgb(122 142 168 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#8CA0BA\] {
+    --tw-text-opacity: 1;
+    color: rgb(140 160 186 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#8FA5C2\] {
+    --tw-text-opacity: 1;
+    color: rgb(143 165 194 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#A5F3D1\] {
+    --tw-text-opacity: 1;
+    color: rgb(165 243 209 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#B0C3DD\] {
+    --tw-text-opacity: 1;
+    color: rgb(176 195 221 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#C2D3EB\] {
+    --tw-text-opacity: 1;
+    color: rgb(194 211 235 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#CBD5E1\] {
+    --tw-text-opacity: 1;
+    color: rgb(203 213 225 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#FFD182\] {
+    --tw-text-opacity: 1;
+    color: rgb(255 209 130 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-\[\#FFD68F\] {
+    --tw-text-opacity: 1;
+    color: rgb(255 214 143 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-amber-link {
+    --tw-text-opacity: 1;
+    color: rgb(245 166 35 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-blue-accent {
+    --tw-text-opacity: 1;
+    color: rgb(47 128 255 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-opportunity-green {
+    --tw-text-opacity: 1;
+    color: rgb(34 197 139 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-slate-dark {
+    --tw-text-opacity: 1;
+    color: rgb(154 169 196 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-slate-light {
+    --tw-text-opacity: 1;
+    color: rgb(79 91 117 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+}
+.v-solution-customer-intelligence .underline {
+    text-decoration-line: underline
+}
+.v-solution-customer-intelligence .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.v-solution-customer-intelligence .opacity-70 {
+    opacity: 0.7
+}
+.v-solution-customer-intelligence .shadow-green-subtle {
+    --tw-shadow: 0 0 12px rgba(34, 197, 139, 0.28);
+    --tw-shadow-colored: 0 0 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.v-solution-customer-intelligence .shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.v-solution-customer-intelligence .shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.v-solution-customer-intelligence .filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.v-solution-customer-intelligence .transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
+}
+.v-solution-customer-intelligence .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
+}
+.v-solution-customer-intelligence .hover\:bg-blue-600:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1))
+}
+.v-solution-customer-intelligence .hover\:underline:hover {
+    text-decoration-line: underline
+}
+.v-solution-customer-intelligence .active\:scale-\[0\.98\]:active {
+    --tw-scale-x: 0.98;
+    --tw-scale-y: 0.98;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}

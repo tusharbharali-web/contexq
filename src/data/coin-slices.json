@@ -1,0 +1,389 @@
+{
+  "slices": [
+    {
+      "title": "Team",
+      "contentType": "image",
+      "imageUrl": "/assets/images/slices/team.avif",
+      "showOutward": false,
+      "isBlackText": true,
+      "newpage": false,
+      "listView": true,
+      "buttons": [
+        {
+          "label": "Team",
+          "icon": "/assets/images/Ecosystem/team_icon.png",
+          "slug": "team",
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": [
+            {
+              "subLabel": "Ajay Kakarania",
+              "subIcon": "/assets/images/Team/Ajay_Kakarania.webp",
+              "subTitle": "Founder, CEO",
+              "linkedin": "https://www.linkedin.com/in/kakarania/",
+              "subText": "20+ Years in Banking, Risk & Decision Intelligence",
+              "fullText": "Ajay brings over 20 years of experience across banking, financial services and enterprise technology in India, the UK and Singapore. His career spans risk management, regulatory analytics, financial crime, trade finance and enterprise AI, with leadership roles across global banks and technology companies. At ContexQ, he leads the company's vision of combining graph intelligence, AI and domain expertise to help enterprises make faster, context-aware decisions.",
+              "companies": [
+                {
+                  "companyLogo": "/assets/images/Team/Ajay_companies/quantexa_logo.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Ajay_companies/barclays_corporate_and_investment_bank_logo.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Ajay_companies/tech_mahindra_logo.webp"
+                }
+              ]
+            },
+            {
+              "subLabel": "Jean-Michel Coeur",
+              "subIcon": "/assets/images/Team/Jean_Michel_Coeur.webp",
+              "subTitle": "Co-Founder, CTO",
+              "linkedin": "https://www.linkedin.com/in/jmcoeur/",
+              "subText": "Former Google APAC Data & AI Practice Lead",
+              "fullText": "Jean-Michel has over 30 years of experience delivering enterprise technology across North America, Europe and Asia. He previously led Google's APAC Data Analytics & AI technology practice and held senior leadership roles at AWS and other enterprise technology companies. At ContexQ, he architects the company's AI platform, combining graph intelligence, machine learning and modern AI technologies to build scalable enterprise decision systems.",
+              "companies": [
+                {
+                  "companyLogo": "/assets/images/Team/Jean_companies/google.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Jean_companies/aws.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Jean_companies/linkedin.webp"
+                }
+              ]
+            },
+            {
+              "subLabel": "Meenakshy Iyer",
+              "subIcon": "/assets/images/Team/Meenakshy_Iyer.webp",
+              "subTitle": "Co-Founder, CPO",
+              "linkedin": "https://www.linkedin.com/in/meenakshy-iyer-3a63529/",
+              "subText": "38 Years in Financial Products & Banking Innovation",
+              "fullText": "Meenakshy has nearly four decades of experience building enterprise software products for the financial services industry. She led the engineering of Oracle Financial Services' flagship risk and regulatory platforms before establishing and scaling Maybank's innovation hub. At ContexQ, she drives product strategy by combining deep banking expertise with AI-powered innovation.",
+              "companies": [
+                {
+                  "companyLogo": "/assets/images/Team/Meenakshy_companies/1631319102108.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Meenakshy_companies/oracle.webp"
+                },
+                {
+                  "companyLogo": "/assets/images/Team/Meenakshy_companies/tcs.webp"
+                }
+              ]
+            },
+            {
+              "subLabel": "Mr. Joo Seng Wong",
+              "subIcon": "/assets/images/Team/Joo_Seng_Wong.jpg",
+              "subTitle": "Advisor",
+              "linkedin": "https://www.linkedin.com/in/wongjooseng/",
+              "subText": "CEO, Spark Systems • Chairman, SICC",
+              "fullText": "Joo Seng Wong is a veteran financial markets entrepreneur with decades of leadership experience in fintech and capital markets. As CEO of Spark Systems and Chairman of the Singapore International Chamber of Commerce (SICC), he brings deep expertise in financial technology, institutional partnerships and business leadership. He advises ContexQ on market strategy, fintech innovation and enterprise growth."
+            },
+            {
+              "subLabel": "Dr. Simon See",
+              "subIcon": "/assets/images/Team/Simon.webp",
+              "subTitle": "Advisor",
+              "linkedin": "https://www.linkedin.com/in/simonsee/",
+              "subText": "Global Head, NVIDIA AI Technology Centre",
+              "fullText": "Prof. Simon See is the Global Head of the NVIDIA AI Technology Centre and a recognised leader in artificial intelligence research across the Asia-Pacific region. He has led AI innovation spanning high-performance computing, deep learning and enterprise AI while collaborating with governments, universities and global enterprises. At ContexQ, he advises on AI strategy, advanced research and the evolution of next-generation Graph AI capabilities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecosystem",
+      "contentType": "image",
+      "imageUrl": "/assets/images/slices/ecosystem.avif",
+      "showOutward": false,
+      "isBlackText": true,
+      "newpage": false,
+      "listView": true,
+      "buttons": [
+        {
+          "label": "Insight Reports",
+          "icon": "/assets/images/Ecosystem/blogs.png",
+          "slug": "blogs",
+          "newpage": true
+        },
+        {
+          "label": "Partners",
+          "icon": "/assets/images/Ecosystem/partners.png",
+          "slug": "partners",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": [
+            {
+              "subLabel": "SFA",
+              "subIcon": "/assets/images/Ecosystem/SFA.jpeg",
+              "fullText": "<strong>SFA · Singapore Fintech Association</strong> </br></br> The Singapore Fintech Association is the cross-industry body connecting 900+ banks, regulators, investors and fintech innovators across Singapore's financial ecosystem. ContexQ is a member of SFA, bringing graph-native AML, KYC and risk-intelligence capabilities to the institutions shaping modern compliance."
+            },
+            {
+              "subLabel": "SICC",
+              "subIcon": "/assets/images/Ecosystem/SICC.jpeg",
+              "fullText": "<strong>SICC · Singapore International Chamber of Commerce </strong> </br></br> Singapore's oldest business chamber, established in 1837, representing multinationals and local enterprises across trade, policy advocacy and global market access. ContexQ is a member of SICC, extending its compliance and risk-analytics platform to enterprises operating across Asia, MENA and beyond."
+            },
+            {
+              "subLabel": "SGTech",
+              "subIcon": "/assets/images/Ecosystem/SGTech.jpeg",
+              "fullText": "<strong>SGTech</strong> </br></br> Singapore's premier trade association for the tech industry, with 1,000+ members driving policy advocacy, talent development and ecosystem growth. ContexQ is a member of SGTech, contributing to Singapore's position as a global hub for enterprise and graph-native AI."
+            },
+            {
+              "subLabel": "All cloud providers",
+              "subIcon": "/assets/images/Ecosystem/all_p.jpg",
+              "fullText": "<strong>All cloud providers · AWS, Google Cloud, Microsoft Azure</strong></br></br> The world's three leading hyperscale cloud platforms, providing the elastic, secure infrastructure that powers modern enterprise software. ContexQ is a strategic partner across AWS, Google Cloud and Azure, delivering enterprise-grade graph AI on every major cloud with on-premise and VPC options for the most sensitive workloads."
+            },
+            {
+              "subLabel": "NVIDIA Inception",
+              "subIcon": "/assets/images/Ecosystem/nvidia.webp",
+              "fullText": "<strong>NVIDIA Inception</strong></br></br>  A free acceleration program for AI/data-science startups. Members get GPU credits, technical training, go-to-market support, and access to NVIDIA's developer ecosystem. ContexQ is listed as an NVIDIA Inception Partner. It's a curated program (vetted entry), but thousands of startups globally are part of it."
+            },
+            {
+              "subLabel": "IBM for startup",
+              "subIcon": "/assets/images/Ecosystem/ibm.webp",
+              "fullText": "<strong>IBM for Startups</strong></br></br> IBM is a global leader in enterprise hybrid-cloud, AI and security, trusted by regulated industries worldwide for mission-critical workloads. ContexQ is a member of the IBM for Startups program, building on IBM's hybrid-cloud and watsonx platform to deliver graph-native relationship intelligence for financial crime, compliance and risk."
+            }
+          ]
+        },
+        {
+          "label": "Awards & Recognition",
+          "icon": "/assets/images/Ecosystem/awards.png",
+          "slug": "awards",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": [
+            {
+              "subLabel": "RBI HaRBInger 2025 — Top Performing Team",
+              "subText": "Reserve Bank of India · Global Hackathon",
+              "subIcon": "/assets/images/Ecosystem/rbi.png",
+              "fullText": "ContexQ was selected as a finalist in HaRBInger 2025, the Reserve Bank of India's Global Hackathon, themed \"Secure Banking: Powered by Identity, Integrity and Inclusivity.\" The team presented to a distinguished RBI jury in Bengaluru, demonstrating how entity resolution, dynamic knowledge graphs and composite AI can strengthen identity verification, expose impersonation risk and reveal hidden risk networks across India's financial system. The selection placed ContexQ alongside the leading global teams shaping the future of secure, inclusive Indian finance."
+            },
+            {
+              "subLabel": "United Nations University — AI for SDGs Competition",
+              "subText": "Global Finalist · Macao 2025",
+              "subIcon": "/assets/images/Ecosystem/un.png",
+              "fullText": "ContexQ was selected as a Global Finalist in the United Nations University's AI for SDGs Competition held in Macao, marking the UN's 80th and UNU's 50th anniversary. The competition sought high-TRL AI solutions advancing the UN Sustainable Development Goals. ContexQ was recognised for its graph AI platform that detects greenwashing, ESG fraud and illicit financial flows, addressing SDGs 12, 13, 16 and 17 through verifiable, multi-dimensional sustainable-finance intelligence."
+            },
+            {
+              "subLabel": "UN SDG Sustainable Finance Finalist",
+              "subText": "Alipay+ D-Infinity Global Fintech Challenge · Macao 2025",
+              "subIcon": "/assets/images/Ecosystem/sdg.png",
+              "fullText": "ContexQ was named a Sustainable Finance Finalist at the Alipay+ D-Infinity Global Fintech Challenge — one of Asia's premier fintech competitions focused on the UN Sustainable Development Goals. Selected from thousands of global applicants, ContexQ was recognised for its relationship-native AI approach to ESG verification, greenwashing detection and authentic climate-finance accountability, advancing SDG 12 (Responsible Production), SDG 13 (Climate Action) and SDG 16 (Strong Institutions)."
+            },
+            {
+              "subLabel": "LHoFT — Catapult: Inclusion SE Asia",
+              "subText": "Luxembourg House of Financial Technology · Singapore FinTech Festival 2026",
+              "subIcon": "/assets/images/Ecosystem/lhoft1.png",
+              "fullText": "As part of the LHoFT-led Catapult programme, ContexQ joined a curated cohort of fintechs scaling inclusive finance across ASEAN, with engagements in Luxembourg and at the Singapore FinTech Festival. The programme provides zero-equity acceleration, sovereign-level access across ASEAN central banks via ADB, regulatory navigation, European market entry through Luxembourg, and direct investment readiness via the NextFin Asia Fund."
+            },
+            {
+              "subLabel": "LEAP East 2026 — Hong Kong & Saudi Arabia Startup Programme",
+              "subText": "Tahaluf · MCIT (Saudi Arabia) · HKSAR Government · ewpartners",
+              "subIcon": "/assets/images/Ecosystem/lp.png",
+              "fullText": "ContexQ was selected for the LEAP East 2026 Startup & Scaleup Programme, the inaugural Asia-Pacific edition of LEAP — Saudi Arabia's flagship and the world's fastest-growing tech event — hosted in Hong Kong (8-10 July 2026) in partnership with the HKSAR Government and Saudi MCIT. The programme positions ContexQ to scale across both the Saudi and Hong Kong markets through investor matchmaking, the Rocket Fuel Pitch competition, ecosystem networking and direct exposure to Middle East and APAC banking, fintech and government partners."
+            },
+            {
+              "subLabel": "Hello Tomorrow — Deep Tech Pioneer",
+              "subText": "Hello Tomorrow Global Challenge · Amsterdam 2026",
+              "subIcon": "/assets/images/Ecosystem/ht1.png",
+              "fullText": "ContexQ has been recognised as a Hello Tomorrow Deep Tech Pioneer — a global distinction awarded by an expert jury to ~800 of the most promising deep-tech startups from over 4,600 applications across 120+ countries. The recognition affirms ContexQ's graph-native AI platform as a category-defining deep-tech innovation in software, AI infrastructure and data integrity, and grants access to the Hello Tomorrow Summit, Investor Day with 350+ VCs/CVCs and the global deep-tech ecosystem in Amsterdam."
+            }
+          ]
+        },
+        {
+          "label": "Press Releases",
+          "icon": "/assets/images/Ecosystem/press.png",
+          "slug": "press-releases",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "FAQs",
+          "icon": "/assets/images/Ecosystem/faq.png",
+          "slug": "faq",
+          "newpage": true
+        }
+      ]
+    },
+    {
+      "title": "Industries",
+      "contentType": "image",
+      "imageUrl": "/assets/images/slices/industries.avif",
+      "showOutward": true,
+      "isBlackText": true,
+      "newpage": false,
+      "listView": true,
+      "buttons": [
+        {
+          "label": "Financial Services",
+          "icon": "/assets/images/Industries/financial.png",
+          "slug": "finance",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "Manufacturing",
+          "icon": "/assets/images/Industries/manufacturing.png",
+          "slug": "mfg",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "E-commerce",
+          "icon": "/assets/images/Industries/consumer.png",
+          "slug": "goods",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "Insurance",
+          "icon": "/assets/images/Industries/healthcare.png",
+          "slug": "health",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "Telecom",
+          "icon": "/assets/images/Industries/telecom.png",
+          "slug": "telco",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        },
+        {
+          "label": "Public Sector",
+          "icon": "/assets/images/Industries/public_sector.png",
+          "slug": "public-sector",
+          "newpage": true,
+          "subNewPage": false,
+          "subPopUp": false,
+          "subButtons": []
+        }
+      ]
+    },
+    {
+      "title": "Solutions",
+      "contentType": "image",
+      "imageUrl": "/assets/images/slices/solutions.avif",
+      "showOutward": true,
+      "isBlackText": true,
+      "newpage": true,
+      "listView": false,
+      "buttons": [
+        {
+          "label": "Supply Chain Intelligence",
+          "icon": "/assets/images/Solutions/supply_chain.png",
+          "slug": "supply-chain-intelligence"
+        },
+        {
+          "label": "KYC",
+          "icon": "/assets/images/Solutions/kyc.png",
+          "slug": "kyc"
+        },
+        {
+          "label": "Fraud",
+          "icon": "/assets/images/Solutions/fraud.png",
+          "slug": "fraud"
+        },
+        {
+          "label": "Customer Intelligence",
+          "icon": "/assets/images/Solutions/customer_intelligence.png",
+          "slug": "customer-intelligence"
+        },
+        {
+          "label": "Risk Management",
+          "icon": "/assets/images/Solutions/risk.png",
+          "slug": "risk"
+        },
+        {
+          "label": "Financial Crime Intelligence - AML",
+          "icon": "/assets/images/Solutions/aml.png",
+          "slug": "aml"
+        }
+      ]
+    },
+    {
+      "title": "Platform",
+      "contentType": "image",
+      "imageUrl": "/assets/images/slices/platform.avif",
+      "showOutward": true,
+      "isBlackText": true,
+      "newpage": true,
+      "listView": false,
+      "buttons": [
+        {
+          "label": "AI Data Cleansing",
+          "icon": "/assets/images/Platforms/cleansing.webp",
+          "slug": "cleansing"
+        },
+        {
+          "label": "Modern Entity Resolution",
+          "icon": "/assets/images/Platforms/entity.webp",
+          "slug": "entity"
+        },
+        {
+          "label": "Contextual Network",
+          "icon": "/assets/images/Platforms/network.webp",
+          "slug": "network"
+        },
+        {
+          "label": "Composite AI Scores",
+          "icon": "/assets/images/Platforms/scores.webp",
+          "slug": "scores"
+        },
+        {
+          "label": "Investigation, Recommendations & Actions",
+          "icon": "/assets/images/Platforms/actions.webp",
+          "slug": "actions"
+        }
+      ]
+    }
+  ],
+  "centerButton": {
+    "title": "Customers",
+    "slug": "customers",
+    "newpage": true,
+    "listView": false,
+    "buttons": [
+      {
+        "label": "Trading",
+        "icon": "/assets/images/Industries/trading.png",
+        "slug": "trading",
+        "newpage": true
+      },
+      {
+        "label": "Banking",
+        "icon": "/assets/images/Industries/financial.png",
+        "slug": "banks",
+        "newpage": true
+      },
+      {
+        "label": "Manufacturing",
+        "icon": "/assets/images/Industries/manufacturing.png",
+        "slug": "manufacturing",
+        "newpage": true
+      },
+      {
+        "label": "Government",
+        "icon": "/assets/images/Industries/public_sector.png",
+        "slug": "government",
+        "newpage": true
+      }
+    ]
+  }
+}

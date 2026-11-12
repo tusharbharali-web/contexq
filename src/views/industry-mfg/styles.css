@@ -1,0 +1,1848 @@
+/* Generated from public/html/contexq-mfg-v2.html: the page's own CSS, scoped to .v-industry-mfg. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-industry-mfg *:not(svg, svg *), .v-industry-mfg ::before, .v-industry-mfg ::after) { all: revert; }
+:where(.v-industry-mfg svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-industry-mfg) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-industry-mfg > .cq-body) { display: block; margin: 8px; }
+.v-industry-mfg.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-industry-mfg :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-industry-mfg > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-industry-mfg main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+.v-industry-mfg *,.v-industry-mfg  ::before,.v-industry-mfg  ::after, .v-industry-mfg {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.v-industry-mfg ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.v-industry-mfg *,.v-industry-mfg 
+::before,.v-industry-mfg 
+::after, .v-industry-mfg {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.v-industry-mfg ::before,.v-industry-mfg 
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.v-industry-mfg,.v-industry-mfg {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.v-industry-mfg .cq-body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.v-industry-mfg hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.v-industry-mfg abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.v-industry-mfg h1,.v-industry-mfg 
+h2,.v-industry-mfg 
+h3,.v-industry-mfg 
+h4,.v-industry-mfg 
+h5,.v-industry-mfg 
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.v-industry-mfg a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.v-industry-mfg b,.v-industry-mfg 
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.v-industry-mfg code,.v-industry-mfg 
+kbd,.v-industry-mfg 
+samp,.v-industry-mfg 
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.v-industry-mfg small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.v-industry-mfg sub,.v-industry-mfg 
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.v-industry-mfg sub {
+  bottom: -0.25em;
+}
+
+.v-industry-mfg sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.v-industry-mfg table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.v-industry-mfg button,.v-industry-mfg 
+input,.v-industry-mfg 
+optgroup,.v-industry-mfg 
+select,.v-industry-mfg 
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.v-industry-mfg button,.v-industry-mfg 
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.v-industry-mfg button,.v-industry-mfg 
+input:where([type='button']),.v-industry-mfg 
+input:where([type='reset']),.v-industry-mfg 
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.v-industry-mfg :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.v-industry-mfg :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.v-industry-mfg progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.v-industry-mfg ::-webkit-inner-spin-button,.v-industry-mfg 
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.v-industry-mfg [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.v-industry-mfg ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.v-industry-mfg ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.v-industry-mfg summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.v-industry-mfg blockquote,.v-industry-mfg 
+dl,.v-industry-mfg 
+dd,.v-industry-mfg 
+h1,.v-industry-mfg 
+h2,.v-industry-mfg 
+h3,.v-industry-mfg 
+h4,.v-industry-mfg 
+h5,.v-industry-mfg 
+h6,.v-industry-mfg 
+hr,.v-industry-mfg 
+figure,.v-industry-mfg 
+p,.v-industry-mfg 
+pre {
+  margin: 0;
+}
+
+.v-industry-mfg fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.v-industry-mfg legend {
+  padding: 0;
+}
+
+.v-industry-mfg ol,.v-industry-mfg 
+ul,.v-industry-mfg 
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.v-industry-mfg dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.v-industry-mfg textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.v-industry-mfg input::placeholder,.v-industry-mfg 
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.v-industry-mfg button,.v-industry-mfg 
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.v-industry-mfg :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.v-industry-mfg img,.v-industry-mfg 
+svg,.v-industry-mfg 
+video,.v-industry-mfg 
+canvas,.v-industry-mfg 
+audio,.v-industry-mfg 
+iframe,.v-industry-mfg 
+embed,.v-industry-mfg 
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.v-industry-mfg img,.v-industry-mfg 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.v-industry-mfg [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.v-industry-mfg [type='text'],.v-industry-mfg input:where(:not([type])),.v-industry-mfg [type='email'],.v-industry-mfg [type='url'],.v-industry-mfg [type='password'],.v-industry-mfg [type='number'],.v-industry-mfg [type='date'],.v-industry-mfg [type='datetime-local'],.v-industry-mfg [type='month'],.v-industry-mfg [type='search'],.v-industry-mfg [type='tel'],.v-industry-mfg [type='time'],.v-industry-mfg [type='week'],.v-industry-mfg [multiple],.v-industry-mfg textarea,.v-industry-mfg select {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-industry-mfg [type='text']:focus,.v-industry-mfg  input:where(:not([type])):focus,.v-industry-mfg  [type='email']:focus,.v-industry-mfg  [type='url']:focus,.v-industry-mfg  [type='password']:focus,.v-industry-mfg  [type='number']:focus,.v-industry-mfg  [type='date']:focus,.v-industry-mfg  [type='datetime-local']:focus,.v-industry-mfg  [type='month']:focus,.v-industry-mfg  [type='search']:focus,.v-industry-mfg  [type='tel']:focus,.v-industry-mfg  [type='time']:focus,.v-industry-mfg  [type='week']:focus,.v-industry-mfg  [multiple]:focus,.v-industry-mfg  textarea:focus,.v-industry-mfg  select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #2563eb;
+}
+
+.v-industry-mfg input::placeholder,.v-industry-mfg textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.v-industry-mfg ::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.v-industry-mfg ::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  text-align: inherit;
+}
+
+.v-industry-mfg ::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+.v-industry-mfg ::-webkit-datetime-edit,.v-industry-mfg ::-webkit-datetime-edit-year-field,.v-industry-mfg ::-webkit-datetime-edit-month-field,.v-industry-mfg ::-webkit-datetime-edit-day-field,.v-industry-mfg ::-webkit-datetime-edit-hour-field,.v-industry-mfg ::-webkit-datetime-edit-minute-field,.v-industry-mfg ::-webkit-datetime-edit-second-field,.v-industry-mfg ::-webkit-datetime-edit-millisecond-field,.v-industry-mfg ::-webkit-datetime-edit-meridiem-field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.v-industry-mfg select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+}
+
+.v-industry-mfg [multiple],.v-industry-mfg [size]:where(select:not([size="1"])) {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  print-color-adjust: unset;
+}
+
+.v-industry-mfg [type='checkbox'],.v-industry-mfg [type='radio'] {
+  appearance: none;
+  padding: 0;
+  print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-industry-mfg [type='checkbox'] {
+  border-radius: 0px;
+}
+
+.v-industry-mfg [type='radio'] {
+  border-radius: 100%;
+}
+
+.v-industry-mfg [type='checkbox']:focus,.v-industry-mfg [type='radio']:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.v-industry-mfg [type='checkbox']:checked,.v-industry-mfg [type='radio']:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.v-industry-mfg [type='checkbox']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-industry-mfg [type='checkbox']:checked {
+    appearance: auto;
+  }
+}
+
+.v-industry-mfg [type='radio']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-industry-mfg [type='radio']:checked {
+    appearance: auto;
+  }
+}
+
+.v-industry-mfg [type='checkbox']:checked:hover,.v-industry-mfg [type='checkbox']:checked:focus,.v-industry-mfg [type='radio']:checked:hover,.v-industry-mfg [type='radio']:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-industry-mfg [type='checkbox']:indeterminate {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active)  {
+
+  .v-industry-mfg [type='checkbox']:indeterminate {
+    appearance: auto;
+  }
+}
+
+.v-industry-mfg [type='checkbox']:indeterminate:hover,.v-industry-mfg [type='checkbox']:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-industry-mfg [type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+.v-industry-mfg [type='file']:focus {
+  outline: 1px solid ButtonText;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.v-industry-mfg .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.v-industry-mfg .pointer-events-none {
+  pointer-events: none;
+}
+.v-industry-mfg .absolute {
+  position: absolute;
+}
+.v-industry-mfg .relative {
+  position: relative;
+}
+.v-industry-mfg .inset-0 {
+  inset: 0px;
+}
+.v-industry-mfg .bottom-4 {
+  bottom: 1rem;
+}
+.v-industry-mfg .left-\[15\%\] {
+  left: 15%;
+}
+.v-industry-mfg .right-\[15\%\] {
+  right: 15%;
+}
+.v-industry-mfg .top-\[36px\] {
+  top: 36px;
+}
+.v-industry-mfg .-z-0 {
+  z-index: 0;
+}
+.v-industry-mfg .z-10 {
+  z-index: 10;
+}
+.v-industry-mfg .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.v-industry-mfg .my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.v-industry-mfg .mb-0 {
+  margin-bottom: 0px;
+}
+.v-industry-mfg .mb-10 {
+  margin-bottom: 2.5rem;
+}
+.v-industry-mfg .mb-12 {
+  margin-bottom: 3rem;
+}
+.v-industry-mfg .mb-16 {
+  margin-bottom: 4rem;
+}
+.v-industry-mfg .mb-3 {
+  margin-bottom: 0.75rem;
+}
+.v-industry-mfg .mb-4 {
+  margin-bottom: 1rem;
+}
+.v-industry-mfg .mb-5 {
+  margin-bottom: 1.25rem;
+}
+.v-industry-mfg .mb-6 {
+  margin-bottom: 1.5rem;
+}
+.v-industry-mfg .mb-8 {
+  margin-bottom: 2rem;
+}
+.v-industry-mfg .mt-0\.5 {
+  margin-top: 0.125rem;
+}
+.v-industry-mfg .mt-1 {
+  margin-top: 0.25rem;
+}
+.v-industry-mfg .mt-12 {
+  margin-top: 3rem;
+}
+.v-industry-mfg .mt-2 {
+  margin-top: 0.5rem;
+}
+.v-industry-mfg .mt-3 {
+  margin-top: 0.75rem;
+}
+.v-industry-mfg .mt-4 {
+  margin-top: 1rem;
+}
+.v-industry-mfg .mt-5 {
+  margin-top: 1.25rem;
+}
+.v-industry-mfg .mt-8 {
+  margin-top: 2rem;
+}
+.v-industry-mfg .mt-auto {
+  margin-top: auto;
+}
+.v-industry-mfg .block {
+  display: block;
+}
+.v-industry-mfg .flex {
+  display: flex;
+}
+.v-industry-mfg .inline-flex {
+  display: inline-flex;
+}
+.v-industry-mfg .grid {
+  display: grid;
+}
+.v-industry-mfg .hidden {
+  display: none;
+}
+.v-industry-mfg .aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
+}
+.v-industry-mfg .aspect-video {
+  aspect-ratio: 16 / 9;
+}
+.v-industry-mfg .h-1 {
+  height: 0.25rem;
+}
+.v-industry-mfg .h-1\.5 {
+  height: 0.375rem;
+}
+.v-industry-mfg .h-10 {
+  height: 2.5rem;
+}
+.v-industry-mfg .h-11 {
+  height: 2.75rem;
+}
+.v-industry-mfg .h-2 {
+  height: 0.5rem;
+}
+.v-industry-mfg .h-8 {
+  height: 2rem;
+}
+.v-industry-mfg .h-\[120px\] {
+  height: 120px;
+}
+.v-industry-mfg .h-\[2px\] {
+  height: 2px;
+}
+.v-industry-mfg .h-\[64px\] {
+  height: 64px;
+}
+.v-industry-mfg .h-\[72px\] {
+  height: 72px;
+}
+.v-industry-mfg .h-auto {
+  height: auto;
+}
+.v-industry-mfg .h-full {
+  height: 100%;
+}
+.v-industry-mfg .h-px {
+  height: 1px;
+}
+.v-industry-mfg .min-h-\[150px\] {
+  min-height: 150px;
+}
+.v-industry-mfg .min-h-\[280px\] {
+  min-height: 280px;
+}
+.v-industry-mfg .w-0 {
+  width: 0px;
+}
+.v-industry-mfg .w-1 {
+  width: 0.25rem;
+}
+.v-industry-mfg .w-1\.5 {
+  width: 0.375rem;
+}
+.v-industry-mfg .w-10 {
+  width: 2.5rem;
+}
+.v-industry-mfg .w-11 {
+  width: 2.75rem;
+}
+.v-industry-mfg .w-2 {
+  width: 0.5rem;
+}
+.v-industry-mfg .w-8 {
+  width: 2rem;
+}
+.v-industry-mfg .w-\[64px\] {
+  width: 64px;
+}
+.v-industry-mfg .w-\[72px\] {
+  width: 72px;
+}
+.v-industry-mfg .w-full {
+  width: 100%;
+}
+.v-industry-mfg .max-w-2xl {
+  max-width: 42rem;
+}
+.v-industry-mfg .max-w-4xl {
+  max-width: 56rem;
+}
+.v-industry-mfg .max-w-7xl {
+  max-width: 80rem;
+}
+.v-industry-mfg .max-w-\[280px\] {
+  max-width: 280px;
+}
+.v-industry-mfg .max-w-\[420px\] {
+  max-width: 420px;
+}
+.v-industry-mfg .max-w-\[460px\] {
+  max-width: 460px;
+}
+.v-industry-mfg .max-w-xl {
+  max-width: 36rem;
+}
+.v-industry-mfg .flex-1 {
+  flex: 1 1 0%;
+}
+.v-industry-mfg .shrink {
+  flex-shrink: 1;
+}
+.v-industry-mfg .shrink-0 {
+  flex-shrink: 0;
+}
+.v-industry-mfg .transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes v-industry-mfg__ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.v-industry-mfg .animate-ping {
+  animation: v-industry-mfg__ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.v-industry-mfg .select-none {
+  user-select: none;
+}
+.v-industry-mfg .resize {
+  resize: both;
+}
+.v-industry-mfg .auto-rows-fr {
+  grid-auto-rows: minmax(0, 1fr);
+}
+.v-industry-mfg .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.v-industry-mfg .grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.v-industry-mfg .flex-col {
+  flex-direction: column;
+}
+.v-industry-mfg .flex-wrap {
+  flex-wrap: wrap;
+}
+.v-industry-mfg .items-start {
+  align-items: flex-start;
+}
+.v-industry-mfg .items-center {
+  align-items: center;
+}
+.v-industry-mfg .items-stretch {
+  align-items: stretch;
+}
+.v-industry-mfg .justify-start {
+  justify-content: flex-start;
+}
+.v-industry-mfg .justify-center {
+  justify-content: center;
+}
+.v-industry-mfg .justify-between {
+  justify-content: space-between;
+}
+.v-industry-mfg .gap-0\.5 {
+  gap: 0.125rem;
+}
+.v-industry-mfg .gap-1 {
+  gap: 0.25rem;
+}
+.v-industry-mfg .gap-1\.5 {
+  gap: 0.375rem;
+}
+.v-industry-mfg .gap-12 {
+  gap: 3rem;
+}
+.v-industry-mfg .gap-2 {
+  gap: 0.5rem;
+}
+.v-industry-mfg .gap-2\.5 {
+  gap: 0.625rem;
+}
+.v-industry-mfg .gap-3 {
+  gap: 0.75rem;
+}
+.v-industry-mfg .gap-3\.5 {
+  gap: 0.875rem;
+}
+.v-industry-mfg .gap-4 {
+  gap: 1rem;
+}
+.v-industry-mfg .gap-6 {
+  gap: 1.5rem;
+}
+.v-industry-mfg .gap-8 {
+  gap: 2rem;
+}
+.v-industry-mfg .gap-x-3 {
+  column-gap: 0.75rem;
+}
+.v-industry-mfg .gap-x-6 {
+  column-gap: 1.5rem;
+}
+.v-industry-mfg .gap-y-2 {
+  row-gap: 0.5rem;
+}
+.v-industry-mfg .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.v-industry-mfg .overflow-hidden {
+  overflow: hidden;
+}
+.v-industry-mfg .text-balance {
+  text-wrap: balance;
+}
+.v-industry-mfg .rounded {
+  border-radius: 0.25rem;
+}
+.v-industry-mfg .rounded-2xl {
+  border-radius: 1rem;
+}
+.v-industry-mfg .rounded-3xl {
+  border-radius: 1.5rem;
+}
+.v-industry-mfg .rounded-\[9999px\] {
+  border-radius: 9999px;
+}
+.v-industry-mfg .rounded-full {
+  border-radius: 9999px;
+}
+.v-industry-mfg .rounded-lg {
+  border-radius: 0.5rem;
+}
+.v-industry-mfg .rounded-sm {
+  border-radius: 0.125rem;
+}
+.v-industry-mfg .rounded-xl {
+  border-radius: 0.75rem;
+}
+.v-industry-mfg .border {
+  border-width: 1px;
+}
+.v-industry-mfg .border-0 {
+  border-width: 0px;
+}
+.v-industry-mfg .border-b {
+  border-bottom-width: 1px;
+}
+.v-industry-mfg .border-t {
+  border-top-width: 1px;
+}
+.v-industry-mfg .border-\[\#328CFF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(50 140 255 / var(--tw-border-opacity, 1));
+}
+.v-industry-mfg .border-\[\#328CFF\]\/25 {
+  border-color: rgb(50 140 255 / 0.25);
+}
+.v-industry-mfg .border-\[\#328CFF\]\/30 {
+  border-color: rgb(50 140 255 / 0.3);
+}
+.v-industry-mfg .border-\[\#51627A\]\/10 {
+  border-color: rgb(81 98 122 / 0.1);
+}
+.v-industry-mfg .border-\[\#51627A\]\/15 {
+  border-color: rgb(81 98 122 / 0.15);
+}
+.v-industry-mfg .border-\[\#51627A\]\/20 {
+  border-color: rgb(81 98 122 / 0.2);
+}
+.v-industry-mfg .border-\[\#D9E1EC\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 225 236 / var(--tw-border-opacity, 1));
+}
+.v-industry-mfg .border-\[\#E5484D\]\/30 {
+  border-color: rgb(229 72 77 / 0.3);
+}
+.v-industry-mfg .border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+.v-industry-mfg .border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+.v-industry-mfg .border-white\/15 {
+  border-color: rgb(255 255 255 / 0.15);
+}
+.v-industry-mfg .bg-\[\#030812\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 8 18 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#041428\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 20 40 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#06111F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 17 31 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#09192E\]\/80 {
+  background-color: rgb(9 25 46 / 0.8);
+}
+.v-industry-mfg .bg-\[\#0B1A2A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 26 42 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#0B1B30\]\/70 {
+  background-color: rgb(11 27 48 / 0.7);
+}
+.v-industry-mfg .bg-\[\#141E2E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 30 46 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#2FB67C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 182 124 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#328CFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 140 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#328CFF\]\/10 {
+  background-color: rgb(50 140 255 / 0.1);
+}
+.v-industry-mfg .bg-\[\#328CFF\]\/15 {
+  background-color: rgb(50 140 255 / 0.15);
+}
+.v-industry-mfg .bg-\[\#51627A\]\/10 {
+  background-color: rgb(81 98 122 / 0.1);
+}
+.v-industry-mfg .bg-\[\#D9E1EC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 225 236 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#E2E8F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#E5484D\]\/15 {
+  background-color: rgb(229 72 77 / 0.15);
+}
+.v-industry-mfg .bg-\[\#EAF3FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 243 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#F4F7FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 251 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-\[\#F4F7FB\]\/70 {
+  background-color: rgb(244 247 251 / 0.7);
+}
+.v-industry-mfg .bg-\[\#FDF0D5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 240 213 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+.v-industry-mfg .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.v-industry-mfg .from-\[\#09192E\] {
+  --tw-gradient-from: #09192E var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(9 25 46 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.v-industry-mfg .from-\[\#F4F7FB\] {
+  --tw-gradient-from: #F4F7FB var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(244 247 251 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.v-industry-mfg .via-\[\#06111F\] {
+  --tw-gradient-to: rgb(6 17 31 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #06111F var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.v-industry-mfg .to-\[\#06111F\] {
+  --tw-gradient-to: #06111F var(--tw-gradient-to-position);
+}
+.v-industry-mfg .to-white {
+  --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+.v-industry-mfg .p-2 {
+  padding: 0.5rem;
+}
+.v-industry-mfg .p-3 {
+  padding: 0.75rem;
+}
+.v-industry-mfg .p-5 {
+  padding: 1.25rem;
+}
+.v-industry-mfg .p-6 {
+  padding: 1.5rem;
+}
+.v-industry-mfg .p-8 {
+  padding: 2rem;
+}
+.v-industry-mfg .px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.v-industry-mfg .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.v-industry-mfg .px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.v-industry-mfg .px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.v-industry-mfg .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-industry-mfg .px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.v-industry-mfg .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.v-industry-mfg .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.v-industry-mfg .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.v-industry-mfg .py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.v-industry-mfg .py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.v-industry-mfg .py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.v-industry-mfg .py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.v-industry-mfg .py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.v-industry-mfg .py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.v-industry-mfg .py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.v-industry-mfg .pb-4 {
+  padding-bottom: 1rem;
+}
+.v-industry-mfg .pt-1 {
+  padding-top: 0.25rem;
+}
+.v-industry-mfg .pt-16 {
+  padding-top: 4rem;
+}
+.v-industry-mfg .pt-2 {
+  padding-top: 0.5rem;
+}
+.v-industry-mfg .pt-4 {
+  padding-top: 1rem;
+}
+.v-industry-mfg .pt-5 {
+  padding-top: 1.25rem;
+}
+.v-industry-mfg .pt-8 {
+  padding-top: 2rem;
+}
+.v-industry-mfg .text-center {
+  text-align: center;
+}
+.v-industry-mfg .text-\[11px\] {
+  font-size: 11px;
+}
+.v-industry-mfg .text-\[12px\] {
+  font-size: 12px;
+}
+.v-industry-mfg .text-\[13px\] {
+  font-size: 13px;
+}
+.v-industry-mfg .text-\[15px\] {
+  font-size: 15px;
+}
+.v-industry-mfg .text-\[16px\] {
+  font-size: 16px;
+}
+.v-industry-mfg .text-\[18px\] {
+  font-size: 18px;
+}
+.v-industry-mfg .text-\[20px\] {
+  font-size: 20px;
+}
+.v-industry-mfg .text-\[22px\] {
+  font-size: 22px;
+}
+.v-industry-mfg .text-\[24px\] {
+  font-size: 24px;
+}
+.v-industry-mfg .text-\[32px\] {
+  font-size: 32px;
+}
+.v-industry-mfg .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.v-industry-mfg .text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.v-industry-mfg .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.v-industry-mfg .font-bold {
+  font-weight: 700;
+}
+.v-industry-mfg .font-medium {
+  font-weight: 500;
+}
+.v-industry-mfg .font-semibold {
+  font-weight: 600;
+}
+.v-industry-mfg .uppercase {
+  text-transform: uppercase;
+}
+.v-industry-mfg .italic {
+  font-style: italic;
+}
+.v-industry-mfg .leading-\[16px\] {
+  line-height: 16px;
+}
+.v-industry-mfg .leading-\[18px\] {
+  line-height: 18px;
+}
+.v-industry-mfg .leading-\[24px\] {
+  line-height: 24px;
+}
+.v-industry-mfg .leading-\[28px\] {
+  line-height: 28px;
+}
+.v-industry-mfg .leading-\[40px\] {
+  line-height: 40px;
+}
+.v-industry-mfg .leading-relaxed {
+  line-height: 1.625;
+}
+.v-industry-mfg .tracking-tight {
+  letter-spacing: -0.025em;
+}
+.v-industry-mfg .tracking-wide {
+  letter-spacing: 0.025em;
+}
+.v-industry-mfg .text-\[\#0B1A2A\] {
+  --tw-text-opacity: 1;
+  color: rgb(11 26 42 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#2FB67C\] {
+  --tw-text-opacity: 1;
+  color: rgb(47 182 124 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#328CFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(50 140 255 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#51627A\] {
+  --tw-text-opacity: 1;
+  color: rgb(81 98 122 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#51627A\]\/80 {
+  color: rgb(81 98 122 / 0.8);
+}
+.v-industry-mfg .text-\[\#9DB0C8\] {
+  --tw-text-opacity: 1;
+  color: rgb(157 176 200 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#A0AEC0\] {
+  --tw-text-opacity: 1;
+  color: rgb(160 174 192 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#D9E1EC\] {
+  --tw-text-opacity: 1;
+  color: rgb(217 225 236 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-\[\#E5484D\] {
+  --tw-text-opacity: 1;
+  color: rgb(229 72 77 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .underline {
+  text-decoration-line: underline;
+}
+.v-industry-mfg .underline-offset-4 {
+  text-underline-offset: 4px;
+}
+.v-industry-mfg .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.v-industry-mfg .opacity-10 {
+  opacity: 0.1;
+}
+.v-industry-mfg .opacity-75 {
+  opacity: 0.75;
+}
+.v-industry-mfg .shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-industry-mfg .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-industry-mfg .shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-industry-mfg .outline {
+  outline-style: solid;
+}
+.v-industry-mfg .ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.v-industry-mfg .ring-4 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.v-industry-mfg .ring-\[\#328CFF\]\/20 {
+  --tw-ring-color: rgb(50 140 255 / 0.2);
+}
+.v-industry-mfg .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-industry-mfg .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-industry-mfg .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-industry-mfg .transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-industry-mfg .duration-150 {
+  transition-duration: 150ms;
+}
+.v-industry-mfg .duration-200 {
+  transition-duration: 200ms;
+}
+.v-industry-mfg .ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.v-industry-mfg .selection\:bg-\[\#328CFF\] *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 140 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .selection\:text-white *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .selection\:bg-\[\#328CFF\]::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 140 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .selection\:text-white::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .hover\:bg-\[\#51627A\]\/10:hover {
+  background-color: rgb(81 98 122 / 0.1);
+}
+.v-industry-mfg .hover\:bg-\[\#5AA5FF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 165 255 / var(--tw-bg-opacity, 1));
+}
+.v-industry-mfg .hover\:text-\[\#5AA5FF\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(90 165 255 / var(--tw-text-opacity, 1));
+}
+.v-industry-mfg .hover\:underline:hover {
+  text-decoration-line: underline;
+}
+.v-industry-mfg .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.v-industry-mfg .focus-visible\:ring-2:focus-visible {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.v-industry-mfg .active\:scale-95:active {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@media (min-width: 640px) {
+
+  .v-industry-mfg .sm\:inline {
+    display: inline;
+  }
+
+  .v-industry-mfg .sm\:w-auto {
+    width: auto;
+  }
+
+  .v-industry-mfg .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-industry-mfg .sm\:items-center {
+    align-items: center;
+  }
+
+  .v-industry-mfg .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .v-industry-mfg .sm\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .v-industry-mfg .sm\:p-4 {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .v-industry-mfg .md\:block {
+    display: block;
+  }
+
+  .v-industry-mfg .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .v-industry-mfg .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .v-industry-mfg .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .v-industry-mfg .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .v-industry-mfg .md\:text-\[44px\] {
+    font-size: 44px;
+  }
+
+  .v-industry-mfg .md\:leading-\[52px\] {
+    line-height: 52px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .v-industry-mfg .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .v-industry-mfg .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .v-industry-mfg .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .v-industry-mfg .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .v-industry-mfg .lg\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .v-industry-mfg .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .v-industry-mfg .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .v-industry-mfg .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .v-industry-mfg .lg\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+    .v-industry-mfg .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  .v-industry-mfg .site-footer{background:#081A2E;padding:72px max(4%,calc((100% - 1746px)/2)) 28px;border-top:1px solid #1E2D42;position:relative}.v-industry-mfg .site-footer:before{content:"";position:absolute;inset:0 0 auto;height:56px;pointer-events:none;background-image:radial-gradient(#2F86FF 1px,transparent 1px);background-size:32px 32px;opacity:.1}.v-industry-mfg .footer-grid{position:relative;display:grid;grid-template-columns:1.3fr 1fr 1fr .7fr 1fr;gap:48px;padding:24px 6px 72px}.v-industry-mfg .footer-logo{font-family:IBM Plex Sans,Arial,sans-serif;font-weight:800;letter-spacing:.22em;font-size:28px;color:#328cff;text-decoration:none}.v-industry-mfg .footer-logo span{color:#f4a64a}.v-industry-mfg .footer-tagline{color:#46b98a;font-size:17px;margin:10px 0 32px}.v-industry-mfg .footer-brand h3,.v-industry-mfg .footer-column h3{font-size:17px;color:#fff;font-weight:600;margin:0 0 20px}.v-industry-mfg .footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:14px}.v-industry-mfg .footer-column a{font-size:15px;color:#93A4BF;text-decoration:none;line-height:1.45}.v-industry-mfg .footer-column a:hover,.v-industry-mfg .footer-bottom a:hover{color:#fff}.v-industry-mfg .social-links{display:flex;align-items:center;gap:20px}.v-industry-mfg .social-links a{color:#93A4BF;text-decoration:none;font-size:22px;font-weight:700}.v-industry-mfg .social-links .whatsapp-icon{width:21px;height:21px;vertical-align:middle}.v-industry-mfg .footer-contact .material-symbols-outlined{font-size:19px;vertical-align:middle}.v-industry-mfg .footer-contact a{display:flex;align-items:center;gap:12px}.v-industry-mfg .footer-bottom{border-top:1px solid #1E2D42;padding-top:22px;display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:14px;color:#93A4BF}.v-industry-mfg .footer-bottom nav{display:flex;gap:32px}.v-industry-mfg .footer-bottom a{color:#93A4BF;text-decoration:none}@media(max-width:850px){.v-industry-mfg .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;padding-bottom:44px}.v-industry-mfg .footer-bottom{align-items:flex-start;flex-direction:column}.v-industry-mfg .footer-bottom nav{flex-wrap:wrap;gap:16px 24px}}@media(max-width:480px){.v-industry-mfg .site-footer{padding:48px 24px 24px}.v-industry-mfg .footer-grid{grid-template-columns:1fr 1fr;gap:32px 20px}.v-industry-mfg .footer-brand{grid-column:1/-1}.v-industry-mfg .footer-column a{font-size:14px}.v-industry-mfg .footer-bottom nav{flex-direction:column;gap:12px}}
+
+.v-industry-mfg .hero-video-slot video,.v-industry-mfg  .hero-video-slot iframe,.v-industry-mfg  .hero-video-slot embed,.v-industry-mfg  .hero-video-slot object { display:block; width:100%; height:100%; border:0; }
+.v-industry-mfg .hero-video-slot video { object-fit:cover; }
+
+
+.v-industry-mfg .how-it-works-steps{--gap:1.5rem;--row-gap:2.5rem}.v-industry-mfg .how-it-works-steps.gap-6{gap:var(--gap)}
+@media(min-width:1024px){.v-industry-mfg .how-step-card:not(:last-child)::after{content:"";position:absolute;left:calc(100% + 1px);top:50%;width:var(--gap);height:12px;transform:translateY(-50%);z-index:2;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12' preserveAspectRatio='none'%3E%3Cpath d='M0 6H18' stroke='%232F86FF' stroke-width='2'/%3E%3Cpath d='M15 1L24 6L15 11Z' fill='%232F86FF'/%3E%3C/svg%3E") no-repeat center/100% 100%}}
+@media(max-width:1023px){.v-industry-mfg .how-it-works-steps{row-gap:var(--row-gap)}.v-industry-mfg .how-step-card:nth-child(-n+2)::after{content:"";position:absolute;top:calc(100% + 1px);left:50%;width:12px;height:var(--row-gap);transform:translateX(-50%);z-index:2;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 40' preserveAspectRatio='none'%3E%3Cpath d='M6 0V30' stroke='%232F86FF' stroke-width='2'/%3E%3Cpath d='M1 27L6 40L11 27Z' fill='%232F86FF'/%3E%3C/svg%3E") no-repeat center/100% 100%}}
+.v-industry-mfg .data-puzzle-piece{position:relative}
+@media(min-width:1024px){.v-industry-mfg .data-puzzle-left::after{content:"";position:absolute;z-index:2;right:-13px;top:50%;width:26px;height:40px;transform:translateY(-50%);border-radius:50%;background:#F4F7FB;border:1px solid rgba(81,98,122,.2)}.v-industry-mfg .data-puzzle-right::before{content:"";position:absolute;z-index:3;left:-13px;top:50%;width:26px;height:40px;transform:translateY(-50%);border-radius:50%;background:#fff;border:1px solid rgba(81,98,122,.2)}}
+.v-industry-mfg .data-sources-accordion summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:.5rem;color:#168bff}.v-industry-mfg .data-sources-accordion summary::-webkit-details-marker{display:none}.v-industry-mfg .data-sources-accordion summary::after{content:"+";font-size:1.2em}.v-industry-mfg .data-sources-accordion[open] summary::after{content:"−"}
+
+
+/* =====================================================================
+   ContexQ theme (Styles(2).css palette). CSS only: maps the page's existing
+   Tailwind colour classes onto section-scoped theme variables, so sections
+   alternate navy / white and JS-rewritten class names are styled too.
+   Selectors are prefixed with "body" to outrank the Tailwind CDN styles,
+   which are injected later at runtime.
+   ===================================================================== */
+.v-industry-mfg {
+  /* Navy */
+  --navy-950: #050F1C; --navy-900: #081A2E; --navy-850: #0C2038; --navy-800: #111C2B; --navy-700: #1E2D42;
+  /* Blue */
+  --blue-100: #E6F0FF; --blue-400: #5BA0FF; --blue-500: #2F86FF; --blue-600: #1F6FEB;
+  /* Neutrals */
+  --white: #FFFFFF; --slate-50: #F3F6FB; --slate-200: #E1E7F0; --slate-400: #93A4BF;
+  --slate-500: #5B6B86; --slate-600: #475873; --ink-900: #0B1B2E;
+  /* Category accents (data categories and icons only, never buttons) */
+  --accent-amber: #F5A524; --accent-cyan: #22C3E6; --accent-green: #34D399; --accent-violet: #8B7CF6; --accent-coral: #F4647A;
+  /* Radius */
+  --radius-cta: 4px; --radius-control: 4px; --radius-card: 8px; --radius-panel: 12px; --radius-pill: 999px;
+}
+
+/* ---------- Theme variables ---------- */
+/* Navy: default, plus dark comparison panels that sit inside white sections */
+.v-industry-mfg,.v-industry-mfg .cq-body #problem .bg-\[\#06111F\] {
+  --surface: var(--navy-950);
+  --panel: var(--navy-900);
+  --card: var(--navy-850);
+  --text-strong: var(--white);
+  --text: var(--slate-400);
+  --text-muted: var(--slate-400);      /* slate-500 only for large/decorative text on navy */
+  --text-decor: var(--slate-500);
+  --brand-text: var(--blue-400);
+  --line: var(--navy-700);
+  --tint: rgba(47, 134, 255, .14);
+  --amber-soft: rgba(245, 165, 36, .14);
+}
+/* White: alternating sections, plus the light "internal data" piece inside a navy section */
+.v-industry-mfg .cq-body #problem,.v-industry-mfg .cq-body #how-it-works,.v-industry-mfg .cq-body #regulatory,.v-industry-mfg .cq-body #contact,.v-industry-mfg .cq-body [class*="from-[#F4F7FB]"] {
+  --surface: var(--white);
+  --panel: var(--slate-50);
+  --card: var(--white);
+  --text-strong: var(--ink-900);
+  --text: var(--slate-600);
+  --text-muted: var(--slate-500);
+  --text-decor: var(--slate-500);
+  --brand-text: var(--blue-500);
+  --line: var(--slate-200);
+  --tint: var(--blue-100);
+  --amber-soft: #FDF0D5;
+}
+
+/* ---------- Section surfaces: navy / white rhythm ---------- */
+.v-industry-mfg .cq-body.bg-\[\#041428\] { background-color: var(--navy-950); }
+.v-industry-mfg .cq-body #problem,.v-industry-mfg .cq-body #how-it-works,.v-industry-mfg .cq-body #regulatory,.v-industry-mfg .cq-body #contact { background-color: var(--white); color: var(--text-strong); }
+.v-industry-mfg .cq-body #journey-section,.v-industry-mfg .cq-body #how-it-works + section,.v-industry-mfg .cq-body #security { background-color: var(--navy-950); color: var(--text-strong); }
+.v-industry-mfg .cq-body #problem .bg-\[\#06111F\] { background-color: var(--navy-900); }
+
+/* Header (always navy) */
+.v-industry-mfg .cq-body header.bg-\[\#030812\]\/90 { background-color: rgba(5, 15, 28, .94); }
+.v-industry-mfg .cq-body .border-outline-variant\/30 { border-color: var(--navy-700); }
+
+/* ---------- Text ---------- */
+.v-industry-mfg .cq-body .text-\[\#0B1A2A\],.v-industry-mfg .cq-body .text-text-on-light,.v-industry-mfg .cq-body .text-on-surface,.v-industry-mfg .cq-body .text-white:not([class*="bg-[#328CFF]"]):not(.bg-status-blue) { color: var(--text-strong); }
+.v-industry-mfg .cq-body .text-\[\#51627A\],.v-industry-mfg .cq-body .text-text-muted-on-light,.v-industry-mfg .cq-body .text-on-surface-variant,.v-industry-mfg .cq-body .text-\[\#9DB0C8\] { color: var(--text); }
+.v-industry-mfg .cq-body .text-\[\#51627A\]\/80,.v-industry-mfg .cq-body .text-outline { color: var(--text-muted); }
+.v-industry-mfg .cq-body .text-\[\#A0AEC0\],.v-industry-mfg .cq-body .text-\[\#D9E1EC\] { color: var(--text-decor); }
+.v-industry-mfg .cq-body .text-\[\#328CFF\],.v-industry-mfg .cq-body .text-status-blue { color: var(--brand-text); }
+.v-industry-mfg .cq-body .hover\:text-\[\#328CFF\]:hover { color: var(--brand-text); }
+.v-industry-mfg .cq-body .hover\:text-\[\#5AA5FF\]:hover,.v-industry-mfg .cq-body .hover\:text-accent-hover:hover { color: var(--blue-400); }
+.v-industry-mfg .cq-body #how-it-works p b { color: var(--text-strong); }
+
+/* ---------- Surfaces inside sections ---------- */
+.v-industry-mfg .cq-body .bg-white,.v-industry-mfg .cq-body .bg-surface-white,.v-industry-mfg .cq-body .bg-\[\#141E2E\] { background-color: var(--card); }
+.v-industry-mfg .cq-body .bg-\[\#F4F7FB\],.v-industry-mfg .cq-body .bg-\[\#F4F7FB\]\/70 { background-color: var(--panel); }
+.v-industry-mfg .cq-body .bg-\[\#0B1A2A\] { background-color: var(--tint); }
+.v-industry-mfg .cq-body .bg-\[\#E2E8F0\],.v-industry-mfg .cq-body .bg-\[\#D9E1EC\] { background-color: var(--line); }
+.v-industry-mfg .cq-body .bg-\[\#FDF0D5\] { background-color: var(--amber-soft); }
+.v-industry-mfg .cq-body .bg-\[\#328CFF\]\/10 { background-color: rgba(47, 134, 255, .10); }
+.v-industry-mfg .cq-body .bg-\[\#328CFF\]\/15 { background-color: rgba(47, 134, 255, .15); }
+/* Journey illustration wells: light canvases kept so the SVG art reads as designed */
+.v-industry-mfg .cq-body .bg-\[\#EAF3FF\] { background-color: var(--blue-100); border-radius: var(--radius-card); }
+
+/* Regulatory: panel and evidence pills (pills are re-created by JS with the same classes) */
+.v-industry-mfg .cq-body #regPanel { background-color: var(--panel); border-radius: var(--radius-panel); }
+.v-industry-mfg .cq-body #regPills > span { background-color: var(--white); border-radius: var(--radius-pill); }
+
+/* ---------- Borders and rings ---------- */
+.v-industry-mfg .cq-body .border-\[\#51627A\]\/10,.v-industry-mfg .cq-body .border-\[\#51627A\]\/15,.v-industry-mfg .cq-body .border-\[\#51627A\]\/20,.v-industry-mfg .cq-body .border-\[\#D9E1EC\],.v-industry-mfg .cq-body .border-white\/10 { border-color: var(--line); }
+.v-industry-mfg .cq-body .border-\[\#328CFF\] { border-color: var(--blue-500); }
+.v-industry-mfg .cq-body .border-\[\#328CFF\]\/25 { border-color: rgba(47, 134, 255, .25); }
+.v-industry-mfg .cq-body .border-\[\#328CFF\]\/30 { border-color: rgba(47, 134, 255, .30); }
+.v-industry-mfg .cq-body .ring-\[\#328CFF\]\/20 { --tw-ring-color: rgba(47, 134, 255, .2); }
+
+/* ---------- Primary CTA (Styles(2).css .btn-primary colours; motion kept) ---------- */
+.v-industry-mfg .cq-body .bg-\[\#328CFF\],.v-industry-mfg .cq-body .bg-status-blue { background-color: var(--blue-500); }
+.v-industry-mfg .cq-body .hover\:bg-\[\#5AA5FF\]:hover { background-color: var(--blue-400); }
+.v-industry-mfg .cq-body a.bg-\[\#328CFF\]:active,.v-industry-mfg .cq-body button.bg-\[\#328CFF\]:active { background-color: var(--blue-600); }
+
+/* ---------- Type: off-scale card headings onto Headline MD ---------- */
+.v-industry-mfg .cq-body h3.text-\[22px\] { font-size: 24px; line-height: 32px; letter-spacing: -.01em; }
+
+/* ---------- Hero heading: Headline XL (44px) ---------- */
+.v-industry-mfg .cq-body #industries h1 { font-size: 44px; line-height: 52px; letter-spacing: -.02em; }
+@media (max-width: 480px) { .v-industry-mfg .cq-body #industries h1 { font-size: 32px; line-height: 40px; letter-spacing: -.015em; } }
+
+/* ---------- Contact CTA: no dot texture; copy left, button right ---------- */
+.v-industry-mfg .cq-body #contact > .absolute.inset-0 { display: none; }
+.v-industry-mfg .cq-body #contact > .max-w-4xl {
+  max-width: 80rem; padding-inline: 24px;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 48px; align-items: center;
+  text-align: left;
+}
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2 { grid-column: 1; margin-bottom: 16px; }
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2 + p { grid-column: 1; max-width: 640px; margin: 0 0 16px; }
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2 + p { margin-bottom: 0; }
+.v-industry-mfg .cq-body #contact .cq-cta-col { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: center; justify-content: center; align-self: center; text-align: center; gap: 16px; margin: 0; }
+.v-industry-mfg .cq-body #contact .cq-cta-col > .flex { margin: 0; justify-content: center; }
+.v-industry-mfg .cq-body #contact .cq-cta-col > p { margin: 0; }
+@media (min-width: 768px) { .v-industry-mfg .cq-body #contact > .max-w-4xl { padding-inline: 48px; } }
+@media (max-width: 767px) {
+  .v-industry-mfg .cq-body #contact > .max-w-4xl { grid-template-columns: 1fr; }
+  .v-industry-mfg .cq-body #contact .cq-cta-col { grid-column: 1; grid-row: auto; margin: 16px 0 0; }
+}
+
+/* ---------- Journey: cards animate in each time a stage becomes active ---------- */
+@keyframes v-industry-mfg__cqJourneyCardIn {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+.v-industry-mfg .cq-body #journey-section .journey-panel:not(.hidden) > * { animation: v-industry-mfg__cqJourneyCardIn .22s cubic-bezier(.2, .7, .2, 1) both; }
+.v-industry-mfg .cq-body #journey-section .journey-panel:not(.hidden) > :nth-child(2) { animation-delay: .03s; }
+@media (prefers-reduced-motion: reduce) {
+  .v-industry-mfg .cq-body #journey-section .journey-panel:not(.hidden) > * { animation: none; }
+}
+/* Match the CTA section background to the section directly above it */
+.v-industry-mfg .cq-body #contact { background-color: var(--navy-950); }
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2,.v-industry-mfg .cq-body #contact a[href="/contact"] { color: #fff; }
+
+/* Product chain: shrink on mobile so stages fit */
+@media (max-width: 640px) {
+  .v-industry-mfg .product-chain > span.material-symbols-outlined { font-size: 13px !important; }
+  .v-industry-mfg .product-chain > div > span:last-child { font-size: 11px !important; line-height: 14px !important; hyphens: auto; word-break: break-word; }
+  .v-industry-mfg .product-chain > div > div { width: 1.75rem !important; height: 1.75rem !important; }
+  .v-industry-mfg .product-chain > div > div > span.material-symbols-outlined { font-size: 14px !important; }
+}
+
+
+.v-industry-mfg .custom-ring-amber{box-shadow:0 0 0 6px rgba(245,166,35,.25)}
+
+.v-industry-mfg{scroll-behavior:smooth;scroll-padding-top:84px}.v-industry-mfg .cq-body{margin:0}.v-industry-mfg a,.v-industry-mfg button{ -webkit-tap-highlight-color:transparent}.v-industry-mfg button{cursor:pointer}.v-industry-mfg a:focus-visible,.v-industry-mfg button:focus-visible{outline:2px solid #5BA0FF;outline-offset:3px}@media(prefers-reduced-motion:reduce){.v-industry-mfg *,.v-industry-mfg *::before,.v-industry-mfg *::after, .v-industry-mfg, .v-industry-mfg::before, .v-industry-mfg::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+.v-industry-mfg .site-footer{background:#081A2E;padding:72px max(4%,calc((100% - 1746px)/2)) 28px;border-top:1px solid #1E2D42;position:relative}.v-industry-mfg .site-footer:before{content:"";position:absolute;inset:0 0 auto;height:56px;pointer-events:none;background-image:radial-gradient(#2F86FF 1px,transparent 1px);background-size:32px 32px;opacity:.1}.v-industry-mfg .footer-grid{position:relative;display:grid;grid-template-columns:1.3fr 1fr 1fr .7fr 1fr;gap:48px;padding:24px 6px 72px}.v-industry-mfg .footer-logo{font-family:IBM Plex Sans,Arial,sans-serif;font-weight:800;letter-spacing:.22em;font-size:28px;color:#328cff;text-decoration:none}.v-industry-mfg .footer-logo span{color:#f4a64a}.v-industry-mfg .footer-tagline{color:#46b98a;font-size:17px;margin:10px 0 32px}.v-industry-mfg .footer-brand h3,.v-industry-mfg .footer-column h3{font-size:17px;color:#fff;font-weight:600;margin:0 0 20px}.v-industry-mfg .footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:14px}.v-industry-mfg .footer-column a{font-size:15px;color:#93A4BF;text-decoration:none;line-height:1.45}.v-industry-mfg .footer-column a:hover,.v-industry-mfg .footer-bottom a:hover{color:#fff}.v-industry-mfg .social-links{display:flex;align-items:center;gap:20px}.v-industry-mfg .social-links a{color:#93A4BF;text-decoration:none;font-size:22px;font-weight:700}.v-industry-mfg .social-links .whatsapp-icon{width:21px;height:21px;vertical-align:middle}.v-industry-mfg .footer-contact .material-symbols-outlined{font-size:19px;vertical-align:middle}.v-industry-mfg .footer-contact a{display:flex;align-items:center;gap:12px}.v-industry-mfg .footer-bottom{border-top:1px solid #1E2D42;padding-top:22px;display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:14px;color:#93A4BF}.v-industry-mfg .footer-bottom nav{display:flex;gap:32px}.v-industry-mfg .footer-bottom a{color:#93A4BF;text-decoration:none}@media(max-width:850px){.v-industry-mfg .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;padding-bottom:44px}.v-industry-mfg .footer-bottom{align-items:flex-start;flex-direction:column}.v-industry-mfg .footer-bottom nav{flex-wrap:wrap;gap:16px 24px}}@media(max-width:480px){.v-industry-mfg .site-footer{padding:48px 24px 24px}.v-industry-mfg .footer-grid{grid-template-columns:1fr 1fr;gap:32px 20px}.v-industry-mfg .footer-brand{grid-column:1/-1}.v-industry-mfg .footer-column a{font-size:14px}.v-industry-mfg .footer-bottom nav{flex-direction:column;gap:12px}}
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+
+.v-industry-mfg { --cq-gutter: clamp(20px, 4vw, 48px); }
+@media (max-width: 520px) { .v-industry-mfg { --cq-gutter: 17px; } }
+.v-industry-mfg .max-w-7xl.mx-auto { width: min(1200px, calc(100% - 2 * var(--cq-gutter))); max-width: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+.v-industry-mfg main > section:first-of-type { padding-top: calc(var(--site-header-height, 76px) + 50px); }
+@media (min-width: 1101px) { .v-industry-mfg main > section:first-of-type { box-sizing: border-box; min-height: 840px; display: flex; flex-direction: column; justify-content: center; } }
+

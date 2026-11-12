@@ -1,0 +1,359 @@
+/* Generated from public/html/contexq-banking-v6.html: the page's own CSS, scoped to .v-industry-finance. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-industry-finance *:not(svg, svg *), .v-industry-finance ::before, .v-industry-finance ::after) { all: revert; }
+:where(.v-industry-finance svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-industry-finance) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-industry-finance > .cq-body) { display: block; margin: 8px; }
+.v-industry-finance.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-industry-finance :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-industry-finance > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-industry-finance main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+/* =====================================================
+   ContexQ palette and radius tokens (Styles(2).css)
+   ===================================================== */
+.v-industry-finance{
+  --navy-950:#050F1C;--navy-900:#081A2E;--navy-850:#0C2038;--navy-800:#111C2B;--navy-700:#1E2D42;
+  --blue-100:#E6F0FF;--blue-400:#5BA0FF;--blue-500:#2F86FF;--blue-600:#1F6FEB;
+  --white:#FFFFFF;--slate-50:#F3F6FB;--slate-200:#E1E7F0;--slate-400:#93A4BF;--slate-500:#5B6B86;--slate-600:#475873;--ink-900:#0B1B2E;
+  --accent-amber:#F5A524;--accent-cyan:#22C3E6;--accent-green:#34D399;--accent-violet:#8B7CF6;--accent-coral:#F4647A;
+  --radius-cta:4px;--radius-control:4px;--radius-card:8px;--radius-panel:12px;--radius-pill:999px;
+
+  --font:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:dark;
+}
+
+/* Section themes: navy (default) and white. Components read these. */
+.v-industry-finance,.v-industry-finance .uc-act{
+  --surface:var(--navy-950);--panel:var(--navy-900);--card:var(--navy-850);
+  --text-strong:var(--white);--text:var(--slate-400);--text-muted:var(--slate-400);
+  --brand-text:var(--blue-400);--line:var(--navy-700);--line-strong:rgba(147,164,191,.32);
+  --tint:rgba(47,134,255,.12);--tint-line:rgba(47,134,255,.4);--focus:var(--blue-400);
+}
+.v-industry-finance .challenges,.v-industry-finance .usecases,.v-industry-finance .platform,.v-industry-finance .cta{
+  --surface:var(--white);--panel:var(--slate-50);--card:var(--slate-50);
+  --text-strong:var(--ink-900);--text:var(--slate-600);--text-muted:var(--slate-500);
+  --brand-text:var(--blue-500);--line:var(--slate-200);--line-strong:var(--ink-900);
+  --tint:var(--blue-100);--tint-line:rgba(47,134,255,.4);--focus:var(--blue-500);
+  color-scheme:light;
+}
+
+/* =====================================================
+   Base
+   ===================================================== */
+.v-industry-finance *, .v-industry-finance{box-sizing:border-box}
+.v-industry-finance{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%}
+.v-industry-finance .cq-body{margin:0;background:var(--navy-950);color:var(--text-strong);font:400 15px/24px var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.v-industry-finance canvas,.v-industry-finance svg{display:block}
+.v-industry-finance a{color:inherit}
+.v-industry-finance button,.v-industry-finance select{font:inherit;color:inherit}
+.v-industry-finance h1,.v-industry-finance h2,.v-industry-finance h3,.v-industry-finance h4{margin:0;font-weight:600;color:var(--text-strong);text-wrap:balance}
+.v-industry-finance p{margin:0}
+.v-industry-finance :focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+.v-industry-finance .wrap{width:min(1240px,calc(100% - 48px));margin-inline:auto}
+.v-industry-finance .skip{position:fixed;left:16px;top:-80px;z-index:100;background:var(--blue-500);color:var(--white);padding:8px 16px;border-radius:var(--radius-cta);font-weight:600;text-decoration:none}
+.v-industry-finance .skip:focus{top:16px}
+
+/* Type scale */
+.v-industry-finance h2{font-size:44px;line-height:52px;letter-spacing:-.02em}
+.v-industry-finance .lead{font-size:18px;line-height:28px;color:var(--text);max-width:56ch}
+.v-industry-finance section{background:var(--surface);color:var(--text-strong)}
+
+/* Buttons (.btn-primary per Styles(2).css; original transitions kept) */
+.v-industry-finance .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 32px;border-radius:var(--radius-cta);border:1px solid transparent;font-weight:600;font-size:14px;line-height:20px;text-decoration:none;cursor:pointer;transition:background-color .16s ease-out,border-color .16s ease-out,color .16s ease-out}
+.v-industry-finance .btn-primary,.v-industry-finance .btn-dark{background:var(--blue-500);color:var(--white)}
+.v-industry-finance .btn-primary:hover,.v-industry-finance .btn-dark:hover{background:var(--blue-400)}
+.v-industry-finance .btn-primary:active,.v-industry-finance .btn-dark:active{background:var(--blue-600)}
+.v-industry-finance .btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--text-strong)}
+.v-industry-finance .btn-ghost:hover{border-color:var(--blue-400);color:var(--white)}
+.v-industry-finance .icon-btn{width:32px;height:32px;display:grid;place-items:center;border-radius:var(--radius-control);border:1px solid var(--line-strong);background:var(--navy-950);cursor:pointer;color:var(--text);transition:border-color .16s ease-out,color .16s ease-out}
+.v-industry-finance .icon-btn:hover{border-color:var(--blue-400);color:var(--white)}
+.v-industry-finance .icon-btn svg{width:16px;height:16px}
+
+/* Shared section heads */
+.v-industry-finance .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.v-industry-finance .section-head p{color:var(--text);font-size:18px;line-height:28px;max-width:52ch}
+
+/* =====================================================
+   01 Hero (navy)
+   ===================================================== */
+.v-industry-finance .hero{position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--line)}
+.v-industry-finance #heroCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.v-industry-finance .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--navy-950) 0%,rgba(5,15,28,.86) 32%,rgba(5,15,28,0) 56%),linear-gradient(0deg,var(--navy-950) 0%,rgba(5,15,28,0) 20%)}
+.v-industry-finance .hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:24px;min-height:min(800px,100svh);padding-block:40px}
+.v-industry-finance .hero-pill{display:inline-flex;align-items:center;gap:8px;padding:4px 16px;border:1px solid var(--line-strong);border-radius:var(--radius-pill);font-size:13px;line-height:20px;color:var(--blue-400);background:rgba(5,15,28,.6)}
+.v-industry-finance .hero-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue-400)}
+.v-industry-finance .hero h1{font-size:44px;line-height:52px;letter-spacing:-.02em;margin:24px 0;max-width:none}
+.v-industry-finance .hero .lead{max-width:44ch}
+.v-industry-finance .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:32px}
+.v-industry-finance .hero-stage{position:relative;height:clamp(500px,66vh,620px)}
+.v-industry-finance .hero-foot{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:16px}
+.v-industry-finance .hero-steps{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .hero-steps li{display:flex;align-items:center;gap:8px;transition:color .2s ease-out}
+.v-industry-finance .hero-steps li::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.v-industry-finance .hero-steps li.on{color:var(--white)}
+.v-industry-finance .hero-steps li.on::before{background:var(--blue-400)}
+
+/* =====================================================
+   02 Business value (white)
+   ===================================================== */
+.v-industry-finance .challenges{padding:64px 0 72px}
+.v-industry-finance .challenges h2{max-width:16ch}
+.v-industry-finance .business-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 32px;margin-top:32px}
+.v-industry-finance .business-card{padding:24px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start}
+.v-industry-finance .business-card>svg{width:28px;height:28px;fill:none;stroke:var(--blue-500);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.v-industry-finance .business-card h3{font-size:18px;line-height:28px;margin-bottom:8px;max-width:26ch}
+.v-industry-finance .business-card p{font-size:15px;line-height:24px;color:var(--text);max-width:49ch;margin-bottom:16px}
+.v-industry-finance .business-card>.ch-link,.v-industry-finance .business-links{margin-top:auto}
+.v-industry-finance .business-links{display:flex;flex-wrap:wrap;gap:8px 24px}
+.v-industry-finance .ch-link{display:block;background:none;border:0;padding:0;font-size:14px;line-height:20px;font-weight:600;color:var(--brand-text);text-decoration:none;cursor:pointer;text-align:left}
+.v-industry-finance .ch-link:hover{color:var(--blue-600);text-decoration:underline;text-underline-offset:4px}
+
+/* =====================================================
+   03 See it in action (navy): connected-view animation
+   ===================================================== */
+.v-industry-finance .sources{padding:72px 0 96px}
+.v-industry-finance .cv{max-width:1080px;margin:56px auto 0}
+.v-industry-finance .scene{position:relative;height:560px;border:1px solid var(--line);border-radius:var(--radius-panel);background:radial-gradient(ellipse at 51% 47%,rgba(22,70,150,.26),rgba(6,14,32,0) 62%),#060E20;overflow:hidden}
+.v-industry-finance #network{position:absolute;inset:0;width:100%;height:100%}
+.v-industry-finance .scene-top{position:absolute;top:16px;left:24px;right:24px;display:flex;justify-content:space-between;gap:16px;font-size:13px;line-height:20px;color:var(--text);pointer-events:none;z-index:1}
+.v-industry-finance .live{color:var(--blue-400)}
+.v-industry-finance .live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--blue-400);margin-right:8px;vertical-align:1px}
+.v-industry-finance .scene-caption{position:absolute;bottom:16px;left:24px;right:24px;display:flex;justify-content:space-between;gap:16px;font-size:13px;line-height:20px;color:var(--text);pointer-events:none}
+/* Legend markers match the canvas drawing colours (kept as drawn) */
+.v-industry-finance .legend{display:flex;gap:16px}
+.v-industry-finance .legend span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#5BA9E0;margin-right:8px;vertical-align:1px}
+.v-industry-finance .legend span:nth-child(2)::before{background:#F2C47F;border-radius:1px;transform:rotate(45deg)}
+.v-industry-finance .legend .lg-review::before{display:none}
+.v-industry-finance .lg-review{color:#F2C47F}
+.v-industry-finance .node-dialog{position:absolute;left:24px;right:24px;bottom:48px;z-index:3;background:var(--navy-850);border:1px solid var(--line-strong);border-radius:var(--radius-card);padding:16px 48px 16px 16px;font-size:15px;line-height:24px}
+.v-industry-finance .node-dialog button{position:absolute;right:8px;top:8px;width:32px;height:32px;background:none;border:0;font-size:20px;cursor:pointer;color:var(--text)}
+.v-industry-finance .node-dialog strong{color:var(--blue-400);font-weight:600}
+.v-industry-finance .node-dialog p{margin-top:4px;color:var(--text)}
+.v-industry-finance .transport{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:16px;align-items:start;padding:24px 0 16px;border-bottom:1px solid var(--line)}
+.v-industry-finance .step{position:relative;display:flex;gap:8px;align-items:flex-start;background:none;border:0;padding:0 0 12px;text-align:left;cursor:pointer;color:var(--text);transition:color .16s ease-out}
+.v-industry-finance .step::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line)}
+.v-industry-finance .step::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:var(--progress,0%);background:var(--blue-400)}
+.v-industry-finance .step:hover{color:var(--white)}
+.v-industry-finance .step strong{display:block;font-size:14px;line-height:20px;font-weight:600;margin-bottom:2px}
+.v-industry-finance .step small{display:block;font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .step.active{color:var(--white)}
+.v-industry-finance .controls{display:flex;gap:8px}
+.v-industry-finance .controls .icon-btn{font-size:13px}
+.v-industry-finance .insight{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px;padding-top:24px}
+.v-industry-finance .insight .tag{font-size:13px;line-height:20px;font-weight:600;color:var(--blue-400)}
+.v-industry-finance .insight h3{font-size:24px;line-height:32px;letter-spacing:-.01em;margin:8px 0}
+.v-industry-finance .insight p{color:var(--text);max-width:58ch}
+.v-industry-finance .evidence{display:flex;flex-direction:column;gap:16px;border-left:1px solid var(--line-strong);padding-left:24px}
+.v-industry-finance .evidence strong{display:block;font-weight:600;color:var(--white)}
+.v-industry-finance .ev-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.v-industry-finance .ev-table{width:100%;border-collapse:collapse;font-size:13px;line-height:20px}
+.v-industry-finance .ev-table th{text-align:left;font-weight:600;font-size:11px;line-height:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--text);padding:0 8px 8px 0;border-bottom:1px solid var(--line-strong)}
+.v-industry-finance .ev-table td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line);color:var(--text);vertical-align:top}
+.v-industry-finance .ev-table td:first-child{color:var(--white)}
+.v-industry-finance .ev-table b{font-weight:600;color:var(--blue-400)}
+/* Evidence status (data colours kept) */
+.v-industry-finance .st{display:inline-block;white-space:nowrap;font-size:13px;line-height:20px;font-weight:600;padding:0 8px;border-radius:var(--radius-pill)}
+.v-industry-finance .st.ok{color:#7FE0B1;background:rgba(60,203,138,.12)}
+.v-industry-finance .st.pot{color:#F2C47F;background:rgba(233,180,76,.14)}
+.v-industry-finance .ev-reason{font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .ev-reason b{color:#F2C47F;font-weight:600}
+.v-industry-finance .ev-next{padding:16px;border-radius:var(--radius-card);background:rgba(47,134,255,.08);border:1px solid var(--tint-line);font-size:15px;line-height:24px;color:var(--white)}
+.v-industry-finance .ev-next b{display:block;font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-400);margin-bottom:4px}
+
+/* =====================================================
+   04 Use cases (white)
+   ===================================================== */
+.v-industry-finance .usecases{padding:112px 0}
+.v-industry-finance .uc-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:48px;margin-top:64px}
+.v-industry-finance .uc-nav ul{list-style:none;margin:0;padding:0}
+.v-industry-finance .uc-nav .uc-group{margin:0 0 16px;padding:16px 8px 8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);transition:border-color .18s,box-shadow .18s}
+.v-industry-finance .uc-nav .uc-group:last-child{margin-bottom:0}
+.v-industry-finance .uc-nav .uc-group.is-active{border-color:var(--blue-500);box-shadow:0 2px 10px rgba(11,27,46,.06)}
+.v-industry-finance .uc-nav .uc-group h3{margin:0 8px 8px;font-size:14px;font-weight:600;line-height:20px;color:var(--text-strong)}
+.v-industry-finance .uc-nav button{display:block;width:100%;text-align:left;background:none;border:0;border-left:3px solid transparent;padding:8px 8px 8px 12px;font-size:14px;line-height:20px;color:var(--text);border-radius:0 var(--radius-control) var(--radius-control) 0;cursor:pointer;transition:color .16s ease-out,background-color .16s ease-out,border-color .16s ease-out}
+.v-industry-finance .uc-nav button:hover{color:var(--text-strong);background:var(--white)}
+.v-industry-finance .uc-nav button[aria-current="true"]{background:var(--blue-100);border-left-color:var(--blue-500);color:var(--text-strong);font-weight:600}
+.v-industry-finance .uc-nav .uc-note{margin:8px 8px 0;font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .uc-select{display:none}
+.v-industry-finance .uc-detail{border-top:1px solid var(--line-strong);padding-top:24px;min-width:0}
+.v-industry-finance .uc-meta{display:flex;justify-content:space-between;gap:16px;font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .uc-detail h3{font-size:32px;line-height:40px;letter-spacing:-.015em;margin:16px 0 32px;max-width:22ch}
+.v-industry-finance .uc-with{font-size:18px;line-height:28px;color:var(--text);max-width:60ch;margin:-16px 0 24px}
+.v-industry-finance .uc-diff{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden}
+.v-industry-finance .uc-diff>div{padding:16px 24px}
+.v-industry-finance .uc-diff h4{font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.v-industry-finance .uc-diff .d-today{background:var(--panel)}.v-industry-finance .uc-diff .d-today h4,.v-industry-finance .uc-diff .d-today p{color:var(--text)}
+.v-industry-finance .uc-diff .d-with{background:var(--white);border-left:3px solid var(--blue-500)}.v-industry-finance .uc-diff .d-with h4{color:var(--blue-500)}.v-industry-finance .uc-diff .d-with p{color:var(--text-strong);font-weight:500}
+.v-industry-finance .uc-chain-label{font-size:13px;line-height:20px;color:var(--text);margin:24px 0 0}
+.v-industry-finance .uc-chain{display:flex;align-items:flex-start;margin:16px 0 24px;padding:0;list-style:none}
+.v-industry-finance .uc-chain li{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;line-height:20px;color:var(--text);position:relative;min-width:0;padding:0 4px}
+.v-industry-finance .uc-chain li+li::before{content:"";position:absolute;top:17px;right:calc(50% + 22px);width:calc(100% - 44px);height:1px;background:var(--slate-400)}
+.v-industry-finance .uc-chain .ci{width:34px;height:34px;border-radius:50%;border:1px solid var(--slate-400);background:var(--white);display:grid;place-items:center;margin-bottom:8px;color:var(--blue-500)}
+.v-industry-finance .uc-chain li:last-child .ci{border-color:var(--blue-500);background:var(--blue-500);color:var(--white)}
+.v-industry-finance .uc-chain svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.v-industry-finance .uc-chain.process li+li::before{border-top:1px dashed var(--slate-400);background:none;height:0}
+.v-industry-finance .uc-chain.process .ci{border-radius:var(--radius-control)}
+.v-industry-finance .uc-value-wrap h4{font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-500);margin-bottom:8px}
+.v-industry-finance .uc-value{font-size:18px;line-height:28px;font-weight:500;color:var(--text-strong);max-width:52ch}
+.v-industry-finance .uc-act{margin-top:16px;padding:16px 24px;border-radius:var(--radius-card);background:var(--navy-900);color:var(--white)}
+.v-industry-finance .uc-act h4{font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-400);margin-bottom:4px}
+.v-industry-finance .uc-act p{font-size:15px;line-height:24px;font-weight:500}
+.v-industry-finance .uc-foot{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+.v-industry-finance .uc-foot p{font-size:13px;line-height:20px;color:var(--text);max-width:60ch}
+
+/* =====================================================
+   05 Insight to action (navy)
+   ===================================================== */
+.v-industry-finance .bk-act{padding:96px 0}
+.v-industry-finance .bk-act h2{max-width:16ch}
+.v-industry-finance .bk-act-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.v-industry-finance .bk-act-grid article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-card);padding:24px;display:flex;flex-direction:column;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.v-industry-finance .bk-act-grid.in article{opacity:1;transform:none}
+.v-industry-finance .bk-act-grid.in article:nth-child(2){transition-delay:.15s}.v-industry-finance .bk-act-grid.in article:nth-child(3){transition-delay:.3s}
+/* Category tags: Styles(2).css category accents */
+.v-industry-finance .bk-tag{align-self:flex-start;font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:var(--radius-pill);margin-bottom:16px}
+.v-industry-finance .t-r{background:rgba(244,100,122,.14);color:var(--accent-coral)}
+.v-industry-finance .t-a{background:rgba(245,165,36,.14);color:var(--accent-amber)}
+.v-industry-finance .t-g{background:rgba(52,211,153,.14);color:var(--accent-green)}
+.v-industry-finance .bk-act-grid h3{font-size:18px;line-height:28px;margin:0 0 16px}
+.v-industry-finance .bk-rec{margin-top:auto;padding:16px;border-radius:var(--radius-card);background:var(--panel);border:1px solid var(--line);color:var(--white);font-size:15px;line-height:24px}
+.v-industry-finance .bk-rec small{display:block;font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-400);margin-bottom:4px}
+.v-industry-finance .bk-who{margin:16px 0 0;font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .bk-who::before{content:"✓ ";color:var(--accent-green);font-weight:700}
+.v-industry-finance .bk-note{margin-top:24px;font-size:15px;line-height:24px;color:var(--text)}
+
+/* =====================================================
+   06 Platform (white)
+   ===================================================== */
+.v-industry-finance .platform{padding:112px 0}
+.v-industry-finance .pf-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;margin-top:64px;align-items:start}
+.v-industry-finance .layers{list-style:none;margin:0;padding:0;display:grid;gap:8px;align-self:start}
+.v-industry-finance .layers li{display:grid;grid-template-columns:minmax(135px,.85fr) minmax(0,1fr);gap:16px;align-items:baseline;padding:16px;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--panel)}
+.v-industry-finance .layers li:last-child{background:var(--blue-500);border-color:var(--blue-500);color:var(--white)}
+.v-industry-finance .layers strong{font-weight:600}
+.v-industry-finance .layers span:last-child{color:var(--text);font-size:15px;line-height:24px}
+.v-industry-finance .layers li:last-child span:last-child{color:var(--blue-100)}
+.v-industry-finance .er{display:grid;gap:0}
+.v-industry-finance .er article{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:center;padding:24px 0;border-top:1px solid var(--line)}
+.v-industry-finance .er article:first-child{border-top:0;padding-top:0}
+/* Diagram tiles: the small diagrams were drawn for navy, so they sit on navy tiles */
+.v-industry-finance .er svg{width:120px;height:56px;background:var(--navy-900);border-radius:var(--radius-card)}
+.v-industry-finance .er .rec rect{fill:none;stroke:#7C98CF;stroke-width:1.2}
+.v-industry-finance .er .ln{fill:none;stroke:#3FC8F2;stroke-width:1.2;opacity:.6}
+.v-industry-finance .er .ent{fill:#0A1736;stroke:#3FC8F2;stroke-width:1.5}
+.v-industry-finance .er .ok{fill:none;stroke:#3CCB8A;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.v-industry-finance .er text{font:500 9px "Hanken Grotesk",system-ui,sans-serif;fill:#9FE3F7;text-anchor:middle}
+.v-industry-finance .er h3{font-size:18px;line-height:28px;margin-bottom:4px}
+.v-industry-finance .er p{color:var(--text)}
+
+/* =====================================================
+   07 Built to fit (navy)
+   ===================================================== */
+.v-industry-finance .adoption{padding:112px 0}
+.v-industry-finance .fitflow{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;position:relative}
+.v-industry-finance .fitflow li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-card);padding:24px}
+.v-industry-finance .fitflow li+li::before{content:"→";position:absolute;left:-30px;top:50%;transform:translateY(-50%);color:var(--blue-400);font-size:20px}
+.v-industry-finance .fitflow li.mid{background:var(--blue-500);border-color:var(--blue-500);color:var(--white)}
+.v-industry-finance .fitflow .k{display:block;font-size:11px;line-height:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text);margin-bottom:8px}
+.v-industry-finance .fitflow .mid .k{color:var(--blue-100)}
+.v-industry-finance .fitflow strong{display:block;font-size:18px;line-height:28px;font-weight:600;margin-bottom:4px}
+.v-industry-finance .fitflow span:last-child{color:var(--text);font-size:15px;line-height:24px}
+.v-industry-finance .fitflow .mid span:last-child{color:var(--blue-100)}
+.v-industry-finance .principles{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.v-industry-finance .principles li{border-top:2px solid var(--line-strong);padding-top:16px}
+.v-industry-finance .principles h3{font-size:18px;line-height:28px;margin-bottom:8px}
+.v-industry-finance .principles p{color:var(--text)}
+
+/* =====================================================
+   08 CTA (white): copy left, form right
+   ===================================================== */
+.v-industry-finance .cta{position:relative;isolation:isolate;overflow:hidden;padding:96px 0;border-top:1px solid var(--line)}
+.v-industry-finance #ctaCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.v-industry-finance .cta-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:center}
+.v-industry-finance .cta h2{max-width:15ch}
+.v-industry-finance .cta .lead{margin-top:16px}
+.v-industry-finance .cta-form{display:flex;flex-direction:column;gap:12px;max-width:380px;width:100%;justify-self:end}
+.v-industry-finance .cta-form label{font-size:14px;line-height:20px;font-weight:600;color:var(--text-strong)}
+.v-industry-finance .cta-form select{width:100%;min-height:48px;padding:0 12px;background:var(--white);color:var(--text-strong);border:1px solid var(--line);border-radius:var(--radius-control);font-size:15px}
+.v-industry-finance .cta-form small{font-size:13px;line-height:20px;color:var(--text)}
+.v-industry-finance .cta-form small a{color:var(--brand-text)}
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+@media (max-width:1100px) and (min-width:901px){.v-industry-finance .uc-layout{grid-template-columns:260px minmax(0,1fr);gap:32px}}
+@media (max-width:1080px){.v-industry-finance .pf-grid{gap:48px}}
+@media (max-width:1000px){.v-industry-finance .business-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){
+  .v-industry-finance h2{font-size:32px;line-height:40px;letter-spacing:-.015em}
+  .v-industry-finance .hero::before{background:linear-gradient(180deg,var(--navy-950) 0%,rgba(5,15,28,.82) 42%,rgba(5,15,28,0) 62%),linear-gradient(0deg,var(--navy-950) 0%,rgba(5,15,28,0) 14%)}
+  .v-industry-finance .hero-grid{grid-template-columns:1fr;min-height:0;padding-block:40px 24px}
+  .v-industry-finance .hero-stage{height:440px}
+  .v-industry-finance .section-head{grid-template-columns:1fr;gap:16px}
+  .v-industry-finance .pf-grid,.v-industry-finance .cta-grid{grid-template-columns:1fr}
+  .v-industry-finance .cta-form{justify-self:start}
+  .v-industry-finance .uc-layout{grid-template-columns:1fr;gap:24px;margin-top:40px}
+  .v-industry-finance .uc-nav{display:none}
+  .v-industry-finance .uc-select{display:block}
+  .v-industry-finance .uc-select label{display:block;font-size:13px;line-height:20px;color:var(--text);margin-bottom:8px}
+  .v-industry-finance .uc-select select{width:100%;min-height:48px;padding:0 12px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--white);color:var(--text-strong);font-size:15px;color-scheme:light}
+  .v-industry-finance .uc-detail h3{font-size:24px;line-height:32px;letter-spacing:-.01em}
+  .v-industry-finance .bk-act-grid{grid-template-columns:1fr}
+  .v-industry-finance .bk-act{padding:72px 0}
+  .v-industry-finance .fitflow{grid-template-columns:1fr;gap:32px}
+  .v-industry-finance .fitflow li+li::before{content:"↓";left:50%;top:-28px;transform:translateX(-50%)}
+}
+@media (max-width:820px){
+  .v-industry-finance .transport{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 8px}
+  .v-industry-finance .step strong{font-size:13px}
+  .v-industry-finance .step small{display:none}
+  .v-industry-finance .controls{grid-column:1/-1;justify-content:flex-end}
+  .v-industry-finance .insight{grid-template-columns:1fr;gap:24px}
+  .v-industry-finance .evidence{border-left:0;border-top:1px solid var(--line-strong);padding:16px 0 0}
+  .v-industry-finance .scene-caption>span{display:none}
+  .v-industry-finance .scene-top>span:first-child{display:none}
+  .v-industry-finance .scene-top{justify-content:flex-start}
+}
+@media (max-width:700px){.v-industry-finance .uc-diff{grid-template-columns:1fr}.v-industry-finance .uc-diff .d-with{border-left:0;border-top:3px solid var(--blue-500)}}
+@media (max-width:640px){
+  .v-industry-finance .wrap{width:calc(100% - 40px)}
+  .v-industry-finance .sources,.v-industry-finance .usecases,.v-industry-finance .platform,.v-industry-finance .adoption{padding:80px 0}
+  .v-industry-finance .lead,.v-industry-finance .section-head p{font-size:15px;line-height:24px}
+  .v-industry-finance .hero h1{font-size:32px;line-height:40px;letter-spacing:-.015em}
+  .v-industry-finance .hero-stage{height:400px}
+  .v-industry-finance .hero-steps{gap:12px;font-size:12px}
+  .v-industry-finance .hero-steps li::before{display:none}
+  .v-industry-finance .uc-chain li{font-size:12px;line-height:16px}
+  .v-industry-finance .uc-chain li+li::before{right:calc(50% + 19px);width:calc(100% - 38px);top:15px}
+  .v-industry-finance .uc-chain .ci{width:30px;height:30px}
+  .v-industry-finance .uc-foot{flex-direction:column;align-items:flex-start}
+  .v-industry-finance .layers li{grid-template-columns:1fr;gap:8px}
+  .v-industry-finance .principles{grid-template-columns:1fr;gap:24px}
+  .v-industry-finance .ev-table thead{display:none}
+  .v-industry-finance .ev-table tr{display:block;padding:8px 0;border-bottom:1px solid var(--line)}
+  .v-industry-finance .ev-table td{display:block;border:0;padding:2px 0}
+  .v-industry-finance .er article{grid-template-columns:90px minmax(0,1fr);gap:16px}
+  .v-industry-finance .er svg{width:90px;height:42px}
+}
+@media (max-width:600px){.v-industry-finance .business-grid{grid-template-columns:1fr}.v-industry-finance .challenges{padding:48px 0}}
+@media (prefers-reduced-motion:reduce){
+  .v-industry-finance{scroll-behavior:auto}
+  .v-industry-finance *,.v-industry-finance *::before,.v-industry-finance *::after, .v-industry-finance, .v-industry-finance::before, .v-industry-finance::after{transition-duration:.01ms!important}
+  .v-industry-finance .bk-act-grid article{opacity:1!important;transform:none!important}
+}
+
+
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+
+.v-industry-finance { --cq-gutter: clamp(20px, 4vw, 48px); }
+@media (max-width: 520px) { .v-industry-finance { --cq-gutter: 17px; } }
+.v-industry-finance .wrap { width: min(1200px, calc(100% - 2 * var(--cq-gutter))); max-width: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+@media (min-width: 1101px) { .v-industry-finance section.hero { box-sizing: border-box; min-height: 840px; display: flex; flex-direction: column; justify-content: center; } }
+

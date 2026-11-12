@@ -1,0 +1,112 @@
+{
+    "label": "Team",
+    "icon": "/assets/images/Ecosystem/team_icon.png",
+    "slug": "team",
+    "subNewPage": false,
+    "subPopUp": false,
+    "subButtons": [
+        {
+            "subLabel": "Ajay Kakarania",
+            "subIcon": "/assets/images/Team/Ajay_Kakarania.webp",
+            "subTitle": "Founder, CEO",
+            "companies": [
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/quantexa_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/teradata_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/avaloq_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/rumble_asia_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/arda_capital_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/barclays_corporate_and_investment_bank_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/credit_suisse_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Ajay_companies/tech_mahindra_logo.webp"
+                }
+            ]
+        },
+        {
+            "subLabel": "Jean-Michel Coeur",
+            "subIcon": "/assets/images/Team/Jean_Michel_Coeur.webp",
+            "subTitle": "Co-Founder, CTO",
+            "companies": [
+                {
+                    "companyLogo": "/assets/images/Team/Jean_companies/google.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Jean_companies/sourced_.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Jean_companies/aws.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Jean_companies/linkedin.webp"
+                }
+            ]
+        },
+        {
+            "subLabel": "Gilbert Kohnke",
+            "subIcon": "/assets/images/Team/Gilbert_Kohnke.webp",
+            "subTitle": "Co-Founder, CRO",
+            "companies": [
+                {
+                    "companyLogo": "/assets/images/Team/Gilber_companies/1631319102108.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Gilber_companies/danskebank_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Gilber_companies/ocbc_bank_logo.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Gilber_companies/1631343823893.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Gilber_companies/cibc_logo.webp"
+                }
+            ]
+        },
+        {
+            "subLabel": "Meenakshy Iyer",
+            "subIcon": "/assets/images/Team/Meenakshy_Iyer.webp",
+            "subTitle": "Co-Founder, CPO",
+            "companies": [
+                {
+                    "companyLogo": "/assets/images/Team/Meenakshy_companies/1631319102108.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Meenakshy_companies/oracle.webp"
+                },
+                {
+                    "companyLogo": "/assets/images/Team/Meenakshy_companies/tcs.webp"
+                }
+            ]
+        },
+        {
+            "subLabel": "Mr. Joo Seng Wong",
+            "subIcon": "/assets/images/Team/Vickers.jpg",
+            "subTitle": "Advisor"
+        },
+        {
+            "subLabel": "Ritesh Jain",
+            "subIcon": "/assets/images/Team/Ritesh.webp",
+            "subTitle": "Advisor"
+        },
+        {
+            "subLabel": "Dr. Simon See",
+            "subIcon": "/assets/images/Team/Simon.webp",
+            "subTitle": "Advisor"
+        }
+    ]
+}

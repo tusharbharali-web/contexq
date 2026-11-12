@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d1526;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-fraunces);
+}
+
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* 3D Dashboard Reset, prevents bounce/scroll on interaction */
+.no-scroll {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(to bottom, #0d1526, #101e36, #0d1526);
+  color: var(--foreground);
+  font-family: var(--font-geist), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Material Symbols used by the homepage sections: a self-hosted 28-icon subset
+   (12 KB) instead of the full 1.1 MB variable font. Distinct family/class names so
+   it never collides with pages that load the full Google font themselves. To add an
+   icon, re-download the subset with the new name in &icon_names=. */
+@font-face {
+  font-family: "CQ Material Symbols";
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url("/assets/fonts/material-symbols-subset.woff2") format("woff2");
+}
+.cq-symbols {
+  font-family: "CQ Material Symbols";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #06b6d4, #3b82f6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #06b6d4, #3b82f6);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+/* Prevent layout shift from scrollbar */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* ------------------------------------------------------------------
+   ContexQ landing — tokens ported from the Tailwind Play CDN config
+   (tailwind.config.theme.extend) to Tailwind v4 @theme.
+   ------------------------------------------------------------------ */
+
+/* Font families: wired to the next/font CSS variables set on <html> in layout.tsx.
+   `inline` makes utilities reference the next/font variables directly. */
+@theme inline {
+  --font-display-hero: var(--font-hanken-grotesk);
+  --font-display-hero-mobile: var(--font-hanken-grotesk);
+  --font-headline-xl: var(--font-hanken-grotesk);
+  --font-headline-xl-mobile: var(--font-hanken-grotesk);
+  --font-headline-lg: var(--font-hanken-grotesk);
+  --font-headline-lg-mobile: var(--font-hanken-grotesk);
+  --font-headline-md: var(--font-hanken-grotesk);
+  --font-headline-sm: var(--font-hanken-grotesk);
+  --font-body-xl: var(--font-hanken-grotesk);
+  --font-body-lg: var(--font-hanken-grotesk);
+  --font-body-md: var(--font-hanken-grotesk);
+  --font-body-sm: var(--font-hanken-grotesk);
+  --font-label-caps: var(--font-inter);
+  --font-label-lg: var(--font-inter);
+  --font-label-md: var(--font-inter);
+}
+
+@theme {
+  /* Colours */
+  --color-surface-dim: #091422;
+  --color-navy-800: #09192E;
+  --color-secondary-fixed-dim: #b8c7e3;
+  --color-primary: #aac7ff;
+  --color-inverse-surface: #d8e3f7;
+  --color-on-error-container: #ffdad6;
+  --color-on-tertiary: #003822;
+  --color-status-amber: #F5A623;
+  --color-accent-hover: #5AA5FF;
+  --color-footer-surface: #080D12;
+  --color-border-dark-subtle: rgba(255, 255, 255, 0.10);
+  --color-inverse-on-surface: #263140;
+  --color-status-red: #E5484D;
+  --color-tertiary-fixed: #7cfaba;
+  --color-light-band: #F4F7FB;
+  --color-tertiary-fixed-dim: #5edd9f;
+  --color-card-dark: #141E2E;
+  --color-text-muted-on-dark: #9DB0C8;
+  --color-surface-variant: #2b3545;
+  --color-outline: #8b919f;
+  --color-primary-container: #3e90ff;
+  --color-primary-fixed: #d6e3ff;
+  --color-on-primary-fixed: #001b3e;
+  --color-inverse-primary: #005db8;
+  --color-surface-bright: #2f3a49;
+  --color-text-on-dark: #FFFFFF;
+  --color-on-secondary: #223147;
+  --color-navy-900: #06111F;
+  --color-surface-container-low: #111c2b;
+  --color-on-error: #690005;
+  --color-surface-container: #15202f;
+  --color-accent-pressed: #1F78EC;
+  --color-text-muted-on-light: #51627A;
+  --color-surface-container-high: #202b3a;
+  --color-surface-white: #FFFFFF;
+  --color-primary-fixed-dim: #aac7ff;
+  --color-pill-illustrative-bg: #FDF0D5;
+  --color-on-primary-fixed-variant: #00468c;
+  --color-tertiary: #5edd9f;
+  --color-status-blue: #328CFF;
+  --color-on-tertiary-fixed-variant: #005233;
+  --color-outline-variant: #414753;
+  --color-border-light-subtle: rgba(11, 26, 42, 0.08);
+  --color-background: #091422;
+  --color-status-green: #2FB67C;
+  --color-surface: #091422;
+  --color-on-surface-variant: #c1c6d6;
+  --color-tertiary-container: #0da56d;
+  --color-pill-illustrative-text: #8A5A00;
+  --color-on-tertiary-fixed: #002112;
+  --color-on-tertiary-container: #00311d;
+  --color-surface-container-highest: #2b3545;
+  --color-secondary-fixed: #d5e3ff;
+  --color-on-secondary-container: #a7b6d1;
+  --color-on-primary: #003064;
+  --color-on-surface: #d8e3f7;
+  --color-on-secondary-fixed-variant: #39475f;
+  --color-on-primary-container: #002957;
+  --color-error: #ffb4ab;
+  --color-surface-tint: #aac7ff;
+  --color-secondary-container: #39475f;
+  --color-surface-container-lowest: #040f1d;
+  --color-on-background: #d8e3f7;
+  --color-error-container: #93000a;
+  --color-text-on-light: #0B1A2A;
+  --color-on-secondary-fixed: #0c1c31;
+  --color-secondary: #b8c7e3;
+
+  /* Border radius (same values as the CDN config; identical to v4 defaults for lg/xl) */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* Spacing */
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-margin-tablet: 2.5rem;
+  --spacing-margin: 4rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-3xl: 6rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-sm: 0.5rem;
+
+  /* Font sizes with line-height, letter-spacing and weight */
+  --text-display-hero: 64px;
+  --text-display-hero--line-height: 72px;
+  --text-display-hero--letter-spacing: -0.03em;
+  --text-display-hero--font-weight: 700;
+  --text-display-hero-mobile: 38px;
+  --text-display-hero-mobile--line-height: 46px;
+  --text-display-hero-mobile--letter-spacing: -0.02em;
+  --text-display-hero-mobile--font-weight: 700;
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--letter-spacing: -0.025em;
+  --text-headline-xl--font-weight: 600;
+  --text-headline-xl-mobile: 32px;
+  --text-headline-xl-mobile--line-height: 40px;
+  --text-headline-xl-mobile--letter-spacing: -0.015em;
+  --text-headline-xl-mobile--font-weight: 600;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 600;
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile--line-height: 34px;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 600;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 500;
+  --text-body-xl: 20px;
+  --text-body-xl--line-height: 32px;
+  --text-body-xl--font-weight: 400;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 26px;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 22px;
+  --text-body-sm--font-weight: 400;
+  --text-label-caps: 11px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.08em;
+  --text-label-caps--font-weight: 700;
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.01em;
+  --text-label-lg--font-weight: 600;
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.02em;
+  --text-label-md--font-weight: 500;
+}
+
+/* v3 parity, scoped to the landing component only */
+[data-landing] {
+  /* v3 default-palette hex values (v4 defaults are OKLCH) */
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-amber-50: #fffbeb;
+  --color-amber-200: #fde68a;
+  --color-blue-50: #eff6ff;
+
+  /* v3 default font-size line-heights were absolute (rem); v4 uses unitless ratios,
+     which changes inherited line-height for children with arbitrary sizes (e.g. text-[11px]). */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+}
+
+@layer base {
+  /* v3 default border colour (v4 uses currentColor); utilities still override this */
+  [data-landing] *,
+  [data-landing] ::before,
+  [data-landing] ::after {
+    border-color: #e5e7eb;
+  }
+}

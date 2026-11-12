@@ -1,0 +1,204 @@
+/* Team overlay (TeamOverlay.tsx). Converted from team.html: the page's CSS scoped under
+   .cq-team (cards) and .cq-team-dialog (profile dialog). The overlay layer itself sits
+   below the site header and fades in as the Team button's expanding animation ends. */
+
+.cq-team {
+  --card: rgba(12, 32, 58, 0.62);
+  --card-border: rgba(56, 189, 248, 0.28);
+  --cyan: #22D3EE;
+  --text: #FFFFFF;
+  --text-muted: #AAB7C8;
+  --text-faint: #7C8BA1;
+  --chip-bg: rgba(255, 255, 255, 0.07);
+  --chip-border: rgba(255, 255, 255, 0.14);
+  --blue: #3B82F6;
+  --tint-founders: #12315A;
+  --tint-advisors: #0E3B3F;
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* overlay layer */
+  position: fixed;
+  top: var(--site-header-height, 76px);
+  left: 0; right: 0; bottom: 0;
+  z-index: 40;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  background: linear-gradient(180deg, rgba(2, 6, 15, 0.55), rgba(2, 6, 15, 0.72));
+  opacity: 0;
+  animation: cqTeamIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  font-family: var(--font);
+  color: var(--text);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes cqTeamIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+.cq-team *, .cq-team *::before, .cq-team *::after { box-sizing: border-box; }
+.cq-team :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+/* Layout */
+.cq-team .container {
+  position: relative; z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* top padding clears the site's "Back to pie" button */
+  padding: 84px 24px 72px;
+}
+.cq-team .page-title { margin-bottom: 40px; }
+.cq-team h1 { margin: 0 0 8px; font-size: 48px; line-height: 1.1; font-weight: 800; color: var(--text); }
+.cq-team .intro { margin: 0; color: var(--text-muted); font-size: 16px; }
+
+.cq-team .group-head { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+.cq-team .group-pill {
+  margin: 0; flex: none;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--cyan);
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+.cq-team .group-note { margin: 0; flex: none; font-size: 13px; color: var(--text-muted); }
+.cq-team .group-line { flex: 1; height: 1px; background: rgba(56, 189, 248, 0.25); min-width: 20px; }
+
+.cq-team .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.cq-team .group + .group { margin-top: 56px; }
+
+/* Card */
+.cq-team .tint-founders, .cq-team-dialog .tint-founders { --tint: var(--tint-founders, #12315A); }
+.cq-team .tint-advisors, .cq-team-dialog .tint-advisors { --tint: var(--tint-advisors, #0E3B3F); }
+.cq-team .card {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--card);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.12);
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+@media (hover: hover) {
+  .cq-team .card:hover { transform: translateY(-3px); border-color: rgba(56, 189, 248, 0.6); box-shadow: 0 0 36px rgba(34, 211, 238, 0.32); }
+}
+.cq-team .card:has(:focus-visible) { transform: translateY(-3px); border-color: rgba(56, 189, 248, 0.6); box-shadow: 0 0 36px rgba(34, 211, 238, 0.32); }
+.cq-team .card-media {
+  width: 100%; aspect-ratio: 1 / 1; background: var(--tint); overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.cq-team .card-media img, .cq-team-dialog .portrait-lg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cq-team .initials, .cq-team-dialog .initials { font-weight: 800; font-size: 64px; letter-spacing: 0.04em; color: var(--cyan, #22D3EE); }
+.cq-team .card-info { padding: 20px 20px 16px; }
+.cq-team .card-name { margin: 0; font-size: 18px; line-height: 1.3; font-weight: 700; color: var(--text); }
+.cq-team .card-position { margin: 4px 0 0; font-size: 14px; font-weight: 600; color: var(--cyan); }
+.cq-team .card-oneliner {
+  margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: var(--text-muted);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.cq-team .card-bottom { margin-top: auto; padding: 0 20px 14px; }
+.cq-team .card-bottom::before { content: ""; display: block; height: 1px; background: rgba(255, 255, 255, 0.14); margin-bottom: 10px; }
+.cq-team .card-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cq-team .card-actions .see-btn { margin-left: auto; }
+.cq-team .li-link {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 2px; border-radius: 6px;
+  color: var(--text-muted); font-size: 14px; font-weight: 500; text-decoration: none; transition: color .2s;
+}
+.cq-team .li-link:hover { color: var(--cyan); }
+.cq-team .li-link svg { width: 16px; height: 16px; fill: currentColor; }
+.cq-team .see-btn {
+  font: inherit; font-weight: 700; font-size: 14px; color: var(--cyan);
+  background: none; border: 0; padding: 6px 2px; cursor: pointer; border-radius: 6px;
+}
+.cq-team .see-btn:hover { text-decoration: underline; }
+
+/* Dialog (rendered in the top layer; inherits the overlay's variables and font) */
+.cq-team-dialog .portrait-lg {
+  width: 200px; height: 200px; flex: none; border-radius: 22px; overflow: hidden;
+  background: var(--tint); border: 1px solid rgba(56, 189, 248, 0.3);
+  display: flex; align-items: center; justify-content: center;
+}
+.cq-team-dialog .portrait-lg .initials { font-size: 60px; }
+.cq-team-dialog {
+  padding: 0; border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 26px;
+  width: min(960px, calc(100vw - 48px));
+  max-width: none;
+  max-height: calc(100vh - 48px);
+  margin: auto;
+  color: var(--text, #fff);
+  font-family: var(--font);
+  background: linear-gradient(135deg, #0B2A5B, #0F3C86);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(34, 211, 238, 0.15);
+  overflow: auto;
+}
+.cq-team-dialog *, .cq-team-dialog *::before, .cq-team-dialog *::after { box-sizing: border-box; }
+.cq-team-dialog::backdrop { background: rgba(2, 6, 15, 0.7); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.cq-team-dialog :focus-visible { outline: 2px solid var(--cyan, #22D3EE); outline-offset: 3px; }
+.cq-team-dialog .dlg-inner {
+  position: relative;
+  display: grid; grid-template-columns: 280px 1fr; gap: 40px;
+  padding: 48px 44px 44px;
+}
+.cq-team-dialog .dlg-close {
+  position: absolute; top: 14px; right: 14px;
+  width: 38px; height: 38px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+.cq-team-dialog .dlg-close:hover { background: rgba(255, 255, 255, 0.2); }
+.cq-team-dialog .dlg-name { margin: 20px 0 6px; font-size: 26px; line-height: 1.2; font-weight: 800; color: #fff; }
+.cq-team-dialog .dlg-role { margin: 0 0 8px; color: #60A5FA; font-weight: 700; font-size: 16px; }
+.cq-team-dialog .dlg-cred { margin: 0; color: #D6E2F3; font-size: 14px; line-height: 1.5; }
+.cq-team-dialog .dlg-bio { margin: 0 0 28px; font-size: 16px; line-height: 1.7; color: #EAF1FB; }
+.cq-team-dialog .dlg-link {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 18px; border-radius: 999px;
+  color: var(--cyan, #22D3EE); border: 1px solid var(--cyan, #22D3EE); text-decoration: none; font-weight: 700; font-size: 14px;
+}
+.cq-team-dialog .dlg-link:hover { background: rgba(34, 211, 238, 0.15); }
+.cq-team-dialog .dlg-chips { margin: 0 0 28px; }
+.cq-team-dialog .caption { margin: 0 0 8px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #B6C3D6; font-weight: 700; }
+.cq-team-dialog .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cq-team-dialog .chip { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: #D6E2F3; background: var(--chip-bg, rgba(255,255,255,0.07)); border: 1px solid var(--chip-border, rgba(255,255,255,0.14)); border-radius: 999px; padding: 4px 10px 4px 4px; }
+/* Company logo in a white circle (logos: src/data/team.ts COMPANY_LOGOS). */
+.cq-team-dialog .chip-logo { width: 22px; height: 22px; flex: none; border-radius: 50%; background: #fff; border: 1px solid rgba(255,255,255,0.28); overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 3px; }
+.cq-team-dialog .chip-logo img, .cq-team-dialog .chip-logo svg { width: 100%; height: 100%; display: block; object-fit: contain; }
+.cq-team-dialog .dlg-link svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .cq-team .cards { gap: 16px; }
+}
+@media (max-width: 899px) {
+  .cq-team .cards { grid-template-columns: repeat(2, 1fr); }
+  .cq-team .group-head { flex-wrap: wrap; }
+  .cq-team .group-note { order: 3; flex-basis: 100%; }
+  .cq-team .group-line { order: 2; }
+}
+@media (max-width: 600px) {
+  .cq-team .cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .cq-team h1 { font-size: 38px; }
+  .cq-team .container { padding: 92px 16px 56px; }
+  .cq-team-dialog { width: 100vw; max-width: 100vw; height: 100vh; max-height: 100vh; border-radius: 0; border: 0; }
+  .cq-team-dialog .dlg-inner { grid-template-columns: 1fr; gap: 24px; padding: 64px 20px 32px; }
+  .cq-team-dialog .portrait-lg { width: 160px; height: 160px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cq-team { animation-duration: 0.01s; }
+  .cq-team .card, .cq-team .li-link { transition: none; }
+  .cq-team .card:hover, .cq-team .card:has(:focus-visible) { transform: none; }
+}

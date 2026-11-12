@@ -1,0 +1,1457 @@
+/* Generated from public/customers-src/Trading.html: the page's own CSS, scoped to .v-customer-trading. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-customer-trading *:not(svg, svg *), .v-customer-trading ::before, .v-customer-trading ::after) { all: revert; }
+:where(.v-customer-trading svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-customer-trading) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-customer-trading > .cq-body) { display: block; margin: 8px; }
+.v-customer-trading.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-customer-trading :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-customer-trading > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-customer-trading main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.v-customer-trading,.v-customer-trading .cq-body,.v-customer-trading button,.v-customer-trading input{font-family:'IBM Plex Sans',sans-serif}.v-customer-trading h1,.v-customer-trading h2,.v-customer-trading h3,.v-customer-trading h4{text-wrap:balance}.v-customer-trading p{text-wrap:pretty}.v-customer-trading .cq-industry-strip a{font-family:'IBM Plex Sans',sans-serif!important}
+.v-customer-trading *,.v-customer-trading  ::before,.v-customer-trading  ::after, .v-customer-trading {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.v-customer-trading ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.v-customer-trading *,.v-customer-trading 
+::before,.v-customer-trading 
+::after, .v-customer-trading {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.v-customer-trading ::before,.v-customer-trading 
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.v-customer-trading,.v-customer-trading {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.v-customer-trading .cq-body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.v-customer-trading hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.v-customer-trading abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.v-customer-trading h1,.v-customer-trading 
+h2,.v-customer-trading 
+h3,.v-customer-trading 
+h4,.v-customer-trading 
+h5,.v-customer-trading 
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.v-customer-trading a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.v-customer-trading b,.v-customer-trading 
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.v-customer-trading code,.v-customer-trading 
+kbd,.v-customer-trading 
+samp,.v-customer-trading 
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.v-customer-trading small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.v-customer-trading sub,.v-customer-trading 
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.v-customer-trading sub {
+  bottom: -0.25em;
+}
+
+.v-customer-trading sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.v-customer-trading table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.v-customer-trading button,.v-customer-trading 
+input,.v-customer-trading 
+optgroup,.v-customer-trading 
+select,.v-customer-trading 
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.v-customer-trading button,.v-customer-trading 
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.v-customer-trading button,.v-customer-trading 
+input:where([type='button']),.v-customer-trading 
+input:where([type='reset']),.v-customer-trading 
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.v-customer-trading :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.v-customer-trading :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.v-customer-trading progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.v-customer-trading ::-webkit-inner-spin-button,.v-customer-trading 
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.v-customer-trading [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.v-customer-trading ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.v-customer-trading ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.v-customer-trading summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.v-customer-trading blockquote,.v-customer-trading 
+dl,.v-customer-trading 
+dd,.v-customer-trading 
+h1,.v-customer-trading 
+h2,.v-customer-trading 
+h3,.v-customer-trading 
+h4,.v-customer-trading 
+h5,.v-customer-trading 
+h6,.v-customer-trading 
+hr,.v-customer-trading 
+figure,.v-customer-trading 
+p,.v-customer-trading 
+pre {
+  margin: 0;
+}
+
+.v-customer-trading fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.v-customer-trading legend {
+  padding: 0;
+}
+
+.v-customer-trading ol,.v-customer-trading 
+ul,.v-customer-trading 
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.v-customer-trading dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.v-customer-trading textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.v-customer-trading input::placeholder,.v-customer-trading 
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.v-customer-trading button,.v-customer-trading 
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.v-customer-trading :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.v-customer-trading img,.v-customer-trading 
+svg,.v-customer-trading 
+video,.v-customer-trading 
+canvas,.v-customer-trading 
+audio,.v-customer-trading 
+iframe,.v-customer-trading 
+embed,.v-customer-trading 
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.v-customer-trading img,.v-customer-trading 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.v-customer-trading [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.v-customer-trading [type='text'],.v-customer-trading input:where(:not([type])),.v-customer-trading [type='email'],.v-customer-trading [type='url'],.v-customer-trading [type='password'],.v-customer-trading [type='number'],.v-customer-trading [type='date'],.v-customer-trading [type='datetime-local'],.v-customer-trading [type='month'],.v-customer-trading [type='search'],.v-customer-trading [type='tel'],.v-customer-trading [type='time'],.v-customer-trading [type='week'],.v-customer-trading [multiple],.v-customer-trading textarea,.v-customer-trading select {
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-customer-trading [type='text']:focus,.v-customer-trading  input:where(:not([type])):focus,.v-customer-trading  [type='email']:focus,.v-customer-trading  [type='url']:focus,.v-customer-trading  [type='password']:focus,.v-customer-trading  [type='number']:focus,.v-customer-trading  [type='date']:focus,.v-customer-trading  [type='datetime-local']:focus,.v-customer-trading  [type='month']:focus,.v-customer-trading  [type='search']:focus,.v-customer-trading  [type='tel']:focus,.v-customer-trading  [type='time']:focus,.v-customer-trading  [type='week']:focus,.v-customer-trading  [multiple]:focus,.v-customer-trading  textarea:focus,.v-customer-trading  select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: #2563eb;
+}
+
+.v-customer-trading input::placeholder,.v-customer-trading textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.v-customer-trading ::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.v-customer-trading ::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  text-align: inherit;
+}
+
+.v-customer-trading ::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+.v-customer-trading ::-webkit-datetime-edit,.v-customer-trading ::-webkit-datetime-edit-year-field,.v-customer-trading ::-webkit-datetime-edit-month-field,.v-customer-trading ::-webkit-datetime-edit-day-field,.v-customer-trading ::-webkit-datetime-edit-hour-field,.v-customer-trading ::-webkit-datetime-edit-minute-field,.v-customer-trading ::-webkit-datetime-edit-second-field,.v-customer-trading ::-webkit-datetime-edit-millisecond-field,.v-customer-trading ::-webkit-datetime-edit-meridiem-field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.v-customer-trading select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+}
+
+.v-customer-trading [multiple],.v-customer-trading [size]:where(select:not([size="1"])) {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  print-color-adjust: unset;
+}
+
+.v-customer-trading [type='checkbox'],.v-customer-trading [type='radio'] {
+  appearance: none;
+  padding: 0;
+  print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  --tw-shadow: 0 0 #0000;
+}
+
+.v-customer-trading [type='checkbox'] {
+  border-radius: 0px;
+}
+
+.v-customer-trading [type='radio'] {
+  border-radius: 100%;
+}
+
+.v-customer-trading [type='checkbox']:focus,.v-customer-trading [type='radio']:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2563eb;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.v-customer-trading [type='checkbox']:checked,.v-customer-trading [type='radio']:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.v-customer-trading [type='checkbox']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-trading [type='checkbox']:checked {
+    appearance: auto;
+  }
+}
+
+.v-customer-trading [type='radio']:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-trading [type='radio']:checked {
+    appearance: auto;
+  }
+}
+
+.v-customer-trading [type='checkbox']:checked:hover,.v-customer-trading [type='checkbox']:checked:focus,.v-customer-trading [type='radio']:checked:hover,.v-customer-trading [type='radio']:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-customer-trading [type='checkbox']:indeterminate {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active)  {
+
+  .v-customer-trading [type='checkbox']:indeterminate {
+    appearance: auto;
+  }
+}
+
+.v-customer-trading [type='checkbox']:indeterminate:hover,.v-customer-trading [type='checkbox']:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+.v-customer-trading [type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+.v-customer-trading [type='file']:focus {
+  outline: 1px solid ButtonText;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.v-customer-trading .pointer-events-none {
+  pointer-events: none;
+}
+.v-customer-trading .absolute {
+  position: absolute;
+}
+.v-customer-trading .relative {
+  position: relative;
+}
+.v-customer-trading .inset-0 {
+  inset: 0px;
+}
+.v-customer-trading .right-1\/4 {
+  right: 25%;
+}
+.v-customer-trading .right-4 {
+  right: 1rem;
+}
+.v-customer-trading .top-1\/4 {
+  top: 25%;
+}
+.v-customer-trading .top-4 {
+  top: 1rem;
+}
+.v-customer-trading .z-10 {
+  z-index: 10;
+}
+.v-customer-trading .z-20 {
+  z-index: 20;
+}
+.v-customer-trading .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.v-customer-trading .mb-1 {
+  margin-bottom: 0.25rem;
+}
+.v-customer-trading .mb-3 {
+  margin-bottom: 0.75rem;
+}
+.v-customer-trading .mb-6 {
+  margin-bottom: 1.5rem;
+}
+.v-customer-trading .mb-8 {
+  margin-bottom: 2rem;
+}
+.v-customer-trading .mt-1 {
+  margin-top: 0.25rem;
+}
+.v-customer-trading .mt-3 {
+  margin-top: 0.75rem;
+}
+.v-customer-trading .inline-block {
+  display: inline-block;
+}
+.v-customer-trading .flex {
+  display: flex;
+}
+.v-customer-trading .inline-flex {
+  display: inline-flex;
+}
+.v-customer-trading .grid {
+  display: grid;
+}
+.v-customer-trading .hidden {
+  display: none;
+}
+.v-customer-trading .h-2 {
+  height: 0.5rem;
+}
+.v-customer-trading .h-20 {
+  height: 5rem;
+}
+.v-customer-trading .h-28 {
+  height: 7rem;
+}
+.v-customer-trading .h-8 {
+  height: 2rem;
+}
+.v-customer-trading .h-9 {
+  height: 2.25rem;
+}
+.v-customer-trading .h-96 {
+  height: 24rem;
+}
+.v-customer-trading .h-\[300px\] {
+  height: 300px;
+}
+.v-customer-trading .h-full {
+  height: 100%;
+}
+.v-customer-trading .max-h-\[90vh\] {
+  max-height: 90vh;
+}
+.v-customer-trading .w-2 {
+  width: 0.5rem;
+}
+.v-customer-trading .w-20 {
+  width: 5rem;
+}
+.v-customer-trading .w-28 {
+  width: 7rem;
+}
+.v-customer-trading .w-8 {
+  width: 2rem;
+}
+.v-customer-trading .w-9 {
+  width: 2.25rem;
+}
+.v-customer-trading .w-96 {
+  width: 24rem;
+}
+.v-customer-trading .w-full {
+  width: 100%;
+}
+.v-customer-trading .w-max {
+  width: max-content;
+}
+.v-customer-trading .min-w-0 {
+  min-width: 0px;
+}
+.v-customer-trading .min-w-\[1440px\] {
+  min-width: 1440px;
+}
+.v-customer-trading .max-w-2xl {
+  max-width: 42rem;
+}
+.v-customer-trading .max-w-3xl {
+  max-width: 48rem;
+}
+.v-customer-trading .max-w-6xl {
+  max-width: 72rem;
+}
+.v-customer-trading .max-w-7xl {
+  max-width: 80rem;
+}
+.v-customer-trading .max-w-\[150px\] {
+  max-width: 150px;
+}
+.v-customer-trading .max-w-xl {
+  max-width: 36rem;
+}
+.v-customer-trading .flex-1 {
+  flex: 1 1 0%;
+}
+.v-customer-trading .flex-shrink-0 {
+  flex-shrink: 0;
+}
+.v-customer-trading .flex-grow {
+  flex-grow: 1;
+}
+.v-customer-trading .-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-customer-trading .-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.v-customer-trading .cursor-pointer {
+  cursor: pointer;
+}
+.v-customer-trading .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.v-customer-trading .flex-col {
+  flex-direction: column;
+}
+.v-customer-trading .flex-wrap {
+  flex-wrap: wrap;
+}
+.v-customer-trading .items-start {
+  align-items: flex-start;
+}
+.v-customer-trading .items-center {
+  align-items: center;
+}
+.v-customer-trading .justify-center {
+  justify-content: center;
+}
+.v-customer-trading .justify-between {
+  justify-content: space-between;
+}
+.v-customer-trading .gap-1\.5 {
+  gap: 0.375rem;
+}
+.v-customer-trading .gap-2 {
+  gap: 0.5rem;
+}
+.v-customer-trading .gap-2\.5 {
+  gap: 0.625rem;
+}
+.v-customer-trading .gap-3 {
+  gap: 0.75rem;
+}
+.v-customer-trading .gap-4 {
+  gap: 1rem;
+}
+.v-customer-trading .gap-5 {
+  gap: 1.25rem;
+}
+.v-customer-trading .gap-6 {
+  gap: 1.5rem;
+}
+.v-customer-trading .gap-8 {
+  gap: 2rem;
+}
+.v-customer-trading .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.v-customer-trading .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.v-customer-trading .overflow-hidden {
+  overflow: hidden;
+}
+.v-customer-trading .overflow-y-auto {
+  overflow-y: auto;
+}
+.v-customer-trading .whitespace-nowrap {
+  white-space: nowrap;
+}
+.v-customer-trading .rounded {
+  border-radius: 0.25rem;
+}
+.v-customer-trading .rounded-2xl {
+  border-radius: 1rem;
+}
+.v-customer-trading .rounded-full {
+  border-radius: 9999px;
+}
+.v-customer-trading .rounded-lg {
+  border-radius: 0.5rem;
+}
+.v-customer-trading .rounded-xl {
+  border-radius: 0.75rem;
+}
+.v-customer-trading .border {
+  border-width: 1px;
+}
+.v-customer-trading .border-0 {
+  border-width: 0px;
+}
+.v-customer-trading .border-2 {
+  border-width: 2px;
+}
+.v-customer-trading .border-t {
+  border-top-width: 1px;
+}
+.v-customer-trading .border-dashed {
+  border-style: dashed;
+}
+.v-customer-trading .border-\[\#1F55B8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 85 184 / var(--tw-border-opacity, 1));
+}
+.v-customer-trading .border-\[\#1F55B8\]\/40 {
+  border-color: rgb(31 85 184 / 0.4);
+}
+.v-customer-trading .border-\[\#B3261E\]\/30 {
+  border-color: rgb(179 38 30 / 0.3);
+}
+.v-customer-trading .border-\[\#C3C6D5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(195 198 213 / var(--tw-border-opacity, 1));
+}
+.v-customer-trading .border-\[\#E3E6EA\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(227 230 234 / var(--tw-border-opacity, 1));
+}
+.v-customer-trading .border-\[\#F2B544\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 181 68 / var(--tw-border-opacity, 1));
+}
+.v-customer-trading .border-\[\#FFB4AB\]\/40 {
+  border-color: rgb(255 180 171 / 0.4);
+}
+.v-customer-trading .border-outline-variant\/50 {
+  border-color: rgb(195 198 213 / 0.5);
+}
+.v-customer-trading .border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+.v-customer-trading .border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
+}
+.v-customer-trading .bg-\[\#0E1B33\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 27 51 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#122344\]\/80 {
+  background-color: rgb(18 35 68 / 0.8);
+}
+.v-customer-trading .bg-\[\#172c54\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 44 84 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#1F55B8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 85 184 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#1F55B8\]\/20 {
+  background-color: rgb(31 85 184 / 0.2);
+}
+.v-customer-trading .bg-\[\#2F86FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 134 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#B3261E\]\/20 {
+  background-color: rgb(179 38 30 / 0.2);
+}
+.v-customer-trading .bg-\[\#F2B544\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 181 68 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#F7F8FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 248 251 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-\[\#FDECEA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 236 234 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-surface-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 238 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-surface-container-lowest {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-transparent {
+  background-color: transparent;
+}
+.v-customer-trading .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+.v-customer-trading .bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
+}
+.v-customer-trading .object-contain {
+  object-fit: contain;
+}
+.v-customer-trading .p-0 {
+  padding: 0px;
+}
+.v-customer-trading .p-12 {
+  padding: 3rem;
+}
+.v-customer-trading .p-6 {
+  padding: 1.5rem;
+}
+.v-customer-trading .p-8 {
+  padding: 2rem;
+}
+.v-customer-trading .px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.v-customer-trading .px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.v-customer-trading .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.v-customer-trading .px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.v-customer-trading .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.v-customer-trading .px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.v-customer-trading .py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.v-customer-trading .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.v-customer-trading .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.v-customer-trading .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.v-customer-trading .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.v-customer-trading .py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.v-customer-trading .pb-20 {
+  padding-bottom: 5rem;
+}
+.v-customer-trading .pt-16 {
+  padding-top: 4rem;
+}
+.v-customer-trading .pt-2 {
+  padding-top: 0.5rem;
+}
+.v-customer-trading .pt-3 {
+  padding-top: 0.75rem;
+}
+.v-customer-trading .pt-4 {
+  padding-top: 1rem;
+}
+.v-customer-trading .text-center {
+  text-align: center;
+}
+.v-customer-trading .font-body-lg {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-body-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-headline-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-headline-sm {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-headline-xl {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-label-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-label-sm {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .font-title-md {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.v-customer-trading .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.v-customer-trading .text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.v-customer-trading .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.v-customer-trading .text-\[10px\] {
+  font-size: 10px;
+}
+.v-customer-trading .text-\[12px\] {
+  font-size: 12px;
+}
+.v-customer-trading .text-\[15px\] {
+  font-size: 15px;
+}
+.v-customer-trading .text-\[24px\] {
+  font-size: 24px;
+}
+.v-customer-trading .text-\[28px\] {
+  font-size: 28px;
+}
+.v-customer-trading .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.v-customer-trading .text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.v-customer-trading .text-body-md {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.v-customer-trading .text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.v-customer-trading .text-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.v-customer-trading .text-headline-xl {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.v-customer-trading .text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.v-customer-trading .text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.v-customer-trading .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.v-customer-trading .text-title-md {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+}
+.v-customer-trading .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.v-customer-trading .font-bold {
+  font-weight: 700;
+}
+.v-customer-trading .font-light {
+  font-weight: 300;
+}
+.v-customer-trading .font-semibold {
+  font-weight: 600;
+}
+.v-customer-trading .uppercase {
+  text-transform: uppercase;
+}
+.v-customer-trading .leading-8 {
+  line-height: 2rem;
+}
+.v-customer-trading .leading-9 {
+  line-height: 2.25rem;
+}
+.v-customer-trading .leading-none {
+  line-height: 1;
+}
+.v-customer-trading .leading-relaxed {
+  line-height: 1.625;
+}
+.v-customer-trading .leading-snug {
+  line-height: 1.375;
+}
+.v-customer-trading .leading-tight {
+  line-height: 1.25;
+}
+.v-customer-trading .tracking-wider {
+  letter-spacing: 0.05em;
+}
+.v-customer-trading .text-\[\#0E1B33\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 27 51 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#111c2d\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 28 45 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#1F55B8\] {
+  --tw-text-opacity: 1;
+  color: rgb(31 85 184 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#3D8BFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 139 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#525e7a\] {
+  --tw-text-opacity: 1;
+  color: rgb(82 94 122 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#8FA0BF\] {
+  --tw-text-opacity: 1;
+  color: rgb(143 160 191 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#A9B4CB\] {
+  --tw-text-opacity: 1;
+  color: rgb(169 180 203 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#B3261E\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 38 30 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#EDEFF5\] {
+  --tw-text-opacity: 1;
+  color: rgb(237 239 245 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#F2B544\] {
+  --tw-text-opacity: 1;
+  color: rgb(242 181 68 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-\[\#FFB4AB\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 180 171 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.v-customer-trading .opacity-\[0\.07\] {
+  opacity: 0.07;
+}
+.v-customer-trading .shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-trading .shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-trading .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-trading .outline {
+  outline-style: solid;
+}
+.v-customer-trading .blur-3xl {
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-customer-trading .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.v-customer-trading .backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.v-customer-trading .backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.v-customer-trading .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-customer-trading .transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.v-customer-trading .duration-150 {
+  transition-duration: 150ms;
+}
+.v-customer-trading .duration-200 {
+  transition-duration: 200ms;
+}
+.v-customer-trading .selection\:bg-primary *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 61 150 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .selection\:text-white *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .selection\:bg-primary::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 61 150 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .selection\:text-white::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.v-customer-trading .hover\:bg-\[\#1F6BE8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 107 232 / var(--tw-bg-opacity, 1));
+}
+.v-customer-trading .hover\:bg-white\/20:hover {
+  background-color: rgb(255 255 255 / 0.2);
+}
+.v-customer-trading .hover\:underline:hover {
+  text-decoration-line: underline;
+}
+.v-customer-trading .hover\:shadow-\[0px_6px_24px_rgba\(14\2c 27\2c 51\2c 0\.10\)\]:hover {
+  --tw-shadow: 0px 6px 24px rgba(14,27,51,0.10);
+  --tw-shadow-colored: 0px 6px 24px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.v-customer-trading .focus-visible\:underline:focus-visible {
+  text-decoration-line: underline;
+}
+.v-customer-trading .focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+@media (min-width: 640px) {
+
+  .v-customer-trading .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+
+  .v-customer-trading .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .v-customer-trading .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .v-customer-trading .md\:items-center {
+    align-items: center;
+  }
+
+  .v-customer-trading .md\:justify-between {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+
+  .v-customer-trading .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .v-customer-trading .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .v-customer-trading .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .v-customer-trading .lg\:pr-4 {
+    padding-right: 1rem;
+  }
+}
+
+/* ---- site layout fix (generated, see PAGE_EXTRA_CSS in the converter) ---- */
+
+.v-customer-trading .cq-body { padding-top: var(--site-header-height, 76px); min-width: 0 !important; }
+.v-customer-trading .cq-industry-strip { top: var(--site-header-height, 76px) !important; }
+
+.v-customer-trading { --cq-gutter: clamp(20px, 4vw, 48px); }
+@media (max-width: 520px) { .v-customer-trading { --cq-gutter: 17px; } }
+.v-customer-trading .max-w-7xl.mx-auto,.v-customer-trading  .max-w-6xl.mx-auto,.v-customer-trading  .cq-industry-strip .cq-in { width: min(1200px, calc(100% - 2 * var(--cq-gutter))); max-width: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+

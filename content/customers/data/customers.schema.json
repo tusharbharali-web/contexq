@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContexQ Customers content",
+  "description": "Schema for the object assigned to window.CUSTOMERS_DATA in customers.js.",
+  "type": "object",
+  "required": ["footnote", "defaultSlug", "pages"],
+  "additionalProperties": false,
+  "properties": {
+    "footnote": { "type": "string" },
+    "defaultSlug": { "type": "string" },
+    "pages": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/page" } }
+  },
+  "definitions": {
+    "page": {
+      "type": "object",
+      "required": ["slug", "file", "tabLabel", "hero", "stories", "cta"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": { "type": "string" },
+        "file": { "type": "string", "description": "HTML file the tab links to." },
+        "tabLabel": { "type": "string" },
+        "hero": { "$ref": "#/definitions/hero" },
+        "stories": { "type": "array", "items": { "$ref": "#/definitions/story" } },
+        "process": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["step", "title", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "type": "integer" },
+              "title": { "type": "string" },
+              "text": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "comingSoon": {
+          "type": ["object", "null"],
+          "required": ["title"],
+          "additionalProperties": false,
+          "properties": { "title": { "type": "string" } }
+        },
+        "cta": {
+          "type": "object",
+          "required": ["headline", "buttonLabel"],
+          "additionalProperties": false,
+          "properties": { "headline": { "type": "string" }, "buttonLabel": { "type": "string" } }
+        }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": ["eyebrow", "headline", "subline", "chips", "diagram"],
+      "additionalProperties": false,
+      "properties": {
+        "eyebrow": { "type": "string" },
+        "headline": { "type": "string" },
+        "subline": { "type": "string" },
+        "chips": { "type": "array", "items": { "type": "string" } },
+        "diagram": { "$ref": "#/definitions/diagram" }
+      }
+    },
+    "diagram": {
+      "type": "object",
+      "required": ["caption", "nodes", "edges"],
+      "additionalProperties": false,
+      "properties": {
+        "caption": { "type": "string" },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "x", "y"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "x": { "type": "number", "minimum": 0, "maximum": 100, "description": "Percent from left." },
+              "y": { "type": "number", "minimum": 0, "maximum": 100, "description": "Percent from top." },
+              "tag": { "type": ["string", "null"] },
+              "highlight": { "type": "boolean" }
+            }
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from", "to"],
+            "additionalProperties": false,
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "dashed": { "type": "boolean" },
+              "tag": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "story": {
+      "type": "object",
+      "required": [
+        "id", "customerName", "customerDescriptor", "logo", "stage", "status", "title",
+        "description", "challenge", "approach", "outcome", "diagram", "sample", "sampleFields"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "customerName": { "type": ["string", "null"], "description": "null for unnamed customers." },
+        "customerDescriptor": { "type": ["string", "null"] },
+        "logo": { "type": ["string", "null"], "description": "Image path. Must be null when customerName is null." },
+        "logoPlaceholder": { "type": ["string", "null"] },
+        "stage": { "enum": ["Customer", "Proof of concept", "Beta / proof of value"] },
+        "status": { "enum": ["Ongoing", null] },
+        "title": { "type": ["string", "null"] },
+        "description": { "type": "string" },
+        "challenge": { "type": ["string", "null"] },
+        "approach": { "type": ["string", "null"] },
+        "outcome": { "type": ["string", "null"], "description": "No numbers with % or currency symbols." },
+        "diagram": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/diagram" }] },
+        "sample": { "type": "boolean" },
+        "sampleFields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Every field holding placeholder copy. sample must be true while this is non-empty."
+        }
+      }
+    }
+  }
+}

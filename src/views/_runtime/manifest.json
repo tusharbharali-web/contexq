@@ -1,0 +1,531 @@
+{
+  "generatedFrom": "/Users/tusharbharali/Downloads/contexq-staging-main 2",
+  "views": [
+    {
+      "id": "contact",
+      "route": "/contact",
+      "legacyUrl": "/html/contact (2).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      ],
+      "externals": [
+        "https://challenges.cloudflare.com/turnstile/v0/api.js"
+      ],
+      "title": "Book a Walkthrough | ContexQ",
+      "description": "Explore a ContexQ walkthrough request page concept.",
+      "handlers": []
+    },
+    {
+      "id": "careers",
+      "route": "/careers",
+      "legacyUrl": "/html/contexq-careers.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      ],
+      "externals": [],
+      "title": "Careers at ContexQ | Join the team",
+      "description": "Join ContexQ, a Singapore-based intelligence company. See open roles in engineering, data, product and client work.",
+      "handlers": []
+    },
+    {
+      "id": "company",
+      "route": "/company",
+      "legacyUrl": "/html/contexq-what-we-do-v3.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      ],
+      "externals": [],
+      "title": "About ContexQ | Context in every decision",
+      "description": "ContexQ is a Singapore-based intelligence company helping banks, corporates and governments see the people, companies and money behind their decisions.",
+      "handlers": []
+    },
+    {
+      "id": "platform-cleansing",
+      "route": "/Platform/cleansing",
+      "legacyUrl": "/html/contexq-advanced-analytics.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ, Advanced Analytics",
+      "handlers": []
+    },
+    {
+      "id": "platform-entity",
+      "route": "/Platform/entity",
+      "legacyUrl": "/html/contexq-entity-resolution.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600;700&text=%E6%B3%95%E6%8F%90%E8%B5%AB%C2%B7%E4%B9%8C%E5%8D%A2%E8%BE%BE%E6%A0%BC%E5%8C%97%E6%98%9F%E8%B4%B8%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&display=swap"
+      ],
+      "externals": [],
+      "title": "Entity Resolution | ContexQ",
+      "description": "Entity resolution finds every record across your systems that belongs to the same person or company. See what it is, why organisations need it, and the business impact for banks and corporates.",
+      "handlers": []
+    },
+    {
+      "id": "platform-network",
+      "route": "/Platform/network",
+      "legacyUrl": "/html/contexq-knowledge-graphs-ai.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Knowledge Graph Platform | ContexQ",
+      "description": "ContexQ brings your business data together with relevant external context, resolves who is who, and builds knowledge graphs that show how people, companies, accounts and activity connect.",
+      "handlers": []
+    },
+    {
+      "id": "platform-scores",
+      "route": "/Platform/scores",
+      "legacyUrl": "/html/contexq-composite-ai-scores.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600;700&text=%E6%B3%95%E6%8F%90%E8%B5%AB%C2%B7%E4%B9%8C%E5%8D%A2%E8%BE%BE%E6%A0%BC%E5%8C%97%E6%98%9F%E8%B4%B8%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&display=swap"
+      ],
+      "externals": [],
+      "title": "Composite AI Scores | ContexQ",
+      "description": "ContexQ Composite AI Scores: explainable risk scores for customers, suppliers and counterparties, shaped by networks, history and peers, broken down into named components and mapped to clear next steps.",
+      "handlers": []
+    },
+    {
+      "id": "platform-actions",
+      "route": "/Platform/actions",
+      "legacyUrl": "/html/contexq-decision-intelligence.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Investigation, Recommendation & Action | ContexQ",
+      "description": "ContexQ helps teams move from a finding to an agreed next step: investigate the connected evidence, weigh possible responses with their reasoning, and hand the decision to the people and systems that carry it out.",
+      "handlers": []
+    },
+    {
+      "id": "solution-aml",
+      "route": "/solutions/aml",
+      "legacyUrl": "/html/contexq-aml (3).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Hanken+Grotesk:wght@500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Anti-money laundering: see the network behind every alert | ContexQ",
+      "description": "ContexQ works alongside your existing AML systems, connecting customers, companies and payments with outside information so your team clears fewer false alarms and finds the risk single alerts miss.",
+      "handlers": []
+    },
+    {
+      "id": "solution-customer-intelligence",
+      "route": "/solutions/customer-intelligence",
+      "legacyUrl": "/html/contexq-data-management (2).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ — Customer intelligence for relationship teams",
+      "handlers": []
+    },
+    {
+      "id": "solution-fraud",
+      "route": "/solutions/fraud",
+      "legacyUrl": "/html/contexq-mule-merged (1).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      ],
+      "externals": [],
+      "title": "Fraud and mule detection: find the network behind every scam | ContexQ",
+      "description": "ContexQ links mule accounts through shared phones, recruiters and money flows, so banks stop whole fraud rings and spot the next new account on day one, alongside their existing fraud engine.",
+      "handlers": []
+    },
+    {
+      "id": "solution-kyc",
+      "route": "/solutions/kyc",
+      "legacyUrl": "/html/contexq-kyc (2).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap"
+      ],
+      "externals": [
+        "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      ],
+      "title": "Less KYC research. Clearer risk decisions. | ContexQ",
+      "description": "ContexQ connects customer records, ownership and outside information, so your KYC team spends less time searching and more time deciding.",
+      "handlers": []
+    },
+    {
+      "id": "solution-risk",
+      "route": "/solutions/risk",
+      "legacyUrl": "/html/contexq-risk (1).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@800&display=swap"
+      ],
+      "externals": [
+        "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      ],
+      "title": "Risk Management: From Early Signals to Timely Action | ContexQ",
+      "description": "See the warning signs, understand the risk and act sooner. ContexQ connects customers, owners, payments and news into evidence-backed, prioritised cases.",
+      "handlers": []
+    },
+    {
+      "id": "solution-supply-chain",
+      "route": "/solutions/supply-chain-intelligence",
+      "legacyUrl": "/html/contexq-supply-chain (5).html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..800&display=swap"
+      ],
+      "externals": [],
+      "title": "See the suppliers behind your suppliers | ContexQ",
+      "description": "ContexQ connects supplier records with company, ownership, trade and hazard information, so you can see hidden dependencies beyond your direct suppliers, understand what a disruption could affect, and assess sourcing options.",
+      "handlers": []
+    },
+    {
+      "id": "industry-finance",
+      "route": "/Industries/finance",
+      "legacyUrl": "/html/contexq-banking-v6.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Hanken+Grotesk:wght@500&display=swap"
+      ],
+      "externals": [],
+      "title": "Banking Intelligence for Risk, Efficiency & Growth | ContexQ",
+      "description": "Connect your banking data to uncover hidden risk, focus investigations and discover growth opportunities with ContexQ’s AI-powered intelligence platform.",
+      "handlers": []
+    },
+    {
+      "id": "industry-goods",
+      "route": "/Industries/goods",
+      "legacyUrl": "/html/contexq-ecommerce-v4.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ | E-commerce Intelligence",
+      "description": "ContexQ connects purchase, payment, merchant and delivery records to uncover coordinated e-commerce activity and give investigators the context behind individual transactions.",
+      "handlers": []
+    },
+    {
+      "id": "industry-health",
+      "route": "/Industries/health",
+      "legacyUrl": "/html/contexq-insurance-v6.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      ],
+      "externals": [],
+      "title": "Insurance Intelligence | ContexQ",
+      "description": "See how ContexQ can help insurance teams connect claims, policies, people and businesses to investigate concerns and make better-informed decisions.",
+      "handlers": []
+    },
+    {
+      "id": "industry-mfg",
+      "route": "/Industries/mfg",
+      "legacyUrl": "/html/contexq-mfg-v2.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      ],
+      "externals": [],
+      "handlers": [
+        "switchJourneyTab"
+      ]
+    },
+    {
+      "id": "industry-public-sector",
+      "route": "/Industries/public-sector",
+      "legacyUrl": "/html/contexq-public-sector-v3.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Public Sector | ContexQ",
+      "description": "Connect public-sector records to see relationships, focus investigations and make better-informed decisions with ContexQ.",
+      "handlers": []
+    },
+    {
+      "id": "industry-telco",
+      "route": "/Industries/telco",
+      "legacyUrl": "/html/contexq-telecom-v4.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Telecommunications | ContexQ",
+      "description": "Understand subscribers, investigate linked activity and assess business exposure with ContexQ telecom intelligence.",
+      "handlers": []
+    },
+    {
+      "id": "eco-insights",
+      "route": "/Ecosystem/blogs",
+      "legacyUrl": "/eco-skin/insights.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Insights — ContexQ",
+      "description": "Practical thinking on decision intelligence, entity resolution and managing risk.",
+      "handlers": []
+    },
+    {
+      "id": "eco-blog-article",
+      "route": "/Ecosystem/blogs/[slug]",
+      "legacyUrl": "/eco-skin/ER_blog.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Unlock Business Intelligence with Entity Resolution — ContexQ",
+      "template": "blog",
+      "handlers": []
+    },
+    {
+      "id": "eco-awards",
+      "route": "/Ecosystem/awards",
+      "legacyUrl": "/eco-skin/Awards.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Awards, Grants & Recognition | ContexQ",
+      "handlers": [
+        "toggleFinalists",
+        "toggleProgrammes"
+      ]
+    },
+    {
+      "id": "eco-press",
+      "route": "/Ecosystem/press-releases",
+      "legacyUrl": "/eco-skin/PressReleases.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Press & Media — ContexQ",
+      "handlers": []
+    },
+    {
+      "id": "eco-press-article",
+      "route": "/Ecosystem/press-releases/[slug]",
+      "legacyUrl": "/eco-skin/PR_JM_joins.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO — ContexQ",
+      "description": "We’re excited to welcome Jean-Michel Coeur as the Co-Founder and Chief Technology Officer (CTO) at ContexQ, bringing a unique blend of deep technical expertise, entrepreneurial vision, and global perspective to lead our product and technology strategy.",
+      "template": "press",
+      "handlers": []
+    },
+    {
+      "id": "eco-partners",
+      "route": "/Ecosystem/partners",
+      "legacyUrl": "/eco-skin/Affiliations.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ - Backing & Affiliations (Light Mode Desktop)",
+      "handlers": []
+    },
+    {
+      "id": "eco-award",
+      "route": "/Ecosystem/awards/[slug]",
+      "legacyUrl": "/eco-skin/awards/actus-global-top-3.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      ],
+      "externals": [],
+      "title": "ACTUS Financial Research Foundation Global Top 3 | ContexQ Awards & Recognition",
+      "description": "ACTUS Financial Research Foundation · Netted cashflow impact on corporates, prototype funded | ContexQ sovereign contextual decision intelligence.",
+      "handlers": []
+    },
+    {
+      "id": "customer-trading",
+      "route": "/customer-stories/trading",
+      "legacyUrl": "/customers-src/Trading.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ - Customers: Trading",
+      "handlers": []
+    },
+    {
+      "id": "customer-banks",
+      "route": "/customer-stories/banks",
+      "legacyUrl": "/customers-src/banking.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ - Customers: Banks",
+      "handlers": []
+    },
+    {
+      "id": "customer-manufacturing",
+      "route": "/customer-stories/manufacturing",
+      "legacyUrl": "/customers-src/Manufacturing.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ — Customers: Manufacturing",
+      "handlers": []
+    },
+    {
+      "id": "customer-government",
+      "route": "/customer-stories/government",
+      "legacyUrl": "/customers-src/Government.html",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      ],
+      "externals": [],
+      "title": "ContexQ — Government Intelligence & Cross-Agency Entity Resolution",
+      "handlers": []
+    }
+  ],
+  "routeMap": {
+    "/": "/",
+    "/index.html": "/",
+    "/eco-skin/index.html": "/",
+    "/eco-skin/FAQs.html": "/Ecosystem/faq",
+    "/html/contact.html": "/contact",
+    "/html/contact (1).html": "/contact",
+    "/html/contact (2).html": "/contact",
+    "/html/privacy-policy.html": "/privacy-policy",
+    "/html/cookie-policy.html": "/cookie-policy",
+    "/html/terms-conditions.html": "/terms-conditions",
+    "/privacy.html": "/privacy-policy",
+    "/html/contexq-careers.html": "/careers",
+    "/html/contexq-what-we-do-v3.html": "/company",
+    "/html/contexq-advanced-analytics.html": "/Platform/cleansing",
+    "/html/contexq-entity-resolution.html": "/Platform/entity",
+    "/html/contexq-knowledge-graphs-ai.html": "/Platform/network",
+    "/html/contexq-composite-ai-scores.html": "/Platform/scores",
+    "/html/contexq-decision-intelligence.html": "/Platform/actions",
+    "/html/contexq-aml (3).html": "/solutions/aml",
+    "/html/contexq-data-management (2).html": "/solutions/customer-intelligence",
+    "/html/contexq-mule-merged (1).html": "/solutions/fraud",
+    "/html/contexq-kyc (2).html": "/solutions/kyc",
+    "/html/contexq-risk (1).html": "/solutions/risk",
+    "/html/contexq-supply-chain (5).html": "/solutions/supply-chain-intelligence",
+    "/html/contexq-banking-v6.html": "/Industries/finance",
+    "/html/contexq-ecommerce-v4.html": "/Industries/goods",
+    "/html/contexq-insurance-v6.html": "/Industries/health",
+    "/html/contexq-mfg-v2.html": "/Industries/mfg",
+    "/html/contexq-public-sector-v3.html": "/Industries/public-sector",
+    "/html/contexq-telecom-v4.html": "/Industries/telco",
+    "/eco-skin/insights.html": "/Ecosystem/blogs",
+    "/eco-skin/Awards.html": "/Ecosystem/awards",
+    "/eco-skin/PressReleases.html": "/Ecosystem/press-releases",
+    "/eco-skin/Affiliations.html": "/Ecosystem/partners",
+    "/customers-src/Trading.html": "/customer-stories/trading",
+    "/customers-src/banking.html": "/customer-stories/banks",
+    "/customers-src/Manufacturing.html": "/customer-stories/manufacturing",
+    "/customers-src/Government.html": "/customer-stories/government",
+    "/eco-skin/awards/actus-global-top-3.html": "/Ecosystem/awards/actus-global-top-3",
+    "/eco-skin/awards/alibaba-jumpstarter-top-30.html": "/Ecosystem/awards/alibaba-jumpstarter-top-30",
+    "/eco-skin/awards/employee-happiness-awards-2026.html": "/Ecosystem/awards/employee-happiness-awards-2026",
+    "/eco-skin/awards/g20-techsprint-payment-fraud.html": "/Ecosystem/awards/g20-techsprint-payment-fraud",
+    "/eco-skin/awards/hello-tomorrow-deep-tech-pioneer.html": "/Ecosystem/awards/hello-tomorrow-deep-tech-pioneer",
+    "/eco-skin/awards/leap-east-2026.html": "/Ecosystem/awards/leap-east-2026",
+    "/eco-skin/awards/lhoft-catapult.html": "/Ecosystem/awards/lhoft-catapult",
+    "/eco-skin/awards/luxembourg-adb-venture-accelerator.html": "/Ecosystem/awards/luxembourg-adb-venture-accelerator",
+    "/eco-skin/awards/mas-supported-grant.html": "/Ecosystem/awards/mas-supported-grant",
+    "/eco-skin/awards/rbi-harbinger-2025.html": "/Ecosystem/awards/rbi-harbinger-2025",
+    "/eco-skin/awards/singapore-business-awards-2026.html": "/Ecosystem/awards/singapore-business-awards-2026",
+    "/eco-skin/awards/singapore-fintech-festival-finalist.html": "/Ecosystem/awards/singapore-fintech-festival-finalist",
+    "/eco-skin/awards/slingshot-global-top-50.html": "/Ecosystem/awards/slingshot-global-top-50",
+    "/eco-skin/awards/startup-grind-startup-of-the-year.html": "/Ecosystem/awards/startup-grind-startup-of-the-year",
+    "/eco-skin/awards/unesco-ircai-top-100.html": "/Ecosystem/awards/unesco-ircai-top-100",
+    "/eco-skin/awards/unu-ai-sdgs-finalist.html": "/Ecosystem/awards/unu-ai-sdgs-finalist",
+    "/eco-skin/awards/waic-world-ai-top-15.html": "/Ecosystem/awards/waic-world-ai-top-15"
+  },
+  "templateDefaults": {
+    "/eco-skin/ER_blog.html": {
+      "base": "/Ecosystem/blogs/",
+      "slug": "entity-resolution-business-intelligence"
+    },
+    "/eco-skin/SCI_blog.html": {
+      "base": "/Ecosystem/blogs/",
+      "slug": "future-proofing-modern-supply-chains"
+    },
+    "/eco-skin/DecisionIntell_blog.html": {
+      "base": "/Ecosystem/blogs/",
+      "slug": "data-driven-decision-intelligence"
+    },
+    "/eco-skin/PR_JM_joins.html": {
+      "base": "/Ecosystem/press-releases/",
+      "slug": "jean-michel-coeur-joins-contexq-co-founder-cto"
+    },
+    "/eco-skin/JMspeaksAt.html": {
+      "base": "/Ecosystem/press-releases/",
+      "slug": "jean-michel-cto-speak-asia-tech-x-singapore-2026"
+    },
+    "/eco-skin/PR_parthadasguta.html": {
+      "base": "/Ecosystem/press-releases/",
+      "slug": "partha-dasgupta-appointed-chief-mentor"
+    }
+  },
+  "templateMeta": {
+    "blog": {
+      "entity-resolution-business-intelligence": {
+        "title": "Unlock Business Intelligence with Entity Resolution — ContexQ"
+      },
+      "future-proofing-modern-supply-chains": {
+        "title": "Optimizing & Future-Proofing Modern Supply Chains — ContexQ"
+      },
+      "data-driven-decision-intelligence": {
+        "title": "How ContexQ Delivers Data-Driven Decision Intelligence — ContexQ"
+      }
+    },
+    "press": {
+      "jean-michel-coeur-joins-contexq-co-founder-cto": {
+        "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO — ContexQ",
+        "description": "We’re excited to welcome Jean-Michel Coeur as the Co-Founder and Chief Technology Officer (CTO) at ContexQ, bringing a unique blend of deep technical expertise, entrepreneurial vision, and global perspective to lead our product and technology strategy."
+      },
+      "jean-michel-cto-speak-asia-tech-x-singapore-2026": {
+        "title": "Jean-Michel, CTO, to Speak at Asia Tech x Singapore 2026 — ContexQ",
+        "description": "Jean-Michel, Chief Technology Officer at ContexQ, will be speaking at Asia Tech x Singapore (ATxSG), one of Asia’s leading technology forums, held in Singapore."
+      },
+      "partha-dasgupta-appointed-chief-mentor": {
+        "title": "ContexQ Appoints Partha Dasgupta as Chief Mentor & Head of Business Development — ContexQ",
+        "description": "ContexQ, a B2B deep tech startup with a contextual decision intelligence platform, today announced the strategic appointment of Partha Dasgupta as its Chief Mentor & Head of Business Development, India."
+      }
+    }
+  },
+  "awards": [
+    "actus-global-top-3",
+    "alibaba-jumpstarter-top-30",
+    "employee-happiness-awards-2026",
+    "g20-techsprint-payment-fraud",
+    "hello-tomorrow-deep-tech-pioneer",
+    "leap-east-2026",
+    "lhoft-catapult",
+    "luxembourg-adb-venture-accelerator",
+    "mas-supported-grant",
+    "rbi-harbinger-2025",
+    "singapore-business-awards-2026",
+    "singapore-fintech-festival-finalist",
+    "slingshot-global-top-50",
+    "startup-grind-startup-of-the-year",
+    "unesco-ircai-top-100",
+    "unu-ai-sdgs-finalist",
+    "waic-world-ai-top-15"
+  ]
+}

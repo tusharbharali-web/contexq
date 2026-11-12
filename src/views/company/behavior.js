@@ -1,0 +1,39 @@
+// Generated from public/html/contexq-what-we-do-v3.html.
+// The original page scripts, unchanged, wrapped so they can run inside the
+// React view: `cq` supplies window/document/timers that are scoped to the
+// view and cleaned up when it unmounts (see src/views/_runtime/env.ts).
+/* eslint-disable */
+
+export default function init(cq) {
+  return (function ({ window, document, location, history, self, top, parent, globalThis, setTimeout, clearTimeout, setInterval, clearInterval, requestAnimationFrame, cancelAnimationFrame, IntersectionObserver, ResizeObserver, MutationObserver, addEventListener, removeEventListener, onReady }) {
+    {
+      // ---- page script ----
+      try {
+(function(){
+  const M=[
+    {"initials": "AK", "name": "Ajay Kakarania", "role": "Founder & CEO", "tagline": "Building enterprise decision intelligence", "description": "Ajay brings over 20 years of experience across banking, financial services and enterprise technology in India, the UK and Singapore. His career spans risk management, regulatory analytics, financial crime, trade finance and enterprise AI, most recently leading solutions for Asian banks at Quantexa. He is a certified Financial Risk Manager (FRM, GARP), Chartered Financial Analyst (CFA) and Sustainability and Climate Risk professional, and holds an INSEAD Executive MBA and a Master’s in Quantitative Finance. At ContexQ, he leads the company’s vision of combining graph intelligence, AI and domain expertise to help enterprises make faster, context-aware decisions.", "short": "20+ years across banking, risk and financial crime; previously led solutions for Asian banks at Quantexa. FRM, CFA, INSEAD Executive MBA.", "group": "f"},
+    {"initials": "JC", "name": "Jean-Michel Coeur", "role": "Co-Founder & CTO", "tagline": "Architecting composite graph AI systems", "description": "Jean-Michel has over 30 years of experience delivering enterprise technology across North America, Europe and Asia. He previously led Google’s APAC Data Analytics & AI technology practice and held senior roles at AWS and other enterprise technology companies. At ContexQ, he architects SarasW, combining native entity resolution, a graph transformer core and modern AI technologies to build scalable, auditable enterprise decision systems.", "short": "30+ years in enterprise technology; previously led Google’s APAC Data Analytics & AI technology practice, with earlier senior roles at AWS.", "group": "f"},
+    {"initials": "MI", "name": "Meenakshy Iyer", "role": "Co-Founder & CPO", "tagline": "Building AI-first financial platforms", "description": "Meenakshy has nearly four decades of experience building enterprise software products for the financial services industry. She led the engineering of Oracle Financial Services’ flagship risk and regulatory platforms before establishing and scaling Maybank’s AI innovation hub. At ContexQ, she drives product strategy, pairing deep banking domain expertise with AI-first product design across financial crime, KYC, credit and supply chain.", "short": "Nearly four decades building financial-services platforms, including Oracle Financial Services’ flagship risk and regulatory suite and Maybank’s AI innovation hub.", "group": "f"},
+    {"initials": "SS", "name": "Prof. Simon See", "role": "Advisor", "tagline": "Advising enterprise AI research", "description": "Prof. Simon See is the Global Head of the NVIDIA AI Technology Centre and a recognised leader in artificial intelligence research across the Asia-Pacific region. He has led AI innovation spanning high-performance computing, deep learning and enterprise AI, and collaborates with governments, universities and global enterprises on next-generation AI strategy. At ContexQ, he advises on AI research direction and the evolution of our composite graph AI capabilities.", "short": "Global Head of the NVIDIA AI Technology Centre; advises governments and global enterprises on AI research and strategy.", "group": "a"},
+    {"initials": "JW", "name": "Joo Seng Wong", "role": "Advisor", "tagline": "Advising finance, markets & innovation", "description": "Joo Seng Wong is a veteran financial markets entrepreneur with decades of leadership in fintech and capital markets. He is CEO of Spark Systems, a Singapore-headquartered institutional FX platform, and Chairman of the Singapore International Chamber of Commerce (SICC). He has founded and scaled multiple ventures and brings deep expertise in financial technology, institutional partnerships and enterprise growth. He advises ContexQ on market strategy, fintech innovation and go-to-market.", "short": "CEO of Spark Systems and Chairman of the Singapore International Chamber of Commerce; serial entrepreneur in financial markets and fintech.", "group": "a"}
+  ];
+  const card=(m,i)=>`<button class="person" type="button" data-i="${i}"><div class="av">${m.initials}</div><h3>${m.name}</h3><span class="role">${m.role}</span><p>${m.short}</p><span class="more">Read profile →</span></button>`;
+  document.getElementById('founders').innerHTML=M.map((m,i)=>m.group==='f'?card(m,i):'').join('');
+  document.getElementById('advisors').innerHTML=M.map((m,i)=>m.group==='a'?card(m,i):'').join('');
+  const modal=document.getElementById('modal');let cur=0,lastFocus=null;
+  const render=i=>{const m=M[i];mAv.textContent=m.initials;mName.textContent=m.name;mRole.textContent=m.role;mTag.textContent=m.tagline;mDesc.textContent=m.description;mCount.textContent=`${i+1} of ${M.length}`};
+  const open=i=>{cur=i;lastFocus=document.activeElement;render(i);modal.classList.add('open');document.body.style.overflow='hidden';mClose.focus()};
+  const close=()=>{modal.classList.remove('open');document.body.style.overflow='';lastFocus&&lastFocus.focus()};
+  document.querySelectorAll('.person').forEach(b=>b.addEventListener('click',()=>open(+b.dataset.i)));
+  mClose.onclick=close;mNext.onclick=()=>{cur=(cur+1)%M.length;render(cur)};mPrev.onclick=()=>{cur=(cur-1+M.length)%M.length;render(cur)};
+  modal.addEventListener('click',e=>{if(e.target===modal)close()});
+  document.addEventListener('keydown',e=>{if(!modal.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')mNext.click();if(e.key==='ArrowLeft')mPrev.click()});
+  const els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('in'))}
+  else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});els.forEach(e=>io.observe(e))}
+})();
+      } catch (err) { console.error('[company] page script error:', err); }
+      return {  };
+    }
+  })(cq);
+}
