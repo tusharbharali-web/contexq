@@ -84,9 +84,9 @@ export default function Home() {
         <div className="hero-content relative z-10 pl-20 origin-left" style={{ transform: "scale(0.90)" }}>
           <div className="space-y-6">
             {/* Tagline */}
-            <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 w-fit">
+            <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 w-fit max-w-full">
               <div className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0" />
-              <p className="text-xs whitespace-nowrap">Graph Intelligence Platform - SarasW by ContexQ</p>
+              <p className="text-xs leading-snug">Graph Intelligence Platform - SarasW by ContexQ</p>
             </div>
 
             {/* Main Heading */}
@@ -129,6 +129,7 @@ export default function Home() {
               className="pie-hint"
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 alignItems: "center",
                 gap: 12,
                 marginTop: 24,

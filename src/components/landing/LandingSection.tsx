@@ -182,36 +182,36 @@ export default function LandingSection() {
                 </div>
                 <div className="flex-1 bg-surface-white rounded-xl p-5 md:p-6 border border-status-blue/30 shadow-xs relative flex flex-col md:flex-row items-center gap-5 justify-between">
                   <div className="flex flex-col items-center w-full py-2">
-                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-2.5 w-full">
-                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
+                    <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 w-full">
+                      <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
                         <span className="flex items-center gap-1.5">
                           <span className="cq-symbols text-[14px] text-status-blue">badge</span>
                           KYC
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-status-blue" />
                       </div>
-                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
+                      <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
                         <span className="flex items-center gap-1.5">
                           <span className="cq-symbols text-[14px] text-status-blue">description</span>
                           Docs
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-status-blue" />
                       </div>
-                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
+                      <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
                         <span className="flex items-center gap-1.5">
                           <span className="cq-symbols text-[14px] text-status-blue">account_balance</span>
                           Banking
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-status-blue" />
                       </div>
-                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
+                      <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
                         <span className="flex items-center gap-1.5">
                           <span className="cq-symbols text-[14px] text-status-blue">contacts</span>
                           CRM
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-status-blue" />
                       </div>
-                      <div className="col-span-2 sm:col-span-1 flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
+                      <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
                         <span className="flex items-center gap-1.5">
                           <span className="cq-symbols text-[14px] text-status-blue">flag</span>
                           Screening
@@ -236,9 +236,9 @@ export default function LandingSection() {
                             <span className="cq-symbols text-[20px]">person</span>
                           </div>
                           <div>
-                            <div className="flex items-center gap-2">
-                              <h4 className="font-headline-sm text-headline-sm font-semibold text-text-on-light leading-snug">John A. Smith</h4>
-                              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-status-blue border border-status-blue/20">
+                            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                              <h4 className="font-headline-sm text-headline-sm font-semibold text-text-on-light leading-snug whitespace-nowrap">John A. Smith</h4>
+                              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-status-blue border border-status-blue/20 whitespace-nowrap">
                                 <span className="w-1.0 h-1.0 rounded-full bg-status-blue" />
                                 Resolved entity
                               </span>
