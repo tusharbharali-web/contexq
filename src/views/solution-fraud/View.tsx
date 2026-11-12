@@ -41,7 +41,7 @@ export function View() {
                 ContexQ adds context to your fraud detection. It connects accounts, devices, people and payments, so your team sees the whole mule ring behind a scam, shuts it down as one case, and catches the next new account on day one.
               </p>
               {" "}
-              <div className="hero-actions"><a className="btn btn-ghost" href="#fit">See where ContexQ fits</a></div>
+              <div className="hero-actions"><a className="btn btn-primary" href="#fit">See where ContexQ fits</a></div>
               {" "}
               <p className="hero-note">
                 <span aria-hidden="true" />
@@ -122,7 +122,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">Why it matters</span>
                 <h2 id="chTitle">Scams are now a cost on your balance sheet.</h2>
               </div>
               {" "}
@@ -156,7 +155,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">Where ContexQ fits</span>
                 <h2 id="fitTitle">Keep your fraud engine. Add the missing context.</h2>
               </div>
               {" "}
@@ -253,7 +251,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">How it works</span>
                 <h2 id="howTitle">Built once. Used by every check.</h2>
               </div>
               {" "}
@@ -341,7 +338,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">See the difference</span>
                 <h2 id="scTitle">What an alert sees. What ContexQ reveals.</h2>
               </div>
               {" "}
@@ -477,8 +473,6 @@ export function View() {
         <section className="light" id="action" aria-labelledby="acTitle">
           <div className="wrap act">
             <div>
-              <span className="kicker">From insight to action</span>
-              {" "}
               <h2 id="acTitle">Every case arrives with a recommended next step.</h2>
               {" "}
               <p className="act-lead">
@@ -553,7 +547,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">Why ContexQ</span>
                 <h2 id="ldTitle">Make every control you run stronger.</h2>
               </div>
               {" "}
@@ -651,7 +644,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">What your bank gains</span>
                 <h2 id="chgTitle">Act sooner, with less effort.</h2>
               </div>
               {" "}
@@ -720,7 +712,6 @@ export function View() {
           <div className="wrap">
             <div className="section-head">
               <div>
-                <span className="kicker">Built for regulated banks</span>
                 <h2 id="trTitle">Explainable, secure and easy to start.</h2>
               </div>
               {" "}
