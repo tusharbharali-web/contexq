@@ -1030,3 +1030,12 @@
     }
 
 
+
+/* Closing CTA button: plain solid site blue like every other page (it had a white
+   shine gradient (::after) and a blue glow that also made the gap to the mail line
+   look larger). */
+.v-solution-risk .why-cta-action .btn-primary { background: #2F86FF; background-image: none; box-shadow: none; }
+.v-solution-risk .why-cta-action .btn-primary:hover { background: #5BA0FF; box-shadow: none; }
+.v-solution-risk .why-cta-action .btn-primary:active { background: #1F6FEB; }
+.v-solution-risk .why-cta-action .btn-primary::before,
+.v-solution-risk .why-cta-action .btn-primary::after { content: none !important; display: none !important; }
