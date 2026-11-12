@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/ui/Header";
+import InstantHistoryScroll from "../components/ui/InstantHistoryScroll";
 import TeamProfileModal from "../components/ui/TeamProfileModal";
 import { MobileDetector } from "../components/MobileDetector";
 
@@ -89,11 +90,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${hankenGrotesk.variable} ${inter.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning className={`${hankenGrotesk.variable} ${inter.variable}`}>
       <body
         className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
       >
         <MobileDetector />
+        <InstantHistoryScroll />
         <Header />
         {children}
         <TeamProfileModal />
