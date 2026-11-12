@@ -1135,7 +1135,7 @@ export function Award_employee_happiness_awards_2026() {
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" Luxembourg & ADB Venture Accelerator "}
+                    {" Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures) "}
                   </span>
                   {" "}
                 </Link>
@@ -1832,12 +1832,12 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
-                          {"Luxembourg & ADB Venture Accelerator"}
+                          {"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"}
                         </div>
                       </div>
                       {" "}
                       <div className="text-[11px] text-slate-500 truncate mt-1">
-                        {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                        {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                       </div>
                       {" "}
                     </Link>
@@ -2186,12 +2186,12 @@ export function Award_leap_east_2026() {
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
-                          {"Luxembourg & ADB Venture Accelerator"}
+                          {"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"}
                         </div>
                       </div>
                       {" "}
                       <div className="text-[11px] text-slate-500 truncate mt-1">
-                        {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                        {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                       </div>
                       {" "}
                     </Link>
@@ -2273,7 +2273,7 @@ export function Award_leap_east_2026() {
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" Luxembourg & ADB Venture Accelerator "}
+                    {" Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures) "}
                   </span>
                   {" "}
                 </Link>
@@ -2594,12 +2594,12 @@ export function Award_lhoft_catapult() {
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
-                          {"Luxembourg & ADB Venture Accelerator"}
+                          {"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"}
                         </div>
                       </div>
                       {" "}
                       <div className="text-[11px] text-slate-500 truncate mt-1">
-                        {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                        {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                       </div>
                       {" "}
                     </Link>
@@ -2657,7 +2657,7 @@ export function Award_lhoft_catapult() {
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" Luxembourg & ADB Venture Accelerator "}
+                    {" Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures) "}
                   </span>
                   {" "}
                 </Link>
@@ -2724,7 +2724,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
             {" "}
             <span className="text-slate-300">/</span>
             {" "}
-            <span className="text-[#0B1530] font-semibold truncate max-w-[240px]">{"Luxembourg & ADB Venture Accelerator"}</span>
+            <span className="text-[#0B1530] font-semibold truncate max-w-[240px]">{"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"}</span>
           </nav>
           {" "}
           <Link prefetch={false} href="/Ecosystem/awards" className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition-colors shadow-xs">
@@ -2755,11 +2755,11 @@ export function Award_luxembourg_adb_venture_accelerator() {
                 </div>
                 {" "}
                 <h1 className="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#0B1530] tracking-tight leading-tight">
-                  {" Luxembourg MoF & ADB Ventures Acceleration Track "}
+                  {" Catapult: Inclusion SE Asia — The LHoFT & ADB Ventures "}
                 </h1>
                 {" "}
                 <p className="font-body-lead text-body-lead text-[#64748B] leading-relaxed max-w-3xl">
-                  {" ContexQ was selected for the international acceleration track supported by the Asian Development Bank (ADB Ventures) and the Luxembourg Ministry of Finance, focused on scaling innovative technology that enhances financial transparency and inclusion across Asia and Europe. "}
+                  {" ContexQ was selected for the international acceleration track operated by The LHoFT (Luxembourg House of Financial Technology) alongside ADB Ventures and the Luxembourg Ministry of Foreign and European Affairs, focused on scaling innovative technology that enhances financial transparency and inclusion across Asia and Europe. "}
                 </p>
                 {" "}
                 <div className="pt-2 flex flex-wrap gap-3 text-xs font-medium text-slate-600">
@@ -2767,7 +2767,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                     <span className="text-slate-400 font-normal">Awarding Body:</span>
                     {" "}
                     <strong className="text-[#0B1530] font-semibold">
-                      {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                      {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                     </strong>
                   </div>
                   {" "}
@@ -2785,18 +2785,18 @@ export function Award_luxembourg_adb_venture_accelerator() {
                 <div className="w-full max-w-[320px] rounded-2xl card-border-ambient p-6 sm:p-7 bg-white flex flex-col items-center text-center">
                   <div className="w-full h-44 rounded-2xl bg-[#E6F4F1] flex items-center justify-center mb-5 p-5">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-3 text-center overflow-hidden">
-                      <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt={"Luxembourg & ADB Venture Accelerator"} className="w-full h-full object-contain" />
+                      <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt={"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"} className="w-full h-full object-contain" />
                     </div>
                   </div>
                   {" "}
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Programmes</span>
                   {" "}
                   <h3 className="font-headline-card text-base font-bold text-[#0B1530] leading-snug">
-                    {"Luxembourg & ADB Venture Accelerator"}
+                    {"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"}
                   </h3>
                   {" "}
                   <p className="text-xs text-slate-500 mt-1">
-                    {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                    {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                   </p>
                 </div>
               </div>
@@ -2853,7 +2853,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
                       <span className="text-primary font-bold mt-0.5">✓</span>
                       {" "}
-                      <span>Selected for joint acceleration supported by ADB Ventures and the Luxembourg Ministry of Finance.</span>
+                      <span>Selected for the Catapult: Inclusion SE Asia accelerator operated by The LHoFT with ADB Ventures and the Luxembourg Ministry of Foreign and European Affairs.</span>
                     </li>
                     {" "}
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
@@ -2898,7 +2898,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                       <dt className="text-slate-400 font-medium">Awarding Authority</dt>
                       {" "}
                       <dd className="text-[#0B1530] font-semibold mt-0.5">
-                        {"Asian Development Bank (ADB Ventures) & Luxembourg Ministry of Finance"}
+                        {"The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs"}
                       </dd>
                     </div>
                     {" "}
@@ -2906,7 +2906,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                       <dt className="text-slate-400 font-medium">Program / Initiative</dt>
                       {" "}
                       <dd className="text-[#0B1530] font-semibold mt-0.5">
-                        {"Catapult: Financial Inclusion & Cross-Border FinTech Acceleration"}
+                        {"Catapult: Inclusion SE Asia & NextFin Asia"}
                       </dd>
                     </div>
                     {" "}
@@ -6593,8 +6593,8 @@ export const AWARD_META: Record<string, { title?: string; description?: string }
     "description": "Luxembourg House of Financial Technology · Premier European institutional fintech scale programme | ContexQ sovereign contextual decision intelligence."
   },
   "luxembourg-adb-venture-accelerator": {
-    "title": "Luxembourg MoF & ADB Ventures Acceleration Track | ContexQ Awards & Recognition",
-    "description": "Asian Development Bank & Luxembourg MoF · Cross-border fintech acceleration and venture co-funding | ContexQ sovereign contextual decision intelligence."
+    "title": "Catapult: Inclusion SE Asia — The LHoFT & ADB Ventures | ContexQ Awards & Recognition",
+    "description": "The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs — Cross-border fintech acceleration and venture co-funding | ContexQ sovereign contextual decision intelligence."
   },
   "mas-supported-grant": {
     "title": "312K USD Proof of Concept Grant from MAS (FSTI) | ContexQ Awards & Recognition",

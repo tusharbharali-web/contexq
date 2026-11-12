@@ -588,11 +588,11 @@ export function View() {
                     </div>
                     {" "}
                     <h3 className="font-headline-card text-base font-bold text-[#0B1530] mb-1 leading-snug">
-                      {" Luxembourg & ADB Venture Accelerator "}
+                      {" Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures) "}
                     </h3>
                     {" "}
                     <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                      {" Asian Development Bank & Luxembourg MoF · Cross-border fintech acceleration and venture co-funding "}
+                      {" The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs — Cross-border fintech acceleration and venture co-funding "}
                     </p>
                   </div>
                   {" "}

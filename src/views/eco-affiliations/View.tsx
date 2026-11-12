@@ -73,22 +73,6 @@ export function View() {
             {" "}
             <div className="bg-white rounded-xl border border-brand-borderLight overflow-hidden flex flex-col md:flex-row shadow-xs hover:border-slate-300 transition-colors">
               <div className="md:w-1/2 bg-[#F4F6FA] border-r border-[#E2E8F0] p-8 sm:p-10 flex items-center justify-center min-h-[170px] md:min-h-0">
-                <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl bg-white shadow-sm border border-[#E2E8F0] flex items-center justify-center p-4 text-center">
-                  <img src="/eco-skin/assets/affiliations%20logo/luxembourg.png" alt={"Luxembourg - Trade & Invest"} className="w-full h-full object-contain" />
-                </div>
-              </div>
-              {" "}
-              <div className="md:w-1/2 p-7 sm:p-8 flex flex-col justify-center bg-white">
-                <h3 className="text-xl font-bold text-brand-navy mb-2.5">{" Luxembourg "}</h3>
-                {" "}
-                <p className="text-base text-brand-slate leading-relaxed">
-                  {" Serves as a key European gateway for financial innovation, connecting emerging fintechs with regulatory guidance, European financial markets, and public-private capital. "}
-                </p>
-              </div>
-            </div>
-            {" "}
-            <div className="bg-white rounded-xl border border-brand-borderLight overflow-hidden flex flex-col md:flex-row shadow-xs hover:border-slate-300 transition-colors">
-              <div className="md:w-1/2 bg-[#F4F6FA] border-r border-[#E2E8F0] p-8 sm:p-10 flex items-center justify-center min-h-[170px] md:min-h-0">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl bg-white shadow-sm border border-[#E2E8F0] flex items-center justify-center p-4 text-center overflow-hidden">
                   <img src="/eco-skin/assets/affiliations%20logo/LHOFT_b8ab560a61.jpg" alt="The LHoFT - Luxembourg House of Financial Technology" className="w-full h-full object-contain rounded-xl" />
                 </div>
@@ -98,7 +82,7 @@ export function View() {
                 <h3 className="text-xl font-bold text-brand-navy mb-2.5">{" The LHoFT "}</h3>
                 {" "}
                 <p className="text-base text-brand-slate leading-relaxed">
-                  {" Luxembourg's premier financial technology innovation hub, connecting global scale-ups with leading European financial institutions, regulators, and venture partners. "}
+                  {" Serves as Luxembourg’s national fintech innovation hub, backing ContexQ through the Catapult: Inclusion SE Asia program alongside ADB Ventures and the Luxembourg Ministry of Foreign and European Affairs. "}
                 </p>
               </div>
             </div>
