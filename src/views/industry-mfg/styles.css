@@ -1794,20 +1794,25 @@ video {
 /* ---------- Contact CTA: no dot texture; copy left, button right ---------- */
 .v-industry-mfg .cq-body #contact > .absolute.inset-0 { display: none; }
 .v-industry-mfg .cq-body #contact > .max-w-4xl {
-  max-width: 80rem; padding-inline: 24px;
+  /* same content width + gutters as the other industry pages */
+  width: min(1200px, calc(100% - 2 * var(--cq-gutter, 48px))); max-width: none; margin-inline: auto; padding-inline: 0;
   display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 48px; align-items: center;
   text-align: left;
 }
+/* type like the other industry closing sections (telecom): heading 32/40, copy 15/24 */
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2 { font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -.015em; max-width: 660px; }
+.v-industry-mfg .cq-body #contact > .max-w-4xl > h2 + p { font-size: 15px; line-height: 24px; }
 .v-industry-mfg .cq-body #contact > .max-w-4xl > h2 { grid-column: 1; margin-bottom: 16px; }
 .v-industry-mfg .cq-body #contact > .max-w-4xl > h2 + p { grid-column: 1; max-width: 640px; margin: 0 0 16px; }
 .v-industry-mfg .cq-body #contact > .max-w-4xl > h2 + p { margin-bottom: 0; }
 .v-industry-mfg .cq-body #contact .cq-cta-col { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: center; justify-content: center; align-self: center; text-align: center; gap: 16px; margin: 0; }
 .v-industry-mfg .cq-body #contact .cq-cta-col > .flex { margin: 0; justify-content: center; }
 .v-industry-mfg .cq-body #contact .cq-cta-col > p { margin: 0; }
-@media (min-width: 768px) { .v-industry-mfg .cq-body #contact > .max-w-4xl { padding-inline: 48px; } }
 @media (max-width: 767px) {
   .v-industry-mfg .cq-body #contact > .max-w-4xl { grid-template-columns: 1fr; }
-  .v-industry-mfg .cq-body #contact .cq-cta-col { grid-column: 1; grid-row: auto; margin: 16px 0 0; }
+  .v-industry-mfg .cq-body #contact .cq-cta-col { grid-column: 1; grid-row: auto; margin: 24px 0 0; align-items: flex-start; text-align: left; }
+  .v-industry-mfg .cq-body #contact .cq-cta-col > .flex { justify-content: flex-start; }
+  .v-industry-mfg .cq-body #contact > .max-w-4xl > h2 { font-size: 24px; line-height: 32px; }
 }
 
 /* ---------- Journey: cards animate in each time a stage becomes active ---------- */
@@ -1846,3 +1851,12 @@ video {
 .v-industry-mfg main > section:first-of-type { padding-top: calc(var(--site-header-height, 76px) + 50px); }
 @media (min-width: 1101px) { .v-industry-mfg main > section:first-of-type { box-sizing: border-box; min-height: 840px; display: flex; flex-direction: column; justify-content: center; } }
 
+
+/* "Internal foundation" piece: the light card inside the navy section. Its gradient
+   (from-[#F4F7FB] to-white) was being resolved to transparent, so the dark section showed
+   through behind dark text. Give it its light surface back. */
+.v-industry-mfg .cq-body [class*="from-[#F4F7FB]"] {
+  background-image: linear-gradient(to bottom right, var(--slate-50, #F3F6FB), var(--white, #FFFFFF));
+  background-color: var(--white, #FFFFFF);
+  color: var(--ink-900, #0B1B2E);
+}
