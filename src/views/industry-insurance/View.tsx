@@ -1,12 +1,12 @@
 // Generated from public/html/contexq-insurance-v6.html.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-industry-health);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-industry-insurance);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 export function View() {
   return (
-    <ViewShell viewId="industry-health" className="v-industry-health cq-html" lang="en" bodyClassName="cq-body">
+    <ViewShell viewId="industry-insurance" className="v-industry-insurance cq-html" lang="en" bodyClassName="cq-body">
       <a className="skip-link" href="#main">Skip to content</a>
       {" "}
       <main id="main">
@@ -19,7 +19,7 @@ export function View() {
                 Bring together customer, policy, claims and external information to reveal how records relate, and give your teams clearer context for the decisions they already make.
               </p>
               {" "}
-              <div className="hero-actions"><a className="btn btn--blue" href="#example">See how it works</a></div>
+              <div className="hero-actions"><a className="btn btn--blue cq-cta" href="#example">See how it works</a></div>
               {" "}
               <div className="hero-proof">
                 Most insurance records sit apart. ContexQ brings the wider picture into view, so people can decide in context.
@@ -457,7 +457,7 @@ export function View() {
             </div>
             {" "}
             <div className="contact-action">
-              <Link prefetch={false} className="btn btn--blue" href="/contact">Talk to the team</Link>
+              <Link prefetch={false} className="btn btn--blue cq-cta" href="/contact">Talk to the team</Link>
               {" "}
               <div className="contact-email">
                 {"or mail us at "}

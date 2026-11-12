@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import View from "@/views/company/View";
+import View from "@/views/about/View";
 import Footer from "@/components/ui/Footer";
 
 export const metadata: Metadata = {

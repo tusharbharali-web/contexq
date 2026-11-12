@@ -20,7 +20,7 @@ export default function init(cq) {
         });
       }
     })();
-      } catch (err) { console.error('[industry-health] page script error:', err); }
+      } catch (err) { console.error('[industry-insurance] page script error:', err); }
       // ---- page script ----
       try {
     (() => {
@@ -202,7 +202,7 @@ export default function init(cq) {
         },{passive:true});
       }
     })();
-      } catch (err) { console.error('[industry-health] page script error:', err); }
+      } catch (err) { console.error('[industry-insurance] page script error:', err); }
       // ---- page script ----
       try {
     /* Hero animation: insurance data connected around each customer and shared with every team.
@@ -273,7 +273,7 @@ export default function init(cq) {
       RM.addEventListener('change',()=>{step=3;playing=false;render();schedule()});
       build();render();schedule();
     })();
-      } catch (err) { console.error('[industry-health] page script error:', err); }
+      } catch (err) { console.error('[industry-insurance] page script error:', err); }
       return {  };
     }
   })(cq);

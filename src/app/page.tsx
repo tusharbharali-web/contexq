@@ -119,7 +119,7 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <Link href="#solutions" scroll={true} className="inline-block px-8 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-semibold hover:shadow-lg hover:shadow-[#2F86FF]/40 transition-all duration-300">
+              <Link href="#solutions" scroll={true} className="inline-block px-8 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-semibold hover:shadow-lg hover:shadow-[#2F86FF]/40 transition-all duration-300 cq-cta">
                 Explore Platform
               </Link>
             </div>

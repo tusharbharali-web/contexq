@@ -28,8 +28,8 @@
       "handlers": []
     },
     {
-      "id": "company",
-      "route": "/company",
+      "id": "about",
+      "route": "/about",
       "legacyUrl": "/html/contexq-what-we-do-v3.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -40,8 +40,8 @@
       "handlers": []
     },
     {
-      "id": "platform-cleansing",
-      "route": "/Platform/cleansing",
+      "id": "platform-analytics",
+      "route": "/Platform/analytics",
       "legacyUrl": "/html/contexq-advanced-analytics.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
@@ -65,8 +65,8 @@
       "handlers": []
     },
     {
-      "id": "platform-network",
-      "route": "/Platform/network",
+      "id": "platform-knowledge-graph",
+      "route": "/Platform/knowledge-graph",
       "legacyUrl": "/html/contexq-knowledge-graphs-ai.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
@@ -189,8 +189,8 @@
       "handlers": []
     },
     {
-      "id": "industry-goods",
-      "route": "/Industries/goods",
+      "id": "industry-ecommerce",
+      "route": "/Industries/ecommerce",
       "legacyUrl": "/html/contexq-ecommerce-v4.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
@@ -201,8 +201,8 @@
       "handlers": []
     },
     {
-      "id": "industry-health",
-      "route": "/Industries/health",
+      "id": "industry-insurance",
+      "route": "/Industries/insurance",
       "legacyUrl": "/html/contexq-insurance-v6.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
@@ -412,10 +412,10 @@
     "/html/terms-conditions.html": "/terms-conditions",
     "/privacy.html": "/privacy-policy",
     "/html/contexq-careers.html": "/careers",
-    "/html/contexq-what-we-do-v3.html": "/company",
-    "/html/contexq-advanced-analytics.html": "/Platform/cleansing",
+    "/html/contexq-what-we-do-v3.html": "/about",
+    "/html/contexq-advanced-analytics.html": "/Platform/analytics",
     "/html/contexq-entity-resolution.html": "/Platform/entity",
-    "/html/contexq-knowledge-graphs-ai.html": "/Platform/network",
+    "/html/contexq-knowledge-graphs-ai.html": "/Platform/knowledge-graph",
     "/html/contexq-composite-ai-scores.html": "/Platform/scores",
     "/html/contexq-decision-intelligence.html": "/Platform/actions",
     "/html/contexq-aml (3).html": "/solutions/aml",
@@ -425,8 +425,8 @@
     "/html/contexq-risk (1).html": "/solutions/risk",
     "/html/contexq-supply-chain (5).html": "/solutions/supply-chain-intelligence",
     "/html/contexq-banking-v6.html": "/Industries/finance",
-    "/html/contexq-ecommerce-v4.html": "/Industries/goods",
-    "/html/contexq-insurance-v6.html": "/Industries/health",
+    "/html/contexq-ecommerce-v4.html": "/Industries/ecommerce",
+    "/html/contexq-insurance-v6.html": "/Industries/insurance",
     "/html/contexq-mfg-v2.html": "/Industries/mfg",
     "/html/contexq-public-sector-v3.html": "/Industries/public-sector",
     "/html/contexq-telecom-v4.html": "/Industries/telco",

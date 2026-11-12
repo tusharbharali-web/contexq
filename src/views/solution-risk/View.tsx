@@ -23,7 +23,7 @@ export function View() {
                   ContexQ brings together information about your customers, their owners, their payments and the news around them, so your team spots risk early and sees the evidence behind every alert.
                 </p>
                 {" "}
-                <div className="btn-row"><a className="btn btn-primary" href="#how-we-work">See how we work</a></div>
+                <div className="btn-row"><a className="btn btn-primary cq-cta" href="#how-we-work">See how we work</a></div>
                 {" "}
                 <p className="hero-trust">Not just a list of risks. The evidence, the priority and the next step.</p>
               </div>
@@ -1440,7 +1440,7 @@ export function View() {
               </div>
               {" "}
               <div className="why-cta-action">
-                <Link prefetch={false} className="btn btn-primary" href="/contact">Talk to the team</Link>
+                <Link prefetch={false} className="btn btn-primary cq-cta" href="/contact">Talk to the team</Link>
                 {" "}
                 <p className="why-cta-mail">
                   {"or mail us at "}

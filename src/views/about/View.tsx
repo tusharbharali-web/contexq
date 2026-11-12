@@ -1,12 +1,12 @@
 // Generated from public/html/contexq-what-we-do-v3.html.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-company);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-about);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 export function View() {
   return (
-    <ViewShell viewId="company" className="v-company cq-html" lang="en" bodyClassName="cq-body">
+    <ViewShell viewId="about" className="v-about cq-html" lang="en" bodyClassName="cq-body">
       <main id="top">
         <section className="hx" aria-labelledby="hTitle">
           <div className="hx-streaks" aria-hidden="true" />
@@ -299,7 +299,7 @@ export function View() {
             </div>
             {" "}
             <div className="acts">
-              <Link prefetch={false} className="btn btn-p" href="/contact">Talk to the team</Link>
+              <Link prefetch={false} className="btn btn-p cq-cta" href="/contact">Talk to the team</Link>
               <p className="cq-mail-line">
                 {"or mail us at "}
                 <a href={"mailto:inquiry@contexq.com?subject=General%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20learn%20how%20ContexQ%20could%20help%20our%20organisation.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

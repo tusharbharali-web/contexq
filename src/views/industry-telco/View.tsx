@@ -44,9 +44,8 @@ export function View() {
                   <p>
                     Know who you serve. See related activity worth investigating. Understand the exposure behind your suppliers and partners.
                   </p>
-                  <a className="text-link" href="#help">
-                    {"Explore where we can help "}
-                    <span>↓</span>
+                  <a className="text-link cq-cta" href="#help">
+                    {"Explore where we can help"}
                   </a>
                   <div className="hero-footnote">Identity and relationship intelligence for your existing records.</div>
                 </div>
@@ -274,7 +273,7 @@ export function View() {
               <p>Explore a customer, investigation or partner use case with ContexQ.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="cta" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Telecommunications%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20telecommunications.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

@@ -503,7 +503,7 @@ export default function init(cq) {
   if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){dirty=true;});}
   requestAnimationFrame(frame);
 })();
-      } catch (err) { console.error('[platform-network] page script error:', err); }
+      } catch (err) { console.error('[platform-knowledge-graph] page script error:', err); }
       return {  };
     }
   })(cq);

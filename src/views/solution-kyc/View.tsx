@@ -25,7 +25,7 @@ export function View() {
                   Keep every customer file current, not just at the next scheduled review. ContexQ shows who really sits behind each customer and tells your team which changes need attention, so reviews take less effort and risk is seen sooner.
                 </p>
                 {" "}
-                <div className="btn-row"><a className="btn btn-primary" href="#scenarios">See how it works</a></div>
+                <div className="btn-row"><a className="btn btn-primary cq-cta" href="#scenarios">See how it works</a></div>
                 {" "}
                 <p className="hero-trust">Built for corporate KYC. Works with the systems and policies you already have.</p>
               </div>
@@ -908,7 +908,7 @@ export function View() {
               </div>
               {" "}
               <div className="cta-contact">
-                <Link prefetch={false} className="btn btn-primary" href="/contact">Talk to the team</Link>
+                <Link prefetch={false} className="btn btn-primary cq-cta" href="/contact">Talk to the team</Link>
                 {" "}
                 <p className="cta-email">
                   {"or mail us at "}

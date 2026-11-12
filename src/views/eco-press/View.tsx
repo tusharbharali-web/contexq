@@ -50,11 +50,9 @@ export function View() {
                   {" The grant accelerates the deployment of ContexQ's platform, helping financial institutions detect multi-layered financial crime and synthetic corporate identities. "}
                 </p>
                 {" "}
-                <Link prefetch={false} className="bg-[#2F6BFF] hover:bg-[#1E54DC] text-white font-medium px-6 py-2.5 rounded-lg shadow-sm transition inline-flex items-center gap-2 text-sm" href="/Ecosystem/awards/mas-supported-grant">
+                <Link prefetch={false} className="bg-[#2F6BFF] hover:bg-[#1E54DC] text-white font-medium px-6 py-2.5 rounded-lg shadow-sm transition inline-flex items-center gap-2 text-sm cq-cta" href="/Ecosystem/awards/mas-supported-grant">
                   {" "}
                   <span className="">Read the release</span>
-                  {" "}
-                  <span className="">→</span>
                   {" "}
                 </Link>
               </div>

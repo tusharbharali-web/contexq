@@ -19,7 +19,7 @@ export function View() {
               ContexQ connects the owners, directors and supply chains around every customer, so you know who to call next and how to get in the door.
             </p>
             {" "}
-            <a className="explore" href="#how-we-help">How ContexQ helps</a>
+            <a className="explore cq-cta" href="#how-we-help">How ContexQ helps</a>
           </div>
           {" "}
           <div className="media" id="video">
@@ -1138,7 +1138,7 @@ export function View() {
               </h2>
               {" "}
               <div className="portfolio-actions">
-                <Link prefetch={false} className="portfolio-button primary" href="/contact">Talk to the team</Link>
+                <Link prefetch={false} className="portfolio-button primary cq-cta" href="/contact">Talk to the team</Link>
                 {" "}
                 <span className="portfolio-email">
                   {"or mail us at "}
@@ -1260,7 +1260,7 @@ export function View() {
             </div>
             {" "}
             <div className="w-full mt-8">
-              <Link prefetch={false} href="/contact" className="w-full h-[48px] bg-blue-accent hover:bg-blue-600 active:scale-[0.98] transition-all text-white font-medium text-[16px] rounded-[6px] flex items-center justify-center shadow-sm mb-3">
+              <Link prefetch={false} href="/contact" className="w-full h-[48px] bg-blue-accent hover:bg-blue-600 active:scale-[0.98] transition-all text-white font-medium text-[16px] rounded-[6px] flex items-center justify-center shadow-sm mb-3 cq-cta">
                 Talk to the team
               </Link>
               {" "}

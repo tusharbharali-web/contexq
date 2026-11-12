@@ -43,9 +43,8 @@ export function View() {
               <p>
                 Bring relevant records and relationships together to protect public funds, focus investigations and strengthen programme oversight.
               </p>
-              <a className="inline-link" href="#missions">
-                {"Explore where we can help "}
-                <span aria-hidden="true">↓</span>
+              <a className="inline-link cq-cta" href="#missions">
+                {"Explore where we can help"}
               </a>
               <div className="hero-detail">
                 Across procurement, tax and customs,
@@ -243,7 +242,7 @@ export function View() {
               <p>Explore a public-sector use case with the ContexQ team.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="button" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="button cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Public%20sector%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20the%20public%20sector.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

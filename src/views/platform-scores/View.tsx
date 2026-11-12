@@ -17,7 +17,7 @@ export function View() {
                 Explainable scores for customers, suppliers and counterparties. Each is shaped by the entity’s connections, history and peers, breaks down into named components, and points to a clear next step.
               </p>
               {" "}
-              <div className="ctas"><a className="btn btn-blue" href="#packs">Explore decision packs</a></div>
+              <div className="ctas"><a className="btn btn-blue cq-cta" href="#packs">Explore decision packs</a></div>
             </div>
             {" "}
             <div className="stage" id="stage" role="img" aria-label="Illustrative animation: an exposure score for a supplier is built from its financial statements, its network and its ownership structure. Each component fills in turn, the composite tier rises from Medium to High, and the breakdown stays visible.">
@@ -370,7 +370,7 @@ export function View() {
               <p>See how a decision pack would read your customers, suppliers or counterparties.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="cta" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Composite%20AI%20scores%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20composite%20AI%20scores.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

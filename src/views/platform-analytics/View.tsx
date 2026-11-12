@@ -1,12 +1,12 @@
 // Generated from public/html/contexq-advanced-analytics.html.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-platform-cleansing);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-platform-analytics);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 export function View() {
   return (
-    <ViewShell viewId="platform-cleansing" className="v-platform-cleansing cq-html" lang="en" bodyClassName="cq-body">
+    <ViewShell viewId="platform-analytics" className="v-platform-analytics cq-html" lang="en" bodyClassName="cq-body">
       <section className="hero">
         <div className="container hero-inner">
           <div>
@@ -33,9 +33,8 @@ export function View() {
               {" Once entities are resolved and connected, advanced analytics works differently. Risk scores carry causal evidence. Anomalies have explanations. Propensity sees relationships, not just behaviour. ContexQ delivers "}
               <strong>five families of analytics on top of one shared context.</strong>
             </p>
-            <a className="text-link" href="#families">
-              {"Explore the five families "}
-              <span>↓</span>
+            <a className="text-link cq-cta" href="#families">
+              {"Explore the five families"}
             </a>
           </div>
           {" "}
@@ -314,7 +313,7 @@ export function View() {
             <p>See how ContexQ scores, explains and connects the entities behind your data.</p>
           </div>
           <div className="cta-stack">
-<Link prefetch={false} className="cta" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Advanced%20analytics%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20advanced%20analytics.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

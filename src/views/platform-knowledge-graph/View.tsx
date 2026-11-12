@@ -1,12 +1,12 @@
 // Generated from public/html/contexq-knowledge-graphs-ai.html.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-platform-network);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-platform-knowledge-graph);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 export function View() {
   return (
-    <ViewShell viewId="platform-network" className="v-platform-network cq-html" lang="en" bodyClassName="cq-body">
+    <ViewShell viewId="platform-knowledge-graph" className="v-platform-knowledge-graph cq-html" lang="en" bodyClassName="cq-body">
       <main>
         <section className="hero" aria-labelledby="hero-title">
           <div className="wrap hero-grid">
@@ -752,7 +752,7 @@ export function View() {
               <p>See how ContexQ builds a knowledge graph from your own data and external context.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="cta" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Knowledge%20graphs%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20knowledge%20graphs.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

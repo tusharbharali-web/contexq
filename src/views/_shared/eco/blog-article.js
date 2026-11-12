@@ -133,7 +133,7 @@ export default function run(cq) {
       el("p", "mt-2 text-[15px] text-[#64748B] leading-relaxed", {}, ["Speak with the ContexQ team about your data challenges."])
     ]),
     el("div", "flex flex-col items-start md:items-center gap-3 shrink-0", {}, [
-      el("a", "inline-flex items-center justify-center bg-[#2F6BFF] hover:bg-[#1E56E3] text-white text-sm font-semibold px-6 py-3 rounded-[4px] shadow-sm transition-colors shrink-0" + FOCUS, { href: GET_STARTED }, ["Talk to the team"]),
+      el("a", "cq-cta inline-flex items-center justify-center bg-[#2F6BFF] hover:bg-[#1E56E3] text-white text-sm font-semibold px-6 py-3 rounded-[4px] shadow-sm transition-colors shrink-0" + FOCUS, { href: GET_STARTED }, ["Talk to the team"]),
       el("p", "text-[13px] text-[#64748B]", {}, ["or mail us at ", el("a", "underline" + FOCUS, { href: "mailto:inquiry@contexq.com?subject=" + encodeURIComponent("Question about: " + post.title) + "&body=" + encodeURIComponent("Hi ContexQ team,\n\nI've just read \u201c" + post.title + "\u201d on the ContexQ blog and would like to discuss it with your team.\n\nName:\nCompany:\nRole:\nWhat we're looking to solve:\n\nThanks,"), style: "color:#2F6BFF;text-underline-offset:2px" }, ["inquiry@contexq.com"])])
     ])
   ]));

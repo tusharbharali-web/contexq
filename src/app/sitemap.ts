@@ -13,9 +13,9 @@ const routes: { path: string; priority: number }[] = [
   { path: '', priority: 1.0 },
 
   // Product
-  { path: '/Platform/cleansing', priority: 0.9 },
+  { path: '/Platform/analytics', priority: 0.9 },
   { path: '/Platform/entity', priority: 0.9 },
-  { path: '/Platform/network', priority: 0.9 },
+  { path: '/Platform/knowledge-graph', priority: 0.9 },
   { path: '/Platform/scores', priority: 0.9 },
   { path: '/Platform/actions', priority: 0.9 },
 
@@ -32,13 +32,13 @@ const routes: { path: string; priority: number }[] = [
   { path: '/Industries', priority: 0.8 },
   { path: '/Industries/finance', priority: 0.9 },
   { path: '/Industries/mfg', priority: 0.9 },
-  { path: '/Industries/goods', priority: 0.9 },
-  { path: '/Industries/health', priority: 0.9 },
+  { path: '/Industries/ecommerce', priority: 0.9 },
+  { path: '/Industries/insurance', priority: 0.9 },
   { path: '/Industries/telco', priority: 0.9 },
   { path: '/Industries/public-sector', priority: 0.9 },
 
   // Company
-  { path: '/company', priority: 0.7 },
+  { path: '/about', priority: 0.7 },
   { path: '/contact', priority: 0.7 },
   { path: '/careers', priority: 0.5 },
 

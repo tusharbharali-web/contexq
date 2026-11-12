@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
   // `output: "standalone"` is needed for Azure but breaks Netlify/Vercel's Next.js runtime.
   // Set BUILD_TARGET=azure in the Azure workflow to keep that build mode.
   ...(process.env.BUILD_TARGET === "azure" ? { output: "standalone" as const } : {}),
+  // Pages renamed to match their content; the old URLs keep working (permanent redirects).
+  async redirects() {
+    return [
+      { source: "/Industries/goods", destination: "/Industries/ecommerce", permanent: true },
+      { source: "/Industries/health", destination: "/Industries/insurance", permanent: true },
+      { source: "/company", destination: "/about", permanent: true },
+      { source: "/Platform/cleansing", destination: "/Platform/analytics", permanent: true },
+      { source: "/Platform/network", destination: "/Platform/knowledge-graph", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

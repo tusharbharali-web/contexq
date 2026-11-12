@@ -50,7 +50,7 @@ export function View() {
                     Disruption and fraud often start beyond the suppliers you pay. ContexQ helps you see them early and act with confidence.
                   </p>
                   {" "}
-                  <div className="hero-actions"><a className="btn" href="#teams">See how it works</a></div>
+                  <div className="hero-actions"><a className="btn cq-cta" href="#teams">See how it works</a></div>
                   {" "}
                   <p className="hero-proof"><span>Works alongside your ERP and sourcing tools</span></p>
                 </div>
@@ -1178,7 +1178,7 @@ export function View() {
               <p>Explore how ContexQ can help your team protect supply continuity and make better-informed sourcing and procurement decisions.</p>
             </div>
             <div className="cq-demo-act">
-              <Link prefetch={false} className="btn primary" href="/contact">Talk to the team</Link>
+              <Link prefetch={false} className="btn primary cq-cta" href="/contact">Talk to the team</Link>
               <p className="cq-mail-line">
                 {"or mail us at "}
                 <a href={"mailto:inquiry@contexq.com?subject=Supply%20chain%20intelligence%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20supply%20chain%20intelligence.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

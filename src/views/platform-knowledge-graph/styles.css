@@ -1,0 +1,504 @@
+/* Generated from public/html/contexq-knowledge-graphs-ai.html: the page's own CSS, scoped to .v-platform-knowledge-graph. */
+/* ---- isolation layer (generated) ----
+   Keeps the site's global Tailwind/base styles out of this view so the page
+   renders exactly like the original standalone HTML. */
+:where(.v-platform-knowledge-graph *:not(svg, svg *), .v-platform-knowledge-graph ::before, .v-platform-knowledge-graph ::after) { all: revert; }
+:where(.v-platform-knowledge-graph svg) { display: revert; vertical-align: revert; }
+/* The view root starts from initial values, like a fresh document's <html>,
+   instead of inheriting the site's fonts/line-height/colours. */
+:where(.v-platform-knowledge-graph) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-platform-knowledge-graph > .cq-body) { display: block; margin: 8px; }
+.v-platform-knowledge-graph.cq-html { position: relative; z-index: 0; isolation: isolate; }
+/* Page-level nav/footer: the site Header/Footer replace these. */
+.v-platform-knowledge-graph :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-platform-knowledge-graph > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-platform-knowledge-graph main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+.v-platform-knowledge-graph{
+  --navy:#061525;--deep:#091d32;--brand:#1873bc;--cyan:#6cd8f5;--orange:#faab40;
+  --bg:#ffffff;--pale:#f2f7fb;--soft:#eaf3fa;--card:#ffffff;
+  --ink:#102c48;--muted:#577087;--line:#d6e2ed;--link:#1873bc;--rule:#cbdce9;
+  --hi-bg:#fde8cf;--hi-ink:#8a4a00;--md-bg:#fff2c2;--md-ink:#6f5300;--lo-bg:#dcf2e3;--lo-ink:#1e6a3a;
+  --font:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+.v-platform-knowledge-graph *,.v-platform-knowledge-graph *::before,.v-platform-knowledge-graph *::after, .v-platform-knowledge-graph, .v-platform-knowledge-graph::before, .v-platform-knowledge-graph::after{box-sizing:inherit}
+.v-platform-knowledge-graph{background:var(--navy);scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+.v-platform-knowledge-graph .cq-body{margin:0;font:17px/1.6 var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+.v-platform-knowledge-graph .cq-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+.v-platform-knowledge-graph a{color:inherit;text-decoration:none}
+.v-platform-knowledge-graph button{font:inherit;cursor:pointer}
+.v-platform-knowledge-graph a:focus-visible,.v-platform-knowledge-graph button:focus-visible,.v-platform-knowledge-graph summary:focus-visible{outline:3px solid #42b7e6;outline-offset:4px;border-radius:2px}
+.v-platform-knowledge-graph h1,.v-platform-knowledge-graph h2,.v-platform-knowledge-graph h3,.v-platform-knowledge-graph h4,.v-platform-knowledge-graph p,.v-platform-knowledge-graph figure,.v-platform-knowledge-graph dl,.v-platform-knowledge-graph dd,.v-platform-knowledge-graph ul,.v-platform-knowledge-graph ol{margin:0}
+.v-platform-knowledge-graph ul,.v-platform-knowledge-graph ol{padding:0;list-style:none}
+.v-platform-knowledge-graph h1,.v-platform-knowledge-graph h2,.v-platform-knowledge-graph h3{font-weight:700;line-height:1.15;letter-spacing:-.025em}
+.v-platform-knowledge-graph h1{font-size:clamp(32px,3.6vw,46px)}
+.v-platform-knowledge-graph h2{font-size:clamp(26px,2.6vw,34px)}
+.v-platform-knowledge-graph h3{font-size:clamp(17px,1.3vw,19px);letter-spacing:-.015em}
+.v-platform-knowledge-graph p{color:var(--muted)}
+.v-platform-knowledge-graph img,.v-platform-knowledge-graph svg{max-width:100%}
+.v-platform-knowledge-graph .wrap{max-width:1220px;margin:0 auto;padding:0 32px}
+.v-platform-knowledge-graph .kicker{font-size:14px;font-weight:500;color:var(--link);margin-bottom:16px}
+.v-platform-knowledge-graph .sec{padding:96px 0}
+.v-platform-knowledge-graph .sec-pale{background:var(--pale)}
+.v-platform-knowledge-graph .lede{font-size:18px;line-height:1.6;margin-top:22px;max-width:60ch}
+.v-platform-knowledge-graph .measure{max-width:62ch}
+.v-platform-knowledge-graph .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* Header */
+.v-platform-knowledge-graph .header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);border-bottom:1px solid #1b3247}
+.v-platform-knowledge-graph .header .wrap{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.v-platform-knowledge-graph .brand{display:inline-flex;align-items:center;flex-shrink:0}
+.v-platform-knowledge-graph .brand img{display:block;height:auto;width:186px}
+.v-platform-knowledge-graph .nav{display:flex;align-items:center;gap:30px;font-size:13px;color:#c9d9e8}
+.v-platform-knowledge-graph .nav a:not(.button):hover{color:var(--cyan)}
+.v-platform-knowledge-graph .button{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;background:var(--brand);color:#fff;font-size:14px;font-weight:500;white-space:nowrap;border-radius:2px;transition:background .2s}
+.v-platform-knowledge-graph .button:hover{background:#12588f}
+.v-platform-knowledge-graph .nav .button{padding:10px 18px;font-size:13px}
+
+/* Hero */
+.v-platform-knowledge-graph .hero{background:radial-gradient(ellipse at 72% 46%,#0d3152 0%,#081d32 38%,var(--navy) 72%);color:#f3f8ff;overflow:hidden}
+.v-platform-knowledge-graph .hero-grid{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:28px;align-items:center;min-height:min(720px,calc(100vh - 72px));padding-top:48px;padding-bottom:40px}
+.v-platform-knowledge-graph .hero .kicker{color:#7fcbf5}
+.v-platform-knowledge-graph .hero h1{max-width:13ch;font-size:clamp(32px,3.6vw,46px);letter-spacing:-.025em}
+.v-platform-knowledge-graph .hero .lead{color:#b1c3d4;font-size:17px;line-height:1.65;margin-top:24px;max-width:44ch}
+.v-platform-knowledge-graph .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 30px;margin-top:34px}
+.v-platform-knowledge-graph .text-link{font-size:14px;color:#d6e7f5;border-bottom:1px solid #4c6c88;padding:6px 0}
+.v-platform-knowledge-graph .text-link:hover{color:var(--cyan);border-color:var(--cyan)}
+.v-platform-knowledge-graph .hero-visual{min-width:0;margin-right:-32px}
+.v-platform-knowledge-graph .stage{position:relative;height:clamp(440px,46vw,600px)}
+.v-platform-knowledge-graph .stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.v-platform-knowledge-graph .hero-caption{display:flex;align-items:center;gap:18px;margin:6px 32px 0 0;padding-top:16px;border-top:1px solid #213b55;min-height:64px}
+.v-platform-knowledge-graph .cap-body{flex:1;min-width:0}
+.v-platform-knowledge-graph .progress{display:flex;gap:6px;margin-bottom:10px}
+.v-platform-knowledge-graph .progress li{flex:1;height:2px;background:#22405c;position:relative;overflow:hidden}
+.v-platform-knowledge-graph .progress li span{position:absolute;inset:0 auto 0 0;width:0;background:var(--cyan)}
+.v-platform-knowledge-graph #stageText{color:#d6e9f9;font-size:14px;line-height:1.45;min-height:2.9em;transition:opacity .35s}
+.v-platform-knowledge-graph .icon-btn{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:1px solid #31506b;background:transparent;color:#b7d6e9;display:inline-flex;align-items:center;justify-content:center}
+.v-platform-knowledge-graph .icon-btn:hover{background:#163a58}
+.v-platform-knowledge-graph .icon-btn svg{width:12px;height:12px}
+
+/* Problem */
+.v-platform-knowledge-graph .problem-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:72px;align-items:center}
+.v-platform-knowledge-graph .truths{margin-top:34px;border-top:1px solid var(--line)}
+.v-platform-knowledge-graph .truths li{padding:16px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}
+.v-platform-knowledge-graph .closing-line{margin-top:24px;font-size:15px}
+.v-platform-knowledge-graph .record-fig{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:center;position:relative}
+.v-platform-knowledge-graph .record-card{background:var(--card);border:1px solid var(--line);border-radius:4px;box-shadow:0 22px 50px rgba(16,44,72,.08);padding:22px 22px 10px;position:relative;z-index:1}
+.v-platform-knowledge-graph .rc-src{font-size:12px;color:var(--muted)}
+.v-platform-knowledge-graph .rc-name{font-size:19px;font-weight:500;margin:4px 0 14px;letter-spacing:-.02em}
+.v-platform-knowledge-graph .record-card dl div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:13px}
+.v-platform-knowledge-graph .record-card dt{color:var(--muted)}
+.v-platform-knowledge-graph .record-card dd{color:var(--ink);text-align:right}
+.v-platform-knowledge-graph .ghosts{position:relative;padding-left:44px}
+.v-platform-knowledge-graph .ghosts li{position:relative;padding:14px 16px;margin:14px 0;border:1px dashed #9fc1da;border-radius:4px;font-size:13.5px;line-height:1.45;color:var(--ink);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.v-platform-knowledge-graph .ghosts li::before{content:"";position:absolute;right:100%;top:50%;width:44px;border-top:1px dashed #9fc1da}
+.v-platform-knowledge-graph .ghosts li b{display:block;font-weight:500;color:var(--link);font-size:12px;margin-bottom:2px}
+.v-platform-knowledge-graph .ghosts::before{content:"";position:absolute;left:0;top:34px;bottom:34px;border-left:1px dashed #9fc1da}
+.v-platform-knowledge-graph .record-fig figcaption{grid-column:1/-1;margin-top:18px;font-size:13px;color:var(--muted)}
+
+/* Expanders */
+.v-platform-knowledge-graph .more{border-top:1px solid var(--rule);margin-top:28px}
+.v-platform-knowledge-graph .more details{border-bottom:1px solid var(--rule)}
+.v-platform-knowledge-graph .more summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;font-size:16px;font-weight:500;color:var(--ink)}
+.v-platform-knowledge-graph .more summary::-webkit-details-marker{display:none}
+.v-platform-knowledge-graph .plus{position:relative;width:30px;height:30px;border:1px solid var(--rule);border-radius:50%;flex-shrink:0;transition:background .2s,border-color .2s}
+.v-platform-knowledge-graph .plus::before,.v-platform-knowledge-graph .plus::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--link);transform:translate(-50%,-50%);transition:transform .25s}
+.v-platform-knowledge-graph .plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.v-platform-knowledge-graph details[open]>summary .plus::after{transform:translate(-50%,-50%) rotate(0deg)}
+.v-platform-knowledge-graph summary:hover .plus{border-color:var(--link)}
+.v-platform-knowledge-graph .more .body{padding:0 44px 20px 0;font-size:15px}
+.v-platform-knowledge-graph .more .body p+p,.v-platform-knowledge-graph .more .body p+ul,.v-platform-knowledge-graph .more .body ul+p{margin-top:12px}
+.v-platform-knowledge-graph .more .body ul li{position:relative;padding-left:16px;color:var(--muted);margin-top:6px}
+.v-platform-knowledge-graph .more .body ul li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:var(--link)}
+
+/* Context */
+.v-platform-knowledge-graph .context-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.v-platform-knowledge-graph .sources{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.v-platform-knowledge-graph .sources h3{font-size:17px;letter-spacing:-.01em;padding-top:16px;border-top:2px solid #6ab6e5;margin-bottom:10px}
+.v-platform-knowledge-graph .sources .ext h3{border-color:var(--orange)}
+.v-platform-knowledge-graph .sources li{font-size:14px;line-height:1.5;padding:4px 0;color:var(--muted)}
+.v-platform-knowledge-graph .universe svg{display:block;width:100%;height:auto}
+.v-platform-knowledge-graph .u-outer{fill:var(--bg);stroke:#9fc1da}
+.v-platform-knowledge-graph .u-inner{fill:color-mix(in srgb,var(--brand) 9%,var(--bg));stroke:var(--brand)}
+.v-platform-knowledge-graph .u-dot{fill:#9fbcd4}
+.v-platform-knowledge-graph .u-dot.in{fill:var(--brand)}
+.v-platform-knowledge-graph .u-dot.ext{fill:var(--orange)}
+.v-platform-knowledge-graph .u-link{stroke:var(--brand);stroke-opacity:.35;fill:none}
+.v-platform-knowledge-graph .u-label{font:500 14px var(--font);fill:var(--ink)}
+.v-platform-knowledge-graph .u-sub{font:13px var(--font);fill:var(--muted)}
+.v-platform-knowledge-graph .u-lead{stroke:var(--muted);stroke-opacity:.5}
+
+/* Who is who */
+.v-platform-knowledge-graph .whowho-head{max-width:720px}
+.v-platform-knowledge-graph .panels{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.v-platform-knowledge-graph .panel{border-top:1px solid var(--ink);padding-top:22px}
+.v-platform-knowledge-graph .panel h3{margin-bottom:10px}
+.v-platform-knowledge-graph .panel>p{font-size:15px;max-width:52ch}
+.v-platform-knowledge-graph .er{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);align-items:center;gap:8px}
+.v-platform-knowledge-graph .chips{display:grid;gap:8px}
+.v-platform-knowledge-graph .chip{border:1px solid var(--line);background:var(--card);border-radius:3px;padding:9px 12px;font-size:13px;line-height:1.35;color:var(--ink)}
+.v-platform-knowledge-graph .chip small{display:block;font-size:11.5px;color:var(--muted)}
+.v-platform-knowledge-graph .er-arrow{height:1px;background:var(--muted);position:relative}
+.v-platform-knowledge-graph .er-arrow::after{content:"";position:absolute;right:0;top:-4px;border:4px solid transparent;border-left:6px solid var(--muted);border-right:0}
+.v-platform-knowledge-graph .entity{border:1.5px solid var(--brand);border-radius:4px;padding:14px;background:color-mix(in srgb,var(--brand) 7%,var(--card))}
+.v-platform-knowledge-graph .entity b{display:block;font-weight:500;font-size:15px}
+.v-platform-knowledge-graph .entity span{display:block;font-size:12px;color:var(--muted);margin-top:4px;line-height:1.5}
+.v-platform-knowledge-graph .apart-label{margin-top:22px;font-size:12.5px;color:var(--muted)}
+.v-platform-knowledge-graph .apart{margin-top:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.v-platform-knowledge-graph .apart .chip{flex:1;min-width:150px}
+.v-platform-knowledge-graph .neq{font-size:20px;color:var(--orange);font-weight:500;line-height:1}
+.v-platform-knowledge-graph .kg-fig{margin-top:22px}
+.v-platform-knowledge-graph .kg-fig svg{display:block;width:100%;height:auto}
+.v-platform-knowledge-graph .kg-node{fill:var(--card);stroke:var(--brand);stroke-width:1.4}
+.v-platform-knowledge-graph .kg-center{fill:var(--brand)}
+.v-platform-knowledge-graph .kg-edge{stroke:var(--muted);stroke-opacity:.55;stroke-width:1}
+.v-platform-knowledge-graph .kg-t{font:13px var(--font);fill:var(--ink)}
+.v-platform-knowledge-graph .kg-rel{font:500 11.5px var(--font);fill:var(--link)}
+.v-platform-knowledge-graph .kg-c{font:500 13px var(--font);fill:#fff}
+
+/* Capabilities (dark) */
+.v-platform-knowledge-graph .dark{background:var(--navy);color:#e9f3fc;color-scheme:dark;
+  --bg:#061525;--pale:#0b2036;--soft:#0d2741;--card:#0b2036;
+  --ink:#e9f3fc;--muted:#a6b9cc;--line:#20384f;--link:#81c4ed;--rule:#294058}
+.v-platform-knowledge-graph .dark h2,.v-platform-knowledge-graph .dark h3{color:#f3f8ff}
+.v-platform-knowledge-graph #context.dark{background:radial-gradient(ellipse at 78% 50%,#0d3152 0%,#081d32 40%,var(--navy) 75%)}
+.v-platform-knowledge-graph .trust.dark{border-top:0;padding:72px 0 56px}
+.v-platform-knowledge-graph .dark .sources li{color:#a6b9cc}
+.v-platform-knowledge-graph .dark .u-outer{fill:#081d32;stroke:#3d6487}
+.v-platform-knowledge-graph .dark .u-inner{fill:#0d3152;stroke:#6cd8f5}
+.v-platform-knowledge-graph .dark .u-dot{fill:#4f7697}.v-platform-knowledge-graph .dark .u-dot.in{fill:#6cd8f5}.v-platform-knowledge-graph .dark .u-dot.ext{fill:var(--orange)}
+.v-platform-knowledge-graph .dark .u-link{stroke:#6cd8f5}
+.v-platform-knowledge-graph .dark .trust-grid li span{color:#a6b9cc}
+.v-platform-knowledge-graph .dark p{color:#a6b9cc}
+.v-platform-knowledge-graph .dark .kicker{color:#81c4ed}
+.v-platform-knowledge-graph .cap-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:72px;align-items:end;margin-bottom:24px}
+.v-platform-knowledge-graph .cap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center;padding:56px 0;border-top:1px solid #20384f}
+.v-platform-knowledge-graph .cap:last-child{padding-bottom:0}
+.v-platform-knowledge-graph .cap-n{font-size:14px;color:#81c4ed;margin-bottom:14px}
+.v-platform-knowledge-graph .cap h3{font-size:clamp(26px,2.6vw,34px);max-width:20ch}
+.v-platform-knowledge-graph .cap .cap-lead{margin-top:16px;font-size:16px;max-width:52ch}
+.v-platform-knowledge-graph .dark .more{border-color:#294058}
+.v-platform-knowledge-graph .dark .more details{border-color:#294058}
+.v-platform-knowledge-graph .dark .more summary{color:#e9f3fc}
+.v-platform-knowledge-graph .dark .plus{border-color:#34516d}
+.v-platform-knowledge-graph .dark .plus::before,.v-platform-knowledge-graph .dark .plus::after{background:var(--cyan)}
+.v-platform-knowledge-graph .dark .more .body ul li{color:#a6b9cc}
+.v-platform-knowledge-graph .dark .more .body ul li::before{background:var(--cyan)}
+.v-platform-knowledge-graph .cap-visual{background:linear-gradient(140deg,#0b2239,#081a2c);border:1px solid #1d3a55;border-radius:4px;padding:26px}
+.v-platform-knowledge-graph .cap-visual svg{display:block;width:100%;height:auto}
+.v-platform-knowledge-graph .patterns{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#1d3a55;border:1px solid #1d3a55;border-radius:4px;overflow:hidden}
+.v-platform-knowledge-graph .pattern{background:#0a1f34;padding:18px 18px 20px}
+.v-platform-knowledge-graph .pattern svg{display:block;width:100%;max-width:150px;height:auto;margin-bottom:12px}
+.v-platform-knowledge-graph .pattern h4{font-size:14px;font-weight:500;color:#e9f3fc;margin-bottom:4px}
+.v-platform-knowledge-graph .pattern p{font-size:12.5px;line-height:1.5}
+.v-platform-knowledge-graph .g-n{fill:var(--cyan)}
+.v-platform-knowledge-graph .g-h{fill:var(--orange)}
+.v-platform-knowledge-graph .g-e{stroke:#5d9cc7;stroke-width:1.3;fill:none}
+.v-platform-knowledge-graph .g-eh{stroke:var(--orange);stroke-width:1.5;fill:none}
+.v-platform-knowledge-graph .v-t{font:12px var(--font);fill:#a6b9cc}
+.v-platform-knowledge-graph .v-tb{font:500 12px var(--font);fill:#e9f3fc}
+.v-platform-knowledge-graph .v-cell{fill:#0e2a45;stroke:#24476a}
+
+/* Applications */
+.v-platform-knowledge-graph .apps-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}
+.v-platform-knowledge-graph .apps-intro{position:sticky;top:120px}
+.v-platform-knowledge-graph .apps{border-top:1px solid var(--rule)}
+.v-platform-knowledge-graph .apps details{border-bottom:1px solid var(--rule)}
+.v-platform-knowledge-graph .apps summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;padding:24px 0}
+.v-platform-knowledge-graph .apps summary::-webkit-details-marker{display:none}
+.v-platform-knowledge-graph .apps summary h3{font-size:22px}
+.v-platform-knowledge-graph .apps summary .q{grid-column:1;font-size:15px;color:var(--muted);max-width:56ch}
+.v-platform-knowledge-graph .apps summary .plus{grid-column:2;grid-row:1/3;align-self:center}
+.v-platform-knowledge-graph .apps .app-body{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:0 54px 28px 0}
+.v-platform-knowledge-graph .apps .app-body h4{font-size:13px;font-weight:500;color:var(--link);margin-bottom:6px}
+.v-platform-knowledge-graph .apps .app-body p{font-size:14.5px}
+.v-platform-knowledge-graph .apps .teams{grid-column:1/-1;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.v-platform-knowledge-graph .apps .teams b{font-weight:500;color:var(--ink)}
+
+/* Workbench */
+.v-platform-knowledge-graph .wb-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
+.v-platform-knowledge-graph .screen{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 26px 60px rgba(16,44,72,.1);overflow:hidden}
+.v-platform-knowledge-graph .screen-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--pale)}
+.v-platform-knowledge-graph .screen-bar i{width:9px;height:9px;border-radius:50%;background:#c7d6e3}
+.v-platform-knowledge-graph .screen-bar span{margin-left:10px;font-size:12px;color:var(--muted)}
+.v-platform-knowledge-graph .screen-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 20px 12px;flex-wrap:wrap}
+.v-platform-knowledge-graph .screen-head b{font-weight:500;font-size:16px}
+.v-platform-knowledge-graph .screen-head span{font-size:12px;color:var(--muted)}
+.v-platform-knowledge-graph .risk-table{width:100%;border-collapse:collapse;font-size:13px}
+.v-platform-knowledge-graph .risk-table th{font-weight:500;font-size:12px;color:var(--muted);text-align:left;padding:8px 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.v-platform-knowledge-graph .risk-table td{padding:12px 20px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink);line-height:1.45}
+.v-platform-knowledge-graph .risk-table td:first-child{font-weight:500;white-space:nowrap}
+.v-platform-knowledge-graph .risk-table td:last-child{color:var(--muted)}
+.v-platform-knowledge-graph .lvl{display:inline-block;font-size:11.5px;font-weight:500;padding:2px 8px;border-radius:10px}
+.v-platform-knowledge-graph .lvl.hi{background:var(--hi-bg);color:var(--hi-ink)}
+.v-platform-knowledge-graph .lvl.md{background:var(--md-bg);color:var(--md-ink)}
+.v-platform-knowledge-graph .lvl.lo{background:var(--lo-bg);color:var(--lo-ink)}
+.v-platform-knowledge-graph .table-scroll{overflow-x:auto}
+.v-platform-knowledge-graph .tools{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-top:30px;border-top:1px solid var(--line)}
+.v-platform-knowledge-graph .tools li{padding:14px 0;border-bottom:1px solid var(--line)}
+.v-platform-knowledge-graph .tools b{display:block;font-weight:500;font-size:15px}
+.v-platform-knowledge-graph .tools span{display:block;font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:2px}
+.v-platform-knowledge-graph .delivery{margin-top:28px;font-size:15px;border-left:2px solid var(--brand);padding-left:18px}
+
+/* Trust */
+.v-platform-knowledge-graph .trust{padding:64px 0;border-top:1px solid var(--line)}
+.v-platform-knowledge-graph .trust-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}
+.v-platform-knowledge-graph .trust h2{font-size:clamp(26px,2.6vw,34px)}
+.v-platform-knowledge-graph .trust ul{display:grid;grid-template-columns:1fr 1fr;gap:22px 32px}
+.v-platform-knowledge-graph .trust li b{display:block;font-weight:500;font-size:15px;margin-bottom:4px}
+.v-platform-knowledge-graph .trust li span{font-size:14px;color:var(--muted);line-height:1.5;display:block}
+
+/* CTA */
+.v-platform-knowledge-graph .cta{background:var(--soft);padding:88px 0}
+.v-platform-knowledge-graph .cta .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:56px;align-items:end}
+.v-platform-knowledge-graph .cta h2{font-size:clamp(28px,3.2vw,40px);max-width:22ch}
+.v-platform-knowledge-graph .cta p{margin-top:18px;font-size:16px;max-width:60ch}
+.v-platform-knowledge-graph .cta .button{padding:16px 30px;font-size:15px}
+.v-platform-knowledge-graph footer{background:var(--navy);color:#8aa1b7;padding:28px 0;font-size:12px}
+.v-platform-knowledge-graph footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.v-platform-knowledge-graph footer img{width:150px;height:auto;display:block}
+.v-platform-knowledge-graph footer a:hover{color:var(--cyan)}
+
+/* Responsive */
+@media (max-width:1080px){
+  .v-platform-knowledge-graph .wrap{padding:0 26px}
+  .v-platform-knowledge-graph .hero-visual{margin-right:-26px}
+  .v-platform-knowledge-graph .hero-caption{margin-right:26px}
+  .v-platform-knowledge-graph .problem-grid,.v-platform-knowledge-graph .context-grid,.v-platform-knowledge-graph .cap,.v-platform-knowledge-graph .apps-grid,.v-platform-knowledge-graph .wb-grid,.v-platform-knowledge-graph .trust-grid,.v-platform-knowledge-graph .cap-head{gap:44px}
+  .v-platform-knowledge-graph .nav{gap:22px}
+}
+@media (max-width:900px){
+  .v-platform-knowledge-graph .nav a:not(.button){display:none}
+  .v-platform-knowledge-graph .hero-grid{grid-template-columns:1fr;min-height:0;padding-top:44px;gap:20px}
+  .v-platform-knowledge-graph .hero h1{max-width:16ch}
+  .v-platform-knowledge-graph .hero-visual{margin:0 -26px}
+  .v-platform-knowledge-graph .hero-caption{margin:6px 26px 0}
+  .v-platform-knowledge-graph .stage{height:min(78vw,460px)}
+  .v-platform-knowledge-graph .problem-grid,.v-platform-knowledge-graph .context-grid,.v-platform-knowledge-graph .cap,.v-platform-knowledge-graph .apps-grid,.v-platform-knowledge-graph .wb-grid,.v-platform-knowledge-graph .trust-grid,.v-platform-knowledge-graph .cap-head{grid-template-columns:1fr}
+  .v-platform-knowledge-graph .cap-head{gap:16px}
+  .v-platform-knowledge-graph .apps-intro{position:static}
+  .v-platform-knowledge-graph .panels{grid-template-columns:1fr;gap:56px}
+  .v-platform-knowledge-graph .wb-copy{order:-1}
+  .v-platform-knowledge-graph .sec{padding:72px 0}
+  .v-platform-knowledge-graph .cta .wrap{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:600px){
+  .v-platform-knowledge-graph .wrap{padding:0 20px}
+  .v-platform-knowledge-graph .header .wrap{height:64px}
+  .v-platform-knowledge-graph .brand img{width:150px}
+  .v-platform-knowledge-graph .nav .button{padding:9px 14px}
+  .v-platform-knowledge-graph .hero-visual{margin:0 -20px}
+  .v-platform-knowledge-graph .hero-caption{margin:6px 20px 0}
+  .v-platform-knowledge-graph .stage{height:420px}
+  .v-platform-knowledge-graph .lede{font-size:16.5px}
+  .v-platform-knowledge-graph .record-fig{grid-template-columns:1fr}
+  .v-platform-knowledge-graph .ghosts{padding-left:22px;margin-top:6px}
+  .v-platform-knowledge-graph .ghosts li::before{width:22px}
+  .v-platform-knowledge-graph .ghosts::before{top:0}
+  .v-platform-knowledge-graph .sources{grid-template-columns:1fr;gap:20px}
+  .v-platform-knowledge-graph .er{grid-template-columns:1fr;gap:12px}
+  .v-platform-knowledge-graph .er-arrow{width:1px;height:24px;justify-self:center}
+  .v-platform-knowledge-graph .er-arrow::after{right:-4px;top:auto;bottom:0;border:4px solid transparent;border-top:6px solid var(--muted);border-bottom:0}
+  .v-platform-knowledge-graph .patterns{grid-template-columns:1fr 1fr}
+  .v-platform-knowledge-graph .apps .app-body{grid-template-columns:1fr;padding-right:0;gap:16px}
+  .v-platform-knowledge-graph .apps summary h3{font-size:20px}
+  .v-platform-knowledge-graph .tools,.v-platform-knowledge-graph .trust ul{grid-template-columns:1fr}
+  .v-platform-knowledge-graph .more .body{padding-right:0}
+  .v-platform-knowledge-graph .cap-visual{padding:16px}
+  .v-platform-knowledge-graph .sec{padding:60px 0}
+  .v-platform-knowledge-graph .risk-table td,.v-platform-knowledge-graph .risk-table th{padding-left:14px;padding-right:14px}
+  .v-platform-knowledge-graph .kg-t{font-size:17px}.v-platform-knowledge-graph .kg-rel{font-size:15px}.v-platform-knowledge-graph .kg-c{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  .v-platform-knowledge-graph{scroll-behavior:auto}
+  .v-platform-knowledge-graph *, .v-platform-knowledge-graph{transition:none!important}
+}
+
+
+
+
+/* =====================================================================
+   Telecom design system
+   The knowledge-graph page restyled to match the telecom page (src/views/industry-telco):
+   same IBM Plex Sans type scale, ContexQ colour tokens, buttons, cards, section rhythm and
+   the industry pages' content width / hero height. Content is unchanged apart from the
+   removed eyebrows and the added closing CTA. Rules here override the ones above.
+   ===================================================================== */
+.v-platform-knowledge-graph{
+  --navy-950:#050F1C;--navy-900:#081A2E;--navy-850:#0C2038;--navy-800:#111C2B;--navy-700:#1E2D42;
+  --blue-100:#E6F0FF;--blue-400:#5BA0FF;--blue-500:#2F86FF;--blue-600:#1F6FEB;
+  --white:#FFFFFF;--slate-50:#F3F6FB;--slate-200:#E1E7F0;--slate-400:#93A4BF;--slate-500:#5B6B86;--slate-600:#475873;--ink-900:#0B1B2E;
+  --accent-amber:#F5A524;--accent-cyan:#22C3E6;--accent-green:#34D399;--accent-violet:#8B7CF6;--accent-coral:#F4647A;
+  --radius-cta:4px;--radius-control:4px;--radius-card:8px;--radius-panel:12px;--radius-pill:999px;
+  /* the page's own variables, pointed at the tokens */
+  --navy:var(--navy-950);--deep:var(--navy-900);--brand:var(--blue-500);--cyan:var(--accent-cyan);--orange:var(--accent-amber);
+  --bg:var(--white);--pale:var(--slate-50);--soft:var(--slate-50);--card:var(--white);
+  --ink:var(--ink-900);--muted:var(--slate-600);--line:var(--slate-200);--link:var(--blue-500);--rule:var(--slate-200);
+  --hi-bg:#FDE4E8;--hi-ink:#B4233A;--md-bg:#FDF0D5;--md-ink:#8A5A00;--lo-bg:#D9F5EA;--lo-ink:#11704B;
+  --font:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  --cq-gutter:clamp(20px,4vw,48px);
+  font-family:'IBM Plex Sans',sans-serif;
+  background:var(--navy-950);scroll-padding-top:calc(var(--site-header-height,76px) + 20px);
+}
+
+/* ---- base ---- */
+.v-platform-knowledge-graph .cq-body{font:400 15px/24px 'IBM Plex Sans',Arial,sans-serif;color:var(--ink-900);background:var(--white)}
+.v-platform-knowledge-graph h1,.v-platform-knowledge-graph h2,.v-platform-knowledge-graph h3{font-weight:600}
+.v-platform-knowledge-graph h2{font-size:32px;line-height:40px;letter-spacing:-.015em}
+.v-platform-knowledge-graph h3{font-size:24px;line-height:32px;letter-spacing:-.01em}
+.v-platform-knowledge-graph p{color:var(--slate-600)}
+.v-platform-knowledge-graph a:focus-visible,.v-platform-knowledge-graph button:focus-visible,.v-platform-knowledge-graph summary:focus-visible{outline:3px solid var(--blue-400);outline-offset:5px;border-radius:0}
+/* content width + gutters shared with the industry pages (insurance page's rule) */
+.v-platform-knowledge-graph .wrap{width:min(1200px,calc(100% - 2 * var(--cq-gutter)));max-width:none;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
+.v-platform-knowledge-graph .lede{font-size:18px;line-height:28px;margin-top:20px}
+.v-platform-knowledge-graph .sec{padding:76px 0;background:var(--white)}
+.v-platform-knowledge-graph .sec-pale{background:var(--slate-50)}
+
+/* ---- dark sections ---- */
+.v-platform-knowledge-graph .dark{background:var(--navy-950);color:var(--white);
+  --bg:var(--navy-950);--pale:var(--navy-900);--soft:var(--navy-900);--card:var(--navy-900);
+  --ink:var(--white);--muted:var(--slate-400);--line:var(--navy-700);--link:var(--blue-400);--rule:var(--navy-700)}
+.v-platform-knowledge-graph #context.dark{background:var(--navy-950)}
+.v-platform-knowledge-graph .dark h2,.v-platform-knowledge-graph .dark h3{color:var(--white)}
+.v-platform-knowledge-graph .dark p,.v-platform-knowledge-graph .dark .sources li,.v-platform-knowledge-graph .dark .more .body ul li{color:var(--slate-400)}
+.v-platform-knowledge-graph .dark .u-outer{fill:var(--navy-900);stroke:var(--navy-700)}
+.v-platform-knowledge-graph .dark .u-inner{fill:var(--navy-850);stroke:var(--accent-cyan)}
+.v-platform-knowledge-graph .dark .u-dot{fill:var(--slate-500)}
+.v-platform-knowledge-graph .dark .u-dot.in,.v-platform-knowledge-graph .dark .u-link{fill:var(--accent-cyan);stroke:var(--accent-cyan)}
+.v-platform-knowledge-graph .dark .u-link{fill:none}
+.v-platform-knowledge-graph .dark .more,.v-platform-knowledge-graph .dark .more details{border-color:var(--navy-700)}
+.v-platform-knowledge-graph .dark .more summary{color:var(--white)}
+.v-platform-knowledge-graph .dark .plus{border-color:var(--navy-700)}
+.v-platform-knowledge-graph .dark .plus::before,.v-platform-knowledge-graph .dark .plus::after,.v-platform-knowledge-graph .dark .more .body ul li::before{background:var(--blue-400)}
+
+/* ---- hero ---- */
+.v-platform-knowledge-graph .hero{background:var(--navy-950);color:var(--white);padding-top:var(--site-header-height,76px)}
+.v-platform-knowledge-graph .hero-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:32px;min-height:0;padding:50px 0 26px}
+.v-platform-knowledge-graph .hero h1{max-width:none;font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:650;color:var(--white)}
+.v-platform-knowledge-graph .hero .lead{font-size:1.08rem;line-height:1.6;color:var(--slate-400);max-width:440px;margin-top:24px}
+.v-platform-knowledge-graph .hero-visual{margin-right:0}
+.v-platform-knowledge-graph .hero-caption{margin:6px 0 0;border-top-color:var(--navy-700)}
+.v-platform-knowledge-graph .progress li{background:var(--navy-700)}
+.v-platform-knowledge-graph .progress li span{background:var(--blue-500)}
+.v-platform-knowledge-graph #stageText{color:var(--slate-400);font-size:15px;line-height:24px;min-height:48px}
+.v-platform-knowledge-graph .icon-btn{border:1px solid var(--navy-700);border-radius:var(--radius-control);color:var(--slate-400)}
+.v-platform-knowledge-graph .icon-btn:hover{background:var(--navy-800);color:var(--white)}
+/* industry hero height on desktop layouts: 840px, content centred */
+@media (min-width:1101px){.v-platform-knowledge-graph section.hero{box-sizing:border-box;min-height:840px;display:flex;flex-direction:column;justify-content:center}}
+
+/* ---- why context matters ---- */
+.v-platform-knowledge-graph .truths li{font-size:18px;line-height:28px;color:var(--ink-900)}
+.v-platform-knowledge-graph .closing-line{font-size:15px;line-height:24px}
+.v-platform-knowledge-graph .record-card{border-radius:var(--radius-card);border-color:var(--slate-200);box-shadow:0 22px 50px rgba(11,27,46,.08)}
+.v-platform-knowledge-graph .rc-src,.v-platform-knowledge-graph .record-fig figcaption{font-size:13px;line-height:20px}
+.v-platform-knowledge-graph .rc-name{font-size:18px;line-height:28px;font-weight:600;letter-spacing:-.01em}
+.v-platform-knowledge-graph .ghosts li{border-radius:var(--radius-card);border-color:#A9C7F0}
+.v-platform-knowledge-graph .ghosts li::before,.v-platform-knowledge-graph .ghosts::before{border-color:#A9C7F0}
+.v-platform-knowledge-graph .ghosts li b{color:var(--blue-500);font-size:13px}
+
+/* expanders = telecom accordion */
+.v-platform-knowledge-graph .more summary{font-size:15px;line-height:24px;font-weight:600}
+.v-platform-knowledge-graph .plus{width:32px;height:32px;border-color:var(--slate-200)}
+.v-platform-knowledge-graph .plus::before,.v-platform-knowledge-graph .plus::after{width:12px;background:var(--blue-500)}
+.v-platform-knowledge-graph summary:hover .plus{border-color:var(--blue-500)}
+.v-platform-knowledge-graph .more .body{font-size:15px;line-height:24px}
+.v-platform-knowledge-graph .more .body ul li::before{background:var(--blue-500)}
+
+/* ---- your data, in context ---- */
+.v-platform-knowledge-graph .sources h3{font-size:18px;line-height:28px;letter-spacing:0;border-top:2px solid var(--blue-500)}
+.v-platform-knowledge-graph .sources .ext h3{border-color:var(--accent-amber)}
+.v-platform-knowledge-graph .sources li{font-size:15px;line-height:24px}
+
+/* ---- entity resolution and knowledge graphs ---- */
+.v-platform-knowledge-graph .panel{border-top-color:var(--ink-900)}
+.v-platform-knowledge-graph .panel>p{font-size:15px;line-height:24px}
+.v-platform-knowledge-graph .chip{border-radius:var(--radius-control);border-color:var(--slate-200);font-size:13px;line-height:20px}
+.v-platform-knowledge-graph .chip small{font-size:12px;line-height:18px;color:var(--slate-600)}
+.v-platform-knowledge-graph .entity{border-radius:var(--radius-card);border-color:var(--blue-500);background:var(--blue-100)}
+.v-platform-knowledge-graph .entity b{font-weight:600}
+.v-platform-knowledge-graph .entity span,.v-platform-knowledge-graph .apart-label{font-size:13px;line-height:20px;color:var(--slate-600)}
+.v-platform-knowledge-graph .neq{color:var(--accent-coral)}
+.v-platform-knowledge-graph .kg-node{stroke:var(--blue-500)}
+.v-platform-knowledge-graph .kg-center{fill:var(--blue-500)}
+
+/* ---- platform capabilities (dark) ---- */
+.v-platform-knowledge-graph .cap{border-top-color:var(--navy-700)}
+.v-platform-knowledge-graph .cap h3{font-size:24px;line-height:32px;max-width:22ch}
+.v-platform-knowledge-graph .cap .cap-lead{font-size:15px;line-height:24px}
+.v-platform-knowledge-graph .cap-visual{background:var(--navy-900);border-color:var(--navy-700);border-radius:var(--radius-panel)}
+.v-platform-knowledge-graph .patterns{background:var(--navy-700);border-color:var(--navy-700);border-radius:var(--radius-panel)}
+.v-platform-knowledge-graph .pattern{background:var(--navy-900)}
+.v-platform-knowledge-graph .pattern h4{font-size:15px;line-height:24px;font-weight:600;color:var(--white)}
+.v-platform-knowledge-graph .pattern p{font-size:13px;line-height:20px}
+.v-platform-knowledge-graph .g-e{stroke:var(--blue-400)}
+.v-platform-knowledge-graph .g-h{fill:var(--accent-amber)}
+.v-platform-knowledge-graph .g-eh{stroke:var(--accent-amber)}
+.v-platform-knowledge-graph .v-t{fill:var(--slate-400)}
+.v-platform-knowledge-graph .v-tb{fill:var(--white)}
+.v-platform-knowledge-graph .v-cell{fill:var(--navy-850);stroke:var(--navy-700)}
+
+/* ---- business applications = telecom accordion ---- */
+.v-platform-knowledge-graph .apps-intro{top:calc(var(--site-header-height,76px) + 40px)}
+.v-platform-knowledge-graph .apps summary h3{font-size:24px;line-height:32px}
+.v-platform-knowledge-graph .apps details[open] summary h3{color:var(--blue-500)}
+.v-platform-knowledge-graph .apps summary .q{font-size:15px;line-height:24px;color:var(--slate-600)}
+.v-platform-knowledge-graph .apps .app-body h4{font-size:13px;line-height:20px;font-weight:600;color:var(--blue-500)}
+.v-platform-knowledge-graph .apps .app-body p{font-size:15px;line-height:24px}
+.v-platform-knowledge-graph .apps .teams{font-size:13px;line-height:20px;color:var(--slate-600)}
+.v-platform-knowledge-graph .apps .teams b{font-weight:600}
+
+/* ---- workbench / table ---- */
+.v-platform-knowledge-graph .screen{border-radius:var(--radius-panel);border-color:var(--slate-200)}
+.v-platform-knowledge-graph .lvl{border-radius:var(--radius-pill);font-size:12px}
+.v-platform-knowledge-graph .delivery{border-left:0;padding-left:0;font-size:13px;line-height:20px}
+
+/* ---- trust ---- */
+.v-platform-knowledge-graph .trust{padding:76px 0;background:var(--slate-50);border-top:0}
+.v-platform-knowledge-graph .trust h2{font-size:32px;line-height:40px}
+.v-platform-knowledge-graph .trust .lede{font-size:18px;line-height:28px}
+.v-platform-knowledge-graph .trust li b{font-size:18px;line-height:28px;font-weight:600;color:var(--ink-900)}
+.v-platform-knowledge-graph .trust li span{font-size:15px;line-height:24px;color:var(--slate-600)}
+
+/* ---- closing + CTA = telecom closing ---- */
+.v-platform-knowledge-graph .closing{padding:60px 0;background:var(--navy-900);color:var(--white)}
+.v-platform-knowledge-graph .closing .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.v-platform-knowledge-graph .closing h2{max-width:660px;color:var(--white)}
+.v-platform-knowledge-graph .closing p{font-size:15px;line-height:24px;color:var(--slate-400);margin-top:15px}
+.v-platform-knowledge-graph .closing .cta{display:inline-flex;align-items:center;justify-content:center;gap:26px;background:var(--blue-500);color:var(--white);padding:16px 32px;border-radius:var(--radius-cta);font-size:14px;line-height:20px;font-weight:600;white-space:nowrap;transition:all 150ms ease}
+.v-platform-knowledge-graph .closing .cta:hover{background:var(--blue-400)}
+.v-platform-knowledge-graph .closing .cta:active{background:var(--blue-600)}
+.v-platform-knowledge-graph .closing .cta span{font-size:16px;line-height:1}
+
+/* ---- responsive: telecom breakpoints ---- */
+@media (max-width:1100px){
+  .v-platform-knowledge-graph .hero h1{font-size:clamp(2.2rem,8vw,3.2rem);line-height:1.04}
+  .v-platform-knowledge-graph .hero .lead{font-size:1.05rem}
+}
+@media (max-width:900px){
+  .v-platform-knowledge-graph .hero-grid{grid-template-columns:1fr;padding-top:50px}
+  .v-platform-knowledge-graph .hero-visual{margin:0}
+  .v-platform-knowledge-graph .hero-caption{margin:6px 0 0}
+}
+@media (max-width:760px){
+  .v-platform-knowledge-graph .sec,.v-platform-knowledge-graph .trust{padding:55px 0}
+  .v-platform-knowledge-graph .closing .wrap{align-items:flex-start;flex-direction:column;gap:25px}
+  .v-platform-knowledge-graph .apps summary h3{font-size:18px;line-height:28px}
+}
+@media (max-width:640px){
+  .v-platform-knowledge-graph .hero h1{font-size:32px;line-height:40px;letter-spacing:-.015em}
+  .v-platform-knowledge-graph h2,.v-platform-knowledge-graph .trust h2,.v-platform-knowledge-graph .closing h2{font-size:24px;line-height:32px;letter-spacing:-.01em}
+  .v-platform-knowledge-graph .cap h3{font-size:20px;line-height:28px}
+  .v-platform-knowledge-graph .lede,.v-platform-knowledge-graph .trust .lede{font-size:16px;line-height:26px}
+}
+@media (max-width:520px){
+  .v-platform-knowledge-graph{--cq-gutter:17px}
+}
+
+/* "or mail us at" line under the closing CTA */
+.v-platform-knowledge-graph .cta-stack{display:flex;flex-direction:column;align-items:center;gap:12px;flex-shrink:0}
+.v-platform-knowledge-graph .cq-mail-line{margin:0;font-size:13px;line-height:20px;color:var(--slate-400,#93A4BF)}
+.v-platform-knowledge-graph .cq-mail-line a{color:var(--white,#fff);text-decoration:underline;text-underline-offset:3px}
+.v-platform-knowledge-graph .cq-mail-line a:hover{color:var(--blue-400,#5BA0FF)}
+@media(max-width:760px){.v-platform-knowledge-graph .cta-stack{align-items:flex-start}}

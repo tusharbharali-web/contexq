@@ -45,10 +45,14 @@ src/
 
 | Route | View |
 |---|---|
-| `/Platform/cleansing` · `entity` · `network` · `scores` · `actions` | `platform-*` |
+| `/Platform/analytics` · `entity` · `knowledge-graph` · `scores` · `actions` | `platform-*` |
 | `/solutions/aml` · `kyc` · `fraud` · `risk` · `customer-intelligence` · `supply-chain-intelligence` | `solution-*` |
-| `/Industries/finance` · `goods` · `health` · `mfg` · `public-sector` · `telco` | `industry-*` |
-| `/company`, `/careers`, `/contact` | `company`, `careers`, `contact` |
+| `/Industries/finance` · `ecommerce` · `insurance` · `mfg` · `public-sector` · `telco` | `industry-*` |
+| `/about`, `/careers`, `/contact` | `about`, `careers`, `contact` |
+
+Renamed to match their content (old URLs redirect permanently, see `next.config.ts`):
+`/Industries/goods` → `/Industries/ecommerce`, `/Industries/health` → `/Industries/insurance`,
+`/company` → `/about`, `/Platform/cleansing` → `/Platform/analytics`, `/Platform/network` → `/Platform/knowledge-graph`.
 | `/Ecosystem/blogs`, `/Ecosystem/blogs/[slug]` | `eco-insights`, `eco-blog-article` |
 | `/Ecosystem/press-releases`, `/Ecosystem/press-releases/[slug]` | `eco-press`, `eco-press-article` |
 | `/Ecosystem/awards`, `/Ecosystem/awards/[slug]` | `eco-awards`, `eco-award` (17 award pages) |
@@ -75,7 +79,7 @@ src/
 
 ### Pages restyled to the telecom design
 
-The Platform pages (`platform-*`), `industry-goods` and `industry-public-sector` are maintained
+The Platform pages (`platform-*`), `industry-ecommerce` and `industry-public-sector` are maintained
 by hand: each `styles.css` ends with a "Telecom design system" block (ContexQ tokens, IBM Plex
 Sans type scale, 1200px content width, 840px hero) and the views have no eyebrows. Edit these
 files directly; do not regenerate them from the old HTML.

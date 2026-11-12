@@ -241,7 +241,7 @@
         {
           "label": "E-commerce",
           "icon": "/assets/images/Industries/consumer.png",
-          "slug": "goods",
+          "slug": "ecommerce",
           "newpage": true,
           "subNewPage": false,
           "subPopUp": false,
@@ -250,7 +250,7 @@
         {
           "label": "Insurance",
           "icon": "/assets/images/Industries/healthcare.png",
-          "slug": "health",
+          "slug": "insurance",
           "newpage": true,
           "subNewPage": false,
           "subPopUp": false,
@@ -329,7 +329,7 @@
         {
           "label": "AI Data Cleansing",
           "icon": "/assets/images/Platforms/cleansing.webp",
-          "slug": "cleansing"
+          "slug": "analytics"
         },
         {
           "label": "Modern Entity Resolution",
@@ -339,7 +339,7 @@
         {
           "label": "Contextual Network",
           "icon": "/assets/images/Platforms/network.webp",
-          "slug": "network"
+          "slug": "knowledge-graph"
         },
         {
           "label": "Composite AI Scores",

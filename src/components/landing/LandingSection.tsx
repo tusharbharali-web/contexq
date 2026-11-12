@@ -428,8 +428,8 @@ export default function LandingSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
               { href: "/Industries/mfg", icon: "precision_manufacturing", title: "Manufacturing", desc: "Understand supplier networks and dependencies." },
-              { href: "/Industries/goods", icon: "storefront", title: "E-commerce", desc: "Connect customers, sellers, and activity to reduce abuse." },
-              { href: "/Industries/health", icon: "policy", title: "Insurance", desc: "Link policies, claims, and entities for better assessment." },
+              { href: "/Industries/ecommerce", icon: "storefront", title: "E-commerce", desc: "Connect customers, sellers, and activity to reduce abuse." },
+              { href: "/Industries/insurance", icon: "policy", title: "Insurance", desc: "Link policies, claims, and entities for better assessment." },
               { href: "/Industries/telco", icon: "cell_tower", title: "Telecom", desc: "Make sense of complex customer and network relationships." },
               { href: "/Industries/public-sector", icon: "account_balance", title: "Public Sector", desc: "Bring clarity to complex, interconnected data." },
             ].map((i) => (
@@ -638,7 +638,7 @@ export default function LandingSection() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
             <div className="flex flex-col items-center gap-4">
-              <Link className="inline-flex items-center justify-center h-[52px] px-8 rounded-lg bg-status-blue hover:bg-accent-hover active:bg-accent-pressed transition-all duration-150 text-white font-label-lg text-label-lg font-semibold shadow-lg shadow-status-blue/20" href="/contact">Talk to the team</Link>
+              <Link className="inline-flex items-center justify-center h-[52px] px-8 rounded-lg bg-status-blue hover:bg-accent-hover active:bg-accent-pressed transition-all duration-150 text-white font-label-lg text-label-lg font-semibold shadow-lg shadow-status-blue/20 cq-cta" href="/contact">Talk to the team</Link>
               <p className="font-body-sm text-body-sm text-text-muted-on-light">
                 or mail us at{" "}
                 <a href={"mailto:inquiry@contexq.com?subject=General%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20learn%20how%20ContexQ%20could%20help%20our%20organisation.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"} className="text-status-blue underline hover:text-accent-hover transition-colors">{INQUIRY_EMAIL}</a>

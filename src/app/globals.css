@@ -298,3 +298,30 @@ html {
 html:has(.cq-html[class*="v-customer-"] .cq-ov > .cq-panel) { overflow: hidden; }
 /* (Scoped to the customer views and the popup itself: other pages use .cq-ov for unrelated
    elements, e.g. the supply-chain map labels, and must not be locked or lifted.) */
+
+/* ---------- CTA buttons: one size site-wide ----------
+   Every in-page CTA (hero "See how it works", "Explore where we can help", …) and every closing
+   "Talk to the team" button carries .cq-cta and gets the same button: 52px tall, 32px side
+   padding, 14px/600 text, 4px corners, solid site blue, no icons. (Careers' "Submit" is separate.) */
+a.cq-cta, .cq-html a.cq-cta {
+  display: inline-flex !important; align-items: center !important; justify-content: center !important;
+  box-sizing: border-box !important; height: 52px !important; min-height: 52px !important;
+  width: auto !important; max-width: 100%; padding: 0 32px !important;
+  font-size: 14px !important; line-height: 20px !important; font-weight: 600 !important; letter-spacing: normal !important;
+  border: 0 !important; border-radius: 4px !important; gap: 0 !important; white-space: nowrap;
+  background: #2F86FF !important; background-image: none !important; color: #FFFFFF !important;
+  box-shadow: none !important; text-decoration: none !important;
+}
+a.cq-cta:hover, .cq-html a.cq-cta:hover { background: #5BA0FF !important; color: #FFFFFF !important; }
+a.cq-cta:active, .cq-html a.cq-cta:active { background: #1F6FEB !important; }
+a.cq-cta::before, a.cq-cta::after { content: none !important; display: none !important; }
+/* The homepage hero is drawn scaled (0.9 above 1024px, 0.85 to 768px, none below), so its CTA
+   is sized up by the same factor and renders at exactly the standard 52px button. */
+.hero-content { --hero-scale: 0.9; }
+@media (max-width: 1024px) { .hero-content { --hero-scale: 0.85; } }
+@media (max-width: 768px) { .hero-content { --hero-scale: 1; } }
+.hero-content a.cq-cta {
+  height: calc(52px / var(--hero-scale)) !important; min-height: calc(52px / var(--hero-scale)) !important;
+  padding: 0 calc(32px / var(--hero-scale)) !important; font-size: calc(14px / var(--hero-scale)) !important;
+  line-height: calc(20px / var(--hero-scale)) !important; border-radius: calc(4px / var(--hero-scale)) !important;
+}

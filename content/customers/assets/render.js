@@ -213,7 +213,7 @@
     return '<section class="bg-[#0E1B33] text-white py-16 border-t border-white/10"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-8">' +
       '<h2 class="text-headline-md font-headline-md text-[#EDEFF5] leading-snug max-w-2xl">' + esc(page.cta.headline) + '</h2>' +
       '<div class="flex flex-col items-start md:items-center gap-4 flex-shrink-0">' +
-      '<a href="/contact" class="inline-flex items-center justify-center whitespace-nowrap bg-[#2F86FF] hover:bg-[#1F6BE8] text-white font-semibold rounded-lg px-8 py-3.5 transition-colors duration-150 shadow-md">' + esc(page.cta.buttonLabel) + '</a>' +
+      '<a href="/contact" class="cq-cta inline-flex items-center justify-center whitespace-nowrap bg-[#2F86FF] hover:bg-[#1F6BE8] text-white font-semibold rounded-lg px-8 py-3.5 transition-colors duration-150 shadow-md">' + esc(page.cta.buttonLabel) + '</a>' +
       '<p class="text-[15px] text-[#8FA0BF] whitespace-nowrap">or mail us at <a href="' + esc(mailDraft()) + '" class="text-[#3D8BFF] hover:underline">inquiry@contexq.com</a></p></div></div></section>';
   }
 

@@ -60,7 +60,7 @@ export function View() {
                 ContexQ works alongside your existing AML systems and adds the context they need: who customers and their counterparties really are, and how they link. Your team spends less time clearing alerts and more time on real risk.
               </p>
               {" "}
-              <div className="hero-actions"><a className="btn btn-primary" href="#fit">See where ContexQ fits</a></div>
+              <div className="hero-actions"><a className="btn btn-primary cq-cta" href="#fit">See where ContexQ fits</a></div>
               {" "}
               <p className="hero-note">
                 <span aria-hidden="true" />
@@ -643,7 +643,7 @@ export function View() {
             </div>
             {" "}
             <div className="cta-act">
-              <Link prefetch={false} className="btn btn-primary" href="/contact">Talk to the team</Link>
+              <Link prefetch={false} className="btn btn-primary cq-cta" href="/contact">Talk to the team</Link>
               {" "}
               <small>
                 {"or mail us at "}

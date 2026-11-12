@@ -225,7 +225,7 @@ export default function Header() {
             </div>
           </div>
           <Link
-            href="/company"
+            href="/about"
             className="text-base text-white hover:text-white transition-colors relative group"
           >
             About
@@ -319,7 +319,7 @@ export default function Header() {
               </div>
             )}
 
-            <Link href="/company" className="py-3 text-white text-base border-b border-white/5">About</Link>
+            <Link href="/about" className="py-3 text-white text-base border-b border-white/5">About</Link>
             <Link href="/careers" className="py-3 text-white text-base border-b border-white/5">Careers</Link>
 
             <Link href="/contact" className="mt-4 inline-block px-6 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-medium text-base text-center">

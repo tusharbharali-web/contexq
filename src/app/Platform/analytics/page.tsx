@@ -1,7 +1,7 @@
-import View from "@/views/platform-network/View";
+import View from "@/views/platform-analytics/View";
 import Footer from "@/components/ui/Footer";
 
-export default function PlatformNetworkPage() {
+export default function PlatformCleansingPage() {
   return (
     <div className="bg-[#02060f]">
       <View />

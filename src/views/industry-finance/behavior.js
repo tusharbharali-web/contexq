@@ -215,7 +215,7 @@ function hit(e){let b=canvas.getBoundingClientRect(),x=e.clientX-b.left,y=e.clie
 })();
 
 /* CTA: static, very quiet world map */
-(function cta(){const sec=$('#demo'),cv=$('#ctaCanvas');function draw(){const {W,H,dpr,ctx}=sizeCanvas(cv,sec);const mw=Math.max(W*1.1,900),m={w:mw,h:mw*MAP.span/360};m.ox=W*.5-mw*.5;m.oy=H*.5-m.h*.48;const img=renderMap(W,H,dpr,m,'#5C86C8',Math.max(.8,mw/180*.11));ctx.clearRect(0,0,W,H);ctx.globalAlpha=.2;ctx.drawImage(img,0,0,W,H);ctx.globalAlpha=1}let rt;new ResizeObserver(()=>{clearTimeout(rt);rt=setTimeout(draw,80)}).observe(sec);draw()})();
+(function cta(){const sec=$('#demo'),cv=$('#ctaCanvas');if(!sec||!cv)return;function draw(){const {W,H,dpr,ctx}=sizeCanvas(cv,sec);const mw=Math.max(W*1.1,900),m={w:mw,h:mw*MAP.span/360};m.ox=W*.5-mw*.5;m.oy=H*.5-m.h*.48;const img=renderMap(W,H,dpr,m,'#5C86C8',Math.max(.8,mw/180*.11));ctx.clearRect(0,0,W,H);ctx.globalAlpha=.2;ctx.drawImage(img,0,0,W,H);ctx.globalAlpha=1}let rt;new ResizeObserver(()=>{clearTimeout(rt);rt=setTimeout(draw,80)}).observe(sec);draw()})();
 })();
       } catch (err) { console.error('[industry-finance] page script error:', err); }
       // ---- page script ----

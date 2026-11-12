@@ -23,7 +23,7 @@ export function View() {
                 </p>
                 {" "}
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <a className="bg-[#328CFF] hover:bg-[#5AA5FF] text-white font-label-lg text-label-lg px-6 py-3 rounded-sm transition-all duration-150 ease-out active:scale-95 shadow-sm inline-flex items-center justify-center" href="#journey-section">
+                  <a className="bg-[#328CFF] hover:bg-[#5AA5FF] text-white font-label-lg text-label-lg px-6 py-3 rounded-sm transition-all duration-150 ease-out active:scale-95 shadow-sm inline-flex items-center justify-center cq-cta" href="#journey-section">
                     {" See how ContexQ helps "}
                   </a>
                 </div>
@@ -1384,7 +1384,7 @@ export function View() {
             {" "}
             <div className="cq-cta-col">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link prefetch={false} className="w-full sm:w-auto hover:bg-[#5AA5FF] text-white font-label-lg text-label-lg px-8 py-3.5 rounded-sm transition-all duration-150 ease-out active:scale-95 shadow-lg inline-flex items-center justify-center" style={{ background: "#328CFF" }} href="/contact">
+                <Link prefetch={false} className="w-full sm:w-auto hover:bg-[#5AA5FF] text-white font-label-lg text-label-lg px-8 py-3.5 rounded-sm transition-all duration-150 ease-out active:scale-95 shadow-lg inline-flex items-center justify-center cq-cta" style={{ background: "#328CFF" }} href="/contact">
                   {" Talk to the team "}
                 </Link>
               </div>

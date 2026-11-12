@@ -516,7 +516,7 @@ export function View() {
               <p>Bring a customer, supplier or investigation use case and see how ContexQ resolves it.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="cta" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=Entity%20resolution%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20entity%20resolution.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

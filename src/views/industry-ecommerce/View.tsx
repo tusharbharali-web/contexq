@@ -1,14 +1,14 @@
 // Converted from public/html/contexq-ecommerce-v4.html, then restyled by hand to the
 // telecom page's design (see the "Telecom design system" block in ./styles.css).
 // Maintained by hand: the converter no longer regenerates this view.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-industry-goods);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-industry-ecommerce);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 export function View() {
   return (
-    <ViewShell viewId="industry-goods" className="v-industry-goods cq-html" lang="en" bodyClassName="cq-body">
+    <ViewShell viewId="industry-ecommerce" className="v-industry-ecommerce cq-html" lang="en" bodyClassName="cq-body">
       <svg width="0" height="0" aria-hidden="true" style={{ position: "absolute" }}>
         <defs>
           <symbol id="person" viewBox="0 0 24 24">
@@ -56,9 +56,8 @@ export function View() {
                 <p>
                   Connect purchase, payment and delivery records to uncover coordinated activity, and give investigators the context behind individual transactions.
                 </p>
-                <a className="text-link" href="#help">
-                  {"Explore where we can help "}
-                  <span aria-hidden="true">↓</span>
+                <a className="text-link cq-cta" href="#help">
+                  {"Explore where we can help"}
                 </a>
                 <div className="hero-note">
                   A second screen behind your checkout fraud engine: it finds the networks a single transaction cannot show.
@@ -253,7 +252,7 @@ export function View() {
               <p>Bring a use case and a sample of your data. We’ll explore the connections with you.</p>
             </div>
             <div className="cta-stack">
-<Link prefetch={false} className="button" href="/contact">Talk to the team</Link>
+<Link prefetch={false} className="button cq-cta" href="/contact">Talk to the team</Link>
 <p className="cq-mail-line">
   {"or mail us at "}
   <a href={"mailto:inquiry@contexq.com?subject=E-commerce%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20e-commerce.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>

@@ -65,9 +65,8 @@ export function View() {
               </p>
               {" "}
               <div className="hero-actions">
-                <a className="btn btn-primary" href="#challenges">
-                  {"Explore the business value "}
-                  <span aria-hidden="true" />
+                <a className="btn btn-primary cq-cta" href="#challenges">
+                  {"Explore the business value"}
                 </a>
               </div>
             </div>
@@ -528,8 +527,6 @@ export function View() {
         </section>
         {" "}
         <section className="cta" id="demo" aria-labelledby="ctaTitle">
-          <canvas id="ctaCanvas" aria-hidden="true" />
-          {" "}
           <div className="wrap cta-grid">
             <div>
               <h2 id="ctaTitle">Put your data to work for your bank.</h2>
@@ -538,7 +535,7 @@ export function View() {
             </div>
             {" "}
             <div className="cta-form">
-              <Link prefetch={false} className="btn btn-primary" id="requestDemo" href="/contact">Talk to the team</Link>
+              <Link prefetch={false} className="btn btn-primary cq-cta" id="requestDemo" href="/contact">Talk to the team</Link>
               {" "}
               <small>
                 {"or mail us at "}

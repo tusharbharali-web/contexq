@@ -35,7 +35,7 @@ export default function init(cq) {
   if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('in'))}
   else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});els.forEach(e=>io.observe(e))}
 })();
-      } catch (err) { console.error('[company] page script error:', err); }
+      } catch (err) { console.error('[about] page script error:', err); }
       return {  };
     }
   })(cq);
