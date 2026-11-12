@@ -380,7 +380,7 @@ export default function LandingSection() {
                   <p className="font-body-md text-body-md text-text-muted-on-light mb-6 leading-relaxed">{s.desc}</p>
                 </div>
                 <span className="inline-flex items-center text-status-blue font-label-lg text-label-lg group-hover:translate-x-1 transition-transform duration-150">
-                  Learn more <span className="ml-1">â†’</span>
+                  Learn more
                 </span>
               </Link>
             ))}
@@ -599,9 +599,8 @@ export default function LandingSection() {
               </div>
               {/* Connector Vector */}
               <div className="lg:col-span-1 flex justify-center text-status-blue">
-                <span className="cq-symbols text-[28px] hidden lg:block" data-icon="arrow_forward">arrow_forward</span>
-                {" "}
-                <span className="cq-symbols text-[28px] block lg:hidden" data-icon="arrow_downward">arrow_downward</span>
+                {/* one arrow: points right beside the boxes, turned to point down when they stack */}
+                <span className="cq-symbols text-[28px] rotate-90 lg:rotate-0" data-icon="arrow_forward">arrow_forward</span>
               </div>
               {/* ContexQ Intelligence Engine Node */}
               <div className="lg:col-span-3 bg-navy-900 text-white p-6 rounded-xl border border-status-blue/40 text-center shadow-lg relative overflow-hidden">
@@ -613,9 +612,8 @@ export default function LandingSection() {
               </div>
               {/* Connector Vector */}
               <div className="lg:col-span-1 flex justify-center text-status-blue">
-                <span className="cq-symbols text-[28px] hidden lg:block" data-icon="arrow_forward">arrow_forward</span>
-                {" "}
-                <span className="cq-symbols text-[28px] block lg:hidden" data-icon="arrow_downward">arrow_downward</span>
+                {/* one arrow: points right beside the boxes, turned to point down when they stack */}
+                <span className="cq-symbols text-[28px] rotate-90 lg:rotate-0" data-icon="arrow_forward">arrow_forward</span>
               </div>
               {/* Actionable Connected View (Insights) */}
               <div className="lg:col-span-3 p-6 rounded-xl bg-surface-container border border-border-dark-subtle text-center">
@@ -634,9 +632,8 @@ export default function LandingSection() {
         <div className="relative w-full px-margin-mobile md:px-margin-tablet lg:px-margin max-w-[1240px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-10 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
             <h2 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl font-bold tracking-tight mb-4 max-w-3xl text-text-on-light">{"See what's connected in your world."}</h2>
-            <p className="font-headline-sm text-headline-sm text-text-muted-on-light mb-4 max-w-2xl">Talk to our team about how ContexQ could work for your organisation.</p>
-            <p className="font-body-md text-body-md text-text-muted-on-light max-w-xl leading-relaxed">
-              {"Whether you're looking at supplier risk, customer due diligence, or financial crime, we'd be glad to hear what you're working on."}
+            <p className="font-headline-sm text-headline-sm text-text-muted-on-light max-w-2xl">
+              {"Talk to our team about how ContexQ could work for your organisation. Whether you're looking at supplier risk, customer due diligence, or financial crime, we'd be glad to hear what you're working on."}
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">

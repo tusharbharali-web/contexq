@@ -289,3 +289,10 @@ html {
     border-color: #e5e7eb;
   }
 }
+
+/* Customer pages (/customer-stories/*): the story popup (.cq-ov) is built inside the page
+   view, which is its own stacking layer (isolation: isolate). While it is open, lift that
+   layer above the site header and footer so the popup covers the whole screen, and stop
+   the page behind it from scrolling. */
+.cq-html:has(.cq-ov) { z-index: 1000 !important; } /* beats the view's own z-index: 0 */
+html:has(.cq-html .cq-ov) { overflow: hidden; }
