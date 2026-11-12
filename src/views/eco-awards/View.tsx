@@ -79,7 +79,7 @@ export function View() {
                       <span className="text-xs text-slate-500 font-medium">Singapore · 2026</span>
                     </div>
                     {" "}
-                    <h3 className="font-headline-card text-xl font-bold text-[#0B1530] mb-2">{" MAS-supported S$400K grant "}</h3>
+                    <h3 className="font-headline-card text-xl font-bold text-[#0B1530] mb-2">{" 312K USD grant from MAS "}</h3>
                     {" "}
                     <p className="text-slate-600 text-sm leading-relaxed mb-4">
                       {" Monetary Authority of Singapore (FSTI) · Graph AI against money mule networks "}

@@ -43,7 +43,7 @@ export function View() {
                 </span>
                 {" "}
                 <h3 className="text-2xl md:text-3xl font-bold leading-tight text-[#0B1530] mt-0 mb-4 font-['Plus_Jakarta_Sans']">
-                  {" ContexQ Awarded S$400,000 Grant Supported by the Monetary Authority of Singapore to Tackle Complex Money Mule Networks with Graph AI "}
+                  {" ContexQ Awarded a 312K USD Grant from MAS to Tackle Complex Money Mule Networks with Graph AI "}
                 </h3>
                 {" "}
                 <p className="text-[#475569] text-sm md:text-base mb-6 max-w-2xl leading-relaxed">

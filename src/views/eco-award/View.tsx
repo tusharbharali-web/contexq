@@ -262,7 +262,7 @@ export function Award_actus_global_top_3() {
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
-                          MAS-supported S$400K Grant
+                          312K USD Grant from MAS
                         </div>
                       </div>
                       {" "}
@@ -1907,7 +1907,7 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" MAS-supported S$400K Grant "}
+                    {" 312K USD Grant from MAS "}
                   </span>
                   {" "}
                 </Link>
@@ -3116,7 +3116,7 @@ export function Award_mas_supported_grant() {
             {" "}
             <span className="text-slate-300">/</span>
             {" "}
-            <span className="text-[#0B1530] font-semibold truncate max-w-[240px]">MAS-supported S$400K Grant</span>
+            <span className="text-[#0B1530] font-semibold truncate max-w-[240px]">312K USD Grant from MAS</span>
           </nav>
           {" "}
           <Link prefetch={false} href="/Ecosystem/awards" className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition-colors shadow-xs">
@@ -3149,11 +3149,11 @@ export function Award_mas_supported_grant() {
                 </div>
                 {" "}
                 <h1 className="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#0B1530] tracking-tight leading-tight">
-                  {" MAS-supported S$400K Proof of Concept Grant (FSTI) "}
+                  {" 312K USD Proof of Concept Grant from MAS (FSTI) "}
                 </h1>
                 {" "}
                 <p className="font-body-lead text-body-lead text-[#64748B] leading-relaxed max-w-3xl">
-                  {" ContexQ was awarded a S,000 grant supported by the Monetary Authority of Singapore (MAS) under the Financial Sector Technology and Innovation (FSTI) scheme to deploy advanced Graph AI and Entity Resolution against complex money mule networks and synthetic corporate identities across borders. "}
+                  {" ContexQ was awarded a 312K USD grant supported by the Monetary Authority of Singapore (MAS) under the Financial Sector Technology and Innovation (FSTI) scheme to deploy advanced Graph AI and Entity Resolution against complex money mule networks and synthetic corporate identities across borders. "}
                 </p>
                 {" "}
                 <div className="pt-2 flex flex-wrap gap-3 text-xs font-medium text-slate-600">
@@ -3175,13 +3175,13 @@ export function Award_mas_supported_grant() {
                 <div className="w-full max-w-[320px] rounded-2xl card-border-ambient p-6 sm:p-7 bg-white flex flex-col items-center text-center">
                   <div className="w-full h-44 rounded-2xl bg-[#0B1530] flex items-center justify-center mb-5 p-5">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-3 text-center overflow-hidden">
-                      <img src="/eco-skin/assets/logos/MAS.jpg" alt="MAS-supported S$400K Grant" className="w-full h-full object-contain" />
+                      <img src="/eco-skin/assets/logos/MAS.jpg" alt="312K USD Grant from MAS" className="w-full h-full object-contain" />
                     </div>
                   </div>
                   {" "}
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">{"Funding & Grants"}</span>
                   {" "}
-                  <h3 className="font-headline-card text-base font-bold text-[#0B1530] leading-snug">MAS-supported S$400K Grant</h3>
+                  <h3 className="font-headline-card text-base font-bold text-[#0B1530] leading-snug">312K USD Grant from MAS</h3>
                   {" "}
                   <p className="text-xs text-slate-500 mt-1">Monetary Authority of Singapore (MAS)</p>
                 </div>
@@ -3239,7 +3239,7 @@ export function Award_mas_supported_grant() {
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
                       <span className="text-primary font-bold mt-0.5">✓</span>
                       {" "}
-                      <span>Awarded S,000 Proof of Concept grant support under the MAS FSTI scheme.</span>
+                      <span>Awarded 312K USD Proof of Concept grant support under the MAS FSTI scheme.</span>
                     </li>
                     {" "}
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
@@ -3307,7 +3307,7 @@ export function Award_mas_supported_grant() {
                     <div>
                       <dt className="text-slate-400 font-medium">Recognition Tier / Value</dt>
                       {" "}
-                      <dd className="text-[#0051df] font-semibold mt-0.5">S,000</dd>
+                      <dd className="text-[#0051df] font-semibold mt-0.5">312K USD</dd>
                     </div>
                     {" "}
                     <div>
@@ -3730,7 +3730,7 @@ export function Award_rbi_harbinger_2025() {
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
-                          MAS-supported S$400K Grant
+                          312K USD Grant from MAS
                         </div>
                       </div>
                       {" "}
@@ -3815,7 +3815,7 @@ export function Award_rbi_harbinger_2025() {
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" MAS-supported S$400K Grant "}
+                    {" 312K USD Grant from MAS "}
                   </span>
                   {" "}
                 </Link>
@@ -6597,7 +6597,7 @@ export const AWARD_META: Record<string, { title?: string; description?: string }
     "description": "Asian Development Bank & Luxembourg MoF · Cross-border fintech acceleration and venture co-funding | ContexQ sovereign contextual decision intelligence."
   },
   "mas-supported-grant": {
-    "title": "MAS-supported S$400K Proof of Concept Grant (FSTI) | ContexQ Awards & Recognition",
+    "title": "312K USD Proof of Concept Grant from MAS (FSTI) | ContexQ Awards & Recognition",
     "description": "Monetary Authority of Singapore (FSTI) · Graph AI against money mule networks | ContexQ sovereign contextual decision intelligence."
   },
   "rbi-harbinger-2025": {

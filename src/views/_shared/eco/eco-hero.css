@@ -42,3 +42,10 @@
   .cq-html .eco-hero-lede { font-size: 16px; }
   .cq-html .eco-hero-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Centred hero: title, intro and the section links sit in the middle of the page. */
+.cq-html .eco-hero-inner { text-align: center; }
+.cq-html .eco-hero-lede { margin-left: auto; margin-right: auto; }
+.cq-html .eco-hero-links { margin-left: auto; margin-right: auto; width: fit-content; max-width: 100%; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 220px); } /* one column per link, so 2 or 3 links stay centred */
+.cq-html .eco-hero-link { align-items: center; padding: 16px 12px 14px; }
+@media (max-width: 640px) { .cq-html .eco-hero-links { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; } }
