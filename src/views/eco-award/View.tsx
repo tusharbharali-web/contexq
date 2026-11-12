@@ -318,7 +318,7 @@ export function Award_actus_global_top_3() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -376,7 +376,7 @@ export function Award_actus_global_top_3() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -708,7 +708,7 @@ export function Award_alibaba_jumpstarter_top_30() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -766,7 +766,7 @@ export function Award_alibaba_jumpstarter_top_30() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -1094,7 +1094,7 @@ export function Award_employee_happiness_awards_2026() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -1152,7 +1152,7 @@ export function Award_employee_happiness_awards_2026() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -1482,7 +1482,7 @@ export function Award_g20_techsprint_payment_fraud() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -1540,7 +1540,7 @@ export function Award_g20_techsprint_payment_fraud() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -1866,7 +1866,7 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -1924,7 +1924,7 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -2244,7 +2244,7 @@ export function Award_leap_east_2026() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -2302,7 +2302,7 @@ export function Award_leap_east_2026() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -2628,7 +2628,7 @@ export function Award_lhoft_catapult() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -2686,7 +2686,7 @@ export function Award_lhoft_catapult() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -3020,7 +3020,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -3078,7 +3078,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -3406,7 +3406,7 @@ export function Award_mas_supported_grant() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -3464,7 +3464,7 @@ export function Award_mas_supported_grant() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -3786,7 +3786,7 @@ export function Award_rbi_harbinger_2025() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -3844,7 +3844,7 @@ export function Award_rbi_harbinger_2025() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -4168,7 +4168,7 @@ export function Award_singapore_business_awards_2026() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -4226,7 +4226,7 @@ export function Award_singapore_business_awards_2026() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -4552,7 +4552,7 @@ export function Award_singapore_fintech_festival_finalist() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -4610,7 +4610,7 @@ export function Award_singapore_fintech_festival_finalist() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -4934,7 +4934,7 @@ export function Award_slingshot_global_top_50() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -4992,7 +4992,7 @@ export function Award_slingshot_global_top_50() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -5316,7 +5316,7 @@ export function Award_startup_grind_startup_of_the_year() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -5374,7 +5374,7 @@ export function Award_startup_grind_startup_of_the_year() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -5700,7 +5700,7 @@ export function Award_unesco_ircai_top_100() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -5758,7 +5758,7 @@ export function Award_unesco_ircai_top_100() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -6084,7 +6084,7 @@ export function Award_unu_ai_sdgs_finalist() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -6142,7 +6142,7 @@ export function Award_unu_ai_sdgs_finalist() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}
@@ -6472,7 +6472,7 @@ export function Award_waic_world_ai_top_15() {
                       {" "}
                     </Link>
                     {" "}
-                    <Link prefetch={false} href="/Ecosystem/partners" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
                       {" "}
                       <span>{"Backing & Affiliations"}</span>
                       {" "}
@@ -6530,7 +6530,7 @@ export function Award_waic_world_ai_top_15() {
           <div className="flex items-center gap-4">
             <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
             {" "}
-            <Link prefetch={false} href="/Ecosystem/partners" className="hover:text-primary transition-colors">
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
               Affiliations
             </Link>
             {" "}

@@ -1,38 +1,38 @@
-/* Generated from public/eco-skin/Affiliations.html: the page's own CSS, scoped to .v-eco-partners. */
+/* Generated from public/eco-skin/Affiliations.html: the page's own CSS, scoped to .v-eco-affiliations. */
 /* ---- isolation layer (generated) ----
    Keeps the site's global Tailwind/base styles out of this view so the page
    renders exactly like the original standalone HTML. */
-:where(.v-eco-partners *:not(svg, svg *), .v-eco-partners ::before, .v-eco-partners ::after) { all: revert; }
-:where(.v-eco-partners svg) { display: revert; vertical-align: revert; }
+:where(.v-eco-affiliations *:not(svg, svg *), .v-eco-affiliations ::before, .v-eco-affiliations ::after) { all: revert; }
+:where(.v-eco-affiliations svg) { display: revert; vertical-align: revert; }
 /* The view root starts from initial values, like a fresh document's <html>,
    instead of inheriting the site's fonts/line-height/colours. */
-:where(.v-eco-partners) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
-:where(.v-eco-partners > .cq-body) { display: block; margin: 8px; }
-.v-eco-partners.cq-html { position: relative; z-index: 0; isolation: isolate; }
+:where(.v-eco-affiliations) { all: initial; display: block; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: auto; -webkit-text-size-adjust: 100%; }
+:where(.v-eco-affiliations > .cq-body) { display: block; margin: 8px; }
+.v-eco-affiliations.cq-html { position: relative; z-index: 0; isolation: isolate; }
 /* Page-level nav/footer: the site Header/Footer replace these. */
-.v-eco-partners :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
-.v-eco-partners > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
-.v-eco-partners main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.v-eco-affiliations :is(footer, [data-embed-footer], .site-footer, #ecosystem-chrome, header.sticky, nav[aria-label="Ecosystem"]) { display: none !important; }
+.v-eco-affiliations > .cq-body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.v-eco-affiliations main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
 
-    .v-eco-partners .cq-body {
+    .v-eco-affiliations .cq-body {
       font-family: 'IBM Plex Sans', sans-serif;
       background-color: #FFFFFF;
       color: #0B1530;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
     }
-    .v-eco-partners .no-scrollbar::-webkit-scrollbar {
+    .v-eco-affiliations .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
-    .v-eco-partners .no-scrollbar {
+    .v-eco-affiliations .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
   
 
-  .v-eco-partners { scrollbar-gutter: stable; }
-.v-eco-partners .cq-body,.v-eco-partners .cq-body *:not(.material-symbols-outlined):not(.material-icons){font-family:"IBM Plex Sans",sans-serif !important}
-.v-eco-partners *,.v-eco-partners  ::before,.v-eco-partners  ::after, .v-eco-partners {
+  .v-eco-affiliations { scrollbar-gutter: stable; }
+.v-eco-affiliations .cq-body,.v-eco-affiliations .cq-body *:not(.material-symbols-outlined):not(.material-icons){font-family:"IBM Plex Sans",sans-serif !important}
+.v-eco-affiliations *,.v-eco-affiliations  ::before,.v-eco-affiliations  ::after, .v-eco-affiliations {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -86,7 +86,7 @@
   --tw-contain-style:  ;
 }
 
-.v-eco-partners ::backdrop {
+.v-eco-affiliations ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -145,16 +145,16 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
-.v-eco-partners *,.v-eco-partners 
-::before,.v-eco-partners 
-::after, .v-eco-partners {
+.v-eco-affiliations *,.v-eco-affiliations 
+::before,.v-eco-affiliations 
+::after, .v-eco-affiliations {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
 }
 
-.v-eco-partners ::before,.v-eco-partners 
+.v-eco-affiliations ::before,.v-eco-affiliations 
 ::after {
   --tw-content: '';
 }
@@ -169,7 +169,7 @@
 7. Disable tap highlights on iOS
 */
 
-.v-eco-partners,.v-eco-partners {
+.v-eco-affiliations,.v-eco-affiliations {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
@@ -185,7 +185,7 @@
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
-.v-eco-partners .cq-body {
+.v-eco-affiliations .cq-body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
@@ -196,7 +196,7 @@
 3. Ensure horizontal rules are visible by default.
 */
 
-.v-eco-partners hr {
+.v-eco-affiliations hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
@@ -206,7 +206,7 @@
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
-.v-eco-partners abbr:where([title]) {
+.v-eco-affiliations abbr:where([title]) {
   text-decoration: underline dotted;
 }
 
@@ -214,11 +214,11 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 Remove the default font size and weight for headings.
 */
 
-.v-eco-partners h1,.v-eco-partners 
-h2,.v-eco-partners 
-h3,.v-eco-partners 
-h4,.v-eco-partners 
-h5,.v-eco-partners 
+.v-eco-affiliations h1,.v-eco-affiliations 
+h2,.v-eco-affiliations 
+h3,.v-eco-affiliations 
+h4,.v-eco-affiliations 
+h5,.v-eco-affiliations 
 h6 {
   font-size: inherit;
   font-weight: inherit;
@@ -228,7 +228,7 @@ h6 {
 Reset links to optimize for opt-in styling instead of opt-out.
 */
 
-.v-eco-partners a {
+.v-eco-affiliations a {
   color: inherit;
   text-decoration: inherit;
 }
@@ -237,7 +237,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 Add the correct font weight in Edge and Safari.
 */
 
-.v-eco-partners b,.v-eco-partners 
+.v-eco-affiliations b,.v-eco-affiliations 
 strong {
   font-weight: bolder;
 }
@@ -249,9 +249,9 @@ strong {
 4. Correct the odd `em` font sizing in all browsers.
 */
 
-.v-eco-partners code,.v-eco-partners 
-kbd,.v-eco-partners 
-samp,.v-eco-partners 
+.v-eco-affiliations code,.v-eco-affiliations 
+kbd,.v-eco-affiliations 
+samp,.v-eco-affiliations 
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
   font-feature-settings: normal; /* 2 */
@@ -263,7 +263,7 @@ pre {
 Add the correct font size in all browsers.
 */
 
-.v-eco-partners small {
+.v-eco-affiliations small {
   font-size: 80%;
 }
 
@@ -271,7 +271,7 @@ Add the correct font size in all browsers.
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
 
-.v-eco-partners sub,.v-eco-partners 
+.v-eco-affiliations sub,.v-eco-affiliations 
 sup {
   font-size: 75%;
   line-height: 0;
@@ -279,11 +279,11 @@ sup {
   vertical-align: baseline;
 }
 
-.v-eco-partners sub {
+.v-eco-affiliations sub {
   bottom: -0.25em;
 }
 
-.v-eco-partners sup {
+.v-eco-affiliations sup {
   top: -0.5em;
 }
 
@@ -293,7 +293,7 @@ sup {
 3. Remove gaps between table borders by default.
 */
 
-.v-eco-partners table {
+.v-eco-affiliations table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
@@ -305,10 +305,10 @@ sup {
 3. Remove default padding in all browsers.
 */
 
-.v-eco-partners button,.v-eco-partners 
-input,.v-eco-partners 
-optgroup,.v-eco-partners 
-select,.v-eco-partners 
+.v-eco-affiliations button,.v-eco-affiliations 
+input,.v-eco-affiliations 
+optgroup,.v-eco-affiliations 
+select,.v-eco-affiliations 
 textarea {
   font-family: inherit; /* 1 */
   font-feature-settings: inherit; /* 1 */
@@ -326,7 +326,7 @@ textarea {
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
-.v-eco-partners button,.v-eco-partners 
+.v-eco-affiliations button,.v-eco-affiliations 
 select {
   text-transform: none;
 }
@@ -336,9 +336,9 @@ select {
 2. Remove default button styles.
 */
 
-.v-eco-partners button,.v-eco-partners 
-input:where([type='button']),.v-eco-partners 
-input:where([type='reset']),.v-eco-partners 
+.v-eco-affiliations button,.v-eco-affiliations 
+input:where([type='button']),.v-eco-affiliations 
+input:where([type='reset']),.v-eco-affiliations 
 input:where([type='submit']) {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
@@ -349,7 +349,7 @@ input:where([type='submit']) {
 Use the modern Firefox focus style for all focusable elements.
 */
 
-.v-eco-partners :-moz-focusring {
+.v-eco-affiliations :-moz-focusring {
   outline: auto;
 }
 
@@ -357,7 +357,7 @@ Use the modern Firefox focus style for all focusable elements.
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
-.v-eco-partners :-moz-ui-invalid {
+.v-eco-affiliations :-moz-ui-invalid {
   box-shadow: none;
 }
 
@@ -365,7 +365,7 @@ Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/
 Add the correct vertical alignment in Chrome and Firefox.
 */
 
-.v-eco-partners progress {
+.v-eco-affiliations progress {
   vertical-align: baseline;
 }
 
@@ -373,7 +373,7 @@ Add the correct vertical alignment in Chrome and Firefox.
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
-.v-eco-partners ::-webkit-inner-spin-button,.v-eco-partners 
+.v-eco-affiliations ::-webkit-inner-spin-button,.v-eco-affiliations 
 ::-webkit-outer-spin-button {
   height: auto;
 }
@@ -383,7 +383,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-.v-eco-partners [type='search'] {
+.v-eco-affiliations [type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -392,7 +392,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
-.v-eco-partners ::-webkit-search-decoration {
+.v-eco-affiliations ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -401,7 +401,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to `inherit` in Safari.
 */
 
-.v-eco-partners ::-webkit-file-upload-button {
+.v-eco-affiliations ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
@@ -410,7 +410,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 Add the correct display in Chrome and Safari.
 */
 
-.v-eco-partners summary {
+.v-eco-affiliations summary {
   display: list-item;
 }
 
@@ -418,33 +418,33 @@ Add the correct display in Chrome and Safari.
 Removes the default spacing and border for appropriate elements.
 */
 
-.v-eco-partners blockquote,.v-eco-partners 
-dl,.v-eco-partners 
-dd,.v-eco-partners 
-h1,.v-eco-partners 
-h2,.v-eco-partners 
-h3,.v-eco-partners 
-h4,.v-eco-partners 
-h5,.v-eco-partners 
-h6,.v-eco-partners 
-hr,.v-eco-partners 
-figure,.v-eco-partners 
-p,.v-eco-partners 
+.v-eco-affiliations blockquote,.v-eco-affiliations 
+dl,.v-eco-affiliations 
+dd,.v-eco-affiliations 
+h1,.v-eco-affiliations 
+h2,.v-eco-affiliations 
+h3,.v-eco-affiliations 
+h4,.v-eco-affiliations 
+h5,.v-eco-affiliations 
+h6,.v-eco-affiliations 
+hr,.v-eco-affiliations 
+figure,.v-eco-affiliations 
+p,.v-eco-affiliations 
 pre {
   margin: 0;
 }
 
-.v-eco-partners fieldset {
+.v-eco-affiliations fieldset {
   margin: 0;
   padding: 0;
 }
 
-.v-eco-partners legend {
+.v-eco-affiliations legend {
   padding: 0;
 }
 
-.v-eco-partners ol,.v-eco-partners 
-ul,.v-eco-partners 
+.v-eco-affiliations ol,.v-eco-affiliations 
+ul,.v-eco-affiliations 
 menu {
   list-style: none;
   margin: 0;
@@ -454,7 +454,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
-.v-eco-partners dialog {
+.v-eco-affiliations dialog {
   padding: 0;
 }
 
@@ -462,7 +462,7 @@ Reset default styling for dialogs.
 Prevent resizing textareas horizontally by default.
 */
 
-.v-eco-partners textarea {
+.v-eco-affiliations textarea {
   resize: vertical;
 }
 
@@ -471,7 +471,7 @@ Prevent resizing textareas horizontally by default.
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-.v-eco-partners input::placeholder,.v-eco-partners 
+.v-eco-affiliations input::placeholder,.v-eco-affiliations 
 textarea::placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
@@ -481,7 +481,7 @@ textarea::placeholder {
 Set the default cursor for buttons.
 */
 
-.v-eco-partners button,.v-eco-partners 
+.v-eco-affiliations button,.v-eco-affiliations 
 [role="button"] {
   cursor: pointer;
 }
@@ -489,7 +489,7 @@ Set the default cursor for buttons.
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
-.v-eco-partners :disabled {
+.v-eco-affiliations :disabled {
   cursor: default;
 }
 
@@ -499,13 +499,13 @@ Make sure disabled buttons don't get the pointer cursor.
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
-.v-eco-partners img,.v-eco-partners 
-svg,.v-eco-partners 
-video,.v-eco-partners 
-canvas,.v-eco-partners 
-audio,.v-eco-partners 
-iframe,.v-eco-partners 
-embed,.v-eco-partners 
+.v-eco-affiliations img,.v-eco-affiliations 
+svg,.v-eco-affiliations 
+video,.v-eco-affiliations 
+canvas,.v-eco-affiliations 
+audio,.v-eco-affiliations 
+iframe,.v-eco-affiliations 
+embed,.v-eco-affiliations 
 object {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
@@ -515,627 +515,627 @@ object {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-.v-eco-partners img,.v-eco-partners 
+.v-eco-affiliations img,.v-eco-affiliations 
 video {
   max-width: 100%;
   height: auto;
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
-.v-eco-partners [hidden]:where(:not([hidden="until-found"])) {
+.v-eco-affiliations [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.v-eco-partners .container {
+.v-eco-affiliations .container {
   width: 100%;
 }
 @media (min-width: 640px) {
 
-  .v-eco-partners .container {
+  .v-eco-affiliations .container {
     max-width: 640px;
   }
 }
 @media (min-width: 768px) {
 
-  .v-eco-partners .container {
+  .v-eco-affiliations .container {
     max-width: 768px;
   }
 }
 @media (min-width: 1024px) {
 
-  .v-eco-partners .container {
+  .v-eco-affiliations .container {
     max-width: 1024px;
   }
 }
 @media (min-width: 1280px) {
 
-  .v-eco-partners .container {
+  .v-eco-affiliations .container {
     max-width: 1280px;
   }
 }
 @media (min-width: 1536px) {
 
-  .v-eco-partners .container {
+  .v-eco-affiliations .container {
     max-width: 1536px;
   }
 }
-.v-eco-partners .sticky {
+.v-eco-affiliations .sticky {
   position: sticky;
 }
-.v-eco-partners .top-0 {
+.v-eco-affiliations .top-0 {
   top: 0px;
 }
-.v-eco-partners .top-14 {
+.v-eco-affiliations .top-14 {
   top: 3.5rem;
 }
-.v-eco-partners .z-30 {
+.v-eco-affiliations .z-30 {
   z-index: 30;
 }
-.v-eco-partners .z-40 {
+.v-eco-affiliations .z-40 {
   z-index: 40;
 }
-.v-eco-partners .mx-auto {
+.v-eco-affiliations .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
-.v-eco-partners .mb-2 {
+.v-eco-affiliations .mb-2 {
   margin-bottom: 0.5rem;
 }
-.v-eco-partners .mb-2\.5 {
+.v-eco-affiliations .mb-2\.5 {
   margin-bottom: 0.625rem;
 }
-.v-eco-partners .mt-3 {
+.v-eco-affiliations .mt-3 {
   margin-top: 0.75rem;
 }
-.v-eco-partners .mt-8 {
+.v-eco-affiliations .mt-8 {
   margin-top: 2rem;
 }
-.v-eco-partners .flex {
+.v-eco-affiliations .flex {
   display: flex;
 }
-.v-eco-partners .inline-flex {
+.v-eco-affiliations .inline-flex {
   display: inline-flex;
 }
-.v-eco-partners .grid {
+.v-eco-affiliations .grid {
   display: grid;
 }
-.v-eco-partners .h-14 {
+.v-eco-affiliations .h-14 {
   height: 3.5rem;
 }
-.v-eco-partners .h-20 {
+.v-eco-affiliations .h-20 {
   height: 5rem;
 }
-.v-eco-partners .h-24 {
+.v-eco-affiliations .h-24 {
   height: 6rem;
 }
-.v-eco-partners .h-40 {
+.v-eco-affiliations .h-40 {
   height: 10rem;
 }
-.v-eco-partners .h-5 {
+.v-eco-affiliations .h-5 {
   height: 1.25rem;
 }
-.v-eco-partners .h-8 {
+.v-eco-affiliations .h-8 {
   height: 2rem;
 }
-.v-eco-partners .h-full {
+.v-eco-affiliations .h-full {
   height: 100%;
 }
-.v-eco-partners .min-h-\[140px\] {
+.v-eco-affiliations .min-h-\[140px\] {
   min-height: 140px;
 }
-.v-eco-partners .min-h-\[170px\] {
+.v-eco-affiliations .min-h-\[170px\] {
   min-height: 170px;
 }
-.v-eco-partners .min-h-screen {
+.v-eco-affiliations .min-h-screen {
   min-height: 100vh;
 }
-.v-eco-partners .w-20 {
+.v-eco-affiliations .w-20 {
   width: 5rem;
 }
-.v-eco-partners .w-24 {
+.v-eco-affiliations .w-24 {
   width: 6rem;
 }
-.v-eco-partners .w-40 {
+.v-eco-affiliations .w-40 {
   width: 10rem;
 }
-.v-eco-partners .w-5 {
+.v-eco-affiliations .w-5 {
   width: 1.25rem;
 }
-.v-eco-partners .w-8 {
+.v-eco-affiliations .w-8 {
   width: 2rem;
 }
-.v-eco-partners .w-full {
+.v-eco-affiliations .w-full {
   width: 100%;
 }
-.v-eco-partners .max-w-\[120px\] {
+.v-eco-affiliations .max-w-\[120px\] {
   max-width: 120px;
 }
-.v-eco-partners .max-w-\[1240px\] {
+.v-eco-affiliations .max-w-\[1240px\] {
   max-width: 1240px;
 }
-.v-eco-partners .flex-1 {
+.v-eco-affiliations .flex-1 {
   flex: 1 1 0%;
 }
-.v-eco-partners .flex-shrink-0 {
+.v-eco-affiliations .flex-shrink-0 {
   flex-shrink: 0;
 }
-.v-eco-partners .grid-cols-1 {
+.v-eco-affiliations .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.v-eco-partners .grid-cols-2 {
+.v-eco-affiliations .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.v-eco-partners .flex-col {
+.v-eco-affiliations .flex-col {
   flex-direction: column;
 }
-.v-eco-partners .items-center {
+.v-eco-affiliations .items-center {
   align-items: center;
 }
-.v-eco-partners .items-baseline {
+.v-eco-affiliations .items-baseline {
   align-items: baseline;
 }
-.v-eco-partners .justify-center {
+.v-eco-affiliations .justify-center {
   justify-content: center;
 }
-.v-eco-partners .justify-between {
+.v-eco-affiliations .justify-between {
   justify-content: space-between;
 }
-.v-eco-partners .gap-1\.5 {
+.v-eco-affiliations .gap-1\.5 {
   gap: 0.375rem;
 }
-.v-eco-partners .gap-2 {
+.v-eco-affiliations .gap-2 {
   gap: 0.5rem;
 }
-.v-eco-partners .gap-3\.5 {
+.v-eco-affiliations .gap-3\.5 {
   gap: 0.875rem;
 }
-.v-eco-partners .gap-4 {
+.v-eco-affiliations .gap-4 {
   gap: 1rem;
 }
-.v-eco-partners .gap-5 {
+.v-eco-affiliations .gap-5 {
   gap: 1.25rem;
 }
-.v-eco-partners .gap-6 {
+.v-eco-affiliations .gap-6 {
   gap: 1.5rem;
 }
-.v-eco-partners .gap-y-4 {
+.v-eco-affiliations .gap-y-4 {
   row-gap: 1rem;
 }
-.v-eco-partners .overflow-hidden {
+.v-eco-affiliations .overflow-hidden {
   overflow: hidden;
 }
-.v-eco-partners .overflow-x-auto {
+.v-eco-affiliations .overflow-x-auto {
   overflow-x: auto;
 }
-.v-eco-partners .scroll-smooth {
+.v-eco-affiliations .scroll-smooth {
   scroll-behavior: smooth;
 }
-.v-eco-partners .whitespace-nowrap {
+.v-eco-affiliations .whitespace-nowrap {
   white-space: nowrap;
 }
-.v-eco-partners .rounded {
+.v-eco-affiliations .rounded {
   border-radius: 0.25rem;
 }
-.v-eco-partners .rounded-2xl {
+.v-eco-affiliations .rounded-2xl {
   border-radius: 1rem;
 }
-.v-eco-partners .rounded-full {
+.v-eco-affiliations .rounded-full {
   border-radius: 9999px;
 }
-.v-eco-partners .rounded-lg {
+.v-eco-affiliations .rounded-lg {
   border-radius: 0.5rem;
 }
-.v-eco-partners .rounded-xl {
+.v-eco-affiliations .rounded-xl {
   border-radius: 0.75rem;
 }
-.v-eco-partners .border {
+.v-eco-affiliations .border {
   border-width: 1px;
 }
-.v-eco-partners .border-y {
+.v-eco-affiliations .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
-.v-eco-partners .border-b {
+.v-eco-affiliations .border-b {
   border-bottom-width: 1px;
 }
-.v-eco-partners .border-r {
+.v-eco-affiliations .border-r {
   border-right-width: 1px;
 }
-.v-eco-partners .border-\[\#D8E4FF\] {
+.v-eco-affiliations .border-\[\#D8E4FF\] {
   --tw-border-opacity: 1;
   border-color: rgb(216 228 255 / var(--tw-border-opacity, 1));
 }
-.v-eco-partners .border-\[\#E2E8F0\] {
+.v-eco-affiliations .border-\[\#E2E8F0\] {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
 }
-.v-eco-partners .border-brand-borderLight {
+.v-eco-affiliations .border-brand-borderLight {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
 }
-.v-eco-partners .bg-\[\#2F6BFF\] {
+.v-eco-affiliations .bg-\[\#2F6BFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(47 107 255 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-\[\#EBF2FF\] {
+.v-eco-affiliations .bg-\[\#EBF2FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(235 242 255 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-\[\#F0F5FF\] {
+.v-eco-affiliations .bg-\[\#F0F5FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 245 255 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-\[\#F1F5F9\] {
+.v-eco-affiliations .bg-\[\#F1F5F9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-\[\#F4F6FA\] {
+.v-eco-affiliations .bg-\[\#F4F6FA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 246 250 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-\[\#F8FAFC\] {
+.v-eco-affiliations .bg-\[\#F8FAFC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .bg-white {
+.v-eco-affiliations .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .object-contain {
+.v-eco-affiliations .object-contain {
   object-fit: contain;
 }
-.v-eco-partners .p-2 {
+.v-eco-affiliations .p-2 {
   padding: 0.5rem;
 }
-.v-eco-partners .p-2\.5 {
+.v-eco-affiliations .p-2\.5 {
   padding: 0.625rem;
 }
-.v-eco-partners .p-3 {
+.v-eco-affiliations .p-3 {
   padding: 0.75rem;
 }
-.v-eco-partners .p-4 {
+.v-eco-affiliations .p-4 {
   padding: 1rem;
 }
-.v-eco-partners .p-6 {
+.v-eco-affiliations .p-6 {
   padding: 1.5rem;
 }
-.v-eco-partners .p-7 {
+.v-eco-affiliations .p-7 {
   padding: 1.75rem;
 }
-.v-eco-partners .p-8 {
+.v-eco-affiliations .p-8 {
   padding: 2rem;
 }
-.v-eco-partners .px-3 {
+.v-eco-affiliations .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.v-eco-partners .px-4 {
+.v-eco-affiliations .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.v-eco-partners .px-gutter {
+.v-eco-affiliations .px-gutter {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.v-eco-partners .py-1\.5 {
+.v-eco-affiliations .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
-.v-eco-partners .py-12 {
+.v-eco-affiliations .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.v-eco-partners .py-2 {
+.v-eco-affiliations .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.v-eco-partners .py-2\.5 {
+.v-eco-affiliations .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
-.v-eco-partners .py-4 {
+.v-eco-affiliations .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.v-eco-partners .pb-6 {
+.v-eco-affiliations .pb-6 {
   padding-bottom: 1.5rem;
 }
-.v-eco-partners .pb-8 {
+.v-eco-affiliations .pb-8 {
   padding-bottom: 2rem;
 }
-.v-eco-partners .pt-10 {
+.v-eco-affiliations .pt-10 {
   padding-top: 2.5rem;
 }
-.v-eco-partners .text-center {
+.v-eco-affiliations .text-center {
   text-align: center;
 }
-.v-eco-partners .text-2xl {
+.v-eco-affiliations .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.v-eco-partners .text-4xl {
+.v-eco-affiliations .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.v-eco-partners .text-base {
+.v-eco-affiliations .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.v-eco-partners .text-sm {
+.v-eco-affiliations .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.v-eco-partners .text-xl {
+.v-eco-affiliations .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.v-eco-partners .text-xs {
+.v-eco-affiliations .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.v-eco-partners .font-bold {
+.v-eco-affiliations .font-bold {
   font-weight: 700;
 }
-.v-eco-partners .font-extrabold {
+.v-eco-affiliations .font-extrabold {
   font-weight: 800;
 }
-.v-eco-partners .font-medium {
+.v-eco-affiliations .font-medium {
   font-weight: 500;
 }
-.v-eco-partners .font-semibold {
+.v-eco-affiliations .font-semibold {
   font-weight: 600;
 }
-.v-eco-partners .leading-relaxed {
+.v-eco-affiliations .leading-relaxed {
   line-height: 1.625;
 }
-.v-eco-partners .leading-snug {
+.v-eco-affiliations .leading-snug {
   line-height: 1.375;
 }
-.v-eco-partners .leading-tight {
+.v-eco-affiliations .leading-tight {
   line-height: 1.25;
 }
-.v-eco-partners .tracking-tight {
+.v-eco-affiliations .tracking-tight {
   letter-spacing: -0.025em;
 }
-.v-eco-partners .text-\[\#0B1530\] {
+.v-eco-affiliations .text-\[\#0B1530\] {
   --tw-text-opacity: 1;
   color: rgb(11 21 48 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-brand-blue {
+.v-eco-affiliations .text-brand-blue {
   --tw-text-opacity: 1;
   color: rgb(47 107 255 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-brand-navy {
+.v-eco-affiliations .text-brand-navy {
   --tw-text-opacity: 1;
   color: rgb(11 21 48 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-brand-slate {
+.v-eco-affiliations .text-brand-slate {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-slate-500 {
+.v-eco-affiliations .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-slate-600 {
+.v-eco-affiliations .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .text-white {
+.v-eco-affiliations .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .antialiased {
+.v-eco-affiliations .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.v-eco-partners .shadow-sm {
+.v-eco-affiliations .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.v-eco-partners .transition-all {
+.v-eco-affiliations .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.v-eco-partners .transition-colors {
+.v-eco-affiliations .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.v-eco-partners .hover\:border-slate-300:hover {
+.v-eco-affiliations .hover\:border-slate-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
-.v-eco-partners .hover\:bg-\[\#1E56E3\]:hover {
+.v-eco-affiliations .hover\:bg-\[\#1E56E3\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 86 227 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .hover\:bg-slate-100:hover {
+.v-eco-affiliations .hover\:bg-slate-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
 }
-.v-eco-partners .hover\:text-\[\#0B1530\]:hover {
+.v-eco-affiliations .hover\:text-\[\#0B1530\]:hover {
   --tw-text-opacity: 1;
   color: rgb(11 21 48 / var(--tw-text-opacity, 1));
 }
-.v-eco-partners .focus-visible\:outline:focus-visible {
+.v-eco-affiliations .focus-visible\:outline:focus-visible {
   outline-style: solid;
 }
-.v-eco-partners .focus-visible\:outline-2:focus-visible {
+.v-eco-affiliations .focus-visible\:outline-2:focus-visible {
   outline-width: 2px;
 }
-.v-eco-partners .focus-visible\:outline-offset-2:focus-visible {
+.v-eco-affiliations .focus-visible\:outline-offset-2:focus-visible {
   outline-offset: 2px;
 }
-.v-eco-partners .focus-visible\:outline-\[\#2F6BFF\]:focus-visible {
+.v-eco-affiliations .focus-visible\:outline-\[\#2F6BFF\]:focus-visible {
   outline-color: #2F6BFF;
 }
-.v-eco-partners .group:hover .group-hover\:border-brand-blue {
+.v-eco-affiliations .group:hover .group-hover\:border-brand-blue {
   --tw-border-opacity: 1;
   border-color: rgb(47 107 255 / var(--tw-border-opacity, 1));
 }
-.v-eco-partners .group:hover .group-hover\:shadow-md {
+.v-eco-affiliations .group:hover .group-hover\:shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 @media (min-width: 640px) {
 
-  .v-eco-partners .sm\:h-24 {
+  .v-eco-affiliations .sm\:h-24 {
     height: 6rem;
   }
 
-  .v-eco-partners .sm\:h-28 {
+  .v-eco-affiliations .sm\:h-28 {
     height: 7rem;
   }
 
-  .v-eco-partners .sm\:h-48 {
+  .v-eco-affiliations .sm\:h-48 {
     height: 12rem;
   }
 
-  .v-eco-partners .sm\:h-6 {
+  .v-eco-affiliations .sm\:h-6 {
     height: 1.5rem;
   }
 
-  .v-eco-partners .sm\:min-h-0 {
+  .v-eco-affiliations .sm\:min-h-0 {
     min-height: 0px;
   }
 
-  .v-eco-partners .sm\:w-2\/5 {
+  .v-eco-affiliations .sm\:w-2\/5 {
     width: 40%;
   }
 
-  .v-eco-partners .sm\:w-24 {
+  .v-eco-affiliations .sm\:w-24 {
     width: 6rem;
   }
 
-  .v-eco-partners .sm\:w-28 {
+  .v-eco-affiliations .sm\:w-28 {
     width: 7rem;
   }
 
-  .v-eco-partners .sm\:w-3\/5 {
+  .v-eco-affiliations .sm\:w-3\/5 {
     width: 60%;
   }
 
-  .v-eco-partners .sm\:w-48 {
+  .v-eco-affiliations .sm\:w-48 {
     width: 12rem;
   }
 
-  .v-eco-partners .sm\:w-6 {
+  .v-eco-affiliations .sm\:w-6 {
     width: 1.5rem;
   }
 
-  .v-eco-partners .sm\:grid-cols-3 {
+  .v-eco-affiliations .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .v-eco-partners .sm\:flex-row {
+  .v-eco-affiliations .sm\:flex-row {
     flex-direction: row;
   }
 
-  .v-eco-partners .sm\:gap-6 {
+  .v-eco-affiliations .sm\:gap-6 {
     gap: 1.5rem;
   }
 
-  .v-eco-partners .sm\:p-10 {
+  .v-eco-affiliations .sm\:p-10 {
     padding: 2.5rem;
   }
 
-  .v-eco-partners .sm\:p-8 {
+  .v-eco-affiliations .sm\:p-8 {
     padding: 2rem;
   }
 
-  .v-eco-partners .sm\:py-16 {
+  .v-eco-affiliations .sm\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  .v-eco-partners .sm\:py-5 {
+  .v-eco-affiliations .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 
-  .v-eco-partners .sm\:text-3xl {
+  .v-eco-affiliations .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .v-eco-partners .sm\:text-lg {
+  .v-eco-affiliations .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 @media (min-width: 768px) {
 
-  .v-eco-partners .md\:col-span-6 {
+  .v-eco-affiliations .md\:col-span-6 {
     grid-column: span 6 / span 6;
   }
 
-  .v-eco-partners .md\:min-h-0 {
+  .v-eco-affiliations .md\:min-h-0 {
     min-height: 0px;
   }
 
-  .v-eco-partners .md\:w-1\/2 {
+  .v-eco-affiliations .md\:w-1\/2 {
     width: 50%;
   }
 
-  .v-eco-partners .md\:grid-cols-12 {
+  .v-eco-affiliations .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
-  .v-eco-partners .md\:grid-cols-2 {
+  .v-eco-affiliations .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .v-eco-partners .md\:flex-row {
+  .v-eco-affiliations .md\:flex-row {
     flex-direction: row;
   }
 
-  .v-eco-partners .md\:items-baseline {
+  .v-eco-affiliations .md\:items-baseline {
     align-items: baseline;
   }
 
-  .v-eco-partners .md\:gap-x-8 {
+  .v-eco-affiliations .md\:gap-x-8 {
     column-gap: 2rem;
   }
 
-  .v-eco-partners .md\:px-gutter-desktop {
+  .v-eco-affiliations .md\:px-gutter-desktop {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .v-eco-partners .md\:text-\[36px\] {
+  .v-eco-affiliations .md\:text-\[36px\] {
     font-size: 36px;
   }
 
-  .v-eco-partners .md\:text-sm {
+  .v-eco-affiliations .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 @media (min-width: 1024px) {
 
-  .v-eco-partners .lg\:grid-cols-2 {
+  .v-eco-affiliations .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .v-eco-partners .lg\:grid-cols-3 {
+  .v-eco-affiliations .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .v-eco-partners .lg\:grid-cols-6 {
+  .v-eco-affiliations .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
 /* ecosystem embed skin (was injected globally by ecosystem-shared.js) */
-.v-eco-partners .cq-body,.v-eco-partners .cq-body * { font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif !important; }
-.v-eco-partners .cq-body { background: #ffffff !important; color: #0B1B2E; }
-.v-eco-partners main { padding-top: 0 !important; padding-bottom: 0 !important; }
-.v-eco-partners main > section { padding-top: 72px !important; padding-bottom: 72px !important; }
-.v-eco-partners section.bg-\[\#0B1530\] { background: #F3F6FB !important; color: #0B1B2E !important; border-color: #E1E7F0 !important; }
-.v-eco-partners section.bg-\[\#0B1530\] h1,.v-eco-partners  section.bg-\[\#0B1530\] h2,.v-eco-partners  section.bg-\[\#0B1530\] h3 { color: #0B1B2E !important; }
-.v-eco-partners section.bg-\[\#0B1530\] p,.v-eco-partners  section.bg-\[\#0B1530\] span:not(.px-3) { color: #475873 !important; }
-.v-eco-partners .cq-body > main > :first-child { padding-top: 96px !important; }
-.v-eco-partners .cq-body > main#insights-root > div:first-child,.v-eco-partners .cq-body > main#release-root > div:first-child { padding-top: 96px !important; padding-bottom: 24px !important; }
+.v-eco-affiliations .cq-body,.v-eco-affiliations .cq-body * { font-family: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif !important; }
+.v-eco-affiliations .cq-body { background: #ffffff !important; color: #0B1B2E; }
+.v-eco-affiliations main { padding-top: 0 !important; padding-bottom: 0 !important; }
+.v-eco-affiliations main > section { padding-top: 72px !important; padding-bottom: 72px !important; }
+.v-eco-affiliations section.bg-\[\#0B1530\] { background: #F3F6FB !important; color: #0B1B2E !important; border-color: #E1E7F0 !important; }
+.v-eco-affiliations section.bg-\[\#0B1530\] h1,.v-eco-affiliations  section.bg-\[\#0B1530\] h2,.v-eco-affiliations  section.bg-\[\#0B1530\] h3 { color: #0B1B2E !important; }
+.v-eco-affiliations section.bg-\[\#0B1530\] p,.v-eco-affiliations  section.bg-\[\#0B1530\] span:not(.px-3) { color: #475873 !important; }
+.v-eco-affiliations .cq-body > main > :first-child { padding-top: 96px !important; }
+.v-eco-affiliations .cq-body > main#insights-root > div:first-child,.v-eco-affiliations .cq-body > main#release-root > div:first-child { padding-top: 96px !important; padding-bottom: 24px !important; }

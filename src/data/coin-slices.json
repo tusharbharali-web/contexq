@@ -109,9 +109,9 @@
           "newpage": true
         },
         {
-          "label": "Partners",
+          "label": "Affiliations",
           "icon": "/assets/images/Ecosystem/partners.png",
-          "slug": "partners",
+          "slug": "affiliations",
           "newpage": true,
           "subNewPage": false,
           "subPopUp": false,

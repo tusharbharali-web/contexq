@@ -1,0 +1,207 @@
+// FAQ content (from "ContexQ FAQ V1.html"). Links are site-relative.
+export type FaqItem = { id: string; q: string; a: string };
+export type FaqSection = { id: string; group: string; nav: string; title: string; intro: string; link: { href: string; label: string }; items: FaqItem[] };
+
+const s = (id: string, items: [string, string, string][]) => items.map(([slug, q, a]) => ({ id: `${id}-${slug}`, q, a }));
+
+export const FAQ_SECTIONS: FaqSection[] = [
+  {
+    id: 'platform', group: 'Foundations', nav: 'Platform', title: 'The ContexQ platform',
+    intro: 'Start with the big picture: what ContexQ connects, why relationships matter and where the value comes from.',
+    link: { href: '/Platform/entity', label: 'Explore the platform' },
+    items: s('platform', [
+      ['what-does-contexq-do', 'What does ContexQ do?', 'ContexQ helps organisations make better use of data they already hold. It connects records about people, companies, accounts, suppliers and events, enriches them with relevant external information, and reveals relationships that may change a business or risk decision.'],
+      ['what-is-contextual-decision-intelligence', 'What is contextual decision intelligence?', 'It is the use of relevant relationships, events and evidence around an entity to inform a decision. Instead of judging one account, supplier or customer in isolation, teams can consider the wider network and the signals affecting it.'],
+      ['how-does-contexq-work', 'How does ContexQ work?', 'The approach is to resolve records that refer to the same entity, connect relationships between entities, add relevant external signals and present evidence-backed findings to decision-makers. The same connected foundation can support several business workflows.'],
+      ['why-not-just-use-our-existing-reports-and-dashboards', 'Why not just use our existing reports and dashboards?', 'Dashboards are valuable for the information they have been designed to show. ContexQ adds the links between data points, such as common owners, shared devices or upstream supplier dependencies, that can be hard to see in separate reports.'],
+      ['what-makes-contexq-different', 'What makes ContexQ different from a traditional analytics tool?', 'ContexQ centres analysis on resolved entities and their relationships, not only on tables or isolated events. This can make the same information useful across investigation, monitoring and growth use cases, while letting teams review the evidence behind a finding.'],
+      ['does-contexq-replace-our-existing-technology', 'Does ContexQ replace our existing technology?', 'ContexQ works as a connection and intelligence layer alongside existing CRM, ERP, banking, analytics and case-management tools. The objective is to enrich current workflows, not require every system to be replaced.'],
+      ['which-teams-can-benefit', 'Which teams can benefit from the same connected foundation?', 'Depending on the organisation, compliance, risk, procurement, fraud, operations, finance, sales and customer teams can use different views of shared entities and relationships. Each team should see the context relevant to its own decisions.'],
+    ]),
+  },
+  {
+    id: 'entity-resolution', group: 'Foundations', nav: 'Entity Resolution', title: 'Entity resolution & graph intelligence',
+    intro: 'Understand how scattered records become a usable picture of customers, companies and networks.',
+    link: { href: '/Platform/entity', label: 'Explore entity resolution' },
+    items: s('entity-resolution', [
+      ['what-is-entity-resolution', 'What is entity resolution?', 'Entity resolution identifies records that may refer to the same real-world person, company, place or other entity, even when names, formats or identifiers differ. It helps teams move from disconnected records to a more consistent view.'],
+      ['different-from-deduplication', 'How is entity resolution different from simple deduplication?', 'Deduplication often focuses on removing duplicate entries in one dataset. Entity resolution can assess evidence across multiple sources and connect records that look different but refer to the same underlying entity.'],
+      ['spelling-differences-or-scripts', 'Can ContexQ connect records with spelling differences or different scripts?', 'ContexQ uses matching approaches designed to work across variants of names, languages and scripts. Actual coverage and matching quality depend on the source data, identifiers and the configuration evaluated for a use case.'],
+      ['what-is-a-knowledge-graph', 'What is a knowledge graph?', 'A knowledge graph represents entities and the relationships between them. It can show, for example, how a borrower connects to directors and suppliers, or how several accounts connect through a device, address or beneficiary.'],
+      ['different-from-a-graph-database', 'How is ContexQ different from a graph database?', 'A graph database is primarily a way to store and query connected data. ContexQ provides a broader intelligence workflow that includes resolving entities, linking sources, enriching context and supporting evidence-based analysis. The underlying storage architecture is a separate implementation choice.'],
+      ['what-is-network-generation', 'What is network generation and why does it matter?', 'Network generation assembles relevant entities and their connections around a question. It helps an analyst trace indirect ownership, find a shared upstream supplier or see accounts that appear unrelated when examined individually.'],
+    ]),
+  },
+  {
+    id: 'implementation', group: 'Foundations', nav: 'Integration', title: 'Data, integration & deployment',
+    intro: 'Questions about starting, connecting data, governance and working with existing systems.',
+    link: { href: '/Platform/analytics', label: 'Explore data & analytics' },
+    items: s('implementation', [
+      ['do-we-need-perfect-data', 'Do we need perfect data before we begin?', 'No organisation needs to assume all data is already clean. Entity resolution is intended to help with fragmented and inconsistent records. A sensible starting point is to assess the quality and coverage of the data needed for one defined decision.'],
+      ['what-internal-data-is-useful', 'What kinds of internal data are useful?', 'This depends on the use case. Typical inputs include customer and supplier masters, CRM or ERP records, transactions, claims, contracts, device or event logs, and case-management information. Only relevant, permitted data should be used.'],
+      ['what-external-intelligence-can-be-added', 'What external intelligence can be added?', 'Examples include company registries, ownership information, sanctions and watchlists, news, adverse media, trade data and environmental or disruption signals. Availability and licences need to be confirmed for each deployment.'],
+      ['existing-data-providers-and-licences', 'Can we use data providers and licences we already have?', 'ContexQ is designed to work with existing data sources and licences. The exact connectors, access rights and redistribution restrictions should be reviewed during scoping rather than assumed.'],
+      ['integrate-with-crm-erp', 'Can ContexQ integrate with our CRM, ERP or investigation tools?', 'The platform is designed to complement existing systems and bring connected insights back into familiar workflows. Integration methods, permissions and the data exchanged would be agreed based on your environment.'],
+      ['private-environment', 'Can the solution be deployed in a private environment?', 'ContexQ supports private-cloud and other controlled deployment patterns. Which options are available for your use case, and the associated security and residency commitments, should be validated with the technical team.'],
+      ['how-are-findings-explained', 'How are findings explained to reviewers?', 'ContexQ emphasises traceable relationships and source-backed findings. Reviewers should be able to see why a signal was raised and examine the underlying evidence, rather than relying on an unexplained score alone.'],
+      ['first-step-for-evaluation', 'What is a sensible first step for evaluation?', 'Choose one priority decision, agree the relevant data and success criteria, and review a representative set of cases with the business and technology teams. This helps establish fit before expanding to more functions or datasets.'],
+    ]),
+  },
+  {
+    id: 'supply-chain', group: 'Solutions', nav: 'Supply Chain', title: 'Supply Chain Intelligence',
+    intro: 'See beyond direct suppliers, identify hidden dependencies and understand what disruptions could mean for your business.',
+    link: { href: '/solutions/supply-chain-intelligence', label: 'Explore Supply Chain Intelligence' },
+    items: s('supply-chain', [
+      ['beyond-tier-1', 'How does ContexQ help us see beyond Tier 1 suppliers?', 'ContexQ connects direct suppliers to their wider relationships, including upstream companies, owners and locations where data is available. This can reveal dependencies that do not appear in a typical supplier master.'],
+      ['why-tier-2-and-tier-3-matter', 'Why does visibility into Tier 2 and Tier 3 suppliers matter?', 'Several direct suppliers can depend on the same upstream facility, component or material. A disruption at that shared point may affect multiple products, even when the Tier 1 supplier list looks diversified.'],
+      ['risk-to-parts-or-products', 'Can we connect supplier risk to specific parts or products?', 'ContexQ starts from parts lists, purchasing records and supplier relationships. Linking those records can help teams see which components, lines or customer commitments may be exposed to a supplier issue.'],
+      ['types-of-supplier-risk', 'What types of supplier risks can be assessed?', 'Relevant categories can include financial distress, concentration, sanctions and trade restrictions, adverse media, ownership changes and climate or location-related disruption. Coverage depends on source availability and relevance.'],
+      ['alternate-suppliers', 'Can ContexQ help us find alternate suppliers?', 'Yes, the platform can help identify alternatives when supply is at risk. Potential options still need engineering, quality, commercial and qualification checks before being considered substitutes.'],
+      ['replace-erp-or-procurement', 'Does ContexQ replace an ERP or procurement platform?', 'No. Purchasing and operational systems remain the systems of record. ContexQ is intended to add network context and external signals that can inform sourcing, supplier reviews and mitigation decisions.'],
+      ['compliance-and-responsible-sourcing', 'Can supply-chain findings support compliance and responsible sourcing?', 'Connected supplier and ownership records can support investigations into sanctions, sourcing concerns, labour practices and other obligations. The evidence helps compliance teams assess a situation; it does not establish compliance automatically.'],
+    ]),
+  },
+  {
+    id: 'kyc', group: 'Solutions', nav: 'KYC', title: 'Know Your Customer (KYC)',
+    intro: 'Build a clearer picture of customers, beneficial owners and changes that deserve a closer look.',
+    link: { href: '/solutions/kyc', label: 'Explore KYC' },
+    items: s('kyc', [
+      ['improve-existing-kyc', 'How does ContexQ improve an existing KYC process?', 'It can connect customer records with related entities, ownership relationships and external signals, giving reviewers more context than an isolated customer file. The aim is better-informed reviews within the institution’s existing KYC controls.'],
+      ['indirect-beneficial-ownership', 'Can ContexQ help uncover indirect beneficial ownership?', 'Graph-based relationship analysis can help trace ownership chains and links between companies and people, subject to available registry and client data. Analysts can then assess the evidence against the relevant ownership and control rules.'],
+      ['event-driven-reviews', 'Can KYC reviews become more event-driven?', 'Connecting monitored changes to the customer network can help flag profiles that may need review, such as ownership changes or relevant adverse events. Review schedules, thresholds and decisions remain governed by the institution’s policies.'],
+      ['replace-kyc-or-clm', 'Does ContexQ replace our KYC or CLM system?', 'It is positioned as an additional intelligence layer. Existing onboarding, customer lifecycle management, screening and approval workflows can remain in place while teams use richer connected context.'],
+      ['sanctions-or-adverse-media', 'How are possible sanctions or adverse-media connections handled?', 'A connected relationship or possible name match is a lead for assessment, not a confirmed finding. The reviewer should be able to trace its source, assess its relevance and decide the appropriate next step.'],
+    ]),
+  },
+  {
+    id: 'aml', group: 'Solutions', nav: 'AML', title: 'Anti-Money Laundering (AML)',
+    intro: 'Move from isolated alerts to the wider network of people, accounts and money flows.',
+    link: { href: '/solutions/aml', label: 'Explore AML' },
+    items: s('aml', [
+      ['value-with-existing-monitoring', 'How does ContexQ add value if we already have AML monitoring?', 'Existing rules and models can identify suspicious activity, but may lack context around linked parties or accounts. ContexQ adds relationship intelligence that can help teams investigate networks rather than isolated alerts.'],
+      ['connected-vs-transaction-only', 'How is connected AML analysis different from transaction-only monitoring?', 'A transaction-only view focuses on the characteristics of a payment. Connected analysis also considers who is involved, how accounts relate, shared identifiers and the paths through which funds may move.'],
+      ['money-mule-networks', 'Can ContexQ help identify hidden money-mule networks?', 'Yes. ContexQ links accounts, phones, devices, sign-up details and payment paths to reveal clusters that appear unrelated when reviewed one at a time.'],
+      ['investigations-and-case-preparation', 'Can ContexQ support AML investigations and case preparation?', 'It is designed to bring together relationships, relevant signals and evidence paths that investigators can inspect. This can support triage and documentation, while the bank remains responsible for decisions and regulatory reporting.'],
+      ['automatically-determine-laundering', 'Does ContexQ automatically determine that a customer is laundering money?', 'No. A network connection or alert is not proof of wrongdoing. ContexQ supplies context and prioritised findings for authorised investigators to assess using the institution’s procedures.'],
+    ]),
+  },
+  {
+    id: 'fraud', group: 'Solutions', nav: 'Fraud', title: 'Fraud & mule detection',
+    intro: 'Recognise coordinated activity across accounts, devices and participants.',
+    link: { href: '/solutions/fraud', label: 'Explore Fraud' },
+    items: s('fraud', [
+      ['what-network-intelligence-reveals', 'What can network intelligence reveal that individual fraud alerts miss?', 'Separate accounts may share a phone, device, recruiter, payment destination or unusual timing. Linking these clues can help investigators see a coordinated ring rather than a queue of unrelated alerts.'],
+      ['newly-opened-mule-accounts', 'Can ContexQ help detect newly opened mule accounts?', 'Yes. New accounts can be checked against known patterns and connected entities, so relevant relationships can be flagged before an account has a lengthy transaction history.'],
+      ['reduce-duplicate-investigation', 'How can ContexQ reduce duplicate investigation effort?', 'Related alerts can be reviewed as one connected case with the parties and evidence mapped together, rather than asking several investigators to reconstruct the same network independently.'],
+      ['replace-fraud-engine', 'Does ContexQ replace our fraud detection engine?', 'No. ContexQ works alongside existing fraud engines, rules, models and case managers, with connected context improving the information available to each control.'],
+      ['who-makes-the-final-decision', 'Who makes the final decision to block or review a transaction?', 'The bank’s authorised team. ContexQ provides recommendations and evidence for human review, rather than independently taking enforcement action.'],
+    ]),
+  },
+  {
+    id: 'customer-intelligence', group: 'Solutions', nav: 'Customer Intelligence', title: 'Customer Intelligence',
+    intro: 'Connect customer relationships to improve understanding, service and growth opportunities.',
+    link: { href: '/solutions/customer-intelligence', label: 'Explore Customer Intelligence' },
+    items: s('customer-intelligence', [
+      ['already-have-a-crm', 'We already have a CRM. What does ContexQ add?', 'A CRM records interactions and known customer details. ContexQ is designed to connect identities, related businesses, households and external context, helping teams see opportunities and risks that are not obvious in one profile.'],
+      ['different-from-single-customer-view', 'How is Customer Intelligence different from a single customer view?', 'A single view combines records about one customer. Connected customer intelligence also considers relationships around that customer, such as group companies, households or linked business entities, where appropriate data is available.'],
+      ['cross-sell-opportunities', 'Can ContexQ identify cross-sell or relationship-growth opportunities?', 'ContexQ can find related companies and household connections that may be relevant to growth. Teams still decide whether an opportunity is suitable and how to engage.'],
+      ['segmentation-and-personalisation', 'Can ContexQ support customer segmentation and personalisation?', 'Resolved profiles and contextual relationships can provide better inputs for segmentation and campaign planning. Actual targeting must follow data-permission rules and the organisation’s own marketing policies.'],
+      ['own-models', 'Will our analytics team still be able to use its own models?', 'The intention is to provide better connected data and signals to existing analysts and workflows. Teams can retain their preferred modelling and decision processes, subject to the agreed integration.'],
+    ]),
+  },
+  {
+    id: 'risk-management', group: 'Solutions', nav: 'Risk', title: 'Risk Management',
+    intro: 'Understand direct and indirect exposures before they become a bigger business problem.',
+    link: { href: '/solutions/risk', label: 'Explore Risk Management' },
+    items: s('risk-management', [
+      ['counterparty-risk', 'How does ContexQ support counterparty risk assessment?', 'It can connect a counterparty to its owners, related companies, key customers and suppliers, alongside relevant external signals. This helps risk teams assess exposures that may sit beyond the entity’s own financial statements.'],
+      ['early-warning-signals', 'What are early warning signals?', 'They are changes or events that may justify closer attention, such as adverse news, ownership changes, financial stress, trade restrictions or disruption affecting a connected party. Signals support judgement; they are not a guarantee of future outcomes.'],
+      ['indirect-portfolio-concentration', 'Can ContexQ identify indirect portfolio concentration?', 'Connected analysis can show when several counterparties depend on a common company, geography, sector or supplier. Risk teams can then investigate whether these shared exposures change the portfolio picture.'],
+      ['replace-credit-scoring', 'Does ContexQ replace credit scoring models?', 'It is designed to complement existing assessments with relationship context and external information. A bank can decide how, and whether, those additional inputs are used in its approved models.'],
+      ['trace-why-flagged', 'Can risk teams trace why a particular entity was flagged?', 'The platform emphasises explainable findings, including the connections and source information behind a signal. This gives reviewers a basis for validating or rejecting a concern.'],
+    ]),
+  },
+  {
+    id: 'banking', group: 'Industries', nav: 'Banking', title: 'Banking & financial services',
+    intro: 'One connected view for financial crime, customer due diligence, credit risk and growth.',
+    link: { href: '/Industries/finance', label: 'Explore Banking' },
+    items: s('banking', [
+      ['where-can-contexq-help', 'Where can ContexQ help a bank?', 'ContexQ focuses on four banking priorities: understanding fraud and financial-crime networks, improving customer due diligence, seeing risk around borrowers and finding valuable connected customer relationships.'],
+      ['risk-and-growth', 'How can one foundation support both risk and growth?', 'The same resolved company or customer relationships can inform multiple questions. A relationship that reveals indirect exposure in one workflow may also identify a group-company opportunity for a relationship manager.'],
+      ['existing-banking-controls', 'Can ContexQ fit into our existing banking controls?', 'ContexQ is an intelligence layer alongside AML, fraud, KYC and credit systems. It can inform their workflows with relationship context while existing governance and approvals remain in place.'],
+      ['lending-or-sanctions-decisions', 'Does ContexQ make lending or sanctions decisions automatically?', 'No. ContexQ does not independently block payments, rate borrowers or contact clients. People review the evidence and decide under their institution’s policies.'],
+      ['indirect-sanctions-link', 'How is an indirect sanctions link treated?', 'As a potential match requiring verification. An ownership path, a similar name or a connected party may justify a review, but it does not establish a sanctions violation without further assessment.'],
+    ]),
+  },
+  {
+    id: 'manufacturing', group: 'Industries', nav: 'Manufacturing', title: 'Manufacturing',
+    intro: 'Make sourcing, production and compliance decisions with visibility into what each line depends on.',
+    link: { href: '/Industries/mfg', label: 'Explore Manufacturing' },
+    items: s('manufacturing', [
+      ['problems-contexq-focuses-on', 'What manufacturing problems does ContexQ focus on?', 'ContexQ addresses hidden supplier dependencies, material and part sourcing, production continuity, supplier ownership changes, quality traceability and evidence for trade or responsible-sourcing reviews.'],
+      ['one-upstream-supplier', 'Can a risk at one upstream supplier affect several production lines?', 'Yes. Different Tier 1 suppliers can converge on a common sub-tier facility or material. Mapping those relationships can help reveal concentration hidden behind a seemingly diversified supplier list.'],
+      ['procurement-and-engineering', 'How can ContexQ help procurement and engineering work together?', 'Starting from parts, bills of materials and supplier records allows teams to discuss risk in terms of components and product lines, not only company names. Engineering still validates technical alternatives and specifications.'],
+      ['trace-a-defect', 'Can quality teams trace a defect through the supply network?', 'ContexQ links products and materials back to suppliers, which can help investigators find possible common causes across products or plants where records support the trace.'],
+      ['business-impact-of-disruption', 'Can finance teams understand the business impact of a disruption?', 'Connecting supplier dependencies to affected parts, plants or orders can help inform an impact assessment. Exact revenue, cost and recovery estimates require the manufacturer’s own operational and financial assumptions.'],
+    ]),
+  },
+  {
+    id: 'ecommerce', group: 'Industries', nav: 'E-commerce', title: 'Retail & e-commerce',
+    intro: 'Understand identities and activity across channels, from customer growth to marketplace abuse.',
+    link: { href: '/Industries/ecommerce', label: 'Explore E-commerce' },
+    items: s('ecommerce', [
+      ['help-an-e-commerce-business', 'How does ContexQ help an e-commerce business?', 'ContexQ brings together customer, order, payment, promotion and marketplace information to support connected customer understanding and investigations into coordinated abuse.'],
+      ['promo-or-loyalty-abuse', 'Can ContexQ help identify promo or loyalty abuse?', 'It can help connect accounts that share relevant identifiers, such as devices, addresses, payment instruments or behavioural patterns. This gives teams a broader basis for reviewing suspected coordinated misuse.'],
+      ['refund-and-return-fraud', 'What kinds of refund and return fraud can benefit from connected analysis?', 'Examples include repeated or coordinated returns, suspicious refund destinations and networks of apparently separate accounts. The value comes from understanding the shared relationships across events.'],
+      ['customer-growth', 'How can the same data support customer growth?', 'A connected view can reveal when apparently separate profiles belong to a relationship or household, where lawful and relevant. That context can inform service, retention or cross-sell decisions.'],
+      ['only-large-marketplaces', 'Does ContexQ only serve large online marketplaces?', 'No. ContexQ supports marketplaces, direct-to-consumer brands, omnichannel retailers and other digital commerce models. Suitability depends on the data, decision and business case.'],
+    ]),
+  },
+  {
+    id: 'insurance', group: 'Industries', nav: 'Insurance', title: 'Insurance',
+    intro: 'Connect policies, claims and related parties across the insurance value chain.',
+    link: { href: '/Industries/insurance', label: 'Explore Insurance' },
+    items: s('insurance', [
+      ['support-investigations', 'How can ContexQ support insurance investigations?', 'Connecting claims, policyholders and associated parties can help special-investigation teams identify shared providers, witnesses, addresses or other relationships across claims that initially look unrelated.'],
+      ['organised-claims-fraud', 'Can it help uncover organised claims fraud?', 'Yes. Claims across different lines of business may be connected through a common claimant, professional or service provider. Investigators still verify the evidence before taking action.'],
+      ['help-insurers-grow', 'How can connected customer data help insurers grow?', 'A wider picture of policyholder and household relationships can help identify protection gaps or relevant product opportunities, subject to data-use permissions and suitability checks.'],
+      ['policy-and-claims-systems', 'Does it work alongside policy and claims systems?', 'Yes. Policy administration, claims platforms, underwriting and CRM are relevant internal sources. A scoped integration can bring connected context into existing workflows.'],
+      ['underwriting-risk-assessment', 'Can ContexQ assist underwriting risk assessment?', 'Ownership, related parties, location and other contextual data may inform how a risk is evaluated. Underwriting standards, approved models and final coverage decisions remain with the insurer.'],
+    ]),
+  },
+  {
+    id: 'telecom', group: 'Industries', nav: 'Telecom', title: 'Telecommunications',
+    intro: 'Connect subscribers, SIMs, devices, dealers and business accounts to reveal risk and opportunity.',
+    link: { href: '/Industries/telco', label: 'Explore Telecom' },
+    items: s('telecom', [
+      ['business-problems', 'What business problems can ContexQ address for telecom operators?', 'ContexQ covers subscriber and household intelligence, cross-sell and retention, enterprise relationships, SIM-related fraud, international revenue-share fraud and dealer or supplier risk.'],
+      ['different-from-billing', 'How is telecom customer intelligence different from a billing-system view?', 'Billing platforms usually see subscriptions and charges. Connected intelligence can relate mobile, broadband, household and enterprise records to help teams understand the wider customer relationship.'],
+      ['sim-swap-or-synthetic', 'Can ContexQ help detect SIM-swap or synthetic subscriber activity?', 'Where the appropriate logs are available, connecting SIM, device, onboarding, customer and dealer records can reveal suspicious shared identifiers or coordinated activation patterns for investigation.'],
+      ['irsf', 'What is international revenue-share fraud (IRSF), and how can context help?', 'IRSF can involve traffic driven to premium-rate international destinations. Connected analysis can help teams examine relationships among SIM activations, dealers, routes, usage patterns and destinations.'],
+      ['dealer-risk', 'Can telecom operators use ContexQ for dealer risk?', 'Dealer activations, commissions, customer records and external company information can be connected to help investigate unusual clusters or potentially related parties. Suspicious patterns should be validated by authorised teams.'],
+    ]),
+  },
+  {
+    id: 'public-sector', group: 'Industries', nav: 'Public Sector', title: 'Public sector',
+    intro: 'Support investigations and service integrity across connected public records, where data sharing is authorised.',
+    link: { href: '/Industries/public-sector', label: 'Explore Public Sector' },
+    items: s('public-sector', [
+      ['use-cases', 'What public-sector use cases does ContexQ support?', 'Use cases include tax and revenue intelligence, customs, procurement integrity, welfare and subsidy fraud, anti-corruption, law enforcement and financial-intelligence investigations.'],
+      ['procurement-conflicts', 'How can graph intelligence help identify procurement conflicts?', 'It can help reveal connections between bidders, owners, officials and awarded contracts, using available and authorised records. Reviewers then assess whether a connection creates a reportable conflict.'],
+      ['duplicate-identities', 'Can ContexQ help detect duplicate identities or benefit claims?', 'Entity resolution can assist with identifying records that may belong to the same person or connected group. Any eligibility or enforcement decision must follow the agency’s legal and procedural safeguards.'],
+      ['customs-teams', 'How can customs teams use connected intelligence?', 'Links among importers, exporters, ownership, shipments, counterparties and relevant lists can support review of complex trade relationships. Such findings remain leads for authorised customs assessment.'],
+      ['privacy-obligations', 'Does connecting government data remove privacy obligations?', 'No. Access, purpose, data sharing and retention must remain governed by applicable law and agency policy. Cross-agency connectivity should only be implemented where permissions and safeguards allow it.'],
+    ]),
+  },
+  {
+    id: 'about', group: 'Company', nav: 'About', title: 'About ContexQ',
+    intro: 'A few practical answers about the company and how to start a conversation.',
+    link: { href: '/about', label: 'About the company' },
+    items: s('about', [
+      ['what-is-contexq', 'What is ContexQ?', 'ContexQ is a company building contextual intelligence capabilities to help organisations connect data, relationships and external signals for better decisions across risk, operations and growth.'],
+      ['which-industries', 'Which industries does ContexQ focus on?', 'ContexQ serves financial services, manufacturing, e-commerce, insurance, telecommunications and the public sector, with solutions spanning supply chain, KYC, AML, fraud, customer intelligence and risk.'],
+      ['discuss-a-use-case', 'How can I discuss a ContexQ use case?', 'Start with the business question you need to answer, the systems involved and the decision you want to improve. Contact the team through the contact page or email inquiry@contexq.com to discuss a suitable next step.'],
+      ['current-roles', 'Where can I find current roles at ContexQ?', 'Visit the Careers page for the latest openings, or write to careers@contexq.com.'],
+    ]),
+  },
+];

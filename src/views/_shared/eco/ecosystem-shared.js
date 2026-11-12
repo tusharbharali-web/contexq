@@ -55,7 +55,7 @@ export default function run(cq) {
     { label: "Insights", href: EMBEDDED ? "/Ecosystem/blogs" : "insights.html" },
     { label: "Awards", href: EMBEDDED ? "/Ecosystem/awards" : "Awards.html" },
     { label: "Press", href: EMBEDDED ? "/Ecosystem/press-releases" : "PressReleases.html" },
-    { label: "Affiliations", href: EMBEDDED ? "/Ecosystem/partners" : "Affiliations.html" },
+    { label: "Affiliations", href: EMBEDDED ? "/Ecosystem/affiliations" : "Affiliations.html" },
     { label: "FAQs", href: EMBEDDED ? "/Ecosystem/faq" : "FAQs.html" }
   ];
   var HOME_HREF = "index.html";

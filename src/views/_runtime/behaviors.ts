@@ -27,7 +27,7 @@ export const BEHAVIORS: Record<string, () => Promise<Behavior>> = {
   "eco-awards": () => import("../eco-awards/behavior.js") as Promise<Behavior>,
   "eco-press": () => import("../eco-press/behavior.js") as Promise<Behavior>,
   "eco-press-article": () => import("../eco-press-article/behavior.js") as Promise<Behavior>,
-  "eco-partners": () => import("../eco-partners/behavior.js") as Promise<Behavior>,
+  "eco-affiliations": () => import("../eco-affiliations/behavior.js") as Promise<Behavior>,
   "eco-award": () => import("../eco-award/behavior.js") as Promise<Behavior>,
   "customer-trading": () => import("../customer-trading/behavior.js") as Promise<Behavior>,
   "customer-banks": () => import("../customer-banks/behavior.js") as Promise<Behavior>,

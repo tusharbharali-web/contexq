@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       { source: "/Industries/goods", destination: "/Industries/ecommerce", permanent: true },
       { source: "/Industries/health", destination: "/Industries/insurance", permanent: true },
       { source: "/company", destination: "/about", permanent: true },
+      { source: "/Ecosystem/partners", destination: "/Ecosystem/affiliations", permanent: true },
       { source: "/Platform/cleansing", destination: "/Platform/analytics", permanent: true },
       { source: "/Platform/network", destination: "/Platform/knowledge-graph", permanent: true },
     ];

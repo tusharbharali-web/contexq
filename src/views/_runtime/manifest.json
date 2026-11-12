@@ -325,8 +325,8 @@
       "handlers": []
     },
     {
-      "id": "eco-partners",
-      "route": "/Ecosystem/partners",
+      "id": "eco-affiliations",
+      "route": "/Ecosystem/affiliations",
       "legacyUrl": "/eco-skin/Affiliations.html",
       "fonts": [
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
@@ -433,7 +433,7 @@
     "/eco-skin/insights.html": "/Ecosystem/blogs",
     "/eco-skin/Awards.html": "/Ecosystem/awards",
     "/eco-skin/PressReleases.html": "/Ecosystem/press-releases",
-    "/eco-skin/Affiliations.html": "/Ecosystem/partners",
+    "/eco-skin/Affiliations.html": "/Ecosystem/affiliations",
     "/customers-src/Trading.html": "/customer-stories/trading",
     "/customers-src/banking.html": "/customer-stories/banks",
     "/customers-src/Manufacturing.html": "/customer-stories/manufacturing",

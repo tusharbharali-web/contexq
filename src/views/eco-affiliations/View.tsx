@@ -1,12 +1,12 @@
 // Generated from public/eco-skin/Affiliations.html.
-// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-eco-partners);
+// Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-eco-affiliations);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
 import "../_shared/eco/eco-hero.css";
 export function View() {
   return (
-    <ViewShell viewId="eco-partners" className="v-eco-partners cq-html scroll-smooth" lang="en" bodyClassName="cq-body min-h-screen bg-white text-brand-navy flex flex-col">
+    <ViewShell viewId="eco-affiliations" className="v-eco-affiliations cq-html scroll-smooth" lang="en" bodyClassName="cq-body min-h-screen bg-white text-brand-navy flex flex-col">
       <div id="ecosystem-chrome" data-active="Affiliations" />
       {" "}
       <main className="flex-1 w-full">

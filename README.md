@@ -56,7 +56,7 @@ Renamed to match their content (old URLs redirect permanently, see `next.config.
 | `/Ecosystem/blogs`, `/Ecosystem/blogs/[slug]` | `eco-insights`, `eco-blog-article` |
 | `/Ecosystem/press-releases`, `/Ecosystem/press-releases/[slug]` | `eco-press`, `eco-press-article` |
 | `/Ecosystem/awards`, `/Ecosystem/awards/[slug]` | `eco-awards`, `eco-award` (17 award pages) |
-| `/Ecosystem/partners` | `eco-partners` |
+| `/Ecosystem/affiliations` | `eco-affiliations` |
 
 `/`, `/Ecosystem/faq` and the legal pages were already React components and are unchanged.
 
