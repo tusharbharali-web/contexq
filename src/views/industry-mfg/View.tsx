@@ -847,7 +847,7 @@ export function View() {
               </div>
               {" "}
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[15px] font-semibold text-status-blue">
-                <a className="hover:text-accent-hover transition-colors inline-flex items-center gap-1" href="#how-it-works">
+                <a className="hover:text-accent-hover transition-colors inline-flex items-center gap-1" href="/solutions/supply-chain-intelligence">
                   {" "}
                   <span>See the full supply network on Supply Chain Intelligence</span>
                   {" "}
@@ -857,7 +857,7 @@ export function View() {
                 {" "}
                 <span className="hidden sm:inline text-[#D9E1EC]">•</span>
                 {" "}
-                <a className="hover:text-accent-hover transition-colors inline-flex items-center gap-1" href="#regulatory">
+                <a className="hover:text-accent-hover transition-colors inline-flex items-center gap-1" href="/solutions/risk">
                   {" "}
                   <span>See how risk signals are handled on Risk Management</span>
                   {" "}
@@ -1366,10 +1366,6 @@ export function View() {
               <span className="material-symbols-outlined text-[#2FB67C] text-[16px]">verified_user</span>
               {" "}
               <span className="text-[#9DB0C8]">Independently audited security</span>
-              {" "}
-              <span className="w-1 h-1 rounded-full bg-white/30" aria-hidden="true" />
-              {" "}
-              <a className="text-[#328CFF] font-semibold hover:text-[#5AA5FF] hover:underline" href="#">See security details</a>
             </div>
           </div>
         </section>

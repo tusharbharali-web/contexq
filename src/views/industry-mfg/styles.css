@@ -1860,3 +1860,19 @@ video {
   background-color: var(--white, #FFFFFF);
   color: var(--ink-900, #0B1B2E);
 }
+
+/* ---------- Heading sizes ----------
+   The headline-lg / headline-xl utility classes had no size here, so most section headings
+   rendered at 16px. Hero and section headings: 44/52 (32/40 on phones), like the hero and
+   "How ContexQ helps". The sub-heading "Every team gets the answer it needs.": 32/40.
+   (The closing CTA heading keeps its own 32px rule.) */
+.v-industry-mfg .cq-body h1.font-headline-xl,
+.v-industry-mfg .cq-body h2.font-headline-lg,
+.v-industry-mfg .cq-body h2.font-headline-xl { font-size: 44px; line-height: 52px; letter-spacing: -.02em; font-weight: 600; }
+.v-industry-mfg .cq-body h3.font-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -.015em; font-weight: 600; }
+@media (max-width: 640px) {
+  .v-industry-mfg .cq-body h1.font-headline-xl,
+  .v-industry-mfg .cq-body h2.font-headline-lg,
+  .v-industry-mfg .cq-body h2.font-headline-xl { font-size: 32px; line-height: 40px; letter-spacing: -.015em; }
+  .v-industry-mfg .cq-body h3.font-headline-lg { font-size: 24px; line-height: 32px; }
+}
