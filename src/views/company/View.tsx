@@ -67,7 +67,10 @@ export function View() {
               </blockquote>
               {" "}
               <figcaption>
-                <span className="av">AK</span>
+                <span className="av">
+                  AK
+                  <img src="/assets/images/Team/Ajay_Kakarania.webp" alt="" loading="lazy" decoding="async" />
+                </span>
                 <span>
                   <b>Ajay Kakarania</b>
                   Founder and CEO, ContexQ
