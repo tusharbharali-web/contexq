@@ -1471,3 +1471,5 @@ video {
 @media (max-width: 520px) { .v-customer-manufacturing { --cq-gutter: 17px; } }
 .v-customer-manufacturing .max-w-7xl.mx-auto,.v-customer-manufacturing  .max-w-6xl.mx-auto,.v-customer-manufacturing  .cq-industry-strip .cq-in { width: min(1200px, calc(100% - 2 * var(--cq-gutter))); max-width: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
 
+
+.v-customer-manufacturing main.py-16{padding-bottom:4rem!important}
