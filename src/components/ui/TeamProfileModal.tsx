@@ -60,6 +60,7 @@ export default function TeamProfileModal() {
 
   return (
     <div
+      data-team-profile-modal
       onClick={() => setPerson(null)}
       style={{
         position: 'fixed',

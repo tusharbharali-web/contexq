@@ -264,7 +264,7 @@ export const supplyChainConfig: SolutionConfig = {
         description: 'In a traditional setup, by the time the right people see the right data, the supply is already gone, or the price has already moved.',
       },
       left: {
-        heading: 'Traditional Reaction · 5–10 Days',
+        heading: 'Traditional Reaction · 5-10 Days',
         subtext: 'By the time you know, <em>you\'ve already lost the position.</em>',
         content: [],
         outcome: {

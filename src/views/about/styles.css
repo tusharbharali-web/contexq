@@ -157,6 +157,9 @@
 .v-about .mbox h3{font-size:26px}.v-about .mbox .role{display:block;color:var(--blue);font-weight:600;margin:4px 0 4px}
 .v-about .mbox .tag{color:var(--ink2);font-weight:600;margin:0 0 16px}
 .v-about .mbox p.desc{color:#26345A;margin:0}
+.v-about .mbox a.mli{display:inline-flex;align-items:center;height:40px;margin-top:18px;padding:0 18px;border-radius:4px;background:#2F86FF;color:#fff;font:600 14px var(--font);text-decoration:none}
+.v-about .mbox a.mli:hover{background:#5BA0FF}
+.v-about .mbox a.mli[hidden]{display:none}
 .v-about .mnav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--paper-line);font-size:14px;color:var(--ink2)}
 .v-about .mnav button,.v-about .mclose{background:none;border:1px solid var(--paper-line);border-radius:8px;padding:8px 14px;font:600 14px var(--font);cursor:pointer;color:var(--ink)}
 .v-about .mclose{position:absolute;top:14px;right:14px;padding:6px 10px}

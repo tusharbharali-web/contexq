@@ -844,7 +844,7 @@
     /* =====================================================
        Responsive
        ===================================================== */
-    /* Must precede the 981–1240px rule, which re-shows the short label */
+    /* Must precede the 981-1240px rule, which re-shows the short label */
     @media (min-width: 481px) {
       .v-solution-risk .nav-cta .short { display: none; }
     }

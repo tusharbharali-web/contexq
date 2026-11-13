@@ -894,9 +894,9 @@
   background-image: none !important;
 }
 
-/* Section 4 (How we help): white — existing light background retained */
+/* Section 4 (How we help): white - existing light background retained */
 
-/* Section 5: blue — existing dark background retained */
+/* Section 5: blue - existing dark background retained */
 
 /* Section 6: match the dark-blue background of the section directly above */
 .v-solution-customer-intelligence .portfolio-cta {
@@ -949,7 +949,7 @@
   font-style: normal !important;
 }
 
-/* Heading left, subheading right, vertically centered — every section except the last banner. */
+/* Heading left, subheading right, vertically centered - every section except the last banner. */
 .v-solution-customer-intelligence .pr-heading,.v-solution-customer-intelligence 
 .scoring-heading,.v-solution-customer-intelligence 
 .reasons-heading {

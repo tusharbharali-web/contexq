@@ -28,7 +28,7 @@ export default function run(cq) {
       "body { background: #ffffff !important; color: #0B1B2E; }",
       "main { padding-top: 0 !important; padding-bottom: 0 !important; }",
       "main > section { padding-top: 72px !important; padding-bottom: 72px !important; }",
-      /* Dark-navy sections the HTML carried in — flatten to a subtle paper-gray */
+      /* Dark-navy sections the HTML carried in - flatten to a subtle paper-gray */
       "section.bg-\\[\\#0B1530\\] { background: #F3F6FB !important; color: #0B1B2E !important; border-color: #E1E7F0 !important; }",
       "section.bg-\\[\\#0B1530\\] h1, section.bg-\\[\\#0B1530\\] h2, section.bg-\\[\\#0B1530\\] h3 { color: #0B1B2E !important; }",
       "section.bg-\\[\\#0B1530\\] p, section.bg-\\[\\#0B1530\\] span:not(.px-3) { color: #475873 !important; }",

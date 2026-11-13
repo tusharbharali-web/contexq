@@ -121,7 +121,7 @@
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
       ],
       "externals": [],
-      "title": "ContexQ — Customer intelligence for relationship teams",
+      "title": "ContexQ - Customer intelligence for relationship teams",
       "handlers": []
     },
     {
@@ -260,7 +260,7 @@
         "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "Insights — ContexQ",
+      "title": "Insights - ContexQ",
       "description": "Practical thinking on decision intelligence, entity resolution and managing risk.",
       "handlers": []
     },
@@ -274,7 +274,7 @@
         "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "Unlock Business Intelligence with Entity Resolution — ContexQ",
+      "title": "Unlock Business Intelligence with Entity Resolution - ContexQ",
       "template": "blog",
       "handlers": []
     },
@@ -306,7 +306,7 @@
         "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "Press & Media — ContexQ",
+      "title": "Press & Media - ContexQ",
       "handlers": []
     },
     {
@@ -319,7 +319,7 @@
         "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO — ContexQ",
+      "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO - ContexQ",
       "description": "We’re excited to welcome Jean-Michel Coeur as the Co-Founder and Chief Technology Officer (CTO) at ContexQ, bringing a unique blend of deep technical expertise, entrepreneurial vision, and global perspective to lead our product and technology strategy.",
       "template": "press",
       "handlers": []
@@ -383,7 +383,7 @@
         "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "ContexQ — Customers: Manufacturing",
+      "title": "ContexQ - Customers: Manufacturing",
       "handlers": []
     },
     {
@@ -395,7 +395,7 @@
         "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       ],
       "externals": [],
-      "title": "ContexQ — Government Intelligence & Cross-Agency Entity Resolution",
+      "title": "ContexQ - Government Intelligence & Cross-Agency Entity Resolution",
       "handlers": []
     }
   ],
@@ -485,26 +485,26 @@
   "templateMeta": {
     "blog": {
       "entity-resolution-business-intelligence": {
-        "title": "Unlock Business Intelligence with Entity Resolution — ContexQ"
+        "title": "Unlock Business Intelligence with Entity Resolution - ContexQ"
       },
       "future-proofing-modern-supply-chains": {
-        "title": "Optimizing & Future-Proofing Modern Supply Chains — ContexQ"
+        "title": "Optimizing & Future-Proofing Modern Supply Chains - ContexQ"
       },
       "data-driven-decision-intelligence": {
-        "title": "How ContexQ Delivers Data-Driven Decision Intelligence — ContexQ"
+        "title": "How ContexQ Delivers Data-Driven Decision Intelligence - ContexQ"
       }
     },
     "press": {
       "jean-michel-coeur-joins-contexq-co-founder-cto": {
-        "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO — ContexQ",
+        "title": "Jean-Michel Coeur Joins ContexQ as Co-Founder & CTO - ContexQ",
         "description": "We’re excited to welcome Jean-Michel Coeur as the Co-Founder and Chief Technology Officer (CTO) at ContexQ, bringing a unique blend of deep technical expertise, entrepreneurial vision, and global perspective to lead our product and technology strategy."
       },
       "jean-michel-cto-speak-asia-tech-x-singapore-2026": {
-        "title": "Jean-Michel, CTO, to Speak at Asia Tech x Singapore 2026 — ContexQ",
+        "title": "Jean-Michel, CTO, to Speak at Asia Tech x Singapore 2026 - ContexQ",
         "description": "Jean-Michel, Chief Technology Officer at ContexQ, will be speaking at Asia Tech x Singapore (ATxSG), one of Asia’s leading technology forums, held in Singapore."
       },
       "partha-dasgupta-appointed-chief-mentor": {
-        "title": "ContexQ Appoints Partha Dasgupta as Chief Mentor & Head of Business Development — ContexQ",
+        "title": "ContexQ Appoints Partha Dasgupta as Chief Mentor & Head of Business Development - ContexQ",
         "description": "ContexQ, a B2B deep tech startup with a contextual decision intelligence platform, today announced the strategic appointment of Partha Dasgupta as its Chief Mentor & Head of Business Development, India."
       }
     }

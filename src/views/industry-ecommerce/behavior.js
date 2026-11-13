@@ -76,7 +76,7 @@ function build(){
  el.mouth=null;
  // globe
  const [gx,gy,gr]=lay.glo;
- // ContexQ globe: the hero of the scene — bright core, crisp rim, orbit rings and a light column from the platform
+ // ContexQ globe: the hero of the scene - bright core, crisp rim, orbit rings and a light column from the platform
  el.gGlow=mk('circle',{cx:gx,cy:gy,r:gr*3.2,fill:'url(#gloGlow)',opacity:.3});
  mk('path',{d:`M${gx-gr*.9} ${lay.fl[1]} L${gx-gr*.55} ${gy} L${gx+gr*.55} ${gy} L${gx+gr*.9} ${lay.fl[1]} Z`,fill:'url(#shaft)',opacity:.9});
  el.globe=mk('g',{opacity:.6});

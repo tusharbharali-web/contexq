@@ -281,7 +281,7 @@ export function View() {
                       <div className="hazard-legend">
                         <b>HAZARD SIGNALS</b>
                         <br />
-                        Illustrative locations for demo purposes — not live alerts or forecasts.
+                        Illustrative locations for demo purposes - not live alerts or forecasts.
                       </div>
                     </div>
                     {" "}

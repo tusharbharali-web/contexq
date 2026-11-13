@@ -394,7 +394,7 @@ export function View() {
               </div>
               {" "}
               <div>
-                <b>3–5 years</b>
+                <b>3-5 years</b>
                 <span>between scheduled reviews, while risk keeps moving</span>
               </div>
               {" "}

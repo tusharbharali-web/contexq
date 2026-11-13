@@ -119,7 +119,7 @@ export default function Header() {
           />
         </Link>
 
-        {/* Mobile/tablet hamburger — visible below lg (the full nav needs ~1000px) */}
+        {/* Mobile/tablet hamburger - visible below lg (the full nav needs ~1000px) */}
         <button
           aria-label="Toggle menu"
           onClick={() => setMobileOpen((v) => !v)}

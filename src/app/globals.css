@@ -87,7 +87,7 @@ html {
 }
 
 /* ------------------------------------------------------------------
-   ContexQ landing — tokens ported from the Tailwind Play CDN config
+   ContexQ landing - tokens ported from the Tailwind Play CDN config
    (tailwind.config.theme.extend) to Tailwind v4 @theme.
    ------------------------------------------------------------------ */
 
@@ -298,6 +298,9 @@ html {
 html:has(.cq-html[class*="v-customer-"] .cq-ov > .cq-panel) { overflow: hidden; }
 /* (Scoped to the customer views and the popup itself: other pages use .cq-ov for unrelated
    elements, e.g. the supply-chain map labels, and must not be locked or lifted.) */
+/* About page: same for its team-profile popup (.modal.open), which otherwise sits under the footer. */
+.cq-html.v-about:has(.modal.open) { z-index: 1000 !important; }
+html:has(.cq-html.v-about .modal.open) { overflow: hidden; }
 
 /* ---------- CTA buttons: one size site-wide ----------
    Every in-page CTA (hero "See how it works", "Explore where we can help", …) and every closing

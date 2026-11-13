@@ -326,6 +326,7 @@ export function View() {
           <span className="role" id="mRole" />
           <p className="tag" id="mTag" />
           <p className="desc" id="mDesc" />
+          <a className="mli" id="mLi" target="_blank" rel="noopener noreferrer" hidden>View on LinkedIn</a>
           {" "}
           <div className="mnav">
             <button type="button" id="mPrev">← Previous</button>

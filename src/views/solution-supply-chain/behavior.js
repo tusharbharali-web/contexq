@@ -143,12 +143,12 @@ document.addEventListener('DOMContentLoaded',()=>{['piGrid','acGrid','risks8'].f
  const copy={
   tiers:{
    title:'See every tier, not only the suppliers you pay.',
-   desc:'Sub-tier relationships are inferred from registries, customs, ownership and trade data, then labelled with their evidence and verification status — including where no supplier disclosed them.',
+   desc:'Sub-tier relationships are inferred from registries, customs, ownership and trade data, then labelled with their evidence and verification status - including where no supplier disclosed them.',
    meta:['● Your direct suppliers','○ Their suppliers, resolved','● Evidence on every link']
   },
   hidden:{
    title:'Expose the chokepoints behind “independent” suppliers.',
-   desc:'Shared sub-tier plants, shared ownership, and regional concentration are three distinct relationship types — each surfaced as a distinct pattern in the graph, so “dual-sourced on paper” is tested against reality.',
+   desc:'Shared sub-tier plants, shared ownership, and regional concentration are three distinct relationship types - each surfaced as a distinct pattern in the graph, so “dual-sourced on paper” is tested against reality.',
    meta:['Shared site','Shared owner','Regional concentration']
   },
   impact:{
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded',()=>{['piGrid','acGrid','risks8'].f
   },
   alternates:{
    title:'Find alternates that actually reduce risk.',
-   desc:'Candidates are ranked by capability evidence and by how much each one improves your network — not by name similarity. Each remains a candidate requiring verification and qualification.',
+   desc:'Candidates are ranked by capability evidence and by how much each one improves your network - not by name similarity. Each remains a candidate requiring verification and qualification.',
    meta:['Candidate suppliers','Evidence of capability','Verification required']
   }
  };
@@ -393,7 +393,7 @@ cards.forEach(card=>observer.observe(card));
  const old=document.getElementById('supplier3d');if(old)old.remove();
  const canvas=document.createElement('canvas');canvas.id='supplier3d';canvas.setAttribute('aria-label','Supply chain relationship network');visual.appendChild(canvas);
  const tip=document.createElement('div');tip.id='networkTip';tip.setAttribute('aria-live','polite');tip.textContent='';visual.appendChild(tip);
- let renderer;try{renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'high-performance'})}catch(e){tip.textContent='WebGL unavailable — enable hardware acceleration to view the network.';return}
+ let renderer;try{renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'high-performance'})}catch(e){tip.textContent='WebGL unavailable - enable hardware acceleration to view the network.';return}
  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));renderer.setClearColor(0x000000,0);renderer.outputColorSpace=THREE.SRGBColorSpace;
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(30,1,.1,100);camera.position.set(0,0,13.6);
  const root=new THREE.Group();root.position.set(.45,-.72,0);scene.add(root);
@@ -580,7 +580,7 @@ window.__CQ_THREE=THREE;window.dispatchEvent(new Event('cq-three'));
       })();
       // ---- page module script ----
       (async () => {
-// Uses the page's bundled Three.js (exposed by the hero) — no external downloads.
+// Uses the page's bundled Three.js (exposed by the hero) - no external downloads.
 const THREE=window.__CQ_THREE||await new Promise(r=>window.addEventListener('cq-three',()=>r(window.__CQ_THREE),{once:true}));
 // Minimal tween helper replacing the GSAP calls this globe used (to / set on numeric properties).
 const gsap=(()=>{const E={'power2.out':t=>1-Math.pow(1-t,3),'power3.out':t=>1-Math.pow(1-t,4)};const live=new Map();

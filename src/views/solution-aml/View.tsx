@@ -556,7 +556,7 @@ export function View() {
                 <h3>Fewer false alarms</h3>
                 <p>Low-risk alerts are closed with clear reasons, so teams focus on what matters.</p>
                 <p className="fig">
-                  <b>Up to 60–90%</b>
+                  <b>Up to 60-90%</b>
                   {" fewer alerts to review"}
                   <sup>*</sup>
                 </p>

@@ -37,7 +37,7 @@ export function View() {
                   <span className="aw-hero-label">{"Programmes"}</span>
                 </a>
                 <a className="aw-hero-stat" href="#recognition">
-                  <span className="aw-hero-num">2</span>
+                  <span className="aw-hero-num">3</span>
                   <span className="aw-hero-label">{"Recognition"}</span>
                 </a>
               </nav>
@@ -575,7 +575,7 @@ export function View() {
               <div className="rounded-xl card-border-ambient overflow-hidden bg-white flex flex-col sm:flex-row">
                 <div className="sm:w-5/12 bg-[#E6F4F1] flex items-center justify-center p-6 min-h-[150px] sm:min-h-auto shrink-0">
                   <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-2.5">
-                    <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt="Asian Development Bank (ADB)" className="w-full h-full object-contain" />
+                    <img src={"/eco-skin/assets/logos/lhoft-logo.png"} alt="The LHoFT (Luxembourg House of Financial Technology)" className="w-full h-full object-contain" />
                   </div>
                 </div>
                 {" "}
@@ -592,7 +592,7 @@ export function View() {
                     </h3>
                     {" "}
                     <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                      {" The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs — Cross-border fintech acceleration and venture co-funding "}
+                      {" The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs - Cross-border fintech acceleration and venture co-funding "}
                     </p>
                   </div>
                   {" "}
@@ -648,6 +648,38 @@ export function View() {
                   {" "}
                   <div>
                     <Link prefetch={false} className="text-xs sm:text-sm font-medium text-[#2F6BFF] hover:underline inline-flex items-center gap-1" href="/Ecosystem/awards/leap-east-2026">
+                      {" Read more → "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              {" "}
+              <div className="rounded-xl card-border-ambient overflow-hidden bg-white flex flex-col sm:flex-row">
+                <div className="sm:w-5/12 bg-[#E6F4F1] flex items-center justify-center p-6 min-h-[150px] sm:min-h-auto shrink-0">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-2.5 overflow-hidden">
+                    <img src="/eco-skin/assets/logos/finovate-spring.png" alt="FinovateSpring (Finovate by Informa)" className="w-full h-full object-contain" />
+                  </div>
+                </div>
+                {" "}
+                <div className="sm:w-7/12 p-6 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <span className="px-2.5 py-0.5 rounded-full text-xs bg-teal-100 text-teal-800 font-semibold">{" Selected "}</span>
+                      {" "}
+                      <span className="text-xs text-slate-500 font-medium">San Diego · 2026</span>
+                    </div>
+                    {" "}
+                    <h3 className="font-headline-card text-base font-bold text-[#0B1530] mb-1 leading-snug">{" FinovateSpring 2026 "}</h3>
+                    {" "}
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-1">{" Finovate · Selected Demo Company "}</p>
+                    {" "}
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
+                      {" Selected to showcase ContexQ's AI-powered financial crime and risk intelligence platform at FinovateSpring 2026. "}
+                    </p>
+                  </div>
+                  {" "}
+                  <div>
+                    <Link prefetch={false} className="text-xs sm:text-sm font-medium text-[#2F6BFF] hover:underline inline-flex items-center gap-1" href="/Ecosystem/awards/finovatespring-2026">
                       {" Read more → "}
                     </Link>
                   </div>

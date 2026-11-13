@@ -32,7 +32,7 @@ function sizeCanvas(cv,el){const r=el.getBoundingClientRect(),dpr=Math.min(devic
 const header=$('#siteHeader');if(header){const onScroll=()=>header.classList.toggle('scrolled',scrollY>8);addEventListener('scroll',onScroll,{passive:true});onScroll();}
 
 /* =========================================================
-   01 HERO — signals converge on the ContexQ core, graph emerges
+   01 HERO - signals converge on the ContexQ core, graph emerges
    ========================================================= */
 (function hero(){
   const hero=$('.hero'),cv=$('#heroCanvas'),stage=$('#heroStage'),copy=$('.hero-copy'),stepEls=$$('.hero-steps li'),replay=$('#heroReplay');
@@ -122,7 +122,7 @@ const header=$('#siteHeader');if(header){const onScroll=()=>header.classList.tog
 })();
 
 /* =========================================================
-   02 INTELLIGENCE SOURCES — original connected-view animation (ported)
+   02 INTELLIGENCE SOURCES - original connected-view animation (ported)
    ========================================================= */
 (()=>{'use strict';const canvas=document.querySelector('#network'),ctx=canvas.getContext('2d'),scene=document.querySelector('#scene');let W=800,H=550,dpr=1,clock=0,last=0,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches,stage=-1,hover=-1;const SPEED=1.5,STAGE_SPEED=[1.8,1,1.35,1],duration=7,total=28,TAU=Math.PI*2;const mint='#79D9F2',blue='#5BA9E0',gold='#F2C47F';const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),ease=t=>{t=clamp(t);return t*t*(3-2*t)},mix=(a,b,t)=>a+(b-a)*t;let points=[];const nodes=[
 {x:.29,y:.46,label:'Bank customer',type:'person',desc:'One person, matched from six bank and registry records.',focal:true},

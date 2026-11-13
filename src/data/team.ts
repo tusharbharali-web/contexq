@@ -39,6 +39,8 @@ export const COMPANY_LOGOS: Record<string, string> = {
   NVIDIA: `${LOGO_DIR}/nvidia.webp`,
   IBM: `${LOGO_DIR}/ibm.webp`,
   Kyndryl: `${LOGO_DIR}/kyndryl.webp`,
+  "Danske Bank": `${LOGO_DIR}/danske-bank.webp`,
+  OCBC: `${LOGO_DIR}/ocbc.webp`,
 };
 
 export const TEAM: TeamMember[] = [
@@ -160,5 +162,22 @@ export const TEAM: TeamMember[] = [
     photoPosition: "center top",
     photoAlt: "Portrait of Partha Dasgupta",
     linkedinUrl: "https://www.linkedin.com/in/partha-dasgupta-68088720/",
+  },
+  {
+    slug: "gilbert-kohnke",
+    group: "advisors",
+    displayName: "Gilbert Kohnke",
+    popupName: "Gilbert Kohnke",
+    position: "Advisor",
+    role: "Advisor",
+    oneLiner: "Former Group Chief Risk Officer · Maybank, Danske Bank, OCBC",
+    credentialLine: "30+ years in global financial services; former Group Chief Risk Officer at Maybank, Danske Bank and OCBC.",
+    chipsLabel: "PREVIOUSLY AT",
+    chips: ["Maybank", "Danske Bank", "OCBC"],
+    bio: "Gilbert brings over 30 years of international experience in financial services, enterprise risk management and banking leadership. He has held senior risk leadership positions at Maybank, Danske Bank and OCBC Bank, leading risk strategy, governance and transformation across global financial institutions. At ContexQ, he brings deep industry expertise to advancing AI-driven risk intelligence and helping organisations make more informed decisions.",
+    photo: "/assets/images/Team/Gilbert_Kohnke.webp",
+    photoPosition: "center top",
+    photoAlt: "Portrait of Gilbert Kohnke",
+    linkedinUrl: "https://www.linkedin.com/in/gilbert-kohnke-5a84295/",
   },
 ];

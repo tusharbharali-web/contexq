@@ -1,5 +1,5 @@
 ﻿/*
- * LandingSection — Next.js 16 / React 19 port of "ContexQ-Landing-Page-Final-V1.html".
+ * LandingSection - Next.js 16 / React 19 port of "ContexQ-Landing-Page-Final-V1.html".
  *
  * Server Component: the source HTML has no behavioural <script> (only the Tailwind Play CDN
  * and its config), so no 'use client' subcomponent is needed. Hover effects are pure CSS.

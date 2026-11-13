@@ -233,6 +233,20 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
     return () => window.removeEventListener('reset3dScene', handleReset3D);
   }, [handleReset]);
 
+  // Escape = "Back to pie" while any pie view is open (slice popup, tree, expanding module, Team cards).
+  // A profile popup open on top of it (Team card dialog or tree profile) takes the first Escape itself.
+  useEffect(() => {
+    if (!(activePopup || branchingData || expandingModule)) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape' || e.defaultPrevented) return;
+      if (document.querySelector('dialog[open], [data-team-profile-modal]')) return;
+      e.preventDefault();
+      handleReset();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [activePopup, branchingData, expandingModule, handleReset]);
+
   // Sync pie sub-views with browser history so Back steps through them
   useEffect(() => {
     const restoreFromHash = () => {
@@ -243,7 +257,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
         setExpandingModule(null);
         return;
       }
-      // Branch or module hashes — can't rebuild the data, so step back to bare pie
+      // Branch or module hashes - can't rebuild the data, so step back to bare pie
       if (hash.startsWith('branch-') || hash.startsWith('module-')) {
         setActivePopup(null);
         setBranchingData(null);
@@ -323,7 +337,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
 
       {/* Team ends in the founder/advisor cards; other branches (Partners, Awards…) in the tree */}
       {branchingData && (branchingData.title === "Team" ? (
-        <TeamOverlay onClose={handleCloseBranching} />
+        <TeamOverlay onClose={handleReset} /* Escape on the cards = "Back to pie" */ />
       ) : (
         <BranchingPopup 
           title={branchingData.title}

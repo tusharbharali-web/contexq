@@ -1828,7 +1828,7 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
                       {" "}
                       <div className="flex items-center gap-2.5">
                         <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 shrink-0 flex items-center justify-center overflow-hidden">
-                          <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt="" className="w-full h-full object-contain" />
+                          <img src={"/eco-skin/assets/logos/lhoft-logo.png"} alt="" className="w-full h-full object-contain" />
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
@@ -1888,14 +1888,14 @@ export function Award_hello_tomorrow_deep_tech_pioneer() {
             {" "}
             <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Link prefetch={false} href="/Ecosystem/awards/leap-east-2026" className="p-4 sm:p-5 rounded-xl bg-white card-border-ambient flex flex-col items-start group">
+                <Link prefetch={false} href="/Ecosystem/awards/finovatespring-2026" className="p-4 sm:p-5 rounded-xl bg-white card-border-ambient flex flex-col items-start group">
                   {" "}
                   <span className="text-xs text-slate-400 font-medium flex items-center gap-1 group-hover:text-primary transition-colors">
                     {" ← Previous Recognition "}
                   </span>
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
-                    {" LEAP East 2026 "}
+                    {" FinovateSpring 2026 "}
                   </span>
                   {" "}
                 </Link>
@@ -1993,11 +1993,11 @@ export function Award_leap_east_2026() {
                 </div>
                 {" "}
                 <h1 className="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#0B1530] tracking-tight leading-tight">
-                  {" LEAP East 2026 Flagship Cohort Selection "}
+                  {" LEAP East 2026 Cohort Selection "}
                 </h1>
                 {" "}
                 <p className="font-body-lead text-body-lead text-[#64748B] leading-relaxed max-w-3xl">
-                  {" ContexQ was selected for the prestigious LEAP East 2026 flagship cohort, an initiative backed by Singapore's Infocomm Media Development Authority (IMDA) and Enterprise Singapore to fast-track high-potential deep-tech scale-ups across bilateral digital trade corridors. "}
+                  {" ContexQ was selected for the prestigious LEAP East 2026 cohort, an initiative backed by Singapore's Infocomm Media Development Authority (IMDA) and Enterprise Singapore to fast-track high-potential deep-tech scale-ups across bilateral digital trade corridors. "}
                 </p>
                 {" "}
                 <div className="pt-2 flex flex-wrap gap-3 text-xs font-medium text-slate-600">
@@ -2083,7 +2083,7 @@ export function Award_leap_east_2026() {
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
                       <span className="text-primary font-bold mt-0.5">✓</span>
                       {" "}
-                      <span>Selected into the prestigious LEAP East 2026 flagship cohort by IMDA and Enterprise Singapore.</span>
+                      <span>Selected into the prestigious LEAP East 2026 cohort by IMDA and Enterprise Singapore.</span>
                     </li>
                     {" "}
                     <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
@@ -2131,7 +2131,7 @@ export function Award_leap_east_2026() {
                     <div>
                       <dt className="text-slate-400 font-medium">Program / Initiative</dt>
                       {" "}
-                      <dd className="text-[#0B1530] font-semibold mt-0.5">LEAP East Flagship Acceleration Cohort</dd>
+                      <dd className="text-[#0B1530] font-semibold mt-0.5">LEAP East Acceleration Cohort</dd>
                     </div>
                     {" "}
                     <div>
@@ -2143,7 +2143,7 @@ export function Award_leap_east_2026() {
                     <div>
                       <dt className="text-slate-400 font-medium">Recognition Tier / Value</dt>
                       {" "}
-                      <dd className="text-[#0051df] font-semibold mt-0.5">{"Flagship Cohort Selection & Expansion Programme"}</dd>
+                      <dd className="text-[#0051df] font-semibold mt-0.5">{"Cohort Selection & Expansion Programme"}</dd>
                     </div>
                     {" "}
                     <div>
@@ -2182,7 +2182,7 @@ export function Award_leap_east_2026() {
                       {" "}
                       <div className="flex items-center gap-2.5">
                         <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 shrink-0 flex items-center justify-center overflow-hidden">
-                          <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt="" className="w-full h-full object-contain" />
+                          <img src={"/eco-skin/assets/logos/lhoft-logo.png"} alt="" className="w-full h-full object-contain" />
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
@@ -2274,6 +2274,402 @@ export function Award_leap_east_2026() {
                   {" "}
                   <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
                     {" Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures) "}
+                  </span>
+                  {" "}
+                </Link>
+                {" "}
+                <Link prefetch={false} href="/Ecosystem/awards/finovatespring-2026" className="p-4 sm:p-5 rounded-xl bg-white card-border-ambient flex flex-col items-end text-right group">
+                  {" "}
+                  <span className="text-xs text-slate-400 font-medium flex items-center gap-1 group-hover:text-primary transition-colors">
+                    {" Next Recognition → "}
+                  </span>
+                  {" "}
+                  <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
+                    {" FinovateSpring 2026 "}
+                  </span>
+                  {" "}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {" "}
+      <footer className="w-full bg-white border-t border-[#E2E8F0] py-8">
+        <div className="max-w-[1240px] mx-auto px-gutter md:px-gutter-desktop flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div>{" © 2026 ContexQ. All rights reserved. Sovereign Contextual Decision Intelligence. "}</div>
+          {" "}
+          <div className="flex items-center gap-4">
+            <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">Awards</Link>
+            {" "}
+            <Link prefetch={false} href="/Ecosystem/affiliations" className="hover:text-primary transition-colors">
+              Affiliations
+            </Link>
+            {" "}
+            <Link prefetch={false} href="/Ecosystem/press-releases" className="hover:text-primary transition-colors">Press</Link>
+            {" "}
+            <Link prefetch={false} href="/Ecosystem/blogs" className="hover:text-primary transition-colors">Insights</Link>
+          </div>
+        </div>
+      </footer>
+    </ViewShell>
+  );
+}
+
+export function Award_finovatespring_2026() {
+  return (
+    <ViewShell viewId="eco-award" className="v-eco-award cq-html" lang="en" bodyClassName="cq-body bg-surface-container-lowest antialiased min-h-screen flex flex-col">
+      <header className="w-full bg-white/95 backdrop-blur-md border-b border-[#E2E8F0] sticky top-0 z-40">
+        <div className="w-full max-w-[1240px] mx-auto px-gutter md:px-gutter-desktop h-16 flex items-center justify-between">
+          <Link prefetch={false} className="group inline-flex items-center gap-2 text-action-back font-action-back text-tertiary hover:text-primary transition-all duration-150" href="/Ecosystem/awards">
+            {" "}
+            <span className="inline-block transition-transform duration-200 group-hover:-translate-x-0.5">←</span>
+            {" "}
+            <span>Back to Awards</span>
+            {" "}
+          </Link>
+          {" "}
+          <nav className="hidden md:flex items-center gap-2 text-xs text-slate-500 font-medium">
+            <Link prefetch={false} href="/Ecosystem/awards" className="hover:text-primary transition-colors">
+              {"Awards & Recognition"}
+            </Link>
+            {" "}
+            <span className="text-slate-300">/</span>
+            {" "}
+            <span className="text-slate-600">{"Recognition"}</span>
+            {" "}
+            <span className="text-slate-300">/</span>
+            {" "}
+            <span className="text-[#0B1530] font-semibold truncate max-w-[240px]">FinovateSpring 2026</span>
+          </nav>
+          {" "}
+          <Link prefetch={false} href="/Ecosystem/awards" className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition-colors shadow-xs">
+            {" "}
+            <span>All Recognitions</span>
+            {" "}
+          </Link>
+        </div>
+      </header>
+      {" "}
+      <main className="w-full flex-1">
+        <section className="w-full bg-surface-container-lowest pt-10 md:pt-14 pb-12 border-b border-[#E2E8F0]">
+          <div className="max-w-[1240px] mx-auto px-gutter md:px-gutter-desktop">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-8 flex flex-col gap-4">
+                <div className="flex flex-wrap items-center gap-2.5">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-emerald-50 text-emerald-700 border border-emerald-200/60 font-semibold">
+                    {" Selected "}
+                  </span>
+                  {" "}
+                  <span className="px-3 py-1 rounded-full text-xs bg-slate-100 text-slate-600 font-medium">{" Recognition "}</span>
+                  {" "}
+                  <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
+                    {" "}
+                    <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+                    {" San Diego · 2026 "}
+                  </span>
+                </div>
+                {" "}
+                <h1 className="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#0B1530] tracking-tight leading-tight">
+                  {" FinovateSpring 2026 Demo Selection "}
+                </h1>
+                {" "}
+                <p className="font-body-lead text-body-lead text-[#64748B] leading-relaxed max-w-3xl">
+                  {" ContexQ was selected to demonstrate its AI-powered financial crime and risk intelligence platform at FinovateSpring 2026, a leading showcase of financial technology innovation. "}
+                </p>
+                {" "}
+                <div className="pt-2 flex flex-wrap gap-3 text-xs font-medium text-slate-600">
+                  <div className="flex items-center gap-1.5 bg-[#F4F6FA] px-3 py-1.5 rounded-lg border border-[#E2E8F0]">
+                    <span className="text-slate-400 font-normal">Awarding Body:</span>
+                    {" "}
+                    <strong className="text-[#0B1530] font-semibold">{"Finovate"}</strong>
+                  </div>
+                  {" "}
+                  <div className="flex items-center gap-1.5 bg-[#F4F6FA] px-3 py-1.5 rounded-lg border border-[#E2E8F0]">
+                    <span className="text-slate-400 font-normal">Domain:</span>
+                    {" "}
+                    <strong className="text-[#0B1530] font-semibold">{"Financial Crime Detection & Risk Intelligence"}</strong>
+                  </div>
+                </div>
+              </div>
+              {" "}
+              <div className="lg:col-span-4 flex justify-center lg:justify-end">
+                <div className="w-full max-w-[320px] rounded-2xl card-border-ambient p-6 sm:p-7 bg-white flex flex-col items-center text-center">
+                  <div className="w-full h-44 rounded-2xl bg-[#E6F4F1] flex items-center justify-center mb-5 p-5">
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-3 text-center overflow-hidden">
+                      <img src="/eco-skin/assets/logos/finovate-spring.png" alt="FinovateSpring (Finovate by Informa)" className="w-full h-full object-contain" />
+                    </div>
+                  </div>
+                  {" "}
+                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">{"Recognition"}</span>
+                  {" "}
+                  <h3 className="font-headline-card text-base font-bold text-[#0B1530] leading-snug">FinovateSpring 2026</h3>
+                  {" "}
+                  <p className="text-xs text-slate-500 mt-1">{"Selected Demo Company"}</p>
+                  {" "}
+                  <p className="text-[11px] text-slate-400 mt-1 pt-2 border-t border-slate-100 leading-relaxed">
+                    {"Selected following competitive technical evaluation of entity resolution accuracy and live transaction graph query throughput."}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {" "}
+        <section className="w-full bg-[#F4F6FA] py-space-xl">
+          <div className="max-w-[1240px] mx-auto px-gutter md:px-gutter-desktop">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-8 flex flex-col gap-6">
+                <article className="bg-white rounded-xl card-border-ambient p-6 sm:p-8">
+                  <div className="flex items-center gap-2.5 mb-3.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#0051df]" />
+                    {" "}
+                    <h2 className="font-headline-card text-xl font-bold text-[#0B1530]">
+                      {" Institutional Context & Problem Space "}
+                    </h2>
+                  </div>
+                  {" "}
+                  <p className="font-body-md text-slate-600 leading-relaxed mb-4">
+                    {" Financial institutions face growing challenges in identifying financial crime, uncovering hidden ownership structures and monitoring complex business relationships. Fragmented records and disconnected data make traditional KYC and compliance processes increasingly difficult. "}
+                  </p>
+                  {" "}
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Heterogeneous data silos</span>
+                    {" "}
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Regulatory scrutiny on UBO transparency</span>
+                  </div>
+                </article>
+                {" "}
+                <article className="bg-white rounded-xl card-border-ambient p-6 sm:p-8">
+                  <div className="flex items-center gap-2.5 mb-3.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#2F6BFF]" />
+                    {" "}
+                    <h2 className="font-headline-card text-xl font-bold text-[#0B1530]">{" Technological Innovation Demonstrated "}</h2>
+                  </div>
+                  {" "}
+                  <p className="font-body-md text-slate-600 leading-relaxed mb-4">
+                    {" At FinovateSpring 2026, ContexQ demonstrated its AI-powered platform, combining Graph Transformers, Probabilistic Entity Resolution, Vector AI and Symbolic Rules. Its capabilities support multilingual entity resolution, ownership network analysis and enhanced KYC investigations. "}
+                  </p>
+                  {" "}
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Graph Transformers</span>
+                    {" "}
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Probabilistic Resolution</span>
+                    {" "}
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Vector Embeddings</span>
+                    {" "}
+                    <span className="px-3 py-1 rounded-lg bg-[#F4F6FA] border border-[#E2E8F0] text-xs font-medium text-[#0B1530]">Symbolic Rule Engines</span>
+                  </div>
+                </article>
+                {" "}
+                <article className="bg-white rounded-xl card-border-ambient p-6 sm:p-8">
+                  <div className="flex items-center gap-2.5 mb-3.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-600" />
+                    {" "}
+                    <h2 className="font-headline-card text-xl font-bold text-[#0B1530]">{" Intelligence & Operational Impact "}</h2>
+                  </div>
+                  {" "}
+                  <p className="font-body-md text-slate-600 leading-relaxed mb-6">
+                    {" The demonstration showcased how ContexQ connects fragmented entity records, traces complex ownership structures and surfaces hidden connections to sanctioned parties. Explainable evidence trails support transparent investigations and informed risk decisions. "}
+                  </p>
+                  {" "}
+                  <h3 className="text-xs font-bold text-[#0B1530] uppercase tracking-wider mb-3.5">
+                    {" Key Capabilities Demonstrated "}
+                  </h3>
+                  {" "}
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      {" "}
+                      <span>Entity resolution across 12+ languages.</span>
+                    </li>
+                    {" "}
+                    <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      {" "}
+                      <span>Ownership analysis across 5+ relationship levels.</span>
+                    </li>
+                    {" "}
+                    <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      {" "}
+                      <span>Detection of hidden beneficial ownership structures.</span>
+                    </li>
+                    {" "}
+                    <li className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      {" "}
+                      <span>Explainable evidence trails for risk investigations.</span>
+                    </li>
+                  </ul>
+                </article>
+                {" "}
+                <aside className="rounded-xl border-l-4 border-[#0051df] bg-white p-6 sm:p-7 shadow-xs">
+                  <p className="font-body-lead text-base sm:text-lg italic text-[#0B1530] mb-3 leading-relaxed">
+                    {" \"FinovateSpring provided a platform to demonstrate how contextual intelligence can help financial institutions uncover hidden relationships and strengthen risk investigations.\" "}
+                  </p>
+                  {" "}
+                  <p className="text-xs font-semibold text-[#64748B]">{" ContexQ Institutional Evaluation Memorandum · Finovate Session Archive "}</p>
+                </aside>
+              </div>
+              {" "}
+              <aside className="lg:col-span-4 flex flex-col gap-6">
+                <div className="bg-white rounded-xl card-border-ambient p-6 sm:p-7">
+                  <h3 className="font-headline-card text-base font-bold text-[#0B1530] pb-3 border-b border-slate-100 mb-4">
+                    {" Recognition Dossier "}
+                  </h3>
+                  {" "}
+                  <dl className="space-y-4 text-xs sm:text-sm">
+                    <div>
+                      <dt className="text-slate-400 font-medium">Awarding Authority</dt>
+                      {" "}
+                      <dd className="text-[#0B1530] font-semibold mt-0.5">{"Finovate"}</dd>
+                    </div>
+                    {" "}
+                    <div>
+                      <dt className="text-slate-400 font-medium">{"Programme / Event"}</dt>
+                      {" "}
+                      <dd className="text-[#0B1530] font-semibold mt-0.5">FinovateSpring 2026</dd>
+                    </div>
+                    {" "}
+                    <div>
+                      <dt className="text-slate-400 font-medium">{"Location & Year"}</dt>
+                      {" "}
+                      <dd className="text-[#0B1530] font-semibold mt-0.5">San Diego, USA · 2026</dd>
+                    </div>
+                    {" "}
+                    <div>
+                      <dt className="text-slate-400 font-medium">Recognition Tier / Value</dt>
+                      {" "}
+                      <dd className="text-[#0051df] font-semibold mt-0.5">{"Selected Demo Company"}</dd>
+                    </div>
+                    {" "}
+                    <div>
+                      <dt className="text-slate-400 font-medium">{"Domain & Specialization"}</dt>
+                      {" "}
+                      <dd className="text-[#0B1530] font-medium mt-0.5">{"Financial Crime Detection, Entity Resolution & Risk Intelligence"}</dd>
+                    </div>
+                  </dl>
+                  {" "}
+                  <div className="mt-6 pt-5 border-t border-slate-100">
+                    <Link prefetch={false} href="/Ecosystem/awards" className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-lg bg-[#0B1530] hover:bg-[#1E293B] text-white text-xs sm:text-sm font-semibold transition-colors">
+                      {" "}
+                      <span>View All Recognitions</span>
+                      {" "}
+                      <span>→</span>
+                      {" "}
+                    </Link>
+                  </div>
+                </div>
+                {" "}
+                <div className="bg-white rounded-xl card-border-ambient p-6 sm:p-7">
+                  <h3 className="font-headline-card text-base font-bold text-[#0B1530] pb-3 border-b border-slate-100 mb-4">
+                    {" Related Recognitions "}
+                  </h3>
+                  {" "}
+                  <div className="flex flex-col gap-3">
+                    <Link prefetch={false} href="/Ecosystem/awards/leap-east-2026" className="group block p-3 rounded-lg border border-slate-100 hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                      {" "}
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="text-[11px] font-semibold tracking-wide bg-emerald-50 text-emerald-700 border border-emerald-200/60 font-semibold px-2 py-0.5 rounded-full">
+                          Selected
+                        </span>
+                        {" "}
+                        <span className="text-[11px] text-slate-400">2026</span>
+                      </div>
+                      {" "}
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-10 h-10 rounded-lg bg-black border border-slate-200 p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                          <img src="/eco-skin/assets/logos/leap.png" alt="" className="w-full h-full object-contain" />
+                        </div>
+                        {" "}
+                        <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
+                          LEAP East 2026
+                        </div>
+                      </div>
+                      {" "}
+                      <div className="text-[11px] text-slate-500 truncate mt-1">{"IMDA & Enterprise Singapore"}</div>
+                      {" "}
+                    </Link>
+                    {" "}
+                    <Link prefetch={false} href="/Ecosystem/awards/hello-tomorrow-deep-tech-pioneer" className="group block p-3 rounded-lg border border-slate-100 hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                      {" "}
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="text-[11px] font-semibold tracking-wide bg-emerald-50 text-emerald-700 border border-emerald-200/60 font-semibold px-2 py-0.5 rounded-full">
+                          Selected
+                        </span>
+                        {" "}
+                        <span className="text-[11px] text-slate-400">2025</span>
+                      </div>
+                      {" "}
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                          <img src="/eco-skin/assets/logos/673db1ddbae23fe163a617e1_63989c1b06c184aefca58410_3_20-_20Logo_20Deep_20Tech_20Pioneers.png" alt="" className="w-full h-full object-contain" />
+                        </div>
+                        {" "}
+                        <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
+                          Hello Tomorrow Deep Tech Pioneer
+                        </div>
+                      </div>
+                      {" "}
+                      <div className="text-[11px] text-slate-500 truncate mt-1">Hello Tomorrow Global</div>
+                      {" "}
+                    </Link>
+                  </div>
+                </div>
+                {" "}
+                <div className="bg-[#0B1530] rounded-xl p-6 text-white flex flex-col justify-between">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#94A3B8]">ContexQ Ecosystem</span>
+                    {" "}
+                    <h4 className="font-headline-card text-base font-bold text-white mt-1 mb-2">
+                      {" Sovereign Contextual Decision Intelligence "}
+                    </h4>
+                    {" "}
+                    <p className="text-xs text-[#94A3B8] leading-relaxed mb-4">
+                      {" Explore our full suite of research papers, regulatory affiliations, and press announcements. "}
+                    </p>
+                  </div>
+                  {" "}
+                  <div className="flex flex-col gap-2">
+                    <Link prefetch={false} href="/Ecosystem/awards" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                      {" "}
+                      <span>{"All Awards & Grants"}</span>
+                      {" "}
+                      <span>→</span>
+                      {" "}
+                    </Link>
+                    {" "}
+                    <Link prefetch={false} href="/Ecosystem/affiliations" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                      {" "}
+                      <span>{"Backing & Affiliations"}</span>
+                      {" "}
+                      <span>→</span>
+                      {" "}
+                    </Link>
+                    {" "}
+                    <Link prefetch={false} href="/Ecosystem/press-releases" className="inline-flex items-center justify-between text-xs font-semibold text-[#2F6BFF] hover:underline">
+                      {" "}
+                      <span>{"Press & Media"}</span>
+                      {" "}
+                      <span>→</span>
+                      {" "}
+                    </Link>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            {" "}
+            <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link prefetch={false} href="/Ecosystem/awards/leap-east-2026" className="p-4 sm:p-5 rounded-xl bg-white card-border-ambient flex flex-col items-start group">
+                  {" "}
+                  <span className="text-xs text-slate-400 font-medium flex items-center gap-1 group-hover:text-primary transition-colors">
+                    {" ← Previous Recognition "}
+                  </span>
+                  {" "}
+                  <span className="font-headline-card text-sm sm:text-base font-bold text-[#0B1530] mt-1 group-hover:text-primary transition-colors">
+                    {" LEAP East 2026 "}
                   </span>
                   {" "}
                 </Link>
@@ -2590,7 +2986,7 @@ export function Award_lhoft_catapult() {
                       {" "}
                       <div className="flex items-center gap-2.5">
                         <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 shrink-0 flex items-center justify-center overflow-hidden">
-                          <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt="" className="w-full h-full object-contain" />
+                          <img src={"/eco-skin/assets/logos/lhoft-logo.png"} alt="" className="w-full h-full object-contain" />
                         </div>
                         {" "}
                         <div className="text-xs sm:text-sm font-bold text-[#0B1530] group-hover:text-primary transition-colors truncate">
@@ -2755,7 +3151,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                 </div>
                 {" "}
                 <h1 className="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#0B1530] tracking-tight leading-tight">
-                  {" Catapult: Inclusion SE Asia — The LHoFT & ADB Ventures "}
+                  {" Catapult: Inclusion SE Asia - The LHoFT & ADB Ventures "}
                 </h1>
                 {" "}
                 <p className="font-body-lead text-body-lead text-[#64748B] leading-relaxed max-w-3xl">
@@ -2785,7 +3181,7 @@ export function Award_luxembourg_adb_venture_accelerator() {
                 <div className="w-full max-w-[320px] rounded-2xl card-border-ambient p-6 sm:p-7 bg-white flex flex-col items-center text-center">
                   <div className="w-full h-44 rounded-2xl bg-[#E6F4F1] flex items-center justify-center mb-5 p-5">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white shadow-md border border-black/5 flex items-center justify-center p-3 text-center overflow-hidden">
-                      <img src={"/eco-skin/assets/logos/ADB_logo_&_wordmark.svg"} alt={"Catapult: Inclusion SE Asia (The LHoFT & ADB Ventures)"} className="w-full h-full object-contain" />
+                      <img src={"/eco-skin/assets/logos/lhoft-logo.png"} alt={"The LHoFT (Luxembourg House of Financial Technology)"} className="w-full h-full object-contain" />
                     </div>
                   </div>
                   {" "}
@@ -6551,6 +6947,7 @@ export const AWARD_VIEWS: Record<string, () => React.JSX.Element> = {
   "g20-techsprint-payment-fraud": Award_g20_techsprint_payment_fraud,
   "hello-tomorrow-deep-tech-pioneer": Award_hello_tomorrow_deep_tech_pioneer,
   "leap-east-2026": Award_leap_east_2026,
+  "finovatespring-2026": Award_finovatespring_2026,
   "lhoft-catapult": Award_lhoft_catapult,
   "luxembourg-adb-venture-accelerator": Award_luxembourg_adb_venture_accelerator,
   "mas-supported-grant": Award_mas_supported_grant,
@@ -6585,16 +6982,20 @@ export const AWARD_META: Record<string, { title?: string; description?: string }
     "description": "Hello Tomorrow Global · Conferred Deep Tech Pioneer status by scientific and industrial committee | ContexQ sovereign contextual decision intelligence."
   },
   "leap-east-2026": {
-    "title": "LEAP East 2026 Flagship Cohort Selection | ContexQ Awards & Recognition",
+    "title": "LEAP East 2026 Cohort Selection | ContexQ Awards & Recognition",
     "description": "IMDA & Enterprise SG · Bilateral trade intelligence and fast-track sovereign scale programme | ContexQ sovereign contextual decision intelligence."
+  },
+  "finovatespring-2026": {
+    "title": "FinovateSpring 2026 Demo Selection | ContexQ Awards & Recognition",
+    "description": "Finovate · Selected Demo Company | ContexQ was selected to showcase its AI-powered financial crime and risk intelligence platform at FinovateSpring 2026."
   },
   "lhoft-catapult": {
     "title": "The LHoFT Catapult Acceleration Programme Selection | ContexQ Awards & Recognition",
     "description": "Luxembourg House of Financial Technology · Premier European institutional fintech scale programme | ContexQ sovereign contextual decision intelligence."
   },
   "luxembourg-adb-venture-accelerator": {
-    "title": "Catapult: Inclusion SE Asia — The LHoFT & ADB Ventures | ContexQ Awards & Recognition",
-    "description": "The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs — Cross-border fintech acceleration and venture co-funding | ContexQ sovereign contextual decision intelligence."
+    "title": "Catapult: Inclusion SE Asia - The LHoFT & ADB Ventures | ContexQ Awards & Recognition",
+    "description": "The LHoFT, ADB Ventures & Luxembourg Ministry of Foreign and European Affairs - Cross-border fintech acceleration and venture co-funding | ContexQ sovereign contextual decision intelligence."
   },
   "mas-supported-grant": {
     "title": "312K USD Proof of Concept Grant from MAS (FSTI) | ContexQ Awards & Recognition",

@@ -9,7 +9,7 @@ export default function init(cq) {
     {
       // ---- page script ----
       try {
-/* HERO — many records stream into the ContexQ emblem; resolved companies stream out to the right. */
+/* HERO - many records stream into the ContexQ emblem; resolved companies stream out to the right. */
 (() => {
   const stage = document.getElementById('stage3d'), cv = document.getElementById('flowCv'), ctx = cv.getContext('2d');
   const entsEl = document.getElementById('ents'), word = document.getElementById('cqWord'), stepEl = document.getElementById('h3Step');

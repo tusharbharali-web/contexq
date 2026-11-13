@@ -41,7 +41,7 @@ export default function run(cq) {
   var firstPara = (post.body || []).filter(function (b) { return b.type === "p"; })[0];
   var firstSentence = firstPara ? (U.blockText(firstPara).match(/^.*?[.!?](?=\s|$)/) || [post.excerpt])[0] : post.excerpt;
   var canonical = "https://www.contexq.com/Ecosystem/insights/" + post.slug;
-  document.title = post.title + " — ContexQ";
+  document.title = post.title + " - ContexQ";
   setMeta('meta[name="description"]', meta("name", "description"), firstSentence);
   setMeta('link[rel="canonical"]', function () { var l = document.createElement("link"); l.rel = "canonical"; return l; }, canonical);
   setMeta('meta[property="og:title"]', meta("property", "og:title"), post.title);

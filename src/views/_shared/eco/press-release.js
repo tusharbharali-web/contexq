@@ -47,7 +47,7 @@ export default function run(cq) {
 
   /* ---------- SEO ---------- */
   var canonical = location.origin.indexOf("http") === 0 ? location.origin + location.pathname + "?slug=" + encodeURIComponent(r.slug) : location.href;
-  var pageTitle = r.title + " — ContexQ";
+  var pageTitle = r.title + " - ContexQ";
   document.title = pageTitle;
   setMeta('meta[name="description"]', meta("name", "description"), r.excerpt);
   setMeta('link[rel="canonical"]', function () { var l = document.createElement("link"); l.rel = "canonical"; return l; }, canonical);

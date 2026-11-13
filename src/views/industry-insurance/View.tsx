@@ -71,7 +71,7 @@ export function View() {
                 <h2>An isolated record rarely tells the whole story.</h2>
                 {" "}
                 <p className="intro">
-                  {"A customer, policy or claim can look ordinary on its own. The wider picture is often spread across systems, teams and lines of cover — and it's what sits between those records that matters."}
+                  {"A customer, policy or claim can look ordinary on its own. The wider picture is often spread across systems, teams and lines of cover - and it's what sits between those records that matters."}
                 </p>
               </div>
               {" "}
@@ -299,7 +299,7 @@ export function View() {
               <h2>How ContexQ works: resolve, infer, explain.</h2>
               {" "}
               <p className="intro">
-                Three steps used across every insurance scenario — the same method behind the four-claim example above.
+                Three steps used across every insurance scenario - the same method behind the four-claim example above.
               </p>
             </div>
             {" "}
@@ -316,7 +316,7 @@ export function View() {
                 <div className="step-number">02 / INFER</div>
                 <h3>How are they connected?</h3>
                 <p>
-                  Surface the relationships between policyholders, claimants, service providers and payees — across claims, policies and lines of cover.
+                  Surface the relationships between policyholders, claimants, service providers and payees - across claims, policies and lines of cover.
                 </p>
               </article>
               {" "}
@@ -324,7 +324,7 @@ export function View() {
                 <div className="step-number">03 / EXPLAIN</div>
                 <h3>Why does it matter?</h3>
                 <p>
-                  Present the connections, the records that support them and the reason for attention — so a person makes the final decision, with the evidence visible.
+                  Present the connections, the records that support them and the reason for attention - so a person makes the final decision, with the evidence visible.
                 </p>
               </article>
             </div>
@@ -353,7 +353,7 @@ export function View() {
                 <h3>Claims and investigations</h3>
                 {" "}
                 <p>
-                  Surface relationships across claims, claimants, service providers and payment recipients — so investigators start with the wider picture already assembled.
+                  Surface relationships across claims, claimants, service providers and payment recipients - so investigators start with the wider picture already assembled.
                 </p>
               </article>
               {" "}
@@ -368,7 +368,7 @@ export function View() {
                 <h3>Underwriting context</h3>
                 {" "}
                 <p>
-                  {"Bring an applicant's existing policies, prior claims history and related parties into view at the point of quote — so the risk is priced on what is known, not only on what is declared."}
+                  {"Bring an applicant's existing policies, prior claims history and related parties into view at the point of quote - so the risk is priced on what is known, not only on what is declared."}
                 </p>
               </article>
               {" "}
@@ -383,7 +383,7 @@ export function View() {
                 <h3>Customer and household view</h3>
                 {" "}
                 <p>
-                  Understand how policies and customer records relate across a household or small business — while keeping distinct people distinct — so renewals, cross-sell and service decisions see the whole relationship.
+                  Understand how policies and customer records relate across a household or small business - while keeping distinct people distinct - so renewals, cross-sell and service decisions see the whole relationship.
                 </p>
               </article>
             </div>
@@ -400,7 +400,7 @@ export function View() {
               <h2>Fits with how you already work.</h2>
               {" "}
               <p>
-                ContexQ is designed to work alongside existing claims, policy and fraud systems — not to replace them. It uses information you already hold, and keeps people in the final decision.
+                ContexQ is designed to work alongside existing claims, policy and fraud systems - not to replace them. It uses information you already hold, and keeps people in the final decision.
               </p>
               {" "}
               <p>

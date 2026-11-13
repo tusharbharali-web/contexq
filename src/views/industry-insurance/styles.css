@@ -86,18 +86,18 @@
     .v-industry-insurance .hero-graph text { font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
     .v-industry-insurance .hero-graph .variant,.v-industry-insurance  .hero-graph .card,.v-industry-insurance  .hero-graph .person,.v-industry-insurance  .hero-graph .insight { opacity: 0; transition: opacity .55s ease, transform .6s cubic-bezier(.2,.8,.2,1); }
     .v-industry-insurance .hero-graph .show { opacity: 1; }
-    /* Name variants — small chips that appear then merge */
+    /* Name variants - small chips that appear then merge */
     .v-industry-insurance .hero-graph .variant rect { fill: #0E2641; stroke: #3F6A96; stroke-width: 1; }
     .v-industry-insurance .hero-graph .variant .tag { fill: #7A99BA; font-size: 8px; letter-spacing: .8px; }
     .v-industry-insurance .hero-graph .variant .name { fill: #DCE9F6; font-size: 11px; font-weight: 600; }
     .v-industry-insurance .hero-graph .variant.merge { transform: translate(var(--mx,0), var(--my,0)) scale(.6); opacity: 0; }
-    /* Record cards — policy, claim, repairer, claimant, vehicle */
+    /* Record cards - policy, claim, repairer, claimant, vehicle */
     .v-industry-insurance .hero-graph .card rect { fill: #0E2641; stroke: #3F6A96; stroke-width: 1; }
     .v-industry-insurance .hero-graph .card .tag { fill: #7A99BA; font-size: 8px; letter-spacing: 1px; font-weight: 500; }
     .v-industry-insurance .hero-graph .card .title { fill: #E6F0FB; font-size: 11.5px; font-weight: 650; }
     .v-industry-insurance .hero-graph .card .meta { fill: #94AEC9; font-size: 9px; }
     .v-industry-insurance .hero-graph .card.party rect { fill: #0D2742; stroke: #4878A8; }
-    /* Resolved person node — central element that the variants collapse into */
+    /* Resolved person node - central element that the variants collapse into */
     .v-industry-insurance .hero-graph .person rect { fill: #113456; stroke: #66A3DC; stroke-width: 1.5; }
     .v-industry-insurance .hero-graph .person .label { fill: #B9D2E8; font-size: 8px; letter-spacing: 1px; }
     .v-industry-insurance .hero-graph .person .name { fill: #FFFFFF; font-size: 13px; font-weight: 700; }
@@ -237,7 +237,7 @@
     }
   
 
-    /* Policy journey — uploaded six-stage animation, recoloured to the ContexQ palette */
+    /* Policy journey - uploaded six-stage animation, recoloured to the ContexQ palette */
     .v-industry-insurance .policy-journey {
       --policy-card: #0B1B2D;
       --policy-ink: #F3F7FC;
@@ -308,7 +308,7 @@
     .v-industry-insurance .policy-panel-grid .policy-before h4 { color:var(--blue-light); }
     .v-industry-insurance .policy-panel-grid .policy-after h4 { color:var(--green); }
 
-    /* Claim folders — preserve the original folder shape, type hierarchy and linked-name treatment */
+    /* Claim folders - preserve the original folder shape, type hierarchy and linked-name treatment */
     .v-industry-insurance .claim-story-section { background:var(--navy); color:#F3F7FC; padding-top:clamp(64px,8vw,104px); }
     .v-industry-insurance .claim-story-head { margin-bottom:clamp(36px,5vw,56px); }
     .v-industry-insurance .claim-story-lead { max-width:68ch; }

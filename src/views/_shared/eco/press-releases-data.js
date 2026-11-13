@@ -56,7 +56,7 @@ window.PRESS_RELEASES = [
     ],
     quotes: [],
     heroImage: "/eco-skin/assets/atxsg-speaker-banner.png",
-    heroAlt: "Jean-Michel Coeur, ContexQ, speaking at The AI Summit Singapore, 20—22 May 2026, Singapore Expo",
+    heroAlt: "Jean-Michel Coeur, ContexQ, speaking at The AI Summit Singapore, 20-22 May 2026, Singapore Expo",
     contact: {
       email: "media@contexq.com",
       phone: "+65 6650 7151",

@@ -5,13 +5,13 @@ import Footer from "@/components/ui/Footer";
 // Title/description of the original per-article HTML pages, keyed by slug.
 const META: Record<string, { title?: string; description?: string }> = {
   "entity-resolution-business-intelligence": {
-    "title": "Unlock Business Intelligence with Entity Resolution — ContexQ"
+    "title": "Unlock Business Intelligence with Entity Resolution - ContexQ"
   },
   "future-proofing-modern-supply-chains": {
-    "title": "Optimizing & Future-Proofing Modern Supply Chains — ContexQ"
+    "title": "Optimizing & Future-Proofing Modern Supply Chains - ContexQ"
   },
   "data-driven-decision-intelligence": {
-    "title": "How ContexQ Delivers Data-Driven Decision Intelligence — ContexQ"
+    "title": "How ContexQ Delivers Data-Driven Decision Intelligence - ContexQ"
   }
 };
 

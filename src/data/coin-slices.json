@@ -157,13 +157,13 @@
           "subPopUp": false,
           "subButtons": [
             {
-              "subLabel": "RBI HaRBInger 2025 — Top Performing Team",
+              "subLabel": "RBI HaRBInger 2025 - Top Performing Team",
               "subText": "Reserve Bank of India · Global Hackathon",
               "subIcon": "/assets/images/Ecosystem/rbi.png",
               "fullText": "ContexQ was selected as a finalist in HaRBInger 2025, the Reserve Bank of India's Global Hackathon, themed \"Secure Banking: Powered by Identity, Integrity and Inclusivity.\" The team presented to a distinguished RBI jury in Bengaluru, demonstrating how entity resolution, dynamic knowledge graphs and composite AI can strengthen identity verification, expose impersonation risk and reveal hidden risk networks across India's financial system. The selection placed ContexQ alongside the leading global teams shaping the future of secure, inclusive Indian finance."
             },
             {
-              "subLabel": "United Nations University — AI for SDGs Competition",
+              "subLabel": "United Nations University - AI for SDGs Competition",
               "subText": "Global Finalist · Macao 2025",
               "subIcon": "/assets/images/Ecosystem/un.png",
               "fullText": "ContexQ was selected as a Global Finalist in the United Nations University's AI for SDGs Competition held in Macao, marking the UN's 80th and UNU's 50th anniversary. The competition sought high-TRL AI solutions advancing the UN Sustainable Development Goals. ContexQ was recognised for its graph AI platform that detects greenwashing, ESG fraud and illicit financial flows, addressing SDGs 12, 13, 16 and 17 through verifiable, multi-dimensional sustainable-finance intelligence."
@@ -172,25 +172,25 @@
               "subLabel": "UN SDG Sustainable Finance Finalist",
               "subText": "Alipay+ D-Infinity Global Fintech Challenge · Macao 2025",
               "subIcon": "/assets/images/Ecosystem/sdg.png",
-              "fullText": "ContexQ was named a Sustainable Finance Finalist at the Alipay+ D-Infinity Global Fintech Challenge — one of Asia's premier fintech competitions focused on the UN Sustainable Development Goals. Selected from thousands of global applicants, ContexQ was recognised for its relationship-native AI approach to ESG verification, greenwashing detection and authentic climate-finance accountability, advancing SDG 12 (Responsible Production), SDG 13 (Climate Action) and SDG 16 (Strong Institutions)."
+              "fullText": "ContexQ was named a Sustainable Finance Finalist at the Alipay+ D-Infinity Global Fintech Challenge - one of Asia's premier fintech competitions focused on the UN Sustainable Development Goals. Selected from thousands of global applicants, ContexQ was recognised for its relationship-native AI approach to ESG verification, greenwashing detection and authentic climate-finance accountability, advancing SDG 12 (Responsible Production), SDG 13 (Climate Action) and SDG 16 (Strong Institutions)."
             },
             {
-              "subLabel": "LHoFT — Catapult: Inclusion SE Asia",
+              "subLabel": "LHoFT - Catapult: Inclusion SE Asia",
               "subText": "Luxembourg House of Financial Technology · Singapore FinTech Festival 2026",
               "subIcon": "/assets/images/Ecosystem/lhoft1.png",
               "fullText": "As part of the LHoFT-led Catapult programme, ContexQ joined a curated cohort of fintechs scaling inclusive finance across ASEAN, with engagements in Luxembourg and at the Singapore FinTech Festival. The programme provides zero-equity acceleration, sovereign-level access across ASEAN central banks via ADB, regulatory navigation, European market entry through Luxembourg, and direct investment readiness via the NextFin Asia Fund."
             },
             {
-              "subLabel": "LEAP East 2026 — Hong Kong & Saudi Arabia Startup Programme",
+              "subLabel": "LEAP East 2026 - Hong Kong & Saudi Arabia Startup Programme",
               "subText": "Tahaluf · MCIT (Saudi Arabia) · HKSAR Government · ewpartners",
               "subIcon": "/assets/images/Ecosystem/lp.png",
-              "fullText": "ContexQ was selected for the LEAP East 2026 Startup & Scaleup Programme, the inaugural Asia-Pacific edition of LEAP — Saudi Arabia's flagship and the world's fastest-growing tech event — hosted in Hong Kong (8-10 July 2026) in partnership with the HKSAR Government and Saudi MCIT. The programme positions ContexQ to scale across both the Saudi and Hong Kong markets through investor matchmaking, the Rocket Fuel Pitch competition, ecosystem networking and direct exposure to Middle East and APAC banking, fintech and government partners."
+              "fullText": "ContexQ was selected for the LEAP East 2026 Startup & Scaleup Programme, the inaugural Asia-Pacific edition of LEAP - Saudi Arabia's flagship and the world's fastest-growing tech event - hosted in Hong Kong (8-10 July 2026) in partnership with the HKSAR Government and Saudi MCIT. The programme positions ContexQ to scale across both the Saudi and Hong Kong markets through investor matchmaking, the Rocket Fuel Pitch competition, ecosystem networking and direct exposure to Middle East and APAC banking, fintech and government partners."
             },
             {
-              "subLabel": "Hello Tomorrow — Deep Tech Pioneer",
+              "subLabel": "Hello Tomorrow - Deep Tech Pioneer",
               "subText": "Hello Tomorrow Global Challenge · Amsterdam 2026",
               "subIcon": "/assets/images/Ecosystem/ht1.png",
-              "fullText": "ContexQ has been recognised as a Hello Tomorrow Deep Tech Pioneer — a global distinction awarded by an expert jury to ~800 of the most promising deep-tech startups from over 4,600 applications across 120+ countries. The recognition affirms ContexQ's graph-native AI platform as a category-defining deep-tech innovation in software, AI infrastructure and data integrity, and grants access to the Hello Tomorrow Summit, Investor Day with 350+ VCs/CVCs and the global deep-tech ecosystem in Amsterdam."
+              "fullText": "ContexQ has been recognised as a Hello Tomorrow Deep Tech Pioneer - a global distinction awarded by an expert jury to ~800 of the most promising deep-tech startups from over 4,600 applications across 120+ countries. The recognition affirms ContexQ's graph-native AI platform as a category-defining deep-tech innovation in software, AI infrastructure and data integrity, and grants access to the Hello Tomorrow Summit, Investor Day with 350+ VCs/CVCs and the global deep-tech ecosystem in Amsterdam."
             }
           ]
         },

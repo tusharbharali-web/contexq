@@ -446,7 +446,7 @@ window.CUSTOMERS_DATA = {
     (page.comingSoon ? comingSoon(page.comingSoon) : '') +
     '<p class="text-label-md font-label-md text-[#525e7a] text-center">' + esc(DATA.footnote) + '</p></div></main>';
 
-  document.title = 'ContexQ — Customers: ' + page.tabLabel;
+  document.title = 'ContexQ - Customers: ' + page.tabLabel;
   document.body.innerHTML = tabs() + hero() + main + cta();
 })();
       } catch (err) { console.error('[customer-trading] page script error:', err); }

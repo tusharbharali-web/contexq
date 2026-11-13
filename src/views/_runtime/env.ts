@@ -16,9 +16,9 @@ type Globals = Record<PropertyKey, unknown>;
 const globals = () => window as unknown as Globals;
 
 export interface ViewEnvOptions {
-  /** `.cq-html` wrapper – stands in for <html>. */
+  /** `.cq-html` wrapper - stands in for <html>. */
   root: HTMLElement;
-  /** `.cq-body` wrapper – stands in for <body>. */
+  /** `.cq-body` wrapper - stands in for <body>. */
   body: HTMLElement;
   /** URL of the original HTML file, used to resolve relative URLs. */
   legacyUrl: string;

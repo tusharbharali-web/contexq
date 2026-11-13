@@ -30,7 +30,7 @@ const onVisible=(el,fn,th=.3)=>{if(!('IntersectionObserver' in window)){fn();ret
 function tabKeys(tabs,show){tabs.forEach((b,i)=>b.addEventListener('keydown',e=>{const s={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];if(!s)return;e.preventDefault();const n=(i+s+tabs.length)%tabs.length;show(n);tabs[n].focus()}))}
 
 /* =========================================================
-   HERO — follow the money.
+   HERO - follow the money.
    Funds move hop by hop across countries (placement → layering → integration).
    Each alert sees one step and is closed. ContexQ connects the records, traces the
    whole trail, finds a hidden common owner and a link to a sanctioned person → one case.
