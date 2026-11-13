@@ -1448,3 +1448,13 @@
 /* Eyebrows hidden */
 .v-solution-supply-chain .cq-eyebrow{display:none!important}
 .v-solution-supply-chain .ac-tag{display:none!important}
+
+/* Spacing: same section rhythm as the other pages (76px, 55px on phones); risk intro aligned to the top of its card */
+.v-solution-supply-chain .sec{padding:76px 0}
+.v-solution-supply-chain .cq-risk-section .cq-risk-profile{align-items:start!important}
+@media(max-width:760px){.v-solution-supply-chain .sec{padding:55px 0}}
+
+/* Risk section: the intro text stays in view while the supplier card scrolls past (whenever the two columns sit side by side, above 680px) */
+@media(min-width:681px){.v-solution-supply-chain .cq-risk-section .cq-profile-intro{position:sticky;top:calc(var(--site-header-height,76px) + 32px);align-self:start}}
+/* the page wrapper clips sideways overflow without becoming a scroll box (overflow-x:hidden would stop the sticky text above) */
+.v-solution-supply-chain > .cq-body{overflow-x:clip!important;overflow-y:visible!important}
