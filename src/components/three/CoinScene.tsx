@@ -131,7 +131,13 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
   const _rows = Math.ceil(_btns.length / _cols);
   const _natH = 48 + 55 + _rows * btnCellPx + 16;
   const popupScaleH = _natH > 0 ? Math.min(1.5, (vp.h * 0.90) / _natH) : 1.5;
-  const popupScale = Math.min(popupScaleW, popupScaleH);
+  // Phones (portrait): centre the panel and size it to the screen width instead of the
+  // desktop's left-of-globe placement, which left it small and off to one side.
+  const isPhone = vp.w < 1024 && vp.h > vp.w;
+  const _natW = _cols * btnCellPx * 0.8 + (_cols - 1) * (_btns.length <= 4 ? 14.4 : 8) + 55 + 32;
+  const popupScale = isPhone
+    ? Math.min(1.3, (vp.w * 0.84) / _natW, popupScaleH)
+    : Math.min(popupScaleW, popupScaleH);
 
   const handleReset = useCallback(() => {
     setActivePopup(null);
@@ -330,6 +336,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
           }
         }}
         popupScale={popupScale}
+        isPhone={isPhone}
         iconPx={iconPx}
         btnCellPx={btnCellPx}
         onOpenBranch={(data) => {

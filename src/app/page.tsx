@@ -67,8 +67,46 @@ export default function Home() {
             display: none !important;
           }
         }
+
+        /* Phones (portrait): text block at the top, the coin is framed by the 3D camera in
+           the space below it (see CameraAnimator), and the dark fade runs top-down instead
+           of from the left so the text stays readable over the scene. */
+        @media (max-width: 1023px) and (orientation: portrait) {
+          .hero-main {
+            height: 100svh !important;
+            min-height: 560px;
+            align-items: flex-start !important;
+            padding-top: calc(var(--site-header-height, 64px) + 20px) !important;
+          }
+          .hero-bg {
+            background: linear-gradient(to bottom, rgba(2,4,8,0.92) 0%, rgba(2,4,8,0.8) 40%, rgba(2,4,8,0) 58%) !important;
+          }
+          .hero-content { width: 100% !important; max-width: 640px !important; transform: none !important; padding-left: 20px !important; padding-right: 20px !important; }
+          .pie-hint, .scroll-hint { display: none !important; }
+          .hero-content > .space-y-6 > * + * { margin-top: 14px !important; }
+          .hero-content h1 { font-size: clamp(1.45rem, 6.6vw, 1.75rem) !important; margin-bottom: 0 !important; }
+          .hero-content h1 br { display: none; }
+          .hero-sub { font-size: 0.95rem !important; line-height: 1.5 !important; }
+          .hero-desc { display: none !important; }
+          .hero-cta { padding-top: 4px !important; }
+          .hero-cta a { padding: 12px 24px !important; }
+        }
+
+        /* Phones held sideways: very little height, so a compact text block on the left
+           (the coin keeps its desktop place on the right). */
+        @media (max-height: 520px) and (orientation: landscape) {
+          .hero-main { padding-top: calc(var(--site-header-height, 56px) + 8px) !important; }
+          .hero-content { width: min(46vw, 420px) !important; transform: none !important; padding-left: 24px !important; }
+          .hero-content > .space-y-6 > * + * { margin-top: 10px !important; }
+          .hero-content h1 { font-size: 1.2rem !important; line-height: 1.25 !important; margin-bottom: 0 !important; }
+          .hero-sub { font-size: 0.8rem !important; line-height: 1.45 !important; }
+          .hero-desc, .pie-hint, .scroll-hint { display: none !important; }
+          .hero-cta { padding-top: 0 !important; }
+          .hero-cta a { padding: 0 20px !important; height: 40px !important; min-height: 0 !important; line-height: 40px !important; font-size: 0.85rem !important; }
+          .hero-content > .space-y-6 > :first-child { display: none !important; }
+        }
       `}</style>
-      <main className="relative w-full h-screen flex items-center overflow-hidden pt-20">
+      <main className="hero-main relative w-full h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0">
           <ClientSceneWrapper slices={coinData.slices as any[]} />
         </div>
@@ -94,9 +132,9 @@ export default function Home() {
               <h1 className="text-3xl font-bold leading-tight mb-4">
                 <span className="text-white">We are a </span>
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">technology AI startup </span>
-                <span className="text-white">leapfrogging</span>
+                <span className="text-white">leapfrogging</span>{" "}
                 <br />
-                <span className="text-white">the way businesses</span>
+                <span className="text-white">the way businesses</span>{" "}
                 <br />
                 <span className="text-white">maximise their data value.</span>
               </h1>
@@ -106,19 +144,19 @@ export default function Home() {
             <div>
               <div className="flex items-start gap-4">
                 <div className="w-1 h-16 bg-gradient-to-b from-cyan-400 to-transparent mt-1" />
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="hero-sub text-lg text-gray-300 leading-relaxed">
                   By connecting entities, signals and relationships, we help businesses uncover insights that would otherwise remain hidden.
                 </p>
               </div>
             </div>
 
             {/* Description */}
-            <p className="text-gray-400 leading-relaxed max-w-xl text-sm">
+            <p className="hero-desc text-gray-400 leading-relaxed max-w-xl text-sm">
               Your data isn't incomplete. It's <span className="text-white font-semibold">underread</span>. ContexQ finds connections and signals across every dimension, then enriches your data with real-world intelligence to surface what matters most, from opportunity to risk.
             </p>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="hero-cta pt-4">
               <Link href="#solutions" scroll={true} className="inline-block px-8 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-semibold hover:shadow-lg hover:shadow-[#2F86FF]/40 transition-all duration-300 cq-cta">
                 Explore Platform
               </Link>

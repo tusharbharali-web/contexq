@@ -23,8 +23,16 @@ export function CameraAnimator({
   groupRef, 
   floorRef 
 }: CameraAnimatorProps) {
-  const { camera } = useThree();
+  const { camera, size } = useThree();
   const progress = useRef(0);
+  const framed = useRef(false);
+  const textBottom = useRef(0);
+  const lastSize = useRef("");
+  // Resting coin centre in world space (slices group position x the scaling group) and
+  // its half-width including the rim labels; used to fit the coin on portrait phones.
+  const coinCentre = useMemo(() => new THREE.Vector3(0.486, 0.243, -0.014), []);
+  const COIN_HALF_W = 1.45;
+  const tmp = useMemo(() => new THREE.Vector3(), []);
   const DURATION = 3; // Exactly 3 seconds
 
   const lookTarget = useMemo(() => new THREE.Vector3(0, 0, 0), []);
@@ -57,6 +65,55 @@ export function CameraAnimator({
     if (active || progress.current > 0) {
       camera.position.lerpVectors(restPos, activPos, easeInOutExpo);
       camera.lookAt(lookTarget);
+    }
+
+    // 3b. Portrait phones: the desktop framing puts the coin off the right edge, behind the
+    // hero text. Widen the lens so the whole coin fits the screen width and slide the view
+    // so the coin sits centred in the space below the hero text. Blends back to the desktop
+    // framing as the camera moves into a pie view.
+    const cam = camera as THREE.PerspectiveCamera;
+    const W = size.width, H = size.height;
+    const portrait = W < 1024 && H > W;
+    // phone held sideways: text on the left half, coin fitted into the right half
+    const shortLandscape = !portrait && H < 520 && W > H;
+    if (portrait || shortLandscape) {
+      const key = `${W}x${H}`;
+      if (key !== lastSize.current || !textBottom.current) {
+        lastSize.current = key;
+        const hero = document.querySelector(".hero-content");
+        const canvas = document.querySelector("main canvas");
+        if (hero && canvas) {
+          textBottom.current = hero.getBoundingClientRect().bottom - canvas.getBoundingClientRect().top;
+        }
+      }
+      let coinW: number, targetX: number, targetY: number;
+      if (portrait) {
+        const top = Math.min(Math.max(textBottom.current + 16, H * 0.35), H * 0.7);
+        coinW = THREE.MathUtils.clamp(Math.min(W * 0.92, (H - top - 24) * 1.25), W * 0.62, W * 0.92);
+        targetX = W / 2;
+        targetY = Math.min(H - coinW * 0.46 - 20, top + (H - top) / 2 - 10);
+      } else {
+        const headerH = 56;
+        coinW = Math.min(W * 0.46, (H - headerH - 16) * 1.45);
+        targetX = W * 0.74;
+        targetY = headerH + (H - headerH) / 2 + 6;
+      }
+      // fov that makes the coin coinW pixels wide at its distance from the camera
+      const dist = tmp.copy(coinCentre).sub(cam.position).length();
+      const fovFit = THREE.MathUtils.radToDeg(2 * Math.atan((COIN_HALF_W * H) / (dist * coinW)));
+      cam.fov = THREE.MathUtils.lerp(fovFit, 40, easeInOutExpo);
+      cam.clearViewOffset();
+      cam.updateProjectionMatrix();
+      tmp.copy(coinCentre).project(cam);
+      const px = (tmp.x * 0.5 + 0.5) * W, py = (-tmp.y * 0.5 + 0.5) * H;
+      const k = 1 - easeInOutExpo;
+      cam.setViewOffset(W, H, (px - targetX) * k, (py - targetY) * k, W, H);
+      framed.current = true;
+    } else if (framed.current) {
+      framed.current = false;
+      cam.clearViewOffset();
+      cam.fov = 40;
+      cam.updateProjectionMatrix();
     }
 
     // 4. Update Scene Layout (Lateral shift & Perspective tilt)

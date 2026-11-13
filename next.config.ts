@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
       { source: "/Ecosystem/partners", destination: "/Ecosystem/affiliations", permanent: true },
       { source: "/Platform/cleansing", destination: "/Platform/analytics", permanent: true },
       { source: "/Platform/network", destination: "/Platform/knowledge-graph", permanent: true },
+      // The separate phone homepage is gone: the main homepage is responsive now.
+      { source: "/mobile-home.html", destination: "/", permanent: false },
+      { source: "/mobile-content.html", destination: "/", permanent: false },
     ];
   },
   async headers() {

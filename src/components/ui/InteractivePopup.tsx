@@ -10,6 +10,7 @@ interface InteractivePopupProps {
   safeSlices: CoinSliceData[];
   onClose: () => void;
   popupScale: number;
+  isPhone?: boolean;
   iconPx: number;
   btnCellPx: number;
   onOpenBranch?: (data: { title: string; parents: any[]; children: any[]; slug?: string; subPopUp?: boolean; subNewPage?: boolean }) => void;
@@ -22,6 +23,7 @@ export function InteractivePopup({
   safeSlices,
   onClose,
   popupScale,
+  isPhone = false,
   iconPx,
   btnCellPx,
   onOpenBranch,
@@ -45,6 +47,10 @@ export function InteractivePopup({
 
   if (!activePopup) return null;
 
+  // Desktop: panel left of the globe, turned 25deg. Phone: centred, only a slight turn.
+  const pos = isPhone ? { top: "46%", left: "50%" } : { top: "58%", left: "32%" };
+  const ry = isPhone ? 8 : 25;
+
   const cols = buttons.length === 4 ? 2 : buttons.length >= 5 ? 3 : buttons.length || 1;
 
   // Glossy blue button colors
@@ -62,9 +68,9 @@ export function InteractivePopup({
     <div
       style={{
         position: "absolute",
-        top: "58%",
-        left: "32%",
-        transform: `translate(-50%, -50%) perspective(1000px) rotateY(25deg) scale(${popupScale})`,
+        top: pos.top,
+        left: pos.left,
+        transform: `translate(-50%, -50%) perspective(1000px) rotateY(${ry}deg) scale(${popupScale})`,
         backgroundImage: "url(/assets/images/New_BG_7.png)",
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
@@ -90,9 +96,9 @@ export function InteractivePopup({
     >
       <style>{`
         @keyframes popupPremiumHolo {
-          0%   { opacity: 0;   transform: translate(-50%, -20%) perspective(1000px) rotateY(15deg)    rotateX(15deg) scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(3) blur(10px) drop-shadow(0 0 50px rgba(14, 165, 233, 0.4)); }
-          60%  { opacity: 0.95; transform: translate(-50%, -51%) perspective(1000px) rotateY(23deg)   rotateX(5deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1.5) blur(3px) drop-shadow(0 0 60px rgba(14, 165, 233, 0.6)); }
-          100% { opacity: 1;   transform: translate(-50%, -50%) perspective(1000px) rotateY(25deg)   rotateX(0deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1) blur(0px) drop-shadow(0 0 30px rgba(14, 165, 233, 0.3)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.15)); }
+          0%   { opacity: 0;   transform: translate(-50%, -20%) perspective(1000px) rotateY(${Math.max(0, ry - 10)}deg)    rotateX(15deg) scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(3) blur(10px) drop-shadow(0 0 50px rgba(14, 165, 233, 0.4)); }
+          60%  { opacity: 0.95; transform: translate(-50%, -51%) perspective(1000px) rotateY(${ry - 2}deg)   rotateX(5deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1.5) blur(3px) drop-shadow(0 0 60px rgba(14, 165, 233, 0.6)); }
+          100% { opacity: 1;   transform: translate(-50%, -50%) perspective(1000px) rotateY(${ry}deg)   rotateX(0deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1) blur(0px) drop-shadow(0 0 30px rgba(14, 165, 233, 0.3)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.15)); }
         }
         @keyframes buttonHoloFly {
           0%   { opacity: 0; transform: translateZ(30px) rotateY(45deg) scale(0.9); }

@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "../components/ui/Header";
 import InstantHistoryScroll from "../components/ui/InstantHistoryScroll";
 import TeamProfileModal from "../components/ui/TeamProfileModal";
-import { MobileDetector } from "../components/MobileDetector";
 
 // Fonts are self-hosted (src/app/fonts, the same Latin variable files Google Fonts
 // serves) so builds don't depend on fetching fonts.googleapis.com at build time.
@@ -94,7 +93,6 @@ export default function RootLayout({
       <body
         className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
       >
-        <MobileDetector />
         <InstantHistoryScroll />
         <Header />
         {children}
