@@ -502,3 +502,6 @@
 .v-platform-knowledge-graph .cq-mail-line a{color:var(--white,#fff);text-decoration:underline;text-underline-offset:3px}
 .v-platform-knowledge-graph .cq-mail-line a:hover{color:var(--blue-400,#5BA0FF)}
 @media(max-width:760px){.v-platform-knowledge-graph .cta-stack{align-items:flex-start}}
+
+/* Hero CTA (same as the other Platform pages): one standard blue button under the intro. */
+.v-platform-knowledge-graph .hero .ctas{margin-top:28px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}

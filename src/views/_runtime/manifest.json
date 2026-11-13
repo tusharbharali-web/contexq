@@ -42,21 +42,21 @@
     {
       "id": "platform-analytics",
       "route": "/Platform/analytics",
-      "legacyUrl": "/html/contexq-advanced-analytics.html",
+      "legacyUrl": "/html/contexq-ai-cleansing.html",
       "fonts": [
-        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
-        "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap"
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@500;600;700&display=swap"
       ],
       "externals": [],
-      "title": "ContexQ, Advanced Analytics",
+      "title": "AI Cleansing | ContexQ",
+      "description": "ContexQ AI Cleansing turns partial, inaccurate, duplicated and scattered data into clean, standardised and labelled information, without mapping schemas by hand.",
       "handlers": []
     },
     {
       "id": "platform-entity",
       "route": "/Platform/entity",
-      "legacyUrl": "/html/contexq-entity-resolution.html",
+      "legacyUrl": "/html/contexq-entity-resolution-v6.html",
       "fonts": [
-        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@500;600;700&display=swap",
         "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600;700&text=%E6%B3%95%E6%8F%90%E8%B5%AB%C2%B7%E4%B9%8C%E5%8D%A2%E8%BE%BE%E6%A0%BC%E5%8C%97%E6%98%9F%E8%B4%B8%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&display=swap"
       ],
       "externals": [],
@@ -413,8 +413,8 @@
     "/privacy.html": "/privacy-policy",
     "/html/contexq-careers.html": "/careers",
     "/html/contexq-what-we-do-v3.html": "/about",
-    "/html/contexq-advanced-analytics.html": "/Platform/analytics",
-    "/html/contexq-entity-resolution.html": "/Platform/entity",
+    "/html/contexq-ai-cleansing.html": "/Platform/analytics",
+    "/html/contexq-entity-resolution-v6.html": "/Platform/entity",
     "/html/contexq-knowledge-graphs-ai.html": "/Platform/knowledge-graph",
     "/html/contexq-composite-ai-scores.html": "/Platform/scores",
     "/html/contexq-decision-intelligence.html": "/Platform/actions",

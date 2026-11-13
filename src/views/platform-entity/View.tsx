@@ -1,6 +1,7 @@
-// Generated from public/html/contexq-entity-resolution.html.
+// Generated from public/html/contexq-entity-resolution-v6.html.
 // Markup of the page as JSX. Styling lives in ./styles.css (scoped to .v-platform-entity);
 // interactive behaviour lives in ./behavior.js and is started by <ViewShell>.
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import ViewShell from "../_runtime/ViewShell";
 import "./styles.css";
@@ -16,6 +17,8 @@ export function View() {
               <p className="lede">
                 ContexQ connects the records your systems hold about each person and company, so you know who you are dealing with and how they are connected.
               </p>
+              {" "}
+              <div className="ctas"><a className="btn btn-blue cq-cta" href="#what">How it works</a></div>
             </div>
             {" "}
             <div className="stage" id="stage3d">
@@ -286,12 +289,12 @@ export function View() {
         </section>
         {" "}
         <section className="sec paper" id="network" aria-labelledby="net-title">
-          <div className="wrap net-grid">
+          <div className="wrap net-grid" id="netGrid">
             <div className="intro">
               <h2 id="net-title">Matching finds John Smith. Relationships show who he is connected to.</h2>
               {" "}
               <p className="lede">
-                His companies and co-directors are separate entities, never merged into his profile. Linking them shows risk and opportunity that no single record holds.
+                His companies and co-directors are separate entities, never merged into his profile. Linking them shows risk and opportunity that no single record holds, even when every name is encrypted.
               </p>
               {" "}
               <ul className="net-key">
@@ -299,7 +302,9 @@ export function View() {
                   <i className="k-risk" />
                   <span>
                     <b>Risk:</b>
-                    {" his co-director at Northstar Trading also directs a firm named in adverse news."}
+                    {" his co-director at "}
+                    <span className="enc-name" data-e="ns">Northstar Trading</span>
+                    {" also directs a firm named in adverse news."}
                   </span>
                 </li>
                 {" "}
@@ -313,12 +318,86 @@ export function View() {
               </ul>
             </div>
             {" "}
-            <figure className="net" aria-label="Network around John Smith: he directs Northstar Trading and Harbour Ridge Holdings. His co-director at Northstar Trading also directs Kestrel Ltd, a firm named in adverse news. Harbour Ridge banks elsewhere.">
-              <svg className="net-wide" viewBox="0 40 520 300" role="img" aria-hidden="true">
+            <figure className="net" id="netFig" data-step="0" aria-labelledby="netDesc">
+              <div className="net-bar">
+                <ol className="steps" id="encSteps" aria-label="Demo steps">
+                  <li>
+                    <button type="button">
+                      <b>1</b>
+                      Separate
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <b>2</b>
+                      Encrypted
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <b>3</b>
+                      Connected
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <b>4</b>
+                      Decrypted
+                    </button>
+                  </li>
+                </ol>
+                {" "}
+                <div className="enc-ctl">
+                  <button className="enc-play" id="encPlay" type="button" aria-label="Pause the demo">
+                    <svg className="i-pause" viewBox="0 0 12 12" aria-hidden="true">
+                      <rect x="2" y="1.5" width="2.6" height="9" rx=".6" fill="currentColor" />
+                      <rect x="7.4" y="1.5" width="2.6" height="9" rx=".6" fill="currentColor" />
+                    </svg>
+                    {" "}
+                    <svg className="i-play" viewBox="0 0 12 12" aria-hidden="true">
+                      <path d="M3 1.5 10.5 6 3 10.5Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  {" "}
+                  <button className="enc-btn" id="encBtn" type="button">
+                    <span className="prog" id="encProg" aria-hidden="true" />
+                    {" "}
+                    <svg className="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="4.5" y="10.5" width="15" height="10" rx="2.5" />
+                      <path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" />
+                    </svg>
+                    {" "}
+                    <svg className="ul" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="4.5" y="10.5" width="15" height="10" rx="2.5" />
+                      <path d="M8 10.5V7.5a4 4 0 0 1 7.6-1.8" />
+                    </svg>
+                    {" "}
+                    <span id="encTx">Encrypt</span>
+                    {" "}
+                    <svg className="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M3 8h9M8.5 4l4 4-4 4" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              {" "}
+              <p className="sr" id="netDesc">
+                Step-by-step demo with fictional records. Five records about John Smith, Northstar Trading, Harbour Ridge, Wei Ling Tan and Kestrel Ltd start in separate systems. Encrypt replaces every name with a code. Connect links them into the same network: John Smith directs Northstar Trading and Harbour Ridge, his co-director Wei Ling Tan also directs Kestrel Ltd, named in adverse news. Decrypt shows the real names on the same network.
+              </p>
+              {" "}
+              <svg className="net-wide" viewBox="0 40 520 300" aria-hidden="true">
+                <defs>
+                  <linearGradient id="scanG" x1="0" x2="1">
+                    <stop offset="0" stopColor="#5BA8FF" stopOpacity="0" />
+                    <stop offset=".85" stopColor="#5BA8FF" stopOpacity=".22" />
+                    <stop offset="1" stopColor="#1F5FBF" stopOpacity=".9" />
+                  </linearGradient>
+                </defs>
+                <circle className="halo" cx="445" cy="300" r="34" />
                 <g className="edges">
-                  <path d="M260 190 L120 90" />
-                  <path d="M260 190 L400 90" />
-                  <path d="M260 190 L260 276" />
+                  <path d="M260 190 L120 90" pathLength="1" />
+                  <path d="M260 190 L400 90" pathLength="1" />
+                  <path d="M260 190 L260 276" pathLength="1" />
                   <path d="M330 300 L390 300" className="e-risk" />
                 </g>
                 <g className="elab">
@@ -327,38 +406,41 @@ export function View() {
                   <text x="300" y="244">Co-director</text>
                   <text x="362" y="268" className="er">Director of</text>
                 </g>
-                <g className="n n-main">
+                <g className="n n-main" style={{ "--dx": "-6px", "--dy": "-14px" } as CSSProperties}>
                   <circle cx="260" cy="190" r="34" />
-                  <text x="260" y="186">John</text>
-                  <text x="260" y="202">Smith</text>
+                  <text x="260" y="186" data-e="js" data-part="0">John</text>
+                  <text x="260" y="202" data-e="js" data-part="1">Smith</text>
                 </g>
-                <g className="n n-opp">
+                <g className="n n-opp" style={{ "--dx": "-24px", "--dy": "22px" } as CSSProperties}>
                   <rect x="50" y="66" width="140" height="48" rx="10" />
-                  <text x="120" y="86">Harbour Ridge</text>
-                  <text x="120" y="102" className="s">Banks elsewhere</text>
+                  <text x="120" y="86" data-e="hr">Harbour Ridge</text>
+                  <text x="120" y="102" className="s" data-src="Company registry" data-role="Banks elsewhere">Company registry</text>
                 </g>
-                <g className="n">
+                <g className="n" style={{ "--dx": "28px", "--dy": "30px" } as CSSProperties}>
                   <rect x="330" y="66" width="140" height="48" rx="10" />
-                  <text x="400" y="86">Northstar Trading</text>
-                  <text x="400" y="102" className="s">Customer</text>
+                  <text x="400" y="86" data-e="ns">Northstar Trading</text>
+                  <text x="400" y="102" className="s" data-src="Corporate banking" data-role="Customer">Corporate banking</text>
                 </g>
-                <g className="n">
+                <g className="n" style={{ "--dx": "-46px", "--dy": "6px" } as CSSProperties}>
                   <rect x="190" y="276" width="140" height="48" rx="10" />
-                  <text x="260" y="296">Wei Ling Tan</text>
-                  <text x="260" y="312" className="s">Co-director</text>
+                  <text x="260" y="296" data-e="wt">Wei Ling Tan</text>
+                  <text x="260" y="312" className="s" data-src="Company registry" data-role="Co-director">Company registry</text>
                 </g>
-                <g className="n n-risk">
+                <g className="n n-risk" style={{ "--dx": "8px", "--dy": "-34px" } as CSSProperties}>
                   <rect x="390" y="276" width="110" height="48" rx="10" />
-                  <text x="445" y="296">Kestrel Ltd</text>
-                  <text x="445" y="312" className="s">Adverse news</text>
+                  <text x="445" y="296" data-e="ks">Kestrel Ltd</text>
+                  <text x="445" y="312" className="s" data-src="News" data-role="Adverse news">News</text>
                 </g>
+                <g className="pulses" />
+                <rect className="scan" x="-80" y="40" width="80" height="300" fill="url(#scanG)" />
               </svg>
               {" "}
               <svg className="net-tall" viewBox="0 0 340 420" aria-hidden="true">
+                <circle className="halo" cx="170" cy="377" r="34" />
                 <g className="edges">
-                  <path d="M170 160 L90 74" />
-                  <path d="M170 160 L250 74" />
-                  <path d="M170 160 L170 262" />
+                  <path d="M170 160 L90 74" pathLength="1" />
+                  <path d="M170 160 L250 74" pathLength="1" />
+                  <path d="M170 160 L170 262" pathLength="1" />
                   <path d="M170 310 L170 352" className="e-risk" />
                 </g>
                 <g className="elab">
@@ -367,41 +449,46 @@ export function View() {
                   <text x="214" y="218">Co-director</text>
                   <text x="226" y="336" className="er">Director of</text>
                 </g>
-                <g className="n n-main">
+                <g className="n n-main" style={{ "--dx": "-30px", "--dy": "-6px" } as CSSProperties}>
                   <circle cx="170" cy="160" r="36" />
-                  <text x="170" y="156">John</text>
-                  <text x="170" y="173">Smith</text>
+                  <text x="170" y="156" data-e="js" data-part="0">John</text>
+                  <text x="170" y="173" data-e="js" data-part="1">Smith</text>
                 </g>
-                <g className="n n-opp">
+                <g className="n n-opp" style={{ "--dx": "0px", "--dy": "24px" } as CSSProperties}>
                   <rect x="10" y="22" width="150" height="54" rx="10" />
-                  <text x="85" y="44">Harbour Ridge</text>
-                  <text x="85" y="63" className="s">Banks elsewhere</text>
+                  <text x="85" y="44" data-e="hr">Harbour Ridge</text>
+                  <text x="85" y="63" className="s" data-src="Company registry" data-role="Banks elsewhere">Company registry</text>
                 </g>
-                <g className="n">
+                <g className="n" style={{ "--dx": "0px", "--dy": "70px" } as CSSProperties}>
                   <rect x="180" y="22" width="150" height="54" rx="10" />
-                  <text x="255" y="44">Northstar Trading</text>
-                  <text x="255" y="63" className="s">Customer</text>
+                  <text x="255" y="44" data-e="ns">Northstar Trading</text>
+                  <text x="255" y="63" className="s" data-src="Corporate banking" data-role="Customer">Corporate banking</text>
                 </g>
-                <g className="n">
+                <g className="n" style={{ "--dx": "-80px", "--dy": "-10px" } as CSSProperties}>
                   <rect x="95" y="262" width="150" height="50" rx="10" />
-                  <text x="170" y="283">Wei Ling Tan</text>
-                  <text x="170" y="301" className="s">Co-director</text>
+                  <text x="170" y="283" data-e="wt">Wei Ling Tan</text>
+                  <text x="170" y="301" className="s" data-src="Company registry" data-role="Co-director">Company registry</text>
                 </g>
-                <g className="n n-risk">
+                <g className="n n-risk" style={{ "--dx": "80px", "--dy": "-34px" } as CSSProperties}>
                   <rect x="95" y="352" width="150" height="50" rx="10" />
-                  <text x="170" y="373">Kestrel Ltd</text>
-                  <text x="170" y="391" className="s">Adverse news</text>
+                  <text x="170" y="373" data-e="ks">Kestrel Ltd</text>
+                  <text x="170" y="391" className="s" data-src="News" data-role="Adverse news">News</text>
                 </g>
+                <g className="pulses" />
+                <rect className="scan" x="-80" y="0" width="80" height="420" fill="url(#scanG)" />
               </svg>
+              {" "}
+              <p className="enc-status" aria-live="polite">
+                <i aria-hidden="true" />
+                <span id="encMsg" />
+              </p>
             </figure>
           </div>
         </section>
         {" "}
         <section className="sec light" id="impact" aria-labelledby="imp-title">
           <div className="wrap">
-            <div className="intro">
-              <h2 id="imp-title">What changes for each team.</h2>
-            </div>
+            <div className="intro"><h2 id="imp-title">What changes for each team.</h2></div>
             {" "}
             <div className="uses">
               <article>
@@ -443,9 +530,7 @@ export function View() {
         {" "}
         <section className="sec dark" id="engineering" aria-labelledby="eng-title">
           <div className="wrap">
-            <div className="intro">
-              <h2 id="eng-title">How it fits into your data estate.</h2>
-            </div>
+            <div className="intro"><h2 id="eng-title">How it fits into your data estate.</h2></div>
             {" "}
             <ol className="pipe" aria-label="Pipeline">
               <li>
@@ -509,19 +594,24 @@ export function View() {
           </div>
         </section>
         {" "}
-        <section className="closing" id="contact" aria-labelledby="close-title">
+        <section className="closing" id="book" aria-labelledby="cta-title">
           <div className="wrap">
             <div>
-              <h2 id="close-title">Which records should be one entity?</h2>
+              <h2 id="cta-title">See your own records resolved.</h2>
+              {" "}
               <p>Bring a customer, supplier or investigation use case and see how ContexQ resolves it.</p>
             </div>
+            {" "}
             <div className="cta-stack">
-<Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
-<p className="cq-mail-line">
-  {"or mail us at "}
-  <a href={"mailto:inquiry@contexq.com?subject=Entity%20resolution%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20entity%20resolution.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>inquiry@contexq.com</a>
-</p>
-</div>
+              <Link prefetch={false} className="cta cq-cta" href="/contact">Talk to the team</Link>
+              {" "}
+              <p className="cq-mail-line">
+                {"or mail us at "}
+                <a href={"mailto:inquiry@contexq.com?subject=Entity%20resolution%20enquiry&body=Hi%20ContexQ%20team%2C%0A%0AI%27d%20like%20to%20discuss%20how%20ContexQ%20could%20help%20us%20with%20entity%20resolution.%0A%0AName%3A%0ACompany%3A%0ARole%3A%0AWhat%20we%27re%20looking%20to%20solve%3A%0A%0AThanks%2C"}>
+                  inquiry@contexq.com
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </main>

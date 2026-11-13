@@ -16,6 +16,8 @@ export function View() {
               <p className="lead">
                 ContexQ turns business data and external context into knowledge graphs, revealing the relationships behind risk, exposure and opportunity.
               </p>
+              {" "}
+              <div className="ctas"><a className="btn btn-blue cq-cta" href="#applications">See where it applies</a></div>
             </div>
             {" "}
             <figure className="hero-visual">

@@ -1,4 +1,4 @@
-// Generated from public/html/contexq-entity-resolution.html.
+// Generated from public/html/contexq-entity-resolution-v6.html.
 // The original page scripts, unchanged, wrapped so they can run inside the
 // React view: `cq` supplies window/document/timers that are scoped to the
 // view and cleaned up when it unmounts (see src/views/_runtime/env.ts).
@@ -180,6 +180,93 @@ export default function init(cq) {
     var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting) { dec.classList.add('in'); io.disconnect(); } }, {threshold:.2});
     io.observe(dec);
   }
+})();
+      } catch (err) { console.error('[platform-entity] page script error:', err); }
+      // ---- page script ----
+      try {
+/* NETWORK - plays itself when in view: 1 separate · 2 encrypt · 3 connect on encrypted data · 4 decrypt. Any click takes over. */
+(function(){
+  var btn = document.getElementById('encBtn'); if (!btn) return;
+  var fig = document.getElementById('netFig'), grid = document.getElementById('netGrid'), tx = document.getElementById('encTx'), msg = document.getElementById('encMsg');
+  var prog = document.getElementById('encProg'), playBtn = document.getElementById('encPlay');
+  var stepLis = [].slice.call(document.querySelectorAll('#encSteps li'));
+  var names = [].slice.call(document.querySelectorAll('#network [data-e]')), subs = [].slice.call(document.querySelectorAll('#network text[data-src]'));
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches, HEX = '0123456789ABCDEF', NS = 'http://www.w3.org/2000/svg';
+  var STEPS = [
+    { btn: 'Encrypt',     msg: 'Five records about John Smith sit in five different systems. Nothing links them.', hold: 3200 },
+    { btn: 'Connect',     msg: 'Every name is now quantum-safe encrypted. No one can read who these records are about.', hold: 3400 },
+    { btn: 'Decrypt',     msg: 'ContexQ links the encrypted records. The network forms and the risk is flagged without reading a single name.', hold: 4600 },
+    { btn: 'Start again', msg: 'Decrypted with your key: the same network, now with the real names.', hold: 4200 }
+  ];
+  function hash(str, salt){ var h = 2166136261 ^ salt; for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0).toString(16).toUpperCase().padStart(8, '0'); }
+  function code(id){ var a = hash('contexq:' + id, 7), b = hash('contexq:' + id, 91); return { full: 'cq:' + a.slice(0,4) + '…' + b.slice(4), top: a.slice(0,6), bot: b.slice(2) }; }
+  names.forEach(function(el){ el._plain = el.textContent; var c = code(el.getAttribute('data-e')), part = el.getAttribute('data-part'); el._code = part == null ? c.full : (part === '0' ? c.top : c.bot); });
+
+  /* name scramble, with a scan bar sweeping across the diagram */
+  var sraf = 0;
+  function scramble(enc){
+    names.forEach(function(el){ el._tgt = enc ? el._code : el._plain; });
+    cancelAnimationFrame(sraf);
+    function render(p){ names.forEach(function(el){ var t = el._tgt, n = t.length, d = Math.floor(p * n), o = ''; for (var i = 0; i < n; i++) o += (i < d || ' :…'.indexOf(t[i]) > -1) ? t[i] : HEX[Math.floor(Math.random() * 16)]; el.textContent = o; }); }
+    if (reduce) { render(1); return; }
+    fig.classList.remove('scanning'); void fig.offsetWidth; fig.classList.add('scanning', 'scrambling');
+    var start = performance.now();
+    (function f(now){ var p = Math.min(1, (now - start) / 1000); render(p < .3 ? 0 : (p - .3) / .7); if (p < 1) sraf = requestAnimationFrame(f); else fig.classList.remove('scrambling', 'scanning'); })(start);
+  }
+
+  /* data pulses travelling along each link once connected */
+  var lanes = [].slice.call(document.querySelectorAll('#network .pulses')).map(function(g){
+    var svg = g.ownerSVGElement, paths = [].slice.call(svg.querySelectorAll('.edges path'));
+    return paths.map(function(path, i){ var c = document.createElementNS(NS, 'circle'); c.setAttribute('r', 3); if (path.classList.contains('e-risk')) c.setAttribute('class', 'r'); g.appendChild(c); return { path: path, dot: c, len: path.getTotalLength(), off: i * .27 }; });
+  });
+  var linkedAt = 0, praf = 0;
+  function pulses(now){
+    var on = fig.classList.contains('linked') && now - linkedAt > 1300;
+    lanes.forEach(function(l){ l.forEach(function(e){
+      if (!on) { e.dot.style.opacity = 0; return; }
+      var q = ((now / 1600) + e.off) % 1, pt = e.path.getPointAtLength(e.len * q);
+      e.dot.setAttribute('cx', pt.x); e.dot.setAttribute('cy', pt.y); e.dot.style.opacity = Math.sin(q * Math.PI);
+    }); });
+    praf = requestAnimationFrame(pulses);
+  }
+
+  /* steps */
+  var step = 0;
+  function go(n){
+    var prevEnc = step === 1 || step === 2, wasLinked = step >= 2; step = n;
+    var enc = n === 1 || n === 2, linked = n >= 2;
+    fig.setAttribute('data-step', n);
+    fig.classList.toggle('is-enc', enc); grid.classList.toggle('enc-on', enc);
+    fig.classList.toggle('linked', linked); grid.classList.toggle('k-on', linked);
+    if (linked && !wasLinked) linkedAt = performance.now();
+    subs.forEach(function(el){ el.textContent = el.getAttribute(linked ? 'data-role' : 'data-src'); });
+    stepLis.forEach(function(li, i){ li.className = i === n ? 'now' : i < n ? 'done' : ''; var b = li.firstChild; if (i === n) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current'); });
+    tx.textContent = STEPS[n].btn; msg.textContent = STEPS[n].msg;
+    if (enc !== prevEnc) scramble(enc);
+    schedule();
+  }
+
+  /* autoplay: runs while the section is on screen; the button fills up as the next step approaches */
+  var auto = !reduce, inView = false, timer = 0;
+  function schedule(){
+    clearTimeout(timer);
+    prog.style.transition = 'none'; prog.style.transform = 'scaleX(0)';
+    if (!auto || !inView) return;
+    var hold = STEPS[step].hold;
+    void prog.offsetWidth; prog.style.transition = 'transform ' + hold + 'ms linear'; prog.style.transform = 'scaleX(1)';
+    timer = setTimeout(function(){ go((step + 1) % 4); }, hold);
+  }
+  function setAuto(v){ auto = v; fig.classList.toggle('paused', !v); playBtn.setAttribute('aria-label', v ? 'Pause the demo' : 'Play the demo'); schedule(); }
+
+  btn.addEventListener('click', function(){ setAuto(false); go((step + 1) % 4); });
+  stepLis.forEach(function(li, i){ li.firstChild.addEventListener('click', function(){ setAuto(false); go(i); }); });
+  playBtn.addEventListener('click', function(){ if (!auto && step === 3) go(0); setAuto(!auto); });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ var v = es[0].isIntersecting; if (v === inView) return; inView = v; if (v && auto && step === 3) go(0); else schedule(); }, { threshold: .45 }).observe(fig);
+  else inView = true;
+
+  if (reduce) fig.classList.add('paused');
+  go(0);
+  if (!reduce) praf = requestAnimationFrame(pulses);
 })();
       } catch (err) { console.error('[platform-entity] page script error:', err); }
       return {  };

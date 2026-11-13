@@ -16,6 +16,8 @@ export function View() {
               <p className="lede">
                 ContexQ puts the evidence behind a finding in one place, sets out the possible responses with their reasoning, and records the next step your team agrees, ready to hand to the people and systems that carry it out.
               </p>
+              {" "}
+              <div className="ctas"><a className="btn btn-blue cq-cta" href="#walk">See it in action</a></div>
             </div>
             {" "}
             <div className="hv" id="hv" data-s="0">
