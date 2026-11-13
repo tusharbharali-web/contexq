@@ -1444,3 +1444,7 @@
 .v-solution-supply-chain .btn.primary:hover { background: #5BA0FF; border-color: #5BA0FF; color: #FFFFFF; }
 .v-solution-supply-chain .hero-copy .hero-actions .btn:active,
 .v-solution-supply-chain .btn.primary:active { background: #1F6FEB; border-color: #1F6FEB; color: #FFFFFF; }
+
+/* Eyebrows hidden */
+.v-solution-supply-chain .cq-eyebrow{display:none!important}
+.v-solution-supply-chain .ac-tag{display:none!important}

@@ -299,6 +299,22 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
     }
   }, [activePopup, branchingData, expandingModule]);
 
+  // While any pie view is open (slice popup, tree, expanding module, Team cards) the page
+  // behind it must not scroll: wheel, keys and touch are all stopped by locking the root.
+  // Scrolling inside the popups themselves is unaffected. Released when back on the pie.
+  const pieOpen = !!(activePopup || branchingData || expandingModule);
+  useEffect(() => {
+    if (!pieOpen) return;
+    const root = document.documentElement;
+    const prev = { overflow: root.style.overflow, overscroll: root.style.overscrollBehavior };
+    root.style.overflow = 'hidden';
+    root.style.overscrollBehavior = 'none';
+    return () => {
+      root.style.overflow = prev.overflow;
+      root.style.overscrollBehavior = prev.overscroll;
+    };
+  }, [pieOpen]);
+
   return (
      <div
       ref={canvasContainerRef}

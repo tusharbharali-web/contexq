@@ -309,3 +309,6 @@
 }
 
 
+
+/* Eyebrows hidden */
+.v-solution-aml .kicker,.v-solution-aml .lv > li > small{display:none!important}
