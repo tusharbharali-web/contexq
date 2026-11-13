@@ -10,7 +10,7 @@ export default function init(cq) {
       // ---- page script ----
       try {
 window.CUSTOMERS_DATA = {
-  "footnote": "Scenarios are illustrative.",
+  "footnote": "",
   "defaultSlug": "trading",
   "pages": [
     {
@@ -350,7 +350,7 @@ window.CUSTOMERS_DATA = {
       (s.description ? '<p class="text-body-md font-body-md text-[#A9B4CB] leading-relaxed">' + esc(s.description) + '</p>' : '') +
       (s.diagram ? diagram(s.diagram) : '') +
       (blocks ? '<div class="space-y-4">' + blocks + '</div>' : '') +
-      (s.diagram ? '<p class="text-label-md font-label-md text-[#A9B4CB]">' + esc(DATA.footnote) + '</p>' : '') +
+      (s.diagram && DATA.footnote ? '<p class="text-label-md font-label-md text-[#A9B4CB]">' + esc(DATA.footnote) + '</p>' : '') +
       '</div></div>';
   }
 
@@ -444,7 +444,7 @@ window.CUSTOMERS_DATA = {
     page.stories.map(story).join('') +
     (page.process ? process(page.process) : '') +
     (page.comingSoon ? comingSoon(page.comingSoon) : '') +
-    '<p class="text-label-md font-label-md text-[#525e7a] text-center">' + esc(DATA.footnote) + '</p></div></main>';
+    (DATA.footnote ? '<p class="text-label-md font-label-md text-[#525e7a] text-center">' + esc(DATA.footnote) + '</p>' : '') + '</div></main>';
 
   document.title = 'ContexQ - Customers: ' + page.tabLabel;
   document.body.innerHTML = tabs() + hero() + main + cta();

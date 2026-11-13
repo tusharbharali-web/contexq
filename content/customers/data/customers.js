@@ -1,5 +1,5 @@
 window.CUSTOMERS_DATA = {
-  "footnote": "Scenarios are illustrative.",
+  "footnote": "",
   "defaultSlug": "trading",
   "pages": [
     {
