@@ -14,7 +14,7 @@ window.BLOG_POSTS = [
     date: "2025-02-10",
     contentType: "Guides",
     excerpt: "In today’s data-driven world, businesses collect vast amounts of data from various sources. However, the true value of this data is only unlocked when it’s organised, unified, and free from redundancies.",
-    coverImage: null, // cover file not found in repo
+    coverImage: "/assets/images/Ecosystem/blog-covers/entity-resolution-business-intelligence.webp",
     coverAlt: "A professional woman reviewing business intelligence dashboards in a modern office with the ContexQ logo on the wall",
     /* Body blocks: p | h2 | h3 | list (items: {lead, text}) | leadp ({lead, text}) | divider.
        Inline markup in text: **bold** and [label](url). */
@@ -59,7 +59,7 @@ window.BLOG_POSTS = [
     date: "2025-01-10",
     contentType: "Guides",
     excerpt: "In today’s fast-paced digital economy, the ability to make accurate and timely decisions can make or break a business. Enter Decision Intelligence, a transformative approach that empowers businesses to make smarter, data-driven choices.",
-    coverImage: null, // cover file not found in repo
+    coverImage: "/assets/images/Ecosystem/blog-covers/data-driven-decision-intelligence.webp",
     coverAlt: "A diverse team of colleagues in discussion around a table, with the ContexQ logo overlaid",
     body: [
       { type: "p", text: "In today’s fast-paced digital economy, the ability to make accurate and timely decisions can make or break a business. Traditional methods of decision-making, often based on intuition or static data, are no longer sufficient to stay competitive. Enter **Decision Intelligence**. This is a transformative approach that empowers businesses to make smarter, data-driven choices. It does so by integrating advanced analytics, AI, and contextual insights." },
@@ -100,7 +100,7 @@ window.BLOG_POSTS = [
     date: "2024-10-15",
     contentType: "Guides",
     excerpt: "In today’s hyper-connected, rapidly evolving world, supply chains are more complex and dynamic than ever before. To stay competitive, organisations must not only react to disruptions but also anticipate and prevent them.",
-    coverImage: null, // cover file not found in repo
+    coverImage: "/assets/images/Ecosystem/blog-covers/future-proofing-modern-supply-chains.webp",
     coverAlt: "An illustration of a global supply chain network linking warehouse, planning, manufacturing, customers and storefront nodes around a globe",
     body: [
       { type: "p", text: "In today’s hyper-connected, rapidly evolving world, supply chains are more complex and dynamic than ever before. Disruptions can emerge from unexpected directions, whether it’s a global pandemic, political unrest, or natural disasters. To stay competitive, organisations must not only react to these disruptions but also anticipate and prevent them. This is where **Contextual Decision Intelligence (CDI)** becomes indispensable." },
