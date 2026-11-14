@@ -342,6 +342,15 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       ref={canvasContainerRef}
       style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden" }}
     >
+      {/* Phones: a tap anywhere outside the open card = "Back to pie". Sits under the cards
+          and views, over the hub. */}
+      {flat && pieOpen && (
+        <div
+          aria-hidden="true"
+          onClick={handleReset}
+          style={{ position: "absolute", inset: 0, zIndex: 50, background: "transparent" }}
+        />
+      )}
       <InteractivePopup
         activePopup={activePopup}
         safeSlices={popupSlices}
@@ -353,6 +362,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
         }}
         popupScale={popupScale}
         isPhone={isPhone}
+        flat={flat}
         iconPx={iconPx}
         btnCellPx={btnCellPx}
         onOpenBranch={(data) => {
@@ -396,6 +406,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
           popupHeight={_natH > 0 ? _natH : 500}
           onClose={handleCloseModule}
           onFlipStart={handleFlipStart}
+          flat={flat}
         />
       )}
 

@@ -107,21 +107,41 @@ export default function Home() {
           .hero-content > .space-y-6 > :first-child { display: none !important; }
         }
 
-        /* Phones (upright or sideways): flat 2D hub fills the first screen (ui/Pie2D, no 3D
-           scene), the hero text follows below it. Keep in sync with FLAT_MEDIA. */
+        /* Phones (upright or sideways): flat 2D hub (ui/Pie2D, no 3D scene) fills the first
+           screen and the hero text is overlaid on it - across the top when upright, down the
+           left when sideways. Pie2D sizes the pie into the space the text leaves. Keep in
+           sync with FLAT_MEDIA. */
         @media (max-width: 767px), (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
-          .hero-main { display: block !important; height: auto !important; min-height: 0 !important; padding-top: 0 !important; overflow: visible !important; }
-          .hero-scene { position: relative !important; inset: auto !important; height: 100svh; min-height: 300px; }
-          .hero-bg, .scroll-hint, .pie-hint { display: none !important; }
-          .hero-content { width: 100% !important; max-width: 640px !important; margin: 0 auto; transform: none !important;
-            padding: 44px 20px 56px !important; }
-          .hero-content > .space-y-6 > :first-child { display: flex !important; }
-          .hero-content > .space-y-6 > * + * { margin-top: 18px !important; }
-          .hero-content h1 { font-size: clamp(1.6rem, 7vw, 2rem) !important; line-height: 1.2 !important; margin-bottom: 0 !important; }
-          .hero-sub { font-size: 1rem !important; line-height: 1.55 !important; }
-          .hero-desc { display: block !important; font-size: .9rem !important; }
-          .hero-cta { padding-top: 6px !important; }
-          .hero-cta a { padding: 0 28px !important; height: 48px !important; line-height: 48px !important; font-size: .95rem !important; }
+          .hero-main { height: 100svh !important; min-height: 520px; align-items: flex-start !important;
+            padding-top: calc(var(--site-header-height, 64px) + 14px) !important; }
+          .hero-bg, .scroll-hint, .pie-hint, .hero-desc { display: none !important; }
+          .hero-content { width: 100% !important; max-width: 640px !important; transform: none !important;
+            padding: 0 20px !important; pointer-events: none; }
+          .hero-content a, .hero-content button { pointer-events: auto; }
+          .hero-content > .space-y-6 > * + * { margin-top: 12px !important; }
+          .hero-content h1 { font-size: clamp(1.35rem, 6.2vw, 1.7rem) !important; line-height: 1.2 !important; margin-bottom: 0 !important;
+            text-shadow: 0 2px 14px rgba(2,6,15,.8); }
+          .hero-content h1 br { display: none; }
+          .hero-sub { font-size: .9rem !important; line-height: 1.5 !important; text-shadow: 0 1px 10px rgba(2,6,15,.9); }
+          .hero-cta { padding-top: 2px !important; }
+          .hero-cta a { padding: 0 22px !important; height: 42px !important; line-height: 42px !important; font-size: .9rem !important; }
+        }
+        /* Short upright phones (e.g. 375x667): drop the tagline pill, and on the shortest the
+           sub-paragraph too, so the pie keeps a usable size. */
+        @media (max-width: 767px) and (orientation: portrait) and (max-height: 760px) {
+          .hero-content > .space-y-6 > :first-child { display: none !important; }
+        }
+        @media (max-width: 767px) and (orientation: portrait) and (max-height: 700px) {
+          .hero-sub { display: none !important; }
+          .hero-sub, .hero-content > .space-y-6 > :nth-child(3) { display: none !important; }
+        }
+        @media (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
+          .hero-main { min-height: 0; padding-top: calc(var(--site-header-height, 56px) + 8px) !important; }
+          .hero-content { width: min(46vw, 400px) !important; padding: 0 0 0 24px !important; }
+          .hero-content > .space-y-6 > :first-child { display: none !important; }
+          .hero-content h1 { font-size: 1.15rem !important; }
+          .hero-sub { font-size: .8rem !important; }
+          .hero-cta a { height: 38px !important; line-height: 38px !important; }
         }
       `}</style>
       <main className="hero-main relative w-full h-screen flex items-center overflow-hidden pt-20">

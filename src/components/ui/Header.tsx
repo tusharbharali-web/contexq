@@ -48,12 +48,34 @@ export default function Header() {
   useEffect(() => {
     const el = headerRef.current;
     if (!el) return;
-    const publish = () => document.documentElement.style.setProperty('--site-header-height', `${el.offsetHeight}px`);
+    // Measure the bar only (first child), not the open mobile menu, so opening the menu
+    // never moves page content.
+    const bar = (el.firstElementChild as HTMLElement | null) ?? el;
+    const publish = () => document.documentElement.style.setProperty('--site-header-height', `${bar.offsetHeight}px`);
     publish();
     const ro = new ResizeObserver(publish);
-    ro.observe(el);
+    ro.observe(bar);
     return () => ro.disconnect();
   }, [isMobile, pathname]);
+
+  // Mobile menu: full-screen overlay. While open the page behind can't scroll; it closes
+  // on navigation (effect above), on Escape and when the window grows to the desktop nav.
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const root = document.documentElement;
+    const prev = root.style.overflow;
+    root.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMobileOpen(false); };
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const onMq = () => { if (mq.matches) setMobileOpen(false); };
+    window.addEventListener('keydown', onKey);
+    mq.addEventListener('change', onMq);
+    return () => {
+      root.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+      mq.removeEventListener('change', onMq);
+    };
+  }, [mobileOpen]);
 
   // Get Platform, Solutions and Industries data from JSON
   const platformData = coinData.slices.find((slice: any) => slice.title === "Platform");
@@ -102,7 +124,7 @@ export default function Header() {
       ref={headerRef}
       suppressHydrationWarning
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        pathname === '/' && !scrolled
+        pathname === '/' && !scrolled && !mobileOpen
           ? 'bg-transparent'
           : 'backdrop-blur-md bg-[#050F1C]'
       }`}
@@ -258,7 +280,10 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#050F1C] border-t border-white/10 max-h-[calc(100vh-72px)] overflow-y-auto">
+        <div
+          className="lg:hidden fixed left-0 right-0 bottom-0 bg-[#050F1C] border-t border-white/10 overflow-y-auto overscroll-contain"
+          style={{ top: 'var(--site-header-height, 76px)', height: 'calc(100dvh - var(--site-header-height, 76px))', paddingBottom: 'env(safe-area-inset-bottom)' }}
+        >
           <div className="px-6 py-4 flex flex-col gap-1">
             <Link href="/" className="py-3 text-white text-base border-b border-white/5">Home</Link>
 

@@ -11,6 +11,8 @@ interface InteractivePopupProps {
   onClose: () => void;
   popupScale: number;
   isPhone?: boolean;
+  /** Phones: flat 2D card (no perspective/tilt), quicker entrance (no camera move to wait for). */
+  flat?: boolean;
   iconPx: number;
   btnCellPx: number;
   onOpenBranch?: (data: { title: string; parents: any[]; children: any[]; slug?: string; subPopUp?: boolean; subNewPage?: boolean }) => void;
@@ -24,6 +26,7 @@ export function InteractivePopup({
   onClose,
   popupScale,
   isPhone = false,
+  flat = false,
   iconPx,
   btnCellPx,
   onOpenBranch,
@@ -49,7 +52,10 @@ export function InteractivePopup({
 
   // Desktop: panel left of the globe, turned 25deg. Phone: centred, only a slight turn.
   const pos = isPhone ? { top: "46%", left: "50%" } : { top: "58%", left: "32%" };
-  const ry = isPhone ? 8 : 25;
+  const ry = flat ? 0 : isPhone ? 8 : 25;
+  const persp = (rx: number) => (flat ? "" : `perspective(1000px) rotateY(${Math.max(0, ry - (rx === 15 ? 10 : rx === 5 ? 2 : 0))}deg) rotateX(${rx}deg)`);
+  const popupDelay = flat ? 0.25 : 1.2;
+  const btnDelay = flat ? 0.45 : 1.4;
 
   const cols = buttons.length === 4 ? 2 : buttons.length >= 5 ? 3 : buttons.length || 1;
 
@@ -70,7 +76,7 @@ export function InteractivePopup({
         position: "absolute",
         top: pos.top,
         left: pos.left,
-        transform: `translate(-50%, -50%) perspective(1000px) rotateY(${ry}deg) scale(${popupScale})`,
+        transform: `translate(-50%, -50%) ${flat ? "" : `perspective(1000px) rotateY(${ry}deg)`} scale(${popupScale})`,
         backgroundImage: "url(/assets/images/New_BG_7.png)",
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
@@ -89,20 +95,20 @@ export function InteractivePopup({
         textAlign: "left",
         gap: "0.7rem",
         opacity: 0,
-        animation: "popupPremiumHolo 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.2s forwards",
-        transformStyle: "preserve-3d",
+        animation: `popupPremiumHolo ${flat ? 0.6 : 1.4}s cubic-bezier(0.16, 1, 0.3, 1) ${popupDelay}s forwards`,
+        transformStyle: flat ? "flat" : "preserve-3d",
         filter: "drop-shadow(0 0 30px rgba(14, 165, 233, 0.3)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.15))",
       }}
     >
       <style>{`
         @keyframes popupPremiumHolo {
-          0%   { opacity: 0;   transform: translate(-50%, -20%) perspective(1000px) rotateY(${Math.max(0, ry - 10)}deg)    rotateX(15deg) scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(3) blur(10px) drop-shadow(0 0 50px rgba(14, 165, 233, 0.4)); }
-          60%  { opacity: 0.95; transform: translate(-50%, -51%) perspective(1000px) rotateY(${ry - 2}deg)   rotateX(5deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1.5) blur(3px) drop-shadow(0 0 60px rgba(14, 165, 233, 0.6)); }
-          100% { opacity: 1;   transform: translate(-50%, -50%) perspective(1000px) rotateY(${ry}deg)   rotateX(0deg)  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1) blur(0px) drop-shadow(0 0 30px rgba(14, 165, 233, 0.3)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.15)); }
+          0%   { opacity: 0;   transform: translate(-50%, -20%) ${persp(15)} scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(3) blur(10px) drop-shadow(0 0 50px rgba(14, 165, 233, 0.4)); }
+          60%  { opacity: 0.95; transform: translate(-50%, -51%) ${persp(5)}  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1.5) blur(3px) drop-shadow(0 0 60px rgba(14, 165, 233, 0.6)); }
+          100% { opacity: 1;   transform: translate(-50%, -50%) ${persp(0)}  scale(${(popupScale * 1.1).toFixed(3)}); filter: brightness(1) blur(0px) drop-shadow(0 0 30px rgba(14, 165, 233, 0.3)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.15)); }
         }
         @keyframes buttonHoloFly {
-          0%   { opacity: 0; transform: translateZ(30px) rotateY(45deg) scale(0.9); }
-          100% { opacity: 1; transform: translateZ(0px)  rotateY(0deg) scale(1); }
+          0%   { opacity: 0; transform: ${flat ? "translateY(8px) scale(0.92)" : "translateZ(30px) rotateY(45deg) scale(0.9)"}; }
+          100% { opacity: 1; transform: ${flat ? "none" : "translateZ(0px)  rotateY(0deg) scale(1)"}; }
         }
         
         .popup-btn {
@@ -233,11 +239,11 @@ export function InteractivePopup({
                   cursor: "pointer",
                   overflow: "hidden",
                   minWidth: "0",
-                  transformStyle: "preserve-3d",
+                  transformStyle: flat ? "flat" : "preserve-3d",
                   zIndex: 2,
                   opacity: 0,
                   animation: "buttonHoloFly 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards",
-                  animationDelay: `${1.4 + i * 0.05}s`,
+                  animationDelay: `${btnDelay + i * 0.05}s`,
                   boxShadow: `-4px 0 6px rgba(0, 0, 0, 0.5), 0 6px 8px rgba(0, 0, 0, 0.5)`,
                   transition: "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
                   filter: "brightness(1)",

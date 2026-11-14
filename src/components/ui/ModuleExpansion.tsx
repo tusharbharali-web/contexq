@@ -13,9 +13,14 @@ interface ModuleExpansionProps {
   onClose: () => void;
   onFlipStart?: () => void;
   popupHeight: number;
+  /** Phones: plain 2D animation (no perspective tilt or flip), centred. */
+  flat?: boolean;
 }
 
-export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: ModuleExpansionProps) {
+export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight, flat = false }: ModuleExpansionProps) {
+  // Phones: drop the 3D part of every transform (perspective, Y-turn, depth) so the
+  // animation stays flat; the 2D grow/spin/fade is kept.
+  const T = (v: string) => (flat ? v.replace(/perspective\(1000px\) rotateY\(\d+deg\) translateZ\(-?\d+px\) ?/, "") : v);
   const audioPlayed = React.useRef(false);
   const flipStarted = React.useRef(false);
   const closedCalled = React.useRef(false);
@@ -76,15 +81,15 @@ export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: M
         <motion.div
           initial={{
             opacity: 0,
-            transform: "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.8) rotate(0deg)"
+            transform: T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.8) rotate(0deg)")
           }}
           animate={{
             opacity: [0, 1, 1, 0],
             transform: [
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.8) rotate(0deg)",
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(15px) scale(1.5) rotate(0deg)",
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(15px) scale(1.5) rotate(0deg)",
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(25px) scale(1.5) rotate(45deg)"
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.8) rotate(0deg)"),
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(15px) scale(1.5) rotate(0deg)"),
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(15px) scale(1.5) rotate(0deg)"),
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(25px) scale(1.5) rotate(45deg)")
             ]
           }}
           transition={{
@@ -95,7 +100,7 @@ export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: M
           }}
           style={{
             position: "absolute",
-            left: "32%",
+            left: flat ? "50%" : "32%",
             top: "50%",
             width: `${HALO_SIZE}px`,
             height: `${HALO_SIZE}px`,
@@ -112,15 +117,15 @@ export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: M
         <motion.div
           initial={{
             opacity: 0,
-            transform: "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.5)"
+            transform: T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.5)")
           }}
           animate={{
             opacity: [0, 1, 1, 0], // FADE STARTS AT 2.6s (86%), ENDS AT 3.0s (100%)
             transform: [
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.5)",
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(20px) scale(1.0)",
-              "translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(20px) scale(1.0)", // 2.6s MARK (0.86)
-              "translate(-50%, -50%) perspective(1000px) rotateY(205deg) translateZ(-50px) scale(0.4)"
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(0px) scale(0.5)"),
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(20px) scale(1.0)"),
+              T("translate(-50%, -50%) perspective(1000px) rotateY(25deg) translateZ(20px) scale(1.0)"), // 2.6s MARK (0.86)
+              T("translate(-50%, -50%) perspective(1000px) rotateY(205deg) translateZ(-50px) scale(0.4)")
             ],
             backdropFilter: [
               "blur(40px)",
@@ -148,7 +153,7 @@ export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: M
           }}
           style={{
             position: "absolute",
-            left: "32%",
+            left: flat ? "50%" : "32%",
             top: "50%",
             width: `${FINAL_SIZE}px`,
             height: `${FINAL_SIZE}px`,
@@ -160,7 +165,7 @@ export function ModuleExpansion({ button, onClose, onFlipStart, popupHeight }: M
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            transformStyle: "preserve-3d",
+            transformStyle: flat ? "flat" : "preserve-3d",
             textAlign: "center",
             zIndex: 3,
             overflow: "hidden"

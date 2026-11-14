@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { CoinSliceData } from "../three/types";
 import { FLOOR_TEXTURE } from "../three/sceneAssets";
 
@@ -64,6 +64,38 @@ export function Pie2D({
   onReady: () => void;
 }) {
   const [shown, setShown] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  // The hero text is overlaid on the hub (top of the screen when upright, left half when
+  // sideways); the pie takes the space that is left, as large as it fits.
+  const [box, setBox] = useState<{ left: number; top: number; size: number } | null>(null);
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const hero = document.querySelector(".hero-content");
+    const measure = () => {
+      const r = root.getBoundingClientRect();
+      const W = r.width, H = r.height;
+      const header = document.querySelector("header")?.getBoundingClientRect().bottom ?? 64;
+      const h = hero?.getBoundingClientRect();
+      const hint = H > 520 ? 44 : 10;
+      if (W > H) {
+        const left = h ? Math.min(h.right - r.left + 8, W * 0.5) : W * 0.45;
+        const top = header - r.top + 6;
+        const size = Math.max(160, Math.min(W - left - 12, H - top - hint, 560));
+        setBox({ left: left + (W - left - size) / 2, top: top + (H - top - hint - size) / 2, size });
+      } else {
+        const top = (h ? h.bottom - r.top : header - r.top) + 10;
+        const size = Math.max(180, Math.min(W * 0.94, H - top - hint, 560));
+        setBox({ left: (W - size) / 2, top: top + Math.max(0, (H - top - hint - size) / 2), size });
+      }
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(root);
+    if (hero) ro.observe(hero);
+    window.addEventListener("resize", measure);
+    return () => { ro.disconnect(); window.removeEventListener("resize", measure); };
+  }, []);
   useEffect(() => {
     onReady();
     const t = requestAnimationFrame(() => setShown(true));
@@ -76,16 +108,16 @@ export function Pie2D({
   const ringMid = (R_OUT + R_RING_IN) / 2;
 
   return (
-    <div className={`pie2d${shown ? " is-in" : ""}${hidden ? " is-hidden" : ""}`}>
+    <div ref={rootRef} className={`pie2d${shown ? " is-in" : ""}${hidden ? " is-hidden" : ""}`}>
       <style>{`
         .pie2d { position: absolute; inset: 0; overflow: hidden; background: #050b16; }
         .pie2d-map { position: absolute; inset: 0; background: url(${FLOOR_TEXTURE}) center 40% / cover no-repeat; opacity: .55; filter: saturate(1.1); }
         .pie2d-shade { position: absolute; inset: 0; background: radial-gradient(ellipse 90% 60% at 50% 45%, rgba(5,11,22,0) 0%, rgba(5,11,22,.55) 70%, rgba(5,11,22,.9) 100%); }
-        .pie2d-stage { position: absolute; inset: 0; padding-top: var(--site-header-height, 64px); display: flex; align-items: center; justify-content: center; }
-        .pie2d svg { width: min(94vw, calc(100svh - var(--site-header-height, 64px) - 70px)); height: auto; max-width: 560px; overflow: visible;
+        .pie2d-stage { position: absolute; }
+        .pie2d-stage > svg { width: 100%; height: 100%; overflow: visible;
           opacity: 0; transform: scale(.92) rotate(-8deg); transition: opacity .7s ease, transform .9s cubic-bezier(.16,1,.3,1); }
-        .pie2d.is-in svg { opacity: 1; transform: none; }
-        .pie2d.is-hidden svg { opacity: 0; transform: scale(.85); pointer-events: none; transition-duration: .45s; }
+        .pie2d.is-in .pie2d-stage > svg { opacity: 1; transform: none; }
+        .pie2d.is-hidden .pie2d-stage > svg { opacity: 0; transform: scale(.85); pointer-events: none; transition-duration: .45s; }
         .pie2d.is-hidden .pie2d-hint { opacity: 0; }
         .pie2d-slice { cursor: pointer; -webkit-tap-highlight-color: transparent; outline: none; }
         .pie2d-slice .seg { transition: transform .18s ease, filter .18s ease; transform-origin: 0 0; }
@@ -105,7 +137,7 @@ export function Pie2D({
       `}</style>
       <div className="pie2d-map" />
       <div className="pie2d-shade" />
-      <div className="pie2d-stage">
+      <div className="pie2d-stage" style={box ? { left: box.left, top: box.top, width: box.size, height: box.size } : { visibility: "hidden" }}>
         <svg viewBox="-205 -205 410 410" role="group" aria-label="Explore ContexQ">
           <defs>
             <radialGradient id="pie2dHubFill" cx="50%" cy="45%" r="60%">
