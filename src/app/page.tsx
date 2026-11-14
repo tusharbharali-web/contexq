@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ExplorePlatformButton from "@/components/landing/ExplorePlatformButton";
 import ClientSceneWrapper from "@/components/three/ClientSceneWrapper";
 import PlatformSection from "@/components/ui/PlatformSection";
 import LandingSection from "@/components/landing/LandingSection";
@@ -103,7 +103,7 @@ export default function Home() {
           .hero-sub { font-size: 0.95rem !important; line-height: 1.5 !important; }
           .hero-desc { display: none !important; }
           .hero-cta { padding-top: 4px !important; }
-          .hero-cta a { padding: 12px 24px !important; }
+          .hero-cta .cq-cta { padding: 12px 24px !important; }
         }
 
         /* Phones held sideways: very little height, so a compact text block on the left
@@ -116,7 +116,7 @@ export default function Home() {
           .hero-sub { font-size: 0.8rem !important; line-height: 1.45 !important; }
           .hero-desc, .pie-hint, .scroll-hint { display: none !important; }
           .hero-cta { padding-top: 0 !important; }
-          .hero-cta a { padding: 0 20px !important; height: 40px !important; min-height: 0 !important; line-height: 40px !important; font-size: 0.85rem !important; }
+          .hero-cta .cq-cta { padding: 0 20px !important; height: 40px !important; min-height: 0 !important; line-height: 40px !important; font-size: 0.85rem !important; }
         }
 
         /* Phones (upright or sideways): flat 2D hub (ui/Pie2D, no 3D scene) fills the first
@@ -142,7 +142,7 @@ export default function Home() {
           .hero-content h1 br { display: none; }
           .hero-sub { font-size: .9rem !important; line-height: 1.5 !important; text-shadow: 0 1px 10px rgba(2,6,15,.9); }
           .hero-cta { padding-top: 0 !important; }
-          .hero-cta a.cq-cta { padding: 0 22px !important; height: 42px !important; min-height: 0 !important; line-height: 42px !important; font-size: .9rem !important; }
+          .hero-cta .cq-cta { padding: 0 22px !important; height: 42px !important; min-height: 0 !important; line-height: 42px !important; font-size: .9rem !important; }
         }
         /* Shortest upright phones: drop the sub-paragraph so the pie keeps a usable size
            (the tagline pill always shows). */
@@ -155,7 +155,7 @@ export default function Home() {
           .hero-content { width: min(46vw, 400px) !important; padding: 0 0 0 24px !important; }
           .hero-content h1 { font-size: 1.15rem !important; }
           .hero-sub { font-size: .8rem !important; }
-          .hero-cta a { height: 38px !important; line-height: 38px !important; }
+          .hero-cta .cq-cta { height: 38px !important; line-height: 38px !important; }
         }
       `}</style>
       <main className="hero-main relative w-full h-screen flex items-center overflow-hidden pt-20">
@@ -209,9 +209,7 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="hero-cta pt-4">
-              <Link href="#solutions" scroll={true} className="inline-block px-8 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-semibold hover:shadow-lg hover:shadow-[#2F86FF]/40 transition-all duration-300 cq-cta">
-                Explore Platform
-              </Link>
+              <ExplorePlatformButton className="inline-block px-8 py-3 rounded-lg bg-[#2F86FF] hover:bg-[#5BA0FF] active:bg-[#1F6FEB] text-white font-semibold hover:shadow-lg hover:shadow-[#2F86FF]/40 transition-all duration-300 cq-cta cursor-pointer" />
             </div>
 
             {/* Pie hint - subtle arrow pointing to the pie */}

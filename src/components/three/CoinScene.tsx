@@ -188,6 +188,8 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       }
     }
   }, [clickSound, flat, router]);
+  const handleWedgeClickRef = useRef(handleWedgeClick);
+  useEffect(() => { handleWedgeClickRef.current = handleWedgeClick; }, [handleWedgeClick]);
 
   // The Team cards appear after the ~4s Team animation: fetch their font + photos as
   // soon as the Team popup opens (click, hash link or Back/Forward).
@@ -303,9 +305,23 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
         setActivePopup(match.title);
       }
     };
-    restoreFromHash();
+    // A fresh load / refresh always starts on the pie: a leftover "#solutions" etc. in
+    // the address is cleared instead of opening that view. Back/Forward (popstate)
+    // still step through the views.
+    if (window.location.hash) {
+      window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+    }
     window.addEventListener('popstate', restoreFromHash);
-    return () => window.removeEventListener('popstate', restoreFromHash);
+    // "Explore Platform" (and any other in-page opener) asks for a view by name.
+    const onOpen = (e: Event) => {
+      const title = (e as CustomEvent<string>).detail;
+      if (popupSlices.some((s) => s.title === title)) handleWedgeClickRef.current(title);
+    };
+    window.addEventListener('open-pie-view', onOpen);
+    return () => {
+      window.removeEventListener('popstate', restoreFromHash);
+      window.removeEventListener('open-pie-view', onOpen);
+    };
   }, [popupSlices, flat, router]);
 
   useEffect(() => {

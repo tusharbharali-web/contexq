@@ -20,9 +20,9 @@ const nextConfig: NextConfig = {
       { source: "/Platform/network", destination: "/Platform/knowledge-graph", permanent: true },
       // The separate phone homepage is gone: the main homepage is responsive now.
       { source: "/mobile-home.html", destination: "/", permanent: false },
-      // Placeholder index pages ("This is the Solutions page.") - send to the homepage views.
-      { source: "/solutions", destination: "/#solutions", permanent: false },
-      { source: "/Industries", destination: "/#industries", permanent: false },
+      // Placeholder index pages ("This is the Solutions page.") - send to the homepage.
+      { source: "/solutions", destination: "/", permanent: false },
+      { source: "/Industries", destination: "/", permanent: false },
       { source: "/mobile-content.html", destination: "/", permanent: false },
     ];
   },

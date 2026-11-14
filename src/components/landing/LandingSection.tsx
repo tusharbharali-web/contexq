@@ -345,7 +345,7 @@ export default function LandingSection() {
         </div>
       </section>
       {/* 5. SECTION 4: WHAT CONTEXQ DOES (Pure White Background) */}
-      <section className="bg-surface-white text-text-on-light py-16 md:py-24 border-b border-border-light-subtle" id="solutions">
+      <section className="bg-surface-white text-text-on-light py-16 md:py-24 border-b border-border-light-subtle" id="solutions-section">
         <div className="w-full px-margin-mobile md:px-margin-tablet lg:px-margin max-w-[1240px] mx-auto">
           <div className="max-w-2xl mb-10 md:mb-16">
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-on-light font-semibold tracking-tight mb-3">Solutions built on one connected foundation.</h2>
