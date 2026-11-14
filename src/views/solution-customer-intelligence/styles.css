@@ -1847,7 +1847,7 @@ h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence
 }
 
 /* Phones: the scoring section is a 2-column card grid (the hub diagram is desktop-only).
-   Each card glows in its domain colour by default - the desktop hover look. */
+   Each card keeps its domain colour (tinted fill, border, icon) by default - no glow/shadow or blur. */
 .v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(1) { --spoke: var(--hub-blue); }
 .v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(2) { --spoke: var(--hub-cyan); }
 .v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(3) { --spoke: var(--hub-violet); }
@@ -1857,7 +1857,9 @@ h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence
 .v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card {
   border-color: var(--spoke, var(--hub-blue)) !important;
   background: linear-gradient(145deg, color-mix(in srgb, var(--spoke, var(--hub-blue)) 20%, var(--navy-850)), var(--navy-900)) !important;
-  box-shadow: 0 0 24px color-mix(in srgb, var(--spoke, var(--hub-blue)) 30%, transparent);
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 .v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card > div:first-child {
   color: var(--spoke, var(--hub-blue)) !important;

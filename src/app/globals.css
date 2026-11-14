@@ -339,3 +339,48 @@ a.cq-cta::before, a.cq-cta::after { content: none !important; display: none !imp
   /* text links only: mailto buttons (.btn, .cq-cta, padded pills) are already big enough */
   a[href^="mailto:"]:not(.btn):not(.cq-cta):not(.rounded-lg) { display: inline-block; padding-block: 13px; margin-block: -13px; }
 }
+
+/* ------------------------------------------------------------------
+   Phones: the closing call to action on every page ("Talk to the team" /
+   Careers "Submit" + "or mail us at ...") - button full width, everything
+   centred. Matched by structure (a wrapper holding the button and a mailto
+   line) so it covers every page's own markup without per-page rules.
+   ------------------------------------------------------------------ */
+@media (max-width: 640px) {
+  :is(div, form):has(> a:is(.cq-cta, .btn-p)):has(> :is(p, small, div, span) a[href^="mailto:"]),
+  div:has(> a.cq-cta):has(+ :is(p, small) a[href^="mailto:"]) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    text-align: center !important;
+  }
+  :is(div, form):has(> a:is(.cq-cta, .btn-p)):has(> :is(p, small, div, span) a[href^="mailto:"]) > a:is(.cq-cta, .btn-p),
+  div:has(> a.cq-cta):has(+ :is(p, small) a[href^="mailto:"]) > a.cq-cta {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: none !important;
+    align-self: stretch !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  :is(div, form):has(> a:is(.cq-cta, .btn-p)) > :is(p, small, div, span):has(a[href^="mailto:"]),
+  div:has(> a.cq-cta) + :is(p, small):has(a[href^="mailto:"]) {
+    display: block !important;
+    width: 100% !important;
+    align-self: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
