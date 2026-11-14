@@ -31,3 +31,9 @@
 @media(prefers-reduced-motion:reduce){.v-contact *,.v-contact *:before,.v-contact *:after, .v-contact, .v-contact:before, .v-contact:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 
+
+/* Clear the fixed site navbar at every size (the phone/tablet rules used 46-58px, less
+   than the 76px bar, so the heading sat under it). */
+.v-contact .hero-in{padding-top:calc(var(--site-header-height,76px) + 44px)}
+@media(max-width:900px){.v-contact .hero-in{padding-top:calc(var(--site-header-height,76px) + 36px)}}
+@media(max-width:620px){.v-contact .hero-in{padding-top:calc(var(--site-header-height,76px) + 28px)}}
