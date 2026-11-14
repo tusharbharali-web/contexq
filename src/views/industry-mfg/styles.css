@@ -1876,3 +1876,23 @@ video {
   .v-industry-mfg .cq-body h2.font-headline-xl { font-size: 32px; line-height: 40px; letter-spacing: -.015em; }
   .v-industry-mfg .cq-body h3.font-headline-lg { font-size: 24px; line-height: 32px; }
 }
+
+/* phones: the three journey stops sit in one compact row so the selected stage's
+   panel is visible right below them, not after three tall stacked stops */
+@media (max-width:767px){
+  .v-industry-mfg [role="tablist"][aria-label="Journey Phases"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+  .v-industry-mfg [aria-label="Journey navigation track"]{margin-bottom:20px!important}
+  .v-industry-mfg .journey-tab-btn{padding:4px 2px!important;min-width:0}
+  .v-industry-mfg .journey-tab-btn .stop-icon-circle{width:44px!important;height:44px!important}
+  .v-industry-mfg .journey-tab-btn .stop-icon-circle .material-symbols-outlined{font-size:22px!important}
+  .v-industry-mfg .journey-tab-btn .stop-title{margin-top:8px!important;font-size:13px!important;line-height:17px!important}
+  .v-industry-mfg .journey-tab-btn .stop-outcome{display:none!important}
+}
+
+/* phones: chain labels break between words only, never mid-word ("Produc tion") */
+@media (max-width: 640px) {
+  .v-industry-mfg .product-chain { padding-left: 0 !important; padding-right: 0 !important; }
+  .v-industry-mfg .product-chain > div { min-width: 0; }
+  .v-industry-mfg .product-chain > div > span:last-child { font-size: 10px !important; line-height: 13px !important; hyphens: manual; word-break: normal; overflow-wrap: normal; }
+  .v-industry-mfg .product-chain > span.material-symbols-outlined { font-size: 10px !important; flex: none; }
+}
