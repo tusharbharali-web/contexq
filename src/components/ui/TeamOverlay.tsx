@@ -5,6 +5,7 @@
 // (everything scoped under .cq-team / .cq-team-dialog).
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { createPortal } from "react-dom";
 import { TEAM, COMPANY_LOGOS, type TeamMember } from "@/data/team";
 import "./team-overlay.css";
@@ -190,6 +191,15 @@ export function TeamOverlay({ onClose, asPage = false }: { onClose?: () => void;
 
   const view = (
     <div className={asPage ? "cq-team cq-team--page" : "cq-team"} role="region" aria-label="Team">
+      {asPage && (
+        // Same pill as the homepage's "Back to pie": returns to the hub.
+        <Link href="/" className="cq-team-back" aria-label="Back to pie">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a1222" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          Back to pie
+        </Link>
+      )}
       <div className="container">
         <div className="page-title">
           <h1>Team</h1>

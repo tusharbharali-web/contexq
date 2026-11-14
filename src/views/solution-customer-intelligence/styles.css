@@ -1835,3 +1835,31 @@ h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence
     --tw-scale-y: 0.98;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
+
+/* Phones / touch screens (no hover): every scoring domain shows its glow by default,
+   the same look desktop gives on hover. Tooltips still open on tap. */
+@media (max-width: 760px), (hover: none) {
+  .v-solution-customer-intelligence .hub-spoke {
+    border-color: var(--spoke);
+    background: linear-gradient(145deg, color-mix(in srgb, var(--spoke) 20%, var(--navy-850)), var(--navy-900));
+    box-shadow: 0 0 30px color-mix(in srgb, var(--spoke) 28%, transparent);
+  }
+}
+
+/* Phones: the scoring section is a 2-column card grid (the hub diagram is desktop-only).
+   Each card glows in its domain colour by default - the desktop hover look. */
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(1) { --spoke: var(--hub-blue); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(2) { --spoke: var(--hub-cyan); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(3) { --spoke: var(--hub-violet); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(4) { --spoke: var(--hub-amber); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(5) { --spoke: var(--hub-green); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card:nth-child(6) { --spoke: var(--hub-pink); }
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card {
+  border-color: var(--spoke, var(--hub-blue)) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--spoke, var(--hub-blue)) 20%, var(--navy-850)), var(--navy-900)) !important;
+  box-shadow: 0 0 24px color-mix(in srgb, var(--spoke, var(--hub-blue)) 30%, transparent);
+}
+.v-solution-customer-intelligence #six-domain-scoring .mob-only .grid.grid-cols-2 > .bg-dark-card > div:first-child {
+  color: var(--spoke, var(--hub-blue)) !important;
+  background: color-mix(in srgb, var(--spoke, var(--hub-blue)) 16%, transparent) !important;
+}
