@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { useEffect, useRef, useMemo, useCallback, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { BASE_PLATE_TEXTURE, GLOBE_MODEL } from "./sceneAssets";
+import { BASE_PLATE_TEXTURE, GLOBE_MODEL, isFlatViewport } from "./sceneAssets";
 
 interface GlobeModelProps {
   groupRef: React.RefObject<THREE.Group | null>;
@@ -217,4 +217,5 @@ function BasePlate({ baseRef, load }: { baseRef: React.RefObject<THREE.Mesh | nu
 const GLOBE_URL = GLOBE_MODEL;
 
 // Preload the GLTF file to avoid rendering hitches
-useGLTF.preload(GLOBE_URL);
+// Phones show the flat hub, which has no globe: don't download it there.
+if (typeof window !== "undefined" && !isFlatViewport()) useGLTF.preload(GLOBE_URL);

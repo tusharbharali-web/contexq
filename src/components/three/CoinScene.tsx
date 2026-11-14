@@ -23,7 +23,8 @@ import { CustomLoader } from "../ui/CustomLoader";
 
 // Types
 import { CoinSliceData } from "./types";
-import { ENVIRONMENT_HDR, IMAGE_ASSETS, SLICE_TEXTURES } from "./sceneAssets";
+import { ENVIRONMENT_HDR, IMAGE_ASSETS, SLICE_TEXTURES, FLAT_MEDIA, isFlatViewport } from "./sceneAssets";
+import { Pie2D } from "../ui/Pie2D";
 import { AwaitTextures, useBitmapTexture } from "./useBitmapTexture";
 
 // Start every texture/HDR load as soon as this module is evaluated, all in parallel.
@@ -31,8 +32,10 @@ import { AwaitTextures, useBitmapTexture } from "./useBitmapTexture";
 // resolved, so the scene's assets arrived one after another.)
 // (drei can only preload .hdr/.exr here; a gain-map .jpg is still fetched early by the
 // <link rel="preload"> emitted in app/page.tsx.)
-if (/\.(hdr|exr)$/i.test(ENVIRONMENT_HDR)) useEnvironment.preload({ files: ENVIRONMENT_HDR });
-for (const url of IMAGE_ASSETS) useBitmapTexture.preload(url);
+if (typeof window !== "undefined" && !isFlatViewport()) {
+  if (/\.(hdr|exr)$/i.test(ENVIRONMENT_HDR)) useEnvironment.preload({ files: ENVIRONMENT_HDR });
+  for (const url of IMAGE_ASSETS) useBitmapTexture.preload(url);
+}
 
 /**
  * Once everything is loaded, compiles all shaders in parallel (KHR_parallel_shader_compile)
@@ -113,6 +116,16 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
     w: typeof window !== 'undefined' ? window.innerWidth : 1440,
     h: typeof window !== 'undefined' ? window.innerHeight : 900 
   });
+
+  // Phones: flat 2D hub instead of the 3D scene (no WebGL, no globe).
+  const [flat, setFlat] = useState(() => isFlatViewport());
+  useEffect(() => {
+    const mq = window.matchMedia(FLAT_MEDIA);
+    const on = () => setFlat(mq.matches);
+    on();
+    mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
 
   useEffect(() => {
     const res = () => setVp({ w: window.innerWidth, h: window.innerHeight });
@@ -312,6 +325,9 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
   useEffect(() => {
     if (!pieOpen) return;
     const root = document.documentElement;
+    // Phones: the hero text sits below the hub, so a view opened from there (e.g. the
+    // "Explore Platform" link) must bring the hub area back into view first.
+    if (flat && window.scrollY > 0) window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     const prev = { overflow: root.style.overflow, overscroll: root.style.overscrollBehavior };
     root.style.overflow = 'hidden';
     root.style.overscrollBehavior = 'none';
@@ -319,7 +335,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       root.style.overflow = prev.overflow;
       root.style.overscrollBehavior = prev.overscroll;
     };
-  }, [pieOpen]);
+  }, [pieOpen, flat]);
 
   return (
      <div
@@ -383,6 +399,15 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
         />
       )}
 
+      {flat ? (
+        <Pie2D
+          slices={safeSlices}
+          centerTitle={centerButton?.title}
+          hidden={pieOpen}
+          onSelect={handleWedgeClick}
+          onReady={reveal}
+        />
+      ) : (
       <Canvas
         shadows
         camera={{ position: [0.02, 3.5, 1.45], fov: 40 }}
@@ -495,6 +520,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
           </group>
         </MouseParallax>
       </Canvas>
+      )}
 
       {/* Same loader as the initial code-loading screen; fades out once the scene is ready. */}
       <CustomLoader done={revealed} />

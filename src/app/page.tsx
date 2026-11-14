@@ -6,12 +6,13 @@ import Footer from "@/components/ui/Footer";
 import BackToPieButton from "@/components/ui/BackToPieButton";
 import coinData from "@/data/coin-slices.json";
 import { preload } from "react-dom";
-import { FETCH_ASSETS } from "@/components/three/sceneAssets";
+import { FETCH_ASSETS, SCENE_3D_MEDIA } from "@/components/three/sceneAssets";
 
 // Start downloading every 3D asset with the HTML (as <link rel="preload"> in <head>),
 // in parallel with the JavaScript, instead of one after another once the scene mounts.
 function preloadSceneAssets() {
-  for (const href of FETCH_ASSETS) preload(href, { as: "fetch", crossOrigin: "anonymous" });
+  // Phones show the flat 2D hub instead, so they skip these (media-gated preload).
+  for (const href of FETCH_ASSETS) preload(href, { as: "fetch", crossOrigin: "anonymous", media: SCENE_3D_MEDIA } as any);
 }
 
 export default function Home() {
@@ -105,9 +106,26 @@ export default function Home() {
           .hero-cta a { padding: 0 20px !important; height: 40px !important; min-height: 0 !important; line-height: 40px !important; font-size: 0.85rem !important; }
           .hero-content > .space-y-6 > :first-child { display: none !important; }
         }
+
+        /* Phones (upright or sideways): flat 2D hub fills the first screen (ui/Pie2D, no 3D
+           scene), the hero text follows below it. Keep in sync with FLAT_MEDIA. */
+        @media (max-width: 767px), (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
+          .hero-main { display: block !important; height: auto !important; min-height: 0 !important; padding-top: 0 !important; overflow: visible !important; }
+          .hero-scene { position: relative !important; inset: auto !important; height: 100svh; min-height: 300px; }
+          .hero-bg, .scroll-hint, .pie-hint { display: none !important; }
+          .hero-content { width: 100% !important; max-width: 640px !important; margin: 0 auto; transform: none !important;
+            padding: 44px 20px 56px !important; }
+          .hero-content > .space-y-6 > :first-child { display: flex !important; }
+          .hero-content > .space-y-6 > * + * { margin-top: 18px !important; }
+          .hero-content h1 { font-size: clamp(1.6rem, 7vw, 2rem) !important; line-height: 1.2 !important; margin-bottom: 0 !important; }
+          .hero-sub { font-size: 1rem !important; line-height: 1.55 !important; }
+          .hero-desc { display: block !important; font-size: .9rem !important; }
+          .hero-cta { padding-top: 6px !important; }
+          .hero-cta a { padding: 0 28px !important; height: 48px !important; line-height: 48px !important; font-size: .95rem !important; }
+        }
       `}</style>
       <main className="hero-main relative w-full h-screen flex items-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
+        <div className="hero-scene absolute inset-0">
           <ClientSceneWrapper slices={coinData.slices as any[]} />
         </div>
 

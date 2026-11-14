@@ -22,3 +22,12 @@ export const SLICE_TEXTURES: string[] = coinData.slices
 export const IMAGE_ASSETS = [...SLICE_TEXTURES, FLOOR_TEXTURE];
 /** Everything is fetched with fetch() (GLTFLoader, gain-map loader, ImageBitmapLoader). */
 export const FETCH_ASSETS = [GLOBE_MODEL, ENVIRONMENT_HDR, ...IMAGE_ASSETS];
+
+/**
+ * Phones get the flat 2D hub (ui/Pie2D) instead of the 3D scene: upright phones, and
+ * phones held sideways. Keep in sync with the phone CSS in app/page.tsx.
+ */
+export const FLAT_MEDIA = "(max-width: 767px), (orientation: landscape) and (max-height: 520px) and (max-width: 1023px)";
+/** Complement of FLAT_MEDIA, for the 3D asset preloads in the page head. */
+export const SCENE_3D_MEDIA = "(min-width: 768px) and (min-height: 521px), (min-width: 1024px), (min-width: 768px) and (orientation: portrait)";
+export const isFlatViewport = () => typeof window !== "undefined" && window.matchMedia(FLAT_MEDIA).matches;
