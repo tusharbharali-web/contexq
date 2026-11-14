@@ -66,6 +66,9 @@ function ReadySignal({ onReady }: { onReady: () => void }) {
   return null;
 }
 
+/** Set once the homepage scene has mounted in this tab; a later mount is a return visit. */
+let homeMountedBefore = false;
+
 export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
   const safeSlices = slices?.length ? slices : [{ title: "Slice" }];
   // The centre button's "Customers" tab opens a popup like the slices do, but has no wedge.
@@ -287,9 +290,13 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       }
       // Branch or module hashes - can't rebuild the data, so step back to bare pie
       if (hash.startsWith('branch-') || hash.startsWith('module-')) {
-        setActivePopup(null);
+        const slug = hash.replace(/^(branch|module)-/, '');
+        const norm = (v?: string) => (v || '').toLowerCase().replace(/\s+/g, '-');
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const parent = popupSlices.find((s) => ((s as any).buttons || []).some((b: any) => norm(b.slug) === slug || norm(b.label) === slug));
         setBranchingData(null);
         setExpandingModule(null);
+        setActivePopup(parent && !(flat && parent.title === "Team") ? parent.title : null);
         return;
       }
       const match = popupSlices.find(
@@ -306,10 +313,15 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       }
     };
     // A fresh load / refresh always starts on the pie: a leftover "#solutions" etc. in
-    // the address is cleared instead of opening that view. Back/Forward (popstate)
-    // still step through the views.
+    // the address is cleared instead of opening that view. Coming Back to the homepage
+    // from a page opened in a view (e.g. /#ecosystem -> /Ecosystem/awards -> Back)
+    // reopens that view, as do Back/Forward between views (popstate).
+    const navType = (performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined)?.type;
+    const returning = homeMountedBefore || navType === 'back_forward';
+    homeMountedBefore = true;
     if (window.location.hash) {
-      window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+      if (returning) restoreFromHash();
+      else window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
     }
     window.addEventListener('popstate', restoreFromHash);
     // "Explore Platform" (and any other in-page opener) asks for a view by name.
