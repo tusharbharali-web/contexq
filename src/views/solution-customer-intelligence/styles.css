@@ -1866,3 +1866,17 @@ h1 em,.v-solution-customer-intelligence  h2 em,.v-solution-customer-intelligence
   color: var(--spoke, var(--hub-blue)) !important;
   background: color-mix(in srgb, var(--spoke, var(--hub-blue)) 16%, transparent) !important;
 }
+
+/* Phones: no glows, shadows or blur anywhere in the mobile-only blocks (problem diagram,
+   "how we help" stories, scoring cards, steps). Colours, borders and fills stay.
+   !important also overrides any glow animation. */
+.v-solution-customer-intelligence .mob-only,
+.v-solution-customer-intelligence .mob-only *,
+.v-solution-customer-intelligence .mob-only *::before,
+.v-solution-customer-intelligence .mob-only *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
