@@ -128,12 +128,12 @@ export function Pie2D({
         .pie2d-hub:active { filter: brightness(1.1); }
         @keyframes pie2dPulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.06); } }
         .pie2d-hint { position: absolute; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%);
-          display: flex; flex-direction: column; align-items: center; gap: 4px; color: #9fb3cf; font-size: 12px; letter-spacing: .18em;
+          display: flex; flex-direction: row; align-items: center; gap: 10px; white-space: nowrap; animation: pie2dHint 2.4s ease-in-out infinite; color: #9fb3cf; font-size: 12px; letter-spacing: .18em;
           text-transform: uppercase; opacity: .85; transition: opacity .3s; pointer-events: none; }
-        .pie2d-hint svg { width: 16px; animation: pie2dBob 1.6s ease-in-out infinite; opacity: 1 !important; transform: none; }
-        @keyframes pie2dBob { 0%,100% { translate: 0 0; } 50% { translate: 0 4px; } }
+        .pie2d-hint .star { color: #2ec4e6; }
+        @keyframes pie2dHint { 0%,100% { opacity: .85; } 50% { opacity: .5; } }
         @media (max-height: 520px) { .pie2d-hint { display: none; } }
-        @media (prefers-reduced-motion: reduce) { .pie2d svg, .pie2d-hub .glow, .pie2d-hint svg { animation: none !important; transition: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .pie2d svg, .pie2d-hub .glow, .pie2d-hint { animation: none !important; } }
       `}</style>
       <div className="pie2d-map" />
       <div className="pie2d-shade" />
@@ -151,7 +151,8 @@ export function Pie2D({
               const a0 = i * step + OFFSET - step / 2;
               return (
                 <clipPath id={`pie2dClip${i}`} key={s.title}>
-                  <path d={wedge(R_DISK, a0 + GAP_DEG, a0 + step - GAP_DEG)} />
+                  {/* artwork stays clear of the centre button: clipped to a band outside it */}
+                  <path d={annulus(R_HUB + 14, R_DISK - 2, a0 + GAP_DEG, a0 + step - GAP_DEG)} />
                 </clipPath>
               );
             })}
@@ -166,8 +167,8 @@ export function Pie2D({
             const a0 = mid - step / 2 + GAP_DEG, a1 = mid + step / 2 - GAP_DEG;
             const lower = mid > 90 && mid < 270;
             const textR = lower ? ringMid + LABEL_SIZE * 0.36 : ringMid - LABEL_SIZE * 0.36;
-            const [ix, iy] = pt(R_DISK * 0.55, mid);
-            const img = 122;
+            const [ix, iy] = pt(R_DISK * 0.63, mid);
+            const img = 108;
             return (
               <g
                 key={s.title}
@@ -223,7 +224,7 @@ export function Pie2D({
               }}
             >
               <circle className="glow" r={R_HUB + 6} fill="#22d3ee" filter="url(#pie2dGlow)" />
-              <circle r={R_HUB + 3} fill="#0a111d" />
+              <circle r={R_HUB + 12} fill="#0a111d" stroke="#3e5370" strokeWidth="1.5" />
               <circle r={R_HUB} fill="url(#pie2dHubFill)" stroke="#22d3ee" strokeWidth="3.5" />
               <circle r={R_HUB - 6} fill="none" stroke="#7be3f5" strokeWidth="1" opacity=".7" />
               <text y="4" textAnchor="middle" fontSize="11.5" fontWeight={700} letterSpacing=".6" fill="#0b1220" style={{ fontFamily: "inherit" }}>
@@ -234,8 +235,8 @@ export function Pie2D({
         </svg>
       </div>
       <div className="pie2d-hint" aria-hidden="true">
-        <span>Scroll down</span>
-        <svg viewBox="0 0 16 10" fill="none"><path d="M2 2l6 6 6-6" stroke="#9fb3cf" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        <span className="star">✦</span>
+        <span>Click a slice</span>
       </div>
     </div>
   );

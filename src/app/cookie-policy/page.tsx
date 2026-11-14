@@ -141,6 +141,21 @@ export default function CookiePolicyPage() {
               overflow: hidden;
             }
 
+            /* Phones: the 6-column table scrolls sideways inside its own box instead of
+               widening (and zooming out) the whole page. */
+            .cookie-content figure.wp-block-table {
+              margin: 2rem 0;
+              max-width: 100%;
+              overflow-x: auto;
+              -webkit-overflow-scrolling: touch;
+              overscroll-behavior-x: contain;
+            }
+            .cookie-content figure.wp-block-table table { margin: 0; }
+            @media (max-width: 760px) {
+              .cookie-content figure.wp-block-table table { width: 720px; table-layout: fixed; }
+              .cookie-content table td { font-size: 0.85rem; }
+            }
+
             .cookie-content table td {
               padding: 1rem;
               border-bottom: 1px solid rgba(6, 182, 212, 0.1);

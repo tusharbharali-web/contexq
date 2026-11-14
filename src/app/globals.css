@@ -328,3 +328,10 @@ a.cq-cta::before, a.cq-cta::after { content: none !important; display: none !imp
   padding: 0 calc(32px / var(--hero-scale)) !important; font-size: calc(14px / var(--hero-scale)) !important;
   line-height: calc(20px / var(--hero-scale)) !important; border-radius: calc(4px / var(--hero-scale)) !important;
 }
+
+/* Touch screens: email links are short inline text (~18px tall), too small to tap reliably.
+   Enlarge the tap area to ~44px without moving any text (padding offset by margin). */
+@media (pointer: coarse) {
+  /* text links only: mailto buttons (.btn, .cq-cta, padded pills) are already big enough */
+  a[href^="mailto:"]:not(.btn):not(.cq-cta):not(.rounded-lg) { display: inline-block; padding-block: 13px; margin-block: -13px; }
+}
