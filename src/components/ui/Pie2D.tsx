@@ -77,15 +77,15 @@ export function Pie2D({
       const W = r.width, H = r.height;
       const header = document.querySelector("header")?.getBoundingClientRect().bottom ?? 64;
       const h = hero?.getBoundingClientRect();
-      const hint = H > 520 ? 44 : 10;
+      const hint = H > 520 ? 34 : 8;
       if (W > H) {
         const left = h ? Math.min(h.right - r.left + 8, W * 0.5) : W * 0.45;
         const top = header - r.top + 6;
         const size = Math.max(160, Math.min(W - left - 12, H - top - hint, 560));
         setBox({ left: left + (W - left - size) / 2, top: top + (H - top - hint - size) / 2, size });
       } else {
-        const top = (h ? h.bottom - r.top : header - r.top) + 10;
-        const room = Math.min(W * 0.94, H - top - hint, 560);
+        const top = (h ? h.bottom - r.top : header - r.top) + 8;
+        const room = Math.min(W * 0.97, H - top - hint, 600);
         const size = Math.max(180, room);
         // tight: the pie is held at its minimum size and would run into the hint line
         setBox({ left: (W - size) / 2, top: top + Math.max(0, (H - top - hint - size) / 2), size, tight: room < 180 });

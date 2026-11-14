@@ -125,18 +125,24 @@ export default function Home() {
            sync with FLAT_MEDIA. */
         @media (max-width: 767px), (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
           .hero-main { height: 100svh !important; min-height: 520px; align-items: flex-start !important;
-            padding-top: calc(var(--site-header-height, 64px) + 14px) !important; }
+            padding-top: calc(var(--site-header-height, 64px) + 12px) !important; }
           .hero-bg, .scroll-hint, .pie-hint, .hero-desc { display: none !important; }
           .hero-content { width: 100% !important; max-width: 640px !important; transform: none !important;
             padding: 0 20px !important; pointer-events: none; }
           .hero-content a, .hero-content button { pointer-events: auto; }
-          .hero-content > .space-y-6 > * + * { margin-top: 12px !important; }
-          .hero-content h1 { font-size: clamp(1.35rem, 6.2vw, 1.7rem) !important; line-height: 1.2 !important; margin-bottom: 0 !important;
+          /* tight, even rhythm: tagline -10- heading -10- sentence -14- button (the list's own
+             24px bottom spacing is cleared, it used to stack on top of these) */
+          .hero-content > .space-y-6 > * { margin-top: 0 !important; margin-bottom: 0 !important; margin-block: 0 !important; }
+          .hero-content > .space-y-6 > * + * { margin-top: 10px !important; }
+          .hero-content > .space-y-6 > .hero-cta { margin-top: 14px !important; }
+          .hero-content > .space-y-6 > * > div:has(> .hero-sub) { gap: 12px !important; }
+          .hero-content > .space-y-6 > * > div:has(> .hero-sub) > div:first-child { height: auto !important; align-self: stretch; margin-top: 2px; }
+          .hero-content h1 { font-size: clamp(1.35rem, 6.2vw, 1.7rem) !important; line-height: 1.2 !important; margin: 0 !important;
             text-shadow: 0 2px 14px rgba(2,6,15,.8); }
           .hero-content h1 br { display: none; }
           .hero-sub { font-size: .9rem !important; line-height: 1.5 !important; text-shadow: 0 1px 10px rgba(2,6,15,.9); }
-          .hero-cta { padding-top: 2px !important; }
-          .hero-cta a { padding: 0 22px !important; height: 42px !important; line-height: 42px !important; font-size: .9rem !important; }
+          .hero-cta { padding-top: 0 !important; }
+          .hero-cta a.cq-cta { padding: 0 22px !important; height: 42px !important; min-height: 0 !important; line-height: 42px !important; font-size: .9rem !important; }
         }
         /* Shortest upright phones: drop the sub-paragraph so the pie keeps a usable size
            (the tagline pill always shows). */
