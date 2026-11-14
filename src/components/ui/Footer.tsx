@@ -9,7 +9,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
   return (
     <Link
       href={href}
-      className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 relative group whitespace-nowrap"
+      className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 relative group lg:whitespace-nowrap"
     >
       {children}
       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300" />
@@ -41,9 +41,9 @@ export default function Footer() {
       <div className="relative">
         {/* Main footer content */}
         <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-16 mb-12 md:mb-16 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10 lg:gap-16 mb-10 md:mb-16 w-full">
             {/* Brand & Contact */}
-            <div className="flex flex-col">
+            <div className="flex flex-col col-span-2 md:col-span-4 lg:col-span-1">
               <Link href="/" className="group group" style={{marginBottom: '24px'}}>
                 <img
                   src="/assets/icons/logo_low.png"
@@ -71,11 +71,11 @@ export default function Footer() {
             </div>
 
             {/* Solutions */}
-            <div className="flex flex-col md:ml-20">
+            <div className="flex flex-col lg:ml-20">
               <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
                 Solutions
               </h4>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 text-sm md:text-base">
                 {solutionsButtons.map((button: any) => (
                   <li key={button.slug}>
                     <FooterLink href={`/solutions/${button.slug}`}>{button.label}</FooterLink>
@@ -85,11 +85,11 @@ export default function Footer() {
             </div>
 
             {/* Industries */}
-            <div className="flex flex-col md:ml-32">
+            <div className="flex flex-col lg:ml-32">
               <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
                 Industries
               </h4>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 text-sm md:text-base">
                 {industriesButtons.map((button: any) => (
                   <li key={button.slug}>
                     <FooterLink href={`/Industries/${button.slug}`}>{button.label}</FooterLink>
@@ -99,11 +99,11 @@ export default function Footer() {
             </div>
 
             {/* Explore */}
-            <div className="flex flex-col md:ml-20">
+            <div className="flex flex-col lg:ml-20">
               <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
                 Explore
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-3 text-sm md:text-base">
                 <li>
                   <FooterLink href="/careers">Careers</FooterLink>
                 </li>
@@ -118,7 +118,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
                 Follow Us
               </h4>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 text-sm md:text-base">
                 <a
                   href="https://wa.me/6593844958"
                   className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2"
@@ -147,13 +147,13 @@ export default function Footer() {
           <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
 
           {/* Bottom section */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-center md:text-left">
+            <p className="text-gray-400 text-xs sm:text-sm">
               © 2026 ContexQ Pte. Ltd. All rights reserved.
             </p>
 
             {/* Legal links */}
-            <div className="flex gap-6 text-sm">
+            <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs sm:text-sm">
               <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
               <FooterLink href="/terms-conditions">Terms and Conditions</FooterLink>
               <FooterLink href="/cookie-policy">Cookie Policy</FooterLink>
