@@ -1,4 +1,5 @@
 import ExplorePlatformButton from "@/components/landing/ExplorePlatformButton";
+import ReloadToTop from "@/components/landing/ReloadToTop";
 import ClientSceneWrapper from "@/components/three/ClientSceneWrapper";
 import PlatformSection from "@/components/ui/PlatformSection";
 import LandingSection from "@/components/landing/LandingSection";
@@ -19,6 +20,7 @@ export default function Home() {
   preloadSceneAssets();
   return (
     <div className="bg-[#0d1526]">
+      <ReloadToTop />
       <style>{`
         body.popup-active .hero-content {
           opacity: 0;
