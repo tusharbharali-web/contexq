@@ -43,6 +43,19 @@ export default function Home() {
           transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Tagline pill: compact, CTA blue, one line at every screen size (shrinks its text
+           on narrow phones instead of being hidden). */
+        .hero-tag {
+          display: inline-flex !important; align-items: center; gap: 6px;
+          width: fit-content; max-width: 100%;
+          padding: 4px 10px; border-radius: 999px;
+          border: 1px solid rgba(47, 134, 255, 0.45); background: rgba(47, 134, 255, 0.10);
+          color: #2F86FF;
+        }
+        .hero-tag p { margin: 0; font-size: 11px; line-height: 1.3; font-weight: 500; white-space: nowrap; letter-spacing: .01em; }
+        .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: #2F86FF; flex: none; box-shadow: 0 0 8px rgba(47,134,255,.8); }
+        @media (max-width: 360px) { .hero-tag p { font-size: 10px; } .hero-tag { padding: 3px 8px; gap: 5px; } }
+
         @media (max-width: 1024px) {
           .hero-content {
             width: clamp(280px, 35vw, 400px) !important;
@@ -104,7 +117,6 @@ export default function Home() {
           .hero-desc, .pie-hint, .scroll-hint { display: none !important; }
           .hero-cta { padding-top: 0 !important; }
           .hero-cta a { padding: 0 20px !important; height: 40px !important; min-height: 0 !important; line-height: 40px !important; font-size: 0.85rem !important; }
-          .hero-content > .space-y-6 > :first-child { display: none !important; }
         }
 
         /* Phones (upright or sideways): flat 2D hub (ui/Pie2D, no 3D scene) fills the first
@@ -126,11 +138,8 @@ export default function Home() {
           .hero-cta { padding-top: 2px !important; }
           .hero-cta a { padding: 0 22px !important; height: 42px !important; line-height: 42px !important; font-size: .9rem !important; }
         }
-        /* Short upright phones (e.g. 375x667): drop the tagline pill, and on the shortest the
-           sub-paragraph too, so the pie keeps a usable size. */
-        @media (max-width: 767px) and (orientation: portrait) and (max-height: 760px) {
-          .hero-content > .space-y-6 > :first-child { display: none !important; }
-        }
+        /* Shortest upright phones: drop the sub-paragraph so the pie keeps a usable size
+           (the tagline pill always shows). */
         @media (max-width: 767px) and (orientation: portrait) and (max-height: 700px) {
           .hero-sub { display: none !important; }
           .hero-sub, .hero-content > .space-y-6 > :nth-child(3) { display: none !important; }
@@ -138,7 +147,6 @@ export default function Home() {
         @media (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
           .hero-main { min-height: 0; padding-top: calc(var(--site-header-height, 56px) + 8px) !important; }
           .hero-content { width: min(46vw, 400px) !important; padding: 0 0 0 24px !important; }
-          .hero-content > .space-y-6 > :first-child { display: none !important; }
           .hero-content h1 { font-size: 1.15rem !important; }
           .hero-sub { font-size: .8rem !important; }
           .hero-cta a { height: 38px !important; line-height: 38px !important; }
@@ -160,9 +168,9 @@ export default function Home() {
         <div className="hero-content relative z-10 pl-20 origin-left" style={{ transform: "scale(0.90)" }}>
           <div className="space-y-6">
             {/* Tagline */}
-            <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 w-fit max-w-full">
-              <div className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0" />
-              <p className="text-xs leading-snug">Graph Intelligence Platform - SarasW by ContexQ</p>
+            <div className="hero-tag">
+              <span className="hero-tag-dot" aria-hidden="true" />
+              <p>Graph Intelligence Platform - SarasW by ContexQ</p>
             </div>
 
             {/* Main Heading */}

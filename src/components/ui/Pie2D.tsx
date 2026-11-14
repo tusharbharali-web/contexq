@@ -67,7 +67,7 @@ export function Pie2D({
   const rootRef = useRef<HTMLDivElement>(null);
   // The hero text is overlaid on the hub (top of the screen when upright, left half when
   // sideways); the pie takes the space that is left, as large as it fits.
-  const [box, setBox] = useState<{ left: number; top: number; size: number } | null>(null);
+  const [box, setBox] = useState<{ left: number; top: number; size: number; tight?: boolean } | null>(null);
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -85,8 +85,10 @@ export function Pie2D({
         setBox({ left: left + (W - left - size) / 2, top: top + (H - top - hint - size) / 2, size });
       } else {
         const top = (h ? h.bottom - r.top : header - r.top) + 10;
-        const size = Math.max(180, Math.min(W * 0.94, H - top - hint, 560));
-        setBox({ left: (W - size) / 2, top: top + Math.max(0, (H - top - hint - size) / 2), size });
+        const room = Math.min(W * 0.94, H - top - hint, 560);
+        const size = Math.max(180, room);
+        // tight: the pie is held at its minimum size and would run into the hint line
+        setBox({ left: (W - size) / 2, top: top + Math.max(0, (H - top - hint - size) / 2), size, tight: room < 180 });
       }
     };
     measure();
@@ -234,7 +236,7 @@ export function Pie2D({
           )}
         </svg>
       </div>
-      <div className="pie2d-hint" aria-hidden="true">
+      <div className="pie2d-hint" aria-hidden="true" style={box?.tight ? { display: "none" } : undefined}>
         <span className="star">✦</span>
         <span>Click a slice</span>
       </div>
