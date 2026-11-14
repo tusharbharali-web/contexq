@@ -1,10 +1,12 @@
 "use client";
 
 /**
- * Hero "Explore Platform": opens the Platform view of the pie (same as tapping the
- * Platform slice). It used to be a "#solutions" link, which scrolled the page down to
- * the Solutions section and left "#solutions" in the address, so a refresh then opened
- * the Solutions pie view on top of a scrolled page.
+ * Hero "Explore Platform": scrolls to the "Solutions built on one connected foundation"
+ * section further down the homepage (#solutions-section).
+ *
+ * It is a button, not a "#solutions" link: that hash is also the name of the Solutions
+ * pie view, so the old link left "#solutions" in the address and a refresh (or Back)
+ * opened the pie view. Scrolling in code keeps the address clean.
  */
 export default function ExplorePlatformButton({ className }: { className?: string }) {
   return (
@@ -12,8 +14,11 @@ export default function ExplorePlatformButton({ className }: { className?: strin
       type="button"
       className={className}
       onClick={() => {
-        window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
-        window.dispatchEvent(new CustomEvent("open-pie-view", { detail: "Platform" }));
+        const target = document.getElementById("solutions-section");
+        if (!target) return;
+        const header = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--site-header-height")) || 76;
+        const top = target.getBoundingClientRect().top + window.scrollY - header;
+        window.scrollTo({ top, behavior: "smooth" });
       }}
     >
       Explore Platform
