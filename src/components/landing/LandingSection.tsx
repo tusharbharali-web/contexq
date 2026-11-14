@@ -60,30 +60,30 @@ export default function LandingSection() {
           </div>
           {/* Before & After Static Topology Diagram */}
           <div className="w-full">
-            <div className="grid grid-cols-1 items-stretch bg-light-band p-6 md:p-10 rounded-2xl border border-border-light-subtle lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 items-stretch bg-light-band p-3 sm:p-6 md:p-10 rounded-2xl border border-border-light-subtle lg:grid-cols-2 gap-6 md:gap-8">
               <div className="flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <div className="flex items-center gap-2 min-w-0">
                     <span className="w-2 h-2 rounded-full bg-slate-400" />
                     <span className="font-label-caps text-label-caps text-text-muted-on-light uppercase tracking-wider font-semibold">Fragmented across systems</span>
                   </div>
-                  <span className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Unlinked</span>
+                  <span className="shrink-0 whitespace-nowrap px-2.5 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Unlinked</span>
                 </div>
-                <div className="flex-1 bg-surface-white/80 rounded-xl p-5 border border-border-light-subtle relative flex flex-col justify-between gap-3 overflow-hidden">
+                <div className="flex-1 bg-surface-white/80 rounded-xl p-3 sm:p-5 border border-border-light-subtle relative flex flex-col justify-between gap-3 overflow-hidden">
                   <div className="p-3 rounded-lg bg-light-band border border-border-light-subtle">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5">
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5 min-w-0">
                         <span className="cq-symbols text-[16px] text-text-muted-on-light">badge</span>
                         KYC system
                       </span>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Pending check</span>
+                      <span className="shrink-0 whitespace-nowrap text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Pending check</span>
                     </div>
-                    <div className="text-xs text-text-muted-on-light flex items-center justify-between">
+                    <div className="text-xs text-text-muted-on-light flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                       <span className="">
                         Name:{" "}
                         <strong className="text-text-on-light font-medium">J. Smith</strong>
                       </span>
-                      <span className="text-[11px] text-text-muted-on-light">Verification queue</span>
+                      <span className="text-[11px] text-text-muted-on-light sm:text-right">Verification queue</span>
                     </div>
                   </div>
                   <div className="flex justify-center items-center py-0.5 text-text-muted-on-light/60 gap-1.5">
@@ -92,19 +92,19 @@ export default function LandingSection() {
                     <span className="border-t border-dashed border-slate-300 w-12" />
                   </div>
                   <div className="p-3 rounded-lg bg-light-band border border-border-light-subtle">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5">
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5 min-w-0">
                         <span className="cq-symbols text-[16px] text-text-muted-on-light">description</span>
                         Documents
                       </span>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">On file</span>
+                      <span className="shrink-0 whitespace-nowrap text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">On file</span>
                     </div>
-                    <div className="text-xs text-text-muted-on-light flex items-center justify-between">
+                    <div className="text-xs text-text-muted-on-light flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                       <span className="">
                         Name:{" "}
                         <strong className="text-text-on-light font-medium">John Smith</strong>
                       </span>
-                      <span className="text-[11px] text-text-muted-on-light">Passport, proof of address</span>
+                      <span className="text-[11px] text-text-muted-on-light sm:text-right">Passport, proof of address</span>
                     </div>
                   </div>
                   <div className="flex justify-center items-center py-0.5 text-text-muted-on-light/60 gap-1.5">
@@ -113,19 +113,19 @@ export default function LandingSection() {
                     <span className="border-t border-dashed border-slate-300 w-12" />
                   </div>
                   <div className="p-3 rounded-lg bg-light-band border border-border-light-subtle">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5">
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5 min-w-0">
                         <span className="cq-symbols text-[16px] text-text-muted-on-light">account_balance</span>
                         Core banking
                       </span>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Active ledger</span>
+                      <span className="shrink-0 whitespace-nowrap text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Active ledger</span>
                     </div>
-                    <div className="text-xs text-text-muted-on-light flex items-center justify-between">
+                    <div className="text-xs text-text-muted-on-light flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                       <span className="">
                         Name:{" "}
                         <strong className="text-text-on-light font-medium">Smith, John A.</strong>
                       </span>
-                      <span className="text-[11px] text-text-muted-on-light">{"Account & counterparties"}</span>
+                      <span className="text-[11px] text-text-muted-on-light sm:text-right">{"Account & counterparties"}</span>
                     </div>
                   </div>
                   <div className="flex justify-center items-center py-0.5 text-text-muted-on-light/60 gap-1.5">
@@ -134,19 +134,19 @@ export default function LandingSection() {
                     <span className="border-t border-dashed border-slate-300 w-12" />
                   </div>
                   <div className="p-3 rounded-lg bg-light-band border border-border-light-subtle">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5">
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5 min-w-0">
                         <span className="cq-symbols text-[16px] text-text-muted-on-light">contacts</span>
                         CRM
                       </span>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Client profile</span>
+                      <span className="shrink-0 whitespace-nowrap text-[11px] px-2 py-0.5 rounded bg-slate-100 text-text-muted-on-light">Client profile</span>
                     </div>
-                    <div className="text-xs text-text-muted-on-light flex items-center justify-between">
+                    <div className="text-xs text-text-muted-on-light flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                       <span className="">
                         Name:{" "}
                         <strong className="text-text-on-light font-medium">John Smith</strong>
                       </span>
-                      <span className="text-[11px] text-text-muted-on-light">{"Contact & relationship notes"}</span>
+                      <span className="text-[11px] text-text-muted-on-light sm:text-right">{"Contact & relationship notes"}</span>
                     </div>
                   </div>
                   <div className="flex justify-center items-center py-0.5 text-text-muted-on-light/60 gap-1.5">
@@ -155,32 +155,32 @@ export default function LandingSection() {
                     <span className="border-t border-dashed border-slate-300 w-12" />
                   </div>
                   <div className="p-3 rounded-lg bg-light-band border border-border-light-subtle">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5">
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-label-md text-label-md font-semibold text-text-on-light flex items-center gap-1.5 min-w-0">
                         <span className="cq-symbols text-[16px] text-status-amber">flag</span>
                         Screening
                       </span>
-                      <span className="text-[11px] px-2 py-0.5 rounded bg-amber-50 text-status-amber border border-amber-200/60">Watchlist scan</span>
+                      <span className="shrink-0 whitespace-nowrap text-[11px] px-2 py-0.5 rounded bg-amber-50 text-status-amber border border-amber-200/60">Watchlist scan</span>
                     </div>
-                    <div className="text-xs text-text-muted-on-light flex items-center justify-between">
+                    <div className="text-xs text-text-muted-on-light flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                       <span className="">
                         Name:{" "}
                         <strong className="text-text-on-light font-medium">J. A. Smith</strong>
                       </span>
-                      <span className="text-[11px] text-text-muted-on-light">Flag review pending</span>
+                      <span className="text-[11px] text-text-muted-on-light sm:text-right">Flag review pending</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <div className="flex items-center gap-2 min-w-0">
                     <span className="w-2 h-2 rounded-full bg-status-blue animate-pulse" />
                     <span className="font-label-caps text-label-caps text-status-blue uppercase tracking-wider font-semibold">Connected into one resolved view</span>
                   </div>
-                  <span className="px-2.5 py-0.5 rounded text-[11px] font-semibold bg-blue-50 text-status-blue border border-status-blue/20">Single Picture</span>
+                  <span className="shrink-0 whitespace-nowrap px-2.5 py-0.5 rounded text-[11px] font-semibold bg-blue-50 text-status-blue border border-status-blue/20">Single Picture</span>
                 </div>
-                <div className="flex-1 bg-surface-white rounded-xl p-5 md:p-6 border border-status-blue/30 shadow-xs relative flex flex-col md:flex-row items-center gap-5 justify-between">
+                <div className="flex-1 bg-surface-white rounded-xl p-3 sm:p-5 md:p-6 border border-status-blue/30 shadow-xs relative flex flex-col md:flex-row items-center gap-5 justify-between">
                   <div className="flex flex-col items-center w-full py-2">
                     <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 w-full">
                       <div className="inline-flex items-center gap-2 whitespace-nowrap px-2.5 py-1.5 rounded-lg bg-blue-50/60 border border-status-blue/20 text-xs font-medium text-text-on-light">
@@ -229,7 +229,7 @@ export default function LandingSection() {
                       <div className="w-px h-5 border-l-2 border-dashed border-status-blue/40" />
                       <span className="cq-symbols text-[16px] text-status-blue -my-1">arrow_downward</span>
                     </div>
-                    <div className="w-full max-w-md bg-surface-white rounded-2xl p-5 border border-border-light-subtle shadow-xs flex flex-col">
+                    <div className="w-full max-w-md bg-surface-white rounded-2xl p-4 sm:p-5 border border-border-light-subtle shadow-xs flex flex-col">
                       <div className="flex items-center justify-between pb-3.5 border-b border-border-light-subtle">
                         <div className="flex items-center gap-3">
                           <div className="w-10 h-10 rounded-full bg-status-blue/10 border border-status-blue/30 flex items-center justify-center text-status-blue shrink-0">
@@ -251,55 +251,45 @@ export default function LandingSection() {
                         </div>
                       </div>
                       <div className="divide-y divide-border-light-subtle py-1">
-                        <div className="flex items-center justify-between py-2 text-xs">
-                          <div className="flex items-center gap-2.5">
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 py-2 text-xs">
+                          <div className="flex items-center gap-2 whitespace-nowrap">
                             <span className="cq-symbols text-[16px] text-text-muted-on-light">verified_user</span>
                             <span className="text-text-muted-on-light font-medium">Identity</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-text-on-light font-medium">Verified individual</span>
-                            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">KYC</span>
-                          </div>
+                          <span className="text-text-on-light font-medium text-right leading-snug">Verified individual</span>
+                            <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">KYC</span>
                         </div>
-                        <div className="flex items-center justify-between py-2 text-xs">
-                          <div className="flex items-center gap-2.5">
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 py-2 text-xs">
+                          <div className="flex items-center gap-2 whitespace-nowrap">
                             <span className="cq-symbols text-[16px] text-text-muted-on-light">assignment</span>
                             <span className="text-text-muted-on-light font-medium">Documents</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-text-on-light font-medium">Passport verified</span>
-                            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Docs</span>
-                          </div>
+                          <span className="text-text-on-light font-medium text-right leading-snug">Passport verified</span>
+                            <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Docs</span>
                         </div>
-                        <div className="flex items-center justify-between py-2 text-xs">
-                          <div className="flex items-center gap-2.5">
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 py-2 text-xs">
+                          <div className="flex items-center gap-2 whitespace-nowrap">
                             <span className="cq-symbols text-[16px] text-text-muted-on-light">account_tree</span>
                             <span className="text-text-muted-on-light font-medium">Accounts</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-text-on-light font-medium">{"Primary checking & linked"}</span>
-                            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Banking</span>
-                          </div>
+                          <span className="text-text-on-light font-medium text-right leading-snug">{"Primary checking & linked"}</span>
+                            <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">Banking</span>
                         </div>
-                        <div className="flex items-center justify-between py-2 text-xs">
-                          <div className="flex items-center gap-2.5">
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 py-2 text-xs">
+                          <div className="flex items-center gap-2 whitespace-nowrap">
                             <span className="cq-symbols text-[16px] text-text-muted-on-light">contacts</span>
                             <span className="text-text-muted-on-light font-medium">Contact</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-text-on-light font-medium">{"Unified phone & address"}</span>
-                            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">CRM</span>
-                          </div>
+                          <span className="text-text-on-light font-medium text-right leading-snug">{"Unified phone & address"}</span>
+                            <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-text-muted-on-light border border-border-light-subtle">CRM</span>
                         </div>
-                        <div className="flex items-center justify-between py-2 text-xs">
-                          <div className="flex items-center gap-2.5">
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 py-2 text-xs">
+                          <div className="flex items-center gap-2 whitespace-nowrap">
                             <span className="cq-symbols text-[16px] text-status-blue">shield</span>
                             <span className="text-text-muted-on-light font-medium">Risk flags</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-text-on-light font-medium">No active sanctions</span>
-                            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-blue-50 text-status-blue border border-status-blue/20">Screening</span>
-                          </div>
+                          <span className="text-text-on-light font-medium text-right leading-snug">No active sanctions</span>
+                            <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded text-[11px] font-medium bg-blue-50 text-status-blue border border-status-blue/20">Screening</span>
                         </div>
                       </div>
                     </div>
