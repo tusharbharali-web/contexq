@@ -70,6 +70,131 @@ export function InteractivePopup({
     };
   };
 
+  // What a card does when tapped (shared by the desktop panel and the phone card grid).
+  const activate = (btn: any) => {
+    // TACTICAL AUDIO TRIGGER
+    const clickAudio = new Audio("/assets/sound/click.mp3");
+    clickAudio.volume = 0.5;
+    clickAudio.play().catch(() => {});
+
+    // INHERIT LOGIC FROM SLICE IF NOT ON BUTTON
+    const isNewPage = (btn.newpage !== undefined) ? btn.newpage : (activeSlice?.newpage ?? false);
+    const isListView = (btn.listView !== undefined) ? btn.listView : (activeSlice?.listView ?? false);
+
+    // CASE: Solution Page Redirect
+    if (isNewPage) {
+      let basePath = "/solutions";
+      if (activePopup === "Knowledge Hub") {
+        basePath = "/Knowledge_Hub";
+      } else if (activePopup === "Platform") {
+        basePath = "/Platform";
+      } else if (activePopup === "Industries") {
+        basePath = "/Industries";
+      } else if (activePopup === "Ecosystem") {
+        basePath = "/Ecosystem";
+      } else if (activePopup === "Customers") {
+        basePath = "/customer-stories";
+      }
+      router.push(`${basePath}/${btn.slug}`);
+      return;
+    }
+
+    // CASE: Customers - Open branching directly
+    if (btn.label === "Customers" && btn.subPopUp && btn.subButtons && btn.subButtons.length > 0) {
+      const allSub = btn.subButtons.map((sub: any, idx: number) => ({
+        id: `sub-${idx}`,
+        label: sub.subLabel,
+        icon: sub.subIcon,
+        title: sub.subTitle,
+        companies: sub.companies,
+        subText: sub.subText,
+        fullText: sub.fullText
+      }));
+      const mid = Math.ceil(allSub.length / 2);
+      onClose();
+      setTimeout(() => {
+        onOpenBranch?.({
+          title: btn.label,
+          parents: allSub.slice(0, mid),
+          children: allSub.slice(mid),
+          slug: btn.slug,
+          subPopUp: btn.subPopUp,
+          subNewPage: btn.subNewPage
+        });
+      }, 100);
+      return;
+    }
+
+    // CASE: List View (Big Button Animation Part)
+    if (!isNewPage && isListView) {
+      onExpandModule?.({ ...btn, buttonColor: getButtonColors() });
+      return;
+    }
+
+    // CASE: End-of-Path Reset (Rest of the clicks)
+    onClose();
+  };
+
+  // Phones: a plain 2D panel sized to the screen - two columns of cards with readable
+  // labels that wrap only between words, and every icon drawn the same way.
+  if (flat) {
+    return (
+      <div className="pcards" role="dialog" aria-label={activePopup}>
+        <style>{`
+          .pcards { position: absolute; left: 50%; top: 50%; z-index: 1000; transform: translate(-50%, -50%);
+            width: min(92vw, 440px); max-height: calc(100svh - var(--site-header-height, 64px) - 120px); overflow-y: auto;
+            padding: 18px 16px 16px; border-radius: 18px; color: #fff;
+            background: linear-gradient(160deg, rgba(10, 32, 58, .92), rgba(5, 14, 28, .94));
+            border: 1px solid rgba(56, 189, 248, .35);
+            box-shadow: 0 0 0 1px rgba(14, 165, 233, .08), 0 18px 50px rgba(0, 0, 0, .55), 0 0 40px rgba(14, 165, 233, .15);
+            opacity: 0; animation: pcardsIn .45s cubic-bezier(.16, 1, .3, 1) .15s forwards; }
+          @keyframes pcardsIn { from { opacity: 0; transform: translate(-50%, -46%) scale(.97); } to { opacity: 1; transform: translate(-50%, -50%); } }
+          .pcards h2 { margin: 0 2px 14px; font-size: 1.05rem; font-weight: 700; letter-spacing: .01em; display: flex; align-items: center; gap: 8px; }
+          .pcards h2::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #22d3ee; box-shadow: 0 0 10px #22d3ee; }
+          .pcards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+          .pcards-grid > button:last-child:nth-child(odd) { grid-column: 1 / -1; }
+          .pcard { display: flex; align-items: center; gap: 10px; min-height: 64px; padding: 10px 12px; text-align: left;
+            border-radius: 12px; border: 1px solid rgba(255, 255, 255, .22); color: #fff; cursor: pointer;
+            background: linear-gradient(135deg, #0bb8e6 0%, #0a7fc0 55%, #0a4f96 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .35); -webkit-tap-highlight-color: transparent;
+            opacity: 0; animation: pcardIn .4s ease forwards; transition: transform .12s ease, filter .12s ease; }
+          .pcard:active { transform: scale(.97); filter: brightness(1.1); }
+          .pcard:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+          @keyframes pcardIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+          .pcard-icon { flex: none; width: 36px; height: 36px; border-radius: 9px; display: grid; place-items: center;
+            background: rgba(255, 255, 255, .16); overflow: hidden; }
+          .pcard-icon img { width: 26px; height: 26px; object-fit: contain; display: block; }
+          .pcard-icon img.hd { width: 36px; height: 36px; object-fit: cover; }
+          .pcard-label { font-size: .8rem; font-weight: 600; line-height: 1.25; overflow-wrap: normal; word-break: normal; hyphens: manual; }
+          @media (max-width: 340px) { .pcard-label { font-size: .74rem; } .pcard { padding: 9px 10px; gap: 8px; } }
+          @media (prefers-reduced-motion: reduce) { .pcards, .pcard { animation: none; opacity: 1; } }
+        `}</style>
+        <h2>{activePopup}</h2>
+        <div className="pcards-grid">
+          {buttons.map((btn: any, i: number) => (
+            <button
+              key={`pcard-${btn.label}-${i}`}
+              ref={i === 0 ? buttonRef : null}
+              type="button"
+              className="pcard"
+              style={{ animationDelay: `${0.2 + i * 0.04}s` }}
+              onClick={() => activate(btn)}
+            >
+              {btn.icon && (
+                <span className="pcard-icon" aria-hidden="true">
+                  {/* Platform icons are full-colour tiles (fill the badge); the rest are white glyphs. */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={btn.icon} alt="" className={activePopup === "Platform" ? "hd" : ""} decoding="async" />
+                </span>
+              )}
+              <span className="pcard-label">{btn.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       style={{
@@ -156,69 +281,7 @@ export function InteractivePopup({
                 key={`main-btn-${btn.label}-${i}`}
                 ref={i === 0 ? buttonRef : null}
                 layoutId={`btn-${btn.label}`}
-                onClick={() => {
-                  // TACTICAL AUDIO TRIGGER
-                  const clickAudio = new Audio("/assets/sound/click.mp3");
-                  clickAudio.volume = 0.5;
-                  clickAudio.play().catch(() => {});
-
-                  // INHERIT LOGIC FROM SLICE IF NOT ON BUTTON
-                  const isNewPage = (btn.newpage !== undefined) ? btn.newpage : (activeSlice?.newpage ?? false);
-                  const isListView = (btn.listView !== undefined) ? btn.listView : (activeSlice?.listView ?? false);
-
-                  // CASE: Solution Page Redirect
-                  if (isNewPage) {
-                    let basePath = "/solutions";
-                    if (activePopup === "Knowledge Hub") {
-                      basePath = "/Knowledge_Hub";
-                    } else if (activePopup === "Platform") {
-                      basePath = "/Platform";
-                    } else if (activePopup === "Industries") {
-                      basePath = "/Industries";
-                    } else if (activePopup === "Ecosystem") {
-                      basePath = "/Ecosystem";
-                    } else if (activePopup === "Customers") {
-                      basePath = "/customer-stories";
-                    }
-                    router.push(`${basePath}/${btn.slug}`);
-                    return;
-                  }
-
-                  // CASE: Customers - Open branching directly
-                  if (btn.label === "Customers" && btn.subPopUp && btn.subButtons && btn.subButtons.length > 0) {
-                    const allSub = btn.subButtons.map((sub: any, idx: number) => ({
-                      id: `sub-${idx}`,
-                      label: sub.subLabel,
-                      icon: sub.subIcon,
-                      title: sub.subTitle,
-                      companies: sub.companies,
-                      subText: sub.subText,
-                      fullText: sub.fullText
-                    }));
-                    const mid = Math.ceil(allSub.length / 2);
-                    onClose();
-                    setTimeout(() => {
-                      onOpenBranch?.({
-                        title: btn.label,
-                        parents: allSub.slice(0, mid),
-                        children: allSub.slice(mid),
-                        slug: btn.slug,
-                        subPopUp: btn.subPopUp,
-                        subNewPage: btn.subNewPage
-                      });
-                    }, 100);
-                    return;
-                  }
-
-                  // CASE: List View (Big Button Animation Part)
-                  if (!isNewPage && isListView) {
-                    onExpandModule?.({ ...btn, buttonColor: getButtonColors() });
-                    return;
-                  }
-
-                  // CASE: End-of-Path Reset (Rest of the clicks)
-                  onClose();
-                }}
+                onClick={() => activate(btn)}
                 className="popup-btn"
                 style={{
                   position: "relative",

@@ -118,7 +118,7 @@ export function Pie2D({
           opacity: 0; transform: scale(.92) rotate(-8deg); transition: opacity .7s ease, transform .9s cubic-bezier(.16,1,.3,1); }
         .pie2d.is-in .pie2d-stage > svg { opacity: 1; transform: none; }
         .pie2d.is-hidden .pie2d-stage > svg { opacity: 0; transform: scale(.85); pointer-events: none; transition-duration: .45s; }
-        .pie2d.is-hidden .pie2d-hint { opacity: 0; }
+        .pie2d.is-hidden .pie2d-hint { animation: none; opacity: 0; visibility: hidden; }
         .pie2d-slice { cursor: pointer; -webkit-tap-highlight-color: transparent; outline: none; }
         .pie2d-slice .seg { transition: transform .18s ease, filter .18s ease; transform-origin: 0 0; }
         .pie2d-slice:active .seg, .pie2d-slice:focus-visible .seg { transform: scale(1.035); filter: brightness(1.12); }
