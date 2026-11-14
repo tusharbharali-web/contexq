@@ -339,3 +339,17 @@
 
 /* Hero CTA (same as the other Platform pages): one standard blue button under the intro. */
 .v-platform-actions .hero .ctas{margin-top:28px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+
+/* tablets/phones: the three stage tabs sit side by side, so the labels must fit their box */
+@media (max-width:900px){
+  .v-platform-actions .fc-rail{gap:8px}
+  .v-platform-actions .fc-rail button[data-s]{padding:12px 10px;min-width:0}
+  .v-platform-actions .fc-t{min-width:0}
+  .v-platform-actions .fc-t b{font-size:15px;line-height:20px;overflow-wrap:anywhere;hyphens:auto}
+}
+@media (max-width:420px){
+  .v-platform-actions .fc-rail{gap:6px}
+  .v-platform-actions .fc-rail button[data-s]{padding:10px 8px}
+  .v-platform-actions .fc-t b{font-size:13px;line-height:18px}
+  .v-platform-actions .fc-n{width:28px;height:28px;font-size:13px}
+}

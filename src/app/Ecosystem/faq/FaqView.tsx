@@ -165,6 +165,18 @@ export default function FaqView() {
     setTimeout(() => { lockRef.current = false; }, 900);
   }, []);
 
+  // Results sit below the hero, so typing alone changes nothing on screen: Enter, the
+  // keyboard's Search key or "View results" scrolls to them (and closes the phone keyboard).
+  const showResults = useCallback(() => {
+    if (!terms.length) return;
+    searchRef.current?.blur();
+    const zone = document.querySelector<HTMLElement>('.cqfaq .faq-zone');
+    if (!zone) return;
+    const hdr = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--site-header-height')) || 76;
+    const bar = document.querySelector<HTMLElement>('.cqfaq .topic-nav')?.offsetHeight ?? 0;
+    window.scrollTo({ top: zone.getBoundingClientRect().top + window.scrollY - hdr - bar + 1, behavior: 'smooth' });
+  }, [terms]);
+
   let lastGroup = '';
   return (
     <div className="cqfaq">
@@ -175,7 +187,14 @@ export default function FaqView() {
             <p className="hero-desc">
               Explore how ContexQ works, where it fits and what connected intelligence can mean for your business. Find answers by topic, solution or industry.
             </p>
-            <div className="search-wrap">
+            <form
+              className="search-wrap"
+              role="search"
+              onSubmit={(e) => {
+                e.preventDefault();
+                showResults();
+              }}
+            >
               <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" strokeLinecap="round" strokeWidth="1.7" viewBox="0 0 24 24" width="20">
                 <circle cx="10.8" cy="10.8" r="6.5" />
                 <path d="m16 16 5 5" />
@@ -196,7 +215,17 @@ export default function FaqView() {
                   Clear
                 </button>
               )}
-            </div>
+            </form>
+            {searching && (
+              <p className="search-status" aria-live="polite">
+                {matched === 0 ? 'No matching questions found.' : `${matched} matching ${matched === 1 ? 'answer' : 'answers'}.`}{' '}
+                {matched > 0 && (
+                  <button type="button" onClick={showResults}>
+                    View results ↓
+                  </button>
+                )}
+              </p>
+            )}
           </div>
           <HeroVisual />
         </div>
@@ -227,7 +256,7 @@ export default function FaqView() {
       </nav>
 
       <main id="main">
-        <section className="faq-contents">
+        <section className="faq-contents" hidden={searching}>
           <div className="wrap">
             <div className="contents-head">
               <h2>Explore the answers that matter to you.</h2>
@@ -266,7 +295,7 @@ export default function FaqView() {
                     </div>
                     <div className="faq-list">
                       {sec.items.filter((it) => vis.has(it.id)).map((it) => (
-                        <details key={it.id} className="faq-item" id={it.id}>
+                        <details key={`${it.id}${searching && matched <= 6 ? '-open' : ''}`} className="faq-item" id={it.id} open={searching && matched <= 6 ? true : undefined}>
                           <summary>{it.q}</summary>
                           <div className="faq-answer"><p>{it.a}</p></div>
                         </details>

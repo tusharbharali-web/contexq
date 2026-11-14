@@ -171,3 +171,7 @@
   .cqfaq .v-title { opacity: 1; transform: translate(-50%,-50%); }
   .cqfaq .visual .v-line { stroke-dashoffset: 0; }
 }
+
+/* live search feedback under the hero search box */
+.cqfaq .search-status { margin: 12px 0 0; font-size: 14px; color: rgba(255,255,255,.78); }
+.cqfaq .search-status button { margin-left: 6px; background: none; border: 0; padding: 4px 0; color: #6fb0ff; font: inherit; font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
