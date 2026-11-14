@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/ui/Header";
@@ -45,6 +45,11 @@ const inter = localFont({
   display: "swap",
   src: [{ path: "./fonts/inter-latin-normal.woff2", weight: "300 700", style: "normal" }],
 });
+
+// Browser UI (mobile address/tool bars) in the site's navy instead of white.
+export const viewport: Viewport = {
+  themeColor: "#050F1C",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://contexq.com"),

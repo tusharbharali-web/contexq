@@ -20,7 +20,6 @@ const routes: { path: string; priority: number }[] = [
   { path: '/Platform/actions', priority: 0.9 },
 
   // Solutions, primary commercial pages
-  { path: '/solutions', priority: 0.8 },
   { path: '/solutions/aml', priority: 0.9 },
   { path: '/solutions/kyc', priority: 0.9 },
   { path: '/solutions/fraud', priority: 0.9 },
@@ -29,7 +28,6 @@ const routes: { path: string; priority: number }[] = [
   { path: '/solutions/supply-chain-intelligence', priority: 0.9 },
 
   // Industries, primary commercial pages
-  { path: '/Industries', priority: 0.8 },
   { path: '/Industries/finance', priority: 0.9 },
   { path: '/Industries/mfg', priority: 0.9 },
   { path: '/Industries/ecommerce', priority: 0.9 },

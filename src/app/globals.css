@@ -84,6 +84,10 @@ body {
 /* Prevent layout shift from scrollbar */
 html {
   scrollbar-gutter: stable;
+  /* The page canvas colour. body only paints a gradient image (no colour), so this was
+     transparent = white: phones showed white below the footer (and above the header)
+     when the page bounces past its end. Match the footer/navbar. */
+  background-color: #080f1d;
 }
 
 /* ------------------------------------------------------------------
