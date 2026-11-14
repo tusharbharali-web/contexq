@@ -260,3 +260,6 @@
 .v-industry-public-sector .cq-mail-line a{color:var(--white,#fff);text-decoration:underline;text-underline-offset:3px}
 .v-industry-public-sector .cq-mail-line a:hover{color:var(--blue-400,#5BA0FF)}
 @media(max-width:760px){.v-industry-public-sector .cta-stack{align-items:flex-start}}
+
+/* Phones/small tablets: stack the hero (a later 1100px rule kept two columns all the way down). */
+@media(max-width:900px){.v-industry-public-sector .hero.refined-hero{grid-template-columns:1fr!important;gap:32px!important;padding-top:40px!important}.v-industry-public-sector .hero.refined-hero>*{min-width:0}}

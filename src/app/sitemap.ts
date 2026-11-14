@@ -39,6 +39,7 @@ const routes: { path: string; priority: number }[] = [
 
   // Company
   { path: '/about', priority: 0.7 },
+  { path: '/team', priority: 0.6 },
   { path: '/contact', priority: 0.7 },
   { path: '/careers', priority: 0.5 },
 

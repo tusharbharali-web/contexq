@@ -129,7 +129,11 @@ function Card({ p, onOpen }: { p: TeamMember; onOpen: (p: TeamMember, opener: HT
   );
 }
 
-export function TeamOverlay({ onClose }: { onClose: () => void }) {
+/**
+ * `asPage`: rendered as the /team page (phones open Team as its own page): in the page
+ * flow, no entrance animation, no scroll lock, no Escape-to-close.
+ */
+export function TeamOverlay({ onClose, asPage = false }: { onClose?: () => void; asPage?: boolean }) {
   const [person, setPerson] = useState<TeamMember | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const openerRef = useRef<HTMLElement | null>(null);
@@ -140,17 +144,18 @@ export function TeamOverlay({ onClose }: { onClose: () => void }) {
   // Lock page scroll while the overlay is open; Escape closes the overlay
   // (the dialog handles its own Escape first).
   useEffect(() => {
+    if (asPage) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && !dialogRef.current?.open) onClose();
+      if (e.key === "Escape" && !dialogRef.current?.open) onClose?.();
     };
     window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKey);
     };
-  }, [onClose]);
+  }, [onClose, asPage]);
 
   // Show the dialog once its content has rendered.
   useEffect(() => {
@@ -166,7 +171,7 @@ export function TeamOverlay({ onClose }: { onClose: () => void }) {
     setPerson(p);
   };
 
-  if (typeof document === "undefined") return null;
+  if (!asPage && typeof document === "undefined") return null;
 
   const group = (key: TeamMember["group"], label: string) => (
     <section className="group" aria-labelledby={`${key}-h`}>
@@ -183,8 +188,8 @@ export function TeamOverlay({ onClose }: { onClose: () => void }) {
     </section>
   );
 
-  return createPortal(
-    <div className="cq-team" role="region" aria-label="Team">
+  const view = (
+    <div className={asPage ? "cq-team cq-team--page" : "cq-team"} role="region" aria-label="Team">
       <div className="container">
         <div className="page-title">
           <h1>Team</h1>
@@ -254,7 +259,7 @@ export function TeamOverlay({ onClose }: { onClose: () => void }) {
           </div>
         )}
       </dialog>
-    </div>,
-    document.body,
+    </div>
   );
+  return asPage ? view : createPortal(view, document.body);
 }

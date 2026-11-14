@@ -202,3 +202,15 @@
   .cq-team .card, .cq-team .li-link { transition: none; }
   .cq-team .card:hover, .cq-team .card:has(:focus-visible) { transform: none; }
 }
+
+/* /team page (phones open Team as its own page instead of the coin overlay) */
+.cq-team.cq-team--page {
+  position: relative; top: auto; inset: auto; z-index: auto;
+  overflow: visible; min-height: 100svh;
+  opacity: 1; animation: none;
+  background: radial-gradient(ellipse 120% 60% at 50% 0%, #0c2340 0%, #050b16 60%) #050b16;
+}
+.cq-team.cq-team--page .container { padding-top: calc(var(--site-header-height, 76px) + 32px); }
+@media (max-width: 640px) {
+  .cq-team.cq-team--page h1 { font-size: 36px; }
+}

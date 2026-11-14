@@ -167,7 +167,7 @@ export function Pie2D({
             const lower = mid > 90 && mid < 270;
             const textR = lower ? ringMid + LABEL_SIZE * 0.36 : ringMid - LABEL_SIZE * 0.36;
             const [ix, iy] = pt(R_DISK * 0.55, mid);
-            const img = 150;
+            const img = 122;
             return (
               <g
                 key={s.title}

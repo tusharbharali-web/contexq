@@ -25,6 +25,7 @@ import { CustomLoader } from "../ui/CustomLoader";
 import { CoinSliceData } from "./types";
 import { ENVIRONMENT_HDR, IMAGE_ASSETS, SLICE_TEXTURES, FLAT_MEDIA, isFlatViewport } from "./sceneAssets";
 import { Pie2D } from "../ui/Pie2D";
+import { useRouter } from "next/navigation";
 import { AwaitTextures, useBitmapTexture } from "./useBitmapTexture";
 
 // Start every texture/HDR load as soon as this module is evaluated, all in parallel.
@@ -171,7 +172,13 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
     return null;
   }, []);
 
+  const router = useRouter();
   const handleWedgeClick = useCallback((title: string) => {
+    // Phones: Team is its own page (no animation, normal scrolling).
+    if (flat && title === "Team") {
+      router.push("/team");
+      return;
+    }
     clickSound?.play().catch(() => {});
     setActivePopup(title);
     if (typeof window !== 'undefined') {
@@ -180,7 +187,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
         window.history.pushState({ activePopup: title }, '', hash);
       }
     }
-  }, [clickSound]);
+  }, [clickSound, flat, router]);
 
   // The Team cards appear after the ~4s Team animation: fetch their font + photos as
   // soon as the Team popup opens (click, hash link or Back/Forward).
@@ -286,6 +293,10 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
       const match = popupSlices.find(
         s => s.title.toLowerCase().replace(/\s+/g, '-') === hash
       );
+      if (match && flat && match.title === "Team") {
+        router.replace("/team");
+        return;
+      }
       if (match) {
         setBranchingData(null);
         setExpandingModule(null);
@@ -295,7 +306,7 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
     restoreFromHash();
     window.addEventListener('popstate', restoreFromHash);
     return () => window.removeEventListener('popstate', restoreFromHash);
-  }, [popupSlices]);
+  }, [popupSlices, flat, router]);
 
   useEffect(() => {
     if (activePopup || expandingModule || branchingData) {
