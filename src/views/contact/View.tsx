@@ -306,6 +306,11 @@ export function View() {
                     <label htmlFor="interest-other">{"Please specify what you'd like to explore"}</label>
                     <input id="interest-other" name="interest_other" type="text" placeholder="Tell us what you'd like to explore" />
                   </div>
+                  {" "}
+                  <div className="field full">
+                    <label htmlFor="message">Message</label>
+                    <textarea id="message" name="message" rows={4} placeholder="Tell us about your requirements" />
+                  </div>
                 </div>
                 <div className="cf-turnstile" data-sitekey="0x4AAAAAADKKF2ByP4CS0doK" data-theme="dark" style={{ margin: "14px 0" }} />
                 {" "}

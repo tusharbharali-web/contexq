@@ -259,6 +259,32 @@ export function TeamOverlay({ onClose, asPage = false }: { onClose?: () => void;
                   </ul>
                 </div>
               )}
+              {person.experience && person.experience.length > 0 && (
+                <div className="dlg-exp">
+                  <p className="caption">Previously at</p>
+                  <ul className="exp-list">
+                    {person.experience.map((e) => (
+                      <li key={e.title + e.org}>
+                        <span className="exp-title">{e.title}</span>
+                        <span className="exp-org">{e.org}</span>
+                        <span className="exp-dates">{e.dates}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {person.affiliations && person.affiliations.length > 0 && (
+                <div className="dlg-exp">
+                  <p className="caption">Affiliations</p>
+                  <ul className="exp-list">
+                    {person.affiliations.map((a) => (
+                      <li key={a}>
+                        <span className="exp-title">{a}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               {person.linkedinUrl && (
                 <a className="dlg-link" href={person.linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label={`${person.popupName} on LinkedIn`}>
                   <LinkedInIcon />

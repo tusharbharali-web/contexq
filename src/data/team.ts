@@ -18,6 +18,10 @@ export type TeamMember = {
   photoPosition?: string;
   photoAlt: string;
   linkedinUrl: string;
+  // optional list of past roles shown as "Past experience" in the profile dialog
+  experience?: { title: string; org: string; dates: string }[];
+  // optional list shown as "Affiliations" next to "Previously at" in the profile dialog
+  affiliations?: string[];
 };
 
 // Logo shown in each company chip of the profile dialog, keyed by the chip's name.
@@ -157,7 +161,13 @@ export const TEAM: TeamMember[] = [
     credentialLine: "Chief Mentor & Head of Business Development, India & Middle East",
     chipsLabel: "AFFILIATIONS",
     chips: [], // add previous companies here (and their logos in COMPANY_LOGOS) when available
-    bio: "Partha brings over 25 years of experience in business development, strategic leadership and market expansion across technology, finance and manufacturing, with a track record of building high-value partnerships and leading teams to significant milestones. He joined ContexQ in 2025 as Chief Mentor & Head of Business Development for India and the Middle East. At ContexQ he advises on growth strategy, partnerships and expansion across India and the Middle East.",
+    bio: "Partha brings over 25 years of experience in business development, strategic leadership and market expansion across technology, finance and manufacturing, with a track record of building high-value partnerships and leading teams to significant milestones. He has served on the boards of multiple Indian corporates and is a senior industry HR leader. He joined ContexQ in 2025 as Chief Mentor & Head of Business Development for India and the Middle East, where he advises on growth strategy, partnerships and expansion across both regions.",
+    experience: [
+      { title: "Visiting Professor", org: "AIIMS Guwahati", dates: "Oct 2025 – Nov 2026" },
+      { title: "Professor of Practice", org: "National Law University and Judicial Academy", dates: "Nov 2025 – Oct 2026" },
+      { title: "Professor & Advisor, Corporate Affairs", org: "IMT Hyderabad", dates: "Jul 2025 – Feb 2026" },
+    ],
+    affiliations: ["Board Member, multiple Indian corporates", "Senior Industry HR Leader"],
     photo: "/assets/images/Ecosystem/Partha-DasGupta-1.webp",
     photoPosition: "center top",
     photoAlt: "Portrait of Partha Dasgupta",

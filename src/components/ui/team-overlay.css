@@ -225,3 +225,11 @@
 @media (max-width: 640px) {
   .cq-team.cq-team--page h1 { font-size: 36px; }
 }
+
+/* Past experience list in the profile dialog */
+.cq-team-dialog .dlg-exp { margin: 0 0 28px; }
+.cq-team-dialog .exp-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.cq-team-dialog .exp-list li { display: grid; gap: 2px; padding-left: 12px; border-left: 2px solid rgba(111, 176, 255, 0.55); }
+.cq-team-dialog .exp-title { font-size: 15px; font-weight: 600; color: #fff; line-height: 1.4; }
+.cq-team-dialog .exp-org { font-size: 14px; color: #EAF1FB; line-height: 1.45; }
+.cq-team-dialog .exp-dates { font-size: 13px; color: #B6C3D6; }
