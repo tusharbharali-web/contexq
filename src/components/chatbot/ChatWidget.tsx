@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { CalendarDays } from 'lucide-react';
 import { ChatLauncher } from './ChatLauncher';
 import { ChatHeader } from './ChatHeader';
 import { ChatMessages } from './ChatMessages';
@@ -134,26 +133,12 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
             {/* When not minimized, display body and input */}
             {!isMinimized && (
               <div className="cqc-body">
-                {/* Scrollable messages, with the "Book a meeting" button always floating over them */}
-                <div className="cqc-stream-wrap">
-                  <ChatMessages
-                    messages={messages}
-                    isLoading={isLoading}
-                    onSelectQuestion={sendMessage}
-                  />
-                  <button
-                    type="button"
-                    className="cqc-book"
-                    disabled={awaitingMeetingEmail}
-                    onClick={() => {
-                      startMeetingBooking();
-                      panelRef.current?.querySelector<HTMLTextAreaElement>('.cqc-field textarea')?.focus();
-                    }}
-                  >
-                    <CalendarDays aria-hidden="true" />
-                    {awaitingMeetingEmail ? 'Waiting for your email' : 'Book a meeting'}
-                  </button>
-                </div>
+                {/* Scrollable Messages Stream */}
+                <ChatMessages
+                  messages={messages}
+                  isLoading={isLoading}
+                  onSelectQuestion={sendMessage}
+                />
 
                 {/* Handover Prompt Component if triggered */}
                 {(showHandover || lastMessageNeedsHandover) && (
@@ -171,6 +156,11 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
                   isLoading={isLoading}
                   onOpenLeadForm={() => toggleLeadForm(true)}
                   placeholder={awaitingMeetingEmail ? 'Enter your email address' : undefined}
+                  awaitingMeetingEmail={awaitingMeetingEmail}
+                  onBookMeeting={() => {
+                    startMeetingBooking();
+                    panelRef.current?.querySelector<HTMLTextAreaElement>('.cqc-field textarea')?.focus();
+                  }}
                 />
 
                 {/* Slide-over Lead Capture Form */}

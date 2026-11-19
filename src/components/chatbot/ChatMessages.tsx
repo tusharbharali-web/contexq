@@ -17,7 +17,8 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({ messages, isLoading,
   // padding, so the floating "Book a meeting" button never covers the last message
   useEffect(() => {
     const el = streamRef.current;
-    if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+    // the welcome screen stays at its top; only a conversation follows the newest message
+    if (el && messages.length > 0) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
   }, [messages, isLoading]);
 
   return (

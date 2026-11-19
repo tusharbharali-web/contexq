@@ -1,16 +1,18 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, CalendarDays, Users } from 'lucide-react';
 
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
   isLoading: boolean;
   onOpenLeadForm: () => void;
   placeholder?: string;
+  onBookMeeting: () => void;
+  awaitingMeetingEmail?: boolean;
 }
 
-export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, onOpenLeadForm, placeholder }) => {
+export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, onOpenLeadForm, placeholder, onBookMeeting, awaitingMeetingEmail = false }) => {
   const [text, setText] = useState('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -54,8 +56,13 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, 
       </div>
 
       <div className="cqc-composer-foot">
-        <button type="button" className="cqc-link" onClick={onOpenLeadForm}>
+        <button type="button" className="cqc-foot-btn" onClick={onOpenLeadForm}>
+          <Users aria-hidden="true" />
           Talk to our team
+        </button>
+        <button type="button" className="cqc-foot-btn" onClick={onBookMeeting} disabled={awaitingMeetingEmail}>
+          <CalendarDays aria-hidden="true" />
+          {awaitingMeetingEmail ? 'Waiting for email' : 'Book a meeting'}
         </button>
       </div>
     </div>
