@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "../components/ui/Header";
 import InstantHistoryScroll from "../components/ui/InstantHistoryScroll";
 import TeamProfileModal from "../components/ui/TeamProfileModal";
+import { ChatWidget } from "../components/chatbot/ChatWidget";
+import "../styles/chatbot.css";
 
 // Fonts are self-hosted (src/app/fonts, the same Latin variable files Google Fonts
 // serves) so builds don't depend on fetching fonts.googleapis.com at build time.
@@ -102,6 +104,7 @@ export default function RootLayout({
         <Header />
         {children}
         <TeamProfileModal />
+        <ChatWidget />
       </body>
     </html>
   );
