@@ -25,18 +25,18 @@ const accepted = (category: string) => {
 };
 
 function applyConsent() {
+  // Google Consent Mode v2 for GA4 and Google Tag Manager tags.
+  updateGoogleConsent(accepted(CONSENT.analytics), accepted(CONSENT.marketing));
   if (accepted(CONSENT.analytics)) {
     loadGoogleAnalytics();
     loadClarity();
     recordPageView();
-  } else {
-    updateGoogleConsent(false);
   }
   if (accepted(CONSENT.marketing)) loadLeadfeeder();
 }
 
 const cookieTable = {
-  headers: { name: 'Cookie', provider: 'Provider', purpose: 'Purpose', expiry: 'Expires' },
+  headers: { provider: 'Service', purpose: 'Purpose', expiry: 'Expires' },
 };
 
 function runConsent() {
@@ -60,8 +60,8 @@ function runConsent() {
     onConsent: () => applyConsent(),
     onChange: ({ changedCategories }) => {
       const withdrawn = changedCategories.filter((c) => !accepted(c));
+      if (withdrawn.length) updateGoogleConsent(accepted(CONSENT.analytics), accepted(CONSENT.marketing));
       if (withdrawn.includes(CONSENT.analytics)) {
-        updateGoogleConsent(false);
         revokeClarity();
         clearAttribution();
       }
@@ -76,7 +76,9 @@ function runConsent() {
           consentModal: {
             title: 'Your privacy choices',
             description:
-              'We use necessary cookies to make this site work. With your permission, we also use analytics cookies to understand how the site is used, and marketing cookies to recognise which organisations visit us. You can change your choice at any time under "Cookie settings". See our <a href="/cookie-policy">Cookie Policy</a>.',
+              'We use essential cookies to ensure our website functions properly. With your consent, we also use analytics cookies to understand how visitors interact with our website and marketing cookies to identify visiting organisations and improve our marketing efforts.' +
+              '<br><br>You can update or withdraw your consent at any time through <a href="#" data-cq-cookie-settings>Cookie Settings</a>.' +
+              '<br><br>For more information, please see our <a href="/privacy-policy">Privacy Policy</a> and <a href="/cookie-policy">Cookie Policy</a>.',
             acceptAllBtn: 'Accept all',
             acceptNecessaryBtn: 'Reject all',
             showPreferencesBtn: 'Manage preferences',
@@ -99,8 +101,8 @@ function runConsent() {
                 cookieTable: {
                   ...cookieTable,
                   body: [
-                    { name: 'cc_cookie', provider: 'ContexQ', purpose: 'Stores your cookie choices', expiry: '6 months' },
-                    { name: 'Cloudflare Turnstile', provider: 'Cloudflare', purpose: 'Protects the contact form from spam and bots', expiry: 'Session' },
+                    { provider: 'ContexQ (cookie preferences)', purpose: 'Stores your cookie choices', expiry: '6 months' },
+                    { provider: 'Cloudflare Turnstile', purpose: 'Protects the contact form from spam and bots', expiry: 'Session' },
                   ],
                 },
               },
@@ -112,9 +114,9 @@ function runConsent() {
                 cookieTable: {
                   ...cookieTable,
                   body: [
-                    { name: '_ga, _ga_*', provider: 'Google Analytics', purpose: 'Distinguishes visitors and sessions for site statistics', expiry: '2 years' },
-                    { name: '_clck, _clsk', provider: 'Microsoft Clarity', purpose: 'Heatmaps and session recordings of how pages are used', expiry: 'Up to 1 year' },
-                    { name: 'cq_attr (local storage)', provider: 'ContexQ', purpose: 'Remembers how you arrived and pages viewed, attached to an enquiry if you send one', expiry: 'Until cleared' },
+                    { provider: 'Google Analytics', purpose: 'Distinguishes visitors and sessions for site statistics', expiry: '2 years' },
+                    { provider: 'Microsoft Clarity', purpose: 'Heatmaps and session recordings of how pages are used', expiry: 'Up to 1 year' },
+                    { provider: 'ContexQ (visit history)', purpose: 'Remembers how you arrived and pages viewed, attached to an enquiry if you send one', expiry: 'Until cleared' },
                   ],
                 },
               },
@@ -124,7 +126,7 @@ function runConsent() {
                 linkedCategory: CONSENT.marketing,
                 cookieTable: {
                   ...cookieTable,
-                  body: [{ name: '_lfa', provider: 'Leadfeeder', purpose: 'Identifies the organisation behind a company network visit', expiry: '2 years' }],
+                  body: [{ provider: 'Leadfeeder', purpose: 'Identifies the organisation behind a company network visit', expiry: '2 years' }],
                 },
               },
             ],

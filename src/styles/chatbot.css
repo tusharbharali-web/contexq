@@ -58,6 +58,10 @@
   box-shadow: 0 10px 28px -8px rgba(5, 15, 28, 0.55);
 }
 .cqc-launcher-label:hover { border-color: var(--blue-500); }
+.cqc-launcher-label { animation: cqc-label-in 0.3s ease-out; transition: opacity 0.4s ease, transform 0.4s ease; }
+.cqc-launcher-label.is-leaving { opacity: 0; transform: translateX(8px); pointer-events: none; }
+@keyframes cqc-label-in { from { opacity: 0; transform: translateX(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .cqc-launcher-label { animation: none; transition: none; } }
 @media (max-width: 640px) { .cqc-launcher-label { display: none; } }
 
 /* ---------- Panel ---------- */
@@ -109,7 +113,23 @@
 .cqc-welcome h3 { margin: 0 0 6px; font-size: 18px; line-height: 26px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-900); }
 .cqc-welcome p { margin: 0; font-size: 14px; line-height: 22px; color: var(--slate-600); }
 .cqc-welcome .cqc-section-label { margin: 24px 0 10px; font-size: 13px; line-height: 20px; font-weight: 600; color: var(--slate-500); }
-.cqc-topics { display: flex; flex-direction: column; gap: 8px; }
+
+/* "Popular topics" button: reveals the topic list on click */
+.contexq-chatbot-root .cqc-topics-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px; padding: 8px 14px;
+  border: 1px solid var(--slate-200); border-radius: var(--radius-cta);
+  background: var(--white); color: var(--ink-900);
+  font-size: 13px; line-height: 20px; font-weight: 600; cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+.contexq-chatbot-root .cqc-topics-toggle:hover { border-color: var(--blue-500); color: var(--blue-500); }
+.contexq-chatbot-root .cqc-topics-toggle.is-open { border-color: var(--blue-500); color: var(--blue-500); background: var(--blue-100); }
+.contexq-chatbot-root .cqc-topics-toggle svg { width: 16px; height: 16px; transition: transform 150ms ease; }
+.contexq-chatbot-root .cqc-topics-toggle.is-open svg { transform: rotate(180deg); }
+.contexq-chatbot-root .cqc-topics-toggle:focus-visible { outline: 2px solid var(--blue-500); outline-offset: 2px; }
+
+.cqc-topics { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
 .cqc-topic {
   width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px;
   padding: 12px 14px; text-align: left; cursor: pointer;

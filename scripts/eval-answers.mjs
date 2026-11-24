@@ -46,7 +46,7 @@ for (const [i, t] of tests.entries()) {
   const cited = (data.sources || []).some((s) => s.url === urlOf[t.doc]);
   const keyWords = words(t.mustContain);
   const overlap = keyWords.length ? keyWords.filter((w) => answer.toLowerCase().includes(w)).length / keyWords.length : 0;
-  const isBusy = /assistant is busy/i.test(answer);
+  const isBusy = /not able to provide the information at the moment/i.test(answer);
   const ok = !isBusy && (cited || overlap >= 0.5);
   if (ok) good++;
   if (isBusy) busy++;

@@ -33,7 +33,7 @@ const CACHE_MAX = 500;
 
 const BUSY: ChatResponse = {
   message:
-    'Our assistant is busy right now. Please try again in a minute, or leave your details below and a ContexQ specialist will get back to you.',
+    'I am sorry, I am not able to provide the information at the moment. Leave your contact details below and someone from our team will contact you as soon as possible.',
   needsHumanHandover: true,
 };
 

@@ -11,17 +11,27 @@ interface ChatLauncherProps {
 }
 
 export const ChatLauncher: React.FC<ChatLauncherProps> = ({ isOpen, onClick }) => {
-  const [showLabel, setShowLabel] = useState(false);
+  // "Chat with ContexQ" appears shortly after the page loads, stays 5 seconds, then fades away.
+  const [label, setLabel] = useState<'hidden' | 'shown' | 'leaving'>('hidden');
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLabel(true), 800);
-    return () => clearTimeout(timer);
+    const timers = [
+      setTimeout(() => setLabel('shown'), 800),
+      setTimeout(() => setLabel('leaving'), 5800),
+      setTimeout(() => setLabel('hidden'), 6200),
+    ];
+    return () => timers.forEach(clearTimeout);
   }, []);
 
   return (
     <>
-      {!isOpen && showLabel && (
-        <button type="button" className="cqc-launcher-label" onClick={onClick} tabIndex={-1}>
+      {!isOpen && label !== 'hidden' && (
+        <button
+          type="button"
+          className={`cqc-launcher-label${label === 'leaving' ? ' is-leaving' : ''}`}
+          onClick={onClick}
+          tabIndex={-1}
+        >
           Chat with ContexQ
         </button>
       )}

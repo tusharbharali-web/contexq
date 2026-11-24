@@ -8,6 +8,7 @@ import { ChatWidget } from "../components/chatbot/ChatWidget";
 import "../styles/chatbot.css";
 import CookieConsentManager from "../components/consent/CookieConsentManager";
 import "../styles/cookies.css";
+import { TRACKING } from "../lib/tracking/config";
 
 // Fonts are self-hosted (src/app/fonts, the same Latin variable files Google Fonts
 // serves) so builds don't depend on fetching fonts.googleapis.com at build time.
@@ -99,6 +100,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning className={`${hankenGrotesk.variable} ${inter.variable}`}>
+      <head>
+        {/* Google Tag Manager (every page). Consent Mode v2 defaults are set FIRST, then this
+            same script adds gtm.js (Google's standard loader), so Google tags in the container
+            stay in "denied" mode until the visitor accepts cookies in the banner
+            (CookieConsentManager sends the update). */}
+        {TRACKING.gtmId && (
+            <script
+              id="gtm-init"
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+gtag('js', new Date());
+dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=${TRACKING.gtmId}';var f=document.getElementsByTagName('script')[0];f.parentNode.insertBefore(s,f);})();`,
+              }}
+            />
+        )}
+      </head>
       <body
         className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
       >

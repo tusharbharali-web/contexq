@@ -45,14 +45,26 @@ function ensureGtag(): Gtag {
   return window.gtag;
 }
 
-/** Sends the visitor's current choices to Google Consent Mode v2. ContexQ runs no ads, so ad signals stay denied. */
-export function updateGoogleConsent(analytics: boolean) {
-  if (!TRACKING.gaId) return;
+/**
+ * Sends the visitor's current choices to Google Consent Mode v2 (used by GA4 and by every
+ * Google tag inside Google Tag Manager): Analytics -> analytics_storage,
+ * Marketing -> ad_storage / ad_user_data / ad_personalization.
+ * Also pushes a "cookie_consent_update" event so non-Google tags in GTM can be triggered
+ * only after consent (use it as their trigger, checking analytics_consent / marketing_consent).
+ */
+export function updateGoogleConsent(analytics: boolean, marketing = false) {
+  if (!TRACKING.gaId && !TRACKING.gtmId) return;
+  const ads = marketing ? 'granted' : 'denied';
   ensureGtag()('consent', 'update', {
     analytics_storage: analytics ? 'granted' : 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
+    ad_storage: ads,
+    ad_user_data: ads,
+    ad_personalization: ads,
+  });
+  window.dataLayer?.push({
+    event: 'cookie_consent_update',
+    analytics_consent: analytics ? 'granted' : 'denied',
+    marketing_consent: ads,
   });
 }
 
@@ -60,7 +72,6 @@ export function updateGoogleConsent(analytics: boolean) {
 export function loadGoogleAnalytics() {
   if (!TRACKING.gaId || document.getElementById('cq-ga')) return;
   const gtag = ensureGtag();
-  updateGoogleConsent(true);
   gtag('js', new Date());
   gtag('config', TRACKING.gaId, { anonymize_ip: true });
   addScript(`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(TRACKING.gaId)}`, 'cq-ga');

@@ -8,7 +8,7 @@ updated: 2026-11-23
 ---
 # ContexQ Cookie Policy
 
-The ContexQ Cookie Policy (Page: /cookie-policy), last updated November 2026, explains how ContexQ uses cookies and similar devices on the site https://contexq.com/ to enhance visitors' online experience and to carry out statistical analysis of traffic. It defines cookies, lists the types of cookies, names the cookies used (the consent cookie cc_cookie, Cloudflare Turnstile, Google Analytics, Microsoft Clarity, the cq_attr local storage item, and Leadfeeder), and explains how to accept, reject or change cookie choices, including the cookie banner and the "Cookie settings" link at the bottom of every page. Questions go to inquiry@contexq.com.
+The ContexQ Cookie Policy (Page: /cookie-policy), last updated November 2026, explains how ContexQ uses cookies and similar devices on the site https://contexq.com/ to enhance visitors' online experience and to carry out statistical analysis of traffic. It defines cookies, lists the types of cookies, names the cookies used (cookie preferences, Cloudflare Turnstile, Google Analytics, Microsoft Clarity, visit history stored in your browser, and Leadfeeder), and explains how to accept, reject or change cookie choices, including the cookie banner and the "Cookie settings" link at the bottom of every page. Questions go to inquiry@contexq.com.
 
 Last updated: November 2026.
 
@@ -47,16 +47,16 @@ When you first visit the site, ContexQ asks for your choice in a cookie banner w
 
 The banner has three categories:
 - Necessary (always on): required for the site to work.
-- Analytics: Google Analytics, Microsoft Clarity and the cq_attr local storage item.
+- Analytics: Google Analytics, Microsoft Clarity and visit history stored in your browser.
 - Marketing: Leadfeeder.
 
 The Cookie Policy table lists:
-- cc_cookie: Technical (necessary). Owner ContexQ (first party). Duration: 6 months. Stores the cookie choices you made in the cookie banner. Always active; you can change the choices it stores in Cookie settings.
+- Cookie preferences: Technical (necessary). Owner ContexQ (first party). Duration: 6 months. Stores the cookie choices you made in the cookie banner. Always active; you can change the choices it stores in Cookie settings.
 - Cloudflare Turnstile: Technical (necessary). Owner Cloudflare, Inc. (third party). Duration: Session. Protects the contact form from spam and automated abuse. More information: https://www.cloudflare.com/privacypolicy/. Required to send the contact form.
-- Google Analytics (_ga, _ga_*): Analytic. Owner Google LLC (third party). Duration: up to 2 years. Measures how the site is used: pages visited, how visitors arrive (for example from search or a campaign link), approximate location and device type. Set only if you accept analytics cookies. More information: https://support.google.com/analytics/answer/11397207. Change in Cookie settings, or with the Google opt-out at https://tools.google.com/dlpage/gaoptout?hl=en.
-- Microsoft Clarity (_clck, _clsk): Analytic. Owner Microsoft Corporation (third party). Duration: up to 1 year. Produces heatmaps and session recordings that show how pages are used. Set only if you accept analytics cookies. More information: https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list. Change in Cookie settings.
-- cq_attr (local storage): Analytic. Owner ContexQ (first party). Duration: until cleared. Remembers how you first arrived at the site and the pages you viewed; if you send an enquiry, this is included so the team understands your interest. Stored only if you accept analytics cookies. Change in Cookie settings.
-- Leadfeeder (_lfa): Marketing. Owner Leadfeeder / Dealfront (third party). Duration: up to 2 years. Recognises which organisations visit the site, based on the company network a visit comes from; it does not identify individual people. Set only if you accept marketing cookies. More information: https://www.leadfeeder.com/privacy/. Change in Cookie settings.
+- Google Analytics: Analytic. Owner Google LLC (third party). Duration: up to 2 years. Measures how the site is used: pages visited, how visitors arrive (for example from search or a campaign link), approximate location and device type. Set only if you accept analytics cookies. More information: https://support.google.com/analytics/answer/11397207. Change in Cookie settings, or with the Google opt-out at https://tools.google.com/dlpage/gaoptout?hl=en.
+- Microsoft Clarity: Analytic. Owner Microsoft Corporation (third party). Duration: up to 1 year. Produces heatmaps and session recordings that show how pages are used. Set only if you accept analytics cookies. More information: https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list. Change in Cookie settings.
+- Visit history (stored in your browser): Analytic. Owner ContexQ (first party). Duration: until cleared. Remembers how you first arrived at the site and the pages you viewed; if you send an enquiry, this is included so the team understands your interest. Stored only if you accept analytics cookies. Change in Cookie settings.
+- Leadfeeder: Marketing. Owner Leadfeeder / Dealfront (third party). Duration: up to 2 years. Recognises which organisations visit the site, based on the company network a visit comes from; it does not identify individual people. Set only if you accept marketing cookies. More information: https://www.leadfeeder.com/privacy/. Change in Cookie settings.
 
 ## How can you exercise your choices regarding the installation/removal of cookies?
 
