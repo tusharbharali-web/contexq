@@ -7,63 +7,75 @@ import { submitLead } from '../../lib/leads/client';
 
 interface HumanHandoverProps {
   onClose?: () => void;
-  onRequestHandover?: (contact: { method: 'phone' | 'email'; value: string }) => void;
+  onRequestHandover?: (contact: { name: string; phone: string; email?: string }) => void;
   /** Recent chat messages, sent with the request so the team has context. */
   conversation?: ChatHistoryTurn[];
 }
 
-type Method = 'phone' | 'email';
+type Field = 'name' | 'phone' | 'email';
 
 const isEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 // digits with optional +, spaces, brackets or hyphens; 7 to 15 digits in total
 const isPhone = (v: string) => /^\+?[\d\s()-]+$/.test(v) && (v.match(/\d/g)?.length ?? 0) >= 7 && (v.match(/\d/g)?.length ?? 0) <= 15;
 
-/**
- * Callback request. The visitor picks how they want to be contacted (phone or email)
- * and gives that one detail; either is enough.
- */
+/** Callback request: name and phone number are required, email is optional. */
 export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequestHandover, conversation }) => {
-  const [method, setMethod] = useState<Method>('phone');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
-  const [requested, setRequested] = useState<{ method: Method; value: string; reference?: string } | null>(null);
+  const [form, setForm] = useState({ name: '', phone: '', email: '' });
+  const [errors, setErrors] = useState<Partial<Record<Field | 'form', string>>>({});
+  const [requested, setRequested] = useState<{ name: string; phone: string; reference?: string } | null>(null);
   const [sending, setSending] = useState(false);
+
+  const set = (field: Field) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm((f) => ({ ...f, [field]: e.target.value }));
+    if (errors[field]) setErrors((er) => ({ ...er, [field]: undefined }));
+  };
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const value = (method === 'phone' ? phone : email).trim();
-    if (method === 'phone' && !isPhone(value)) {
-      setError('Please enter a valid mobile number, including the country code.');
-      return;
-    }
-    if (method === 'email' && !isEmail(value)) {
-      setError('Please enter a valid email address.');
-      return;
-    }
-    setError('');
-    if (sending) return;
+    const name = form.name.trim();
+    const phone = form.phone.trim();
+    const email = form.email.trim();
+    const found: typeof errors = {};
+    if (!name) found.name = 'Please enter your name.';
+    if (!isPhone(phone)) found.phone = 'Please enter a valid phone number, including the country code.';
+    if (email && !isEmail(email)) found.email = 'Please enter a valid email address, or leave it empty.';
+    setErrors(found);
+    if (Object.keys(found).length || sending) return;
+
     setSending(true);
-    const result = await submitLead({
-      type: 'callback',
-      ...(method === 'phone' ? { phone: value } : { email: value }),
-      conversation,
-    });
+    const result = await submitLead({ type: 'callback', name, phone, ...(email ? { email } : {}), conversation });
     setSending(false);
     if (!result.ok) {
-      setError(result.error || 'We could not send your request. Please try again.');
+      setErrors({ form: result.error || 'We could not send your request. Please try again.' });
       return;
     }
-    setRequested({ method, value, reference: result.reference });
-    onRequestHandover?.({ method, value });
+    setRequested({ name, phone, reference: result.reference });
+    onRequestHandover?.({ name, phone, ...(email ? { email } : {}) });
   };
+
+  const input = (field: Field, label: string, props: React.InputHTMLAttributes<HTMLInputElement>, optional = false) => (
+    <div className="cqc-form-row">
+      <label htmlFor={`cqc-cb-${field}`}>
+        {label} {optional && <span className="cqc-optional">(optional)</span>}
+      </label>
+      <input
+        id={`cqc-cb-${field}`}
+        value={form[field]}
+        onChange={set(field)}
+        className={`cqc-input${errors[field] ? ' has-error' : ''}`}
+        aria-invalid={!!errors[field]}
+        {...props}
+      />
+      {errors[field] && <span className="cqc-error">{errors[field]}</span>}
+    </div>
+  );
 
   return (
     <div className="cqc-card">
       <div className="cqc-card-head">
         <div>
           <h4>Speak with a ContexQ specialist</h4>
-          {!requested && <p>Choose how you would like our team to reach you.</p>}
+          {!requested && <p>Leave your details and our team will call you back.</p>}
         </div>
         {onClose && (
           <button type="button" className="cqc-dismiss" onClick={onClose} aria-label="Dismiss">
@@ -78,63 +90,22 @@ export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequest
           <div>
             <h4>Callback requested</h4>
             <p>
-              {requested.reference ? `Reference ${requested.reference}. ` : ''}Our team will {requested.method === 'phone' ? 'call you on' : 'email you at'}{' '}
-              <strong>{requested.value}</strong> shortly.
+              {requested.reference ? `Reference ${requested.reference}. ` : ''}Thank you, {requested.name}. Our team will call you on{' '}
+              <strong>{requested.phone}</strong> shortly.
             </p>
           </div>
         </div>
       ) : (
         <form onSubmit={submit} noValidate>
-          <div className="cqc-segment" role="radiogroup" aria-label="Preferred contact method">
-            {(['phone', 'email'] as Method[]).map((m) => (
-              <button
-                key={m}
-                type="button"
-                role="radio"
-                aria-checked={method === m}
-                className={`cqc-segment-btn${method === m ? ' is-on' : ''}`}
-                onClick={() => {
-                  setMethod(m);
-                  setError('');
-                }}
-              >
-                {m === 'phone' ? 'Phone call' : 'Email'}
-              </button>
-            ))}
-          </div>
-
-          {method === 'phone' ? (
-            <>
-              <label className="cqc-visually-hidden" htmlFor="cqc-cb-phone">Mobile number</label>
-              <input
-                id="cqc-cb-phone"
-                type="tel"
-                inputMode="tel"
-                autoComplete="tel"
-                placeholder="Mobile number, e.g. +65 9123 4567"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                className={`cqc-input${error ? ' has-error' : ''}`}
-                aria-invalid={!!error}
-              />
-            </>
-          ) : (
-            <>
-              <label className="cqc-visually-hidden" htmlFor="cqc-cb-email">Email address</label>
-              <input
-                id="cqc-cb-email"
-                type="email"
-                inputMode="email"
-                autoComplete="email"
-                placeholder="Work email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={`cqc-input${error ? ' has-error' : ''}`}
-                aria-invalid={!!error}
-              />
-            </>
-          )}
-          {error && <span className="cqc-error">{error}</span>}
+          {input('name', 'Name', { type: 'text', autoComplete: 'name', maxLength: 120 })}
+          {input('phone', 'Phone number', {
+            type: 'tel',
+            inputMode: 'tel',
+            autoComplete: 'tel',
+            maxLength: 30,
+          })}
+          {input('email', 'Email', { type: 'email', inputMode: 'email', autoComplete: 'email', maxLength: 160 }, true)}
+          {errors.form && <span className="cqc-error">{errors.form}</span>}
 
           <button type="submit" className="cqc-btn is-block" disabled={sending}>
             {sending ? 'Sending' : 'Request a callback'}

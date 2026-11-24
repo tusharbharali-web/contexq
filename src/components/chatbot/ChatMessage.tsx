@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { Copy, Check, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { Message } from '../../types/chat';
 import { BrandMark } from './BrandMark';
+import { pageName } from '../../lib/rag/pageName';
 
 interface ChatMessageProps {
   message: Message;
@@ -42,15 +43,18 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
           {message.sources && message.sources.length > 0 && (
             <div className="cqc-sources">
               <span className="cqc-sources-label">Sources</span>
-              {message.sources.map((src, idx) => (
-                <div key={idx}>
-                  {src.url ? (
-                    <a href={src.url} target="_blank" rel="noreferrer">{src.title}</a>
-                  ) : (
-                    src.title
-                  )}
-                </div>
-              ))}
+              {message.sources
+                .map((src) => ({ ...src, name: pageName(src.title, src.url) }))
+                .filter((src, idx, all) => all.findIndex((o) => o.name === src.name) === idx)
+                .map((src) => (
+                  <div key={src.name}>
+                    {src.url ? (
+                      <a href={src.url} target="_blank" rel="noreferrer">{src.name}</a>
+                    ) : (
+                      src.name
+                    )}
+                  </div>
+                ))}
             </div>
           )}
         </div>

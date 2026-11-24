@@ -312,3 +312,9 @@ textarea.cqc-input { resize: none; }
 .cqc-card .cqc-input { background: var(--white); }
 .cqc-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .cqc-field textarea:focus-visible { outline: none; } /* the field's own border shows focus */
+
+/* Callback form: name, phone, optional email */
+.cqc-card .cqc-form-row { margin-bottom: 10px; }
+.cqc-card .cqc-form-row label { margin-bottom: 4px; }
+.cqc-card form .cqc-btn { margin-top: 4px; }
+.cqc-card form { margin-top: 12px; }

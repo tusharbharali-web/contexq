@@ -106,6 +106,7 @@ export async function POST(req: Request) {
   if (lead.phone && !isPhone(lead.phone)) return fail('Please enter a valid phone number, including the country code.');
   if (!lead.email && !lead.phone) return fail('Please give an email address or phone number.');
   if ((type === 'contact' || type === 'team') && (!lead.name || !lead.email)) return fail('Please enter your name and email address.');
+  if (type === 'callback' && (!lead.name || !lead.phone)) return fail('Please enter your name and phone number.');
 
   if (type === 'contact' && !(await verifyTurnstile(clip(raw.turnstileToken, 2048), ip))) {
     return fail('The security check failed. Please complete it again and resubmit.');
