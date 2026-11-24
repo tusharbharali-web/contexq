@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChatLauncher } from './ChatLauncher';
 import { ChatHeader } from './ChatHeader';
 import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
-import { LeadCaptureForm } from './LeadCaptureForm';
 import { HumanHandover } from './HumanHandover';
+import { track } from '../../lib/tracking/track';
 import { useChat } from '../../hooks/useChat';
 
 interface ChatWidgetProps {
@@ -70,19 +70,16 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
     isLoading,
     isOpen,
     isMinimized,
-    showLeadForm,
     showHandover,
     unreadCount,
     toggleWidget,
     closeWidget,
     openWidget,
     toggleMinimize,
-    toggleLeadForm,
     toggleHandover,
     resetConversation,
     sendMessage,
-    awaitingMeetingEmail,
-    startMeetingBooking
+    awaitingMeetingEmail
   } = useChat();
 
   // Scrolling over the open panel stays inside the chat (see useContainScroll)
@@ -96,9 +93,19 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
     }
   }, [initialOpen, isOpen, openWidget]);
 
+  // Analytics: count chat opens (sent only with analytics consent)
+  useEffect(() => {
+    if (isOpen) track('chat_open');
+  }, [isOpen]);
+
+  // Recent messages, attached to callback and enquiry requests so the team has context
+  const conversation = messages.slice(-12).map((m) => ({ role: m.sender, content: m.content }));
+
   // Check if last message requires handover
   const lastMessage = messages[messages.length - 1];
-  const lastMessageNeedsHandover = lastMessage?.needsHumanHandover && !isLoading;
+  // ✕ hides the callback card until a newer reply asks for the team again.
+  const [dismissedFor, setDismissedFor] = useState<string | null>(null);
+  const lastMessageNeedsHandover = lastMessage?.needsHumanHandover && !isLoading && dismissedFor !== lastMessage.id;
 
   return (
     <div className="contexq-chatbot-root">
@@ -144,8 +151,11 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
                 {(showHandover || lastMessageNeedsHandover) && (
                   <div className="cqc-handover-wrap">
                     <HumanHandover
-                      onClose={() => toggleHandover(false)}
-                      onRequestHandover={() => {}}
+                      onClose={() => {
+                        toggleHandover(false);
+                        if (lastMessage) setDismissedFor(lastMessage.id);
+                      }}
+                      conversation={conversation}
                     />
                   </div>
                 )}
@@ -154,36 +164,8 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ initialOpen = false }) =
                 <ChatInput
                   onSendMessage={sendMessage}
                   isLoading={isLoading}
-                  onOpenLeadForm={() => toggleLeadForm(true)}
                   placeholder={awaitingMeetingEmail ? 'Enter your email address' : undefined}
-                  awaitingMeetingEmail={awaitingMeetingEmail}
-                  onBookMeeting={() => {
-                    startMeetingBooking();
-                    panelRef.current?.querySelector<HTMLTextAreaElement>('.cqc-field textarea')?.focus();
-                  }}
                 />
-
-                {/* Slide-over Lead Capture Form */}
-                <AnimatePresence>
-                  {showLeadForm && (
-                    <motion.div
-                      initial={{ opacity: 0, y: '100%' }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: '100%' }}
-                      transition={{ duration: 0.24, ease: 'easeOut' }}
-                      style={{
-                        position: 'absolute',
-                        inset: 0,
-                        zIndex: 30
-                      }}
-                    >
-                      <LeadCaptureForm
-                        onClose={() => toggleLeadForm(false)}
-                        onSubmitSuccess={() => {}}
-                      />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
               </div>
             )}
           </motion.div>

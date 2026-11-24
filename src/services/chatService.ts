@@ -1,51 +1,42 @@
-import { ChatResponse, ChatService } from '../types/chat';
+import { ChatHistoryTurn, ChatResponse, ChatService } from '../types/chat';
 import { getMockResponse } from './mockChatService';
 
+const UNAVAILABLE =
+  'I am unable to answer right now. Please try again in a moment, or email inquiry@contexq.com and our team will get back to you.';
+
 /**
- * MockChatService:
- * Current production-quality client-side simulated engine.
- * Fully decoupled from backend APIs, fulfilling Phase 1 requirements.
+ * ApiChatService: sends the visitor's question (plus recent turns) to the site's own
+ * /api/chat route, which answers from the ContexQ knowledge base. The OpenAI key stays
+ * on the server; the browser only ever talks to /api/chat.
  */
-export class MockChatService implements ChatService {
-  async sendMessage(message: string, _conversationId: string): Promise<ChatResponse> {
-    return getMockResponse(message);
+export class ApiChatService implements ChatService {
+  constructor(private endpoint = '/api/chat') {}
+
+  async sendMessage(message: string, conversationId: string, history: ChatHistoryTurn[] = []): Promise<ChatResponse> {
+    try {
+      const res = await fetch(this.endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, conversationId, history }),
+      });
+      const data = (await res.json().catch(() => null)) as ChatResponse | null;
+      if (data && typeof data.message === 'string') return data;
+      return { message: UNAVAILABLE, needsHumanHandover: true };
+    } catch {
+      return { message: UNAVAILABLE, needsHumanHandover: true };
+    }
   }
 }
 
 /**
- * ApiChatService (Future Integration Placeholder):
- *
- * In Phase 2, this class will communicate with a Node.js + Express backend.
- * The backend will be responsible for:
- * 1. GPT / Gemini model integration and prompt orchestration.
- * 2. ContexQ knowledge base retrieval and RAG.
- * 3. Approved corporate document filtering and compliance gating.
- * 4. Context-aware conversation history preservation.
- * 5. Source attribution (populating the `sources` field in `ChatResponse`).
- * 6. Lead capture and CRM ingestion.
- * 7. Live agent handover routing.
- *
- * Example implementation when backend is ready:
- * ```ts
- * export class ApiChatService implements ChatService {
- *   private baseUrl: string;
- *   constructor(baseUrl = process.env.VITE_API_URL || 'https://api.contexq.com') {
- *     this.baseUrl = baseUrl;
- *   }
- *
- *   async sendMessage(message: string, conversationId: string): Promise<ChatResponse> {
- *     const res = await fetch(`${this.baseUrl}/api/chat`, {
- *       method: 'POST',
- *       headers: { 'Content-Type': 'application/json' },
- *       body: JSON.stringify({ message, conversationId })
- *     });
- *     if (!res.ok) throw new Error('Failed to fetch AI response');
- *     return res.json();
- *   }
- * }
- * ```
+ * MockChatService: canned offline answers, kept only for tests and local UI work.
+ * It is not used on the live site.
  */
+export class MockChatService implements ChatService {
+  async sendMessage(message: string): Promise<ChatResponse> {
+    return getMockResponse(message);
+  }
+}
 
-// Active service instance: swap with `new ApiChatService()` when backend is enabled.
-export const defaultChatService: ChatService = new MockChatService();
-
+// Active service: the live knowledge base answers via /api/chat.
+export const defaultChatService: ChatService = new ApiChatService();

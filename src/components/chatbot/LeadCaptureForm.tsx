@@ -2,17 +2,23 @@
 
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
-import { LeadFormData, LeadFormErrors } from '../../types/chat';
+import { ChatHistoryTurn, LeadFormData, LeadFormErrors } from '../../types/chat';
+import { submitLead } from '../../lib/leads/client';
 
 interface LeadCaptureFormProps {
   onClose: () => void;
   onSubmitSuccess?: (data: LeadFormData) => void;
+  /** Recent chat messages, sent with the enquiry so the team has context. */
+  conversation?: ChatHistoryTurn[];
 }
 
-export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onClose, onSubmitSuccess }) => {
+export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onClose, onSubmitSuccess, conversation }) => {
   const [formData, setFormData] = useState<LeadFormData>({ fullName: '', businessEmail: '', companyName: '', topic: '' });
   const [errors, setErrors] = useState<LeadFormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
+  const [reference, setReference] = useState<string | undefined>();
 
   const validate = (): boolean => {
     const next: LeadFormErrors = {};
@@ -23,9 +29,25 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onClose, onSub
     return Object.keys(next).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
+    if (!validate() || sending) return;
+    setSending(true);
+    setSendError('');
+    const result = await submitLead({
+      type: 'team',
+      name: formData.fullName.trim(),
+      email: formData.businessEmail.trim(),
+      company: formData.companyName.trim() || undefined,
+      message: formData.topic.trim() || undefined,
+      conversation,
+    });
+    setSending(false);
+    if (!result.ok) {
+      setSendError(result.error || 'We could not send your enquiry. Please try again.');
+      return;
+    }
+    setReference(result.reference);
     setIsSubmitted(true);
     onSubmitSuccess?.(formData);
   };
@@ -50,8 +72,8 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onClose, onSub
           <div className="cqc-done">
             <h4>Thank you</h4>
             <p>
-              Your enquiry has been recorded in this demonstration. Our team will be able to follow up once the
-              backend integration is enabled.
+              Your enquiry has been sent. Our team will contact you at <strong>{formData.businessEmail}</strong> shortly.
+              {reference ? ` Reference ${reference}.` : ''}
             </p>
             <div className="cqc-summary">
               <div>Name: <strong>{formData.fullName}</strong></div>
@@ -86,7 +108,8 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ onClose, onSub
                 placeholder="For example supply chain visibility, money mule detection or KYC and AML" />
             </div>
 
-            <button type="submit" className="cqc-btn is-block">Submit enquiry</button>
+            {sendError && <p className="cqc-error" role="alert">{sendError}</p>}
+            <button type="submit" className="cqc-btn is-block" disabled={sending}>{sending ? 'Sending' : 'Submit enquiry'}</button>
           </form>
         )}
       </div>

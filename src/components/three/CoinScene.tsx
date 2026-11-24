@@ -107,6 +107,14 @@ export default function CoinScene({ slices }: { slices: CoinSliceData[] }) {
   const [revealed, setRevealed] = useState(false);
   const reveal = useCallback(() => setRevealed(true), []);
 
+  // Safety fallback: ensure scene reveals within 2 seconds even if 3D shaders or asset preloads stall
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      reveal();
+    }, 2000);
+    return () => clearTimeout(fallbackTimer);
+  }, [reveal]);
+
   // Lighting State
   const lightPos = {
     point: [9.96, 4, 0.87] as [number, number, number],

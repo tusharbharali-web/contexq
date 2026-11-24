@@ -5,9 +5,19 @@ import { useState, useEffect } from "react";
 
 export function CustomLoader({ done }: { done?: boolean } = {}) {
   const { progress: loadProgress } = useProgress();
-  // `done` (when given) means the scene can render; until then never show 100%.
-  const progress = done === undefined ? loadProgress : done ? 100 : Math.min(loadProgress, 99);
+  const [forceDone, setForceDone] = useState(false);
   const [visible, setVisible] = useState(true);
+
+  // Safety fallback: Never keep the user waiting on the loading screen for more than 2 seconds
+  useEffect(() => {
+    const safetyTimer = setTimeout(() => {
+      setForceDone(true);
+    }, 2000);
+    return () => clearTimeout(safetyTimer);
+  }, []);
+
+  const isComplete = done === true || forceDone || (done === undefined && loadProgress >= 100);
+  const progress = isComplete ? 100 : Math.min(loadProgress, 99);
 
   useEffect(() => {
     if (progress === 100) {
@@ -15,6 +25,8 @@ export function CustomLoader({ done }: { done?: boolean } = {}) {
       return () => clearTimeout(timer);
     }
   }, [progress]);
+
+  if (!visible) return null;
 
   const pulseDuration = Math.max(0.5, 2 - (progress / 100) * 1.5);
 

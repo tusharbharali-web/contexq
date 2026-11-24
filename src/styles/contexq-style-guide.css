@@ -1,0 +1,111 @@
+/*
+ * ContexQ style guide (from "Styles-IBM-Plex-Sans-Hero-Layout.css").
+ * Same tokens, type scale and button as the company stylesheet, SCOPED so they only
+ * apply inside elements with class "cq-sg" and inside the cookie banner (#cc-main).
+ * Scoping keeps the rest of the site (its own fonts and .hero layouts) unchanged.
+ * Used by: cookie banner (styles/cookies.css), Cookie Policy page.
+ */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+.cq-sg,
+#cc-main {
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  /* Navy */
+  --navy-950: #050F1C;
+  --navy-900: #081A2E;
+  --navy-850: #0C2038;
+  --navy-800: #111C2B;
+  --navy-700: #1E2D42;
+
+  /* Blue */
+  --blue-100: #E6F0FF;
+  --blue-400: #5BA0FF;
+  --blue-500: #2F86FF;
+  --blue-600: #1F6FEB;
+
+  /* Neutrals */
+  --white: #FFFFFF;
+  --slate-50: #F3F6FB;
+  --slate-200: #E1E7F0;
+  --slate-400: #93A4BF;
+  --slate-500: #5B6B86;
+  --slate-600: #475873;
+  --ink-900: #0B1B2E;
+
+  /* Category accents (data categories and icons only, never buttons) */
+  --accent-amber: #F5A524;
+  --accent-cyan: #22C3E6;
+  --accent-green: #34D399;
+  --accent-violet: #8B7CF6;
+  --accent-coral: #F4647A;
+
+  /* Border-radius tokens */
+  --radius-cta: 4px;
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 999px;
+}
+
+/* Border-radius utilities */
+.cq-sg .rounded-cta     { border-radius: var(--radius-cta); }
+.cq-sg .rounded-control { border-radius: var(--radius-control); }
+.cq-sg .rounded-card    { border-radius: var(--radius-card); }
+.cq-sg .rounded-panel   { border-radius: var(--radius-panel); }
+.cq-sg .rounded-pill    { border-radius: var(--radius-pill); }
+
+/* Colors: dark surfaces */
+.cq-sg .bg-surface-dark  { background-color: #050F1C; }
+.cq-sg .bg-surface-panel { background-color: #081A2E; }
+.cq-sg .bg-surface-card  { background-color: #0C2038; }
+.cq-sg .bg-primary-cta   { background-color: #2F86FF; }
+
+/* Colors: text on dark */
+.cq-sg .text-on-dark { color: #FFFFFF; }
+.cq-sg .text-body    { color: #93A4BF; }
+.cq-sg .text-muted   { color: #5B6B86; }
+
+/* Colors: light surfaces and text on light */
+.cq-sg .bg-surface-light      { background-color: #FFFFFF; }
+.cq-sg .bg-surface-light-card { background-color: #F3F6FB; }
+.cq-sg .bg-brand-tint         { background-color: #E6F0FF; }
+.cq-sg .text-on-light    { color: #0B1B2E; }
+.cq-sg .text-body-light  { color: #475873; }
+.cq-sg .text-muted-light { color: #5B6B86; }
+
+/* Colors: brand, links, borders */
+.cq-sg .text-brand      { color: #2F86FF; }
+.cq-sg .text-brand-dark { color: #5BA0FF; }
+.cq-sg .border-on-dark  { border-color: #1E2D42; }
+.cq-sg .border-on-light { border-color: #E1E7F0; }
+
+/* Typography */
+.cq-sg .text-display-hero { font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; line-height: 52px; letter-spacing: -0.025em; font-weight: 700; }
+.cq-sg .text-headline-xl  { font-size: 44px; line-height: 52px; letter-spacing: -0.02em;  font-weight: 600; }
+.cq-sg .text-headline-lg  { font-size: 32px; line-height: 40px; letter-spacing: -0.015em; font-weight: 600; }
+.cq-sg .text-headline-md  { font-size: 24px; line-height: 32px; letter-spacing: -0.01em;  font-weight: 600; }
+.cq-sg .text-body-xl      { font-size: 18px; line-height: 28px; font-weight: 400; }
+.cq-sg .text-body-md      { font-size: 15px; line-height: 24px; font-weight: 400; }
+.cq-sg .text-body-sm      { font-size: 13px; line-height: 20px; font-weight: 400; }
+
+/* Component default: primary button */
+.cq-sg .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F86FF;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  padding: 16px 32px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.cq-sg .btn-primary:hover  { background-color: #5BA0FF; }
+.cq-sg .btn-primary:active { background-color: #1F6FEB; }

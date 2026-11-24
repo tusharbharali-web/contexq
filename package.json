@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "kb:build": "node scripts/build-kb.mjs",
+    "kb:check": "node scripts/check-kb.mjs",
+    "kb:eval": "node scripts/build-kb.mjs && node scripts/eval-search.mjs",
+    "kb:eval-answers": "node scripts/eval-answers.mjs",
+    "predev": "node scripts/build-kb.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/build-kb.mjs && node scripts/check-kb.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -13,12 +19,16 @@
     "@react-three/fiber": "^9.5.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
+    "minisearch": "^7.2.0",
     "next": "16.1.6",
+    "openai": "^7.62.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^9.1.0",
     "remark-gfm": "^4.0.1",
-    "three": "^0.183.2"
+    "server-only": "^0.0.1",
+    "three": "^0.183.2",
+    "vanilla-cookieconsent": "^3.3.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

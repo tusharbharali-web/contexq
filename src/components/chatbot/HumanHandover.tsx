@@ -2,10 +2,14 @@
 
 import React, { useState } from 'react';
 import { CheckCircle2, X } from 'lucide-react';
+import type { ChatHistoryTurn } from '../../types/chat';
+import { submitLead } from '../../lib/leads/client';
 
 interface HumanHandoverProps {
   onClose?: () => void;
   onRequestHandover?: (contact: { method: 'phone' | 'email'; value: string }) => void;
+  /** Recent chat messages, sent with the request so the team has context. */
+  conversation?: ChatHistoryTurn[];
 }
 
 type Method = 'phone' | 'email';
@@ -18,15 +22,15 @@ const isPhone = (v: string) => /^\+?[\d\s()-]+$/.test(v) && (v.match(/\d/g)?.len
  * Callback request. The visitor picks how they want to be contacted (phone or email)
  * and gives that one detail; either is enough.
  */
-export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequestHandover }) => {
+export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequestHandover, conversation }) => {
   const [method, setMethod] = useState<Method>('phone');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
-  const [requested, setRequested] = useState<{ method: Method; value: string } | null>(null);
-  const [ticketId] = useState<string>(() => `CQ${Math.floor(1000 + Math.random() * 9000)}`);
+  const [requested, setRequested] = useState<{ method: Method; value: string; reference?: string } | null>(null);
+  const [sending, setSending] = useState(false);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     const value = (method === 'phone' ? phone : email).trim();
     if (method === 'phone' && !isPhone(value)) {
@@ -38,7 +42,19 @@ export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequest
       return;
     }
     setError('');
-    setRequested({ method, value });
+    if (sending) return;
+    setSending(true);
+    const result = await submitLead({
+      type: 'callback',
+      ...(method === 'phone' ? { phone: value } : { email: value }),
+      conversation,
+    });
+    setSending(false);
+    if (!result.ok) {
+      setError(result.error || 'We could not send your request. Please try again.');
+      return;
+    }
+    setRequested({ method, value, reference: result.reference });
     onRequestHandover?.({ method, value });
   };
 
@@ -62,7 +78,7 @@ export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequest
           <div>
             <h4>Callback requested</h4>
             <p>
-              Reference {ticketId}. Our team will {requested.method === 'phone' ? 'call you on' : 'email you at'}{' '}
+              {requested.reference ? `Reference ${requested.reference}. ` : ''}Our team will {requested.method === 'phone' ? 'call you on' : 'email you at'}{' '}
               <strong>{requested.value}</strong> shortly.
             </p>
           </div>
@@ -120,8 +136,8 @@ export const HumanHandover: React.FC<HumanHandoverProps> = ({ onClose, onRequest
           )}
           {error && <span className="cqc-error">{error}</span>}
 
-          <button type="submit" className="cqc-btn is-block">
-            Request a callback
+          <button type="submit" className="cqc-btn is-block" disabled={sending}>
+            {sending ? 'Sending' : 'Request a callback'}
           </button>
         </form>
       )}

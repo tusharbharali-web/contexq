@@ -1,0 +1,175 @@
+/*
+ * Legal pages (Cookie Policy, Privacy Policy), styled with the ContexQ style guide (styles/contexq-style-guide.css),
+ * LIGHT surface variant:
+ *   page: white (bg-surface-light)          headings: ink-900 (text-on-light)
+ *   body text: slate-600 (text-body-light)  muted: slate-500 (text-muted-light)
+ *   links: blue-500 (text-brand, on light)  borders: slate-200 (border-on-light)
+ *   table header + Questions panel: slate-50 (bg-surface-light-card)
+ *   type: IBM Plex Sans, display-hero title, headline-md sections, body-md text
+ *   buttons: btn-primary
+ * Content container matches the other site pages: min(1200px, 100% - 48px), centred.
+ * No background images, glows or decorative labels.
+ */
+.cq-legal {
+  background: var(--white);
+  background-image: none;
+  color: var(--slate-600);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cq-legal-main {
+  flex: 1;
+  background: var(--white);
+  padding: 128px 0 96px; /* clears the fixed site header */
+}
+
+/* Same container as the other pages (.wrap): centred, 1200px max, 24px side gutters */
+.cq-legal-wrap {
+  width: min(1200px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.cq-legal-head {
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--slate-200);
+}
+.cq-legal-head h1 { margin: 0 0 12px; }
+.cq-legal-head p { margin: 0; }
+
+/* Policy body */
+.cq-legal-content p,
+.cq-legal-content li {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--slate-600);
+}
+.cq-legal-content p { margin: 0 0 16px; }
+
+.cq-legal-content h2 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: var(--ink-900);
+  margin: 48px 0 16px;
+}
+.cq-legal-content > h2:first-child { margin-top: 0; }
+
+.cq-legal-content strong { color: var(--ink-900); font-weight: 600; }
+
+.cq-legal-content a {
+  color: var(--blue-500);
+  font-weight: 500;
+  text-decoration: none;
+}
+.cq-legal-content a:hover { color: var(--blue-600); text-decoration: underline; }
+.cq-legal-content a u { text-decoration: none; }
+.cq-legal-content a strong { color: inherit; }
+
+.cq-legal-content ol,
+.cq-legal-content ul {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+.cq-legal-content ol { list-style: decimal; }
+.cq-legal-content ul { list-style: disc; }
+.cq-legal-content ol ol { list-style: lower-alpha; margin: 8px 0; }
+.cq-legal-content li { margin-bottom: 8px; }
+.cq-legal-content li::marker { color: var(--slate-500); }
+
+/* Cookie table: white card, light borders, slate-50 header row */
+.cq-legal-content figure.wp-block-table {
+  margin: 24px 0 32px;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-card);
+}
+.cq-legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.cq-legal-content td {
+  padding: 16px;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--slate-600);
+  border-bottom: 1px solid var(--slate-200);
+  overflow-wrap: break-word;
+}
+.cq-legal-content tr:last-child td { border-bottom: 0; }
+/* Simple two-column tables (e.g. Privacy Policy "Data Controller"): label | value */
+.cq-legal-content td:first-child { color: var(--ink-900); font-weight: 600; width: 30%; }
+
+/* Six-column cookie table: column widths and a header row.
+   (:has() limits these rules to tables that have a sixth column.) */
+.cq-legal-content table:has(td:nth-child(6)) td:first-child { width: 17%; font-weight: 400; }
+.cq-legal-content table:has(td:nth-child(6)) td:nth-child(2) { width: 12%; }
+.cq-legal-content table:has(td:nth-child(6)) td:nth-child(3) { width: 13%; }
+.cq-legal-content table:has(td:nth-child(6)) td:nth-child(4) { width: 11%; }
+.cq-legal-content table:has(td:nth-child(6)) td:nth-child(5) { width: 27%; }
+.cq-legal-content table:has(td:nth-child(6)) td:nth-child(6) { width: 20%; }
+.cq-legal-content table:has(td:nth-child(6)) tr:first-child td {
+  background: var(--slate-50);
+  color: var(--ink-900);
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+/* Questions panel */
+.cq-legal-cta {
+  margin-top: 64px;
+  padding: 32px;
+  border: 1px solid var(--slate-200);
+}
+.cq-legal-cta h2 { margin: 0 0 8px; }
+.cq-legal-cta p { margin: 0 0 24px; }
+.cq-legal-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Secondary action on light: white with a light border (accents are never used for buttons) */
+.cq-legal-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: var(--radius-cta);
+  border: 1px solid var(--slate-200);
+  background: var(--white);
+  color: var(--ink-900);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.cq-legal-secondary:hover { border-color: var(--blue-500); color: var(--blue-500); }
+
+.cq-legal a:focus-visible,
+.cq-legal button:focus-visible {
+  outline: 2px solid var(--blue-500);
+  outline-offset: 2px;
+}
+
+/* Tablet and phone (style guide breakpoints) */
+@media (max-width: 1100px) {
+  .cq-legal-main { padding: 112px 0 72px; }
+}
+@media (max-width: 760px) {
+  /* The six-column table scrolls sideways inside its card instead of widening the page */
+  .cq-legal-content table:has(td:nth-child(6)) { width: 980px; }
+  .cq-legal-content td:first-child { width: 38%; }
+}
+@media (max-width: 640px) {
+  .cq-sg .cq-legal-head h1 { font-size: 32px; line-height: 40px; letter-spacing: -0.015em; }
+  .cq-legal-cta { padding: 24px; }
+  .cq-legal-actions > * { width: 100%; }
+}

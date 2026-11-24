@@ -48,18 +48,9 @@ export function View() {
             <div className="form-card" id="request">
               <h2>See ContexQ in action</h2>
               <p className="form-intro">Request a personalised walkthrough built around your business challenges.</p>
-              <form id="contact-form" action="https://formsubmit.co/45791dc9c5f43aa4241e9a4b07578d3e" method="POST" target="_top">
-                <input type="hidden" name="_subject" defaultValue="New ContexQ contact form submission" />
-                {" "}
-                <input type="hidden" name="_template" defaultValue="table" />
-                {" "}
-                <input type="hidden" name="_captcha" defaultValue="true" />
-                {" "}
-                <input type="hidden" name="_cc" defaultValue="inquiry@contexq.com,ajay.kakarania@contexq.com" />
-                {" "}
-                <input type="hidden" name="_next" id="next-url" defaultValue="" />
-                {" "}
-                <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+              <form id="contact-form">
+                {/* Sent by behavior.js to /api/leads (our server), which checks Turnstile, adds location and source, and emails the team. */}
+                <input type="text" name="website" style={{ display: "none" }} tabIndex={-1} autoComplete="off" aria-hidden="true" />
                 {" "}
                 <div className="form-grid">
                   <div className="field">
@@ -315,6 +306,7 @@ export function View() {
                 <div className="cf-turnstile" data-sitekey="0x4AAAAAADKKF2ByP4CS0doK" data-theme="dark" style={{ margin: "14px 0" }} />
                 {" "}
                 <button className="submit" type="submit">Submit</button>
+                <p className="form-note" id="form-status" role="status" aria-live="polite" />
                 <p className="form-foot">
                   By submitting, you agree that ContexQ may contact you about your enquiry. Protected by Cloudflare Turnstile.
                 </p>

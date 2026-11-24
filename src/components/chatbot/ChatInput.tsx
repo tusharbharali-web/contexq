@@ -1,18 +1,16 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowUp, CalendarDays, Users } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowUp } from 'lucide-react';
 
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
   isLoading: boolean;
-  onOpenLeadForm: () => void;
   placeholder?: string;
-  onBookMeeting: () => void;
-  awaitingMeetingEmail?: boolean;
 }
 
-export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, onOpenLeadForm, placeholder, onBookMeeting, awaitingMeetingEmail = false }) => {
+export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, placeholder }) => {
   const [text, setText] = useState('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -38,6 +36,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, 
         <textarea
           ref={textareaRef}
           rows={1}
+          maxLength={400}
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyDown={(e) => {
@@ -55,16 +54,10 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading, 
         </button>
       </div>
 
-      <div className="cqc-composer-foot">
-        <button type="button" className="cqc-foot-btn" onClick={onOpenLeadForm}>
-          <Users aria-hidden="true" />
-          Talk to our team
-        </button>
-        <button type="button" className="cqc-foot-btn" onClick={onBookMeeting} disabled={awaitingMeetingEmail}>
-          <CalendarDays aria-hidden="true" />
-          {awaitingMeetingEmail ? 'Waiting for email' : 'Book a meeting'}
-        </button>
-      </div>
+      {/* Next.js Link keeps the chat open while the page changes */}
+      <p className="cqc-consent">
+        By chatting, you agree to our <Link href="/privacy-policy">Privacy Policy</Link>.
+      </p>
     </div>
   );
 };

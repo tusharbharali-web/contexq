@@ -157,6 +157,13 @@ export default function Footer() {
               <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
               <FooterLink href="/terms-conditions">Terms and Conditions</FooterLink>
               <FooterLink href="/cookie-policy">Cookie Policy</FooterLink>
+              <button
+                type="button"
+                data-cq-cookie-settings=""
+                className="cq-cookie-settings-link text-gray-400 hover:text-cyan-400 transition-colors duration-300 lg:whitespace-nowrap"
+              >
+                Cookie settings
+              </button>
             </div>
           </div>
         </div>

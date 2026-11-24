@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdn.tailwindcss.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; connect-src 'self' blob: https://raw.githubusercontent.com https://formsubmit.co https:; worker-src 'self' blob:; frame-src 'self' https://formsubmit.co https://wa.me https://www.linkedin.com https://www.youtube.com https://m.facebook.com https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdn.tailwindcss.com https://challenges.cloudflare.com https://www.googletagmanager.com https://*.clarity.ms https://sc.lfeeder.com https://*.lfeeder.com https://*.leadfeeder.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; connect-src 'self' blob: https://raw.githubusercontent.com https://formsubmit.co https:; worker-src 'self' blob:; frame-src 'self' https://formsubmit.co https://wa.me https://www.linkedin.com https://www.youtube.com https://m.facebook.com https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;",
           },
         ],
       },

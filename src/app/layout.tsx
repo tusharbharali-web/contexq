@@ -6,6 +6,8 @@ import InstantHistoryScroll from "../components/ui/InstantHistoryScroll";
 import TeamProfileModal from "../components/ui/TeamProfileModal";
 import { ChatWidget } from "../components/chatbot/ChatWidget";
 import "../styles/chatbot.css";
+import CookieConsentManager from "../components/consent/CookieConsentManager";
+import "../styles/cookies.css";
 
 // Fonts are self-hosted (src/app/fonts, the same Latin variable files Google Fonts
 // serves) so builds don't depend on fetching fonts.googleapis.com at build time.
@@ -105,6 +107,7 @@ export default function RootLayout({
         {children}
         <TeamProfileModal />
         <ChatWidget />
+        <CookieConsentManager />
       </body>
     </html>
   );

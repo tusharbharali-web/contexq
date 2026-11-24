@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import { Message, ChatService } from '../types/chat';
 import { defaultChatService } from '../services/chatService';
+import { submitLead } from '../lib/leads/client';
 
 function generateConversationId(): string {
   return `cq-session-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
@@ -106,8 +107,17 @@ export function useChat(chatService: ChatService = defaultChatService) {
           return;
         }
         setAwaitingMeetingEmail(false);
+        setIsLoading(true);
+        const result = await submitLead({
+          type: 'meeting',
+          email,
+          conversation: [...messages, userMessage].slice(-12).map((m) => ({ role: m.sender, content: m.content }))
+        });
+        setIsLoading(false);
         addAssistantMessage(
-          `Thank you. Our team will email **${email}** shortly with available times for your meeting.`
+          result.ok
+            ? `Thank you. Our team will email **${email}** shortly with available times for your meeting.${result.reference ? ` Your reference is ${result.reference}.` : ''}`
+            : `Sorry, I could not send your meeting request just now. Please try again, or email **inquiry@contexq.com** and our team will arrange a time.`
         );
         return;
       }
@@ -115,7 +125,12 @@ export function useChat(chatService: ChatService = defaultChatService) {
       setIsLoading(true);
 
       try {
-        const response = await chatService.sendMessage(trimmed, conversationIdRef.current);
+        // Recent turns (before this message) so follow-up questions keep their context.
+        const history = messages.slice(-2).map((m) => ({
+          role: m.sender,
+          content: m.content
+        }));
+        const response = await chatService.sendMessage(trimmed, conversationIdRef.current, history);
 
         const assistantMessage: Message = {
           id: `bot-${Date.now() + 1}`,
@@ -145,7 +160,7 @@ export function useChat(chatService: ChatService = defaultChatService) {
         setIsLoading(false);
       }
     },
-    [chatService, isLoading, isOpen, awaitingMeetingEmail, addAssistantMessage]
+    [chatService, isLoading, isOpen, awaitingMeetingEmail, addAssistantMessage, messages]
   );
 
   return {

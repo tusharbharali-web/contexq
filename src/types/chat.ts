@@ -40,10 +40,17 @@ export interface LeadFormErrors {
   companyName?: string;
 }
 
+/** One earlier turn of the conversation, sent so follow-up questions have context. */
+export interface ChatHistoryTurn {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
 export interface ChatService {
   sendMessage(
     message: string,
-    conversationId: string
+    conversationId: string,
+    history?: ChatHistoryTurn[]
   ): Promise<ChatResponse>;
 }
 

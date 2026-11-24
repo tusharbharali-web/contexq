@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# generated from knowledge-base/ by scripts/build-kb.mjs
+/src/lib/rag/kb.generated.json
 
 # vercel
 .vercel
@@ -97,3 +101,6 @@ ehthumbs.db
 ._*
 .Spotlight-V100
 .Trashes
+
+# chatbot answer test output
+/scripts/kb-answers-report.json
