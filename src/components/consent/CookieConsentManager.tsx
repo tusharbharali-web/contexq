@@ -43,8 +43,8 @@ function runConsent() {
   return CookieConsent.run({
     cookie: { name: 'cc_cookie', expiresAfterDays: 182, sameSite: 'Lax' },
     guiOptions: {
-      consentModal: { layout: 'box', position: 'bottom left', equalWeightButtons: true, flipButtons: false },
-      preferencesModal: { layout: 'box', equalWeightButtons: true, flipButtons: false },
+      consentModal: { layout: 'box', position: 'bottom left', equalWeightButtons: false, flipButtons: false },
+      preferencesModal: { layout: 'box', equalWeightButtons: false, flipButtons: false },
     },
     categories: {
       [CONSENT.necessary]: { enabled: true, readOnly: true },
@@ -85,8 +85,6 @@ function runConsent() {
           },
           preferencesModal: {
             title: 'Cookie settings',
-            acceptAllBtn: 'Accept all',
-            acceptNecessaryBtn: 'Reject all',
             savePreferencesBtn: 'Save my choices',
             closeIconLabel: 'Close',
             sections: [

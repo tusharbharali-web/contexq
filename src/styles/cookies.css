@@ -147,3 +147,18 @@
   font: inherit;
   cursor: pointer;
 }
+
+/* Preferences panel has only "Save my choices", so it is styled as the primary button. */
+#cc-main .pm__btn.pm__btn--secondary {
+  background: var(--blue-500);
+  border-color: var(--blue-500);
+  color: var(--white);
+}
+#cc-main .pm__btn.pm__btn--secondary:hover {
+  background: var(--blue-400);
+  border-color: var(--blue-400);
+}
+#cc-main .pm__btn.pm__btn--secondary:active {
+  background: var(--blue-600);
+  border-color: var(--blue-600);
+}
